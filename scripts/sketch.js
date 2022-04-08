@@ -11,7 +11,7 @@ function setup() {
 
 function draw() {
   strokeWeight(0.1);
-//   stroke(251,100,204);
+  
   let radius = random(150);
   let a = random(TWO_PI);
 
