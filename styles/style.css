@@ -38,3 +38,8 @@ canvas {
   color: rgb(251, 100, 204);
   font-weight: 600;
 }
+
+#sketch {
+    width: 300px;
+    height: 300px;
+}
