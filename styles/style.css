@@ -23,6 +23,13 @@ canvas {
   margin: 0.2rem 0;
 }
 
+::selection {
+  background: rgb(214, 214, 214);; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: rgb(214, 214, 214);; /* Gecko Browsers */
+}
+
 #title {
   font-weight: 600;
 }
