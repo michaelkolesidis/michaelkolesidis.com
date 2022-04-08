@@ -2,8 +2,16 @@
 
 body{
     font-family: "Spartan", sans-serif;
+    margin-left: 1rem;
 }
 
 a {
     color: grey;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    margin: 0.5rem;
+    font-size: 90%;
 }
