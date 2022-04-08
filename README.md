@@ -1,6 +1,6 @@
-# My Homepage
+# Michael Kolesidis
 
-### (Under construction)
+This is my (provisional) homepage.
 
 
 [//]: # (Free Software)
