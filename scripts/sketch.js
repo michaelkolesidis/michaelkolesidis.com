@@ -4,7 +4,9 @@ let newX, newY;
 function setup() {
   let cnv = createCanvas(300, 300);
   cnv.parent("sketch");
+
   background(255);
+  
   x = width / 2;
   y = height / 2;
 }
