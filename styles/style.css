@@ -1,10 +1,33 @@
 @import url("https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
-body{
-    font-family: "Spartan", sans-serif;
-    margin-left: 1rem;
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Spartan", sans-serif;
+  margin: 1rem;
 }
 
 a {
-    color: grey;
+  color: grey;
+}
+
+h4 {
+  margin-bottom: 0.4rem;
+  font-weight: 600;
+}
+
+canvas {
+  margin: 0.2rem 0;
+}
+
+#title {
+  font-weight: 600;
+}
+
+#subtitle {
+  color: rgb(251, 100, 204);
+  font-weight: 600;
 }

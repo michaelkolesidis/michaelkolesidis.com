@@ -2,7 +2,7 @@ let x, y;
 let newX, newY;
 
 function setup() {
-  let cnv = createCanvas(400, 400);
+  let cnv = createCanvas(300, 300);
   cnv.parent("sketch");
   background(255);
   x = width / 2;
@@ -11,8 +11,8 @@ function setup() {
 
 function draw() {
   strokeWeight(0.1);
-
-  let radius = random(200);
+//   stroke(251,100,204);
+  let radius = random(150);
   let a = random(TWO_PI);
 
   newX = width / 2 + cos(a) * radius;
