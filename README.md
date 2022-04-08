@@ -1,5 +1,5 @@
 # Michael Kolesidis
 
-This is my (provisional) homepage.
+This is my personale homepage.
 
 <img src="./assets/screenshot-01.png">
