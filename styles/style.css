@@ -7,7 +7,6 @@
 
 body {
   font-family: "Spartan", sans-serif;
-  margin: 1rem;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -23,11 +22,11 @@ h4 {
 }
 
 ::selection {
-  background: rgb(214, 214, 214);; /* WebKit/Blink Browsers */
+  background: rgb(214, 214, 214); /* WebKit/Blink Browsers */
 }
 
 ::-moz-selection {
-  background: rgb(214, 214, 214);; /* Gecko Browsers */
+  background: rgb(214, 214, 214); /* Gecko Browsers */
 }
 
 #title {
@@ -40,7 +39,12 @@ h4 {
 }
 
 #sketch {
-    width: 300px;
-    height: 300px;
-    margin: 0.2rem 0;
+  width: 300px;
+  height: 300px;
+  margin: 0.2rem 0;
+}
+
+#root {
+  margin: 1rem;
+  max-width: fit-content;
 }
