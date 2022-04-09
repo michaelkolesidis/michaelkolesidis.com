@@ -15,7 +15,7 @@ root.innerHTML = /*html*/ `
 <a href="https://javascript-software-synthesizer.netlify.app/" target="_blank">JavaScript Software Synthesizer</a><br>
 <a href="https://minesweeper-emoji.netlify.app/" target="_blank" rel="noopener noreferrer">Minesweeper Emoji</a><br>
 <a href="https://michaelkolesidis.github.io/project-japanese-restaurant/" target="_blank" rel="noopener noreferrer">Japanese Restaurant</a><br>
-<a href="https://project-olympics.netlify.app/" target="_blank" rel="noopener noreferrer">Olympics</a><br>
+<a href="https://project-olympics.netlify.app/" target="_blank" rel="noopener noreferrer">Olympics™</a><br>
 <a href="https://sports-app-pwa.netlify.app/" target="_blank" rel="noopener noreferrer">Sports App (Progressive Web App)</a><br>
 <a href="https://openprocessing.org/sketch/1279127" target="_blank" rel="noopener noreferrer">3D Cube</a><br>
 <a href="https://electronic-drumkit-js.netlify.app/" target="_blank" rel="noopener noreferrer">Electronic Drum Kit</a><br>
