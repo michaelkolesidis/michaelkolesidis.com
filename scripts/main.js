@@ -1,3 +1,8 @@
+/*
+ * Copyright (c) 2022 Michael Kolesidis
+ * GNU General Public License v3.0
+ */
+
 "use strict"
 
 let root = document.getElementById("root");
