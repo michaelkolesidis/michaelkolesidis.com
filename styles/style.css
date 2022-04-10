@@ -13,13 +13,13 @@ body {
 }
 
 a {
-  color: rgb(99, 99, 99);
+  color: grey;
   text-decoration: none;
   transition-duration: 0.6s;
 }
 
 a:hover {
-    color:rgb(251, 100, 204);
+  color: rgb(255, 57, 192);
 }
 
 h2 {
@@ -41,7 +41,7 @@ h2 {
 }
 
 #subtitle {
-  color: rgb(251, 100, 204);
+  color: rgb(255, 57, 192);
   font-weight: 600;
 }
 
