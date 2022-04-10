@@ -19,7 +19,7 @@ a {
 }
 
 a:hover {
-    color:rgb(251, 100, 204);
+  color: rgb(255, 57, 192);
 }
 
 h2 {
@@ -41,7 +41,7 @@ h2 {
 }
 
 #subtitle {
-  color: rgb(251, 100, 204);
+  color: rgb(255, 57, 192);
   font-weight: 600;
 }
 
