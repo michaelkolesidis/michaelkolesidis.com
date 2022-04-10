@@ -1,3 +1,8 @@
+/*
+ * Copyright (c) 2022 Michael Kolesidis
+ * GNU General Public License v3.0
+ */
+
 "use strict"
 
 let root = document.getElementById("root");
@@ -25,7 +30,7 @@ root.innerHTML = /*html*/ `
 <br>
 <br>
 <h2>Links</h2>
-<a href="https://github.com/michaelkolesidis/michaelkolesidis.github.io/blob/main/Michael%20Kolesidis%20CV.pdf" target="_blank">CV</a><br>
+<a href="./assets/michael-kolesidis-cv.pdf" target="_blank">CV</a><br>
 <a href="https://github.com/michaelkolesidis" target="_blank">GitHub</a><br>
 <a href="https://www.linkedin.com/in/michaelkolesidis/" target="_blank">Linkedin</a>
 `;
