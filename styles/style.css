@@ -22,9 +22,10 @@ a:hover {
     color:rgb(251, 100, 204);
 }
 
-h4 {
+h2 {
   margin-bottom: 0.4rem;
   font-weight: 600;
+  font-size: 16px;
 }
 
 ::selection {

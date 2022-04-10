@@ -4,14 +4,14 @@ let root = document.getElementById("root");
 
 root.innerHTML = /*html*/ `
 <h1 id="title">Michael Kolesidis</h1>
-<h4 id="subtitle">Front-End Web Developer</h4>
+<h2 id="subtitle">Front-End Web Developer</h2>
 <br>
 <p>Hello, world!</p>
 <p>This is my personal website.</p>
 <div id="sketch"></div>
 <p>You can contact me at michael.kolesidis(at)gmail.com</p>
 <br>
-<h4>Projects</h4>
+<h2>Projects</h2>
 <a href="https://javascript-software-synthesizer.netlify.app/" target="_blank">JavaScript Software Synthesizer</a><br>
 <a href="https://minesweeper-emoji.netlify.app/" target="_blank" rel="noopener noreferrer">Minesweeper Emoji</a><br>
 <a href="https://michaelkolesidis.github.io/project-japanese-restaurant/" target="_blank" rel="noopener noreferrer">Japanese Restaurant</a><br>
@@ -24,7 +24,7 @@ root.innerHTML = /*html*/ `
 <a href="https://move-square.netlify.app/" target="_blank" rel="noopener noreferrer">Move Square</a>
 <br>
 <br>
-<h4>Links</h4>
+<h2>Links</h2>
 <a href="https://github.com/michaelkolesidis/michaelkolesidis.github.io/blob/main/Michael%20Kolesidis%20CV.pdf" target="_blank">CV</a><br>
 <a href="https://github.com/michaelkolesidis" target="_blank">GitHub</a><br>
 <a href="https://www.linkedin.com/in/michaelkolesidis/" target="_blank">Linkedin</a>
