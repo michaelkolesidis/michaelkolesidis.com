@@ -1,6 +1,6 @@
 This is my personal homepage.
 
-<img src="./assets/screenshot-02.png">
+<img src="./assets/screenshot-03.png">
 
 
 [//]: # (Free Software)
