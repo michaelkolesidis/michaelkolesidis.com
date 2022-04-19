@@ -24,7 +24,7 @@ root.innerHTML = /*html*/ `
 <a href="https://project-olympics.netlify.app/" target="_blank" rel="noopener noreferrer">Olympics™</a><br>
 <a href="https://sports-app-pwa.netlify.app/" target="_blank" rel="noopener noreferrer">Sports App | Progressive Web App</a><br>
 <a href="https://openprocessing.org/sketch/1279127" target="_blank" rel="noopener noreferrer">3D Cube | Processing</a><br>
-<a href="https://electronic-drumkit-js.netlify.app/" target="_blank" rel="noopener noreferrer">Electronic Drum Kit</a><br>
+<a href="https://electronic-drumkit-js.netlify.app/" target="_blank" rel="noopener noreferrer">Electronic Drum Kit | JavaScript</a><br>
 <a href="https://css-3d.netlify.app/" target="_blank" rel="noopener noreferrer">CSS 3D</a><br>
 <a href="https://circle-random-lines.netlify.app/" target="_blank" rel="noopener noreferrer">Circle Random Lines | p5.js</a><br>
 <a href="https://move-square.netlify.app/" target="_blank" rel="noopener noreferrer">Move Square | SVG</a>
