@@ -21,13 +21,18 @@ root.innerHTML = /*html*/ `
 <a href="https://minesweeper-emoji.netlify.app/" target="_blank" rel="noopener noreferrer">Minesweeper Emoji | p5.js</a><br>
 <a href="https://react-landmarks.netlify.app/" target="_blank" rel="noopener noreferrer">Landmarks | React</a><br>
 <a href="https://michaelkolesidis.github.io/japanese-restaurant/" target="_blank" rel="noopener noreferrer">Japanese Restaurant | ES6 Modules</a><br>
-<a href="https://project-olympics.netlify.app/" target="_blank" rel="noopener noreferrer">Olympics™</a><br>
-<a href="https://sports-app-pwa.netlify.app/" target="_blank" rel="noopener noreferrer">Sports App | Progressive Web App</a><br>
 <a href="https://3d-cubejs.netlify.app/" target="_blank" rel="noopener noreferrer">3D Cube | p5.js</a><br>
-<a href="https://electronic-drumkit-js.netlify.app/" target="_blank" rel="noopener noreferrer">Electronic Drum Kit | JavaScript</a><br>
-<a href="https://css-3d.netlify.app/" target="_blank" rel="noopener noreferrer">CSS 3D</a><br>
+<a href="https://project-olympics.netlify.app/" target="_blank" rel="noopener noreferrer">Olympics™</a><br>
+<a href="https://github.com/michaelkolesidis/pong-processing" target="_blank" rel="noopener noreferrer">Pong | Processing (Java)</a><br>
+<a href="https://tic-tac-toe-michael.netlify.app/" target="_blank" rel="noopener noreferrer">Tic-Tac-Toe | JavaScript</a><br>
+<a href="https://sports-app-pwa.netlify.app/" target="_blank" rel="noopener noreferrer">Sports App | Progressive Web App</a><br>
 <a href="https://circle-random-lines.netlify.app/" target="_blank" rel="noopener noreferrer">Circle Random Lines | p5.js</a><br>
+<a href="https://electronic-drumkit-js.netlify.app/" target="_blank" rel="noopener noreferrer">Electronic Drum Kit | JavaScript</a><br>
 <a href="https://move-square.netlify.app/" target="_blank" rel="noopener noreferrer">Move Square | SVG</a>
+<a href="https://css-3d.netlify.app/" target="_blank" rel="noopener noreferrer">CSS 3D</a><br>
+
+
+
 <br>
 <br>
 <h2>Links</h2>
