@@ -17,7 +17,7 @@ root.innerHTML = /*html*/ `
 <p>You can contact me at michael.kolesidis(at)gmail.com</p>
 <br>
 <h2>Projects</h2>
-<a href="https://javascript-software-synthesizer.netlify.app/" target="_blank">JavaScript Software Synthesizer // Tone.js</a><br>
+<a href="https://javascript-software-synthesizer.netlify.app/" target="_blank">JavaScript Software Synthesizer | Tone.js</a><br>
 <a href="https://minesweeper-emoji.netlify.app/" target="_blank" rel="noopener noreferrer">Minesweeper Emoji | p5.js</a><br>
 <a href="https://react-landmarks.netlify.app/" target="_blank" rel="noopener noreferrer">Landmarks | React</a><br>
 <a href="https://michaelkolesidis.github.io/japanese-restaurant/" target="_blank" rel="noopener noreferrer">Japanese Restaurant | ES6 Modules</a><br>
@@ -28,7 +28,7 @@ root.innerHTML = /*html*/ `
 <a href="https://circle-random-lines.netlify.app/" target="_blank" rel="noopener noreferrer">Circle Random Lines | p5.js</a><br>
 <a href="https://project-olympics.netlify.app/" target="_blank" rel="noopener noreferrer">Olympics™ | CSS</a><br>
 <a href="https://css-3d.netlify.app/" target="_blank" rel="noopener noreferrer">CSS 3D | CSS</a><br>
-<a href="https://move-square.netlify.app/" target="_blank" rel="noopener noreferrer">Move Square | SVG</a>
+<a href="https://move-square.netlify.app/" target="_blank" rel="noopener noreferrer">Move Square | SVG</a><br>
 <a href="https://github.com/michaelkolesidis/pong-processing" target="_blank" rel="noopener noreferrer">Pong | Processing (Java)</a><br>
 
 
