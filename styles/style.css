@@ -16,6 +16,8 @@ a {
   color: grey;
   text-decoration: none;
   transition-duration: 0.6s;
+  display: inline-block;
+  margin: 0.15rem 0;
 }
 
 a:hover {
