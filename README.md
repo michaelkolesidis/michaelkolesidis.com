@@ -10,8 +10,17 @@ This is my personal homepage.
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
 
+
 ## Screenshot
 <img src="./assets/screenshot-03.png">
+
+
+
+## License
+
+Copyright (c) 2022 Michael Kolesidis<br>
+Licensed under the [GNU General Public License v3.0](https://github.com/michaelkolesidis/webproject-script/blob/main/LICENSE).
+
 
 
 [//]: # (Free Software)
