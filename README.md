@@ -12,7 +12,7 @@ This is my personal homepage.
 
 
 ## Screenshot
-<img src="./assets/screenshot-03.png">
+<img src="./assets/screenshot-04.png">
 
 
 
