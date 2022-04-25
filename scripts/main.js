@@ -8,8 +8,8 @@
 let root = document.getElementById("root");
 
 root.innerHTML = /*html*/ `
-<h1 id="title">Michael Kolesidis</h1>
-<h2 id="subtitle">Front-End Web Developer</h2>
+<h1 id="title">MICHAEL KOLESIDIS</h1>
+<h2 id="subtitle">FRONT-END WEB DEVELOPER</h2>
 <br>
 <p>Hello, world!</p>
 <p>My personal homepage is currently under maintainance.<br>An updated version is coming soon. Stay tuned :-)</p>
