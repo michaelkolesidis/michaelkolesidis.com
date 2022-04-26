@@ -32,12 +32,17 @@ root.innerHTML = /*html*/ `
 <a href="https://move-square.netlify.app/" target="_blank" rel="noopener noreferrer">Move Square | SVG</a><br>
 <a href="https://github.com/michaelkolesidis/pong-processing" target="_blank" rel="noopener noreferrer">Pong | Processing (Java)</a><br>
 
-
-
 <br>
 <br>
+
 <h2>Links</h2>
 <a href="./assets/michael-kolesidis-cv-v2.pdf" target="_blank">CV</a><br>
 <a href="https://github.com/michaelkolesidis" target="_blank">GitHub</a><br>
 <a href="https://www.linkedin.com/in/michaelkolesidis/" target="_blank">Linkedin</a>
+
+<br>
+<br>
+
+<img src="./assets/bear.svg" id="bear" />
+
 `;
