@@ -64,4 +64,6 @@ h2 {
   bottom: 0;
   left: 0;
   margin: 1rem;
+  filter: invert(39%) brightness(97%);
+
 }
