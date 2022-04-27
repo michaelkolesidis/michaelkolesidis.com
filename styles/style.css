@@ -60,7 +60,7 @@ h2 {
 
 #bear {
   height: 100px;
-  position: absolute;
+  position: sticky;
   bottom: 0;
   right: 0;
   margin: 1rem;
