@@ -43,8 +43,5 @@ root.innerHTML = /*html*/ `
 <br>
 <br>
 
-<footer>
-  <img src="./assets/bear.svg" id="bear" />
-</footer>
-
+<img src="./assets/bear.svg" id="bear" />
 `;
