@@ -57,13 +57,3 @@ h2 {
   margin: 1rem;
   max-width: fit-content;
 }
-
-#bear {
-  height: 100px;
-  position: fixed;
-  bottom: 0;
-  right: 0;
-  margin: 1rem;
-  filter: brightness(90%);
-
-}
