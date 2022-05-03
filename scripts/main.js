@@ -12,7 +12,7 @@ root.innerHTML = /*html*/ `
 <h2 id="subtitle">FRONT-END WEB DEVELOPER</h2>
 <br>
 <p>Hello, world!</p>
-<p>My personal homepage is currently under maintainance.<br>An updated version is coming soon. Stay tuned :-)</p>
+<p>This is my personal web page.<br>An updated version is coming soon. Stay tuned :-)</p>
 <div id="p5_loading" class="loadingclass">LOADING</div>
 <div id="sketch"></div>
 <p class="shadow">You can contact me at michael.kolesidis(at)gmail.com</p>
