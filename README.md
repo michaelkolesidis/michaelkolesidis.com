@@ -12,7 +12,7 @@ This is my personal web site.
 
 
 ## Screenshot
-<img src="./assets/screenshot-05.png" width="500px">
+<img src="./assets/screenshot-05.png" width="400px">
 
 
 
