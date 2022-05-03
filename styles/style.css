@@ -27,9 +27,9 @@ body {
 a {
   color: grey;
   text-decoration: none;
-  transition-duration: 0.6s;
+  transition-duration: .6s;
   display: inline-block;
-  margin: 0.1rem 0;
+  margin: .1rem 0;
 }
 
 a:hover {
@@ -37,7 +37,7 @@ a:hover {
 }
 
 h2 {
-  margin-bottom: 0.4rem;
+  margin-bottom: .4rem;
   font-weight: 600;
   font-size: 16px;
 }
@@ -65,7 +65,7 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  animation: flash 0.5s infinite;
+  animation: flash .5s infinite;
   position: absolute;
   z-index: 1;
   margin-top: 4rem;
@@ -74,12 +74,16 @@ h2 {
 #sketch {
   width: 300px;
   height: 300px;
-  margin: 0.2rem 0;
+  margin: .2rem 0;
   margin: -3.5rem 0 -3rem 0;
   position: relative;
   z-index: -1;
 }
 
-#contact {
+.shadow {
   text-shadow: 1px 1px white;
+}
+
+#footnote {
+  font-size: 80%;
 }

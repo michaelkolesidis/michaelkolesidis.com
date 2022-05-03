@@ -3,7 +3,7 @@
  * GNU General Public License v3.0
  */
 
-"use strict"
+"use strict";
 
 let root = document.getElementById("root");
 
@@ -15,9 +15,9 @@ root.innerHTML = /*html*/ `
 <p>My personal homepage is currently under maintainance.<br>An updated version is coming soon. Stay tuned :-)</p>
 <div id="p5_loading" class="loadingclass">LOADING</div>
 <div id="sketch"></div>
-<p id="contact">You can contact me at michael.kolesidis(at)gmail.com</p>
+<p class="shadow">You can contact me at michael.kolesidis(at)gmail.com</p>
 <br>
-<h2>Projects</h2>
+<h2 class="shadow">Projects*</h2>
 <a href="https://javascript-software-synthesizer.netlify.app/" target="_blank">JavaScript Software Synthesizer | Tone.js</a><br>
 <a href="https://minesweeper-emoji.netlify.app/" target="_blank" rel="noopener noreferrer">Minesweeper Emoji | p5.js</a><br>
 <a href="https://react-landmarks.netlify.app/" target="_blank" rel="noopener noreferrer">Landmarks | React</a><br>
@@ -41,4 +41,13 @@ root.innerHTML = /*html*/ `
 <a href="./assets/michael-kolesidis-cv-v2.pdf" target="_blank">CV</a><br>
 <a href="https://github.com/michaelkolesidis" target="_blank">GitHub</a><br>
 <a href="https://www.linkedin.com/in/michaelkolesidis/" target="_blank">Linkedin</a>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+<p id="footnote">*Most projects include a link to their GitHub repository.<br>All projects have informative readme files.You can find<br>all relevant information about eact project there.</p>
 `;
