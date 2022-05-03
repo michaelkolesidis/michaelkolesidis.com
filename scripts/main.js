@@ -14,7 +14,7 @@ root.innerHTML = /*html*/ `
 <p>Hello, world!</p>
 <p>My personal homepage is currently under maintainance.<br>An updated version is coming soon. Stay tuned :-)</p>
 <div id="sketch"></div>
-<p>You can contact me at michael.kolesidis(at)gmail.com</p>
+<p id="contact">You can contact me at michael.kolesidis(at)gmail.com</p>
 <br>
 <h2>Projects</h2>
 <a href="https://javascript-software-synthesizer.netlify.app/" target="_blank">JavaScript Software Synthesizer | Tone.js</a><br>
