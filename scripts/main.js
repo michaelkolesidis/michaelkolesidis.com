@@ -13,6 +13,7 @@ root.innerHTML = /*html*/ `
 <br>
 <p>Hello, world!</p>
 <p>My personal homepage is currently under maintainance.<br>An updated version is coming soon. Stay tuned :-)</p>
+<div id="p5_loading" class="loadingclass">LOADING</div>
 <div id="sketch"></div>
 <p id="contact">You can contact me at michael.kolesidis(at)gmail.com</p>
 <br>

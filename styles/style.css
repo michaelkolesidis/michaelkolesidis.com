@@ -51,6 +51,26 @@ h2 {
   font-weight: 600;
 }
 
+@keyframes flash {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#p5_loading {
+  font-size: 5vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: flash 0.5s infinite;
+  position: absolute;
+  z-index: 1;
+  margin-top: 4rem;
+}
+
 #sketch {
   width: 300px;
   height: 300px;
