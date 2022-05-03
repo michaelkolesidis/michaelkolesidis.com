@@ -1,4 +1,4 @@
-This is my personal homepage.
+This is my personal web site.
 
 ## Technologies Used
 
@@ -12,7 +12,7 @@ This is my personal homepage.
 
 
 ## Screenshot
-<img src="./assets/screenshot-04.png">
+<img src="./assets/screenshot-05.png">
 
 
 
