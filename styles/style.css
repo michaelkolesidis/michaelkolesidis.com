@@ -86,4 +86,6 @@ h2 {
 
 #footnote {
   font-size: 80%;
+  overflow: hidden;
+  max-width: 35ch;
 }

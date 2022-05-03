@@ -49,7 +49,7 @@ root.innerHTML = /*html*/ `
 <br>
 
 
-<p id="footnote">*Most projects include a link to their GitHub repository.<br>All projects have informative readme files.You can find<br>all relevant information about eact project there.</p>
+<p id="footnote">*Most projects include a link to their GitHub repository. All projects have informative readme files.You can find all relevant information about eact project there.</p>
 `;
 
 export let darkMode = false;
