@@ -25,8 +25,6 @@ function draw() {
   // Scaled to make model fit into canvas
   scale(0.75);
 
-  noStroke();
-
   ambientLight(108, 108, 108);
   directionalLight(128, 128, 128, 0, 0, -1);
 
@@ -43,7 +41,15 @@ function draw() {
   model(teddy);
 }
 
-function mousePressed() {
+function colorize() {
   teddyColor = color(random(40, 255), random(40, 255), random(40, 255));
   colored = true;
+}
+
+function mousePressed() {
+  colorize();
+}
+
+function keyPressed() {
+  colorize();
 }
