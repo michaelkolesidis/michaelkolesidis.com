@@ -38,7 +38,7 @@ root.innerHTML = /*html*/ `
 <br>
 
 <h2>Links</h2>
-<a href="./assets/michael-kolesidis-cv-v2.pdf" target="_blank">CV</a><br>
+<a href="./assets/michael-kolesidis-cv-2-1.pdf" target="_blank">CV</a><br>
 <a href="https://github.com/michaelkolesidis" target="_blank">GitHub</a><br>
 <a href="https://www.linkedin.com/in/michaelkolesidis/" target="_blank">Linkedin</a>
 
