@@ -9,15 +9,18 @@
     url("../fonts/Beatrice-Regular.ttf") format("truetype");
 }
 
-// VARIABLES
-// hfs: heading font size
+/* VARIABLES */
+/* heading font size */
+$hfs-l: 8.8vmin;
+$hfs-m: 7.3vmin;
+$hfs-s: 6.3vmin;
+/* colors */
+$main-color: #fff;
 
-$hfs-l: 8.5vmin;
-$hfs-m: 7vmin;
 
-
+/* GLOBAL RESET */
 * {
-  color: #fff;
+  color: $main-color;
   margin: 0;
   padding: 0;
 }
@@ -25,7 +28,7 @@ $hfs-m: 7vmin;
 body,
 html {
   font-family: "Beatrice";
-  color: #fff;
+  color: $main-color;
   margin: 0;
   background: #000;
   -webkit-user-select: none;
@@ -33,23 +36,7 @@ html {
   user-select: none;
 }
 
-@keyframes flash {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
 
-#p5_loading {
-  font-size: 20vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  animation: flash 0.5s infinite;
-}
 
 header {
   max-width: 95%;
@@ -78,7 +65,7 @@ h1 {
 
 footer {
   height: 5vh;
-  background: white;
+  background: $main-color;
   display: flex;
   align-items: center;
   
@@ -119,43 +106,42 @@ a:visited {
   }
 }
 
-/* --------------------------------------------------------------------- */
-/* Media Querries */
-/* --------------------------------------------------------------------- */
+/* LOADING */
+@keyframes flash {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#p5_loading {
+  font-size: 20vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  animation: flash 0.5s infinite;
+}
+
+/* MEDIA QUERRIES */
 @media only screen and (max-width: 1690px){ 
   h1 {
     font-size: $hfs-m;
   }
 }
 
+@media only screen and (max-width: 1460px){ 
+  h1 {
+    font-size: $hfs-s;
+  }
+}
 
 
 
-
+/**************************************/
 /*
-:root {
-  --main-color: rgb(58, 34, 192);
-}
-
-* {
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  font-family: "Spartan", sans-serif;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  user-select: none;
-}
-
-#root {
-  margin: 1rem;
-  max-width: fit-content;
-}
 
 a {
   color: grey;

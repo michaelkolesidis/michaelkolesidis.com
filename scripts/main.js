@@ -1,13 +1,9 @@
 "use strict";
 
 
-// console.log(window.innerWidth)
-
-let main = document.
+console.log(window.innerWidth)
 
 
-
-root.innerHTML = 
 
 
 // <h1 id="title">MICHAEL KOLESIDIS</h1>
