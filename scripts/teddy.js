@@ -60,3 +60,18 @@ function mousePressed() {
 function keyPressed() {
   colorize();
 }
+
+function windowResized() {
+  resizeCanvas(window.innerWidth - 5, window.innerHeight - 5);
+}
+
+// Change color on scroll
+// let wheelCount = 0;
+
+// function mouseWheel() {
+//   wheelCount += 1;
+//   if (wheelCount > 5) {
+//     wheelCount = 0;
+//     colorize();
+//   }
+// }

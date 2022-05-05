@@ -9,6 +9,8 @@
 
 * {
   color: #fff;
+  margin: 0;
+  padding: 0;
 }
 
 body,
@@ -37,9 +39,18 @@ h1 {
   font-size: 101px;
   font-weight: 400;
   position: fixed;
+
+  mix-blend-mode: difference;
+}
+
+#name {
   top: 0.5rem;
   left: 1rem;
-  mix-blend-mode: difference;
+}
+
+#menu {
+  top: 0.5rem;
+  right: 0.25rem;
 }
 
 #p5_loading {
@@ -88,9 +99,7 @@ a:visited {
   }
 }
 
-
-/* @import url("https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap");
-
+/*
 :root {
   --main-color: rgb(58, 34, 192);
 }
