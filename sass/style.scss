@@ -17,14 +17,14 @@ $hfs-s: 6.3vmin;
 /* colors */
 $main-color: #fff;
 
-
-/* GLOBAL RESET */
+/* RESET */
 * {
   color: $main-color;
   margin: 0;
   padding: 0;
 }
 
+/* GENERAL */
 body,
 html {
   font-family: "Beatrice";
@@ -36,19 +36,23 @@ html {
   user-select: none;
 }
 
-
-
-header {
-  max-width: 95%;
-}
-
 h1 {
   font-size: $hfs-l;
-  font-weight: 400;
-  
+  font-weight: 500;
   mix-blend-mode: difference;
 }
 
+p {
+  margin: 1rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  letter-spacing: 0.2rem;
+}
+
+/* HEADER */  
+header {
+  max-width: 95%;
+}
 
 #name {
   // top: 0.25rem;
@@ -62,47 +66,19 @@ h1 {
 }
 
 
+/* INTRO */
 
+
+
+/* FOOTER */
 footer {
   height: 5vh;
   background: $main-color;
   display: flex;
   align-items: center;
-  
+
   p {
     color: black;
-  }
-}
-
-p {
-  margin: 1rem;
-  font-size: 1.2rem;
-  font-weight: 500;
-  letter-spacing: 0.2rem;
-}
-
-a,
-a:visited {
-  font-size: 1.2rem;
-}
-
-#heart {
-  font-size: 1.6rem;
-}
-
-@media (max-width: 480px) {
-  p {
-    font-size: 0.6rem;
-    margin: 0.5rem;
-  }
-
-  a,
-  a:visited {
-    font-size: 0.6rem;
-  }
-
-  #heart {
-    font-size: 0.8rem;
   }
 }
 
@@ -126,19 +102,17 @@ a:visited {
 }
 
 /* MEDIA QUERRIES */
-@media only screen and (max-width: 1690px){ 
+@media only screen and (max-width: 1690px) {
   h1 {
     font-size: $hfs-m;
   }
 }
 
-@media only screen and (max-width: 1460px){ 
+@media only screen and (max-width: 1460px) {
   h1 {
     font-size: $hfs-s;
   }
 }
-
-
 
 /**************************************/
 /*
