@@ -1,11 +1,7 @@
-/*
- * Copyright (c) 2022 Michael Kolesidis
- * GNU General Public License v3.0
- */
-
 let teddy;
 let teddyColor;
 let colored = false;
+let backgroundColor;
 
 function preload() {
   // Load model with normalise parameter set to true
@@ -13,17 +9,20 @@ function preload() {
 }
 
 function setup() {
-  let cnv = createCanvas(300, 400, WEBGL);
-  cnv.parent("sketch");
+  let cnv = createCanvas(window.innerWidth - 5, window.innerHeight - 5, WEBGL);
+  cnv.parent("sketch-placeholder");
+  backgroundColor = color(0, 0, 0);
 }
 
 function draw() {
-  background(255);
+  background(backgroundColor);
 
   smooth();
 
   // Scaled to make model fit into canvas
-  scale(0.75);
+  scale(window.innerHeight / 400);
+
+  noStroke();
 
   ambientLight(108, 108, 108);
   directionalLight(128, 128, 128, 0, 0, -1);
@@ -31,18 +30,26 @@ function draw() {
   normalMaterial();
 
   if (colored) {
-    fill(teddyColor);
+    ambientMaterial(teddyColor);
   }
 
-  rotateX(PI / 1.17 + frameCount * 0.005);
-  rotateY(PI / 0.88 + frameCount * 0.005);
-  rotateZ(frameCount * 0.005);
+  camera(
+    0.1 * (mouseX - windowWidth / 2),
+    0.2 * (mouseY - windowHeight / 2),
+    250 + 0.04 * abs(mouseX - windowWidth / 2)
+  );
+
+  rotateX(PI - radians(30));
+  rotateY(PI + radians(10));
+
+  translate(0, -50, 40);
 
   model(teddy);
 }
 
 function colorize() {
   teddyColor = color(random(40, 255), random(40, 255), random(40, 255));
+  backgroundColor = color(random(40), random(40), random(40));
   colored = true;
 }
 
