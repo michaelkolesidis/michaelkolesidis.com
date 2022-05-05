@@ -9,6 +9,7 @@
     url("../fonts/Beatrice-Regular.ttf") format("truetype");
 }
 
+// VARIABLES
 // hfs: heading font size
 
 $hfs-l: 8.5vmin;
@@ -41,24 +42,6 @@ html {
   }
 }
 
-h1 {
-  font-size: $hfs-l;
-  font-weight: 400;
-  position: absolute;
-  mix-blend-mode: difference;
-}
-
-
-#name {
-  // top: 0.25rem;
-  left: 0.5rem;
-}
-
-#menu {
-  // top: 0.25rem;
-  right: 0.5rem;
-}
-
 #p5_loading {
   font-size: 20vw;
   display: flex;
@@ -68,9 +51,40 @@ h1 {
   animation: flash 0.5s infinite;
 }
 
+header {
+  max-width: 95%;
+}
+
+h1 {
+  font-size: $hfs-l;
+  font-weight: 400;
+  
+  mix-blend-mode: difference;
+}
+
+
+#name {
+  // top: 0.25rem;
+  position: fixed;
+  left: 0.5rem;
+}
+
+#menu {
+  position: fixed;
+  right: 0.5rem;
+}
+
+
+
 footer {
-  position: absolute;
-  bottom: 0;
+  height: 5vh;
+  background: white;
+  display: flex;
+  align-items: center;
+  
+  p {
+    color: black;
+  }
 }
 
 p {
@@ -105,12 +119,18 @@ a:visited {
   }
 }
 
-
+/* --------------------------------------------------------------------- */
+/* Media Querries */
+/* --------------------------------------------------------------------- */
 @media only screen and (max-width: 1690px){ 
   h1 {
     font-size: $hfs-m;
   }
 }
+
+
+
+
 
 /*
 :root {

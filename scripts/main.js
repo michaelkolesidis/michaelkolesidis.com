@@ -1,12 +1,15 @@
 "use strict";
 
 
-console.log(window.innerWidth)
+// console.log(window.innerWidth)
+
+let main = document.
 
 
-// let root = document.getElementById("root");
 
-// root.innerHTML = /*html*/ `
+root.innerHTML = 
+
+
 // <h1 id="title">MICHAEL KOLESIDIS</h1>
 // <h2 id="subtitle">FRONT-END WEB DEVELOPER</h2>
 // <br>

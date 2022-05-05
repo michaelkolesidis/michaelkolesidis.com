@@ -4,7 +4,7 @@
   "description": "This is my personal web page.",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch scss:styles --style compressed "
+    "sass": "sass --watch sass:styles --style compressed "
   },
   "repository": {
     "type": "git",

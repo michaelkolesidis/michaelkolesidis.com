@@ -20,7 +20,7 @@ function draw() {
   smooth();
 
   // Scaled to make model fit into canvas
-  scale(window.innerHeight / 400);
+  // scale(window.innerHeight / 400);
 
   noStroke();
 
