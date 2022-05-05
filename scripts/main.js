@@ -1,7 +1,7 @@
 "use strict";
 
 
-
+console.log(window.innerWidth)
 
 
 // let root = document.getElementById("root");
