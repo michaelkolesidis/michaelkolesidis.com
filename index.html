@@ -18,9 +18,9 @@
     <link rel="icon" type="image/x-icon" href="./assets/favicon.ico" />
   </head>
   <body>
-
-    <div class="cursor">
-      <div class="cursor__ball cursor__ball--big ">
+    <!-- Cursor implementation -->
+    <!-- <div class="cursor">
+      <div class="cursor__ball cursor__ball--big">
         <svg height="30" width="30">
           <circle cx="15" cy="15" r="14" stroke-width="0"></circle>
         </svg>
@@ -30,12 +30,30 @@
           <circle cx="5" cy="5" r="4" stroke-width="0"></circle>
         </svg>
       </div>
-    </div>
+    </div> -->
 
+   
+    <!-- Ticker -->
+    <div class="ticker-wrap">
+    <div class="ticker">
+      <div class="ticker__item">UNDER CONSTRUCTION</div>
+        <div class="ticker__item">UNDER CONSTRUCTION</div>
+        <div class="ticker__item">UNDER CONSTRUCTION</div>
+        <div class="ticker__item">UNDER CONSTRUCTION</div>
+        <div class="ticker__item">UNDER CONSTRUCTION</div>
+          <div class="ticker__item">UNDER CONSTRUCTION</div>
+          <div class="ticker__item">UNDER CONSTRUCTION</div>
+    </div>
+    </div>
+  
+  
+  
 
     <header>
-      <h1 id="name">MICHAEL KOLESIDIS</h1>
-      <h1 id="menu">MENU</h1>
+      <h1 id="name">
+        <a href="./index.html" class="hoverable">MICHAEL KOLESIDIS</a>
+      </h1>
+      <h1 id="menu" class="hoverable">MENU</h1>
     </header>
 
     <main id="main">
@@ -43,22 +61,133 @@
       <div id="p5_loading" class="loadingclass">LOADING</div>
 
       <div id="intro">
-        <p>I'm Michael Kolesidis.<br><span class="footnote">(as you might have already guessed from the huge heading)</span> </p>
-        <p id="right">I am a Front-End Web Developer with a diverse background in computer science, economics and the arts. I enjoy being creative and curious, learning and building new, exciting things every day. I am passiotate with front-end development and I aim at creating web experiences that are both functional and beautiful.</p>
+        <p>
+          I'm Michael Kolesidis.<br /><span class="footnote"
+            >(as you might have already guessed from the huge heading)</span
+          >
+        </p>
+        <p id="right">
+          I am a Front-End Web Developer with a diverse background in computer
+          science, economics and the arts. I enjoy being creative and curious,
+          learning and building new, exciting things every day. I am passiotate
+          with front-end development and I aim at creating web experiences that
+          are both functional and beautiful.
+        </p>
       </div>
 
       <div id="main-contant">
-        <section>
+        <section id="projects">
           <h1>PROJECTS</h1>
-          <p>These are my projects</p>
-         
+          <a
+            href="https://javascript-software-synthesizer.netlify.app/"
+            target="_blank"
+            >JavaScript Software Synthesizer | Tone.js <img src="./assets/star.svg" alt="" srcset=""></a
+          ><br />
+          <a
+            href="https://minesweeper-emoji.netlify.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Minesweeper Emoji | p5.js</a
+          ><br />
+          <a
+            href="https://react-landmarks.netlify.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Landmarks | React</a
+          ><br />
+          <a
+            href="https://michaelkolesidis.github.io/japanese-restaurant/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Japanese Restaurant | ES6 Modules</a
+          ><br />
+          <a
+            href="https://music-reviews.netlify.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Music Reviews | TypeScript</a
+          ><br />
+          <a
+            href="https://3d-cubejs.netlify.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >3D Cube | p5.js</a
+          ><br />
+          <a
+            href="https://3d-teddy-bear.netlify.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >3D Teddy Bear | p5.js</a
+          ><br />
+          <a
+            href="https://sports-app-pwa.netlify.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Sports App | Progressive Web App</a
+          ><br />
+          <a
+            href="https://electronic-drumkit-js.netlify.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Electronic Drum Kit | JavaScript</a
+          ><br />
+          <a
+            href="https://tic-tac-toe-michael.netlify.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Tic-Tac-Toe | JavaScript</a
+          ><br />
+          <a
+            href="https://circle-random-lines.netlify.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Circle Random Lines | p5.js</a
+          ><br />
+          <a
+            href="https://project-olympics.netlify.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Olympics™ | CSS</a
+          ><br />
+          <a
+            href="https://css-3d.netlify.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >CSS 3D | CSS</a
+          ><br />
+          <a
+            href="https://move-square.netlify.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Move Square | SVG</a
+          ><br />
+          <a
+            href="https://github.com/michaelkolesidis/pong-processing"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Pong | Processing (Java)</a
+          ><br />
+        </section>
+
+        <!-- <section>
+          <h1>ABOUT ME</h1>
+        </section> -->
+
+        <section id="contact">
+          <h1>CONTACT</h1>
+          <p>
+            Like what you see? For business enquiries please drop me a line at:
+            michael.kolesidis@gmail.com
+          </p>
+
+          <a href="./assets/michael-kolesidis-cv-2-1.pdf" target="_blank">CV</a><br>
+          <a href="https://github.com/michaelkolesidis" target="_blank">GitHub</a><br>
+          <a href="https://www.linkedin.com/in/michaelkolesidis/" target="_blank">LinkedIn</a>
         </section>
       </div>
     </main>
     <footer>
       <p>© 2022 Michael Kolesidis. All rights reserved.</p>
     </footer>
-
-    
   </body>
 </html>

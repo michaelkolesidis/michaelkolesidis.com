@@ -29,7 +29,8 @@ function draw() {
   ambientLight(108, 108, 108);
   directionalLight(128, 128, 128, 0, 0, -1);
 
-  normalMaterial();
+  // normalMaterial();
+  ambientMaterial(251,95,204);
 
   if (colored) {
     ambientMaterial(teddyColor);
@@ -66,14 +67,3 @@ function keyPressed() {
 function windowResized() {
   resizeCanvas(window.innerWidth - 5, window.innerHeight - 5);
 }
-
-// Change color on scroll
-// let wheelCount = 0;
-
-// function mouseWheel() {
-//   wheelCount += 1;
-//   if (wheelCount > 5) {
-//     wheelCount = 0;
-//     colorize();
-//   }
-// }
