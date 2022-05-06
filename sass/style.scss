@@ -192,6 +192,21 @@ footer {
 //   fill: #f7f8fa;
 // }
 
+/* GRAIN */
+#overlay {
+  position: fixed; 
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: url("../assets/grain.jpg") no-repeat;
+  background-size: cover;
+  opacity: .05;
+  filter: alpha(opacity=60);
+  height: 100vh;
+  pointer-events:none; // So that elements below grain are clickable
+}
+
 /* UNDER CONSTRUCTION TICKER */
 $duration: 30s;
 
