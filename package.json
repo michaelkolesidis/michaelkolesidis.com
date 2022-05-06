@@ -1,0 +1,23 @@
+{
+  "name": "michaelkolesidis.github.io",
+  "version": "2.0.0",
+  "description": "This is my personal web page.",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch sass:styles --style compressed "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/michaelkolesidis/michaelkolesidis.github.io.git"
+  },
+  "keywords": [],
+  "author": "Michael Kolesidis",
+  "license": "",
+  "bugs": {
+    "url": "https://github.com/michaelkolesidis/michaelkolesidis.github.io/issues"
+  },
+  "homepage": "https://github.com/michaelkolesidis/michaelkolesidis.github.io#readme",
+  "dependencies": {
+    "sass": "^1.51.0"
+  }
+}
