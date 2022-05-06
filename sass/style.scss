@@ -63,9 +63,6 @@ p {
 }
 
 /* HEADER */
-header {
-}
-
 #name {
   // top: 0.25rem;
   position: fixed;
@@ -79,6 +76,12 @@ header {
 
 /* MAIN */
 #main {
+}
+
+#footnote {
+  margin-top: 4rem;
+  font-size: 1.2rem;
+  max-width: 50ch;
 }
 
 /* INTRO */
