@@ -207,6 +207,15 @@ footer {
   pointer-events:none; // So that elements below grain are clickable
 }
 
+/* SCROLLBAR */
+::-webkit-scrollbar {
+  display: none; // Chrome
+}
+
+body {
+  scrollbar-width: none; // Firefox
+}
+
 /* UNDER CONSTRUCTION TICKER */
 $duration: 30s;
 
