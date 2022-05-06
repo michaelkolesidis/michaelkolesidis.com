@@ -10,12 +10,29 @@
     <meta name="image" property="og:image" content="" />
     <title>Michael Kolesidis | Front-End Web Developer</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.1/p5.min.js"></script>
-    <script src="./scripts/main.js" type="module"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
     <script src="./scripts/teddy.js"></script>
+    <script src="./scripts/cursor.js" defer></script>
+    <script src="./scripts/main.js" type="module"></script>
     <link rel="stylesheet" href="./styles/style.css" />
     <link rel="icon" type="image/x-icon" href="./assets/favicon.ico" />
   </head>
   <body>
+
+    <div class="cursor">
+      <div class="cursor__ball cursor__ball--big ">
+        <svg height="30" width="30">
+          <circle cx="15" cy="15" r="14" stroke-width="0"></circle>
+        </svg>
+      </div>
+      <div class="cursor__ball cursor__ball--small">
+        <svg height="10" width="10">
+          <circle cx="5" cy="5" r="4" stroke-width="0"></circle>
+        </svg>
+      </div>
+    </div>
+
+
     <header>
       <h1 id="name">MICHAEL KOLESIDIS</h1>
       <h1 id="menu">MENU</h1>
@@ -26,19 +43,22 @@
       <div id="p5_loading" class="loadingclass">LOADING</div>
 
       <div id="intro">
-        <p>Lalalalala</p>
-        <p>Lalalalala</p>
+        <p>I'm Michael Kolesidis.<br><span class="footnote">(as you might have already guessed from the huge heading)</span> </p>
+        <p id="right">I am a Front-End Web Developer with a diverse background in computer science, economics and the arts. I enjoy being creative and curious, learning and building new, exciting things every day. I am passiotate with front-end development and I aim at creating web experiences that are both functional and beautiful.</p>
       </div>
 
       <div id="main-contant">
         <section>
           <h1>PROJECTS</h1>
           <p>These are my projects</p>
+         
         </section>
       </div>
     </main>
     <footer>
-      <p>© 2020 Michael Kolesidis. All rights reserved.</p>
+      <p>© 2022 Michael Kolesidis. All rights reserved.</p>
     </footer>
+
+    
   </body>
 </html>

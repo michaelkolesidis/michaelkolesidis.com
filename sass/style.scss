@@ -34,6 +34,11 @@ html {
   -webkit-user-select: none;
   -moz-user-select: none;
   user-select: none;
+  cursor: none;
+}
+
+body {
+  overflow-x: hidden;
 }
 
 h1 {
@@ -46,12 +51,10 @@ p {
   margin: 1rem;
   font-size: 1.2rem;
   font-weight: 500;
-  letter-spacing: 0.2rem;
 }
 
 /* HEADER */  
 header {
-  max-width: 95%;
 }
 
 #name {
@@ -65,9 +68,33 @@ header {
   right: 0.5rem;
 }
 
+/* MAIN */
+#main {
+
+}
 
 /* INTRO */
+#intro{
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  min-width: 98vw;
+  top: 40vh;
 
+  p {
+    font-size: 1.8rem;
+    text-align:start;
+    overflow: hidden;
+    max-width: 16ch;
+    line-height: 1.1;
+    margin-right: 2rem;
+  }
+
+  #right {
+    max-width: 30ch;
+    column-count: 2;
+  }
+}
 
 
 /* FOOTER */
@@ -98,6 +125,7 @@ footer {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  // width: 90vw;
   animation: flash 0.5s infinite;
 }
 
@@ -113,6 +141,23 @@ footer {
     font-size: $hfs-s;
   }
 }
+
+// CURSOR
+
+body .cursor {
+  pointer-events: none;
+}
+body .cursor__ball {
+  position: fixed;
+  top: 0;
+  left: 0;
+  mix-blend-mode: difference;
+  z-index: 1000;
+}
+body .cursor__ball circle {
+  fill: #f7f8fa;
+}
+
 
 /**************************************/
 /*

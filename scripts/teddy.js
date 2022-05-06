@@ -1,3 +1,5 @@
+// © 2022 Michael Kolesidis. All rights reserved.
+
 let teddy;
 let teddyColor;
 let colored = false;

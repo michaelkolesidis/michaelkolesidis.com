@@ -1,11 +1,11 @@
+// © 2022 Michael Kolesidis. All rights reserved.
+
 "use strict";
 
 
-console.log(window.innerWidth)
+// console.log(window.innerWidth)
 
-
-
-
+// OLD
 // <h1 id="title">MICHAEL KOLESIDIS</h1>
 // <h2 id="subtitle">FRONT-END WEB DEVELOPER</h2>
 // <br>
