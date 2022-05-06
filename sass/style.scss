@@ -131,15 +131,13 @@ section {
 /* FOOTER */
 footer {
   height: 10vh;
-  // background: $main-color;
-  background: rgb(208, 39, 255);
+  background: $main-color;
 
   display: flex;
   align-items: center;
 
   p {
-    // color: black;
-    color: rgb(90, 246, 243);
+    color: black;
   }
 }
 

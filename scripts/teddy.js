@@ -30,7 +30,7 @@ function draw() {
   directionalLight(128, 128, 128, 0, 0, -1);
 
   // normalMaterial();
-  ambientMaterial(251,95,204);
+  ambientMaterial(194,42,132);
 
   if (colored) {
     ambientMaterial(teddyColor);
