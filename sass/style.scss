@@ -25,7 +25,6 @@ $main-color: #fff;
   color: $main-color;
   margin: 0;
   padding: 0;
-  // cursor: none;
 }
 
 /* GENERAL */
@@ -38,7 +37,7 @@ html {
   -webkit-user-select: none;
   -moz-user-select: none;
   user-select: none;
-
+  cursor: url("../assets/windows95-cursor.png"), auto;
 }
 
 body {
