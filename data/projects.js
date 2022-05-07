@@ -4,7 +4,8 @@ let projectList = [
     image:
       "https://raw.githubusercontent.com/michaelkolesidis/javascript-software-synthesizer/main/screenshots/v.0.5.4-large.png",
     technologies: "Tone.js, WEBMIDI.js, JavaScript, Sass, npm",
-    summary: "My flagship project. A powerful synthesizer build with web technologies.",
+    summary:
+      "My flagship project. A powerful synthesizer build with web technologies.",
     description: `The JavaScript Software Synthesizer is a web application
                   enabling users to make and play music in the browser. It is
                   a software synthesizer utilizing the Web Audio API by
@@ -16,7 +17,8 @@ let projectList = [
   },
   {
     name: "Minesweeper Emoji",
-    image: "https://raw.githubusercontent.com/michaelkolesidis/minesweeper-emoji/main/screenshots/minesweeper-emoji.gif",
+    image:
+      "https://raw.githubusercontent.com/michaelkolesidis/minesweeper-emoji/main/screenshots/minesweeper-emoji.gif",
     technologies: "p5.js, JavaScript, CSS",
     summary: "The classic game reimagined and implemented with emojis.",
     description: `The classic Minesweeper game reimagined and implemented with emojis. 
@@ -28,7 +30,8 @@ let projectList = [
   },
   {
     name: "Landmarks",
-    image: "https://raw.githubusercontent.com/michaelkolesidis/react-landmarks/main/images/screenshot.png",
+    image:
+      "https://raw.githubusercontent.com/michaelkolesidis/react-landmarks/main/images/screenshot.png",
     technologies: "React, JavaScript, Webpack, npm",
     summary: "A React web application showing landmarks around the globe.",
     description: "",
@@ -38,9 +41,11 @@ let projectList = [
   },
   {
     name: "Japanese Restaurant",
-    image: "https://raw.githubusercontent.com/michaelkolesidis/japanese-restaurant/master/japanese-restaurant-screenshot.png",
+    image:
+      "https://raw.githubusercontent.com/michaelkolesidis/japanese-restaurant/master/japanese-restaurant-screenshot.png",
     technologies: "JavaScript, Sass, Webpack, npm",
-    summary: "A JavaScript single-page application (SPA) showcasing the use of ES6 modules as well as Webpack.",
+    summary:
+      "A JavaScript single-page application (SPA) showcasing the use of ES6 modules as well as Webpack.",
     description: "",
     repository: "https://github.com/michaelkolesidis/japanese-restaurant",
     deployment: "http://michaelkolesidis.com/japanese-restaurant/",
@@ -48,9 +53,11 @@ let projectList = [
   },
   {
     name: "Music Reviews",
-    image: "https://raw.githubusercontent.com/michaelkolesidis/music-reviews/main/images/screenshot.png",
+    image:
+      "https://raw.githubusercontent.com/michaelkolesidis/music-reviews/main/images/screenshot.png",
     technologies: "TypeScript, npm",
-    summary: "A (basic) music reviews web app made with and demonstrating the use of TypeScript.",
+    summary:
+      "A (basic) music reviews web app made with and demonstrating the use of TypeScript.",
     description: "",
     repository: "https://github.com/michaelkolesidis/music-reviews",
     deployment: "https://music-reviews.netlify.app/",
@@ -58,7 +65,8 @@ let projectList = [
   },
   {
     name: "3D Cube",
-    image: "https://raw.githubusercontent.com/michaelkolesidis/3d-cube/main/screenshots/demo-01.gif",
+    image:
+      "https://raw.githubusercontent.com/michaelkolesidis/3d-cube/main/screenshots/demo-01.gif",
     technologies: "p5.js, JavaScript",
     summary: "A 3D cube rotating according to mouse movement.",
     description: "",
@@ -68,9 +76,11 @@ let projectList = [
   },
   {
     name: "Sports App",
-    image: "https://raw.githubusercontent.com/michaelkolesidis/sports-app-pwa/main/sport-app-pwa-screenshot.png",
+    image:
+      "https://raw.githubusercontent.com/michaelkolesidis/sports-app-pwa/main/sport-app-pwa-screenshot.png",
     technologies: "JavaScript",
-    summary: "Sports App is a progressive web application enabling the user to create custom tables.",
+    summary:
+      "Sports App is a progressive web application enabling the user to create custom tables.",
     description: "",
     repository: "https://github.com/michaelkolesidis/sports-app-pwa",
     deployment: "https://sports-app-pwa.netlify.app/",
@@ -78,7 +88,8 @@ let projectList = [
   },
   {
     name: "3D Teddy Bear",
-    image: "https://github.com/michaelkolesidis/3d-teddy-bear/raw/main/assets/teddy-02.gif",
+    image:
+      "https://github.com/michaelkolesidis/3d-teddy-bear/raw/main/assets/teddy-02.gif",
     technologies: "p5.js, JavaScript",
     summary: "A rotating 3D Teddy Bear animation",
     description: "",
@@ -88,7 +99,8 @@ let projectList = [
   },
   {
     name: "Electronic Drum Kit",
-    image: "https://raw.githubusercontent.com/michaelkolesidis/electronic-drum-kit/main/screenshot-01.png",
+    image:
+      "https://raw.githubusercontent.com/michaelkolesidis/electronic-drum-kit/main/screenshot-01.png",
     technologies: "",
     summary: "An Electronic Drumkit that can be used with mouse or keyboard.",
     description: "",
@@ -98,7 +110,8 @@ let projectList = [
   },
   {
     name: "Pong",
-    image: "https://raw.githubusercontent.com/michaelkolesidis/pong-processing/main/pong.gif",
+    image:
+      "https://raw.githubusercontent.com/michaelkolesidis/pong-processing/main/pong.gif",
     technologies: "",
     summary: "The classic Pong game recreated from scratch.",
     description: "",
@@ -108,9 +121,11 @@ let projectList = [
   },
   {
     name: "Tic-Tac-Toe",
-    image: "https://raw.githubusercontent.com/michaelkolesidis/tic-tac-toe/main/tic-tac-toe-screenshot.png",
+    image:
+      "https://raw.githubusercontent.com/michaelkolesidis/tic-tac-toe/main/tic-tac-toe-screenshot.png",
     technologies: "JavaScript",
-    summary: "The popular Tic-tac-toe game, implemented with vanilla JavaScript.",
+    summary:
+      "The popular Tic-tac-toe game, implemented with vanilla JavaScript.",
     description: "",
     repository: "https://github.com/michaelkolesidis/tic-tac-toe",
     deployment: "https://tic-tac-toe-michael.netlify.app/",
@@ -118,7 +133,8 @@ let projectList = [
   },
   {
     name: "Circle Random Lines",
-    image: "https://raw.githubusercontent.com/michaelkolesidis/circle-random-lines/main/screenshots/demo.gif",
+    image:
+      "https://raw.githubusercontent.com/michaelkolesidis/circle-random-lines/main/screenshots/demo.gif",
     technologies: "p5.js, JavaScript",
     summary: "A circle created dynamically by random lines",
     description: "",
@@ -128,9 +144,11 @@ let projectList = [
   },
   {
     name: "Olympics",
-    image: "https://raw.githubusercontent.com/michaelkolesidis/project-olympics/main/screenshots/desktop-01.png",
+    image:
+      "https://raw.githubusercontent.com/michaelkolesidis/project-olympics/main/screenshots/desktop-01.png",
     technologies: "CSS",
-    summary: "An animation-abundant responsive website showing Olympics results.",
+    summary:
+      "An animation-abundant responsive website showing Olympics results.",
     description: "",
     repository: "https://github.com/michaelkolesidis/project-olympics",
     deployment: "https://project-olympics.netlify.app/",
@@ -138,7 +156,8 @@ let projectList = [
   },
   {
     name: "CSS 3D",
-    image: "https://raw.githubusercontent.com/michaelkolesidis/css-3d/main/screenshot-02.png",
+    image:
+      "https://raw.githubusercontent.com/michaelkolesidis/css-3d/main/screenshot-02.png",
     technologies: "CSS",
     summary: "A simple website showcasing CSS 3D examples and how they work.",
     description: "",
@@ -148,7 +167,8 @@ let projectList = [
   },
   {
     name: "Move Square",
-    image: "https://github.com/michaelkolesidis/move-square/blob/main/move-square.gif?raw=true",
+    image:
+      "https://github.com/michaelkolesidis/move-square/blob/main/move-square.gif?raw=true",
     technologies: "SVG, JavaScript",
     summary: "A simple SVG example featuring a movable square.",
     description: "",
@@ -160,6 +180,7 @@ let projectList = [
 
 export default projectList;
 
+// EMPTY PROJECT
 // {
 //   name: "",
 //   image: "",
