@@ -7,7 +7,7 @@ let colored = false;
 let backgroundColor;
 
 function preload() {
-  // Load model with normalise parameter set to true
+  // Load model with normalise parameter set to true affects translate
   teddy = loadModel("./assets/teddy.obj", false);
 }
 
@@ -19,19 +19,13 @@ function setup() {
 
 function draw() {
   background(backgroundColor);
-
   smooth();
-
-  // Scaled to make model fit into canvas
-  // scale(window.innerHeight / 400);
-
   noStroke();
 
   ambientLight(108, 108, 108);
   directionalLight(128, 128, 128, 0, 0, -1);
 
-  // normalMaterial();
-  ambientMaterial(194,42,132);
+  ambientMaterial(194, 42, 132);
 
   if (colored) {
     ambientMaterial(teddyColor);
