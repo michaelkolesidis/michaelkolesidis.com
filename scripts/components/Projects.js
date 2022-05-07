@@ -18,6 +18,7 @@ export default function projects() {
   projectsContainer.setAttribute("id", "projects-container");
   projects.appendChild(projectsContainer);
 
+  // Ppopulate Projects
   for (const project of projectList) {
     let proj = document.createElement("div");
 

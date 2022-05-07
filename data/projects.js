@@ -4,7 +4,7 @@ let projectList = [
     image:
       "https://raw.githubusercontent.com/michaelkolesidis/javascript-software-synthesizer/main/assets/logo/logo512.png",
     technologies: "Tone.js, WEBMIDI.js, JavaScript, Sass, npm",
-    summary: "A powerful synthesizer build with web technologies.",
+    summary: "My flagship project. A powerful synthesizer build with web technologies.",
     description: `The JavaScript Software Synthesizer is a web application
                   enabling users to make and play music in the browser. It is
                   a software synthesizer utilizing the Web Audio API by
