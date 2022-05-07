@@ -1,64 +1,80 @@
 // © 2022 Michael Kolesidis. All rights reserved.
 // michael.kolesidis@gmail.com
 
-let teddy;
-let teddyColor;
-let colored = false;
-let backgroundColor;
+let ted = (sketch) => {
+  let teddy;
+  let teddyColor;
+  let colored = false;
+  let backgroundColor;
 
-function preload() {
-  // Load model with normalise parameter set to true affects translate
-  teddy = loadModel("./assets/teddy.obj", false);
-}
+  sketch.preload = () => {
+    // Load model with normalise parameter set to true will affect translate
+    teddy = sketch.loadModel("./assets/teddy.obj", false);
+  };
 
-function setup() {
-  let cnv = createCanvas(window.innerWidth - 5, window.innerHeight - 5, WEBGL);
-  cnv.parent("sketch-placeholder");
-  backgroundColor = color(0, 0, 0);
-}
+  sketch.setup = () => {
+    sketch.createCanvas(
+      window.innerWidth - 5,
+      window.innerHeight - 5,
+      sketch.WEBGL
+    );
 
-function draw() {
-  background(backgroundColor);
-  smooth();
-  noStroke();
+    backgroundColor = sketch.color(0, 0, 0);
+  };
 
-  ambientLight(108, 108, 108);
-  directionalLight(128, 128, 128, 0, 0, -1);
+  sketch.draw = () => {
+    sketch.background(backgroundColor);
+    sketch.smooth();
+    sketch.noStroke();
 
-  ambientMaterial(194, 42, 132);
+    sketch.ambientLight(108, 108, 108);
+    sketch.directionalLight(128, 128, 128, 0, 0, -1);
 
-  if (colored) {
-    ambientMaterial(teddyColor);
-  }
+    sketch.ambientMaterial(194, 42, 132);
 
-  camera(
-    0.1 * (mouseX - windowWidth / 2),
-    0.2 * (mouseY - windowHeight / 2),
-    250 + 0.04 * abs(mouseX - windowWidth / 2)
-  );
+    if (colored) {
+      sketch.ambientMaterial(teddyColor);
+    }
 
-  rotateX(PI - radians(30));
-  rotateY(PI + radians(10));
+    sketch.camera(
+      0.1 * (sketch.mouseX - sketch.windowWidth / 2),
+      0.2 * (sketch.mouseY - sketch.windowHeight / 2),
+      250 + 0.04 * sketch.abs(sketch.mouseX - sketch.windowWidth / 2)
+    );
 
-  translate(0, -50, 40);
+    sketch.rotateX(sketch.PI - sketch.radians(30));
+    sketch.rotateY(sketch.PI + sketch.radians(10));
 
-  model(teddy);
-}
+    sketch.translate(0, -50, 40);
 
-function colorize() {
-  teddyColor = color(random(40, 255), random(40, 255), random(40, 255));
-  backgroundColor = color(random(40), random(40), random(40));
-  colored = true;
-}
+    sketch.model(teddy);
+  };
 
-function mousePressed() {
-  colorize();
-}
+  sketch.colorize = () => {
+    teddyColor = sketch.color(
+      sketch.random(40, 255),
+      sketch.random(40, 255),
+      sketch.random(40, 255)
+    );
+    backgroundColor = sketch.color(
+      sketch.random(40),
+      sketch.random(40),
+      sketch.random(40)
+    );
+    colored = true;
+  };
 
-function keyPressed() {
-  colorize();
-}
+  sketch.mousePressed = () => {
+    sketch.colorize();
+  };
 
-function windowResized() {
-  resizeCanvas(window.innerWidth - 5, window.innerHeight - 5);
-}
+  sketch.keyPressed = () => {
+    sketch.colorize();
+  };
+
+  sketch.windowResized = () => {
+    sketch.resizeCanvas(window.innerWidth - 5, window.innerHeight - 5);
+  };
+};
+
+let teddySketch = new p5(ted, "sketch-placeholder");

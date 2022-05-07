@@ -2,3 +2,5 @@
 node_modules
 
 other
+
+/scripts/teddyGlobal.js

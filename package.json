@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/michaelkolesidis/michaelkolesidis.github.io#readme",
   "dependencies": {
+    "p5": "^1.4.1",
     "sass": "^1.51.0"
   }
 }
