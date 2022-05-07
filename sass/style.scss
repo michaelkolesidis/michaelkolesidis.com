@@ -16,9 +16,12 @@
 /* heading font size */
 $hfs-l: 7vw;
 $hfs-m: 6.5vw;
-$hfs-s: 6vw; 
+$hfs-s: 6vw;
 /* colors */
 $main-color: #fff;
+
+$project-borders: 0px;
+
 
 /* RESET */
 * {
@@ -42,7 +45,6 @@ html {
 
 body {
   overflow-x: hidden;
-
 }
 
 a {
@@ -55,11 +57,10 @@ h1 {
   mix-blend-mode: difference;
 }
 
-p {
+#large-text {
   font-size: 1.8rem;
   text-align: start;
   line-height: 1.1;
-  margin: 1rem;
   font-weight: 500;
 }
 
@@ -94,6 +95,8 @@ p {
   top: 40vh;
 
   p {
+    @extend #large-text;
+    margin: 1rem;
     overflow: hidden;
     max-width: 16ch;
     margin-right: 2rem;
@@ -111,7 +114,16 @@ section {
 }
 
 /* PROJECTS */
-#projects {
+#projects-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  h2 {
+    @extend #large-text;
+    // font-weight: 600;
+    margin-bottom: 0.2rem;
+  }
+
   a {
     @extend p;
     img {
@@ -124,14 +136,41 @@ section {
   }
 }
 
+.project-card {
+  margin: 0 0 2rem 0;
+  border: $project-borders solid #fff;
+  max-width: 30rem;
+  padding: 1rem;
+}
+
+.project-title {
+  // border-bottom: 1px solid #fff;
+}
+
+.technologies {
+  margin-top: 0.5rem;
+  border-top: $project-borders solid #fff;
+}
+
+.repo-link {
+  margin-top: 0.5rem;
+  border-top: $project-borders solid #fff;
+  font-size: 1.2rem;
+}
+
 /* CONTACT */
 #contact {
+  p,
   a {
-    @extend p;
+    @extend #large-text;
   }
 
   a:hover {
     text-decoration: underline;
+  }
+
+  #email {
+    margin-bottom: 4rem;
   }
 }
 
@@ -144,7 +183,9 @@ footer {
   align-items: center;
 
   p {
+    @extend #large-text;
     color: black;
+    margin: 2rem;
   }
 }
 
@@ -198,17 +239,17 @@ footer {
 
 /* GRAIN */
 #overlay {
-  position: fixed; 
+  position: fixed;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
   background: url("../assets/grain.jpg") no-repeat;
   background-size: cover;
-  opacity: .05;
+  opacity: 0.05;
   filter: alpha(opacity=60);
   height: 100vh;
-  pointer-events:none; // So that elements below grain are clickable
+  pointer-events: none; // So that elements below grain are clickable
 }
 
 /* SCROLLBAR */

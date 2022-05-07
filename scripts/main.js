@@ -14,6 +14,9 @@ import footer from "./components/Footer.js";
 ticker();
 intro();
 
-// projects();
+projects();
 
 footer();
+
+
+
