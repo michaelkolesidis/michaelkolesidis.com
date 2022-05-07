@@ -24,6 +24,12 @@ export default function projects() {
 
     proj.classList.add("project-card");
 
+    // Project Image
+    let projectImage = document.createElement("img");
+    projectImage.src = `${project.image}`;
+    projectImage.classList.add("project-image");
+    proj.appendChild(projectImage);
+
     // Title
     let title = document.createElement("a");
     title.href = `${project.deployment}`;
@@ -57,7 +63,6 @@ export default function projects() {
     linkText.innerText = "GitHub";
     repoLink.appendChild(linkText);
     proj.appendChild(repoLink);
-
     repoLink.href = `${project.repository}`;
     repoLink.target = "_blank";
 
