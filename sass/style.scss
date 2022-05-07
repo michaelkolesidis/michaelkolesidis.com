@@ -148,6 +148,11 @@ section {
   border: 10px solid rgb(255, 255, 255);
 }
 
+.project-image:hover {
+  -webkit-filter: invert(.9);
+  filter: invert(.9);
+}
+
 .project-title {
   // border-bottom: 1px solid #fff;
 }
