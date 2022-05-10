@@ -22,7 +22,6 @@ $main-color: #fff;
 
 $project-borders: 0px;
 
-
 /* RESET */
 * {
   color: $main-color;
@@ -150,8 +149,8 @@ section {
 }
 
 .project-image:hover {
-  -webkit-filter: invert(.9);
-  filter: invert(.9);
+  -webkit-filter: invert(0.9);
+  filter: invert(0.9);
 }
 
 .project-title {
@@ -219,34 +218,6 @@ footer {
   // width: 90vw;
   animation: flash 0.5s infinite;
 }
-
-/* MEDIA QUERRIES */
-@media only screen and (max-width: 1700px) {
-  h1 {
-    font-size: $hfs-m;
-  }
-}
-
-@media only screen and (max-width: 1300px) {
-  h1 {
-    font-size: $hfs-s;
-  }
-}
-
-// CURSOR
-// body .cursor {
-//   pointer-events: none;
-// }
-// body .cursor__ball {
-//   position: fixed;
-//   top: 0;
-//   left: 0;
-//   mix-blend-mode: difference;
-//   z-index: 1000;
-// }
-// body .cursor__ball circle {
-//   fill: #f7f8fa;
-// }
 
 /* GRAIN */
 #overlay {
@@ -378,5 +349,43 @@ $duration: 30s;
       font-size: 0.875rem;
       color: #fff;
     }
+  }
+}
+
+/* MEDIA QUERRIES */
+@media only screen and (max-width: 1700px) {
+  h1 {
+    font-size: $hfs-m;
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+  h1 {
+    font-size: $hfs-s;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  #projects-container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  #projects-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (min-width: 1424px) {
+  #projects-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media only screen and (min-width: 1880px) {
+  #projects-container {
+    grid-template-columns: repeat(4, 1fr);
   }
 }

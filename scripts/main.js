@@ -10,6 +10,7 @@ import projects from "./components/Projects.js";
 import footer from "./components/Footer.js";
 
 
+console.log(innerWidth)
 
 // Components
 header();
