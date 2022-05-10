@@ -10,6 +10,8 @@ import projects from "./components/Projects.js";
 import footer from "./components/Footer.js";
 
 
+
+// Components
 header();
 ticker();
 intro();
