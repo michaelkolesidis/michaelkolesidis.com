@@ -53,6 +53,7 @@ a {
 h1 {
   font-size: $hfs-l;
   font-weight: 500;
+  color: #fff;
   mix-blend-mode: difference;
 }
 
@@ -274,7 +275,7 @@ $duration: 30s;
 
 .ticker-heading {
   position: absolute;
-  background: #a6c22f;
+  // background: #a6c22f;
   display: block;
   left: 0;
   top: 0;
@@ -302,7 +303,7 @@ $duration: 30s;
   height: 0;
   border-top: 8px solid transparent;
   border-bottom: 8px solid transparent;
-  border-left: 11px solid #a6c22f;
+  // border-left: 11px solid #a6c22f;
   position: absolute;
   margin-left: 40px;
 }
