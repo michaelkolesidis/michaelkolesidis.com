@@ -36,7 +36,7 @@ let projectList = [
     summary: "Landscape created dynamically using Perlin noise.",
     description: "",
     repository: "https://github.com/michaelkolesidis/perlin-landscape",
-    deployment: "https://perlin-landscape.netlify.appg
+    deployment: "https://perlin-landscape.netlify.app/",
     video: "",
   },
   {
