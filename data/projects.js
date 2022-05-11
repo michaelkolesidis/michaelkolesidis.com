@@ -176,6 +176,16 @@ let projectList = [
     deployment: "https://move-square.netlify.app/",
     video: "",
   },
+  {
+    name: "Perlin Landscape",
+    image: "https://github.com/michaelkolesidis/perlin-landscape/blob/main/assets/perlin-landscape.gif",
+    technologies: "p5.js, JavaScript",
+    summary: "Landscape created dynamically using Perlin noise.",
+    description: "",
+    repository: "https://github.com/michaelkolesidis/perlin-landscape",
+    deployment: "https://perlin-landscape.netlify.app/",
+    video: "",
+  },
 ];
 
 export default projectList;
