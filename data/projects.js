@@ -29,14 +29,14 @@ let projectList = [
     video: "",
   },
   {
-    name: "Landmarks",
+    name: "Perlin Landscape",
     image:
-      "https://raw.githubusercontent.com/michaelkolesidis/react-landmarks/main/images/screenshot.png",
-    technologies: "React, JavaScript, Webpack, npm",
-    summary: "A React web application showing landmarks around the globe.",
+      "https://github.com/michaelkolesidis/perlin-landscape/blob/main/assets/perlin-landscape.gif",
+    technologies: "p5.js, JavaScript",
+    summary: "Landscape created dynamically using Perlin noise.",
     description: "",
-    repository: "https://github.com/michaelkolesidis/react-landmarks",
-    deployment: "https://react-landmarks.netlify.app/",
+    repository: "https://github.com/michaelkolesidis/perlin-landscape",
+    deployment: "https://perlin-landscape.netlify.appg
     video: "",
   },
   {
@@ -72,6 +72,17 @@ let projectList = [
     description: "",
     repository: "https://github.com/michaelkolesidis/3d-cube",
     deployment: "https://3d-cubejs.netlify.app/",
+    video: "",
+  },
+  {
+    name: "Landmarks",
+    image:
+      "https://raw.githubusercontent.com/michaelkolesidis/react-landmarks/main/images/screenshot.png",
+    technologies: "React, JavaScript, Webpack, npm",
+    summary: "A React web application showing landmarks around the globe.",
+    description: "",
+    repository: "https://github.com/michaelkolesidis/react-landmarks",
+    deployment: "https://react-landmarks.netlify.app/",
     video: "",
   },
   {
@@ -174,16 +185,6 @@ let projectList = [
     description: "",
     repository: "https://github.com/michaelkolesidis/move-square",
     deployment: "https://move-square.netlify.app/",
-    video: "",
-  },
-  {
-    name: "Perlin Landscape",
-    image: "https://github.com/michaelkolesidis/perlin-landscape/blob/main/assets/perlin-landscape.gif",
-    technologies: "p5.js, JavaScript",
-    summary: "Landscape created dynamically using Perlin noise.",
-    description: "",
-    repository: "https://github.com/michaelkolesidis/perlin-landscape",
-    deployment: "https://perlin-landscape.netlify.app/",
     video: "",
   },
 ];
