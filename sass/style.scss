@@ -69,6 +69,7 @@ h1 {
   // top: 0.25rem;
   position: fixed;
   left: 0.5rem;
+  z-index: 1;
 }
 
 #menu-button {
@@ -147,6 +148,7 @@ section {
 .project-image {
   height: 20rem;
   border: 10px solid rgb(255, 255, 255);
+  transition: all 1s ease;
 }
 
 .project-image:hover {
@@ -154,7 +156,7 @@ section {
   filter: invert(0.9);
 }
 
-.project-title {
+.project-title { 
   // border-bottom: 1px solid #fff;
 }
 
