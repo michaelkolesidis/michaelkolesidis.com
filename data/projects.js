@@ -108,7 +108,7 @@ let projectList = [
     name: "Pong",
     image:
       "https://raw.githubusercontent.com/michaelkolesidis/pong-processing/main/pong.gif",
-    technologies: "",
+    technologies: "Processing, Java",
     summary: "The classic Pong game recreated from scratch.",
     description: "",
     repository: "https://github.com/michaelkolesidis/pong-processing",
