@@ -11,7 +11,7 @@ export default function projects() {
 
   // Project Title
   let projectsTitle = document.createElement("h1");
-  projectsTitle.innerText = `PROJECTS`;
+  projectsTitle.innerText = `PORTFOLIO`;
   projects.appendChild(projectsTitle);
 
   let projectsContainer = document.createElement("div");
