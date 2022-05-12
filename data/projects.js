@@ -41,7 +41,8 @@ let projectList = [
   },
   {
     name: "Fractal Mountain",
-    image: "https://github.com/michaelkolesidis/fractal-mountain/blob/main/assets/fractal-mountain.gif?raw=true",
+    image:
+      "https://github.com/michaelkolesidis/fractal-mountain/blob/main/assets/fractal-mountain.gif?raw=true",
     technologies: "p5.js, CCapture.js, JavaScript",
     summary: "A single triangle transforms into a mountain.",
     description: "",
@@ -97,7 +98,8 @@ let projectList = [
   },
   {
     name: "Scribble Text",
-    image: "https://github.com/michaelkolesidis/scribble-text/blob/main/assets/scribble-text.gif?raw=true",
+    image:
+      "https://github.com/michaelkolesidis/scribble-text/blob/main/assets/scribble-text.gif?raw=true",
     technologies: "p5.js, JavaScript",
     summary: "Text gradually appears whilte scribbling.",
     description: "",
