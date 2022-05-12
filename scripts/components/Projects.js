@@ -76,6 +76,7 @@ export default function projects() {
   }
 
   let more = document.createElement("p");
-  more.innerText = `My portfolio gets updated on a daily basis. Check back soon!`;
+  more.setAttribute("id", "more")
+  more.innerText = `The list comprises both bits that have been included to final products and personal side projects.It gets updated regularly with new material. Check back soon!`;
   projects.appendChild(more);
 }

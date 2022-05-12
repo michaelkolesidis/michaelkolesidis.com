@@ -153,7 +153,7 @@ section {
   -webkit-filter: invert(0.9);
   filter: invert(0.9);
   transform: perspective(600px) translateZ(200px) rotateX(15deg);
-  opacity: 0.8;
+  opacity: 0.7;
 }
 
 .project-title {
@@ -171,6 +171,13 @@ section {
   margin-top: 0.5rem;
   border-top: $project-borders solid #fff;
   font-size: 1.2rem;
+}
+
+#more {
+  max-width: 50ch;
+  border: 1px solid #fff;
+  padding: 20px;
+  margin: auto;
 }
 
 /* CONTACT */
