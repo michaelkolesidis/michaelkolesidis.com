@@ -18,7 +18,6 @@ export default function about() {
     "I use Linux (Ubuntu) as my daily drive, Windows 11 (for Adobe) and my good ol' MacBook when I'm not at home.",
     "I've been  to many countries.",
     "I don't drink coffee or tea.",
-    "I'm not a big fan of Java. (there, I said it)",
     'I\'ve written this "About Me" section while procrastinating.',
     "Time to get back to work...",
   ];
