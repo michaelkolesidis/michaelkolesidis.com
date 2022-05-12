@@ -40,6 +40,16 @@ let projectList = [
     video: "",
   },
   {
+    name: "Fractal Mountain",
+    image: "https://github.com/michaelkolesidis/fractal-mountain/blob/main/assets/fractal-mountain.gif?raw=true",
+    technologies: "p5.js, JavaScript",
+    summary: "A single triangle transforms into a mountain.",
+    description: "",
+    repository: "https://github.com/michaelkolesidis/fractal-mountain",
+    deployment: "https://fractal-mountain.netlify.app/",
+    video: "",
+  },
+  {
     name: "Japanese Restaurant",
     image:
       "https://raw.githubusercontent.com/michaelkolesidis/japanese-restaurant/master/japanese-restaurant-screenshot.png",
