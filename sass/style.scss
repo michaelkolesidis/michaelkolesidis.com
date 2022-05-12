@@ -149,12 +149,14 @@ section {
 .project-image {
   height: 20rem;
   border: 10px solid rgb(255, 255, 255);
-  transition: all 1s ease;
+  transition: transform 2s ease, filter 10s ease;
 }
 
 .project-image:hover {
   -webkit-filter: invert(0.9);
   filter: invert(0.9);
+  transform: perspective(600px) translateZ(200px) rotateX(15deg);
+  opacity: 0.8;
 }
 
 .project-title {
