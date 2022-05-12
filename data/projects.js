@@ -131,7 +131,7 @@ let projectList = [
     name: "Sports App",
     image:
       "https://raw.githubusercontent.com/michaelkolesidis/sports-app-pwa/main/sport-app-pwa-screenshot.png",
-    technologies: "JavaScript",
+    technologies: "JavaScript, CSS",
     summary:
       "Sports App is a progressive web application enabling the user to create custom tables.",
     description: "",
@@ -143,7 +143,7 @@ let projectList = [
     name: "Electronic Drum Kit",
     image:
       "https://raw.githubusercontent.com/michaelkolesidis/electronic-drum-kit/main/screenshot-01.png",
-    technologies: "",
+    technologies: "JavaScript, CSS",
     summary: "An Electronic Drumkit that can be used with mouse or keyboard.",
     description: "",
     repository: "https://github.com/michaelkolesidis/electronic-drum-kit",
@@ -162,10 +162,34 @@ let projectList = [
     video: "",
   },
   {
+    name: "Japanese Restaurant",
+    image:
+      "https://raw.githubusercontent.com/michaelkolesidis/japanese-restaurant/master/japanese-restaurant-screenshot.png",
+    technologies: "JavaScript, Sass, Webpack, npm",
+    summary:
+      "A JavaScript single-page application (SPA) showcasing the use of ES6 modules as well as Webpack.",
+    description: "",
+    repository: "https://github.com/michaelkolesidis/japanese-restaurant",
+    deployment: "http://michaelkolesidis.com/japanese-restaurant/",
+    video: "",
+  },
+  {
+    name: "Music Reviews",
+    image:
+      "https://raw.githubusercontent.com/michaelkolesidis/music-reviews/main/images/screenshot.png",
+    technologies: "TypeScript, npm",
+    summary:
+      "A (basic) music reviews web app made with and demonstrating the use of TypeScript.",
+    description: "",
+    repository: "https://github.com/michaelkolesidis/music-reviews",
+    deployment: "https://music-reviews.netlify.app/",
+    video: "",
+  },
+  {
     name: "Tic-Tac-Toe",
     image:
       "https://raw.githubusercontent.com/michaelkolesidis/tic-tac-toe/main/tic-tac-toe-screenshot.png",
-    technologies: "JavaScript",
+    technologies: "JavaScript, CSS",
     summary:
       "The popular Tic-tac-toe game, implemented with vanilla JavaScript.",
     description: "",
