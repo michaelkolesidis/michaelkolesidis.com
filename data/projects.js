@@ -85,6 +85,17 @@ let projectList = [
     video: "",
   },
   {
+    name: "3D Teddy Bear",
+    image:
+      "https://github.com/michaelkolesidis/3d-teddy-bear/raw/main/assets/teddy-02.gif",
+    technologies: "p5.js, JavaScript",
+    summary: "A rotating 3D Teddy Bear animation",
+    description: "",
+    repository: "https://github.com/michaelkolesidis/3d-teddy-bear",
+    deployment: "https://3d-teddy-bear.netlify.app/",
+    video: "",
+  },
+  {
     name: "Landmarks",
     image:
       "https://raw.githubusercontent.com/michaelkolesidis/react-landmarks/main/images/screenshot.png",
@@ -105,17 +116,6 @@ let projectList = [
     description: "",
     repository: "https://github.com/michaelkolesidis/sports-app-pwa",
     deployment: "https://sports-app-pwa.netlify.app/",
-    video: "",
-  },
-  {
-    name: "3D Teddy Bear",
-    image:
-      "https://github.com/michaelkolesidis/3d-teddy-bear/raw/main/assets/teddy-02.gif",
-    technologies: "p5.js, JavaScript",
-    summary: "A rotating 3D Teddy Bear animation",
-    description: "",
-    repository: "https://github.com/michaelkolesidis/3d-teddy-bear",
-    deployment: "https://3d-teddy-bear.netlify.app/",
     video: "",
   },
   {
