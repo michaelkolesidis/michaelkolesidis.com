@@ -9,7 +9,7 @@ export default function about() {
   about.appendChild(title);
 
   let sentences = [
-    "Haven't you seen/read enough already?<br>No? OK, I'll tell you a bit more about me.",
+    "Haven't you seen/read enough already? No? OK, I'll tell you a bit more about me.",
     "I have lived, studied and worked in Greece (Thessaloniki), Spain (Barcelona) and the UK (Brighton).",
     "I speak Greek, English, Spanish, and a bit of (actually almost nothing nowadays) German.",
     "I love working with p5.js, JavaScript, React, and Sass.",
