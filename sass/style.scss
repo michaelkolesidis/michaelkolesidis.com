@@ -189,6 +189,15 @@ section {
   }
 }
 
+/* About */
+#about {
+  @extend #contact;
+  p {
+    margin-bottom: 3rem;
+    max-width: 40ch;
+  }
+}
+
 /* FOOTER */
 footer {
   height: 10vh;

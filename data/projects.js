@@ -32,7 +32,7 @@ let projectList = [
     name: "Perlin Landscape",
     image:
       "https://github.com/michaelkolesidis/perlin-landscape/blob/main/assets/perlin-landscape.gif?raw=true",
-    technologies: "p5.js, JavaScript",
+    technologies: "p5.js, CCapture.js, JavaScript",
     summary: "Landscape created dynamically using Perlin noise.",
     description: "",
     repository: "https://github.com/michaelkolesidis/perlin-landscape",
@@ -42,7 +42,7 @@ let projectList = [
   {
     name: "Fractal Mountain",
     image: "https://github.com/michaelkolesidis/fractal-mountain/blob/main/assets/fractal-mountain.gif?raw=true",
-    technologies: "p5.js, JavaScript",
+    technologies: "p5.js, CCapture.js, JavaScript",
     summary: "A single triangle transforms into a mountain.",
     description: "",
     repository: "https://github.com/michaelkolesidis/fractal-mountain",
