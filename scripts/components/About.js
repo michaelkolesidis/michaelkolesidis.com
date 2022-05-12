@@ -18,8 +18,8 @@ export default function about() {
     "I use Linux (Ubuntu) as my daily drive, Windows 11 (for Adobe) and my good ol' MacBook when I'm not at home.",
     "I've been  to many countries.",
     "I don't drink coffee or tea.",
-    'I\'ve written this "About Me" section while procrastinating.',
-    "Time to get back to work...",
+    "I hope that's enough for now!",
+    
   ];
 
   for (let i = 0; i < sentences.length; i++) {
