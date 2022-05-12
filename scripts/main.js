@@ -9,8 +9,6 @@ import projects from "./components/Projects.js";
 import about from "./components/About.js";
 import footer from "./components/Footer.js";
 
-console.log(innerWidth);
-
 // Components
 header();
 ticker();

@@ -5,7 +5,7 @@ export default function about() {
   const about = document.getElementById("about");
 
   let title = document.createElement("h1");
-  title.innerText = `ABOUT ME`;
+  title.innerText = "ABOUT ME";
   about.appendChild(title);
 
   let sentences = [
