@@ -129,9 +129,6 @@ section {
 
   a {
     @extend p;
-    img {
-      height: 1.9rem;
-    }
   }
 
   a:hover {
@@ -162,6 +159,7 @@ section {
 .project-title {
   // border-bottom: 1px solid #fff;
   text-shadow: 1px 1px rgb(255, 255, 255);
+  transition: transform 2s ease, filter 10s ease;
 }
 
 .technologies {

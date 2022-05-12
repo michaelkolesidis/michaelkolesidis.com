@@ -24,11 +24,17 @@ export default function projects() {
 
     proj.classList.add("project-card");
 
-    // Project Image
+    // Project Image + Link
+    let imageLink = document.createElement("a");
+    imageLink.href = `${project.deployment}`;
+    imageLink.target = "_blank";
+
     let projectImage = document.createElement("img");
     projectImage.src = `${project.image}`;
     projectImage.classList.add("project-image");
-    proj.appendChild(projectImage);
+
+    imageLink.appendChild(projectImage);
+    proj.appendChild(imageLink);
 
     // Title
     let title = document.createElement("a");
