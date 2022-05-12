@@ -74,6 +74,16 @@ let projectList = [
     video: "",
   },
   {
+    name: "Scribble Text",
+    image: "https://github.com/michaelkolesidis/scribble-text/blob/main/assets/scribble-text.gif?raw=true",
+    technologies: "p5.js, JavaScript",
+    summary: "Text gradually appears whilte scribbling.",
+    description: "",
+    repository: "https://github.com/michaelkolesidis/scribble-text",
+    deployment: "https://scribble-text.netlify.app/",
+    video: "",
+  },
+  {
     name: "3D Cube",
     image:
       "https://raw.githubusercontent.com/michaelkolesidis/3d-cube/main/screenshots/demo-01.gif",
