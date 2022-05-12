@@ -75,6 +75,7 @@ h1 {
 #menu-button {
   position: fixed;
   right: 0.5rem;
+  z-index: 1;
   cursor: pointer;
 }
 
