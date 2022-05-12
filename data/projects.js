@@ -147,7 +147,7 @@ let projectList = [
     summary: "The classic Pong game recreated from scratch.",
     description: "",
     repository: "https://github.com/michaelkolesidis/pong-processing",
-    deployment: "https://tic-tac-toe-michael.netlify.app/",
+    deployment: "https://github.com/michaelkolesidis/pong-processing",
     video: "",
   },
   {
