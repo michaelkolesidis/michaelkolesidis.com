@@ -69,7 +69,7 @@ export default function projects() {
     projectsContainer.appendChild(proj);
   }
 
-  // let more = document.createElement("p1");
-  // more.innerText = `My portfolio gets updated on a daily basis. Check back soon!`;
-  // projects.appendChild(more);
+  let more = document.createElement("p");
+  more.innerText = `My portfolio gets updated on a daily basis. Check back soon!`;
+  projects.appendChild(more);
 }
