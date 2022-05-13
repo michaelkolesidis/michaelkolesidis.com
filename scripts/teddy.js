@@ -19,7 +19,7 @@ let ted = (sketch) => {
       sketch.WEBGL
     );
 
-    backgroundColor = sketch.color(0, 0, 0);
+    backgroundColor = sketch.color(10, 10, 10);
   };
 
   sketch.draw = () => {

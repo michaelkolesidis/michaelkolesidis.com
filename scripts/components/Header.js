@@ -22,7 +22,7 @@ export default function header() {
   // Menu button
   let menuButton = document.createElement("h1");
   menuButton.setAttribute("id", "menu-button");
-  menuButton.innerText = `MENU`;
+  menuButton.innerText = ` MENU`;
 
-  header.appendChild(menuButton);
+  // header.appendChild(menuButton);
 }

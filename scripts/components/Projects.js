@@ -78,6 +78,6 @@ export default function projects() {
 
   let more = document.createElement("p");
   more.setAttribute("id", "more")
-  more.innerText = `The list comprises both bits that have been included to final products and personal side projects.It gets updated regularly with new material. Check back soon!`;
+  more.innerText = `The list comprises both bits that have been included to final products and personal side projects. It gets updated regularly with new material. Check back soon!`;
   projects.appendChild(more);
 }
