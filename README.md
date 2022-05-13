@@ -1,4 +1,10 @@
-This is my personal web page. CURRENTLY UNDER CONSTRUCTION
+This is my personal web page and it's currently under construction. 
+
+## Concept
+
+I aimed at a billboardesque aesthetic, with some elements of printing publication design (fashion magazine covers etc.), plus a hint of a 90's TV / 90's MTV aesthetic. It's still a work in progress and new features will be added on a regular basis.
+
+
 
 ## Technologies Used
 
@@ -15,14 +21,6 @@ This is my personal web page. CURRENTLY UNDER CONSTRUCTION
 
 ## Screenshot
 <img src="./assets/screenshot-06.png" width="500px">
-
-
-
-## License
-
-Copyright (c) 2022 Michael Kolesidis<br>
-Licensed under the [GNU General Public License v3.0](https://github.com/michaelkolesidis/webproject-script/blob/main/LICENSE).
-
 
 
 [//]: # (Free Software)
