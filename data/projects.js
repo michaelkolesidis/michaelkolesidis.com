@@ -15,6 +15,103 @@ let projectList = [
     deployment: "https://javascript-software-synthesizer.netlify.app/",
     video: "",
   },
+
+  {
+    name: "Particircle",
+    image:
+      "https://github.com/michaelkolesidis/particircle/blob/main/assets/particircle.gif?raw=true",
+    technologies: "p5.js, JavaScript",
+    summary: "A circle of particles.",
+    description: "",
+    repository: "https://github.com/michaelkolesidis/particircle",
+    deployment: "https://particircle.netlify.app/",
+    video: "",
+  },
+
+  {
+    name: "Scribble Text",
+    image:
+      "https://github.com/michaelkolesidis/scribble-text/blob/main/assets/scribble-text-01.gif?raw=true",
+    technologies: "p5.js, JavaScript",
+    summary: "Text gradually appears whilte scribbling.",
+    description: "",
+    repository: "https://github.com/michaelkolesidis/scribble-text",
+    deployment: "https://scribble-text.netlify.app/",
+    video: "",
+  },
+
+  {
+    name: "Intersecting Circles",
+    image:
+      "https://github.com/michaelkolesidis/intersecting-circles/blob/main/assets/intersecting-circles.gif?raw=true",
+    technologies: "p5.js, JavaScript",
+    summary: "Colorful explosions occur when two circles are interescting.",
+    description: "",
+    repository: "https://github.com/michaelkolesidis/intersecting-circles",
+    deployment: "https://intersecting-circles.netlify.app/",
+    video: "",
+  },
+
+  {
+    name: "Perlin Landscape",
+    image:
+      "https://github.com/michaelkolesidis/perlin-landscape/blob/main/assets/perlin-landscape-01.gif?raw=true",
+    technologies: "p5.js, CCapture.js, JavaScript",
+    summary: "Landscape created dynamically using Perlin noise.",
+    description: "",
+    repository: "https://github.com/michaelkolesidis/perlin-landscape",
+    deployment: "https://perlin-landscape.netlify.app/",
+    video: "",
+  },
+
+  {
+    name: "Fractal Mountain",
+    image:
+      "https://github.com/michaelkolesidis/fractal-mountain/blob/main/assets/fractal-mountain-01.gif?raw=true",
+    technologies: "p5.js, CCapture.js, JavaScript",
+    summary: "A single triangle transforms into a mountain.",
+    description: "",
+    repository: "https://github.com/michaelkolesidis/fractal-mountain",
+    deployment: "https://fractal-mountain.netlify.app/",
+    video: "",
+  },
+
+  {
+    name: "Circle Random Lines",
+    image:
+      "https://raw.githubusercontent.com/michaelkolesidis/circle-random-lines/main/screenshots/circle-random-lines.gif",
+    technologies: "p5.js, JavaScript",
+    summary: "A circle created dynamically by random lines",
+    description: "",
+    repository: "https://github.com/michaelkolesidis/circle-random-lines",
+    deployment: "https://circle-random-lines.netlify.app/",
+    video: "",
+  },
+
+  {
+    name: "3D Cube",
+    image:
+      "https://raw.githubusercontent.com/michaelkolesidis/3d-cube/main/screenshots/3d-cube.gif",
+    technologies: "p5.js, JavaScript",
+    summary: "A 3D cube rotating according to mouse movement.",
+    description: "",
+    repository: "https://github.com/michaelkolesidis/3d-cube",
+    deployment: "https://3d-cubejs.netlify.app/",
+    video: "",
+  },
+
+  {
+    name: "Pong",
+    image:
+      "https://raw.githubusercontent.com/michaelkolesidis/pong-processing/main/pong.gif",
+    technologies: "Processing, Java",
+    summary: "The classic Pong game recreated from scratch.",
+    description: "",
+    repository: "https://github.com/michaelkolesidis/pong-processing",
+    deployment: "https://github.com/michaelkolesidis/pong-processing",
+    video: "",
+  },
+
   {
     name: "Minesweeper Emoji",
     image:
@@ -28,39 +125,7 @@ let projectList = [
     deployment: "https://minesweeper-emoji.netlify.app/",
     video: "",
   },
-  {
-    name: "Particircle",
-    image:
-      "https://github.com/michaelkolesidis/particircle/blob/main/assets/particircle.gif?raw=true",
-    technologies: "p5.js, JavaScript",
-    summary: "A circle of particles.",
-    description: "",
-    repository: "https://github.com/michaelkolesidis/particircle",
-    deployment: "https://particircle.netlify.app/",
-    video: "",
-  },
-  {
-    name: "Scribble Text",
-    image:
-      "https://github.com/michaelkolesidis/scribble-text/blob/main/assets/scribble-text-01.gif?raw=true",
-    technologies: "p5.js, JavaScript",
-    summary: "Text gradually appears whilte scribbling.",
-    description: "",
-    repository: "https://github.com/michaelkolesidis/scribble-text",
-    deployment: "https://scribble-text.netlify.app/",
-    video: "",
-  },
-  {
-    name: "3D Cube",
-    image:
-      "https://raw.githubusercontent.com/michaelkolesidis/3d-cube/main/screenshots/3d-cube.gif",
-    technologies: "p5.js, JavaScript",
-    summary: "A 3D cube rotating according to mouse movement.",
-    description: "",
-    repository: "https://github.com/michaelkolesidis/3d-cube",
-    deployment: "https://3d-cubejs.netlify.app/",
-    video: "",
-  },
+
   {
     name: "3D Teddy Bear",
     image:
@@ -70,60 +135,6 @@ let projectList = [
     description: "",
     repository: "https://github.com/michaelkolesidis/3d-teddy-bear",
     deployment: "https://3d-teddy-bear.netlify.app/",
-    video: "",
-  },
-  {
-    name: "Perlin Landscape",
-    image:
-      "https://github.com/michaelkolesidis/perlin-landscape/blob/main/assets/perlin-landscape-01.gif?raw=true",
-    technologies: "p5.js, CCapture.js, JavaScript",
-    summary: "Landscape created dynamically using Perlin noise.",
-    description: "",
-    repository: "https://github.com/michaelkolesidis/perlin-landscape",
-    deployment: "https://perlin-landscape.netlify.app/",
-    video: "",
-  },
-  {
-    name: "Fractal Mountain",
-    image:
-      "https://github.com/michaelkolesidis/fractal-mountain/blob/main/assets/fractal-mountain-01.gif?raw=true",
-    technologies: "p5.js, CCapture.js, JavaScript",
-    summary: "A single triangle transforms into a mountain.",
-    description: "",
-    repository: "https://github.com/michaelkolesidis/fractal-mountain",
-    deployment: "https://fractal-mountain.netlify.app/",
-    video: "",
-  },
-  {
-    name: "Intersecting Circles",
-    image: "https://github.com/michaelkolesidis/intersecting-circles/blob/main/assets/intersecting-circles.gif?raw=true",
-    technologies: "p5.js, JavaScript",
-    summary: "Colorful explosions occur when two circles are interescting.",
-    description: "",
-    repository: "https://github.com/michaelkolesidis/intersecting-circles",
-    deployment: "https://intersecting-circles.netlify.app/",
-    video: "",
-  },
-  {
-    name: "Pong",
-    image:
-      "https://raw.githubusercontent.com/michaelkolesidis/pong-processing/main/pong.gif",
-    technologies: "Processing, Java",
-    summary: "The classic Pong game recreated from scratch.",
-    description: "",
-    repository: "https://github.com/michaelkolesidis/pong-processing",
-    deployment: "https://github.com/michaelkolesidis/pong-processing",
-    video: "",
-  },
-  {
-    name: "Circle Random Lines",
-    image:
-      "https://raw.githubusercontent.com/michaelkolesidis/circle-random-lines/main/screenshots/circle-random-lines.gif",
-    technologies: "p5.js, JavaScript",
-    summary: "A circle created dynamically by random lines",
-    description: "",
-    repository: "https://github.com/michaelkolesidis/circle-random-lines",
-    deployment: "https://circle-random-lines.netlify.app/",
     video: "",
   },
 
@@ -139,6 +150,7 @@ let projectList = [
     deployment: "https://sports-app-pwa.netlify.app/",
     video: "",
   },
+
   {
     name: "Electronic Drum Kit",
     image:
@@ -150,17 +162,7 @@ let projectList = [
     deployment: "https://electronic-drumkit-js.netlify.app/",
     video: "",
   },
-  {
-    name: "Landmarks",
-    image:
-      "https://raw.githubusercontent.com/michaelkolesidis/react-landmarks/main/images/screenshot.png",
-    technologies: "React, JavaScript, Webpack, npm",
-    summary: "A React web application showing landmarks around the globe.",
-    description: "",
-    repository: "https://github.com/michaelkolesidis/react-landmarks",
-    deployment: "https://react-landmarks.netlify.app/",
-    video: "",
-  },
+
   {
     name: "Japanese Restaurant",
     image:
@@ -173,6 +175,19 @@ let projectList = [
     deployment: "http://michaelkolesidis.com/japanese-restaurant/",
     video: "",
   },
+
+  {
+    name: "Landmarks",
+    image:
+      "https://raw.githubusercontent.com/michaelkolesidis/react-landmarks/main/images/screenshot.png",
+    technologies: "React, JavaScript, Webpack, npm",
+    summary: "A React web application showing landmarks around the globe.",
+    description: "",
+    repository: "https://github.com/michaelkolesidis/react-landmarks",
+    deployment: "https://react-landmarks.netlify.app/",
+    video: "",
+  },
+
   {
     name: "Music Reviews",
     image:
@@ -185,6 +200,7 @@ let projectList = [
     deployment: "https://music-reviews.netlify.app/",
     video: "",
   },
+
   {
     name: "Tic-Tac-Toe",
     image:
@@ -210,6 +226,7 @@ let projectList = [
     deployment: "https://project-olympics.netlify.app/",
     video: "",
   },
+
   {
     name: "CSS 3D",
     image:
@@ -221,6 +238,7 @@ let projectList = [
     deployment: "https://css-3d.netlify.app/",
     video: "",
   },
+
   {
     name: "Move Square",
     image:
