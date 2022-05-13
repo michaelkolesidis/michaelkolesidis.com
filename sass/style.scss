@@ -360,7 +360,7 @@ $duration: 26s;
   }
 }
 
-// /* MEDIA QUERRIES */
+/* MEDIA QUERRIES */
 // @media only screen and (max-width: 1700px) {
 //   #name,
 //   #menu-button {
@@ -398,4 +398,15 @@ $duration: 26s;
   #projects-container {
     grid-template-columns: repeat(4, 1fr);
   }
+}
+
+/* SCROLLBAR */
+body::-webkit-scrollbar {
+  width: 1em;
+  background: rgba(10, 10, 10, 0);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(10, 10, 10);
+  outline: 2px solid $main-color;
 }
