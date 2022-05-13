@@ -86,7 +86,7 @@ let projectList = [
   {
     name: "Fractal Mountain",
     image:
-      "https://github.com/michaelkolesidis/fractal-mountain/blob/main/assets/fractal-mountain.gif?raw=true",
+      "https://github.com/michaelkolesidis/fractal-mountain/blob/main/assets/fractal-mountain-01.gif?raw=true",
     technologies: "p5.js, CCapture.js, JavaScript",
     summary: "A single triangle transforms into a mountain.",
     description: "",
