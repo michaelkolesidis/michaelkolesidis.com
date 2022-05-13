@@ -53,7 +53,7 @@ let projectList = [
   {
     name: "3D Cube",
     image:
-      "https://raw.githubusercontent.com/michaelkolesidis/3d-cube/main/screenshots/demo-01.gif",
+      "https://raw.githubusercontent.com/michaelkolesidis/3d-cube/main/screenshots/3d-cube.gif",
     technologies: "p5.js, JavaScript",
     summary: "A 3D cube rotating according to mouse movement.",
     description: "",
