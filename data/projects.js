@@ -118,7 +118,7 @@ let projectList = [
   {
     name: "Circle Random Lines",
     image:
-      "https://raw.githubusercontent.com/michaelkolesidis/circle-random-lines/main/screenshots/demo.gif",
+      "https://raw.githubusercontent.com/michaelkolesidis/circle-random-lines/main/screenshots/circle-random-lines.gif",
     technologies: "p5.js, JavaScript",
     summary: "A circle created dynamically by random lines",
     description: "",
