@@ -31,6 +31,7 @@ export default function projects() {
 
     let projectImage = document.createElement("img");
     projectImage.src = `${project.image}`;
+    projectImage.alt = `${project.name}`;
     projectImage.classList.add("project-image");
 
     imageLink.appendChild(projectImage);
