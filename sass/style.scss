@@ -17,6 +17,7 @@
 $hfs-l: 7vw;
 $hfs-m: 6.5vw;
 $hfs-s: 6vw;
+$hfs-s: 5vw;
 /* colors */
 $main-color: #fff;
 
@@ -55,6 +56,11 @@ h1 {
   font-weight: 500;
   color: #fff;
   mix-blend-mode: difference;
+}
+
+h2 {
+  font-size: $hfs-s;
+  font-weight: 500;
 }
 
 #large-text {
@@ -376,13 +382,15 @@ $duration: 30s;
 
 /* MEDIA QUERRIES */
 @media only screen and (max-width: 1700px) {
-  h1 {
+  #name,
+  #menu-button {
     font-size: $hfs-m;
   }
 }
 
 @media only screen and (max-width: 1300px) {
-  h1 {
+  #name,
+  #menu-button {
     font-size: $hfs-s;
   }
 }

@@ -10,7 +10,7 @@ export default function projects() {
   const projects = document.getElementById("projects");
 
   // Project Title
-  let projectsTitle = document.createElement("h1");
+  let projectsTitle = document.createElement("h2");
   projectsTitle.innerText = `PORTFOLIO`;
   projects.appendChild(projectsTitle);
 
