@@ -42,7 +42,7 @@ let projectList = [
   {
     name: "Scribble Text",
     image:
-      "https://github.com/michaelkolesidis/scribble-text/blob/main/assets/scribble-text.gif?raw=true",
+      "https://github.com/michaelkolesidis/scribble-text/blob/main/assets/scribble-text-01.gif?raw=true",
     technologies: "p5.js, JavaScript",
     summary: "Text gradually appears whilte scribbling.",
     description: "",
