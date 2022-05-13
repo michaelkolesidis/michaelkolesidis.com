@@ -75,7 +75,7 @@ let projectList = [
   {
     name: "Perlin Landscape",
     image:
-      "https://github.com/michaelkolesidis/perlin-landscape/blob/main/assets/perlin-landscape.gif?raw=true",
+      "https://github.com/michaelkolesidis/perlin-landscape/blob/main/assets/perlin-landscape-01.gif?raw=true",
     technologies: "p5.js, CCapture.js, JavaScript",
     summary: "Landscape created dynamically using Perlin noise.",
     description: "",
