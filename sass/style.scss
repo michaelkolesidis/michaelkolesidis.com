@@ -403,10 +403,10 @@ $duration: 26s;
 /* SCROLLBAR */
 body::-webkit-scrollbar {
   width: 1em;
-  background: rgba(10, 10, 10, 0);
+  background: rgb(17, 16, 16);
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: rgb(10, 10, 10);
-  outline: 2px solid $main-color;
+  background-color: rgb(17, 16, 16);
+  outline: 1px solid $main-color;
 }
