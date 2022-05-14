@@ -1,6 +1,3 @@
-// © 2022 Michael Kolesidis. All rights reserved.
-// michael.kolesidis@gmail.com
-
 @font-face {
   font-family: "Beatrice";
   font-display: block;
@@ -19,17 +16,15 @@ $hfs-m: 6.5vw;
 $hfs-s: 6vw;
 $hfs-xs: 5vw;
 /* colors */
-$main-color: #fff;
-$black: rgb(10, 10, 10);
-
-$project-borders: 0px;
+$main-color: #f8f8f8;
+$black: #0a0a0a;
 
 /* RESET */
 * {
-  color: $main-color;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  color: $main-color;
 }
 
 /* GENERAL */
@@ -42,11 +37,8 @@ html {
   -webkit-user-select: none;
   -moz-user-select: none;
   user-select: none;
-  cursor: url("../assets/windows95-cursor.png"), auto;
-}
-
-body {
   overflow-x: hidden;
+  cursor: url("../assets/windows95-cursor.png"), auto;
 }
 
 a {
@@ -56,7 +48,6 @@ a {
 h1 {
   font-size: $hfs-l;
   font-weight: 500;
-  color: #fff;
   mix-blend-mode: difference;
 }
 
@@ -122,6 +113,35 @@ section {
   margin: 0 0 6rem 3rem;
 }
 
+/* WAVY SECTION TITLES */
+.waviy {
+  font-size: $hfs-s;
+}
+
+.waviy span {
+  position: relative;
+  display: inline-block;
+  color: #fff;
+  text-transform: uppercase;
+  margin: -0.2rem;
+}
+
+.waviy:hover > span {
+  animation: waviy 1s infinite;
+  animation-delay: calc(0.1s * var(--i));
+}
+
+@keyframes waviy {
+  0%,
+  40%,
+  100% {
+    transform: translateY(0);
+  }
+  20% {
+    transform: translateY(-20px);
+  }
+}
+
 /* PROJECTS */
 #projects-container {
   display: grid;
@@ -143,7 +163,7 @@ section {
 
 .project-card {
   margin: 0 0 2rem 0;
-  border: $project-borders solid #fff;
+
   max-width: 30rem;
   padding: 1rem;
 }
@@ -162,19 +182,16 @@ section {
 }
 
 .project-title {
-  // border-bottom: 1px solid #fff;
   text-shadow: 1px 1px rgb(255, 255, 255);
   transition: transform 2s ease, filter 10s ease;
 }
 
 .technologies {
   margin-top: 0.5rem;
-  border-top: $project-borders solid #fff;
 }
 
 .repo-link {
   margin-top: 0.5rem;
-  border-top: $project-borders solid #fff;
   font-size: 1.2rem;
 }
 
@@ -242,7 +259,6 @@ footer {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  // width: 90vw;
   animation: flash 0.5s infinite;
 }
 
@@ -380,20 +396,6 @@ $duration: 26s;
 }
 
 /* MEDIA QUERRIES */
-// @media only screen and (max-width: 1700px) {
-//   #name,
-//   #menu-button {
-//     font-size: $hfs-m;
-//   }
-// }
-
-// @media only screen and (max-width: 1300px) {
-//   #name,
-//   #menu-button {
-//     font-size: $hfs-s;
-//   }
-// }
-
 @media only screen and (max-width: 1000px) {
   #projects-container {
     display: flex;
@@ -416,33 +418,5 @@ $duration: 26s;
 @media only screen and (min-width: 1880px) {
   #projects-container {
     grid-template-columns: repeat(4, 1fr);
-  }
-}
-
-.waviy {
-  font-size: $hfs-s;
-}
-
-.waviy span {
-  position: relative;
-  display: inline-block;
-  color: #fff;
-  text-transform: uppercase;
-  margin: -0.2rem;
-}
-
-.waviy:hover > span {
-  animation: waviy 1s infinite;
-  animation-delay: calc(0.1s * var(--i));
-}
-
-@keyframes waviy {
-  0%,
-  40%,
-  100% {
-    transform: translateY(0);
-  }
-  20% {
-    transform: translateY(-20px);
   }
 }
