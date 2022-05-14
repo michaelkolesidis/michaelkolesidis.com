@@ -1,10 +1,7 @@
-# michaelkolesidis.com
-
-This is my personal web page and it's currently under construction. 
-
-## Concept
-
-I aimed at a billboardesque aesthetic, with some elements of printing publication design (fashion magazine covers etc.), plus a hint of a 90's TV / 90's MTV aesthetic. I like to think of it as an interactive billboard broadcasted on an old CRT television set. It's still a work in progress and new features will be added on a regular basis.
+<div align="center">
+  <img src="./assets/screenshot-07.png" width="600px">
+  <h3>This is my personal web page and it's currently under construction.</h3>
+</div>
 
 
 
@@ -21,8 +18,11 @@ I aimed at a billboardesque aesthetic, with some elements of printing publicatio
 <a href="https://en.wikipedia.org/wiki/HTML5"><img src="https://github.com/michaelkolesidis/tech-icons/blob/main/icons/html5/html5-plain.svg" height="50px" /></a>
 
 
-## Screenshot
-<img src="./assets/screenshot-07.png" width="700px">
+
+## Concept
+
+I aimed at a billboardesque aesthetic, with some elements of printing publication design (fashion magazine covers etc.), plus a hint of a 90's TV / 90's MTV aesthetic. I like to think of it as an interactive billboard broadcasted on an old CRT television set. It's still a work in progress and new features will be added on a regular basis.
+
 
 
 [//]: # (Free Software)
