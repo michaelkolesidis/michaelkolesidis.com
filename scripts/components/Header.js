@@ -9,10 +9,7 @@ export default function header() {
   name.setAttribute("id", "name");
 
   let nameLink = document.createElement("a");
-
-  let nameText = document.createTextNode("MICHAEL KOLESIDIS");
-  nameLink.appendChild(nameText);
-
+  nameLink.innerHTML = `MICHAEL <span id="k-letter">K</span>OLESIDIS`
   nameLink.title = "Michael Kolesidis";
   nameLink.href = "https://michaelkolesidis.com";
 
@@ -23,6 +20,5 @@ export default function header() {
   let menuButton = document.createElement("h1");
   menuButton.setAttribute("id", "menu-button");
   menuButton.innerText = ` MENU`;
-
   // header.appendChild(menuButton);
 }

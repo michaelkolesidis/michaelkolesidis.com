@@ -74,10 +74,18 @@ h2 {
 
 /* HEADER */
 #name {
-  // top: 0.25rem;
   position: fixed;
   left: 0.5rem;
   z-index: 1;
+}
+
+#k-letter {
+  display: inline-block;
+  transition: transform 2s ease;
+}
+
+#name:hover #k-letter {
+  transform: scaleX(-1);
 }
 
 #menu-button {
@@ -411,9 +419,6 @@ $duration: 26s;
   }
 }
 
-
-
-
 .waviy {
   font-size: $hfs-s;
 }
@@ -428,14 +433,16 @@ $duration: 26s;
 
 .waviy:hover > span {
   animation: waviy 1s infinite;
-  animation-delay: calc(.1s * var(--i));
+  animation-delay: calc(0.1s * var(--i));
 }
 
 @keyframes waviy {
-  0%,40%,100% {
-    transform: translateY(0)
+  0%,
+  40%,
+  100% {
+    transform: translateY(0);
   }
   20% {
-    transform: translateY(-20px)
+    transform: translateY(-20px);
   }
 }
