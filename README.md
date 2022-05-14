@@ -1,6 +1,6 @@
 <div align="center">
   <img src="./assets/screenshot-07.png" width="600px">
-  <h3>This is my personal web page and it's currently under construction.</h3>
+  <h4>This is my personal web page and it's currently under construction.</h4>
 </div>
 
 
