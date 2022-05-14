@@ -30,7 +30,7 @@ export default function contact() {
   let cvText = document.createTextNode("CV");
   cv.appendChild(cvText);
   cv.title = "CV";
-  cv.href = "./assets/michael-kolesidis-cv-3-1.pdf";
+  cv.href = "./assets/cv/michael-kolesidis-cv-3-1.pdf";
   cv.target = "_blank";
   contact.appendChild(cv);
 

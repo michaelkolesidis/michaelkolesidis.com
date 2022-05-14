@@ -9,7 +9,7 @@ let ted = (sketch) => {
 
   sketch.preload = () => {
     // Load model with normalise parameter set to true will affect translate
-    teddy = sketch.loadModel("./assets/teddy.obj", false);
+    teddy = sketch.loadModel("./assets/3d-models/teddy.obj", false);
   };
 
   sketch.setup = () => {
