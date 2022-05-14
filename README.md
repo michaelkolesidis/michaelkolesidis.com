@@ -22,7 +22,7 @@ I aimed at a billboardesque aesthetic, with some elements of printing publicatio
 
 
 ## Screenshot
-<img src="./assets/screenshot-06.png" width="500px">
+<img src="./assets/screenshot-07.png" width="500px">
 
 
 [//]: # (Free Software)
