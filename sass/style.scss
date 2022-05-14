@@ -29,6 +29,7 @@ $project-borders: 0px;
   color: $main-color;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 /* GENERAL */
@@ -253,6 +254,17 @@ footer {
   pointer-events: none; // So that elements below grain are clickable
 }
 
+/* SCROLLBAR */
+body::-webkit-scrollbar {
+  width: 1em;
+  background: rgb(17, 16, 16);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(17, 16, 16);
+  outline: 1px solid $main-color;
+}
+
 /* UNDER CONSTRUCTION TICKER */
 $duration: 26s;
 
@@ -400,13 +412,3 @@ $duration: 26s;
   }
 }
 
-/* SCROLLBAR */
-body::-webkit-scrollbar {
-  width: 1em;
-  background: rgb(17, 16, 16);
-}
-
-body::-webkit-scrollbar-thumb {
-  background-color: rgb(17, 16, 16);
-  outline: 1px solid $main-color;
-}
