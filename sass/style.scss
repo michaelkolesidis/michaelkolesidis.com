@@ -70,12 +70,12 @@ h2 {
   z-index: 1;
 }
 
-#k-letter {
+#title-letter {
   display: inline-block;
   transition: transform 2s ease;
 }
 
-#name:hover #k-letter {
+#name:hover #title-letter {
   transform: scaleX(-1);
 }
 

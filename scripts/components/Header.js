@@ -9,7 +9,7 @@ export default function header() {
   name.setAttribute("id", "name");
 
   let nameLink = document.createElement("a");
-  nameLink.innerHTML = `MICHAEL <span id="k-letter">K</span>OLESIDIS`
+  nameLink.innerHTML = `MICHAEL Κ<span id="title-letter">Ο</span>LESIDIS`
   nameLink.title = "Michael Kolesidis";
   nameLink.href = "https://michaelkolesidis.com";
 
