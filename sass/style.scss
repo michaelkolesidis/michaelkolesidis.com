@@ -411,3 +411,31 @@ $duration: 26s;
   }
 }
 
+
+
+
+.waviy {
+  font-size: $hfs-s;
+}
+
+.waviy span {
+  position: relative;
+  display: inline-block;
+  color: #fff;
+  text-transform: uppercase;
+  margin: -0.2rem;
+}
+
+.waviy:hover > span {
+  animation: waviy 1s infinite;
+  animation-delay: calc(.1s * var(--i));
+}
+
+@keyframes waviy {
+  0%,40%,100% {
+    transform: translateY(0)
+  }
+  20% {
+    transform: translateY(-20px)
+  }
+}

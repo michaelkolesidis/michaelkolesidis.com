@@ -4,10 +4,21 @@
 export default function about() {
   const about = document.getElementById("about");
 
-  let title = document.createElement("h2");
-  title.innerText = "ABOUT ME";
-  about.appendChild(title);
+  // Title
+  let aboutTitle = document.createElement("div");
+  aboutTitle.classList.add("waviy");
+  aboutTitle.innerHTML = `   
+      <span style="--i:1">A</span>
+      <span style="--i:2">B</span>
+      <span style="--i:3">O</span>
+      <span style="--i:4">U</span>
+      <span style="--i:5">T</span>
+      <span style="--i:6">&nbsp;</span>
+      <span style="--i:7">M</span>
+      <span style="--i:8">E</span>`;
+  about.appendChild(aboutTitle);
 
+  // Sentences
   let sentences = [
     "Haven't you seen/read enough already? No? OK, I'll tell you a bit more about me.",
     "I have lived, studied and worked in Greece (Thessaloniki), Spain (Barcelona) and the UK (Brighton).",
@@ -19,7 +30,6 @@ export default function about() {
     "I've been  to many countries.",
     "I don't drink coffee or tea.",
     "I hope that's enough for now!",
-    
   ];
 
   for (let i = 0; i < sentences.length; i++) {

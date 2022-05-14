@@ -7,8 +7,18 @@ export default function projects() {
   const projects = document.getElementById("projects");
 
   // Project Title
-  let projectsTitle = document.createElement("h2");
-  projectsTitle.innerText = `PORTFOLIO`;
+  let projectsTitle = document.createElement("div");
+  projectsTitle.classList.add("waviy");
+  projectsTitle.innerHTML= `   
+      <span style="--i:1">P</span>
+      <span style="--i:2">O</span>
+      <span style="--i:3">R</span>
+      <span style="--i:4">T</span>
+      <span style="--i:5">F</span>
+      <span style="--i:6">O</span>
+      <span style="--i:7">L</span>
+      <span style="--i:8">I</span>
+      <span style="--i:9">O</span>`;
   projects.appendChild(projectsTitle);
 
   let projectsContainer = document.createElement("div");
