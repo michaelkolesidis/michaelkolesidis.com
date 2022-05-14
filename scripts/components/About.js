@@ -13,7 +13,7 @@ export default function about() {
     "I have lived, studied and worked in Greece (Thessaloniki), Spain (Barcelona) and the UK (Brighton).",
     "I speak Greek, English, Spanish, and a bit of (actually almost nothing nowadays) German.",
     "I love working with p5.js, JavaScript, React, and Sass.",
-    "I want to improve my knowledge on three.js, WebGL, and Blender.",
+    "I want to improve my knowledge of three.js, WebGL, and Blender.",
     "I write almost all my code on VSCode.",
     "I use Linux (Ubuntu) as my daily drive, Windows 11 (for Adobe) and my good ol' MacBook when I'm not at home.",
     "I've been  to many countries.",

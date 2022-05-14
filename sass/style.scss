@@ -121,7 +121,6 @@ section {
 
   h2 {
     @extend #large-text;
-    // font-weight: 600;
     margin-bottom: 0.2rem;
   }
 
@@ -143,7 +142,7 @@ section {
 
 .project-image {
   height: 20rem;
-  border: 10px solid rgb(255, 255, 255);
+  border: 7px solid rgb(255, 255, 255);
   transition: transform 2s ease, filter 10s ease;
 }
 

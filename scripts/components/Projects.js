@@ -3,9 +3,6 @@
 
 import projectList from "../../data/projects.js";
 
-// let proj = JSON.stringify(projectList);
-// console.log(proj);
-
 export default function projects() {
   const projects = document.getElementById("projects");
 
