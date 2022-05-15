@@ -10,8 +10,8 @@ import about from "./components/About.js";
 import footer from "./components/Footer.js";
 
 // Components
-header();
 ticker();
+header();
 intro();
 projects();
 contact();
