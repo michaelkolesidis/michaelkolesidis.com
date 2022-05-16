@@ -270,30 +270,3 @@ export default projectList;
 //   deployment: "",
 //   video: "",
 // },
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
