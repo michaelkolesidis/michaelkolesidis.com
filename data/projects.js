@@ -1,3 +1,6 @@
+// © 2022 Michael Kolesidis. All rights reserved.
+// michael.kolesidis@gmail.com
+
 let projectList = [
   {
     name: "JavaScript Software Synthesizer",
@@ -254,7 +257,8 @@ let projectList = [
 
 export default projectList;
 
-// EMPTY PROJECT
+// EMPTY PROJECT TEMPLATE
+
 // {
 //   name: "",
 //   image: "",
