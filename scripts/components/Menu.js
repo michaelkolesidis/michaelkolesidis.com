@@ -3,5 +3,6 @@
 
 export default function menu() {
 
+    // The Menu functionality will be implemented here
     
 }
