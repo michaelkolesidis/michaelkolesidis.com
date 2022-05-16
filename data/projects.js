@@ -257,6 +257,7 @@ let projectList = [
 
 export default projectList;
 
+
 // EMPTY PROJECT TEMPLATE
 
 // {
@@ -269,3 +270,30 @@ export default projectList;
 //   deployment: "",
 //   video: "",
 // },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
