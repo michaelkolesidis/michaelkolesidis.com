@@ -6,7 +6,7 @@ export default function contact() {
 
   // Contact Title
   let contactTitle = document.createElement("div");
-  contactTitle.classList.add("waviy");
+  contactTitle.classList.add("wavy");
   contactTitle.innerHTML = `   
       <span style="--i:1">C</span>
       <span style="--i:2">O</span>

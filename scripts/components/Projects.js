@@ -8,7 +8,7 @@ export default function projects() {
 
   // Project Title
   let projectsTitle = document.createElement("div");
-  projectsTitle.classList.add("waviy");
+  projectsTitle.classList.add("wavy");
   projectsTitle.innerHTML= `   
       <span style="--i:1">P</span>
       <span style="--i:2">O</span>

@@ -6,7 +6,7 @@ export default function about() {
 
   // Title
   let aboutTitle = document.createElement("div");
-  aboutTitle.classList.add("waviy");
+  aboutTitle.classList.add("wavy");
   aboutTitle.innerHTML = `   
       <span style="--i:1">A</span>
       <span style="--i:2">B</span>

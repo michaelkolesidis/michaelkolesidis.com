@@ -22,7 +22,6 @@ $black: #0a0a0a;
 /* RESET */
 * {
   margin: 0;
-  padding: 0;
   box-sizing: border-box;
   color: $main-color;
 }
@@ -80,13 +79,6 @@ h2 {
   transform: scaleX(-1);
 }
 
-#menu-button {
-  position: fixed;
-  right: 0.5rem;
-  z-index: 1;
-  cursor: pointer;
-}
-
 /* INTRO */
 #intro {
   display: flex;
@@ -115,12 +107,12 @@ section {
 }
 
 /* WAVY SECTION TITLES */
-.waviy {
+.wavy {
   font-size: $hfs-s;
-  max-width: fit-content; 
+  max-width: fit-content;
 }
 
-.waviy span {
+.wavy span {
   position: relative;
   display: inline-block;
   color: #fff;
@@ -128,12 +120,12 @@ section {
   margin: -0.2rem;
 }
 
-.waviy:hover > span {
-  animation: waviy 1s infinite;
+.wavy:hover > span {
+  animation: wavy 1s infinite;
   animation-delay: calc(0.1s * var(--i));
 }
 
-@keyframes waviy {
+@keyframes wavy {
   0%,
   40%,
   100% {
@@ -165,7 +157,6 @@ section {
 
 .project-card {
   margin: 0 0 2rem 0;
-
   max-width: 30rem;
   padding: 1rem;
 }
@@ -234,7 +225,6 @@ section {
 footer {
   height: 10vh;
   background: $main-color;
-
   display: flex;
   align-items: center;
 
@@ -299,7 +289,6 @@ $duration: 26s;
     transform: translate3d(0, 0, 0);
     visibility: visible;
   }
-
   100% {
     -webkit-transform: translate3d(-100%, 0, 0);
     transform: translate3d(-100%, 0, 0);
@@ -312,7 +301,6 @@ $duration: 26s;
     transform: translate3d(0, 0, 0);
     visibility: visible;
   }
-
   100% {
     -webkit-transform: translate3d(-100%, 0, 0);
     transform: translate3d(-100%, 0, 0);
@@ -377,7 +365,6 @@ $duration: 26s;
     white-space: nowrap;
     padding-right: 100%;
     box-sizing: content-box;
-
     -webkit-animation-iteration-count: infinite;
     animation-iteration-count: infinite;
     -webkit-animation-timing-function: linear;
@@ -389,7 +376,6 @@ $duration: 26s;
 
     &__item {
       display: inline-block;
-
       padding: 0;
       font-size: 0.875rem;
       color: #fff;
