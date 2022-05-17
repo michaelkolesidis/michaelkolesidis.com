@@ -1,8 +1,8 @@
 // © 2022 Michael Kolesidis. All rights reserved.
 // michael.kolesidis@gmail.com
 
-export default function index() {
-    document.body.innerHTML = /*html*/ `   
+export default function body() {
+  document.body.innerHTML = /*html*/ `   
 <div class="ticker-wrap"><div class="ticker"></div></div>
 <header id="header"></header>
 <main id="main">
@@ -17,5 +17,5 @@ export default function index() {
 </main>
 <footer id="footer"></footer>
 <div id="overlay"></div>
-`
+`;
 }

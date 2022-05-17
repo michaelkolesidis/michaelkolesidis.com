@@ -1,6 +1,10 @@
 // © 2022 Michael Kolesidis. All rights reserved.
 // michael.kolesidis@gmail.com
 
+// DEPRECATED
+// This is an older version of the Teddy in global mode. 
+// Kept for reference.
+
 let teddy;
 let teddyColor;
 let colored = false;
@@ -46,7 +50,7 @@ function draw() {
 }
 
 function colorize() {
-  teddyColor = color(random(40, 255), random(40, 255), random(40, 255));
+  teddyColor = color(random(45, 255), random(45, 255), random(45, 255));
   backgroundColor = color(random(40), random(40), random(40));
   colored = true;
 }

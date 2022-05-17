@@ -176,7 +176,12 @@ section {
 
 .project-title {
   text-shadow: 1px 1px rgb(255, 255, 255);
-  transition: transform 2s ease, filter 10s ease;
+  white-space: nowrap;
+  transition: all 2s ease;
+}
+
+.project-title:hover {
+  letter-spacing: 0.4rem;
 }
 
 .technologies {

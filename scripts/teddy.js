@@ -52,9 +52,9 @@ let ted = (sketch) => {
 
   sketch.colorize = () => {
     teddyColor = sketch.color(
-      sketch.random(40, 255),
-      sketch.random(40, 255),
-      sketch.random(40, 255)
+      sketch.random(45, 255),
+      sketch.random(45, 255),
+      sketch.random(45, 255)
     );
     backgroundColor = sketch.color(
       sketch.random(40),

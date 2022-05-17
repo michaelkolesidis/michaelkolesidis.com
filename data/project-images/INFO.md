@@ -1,0 +1,1 @@
+Add resized and optimized photos of projects here, to avoid having to load external large files.

@@ -9,7 +9,7 @@ export default function projects() {
   // Project Title
   let projectsTitle = document.createElement("div");
   projectsTitle.classList.add("wavy");
-  projectsTitle.innerHTML= `   
+  projectsTitle.innerHTML = `   
       <span style="--i:1">P</span>
       <span style="--i:2">O</span>
       <span style="--i:3">R</span>
@@ -84,7 +84,7 @@ export default function projects() {
   }
 
   let more = document.createElement("p");
-  more.setAttribute("id", "more")
+  more.setAttribute("id", "more");
   more.innerText = `The list comprises both bits that have been included to final products and personal side projects. It gets updated regularly with new material. Check back soon!`;
   projects.appendChild(more);
 }
