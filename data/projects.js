@@ -3,12 +3,12 @@
 
 let projectList = [
   {
-    name: "JavaScript Software Synthesizer",
+    name: "JSS-01",
     image:
       "https://raw.githubusercontent.com/michaelkolesidis/javascript-software-synthesizer/main/screenshots/v.0.5.4-large.png",
     technologies: "Tone.js, WEBMIDI.js, JavaScript, Sass, npm",
     summary:
-      "My flagship project. A powerful synthesizer build with web technologies.",
+      "My flagship project. The JavaScript Software Synthesizer is a powerful synthesizer build with web technologies.",
     description: `The JavaScript Software Synthesizer is a web application
                   enabling users to make and play music in the browser. It is
                   a software synthesizer utilizing the Web Audio API by
