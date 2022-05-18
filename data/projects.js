@@ -132,7 +132,7 @@ let projectList = [
   {
     name: "3D Teddy Bear",
     image:
-      "https://github.com/michaelkolesidis/3d-teddy-bear/raw/main/assets/teddy-01-opt.gif",
+      "https://github.com/michaelkolesidis/3d-teddy-bear/raw/main/assets/teddy-02-opt.gif",
     technologies: "p5.js, JavaScript",
     summary: "A rotating 3D Teddy Bear animation",
     description: "",
