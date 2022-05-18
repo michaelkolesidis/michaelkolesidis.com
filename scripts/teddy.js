@@ -14,8 +14,8 @@ let ted = (sketch) => {
 
   sketch.setup = () => {
     sketch.createCanvas(
-      window.innerWidth - 5,
-      window.innerHeight - 5,
+      window.innerWidth,
+      window.innerHeight,
       sketch.WEBGL
     );
 
@@ -73,7 +73,7 @@ let ted = (sketch) => {
   };
 
   sketch.windowResized = () => {
-    sketch.resizeCanvas(window.innerWidth - 5, window.innerHeight - 5);
+    sketch.resizeCanvas(window.innerWidth, window.innerHeight);
   };
 };
 
