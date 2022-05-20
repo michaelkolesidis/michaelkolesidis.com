@@ -20,6 +20,17 @@ let projectList = [
   },
 
   {
+    name: "Random Triangles Cube",
+    image: "https://raw.githubusercontent.com/michaelkolesidis/random-triangles-cube/main/screenshots/random-triangles-cube-400px-opt.gif",
+    technologies: "Three.js, JavaScript",
+    summary: "",
+    description: "Random triangles form a cube. Right/left-click, move mouse and scroll to explore.",
+    repository: "https://github.com/michaelkolesidis/random-triangles-cube",
+    deployment: "https://random-triangles-cube.netlify.app/",
+    video: "",
+  },
+
+  {
     name: "Particircle",
     image:
       "https://github.com/michaelkolesidis/particircle/blob/main/assets/particircle.gif?raw=true",
