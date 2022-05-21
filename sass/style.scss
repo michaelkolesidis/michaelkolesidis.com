@@ -19,9 +19,6 @@ $hfs-xs: 5vw;
 $main-color: #fff;
 $secondary-color: #0a0a0a;
 
-
-
-
 /* RESET */
 * {
   margin: 0;
@@ -35,7 +32,9 @@ html {
   font-family: "Beatrice", sans-serif;
   color: $main-color;
   margin: 0;
-  background: $secondary-color;
+  // background: $secondary-color;
+  background-color: white;
+  // color: black;
   -webkit-user-select: none;
   -moz-user-select: none;
   user-select: none;
@@ -50,7 +49,6 @@ a {
 h1 {
   font-size: $hfs-l;
   font-weight: 500;
-  mix-blend-mode: difference;
 }
 
 h2 {
@@ -70,6 +68,8 @@ h2 {
   position: fixed;
   left: 0.5rem;
   z-index: 1;
+  mix-blend-mode: difference;
+  color: white;
 }
 
 #title-letter {
@@ -96,6 +96,7 @@ h2 {
     overflow: hidden;
     max-width: 16ch;
     margin-right: 2rem;
+    color: black;
   }
 
   #right {
@@ -106,7 +107,7 @@ h2 {
 
 /* SECTIONS */
 section {
-  margin: 0 0 6rem 3rem;
+  margin: 0 6rem 3rem;
 }
 
 /* WAVY SECTION TITLES */
@@ -121,6 +122,7 @@ section {
   color: $main-color;
   text-transform: uppercase;
   margin: -0.2rem;
+  color: black;
 }
 
 .wavy:hover > span {
@@ -164,9 +166,13 @@ section {
   padding: 1rem;
 }
 
+.project-card * {
+  color: black;
+}
+
 .project-image {
   height: 20rem;
-  border: 2px solid $main-color;
+  border: 2px solid black;
   transition: transform 2s ease, filter 10s ease;
 }
 
@@ -178,7 +184,7 @@ section {
 }
 
 .project-title {
-  text-shadow: 1px 1px $main-color;
+  text-shadow: 1px 1px black;
   white-space: nowrap;
   transition: all 2s ease;
 }
@@ -198,7 +204,8 @@ section {
 
 #more {
   max-width: 50ch;
-  border: 1px solid $main-color;
+  border: 2px solid black;
+  color: black;
   padding: 20px;
   margin: auto;
 }
@@ -208,6 +215,7 @@ section {
   p,
   a {
     @extend #large-text;
+    color: black;
   }
 
   a:hover {
@@ -232,13 +240,17 @@ section {
 /* FOOTER */
 footer {
   height: 10vh;
-  background: $main-color;
+  background: url('../assets/floral.png');
   display: flex;
   align-items: center;
+  justify-content: center;
+
 
   p {
     @extend #large-text;
-    color: $secondary-color;
+    font-weight: 600;
+    color: $main-color;
+    text-shadow: 3px 3px black;
     margin: 2rem;
   }
 }
@@ -260,6 +272,7 @@ footer {
   align-items: center;
   height: 100vh;
   animation: flash 0.5s infinite;
+  color: black;
 }
 
 /* GRAIN */
@@ -280,12 +293,12 @@ footer {
 /* SCROLLBAR */
 body::-webkit-scrollbar {
   width: 1em;
-  background: $secondary-color;
+  background: rgb(248, 248, 248);
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: $secondary-color;
-  outline: 1px solid $main-color;
+  background-color: rgb(27, 27, 27);
+  outline: 1px solid rgb(31, 31, 31);
 }
 
 /* UNDER CONSTRUCTION TICKER */
@@ -386,7 +399,7 @@ $duration: 26s;
       display: inline-block;
       padding: 0;
       font-size: 0.875rem;
-      color: $main-color;
+      color: black;
     }
   }
 }

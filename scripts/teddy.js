@@ -19,8 +19,8 @@ let ted = (sketch) => {
       sketch.WEBGL
     );
 
-    backgroundColor = sketch.color(10, 10, 10);
-    // backgroundColor = sketch.color(255, 35, 10);
+    // backgroundColor = sketch.color(10, 10, 10);
+    backgroundColor = sketch.color(205, 35, 10);
   };
 
   sketch.draw = () => {
@@ -31,8 +31,8 @@ let ted = (sketch) => {
     sketch.ambientLight(108, 108, 108);
     sketch.directionalLight(128, 128, 128, 0, 0, -1);
 
-    sketch.ambientMaterial(194, 42, 132);
-    // sketch.ambientMaterial(0, 255, 255);
+    // sketch.ambientMaterial(194, 42, 132);
+    sketch.ambientMaterial(0, 255, 255);
     // sketch.ambientMaterial(255, 255, 255);
 
 
@@ -56,14 +56,14 @@ let ted = (sketch) => {
 
   sketch.colorize = () => {
     teddyColor = sketch.color(
-      sketch.random(45, 255),
-      sketch.random(45, 255),
-      sketch.random(45, 255)
+      sketch.random(110, 230),
+      sketch.random(110, 230),
+      sketch.random(110, 230)
     );
     backgroundColor = sketch.color(
-      sketch.random(40),
-      sketch.random(40),
-      sketch.random(40)
+      sketch.random(120, 250),
+      sketch.random(120, 250),
+      sketch.random(120, 250)
     );
     colored = true;
   };
