@@ -20,6 +20,7 @@ let ted = (sketch) => {
     );
 
     backgroundColor = sketch.color(10, 10, 10);
+    // backgroundColor = sketch.color(255, 35, 10);
   };
 
   sketch.draw = () => {
@@ -31,6 +32,9 @@ let ted = (sketch) => {
     sketch.directionalLight(128, 128, 128, 0, 0, -1);
 
     sketch.ambientMaterial(194, 42, 132);
+    // sketch.ambientMaterial(0, 255, 255);
+    // sketch.ambientMaterial(255, 255, 255);
+
 
     if (colored) {
       sketch.ambientMaterial(teddyColor);
