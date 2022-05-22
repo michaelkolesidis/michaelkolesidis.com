@@ -13,11 +13,7 @@ let ted = (sketch) => {
   };
 
   sketch.setup = () => {
-    sketch.createCanvas(
-      window.innerWidth,
-      window.innerHeight,
-      sketch.WEBGL
-    );
+    sketch.createCanvas(window.innerWidth, window.innerHeight, sketch.WEBGL);
 
     // backgroundColor = sketch.color(10, 10, 10);
     backgroundColor = sketch.color(205, 35, 10);
@@ -35,21 +31,28 @@ let ted = (sketch) => {
     sketch.ambientMaterial(0, 255, 255);
     // sketch.ambientMaterial(255, 255, 255);
 
-
     if (colored) {
       sketch.ambientMaterial(teddyColor);
     }
 
-    sketch.camera(
-      0.1 * (sketch.mouseX - sketch.windowWidth / 2),
-      0.2 * (sketch.mouseY - sketch.windowHeight / 2),
-      250 + 0.04 * sketch.abs(sketch.mouseX - sketch.windowWidth / 2)
-    );
+    if (window.innerWidth > 800) { // Desktop
+      sketch.camera(
+        0.1 * (sketch.mouseX - sketch.windowWidth / 2),
+        0.2 * (sketch.mouseY - sketch.windowHeight / 2),
+        250 + 0.04 * sketch.abs(sketch.mouseX - sketch.windowWidth / 2)
+      );
 
-    sketch.rotateX(sketch.PI - sketch.radians(30));
-    sketch.rotateY(sketch.PI + sketch.radians(10));
+      sketch.rotateX(sketch.PI - sketch.radians(30));
+      sketch.rotateY(sketch.PI + sketch.radians(10));
 
-    sketch.translate(0, -50, 40);
+      sketch.translate(0, -50, 40);
+    } else {  // Mobile
+      sketch.rotateX(sketch.PI - sketch.radians(30));
+      sketch.rotateY(sketch.PI + sketch.radians(10));
+
+      sketch.translate(-40, -60, 200);
+      sketch.scale(3);
+    }
 
     sketch.model(teddy);
   };
