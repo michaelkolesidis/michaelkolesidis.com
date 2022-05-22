@@ -4,7 +4,7 @@
 let projectList = [
   {
     name: "JSS-01",
-    image: "./data/images/jss-01.png",
+    image: "./data/images/jss-01.png?v=2",
     technologies: "Tone.js, WEBMIDI.js, JavaScript, Sass, npm",
     summary:
       "My flagship project. The JavaScript Software Synthesizer is a powerful synthesizer build with web technologies.",
@@ -144,7 +144,7 @@ let projectList = [
 
   {
     name: "Sports App",
-    image: "./data/images/sport-app-pwa.png",
+    image: "./data/images/sport-app-pwa.png?v=2",
     technologies: "JavaScript, CSS",
     summary:
       "Sports App is a progressive web application enabling the user to create custom tables.",
@@ -156,7 +156,7 @@ let projectList = [
 
   {
     name: "Electronic Drum Kit",
-    image: "./data/images/electronic-drum-kit.png",
+    image: "./data/images/electronic-drum-kit.png?v=2",
     technologies: "JavaScript, CSS",
     summary: "An Electronic Drumkit that can be used with mouse or keyboard.",
     description: "",
@@ -167,7 +167,7 @@ let projectList = [
 
   {
     name: "Japanese Restaurant",
-    image: "./data/images/japanese-restaurant.png",
+    image: "./data/images/japanese-restaurant.png?v=2",
     technologies: "JavaScript, Sass, Webpack, npm",
     summary:
       "A JavaScript single-page application (SPA) showcasing the use of ES6 modules as well as Webpack.",
@@ -179,7 +179,7 @@ let projectList = [
 
   {
     name: "Landmarks",
-    image: "./data/images/landmarks.png",
+    image: "./data/images/landmarks.png?v=2",
     technologies: "React, JavaScript, Webpack, npm",
     summary: "A React web application showing landmarks around the globe.",
     description: "",
@@ -190,7 +190,7 @@ let projectList = [
 
   {
     name: "Music Reviews",
-    image: "./data/images/music-reviews.png",
+    image: "./data/images/music-reviews.png?v=2",
     technologies: "TypeScript, npm",
     summary:
       "A (basic) music reviews web app made with and demonstrating the use of TypeScript.",
@@ -202,7 +202,7 @@ let projectList = [
 
   {
     name: "Tic-Tac-Toe",
-    image: "./data/images/tic-tac-toe.png",
+    image: "./data/images/tic-tac-toe.png?v=2",
     technologies: "JavaScript, CSS",
     summary:
       "The popular Tic-tac-toe game, implemented with vanilla JavaScript.",
@@ -214,7 +214,7 @@ let projectList = [
 
   {
     name: "Olympics",
-    image: "./data/images/olympics.png",
+    image: "./data/images/olympics.png?v=2",
     technologies: "CSS",
     summary:
       "An animation-abundant responsive website showing Olympics results.",
@@ -226,7 +226,7 @@ let projectList = [
 
   {
     name: "CSS 3D",
-    image: "./data/images/css-3d.png",
+    image: "./data/images/css-3d.png?v=2",
     technologies: "CSS",
     summary: "A simple website showcasing CSS 3D examples and how they work.",
     description: "",
