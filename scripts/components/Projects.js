@@ -37,7 +37,9 @@ export default function projects() {
     imageLink.target = "_blank";
 
     let projectImage = document.createElement("img");
-    projectImage.src = `${project.image}`;
+    projectImage.src = project.image;
+
+
     projectImage.alt = `${project.name}`;
     projectImage.classList.add("project-image");
 

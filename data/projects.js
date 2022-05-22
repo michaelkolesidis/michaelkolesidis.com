@@ -4,8 +4,7 @@
 let projectList = [
   {
     name: "JSS-01",
-    image:
-      "https://raw.githubusercontent.com/michaelkolesidis/javascript-software-synthesizer/main/screenshots/v.0.5.4-large.png",
+    image: "./data/images/jss-01.png",
     technologies: "Tone.js, WEBMIDI.js, JavaScript, Sass, npm",
     summary:
       "My flagship project. The JavaScript Software Synthesizer is a powerful synthesizer build with web technologies.",
@@ -21,9 +20,10 @@ let projectList = [
 
   {
     name: "Random Triangles Cube",
-    image: "https://raw.githubusercontent.com/michaelkolesidis/random-triangles-cube/main/screenshots/random-triangles-cube-400px-opt.gif",
+    image: "./data/images/random-triangles-cube.gif",
     technologies: "Three.js, JavaScript",
-    summary: "Random triangles form a cube. Right/left-click, move mouse and scroll to explore. Double-click to toggle fullscreen mode.",
+    summary:
+      "Random triangles form a cube. Right/left-click, move mouse and scroll to explore. Double-click to toggle fullscreen mode.",
     description: "",
     repository: "https://github.com/michaelkolesidis/random-triangles-cube",
     deployment: "https://random-triangles-cube.netlify.app/",
@@ -32,8 +32,7 @@ let projectList = [
 
   {
     name: "Particircle",
-    image:
-      "https://github.com/michaelkolesidis/particircle/blob/main/assets/particircle.gif?raw=true",
+    image: "./data/images/particircle.gif",
     technologies: "p5.js, JavaScript",
     summary: "A circle of particles.",
     description: "",
@@ -45,7 +44,7 @@ let projectList = [
   {
     name: "Scribble Text",
     image:
-      "https://github.com/michaelkolesidis/scribble-text/blob/main/assets/scribble-text-01.gif?raw=true",
+      "./data/images/scribble-text.gif",
     technologies: "p5.js, JavaScript",
     summary: "Text gradually appears whilte scribbling.",
     description: "",
@@ -57,7 +56,7 @@ let projectList = [
   {
     name: "Intersecting Circles",
     image:
-      "https://github.com/michaelkolesidis/intersecting-circles/blob/main/assets/intersecting-circles.gif?raw=true",
+      "./data/images/intersecting-circles.gif",
     technologies: "p5.js, JavaScript",
     summary: "Colorful explosions occur when two circles are interescting.",
     description: "",
@@ -69,7 +68,7 @@ let projectList = [
   {
     name: "Perlin Landscape",
     image:
-      "https://github.com/michaelkolesidis/perlin-landscape/blob/main/assets/perlin-landscape-01.gif?raw=true",
+      "./data/images/perlin-landscape.gif",
     technologies: "p5.js, CCapture.js, JavaScript",
     summary: "Landscape created dynamically using Perlin noise.",
     description: "",
@@ -81,7 +80,7 @@ let projectList = [
   {
     name: "Fractal Mountain",
     image:
-      "https://github.com/michaelkolesidis/fractal-mountain/blob/main/assets/fractal-mountain-01.gif?raw=true",
+      "./data/images/fractal-mountain.gif",
     technologies: "p5.js, CCapture.js, JavaScript",
     summary: "A single triangle transforms into a mountain.",
     description: "",
@@ -93,7 +92,7 @@ let projectList = [
   {
     name: "Circle Random Lines",
     image:
-      "https://raw.githubusercontent.com/michaelkolesidis/circle-random-lines/main/screenshots/circle-random-lines.gif",
+      "./data/images/circle-random-lines.gif",
     technologies: "p5.js, JavaScript",
     summary: "A circle created dynamically by random lines",
     description: "",
@@ -105,7 +104,7 @@ let projectList = [
   {
     name: "3D Cube",
     image:
-      "https://raw.githubusercontent.com/michaelkolesidis/3d-cube/main/screenshots/3d-cube.gif",
+      "./data/images/3d-cube.gif",
     technologies: "p5.js, JavaScript",
     summary: "A 3D cube rotating according to mouse movement.",
     description: "",
@@ -117,7 +116,7 @@ let projectList = [
   {
     name: "Pong",
     image:
-      "https://raw.githubusercontent.com/michaelkolesidis/pong-processing/main/pong.gif",
+      "./data/images/pong.gif",
     technologies: "Processing, Java",
     summary: "The classic Pong game recreated from scratch.",
     description: "",
@@ -129,7 +128,7 @@ let projectList = [
   {
     name: "Minesweeper Emoji",
     image:
-      "https://raw.githubusercontent.com/michaelkolesidis/minesweeper-emoji/main/screenshots/minesweeper-emoji.gif",
+      "./data/images/minesweeper-emoji.gif",
     technologies: "p5.js, JavaScript, CSS",
     summary: "The classic game reimagined and implemented with emojis.",
     description: `The classic Minesweeper game reimagined and implemented with emojis. 
@@ -143,7 +142,7 @@ let projectList = [
   {
     name: "3D Teddy Bear",
     image:
-      "https://github.com/michaelkolesidis/3d-teddy-bear/raw/main/assets/teddy-02-opt.gif",
+      "./data/images/teddy.gif",
     technologies: "p5.js, JavaScript",
     summary: "A rotating 3D Teddy Bear animation",
     description: "",
@@ -155,7 +154,7 @@ let projectList = [
   {
     name: "Sports App",
     image:
-      "https://raw.githubusercontent.com/michaelkolesidis/sports-app-pwa/main/sport-app-pwa-screenshot.png",
+      "./data/images/sport-app-pwa.png",
     technologies: "JavaScript, CSS",
     summary:
       "Sports App is a progressive web application enabling the user to create custom tables.",
@@ -168,7 +167,7 @@ let projectList = [
   {
     name: "Electronic Drum Kit",
     image:
-      "https://raw.githubusercontent.com/michaelkolesidis/electronic-drum-kit/main/screenshot-01.png",
+      "./data/images/electronic-drum-kit.png",
     technologies: "JavaScript, CSS",
     summary: "An Electronic Drumkit that can be used with mouse or keyboard.",
     description: "",
@@ -180,7 +179,7 @@ let projectList = [
   {
     name: "Japanese Restaurant",
     image:
-      "https://raw.githubusercontent.com/michaelkolesidis/japanese-restaurant/master/japanese-restaurant-screenshot.png",
+      "./data/images/japanese-restaurant.png",
     technologies: "JavaScript, Sass, Webpack, npm",
     summary:
       "A JavaScript single-page application (SPA) showcasing the use of ES6 modules as well as Webpack.",
@@ -193,7 +192,7 @@ let projectList = [
   {
     name: "Landmarks",
     image:
-      "https://raw.githubusercontent.com/michaelkolesidis/react-landmarks/main/images/screenshot.png",
+      "./data/images/landmarks.png",
     technologies: "React, JavaScript, Webpack, npm",
     summary: "A React web application showing landmarks around the globe.",
     description: "",
@@ -205,7 +204,7 @@ let projectList = [
   {
     name: "Music Reviews",
     image:
-      "https://raw.githubusercontent.com/michaelkolesidis/music-reviews/main/images/screenshot.png",
+      "./data/images/music-reviews.png",
     technologies: "TypeScript, npm",
     summary:
       "A (basic) music reviews web app made with and demonstrating the use of TypeScript.",
@@ -218,7 +217,7 @@ let projectList = [
   {
     name: "Tic-Tac-Toe",
     image:
-      "https://raw.githubusercontent.com/michaelkolesidis/tic-tac-toe/main/tic-tac-toe-screenshot.png",
+      "./data/images/tic-tac-toe.png",
     technologies: "JavaScript, CSS",
     summary:
       "The popular Tic-tac-toe game, implemented with vanilla JavaScript.",
@@ -231,7 +230,7 @@ let projectList = [
   {
     name: "Olympics",
     image:
-      "https://raw.githubusercontent.com/michaelkolesidis/project-olympics/main/screenshots/desktop-01.png",
+      "./data/images/olympics.png",
     technologies: "CSS",
     summary:
       "An animation-abundant responsive website showing Olympics results.",
@@ -244,7 +243,7 @@ let projectList = [
   {
     name: "CSS 3D",
     image:
-      "https://raw.githubusercontent.com/michaelkolesidis/css-3d/main/screenshot-02.png",
+      "./data/images/css-3d.png",
     technologies: "CSS",
     summary: "A simple website showcasing CSS 3D examples and how they work.",
     description: "",
@@ -256,7 +255,7 @@ let projectList = [
   {
     name: "Move Square",
     image:
-      "https://github.com/michaelkolesidis/move-square/blob/main/move-square.gif?raw=true",
+      "./data/images/move-square.gif",
     technologies: "SVG, JavaScript",
     summary: "A simple SVG example featuring a movable square.",
     description: "",
