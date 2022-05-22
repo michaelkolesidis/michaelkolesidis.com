@@ -43,8 +43,7 @@ let projectList = [
 
   {
     name: "Scribble Text",
-    image:
-      "./data/images/scribble-text.gif",
+    image: "./data/images/scribble-text.gif",
     technologies: "p5.js, JavaScript",
     summary: "Text gradually appears whilte scribbling.",
     description: "",
@@ -55,8 +54,7 @@ let projectList = [
 
   {
     name: "Intersecting Circles",
-    image:
-      "./data/images/intersecting-circles.gif",
+    image: "./data/images/intersecting-circles.gif",
     technologies: "p5.js, JavaScript",
     summary: "Colorful explosions occur when two circles are interescting.",
     description: "",
@@ -67,8 +65,7 @@ let projectList = [
 
   {
     name: "Perlin Landscape",
-    image:
-      "./data/images/perlin-landscape.gif",
+    image: "./data/images/perlin-landscape.gif",
     technologies: "p5.js, CCapture.js, JavaScript",
     summary: "Landscape created dynamically using Perlin noise.",
     description: "",
@@ -79,8 +76,7 @@ let projectList = [
 
   {
     name: "Fractal Mountain",
-    image:
-      "./data/images/fractal-mountain.gif",
+    image: "./data/images/fractal-mountain.gif",
     technologies: "p5.js, CCapture.js, JavaScript",
     summary: "A single triangle transforms into a mountain.",
     description: "",
@@ -91,8 +87,7 @@ let projectList = [
 
   {
     name: "Circle Random Lines",
-    image:
-      "./data/images/circle-random-lines.gif",
+    image: "./data/images/circle-random-lines.gif",
     technologies: "p5.js, JavaScript",
     summary: "A circle created dynamically by random lines",
     description: "",
@@ -103,8 +98,7 @@ let projectList = [
 
   {
     name: "3D Cube",
-    image:
-      "./data/images/3d-cube.gif",
+    image: "./data/images/3d-cube.gif",
     technologies: "p5.js, JavaScript",
     summary: "A 3D cube rotating according to mouse movement.",
     description: "",
@@ -115,8 +109,7 @@ let projectList = [
 
   {
     name: "Pong",
-    image:
-      "./data/images/pong.gif",
+    image: "./data/images/pong.gif",
     technologies: "Processing, Java",
     summary: "The classic Pong game recreated from scratch.",
     description: "",
@@ -127,8 +120,7 @@ let projectList = [
 
   {
     name: "Minesweeper Emoji",
-    image:
-      "./data/images/minesweeper-emoji.gif",
+    image: "./data/images/minesweeper-emoji.gif",
     technologies: "p5.js, JavaScript, CSS",
     summary: "The classic game reimagined and implemented with emojis.",
     description: `The classic Minesweeper game reimagined and implemented with emojis. 
@@ -141,8 +133,7 @@ let projectList = [
 
   {
     name: "3D Teddy Bear",
-    image:
-      "./data/images/teddy.gif",
+    image: "./data/images/teddy.gif",
     technologies: "p5.js, JavaScript",
     summary: "A rotating 3D Teddy Bear animation",
     description: "",
@@ -153,8 +144,7 @@ let projectList = [
 
   {
     name: "Sports App",
-    image:
-      "./data/images/sport-app-pwa.png",
+    image: "./data/images/sport-app-pwa.png",
     technologies: "JavaScript, CSS",
     summary:
       "Sports App is a progressive web application enabling the user to create custom tables.",
@@ -166,8 +156,7 @@ let projectList = [
 
   {
     name: "Electronic Drum Kit",
-    image:
-      "./data/images/electronic-drum-kit.png",
+    image: "./data/images/electronic-drum-kit.png",
     technologies: "JavaScript, CSS",
     summary: "An Electronic Drumkit that can be used with mouse or keyboard.",
     description: "",
@@ -178,8 +167,7 @@ let projectList = [
 
   {
     name: "Japanese Restaurant",
-    image:
-      "./data/images/japanese-restaurant.png",
+    image: "./data/images/japanese-restaurant.png",
     technologies: "JavaScript, Sass, Webpack, npm",
     summary:
       "A JavaScript single-page application (SPA) showcasing the use of ES6 modules as well as Webpack.",
@@ -191,8 +179,7 @@ let projectList = [
 
   {
     name: "Landmarks",
-    image:
-      "./data/images/landmarks.png",
+    image: "./data/images/landmarks.png",
     technologies: "React, JavaScript, Webpack, npm",
     summary: "A React web application showing landmarks around the globe.",
     description: "",
@@ -203,8 +190,7 @@ let projectList = [
 
   {
     name: "Music Reviews",
-    image:
-      "./data/images/music-reviews.png",
+    image: "./data/images/music-reviews.png",
     technologies: "TypeScript, npm",
     summary:
       "A (basic) music reviews web app made with and demonstrating the use of TypeScript.",
@@ -216,8 +202,7 @@ let projectList = [
 
   {
     name: "Tic-Tac-Toe",
-    image:
-      "./data/images/tic-tac-toe.png",
+    image: "./data/images/tic-tac-toe.png",
     technologies: "JavaScript, CSS",
     summary:
       "The popular Tic-tac-toe game, implemented with vanilla JavaScript.",
@@ -229,8 +214,7 @@ let projectList = [
 
   {
     name: "Olympics",
-    image:
-      "./data/images/olympics.png",
+    image: "./data/images/olympics.png",
     technologies: "CSS",
     summary:
       "An animation-abundant responsive website showing Olympics results.",
@@ -242,8 +226,7 @@ let projectList = [
 
   {
     name: "CSS 3D",
-    image:
-      "./data/images/css-3d.png",
+    image: "./data/images/css-3d.png",
     technologies: "CSS",
     summary: "A simple website showcasing CSS 3D examples and how they work.",
     description: "",
@@ -254,8 +237,7 @@ let projectList = [
 
   {
     name: "Move Square",
-    image:
-      "./data/images/move-square.gif",
+    image: "./data/images/move-square.gif",
     technologies: "SVG, JavaScript",
     summary: "A simple SVG example featuring a movable square.",
     description: "",
@@ -271,7 +253,7 @@ export default projectList;
 
 // {
 //   name: "",
-//   image: "",
+//   image: "./data/images/",
 //   technologies: "",
 //   summary: "",
 //   description: "",
