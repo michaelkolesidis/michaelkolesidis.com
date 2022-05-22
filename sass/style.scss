@@ -405,17 +405,13 @@ $duration: 26s;
 
 /* MEDIA QUERRIES */
 @media only screen and (max-width: 800px) {
-
-
-
   h1 {
     font-size: 9vw;
     margin-top: 0.5rem;
-
   }
 
   #name {
-    position:absolute;
+    position: absolute;
     top: 0;
   }
 
@@ -426,8 +422,6 @@ $duration: 26s;
   #intro {
     display: flex;
     flex-direction: column;
-    
-    
 
     p {
       max-width: fit-content;
@@ -448,6 +442,37 @@ $duration: 26s;
   #projects-container {
     display: flex;
     flex-direction: column;
+  }
+
+  .project-title {
+    max-width: 15ch;
+    white-space:unset
+  }
+
+  .project-image {
+    height: 15rem;
+  }
+
+  #contact {
+    p {
+      font-size: 1rem;
+      margin: 0.6rem;
+      max-width: 30ch;
+    }
+
+    a {
+      margin: 4rem;
+      text-decoration: underline;
+    }
+  }
+
+  footer {
+    width: 100%;
+    
+    p {
+      font-size: 1rem;
+      max-width: 20ch;
+    }
   }
 }
 
