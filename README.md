@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="./assets/screenshot-default.png" width="600px">
+  <img src="./assets/screenshot-default-color.png" width="600px">
   <h4>This is my personal web page and it's currently under construction.</h4>
 </div>
 
@@ -26,8 +26,8 @@ I aimed at a billboardesque aesthetic, with some elements of printing publicatio
 
 ## More Screenshots
 
-<img src="./assets/screenshot-random.png" height="600px">
-<img src="./assets/screenshot-loading.png" height="600px">
+<img src="./assets/screenshot-random-color.png" height="600px">
+<img src="./assets/screenshot-loading-splash.png" height="600px">
 
 
 
