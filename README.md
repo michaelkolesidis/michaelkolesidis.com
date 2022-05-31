@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="./assets/screenshot-07.png" width="600px">
+  <img src="./assets/screenshot-default-color.png" width="600px">
   <h4>This is my personal web page and it's currently under construction.</h4>
 </div>
 
@@ -22,6 +22,12 @@
 ## Concept
 
 I aimed at a billboardesque aesthetic, with some elements of printing publication design (fashion magazine covers etc.), plus a hint of a 90's TV / 90's MTV aesthetic. I like to think of it as an interactive billboard broadcasted on an old CRT television set. It's still a work in progress and new features will be added on a regular basis.
+
+
+## More Screenshots
+
+<img src="./assets/screenshot-random-color.png" height="600px">
+<img src="./assets/screenshot-loading-splash.png" height="600px">
 
 
 
