@@ -16,6 +16,7 @@ let projectList = [
       "https://github.com/michaelkolesidis/javascript-software-synthesizer",
     deployment: "https://javascript-software-synthesizer.netlify.app/",
     video: "",
+    visible: true,
   },
 
   {
@@ -27,6 +28,7 @@ let projectList = [
     repository: "https://github.com/michaelkolesidis/perlin-landscape",
     deployment: "https://perlin-landscape.netlify.app/",
     video: "",
+    visible: true,
   },
 
   {
@@ -38,6 +40,7 @@ let projectList = [
     repository: "https://github.com/michaelkolesidis/particircle",
     deployment: "https://particircle.netlify.app/",
     video: "",
+    visible: true,
   },
 
   {
@@ -49,6 +52,7 @@ let projectList = [
     repository: "https://github.com/michaelkolesidis/camelnotes",
     deployment: "https://github.com/michaelkolesidis/camelnotes",
     video: "",
+    visible: true,
   },
 
   {
@@ -61,6 +65,7 @@ let projectList = [
     repository: "https://github.com/michaelkolesidis/japanese-restaurant",
     deployment: "http://michaelkolesidis.com/japanese-restaurant/",
     video: "",
+    visible: true,
   },
 
   {
@@ -72,6 +77,7 @@ let projectList = [
     repository: "https://github.com/michaelkolesidis/fractal-mountain",
     deployment: "https://fractal-mountain.netlify.app/",
     video: "",
+    visible: true,
   },
 
   {
@@ -83,6 +89,7 @@ let projectList = [
     repository: "https://github.com/michaelkolesidis/react-landmarks",
     deployment: "https://react-landmarks.netlify.app/",
     video: "",
+    visible: true,
   },
 
   {
@@ -95,6 +102,7 @@ let projectList = [
     repository: "https://github.com/michaelkolesidis/music-reviews",
     deployment: "https://music-reviews.netlify.app/",
     video: "",
+    visible: true,
   },
 
   {
@@ -108,6 +116,7 @@ let projectList = [
     repository: "https://github.com/michaelkolesidis/minesweeper-emoji",
     deployment: "https://minesweeper-emoji.netlify.app/",
     video: "",
+    visible: true,
   },
 
   {
@@ -119,6 +128,7 @@ let projectList = [
     repository: "https://github.com/michaelkolesidis/pong-processing",
     deployment: "https://github.com/michaelkolesidis/pong-processing",
     video: "",
+    visible: true,
   },
 
   {
@@ -131,6 +141,7 @@ let projectList = [
     repository: "https://github.com/michaelkolesidis/sports-app-pwa",
     deployment: "https://sports-app-pwa.netlify.app/",
     video: "",
+    visible: true,
   },
 
   {
@@ -142,6 +153,7 @@ let projectList = [
     repository: "https://github.com/michaelkolesidis/electronic-drum-kit",
     deployment: "https://electronic-drumkit-js.netlify.app/",
     video: "",
+    visible: true,
   },
 
   {
@@ -154,6 +166,7 @@ let projectList = [
     repository: "https://github.com/michaelkolesidis/project-olympics",
     deployment: "https://project-olympics.netlify.app/",
     video: "",
+    visible: true,
   },
 
   {
@@ -166,6 +179,7 @@ let projectList = [
     repository: "https://github.com/michaelkolesidis/tic-tac-toe",
     deployment: "https://tic-tac-toe-michael.netlify.app/",
     video: "",
+    visible: true,
   },
 
   {
@@ -177,6 +191,7 @@ let projectList = [
     repository: "https://github.com/michaelkolesidis/scribble-text",
     deployment: "https://scribble-text.netlify.app/",
     video: "",
+    visible: true,
   },
 
   {
@@ -188,6 +203,7 @@ let projectList = [
     repository: "https://github.com/michaelkolesidis/intersecting-circles",
     deployment: "https://intersecting-circles.netlify.app/",
     video: "",
+    visible: true,
   },
 
   {
@@ -200,6 +216,7 @@ let projectList = [
     repository: "https://github.com/michaelkolesidis/random-triangles-cube",
     deployment: "https://random-triangles-cube.netlify.app/",
     video: "",
+    visible: true,
   },
 
   {
@@ -211,6 +228,7 @@ let projectList = [
     repository: "https://github.com/michaelkolesidis/circle-random-lines",
     deployment: "https://circle-random-lines.netlify.app/",
     video: "",
+    visible: true,
   },
 
   {
@@ -222,6 +240,7 @@ let projectList = [
     repository: "https://github.com/michaelkolesidis/css-3d",
     deployment: "https://css-3d.netlify.app/",
     video: "",
+    visible: true,
   },
 
   {
@@ -233,6 +252,7 @@ let projectList = [
     repository: "https://github.com/michaelkolesidis/3d-cube",
     deployment: "https://3d-cubejs.netlify.app/",
     video: "",
+    visible: true,
   },
 
   {
@@ -244,6 +264,7 @@ let projectList = [
     repository: "https://github.com/michaelkolesidis/3d-teddy-bear",
     deployment: "https://3d-teddy-bear.netlify.app/",
     video: "",
+    visible: true,
   },
 
   {
@@ -255,6 +276,7 @@ let projectList = [
     repository: "https://github.com/michaelkolesidis/move-square",
     deployment: "https://move-square.netlify.app/",
     video: "",
+    visible: true,
   },
 ];
 
@@ -270,5 +292,5 @@ export default projectList;
 //   description: "",
 //   repository: "",
 //   deployment: "",
-//   video: "",
+//   video: "", visible: true
 // },

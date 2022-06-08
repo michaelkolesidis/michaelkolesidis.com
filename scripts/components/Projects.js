@@ -27,6 +27,10 @@ export default function projects() {
 
   // Ppopulate Projects
   for (const project of projectList) {
+    if (project.visible === false) {
+      continue;
+    }
+
     let proj = document.createElement("div");
 
     proj.classList.add("project-card");
@@ -38,7 +42,6 @@ export default function projects() {
 
     let projectImage = document.createElement("img");
     projectImage.src = project.image;
-
 
     projectImage.alt = `${project.name}`;
     projectImage.classList.add("project-image");
