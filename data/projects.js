@@ -20,25 +20,28 @@ let projectList = [
   },
 
   {
-    name: "Perlin Landscape",
-    image: "./data/images/perlin-landscape.gif",
-    technologies: "p5.js, CCapture.js, JavaScript",
-    summary: "Landscape created dynamically using Perlin noise.",
+    name: "Tenzi",
+    image: "./data/images/tenzi.png",
+    technologies: "React, JavaScript, Sass",
+    summary:
+      "A dice game at which the player needs to roll dice until they are all the same. Best scores are saved to local storage.",
     description: "",
-    repository: "https://github.com/michaelkolesidis/perlin-landscape",
-    deployment: "https://perlin-landscape.netlify.app/",
+    repository: "https://github.com/michaelkolesidis/tenzi",
+    deployment: "https://tenzi-react.netlify.app/",
     video: "",
     visible: true,
   },
 
   {
-    name: "Particircle",
-    image: "./data/images/particircle.gif",
-    technologies: "p5.js, JavaScript",
-    summary: "A circle of particles.",
-    description: "",
-    repository: "https://github.com/michaelkolesidis/particircle",
-    deployment: "https://particircle.netlify.app/",
+    name: "Minesweeper Emoji",
+    image: "./data/images/minesweeper-emoji.gif",
+    technologies: "p5.js, JavaScript, CSS",
+    summary: "The classic game reimagined and implemented with emojis.",
+    description: `The classic Minesweeper game reimagined and implemented with emojis. 
+                  It is an example of object-based JavaScript, each Cell is an instance 
+                  of the class Cell. Mines are allocated randomly on page load.`,
+    repository: "https://github.com/michaelkolesidis/minesweeper-emoji",
+    deployment: "https://minesweeper-emoji.netlify.app/",
     video: "",
     visible: true,
   },
@@ -69,18 +72,6 @@ let projectList = [
   },
 
   {
-    name: "Fractal Mountain",
-    image: "./data/images/fractal-mountain.gif",
-    technologies: "p5.js, CCapture.js, JavaScript",
-    summary: "A single triangle transforms into a mountain.",
-    description: "",
-    repository: "https://github.com/michaelkolesidis/fractal-mountain",
-    deployment: "https://fractal-mountain.netlify.app/",
-    video: "",
-    visible: true,
-  },
-
-  {
     name: "Landmarks",
     image: "./data/images/landmarks.png?v=2",
     technologies: "React, JavaScript, Webpack, npm",
@@ -106,15 +97,50 @@ let projectList = [
   },
 
   {
-    name: "Minesweeper Emoji",
-    image: "./data/images/minesweeper-emoji.gif",
-    technologies: "p5.js, JavaScript, CSS",
-    summary: "The classic game reimagined and implemented with emojis.",
-    description: `The classic Minesweeper game reimagined and implemented with emojis. 
-                  It is an example of object-based JavaScript, each Cell is an instance 
-                  of the class Cell. Mines are allocated randomly on page load.`,
-    repository: "https://github.com/michaelkolesidis/minesweeper-emoji",
-    deployment: "https://minesweeper-emoji.netlify.app/",
+    name: "Sports App",
+    image: "./data/images/sport-app-pwa.png?v=2",
+    technologies: "JavaScript, CSS",
+    summary:
+      "Sports App is a progressive web application enabling the user to create custom tables.",
+    description: "",
+    repository: "https://github.com/michaelkolesidis/sports-app-pwa",
+    deployment: "https://sports-app-pwa.netlify.app/",
+    video: "",
+    visible: true,
+  },
+
+  {
+    name: "Perlin Landscape",
+    image: "./data/images/perlin-landscape.gif",
+    technologies: "p5.js, CCapture.js, JavaScript",
+    summary: "Landscape created dynamically using Perlin noise.",
+    description: "",
+    repository: "https://github.com/michaelkolesidis/perlin-landscape",
+    deployment: "https://perlin-landscape.netlify.app/",
+    video: "",
+    visible: true,
+  },
+
+  {
+    name: "Particircle",
+    image: "./data/images/particircle.gif",
+    technologies: "p5.js, JavaScript",
+    summary: "A circle of particles.",
+    description: "",
+    repository: "https://github.com/michaelkolesidis/particircle",
+    deployment: "https://particircle.netlify.app/",
+    video: "",
+    visible: true,
+  },
+
+  {
+    name: "Fractal Mountain",
+    image: "./data/images/fractal-mountain.gif",
+    technologies: "p5.js, CCapture.js, JavaScript",
+    summary: "A single triangle transforms into a mountain.",
+    description: "",
+    repository: "https://github.com/michaelkolesidis/fractal-mountain",
+    deployment: "https://fractal-mountain.netlify.app/",
     video: "",
     visible: true,
   },
@@ -132,19 +158,6 @@ let projectList = [
   },
 
   {
-    name: "Sports App",
-    image: "./data/images/sport-app-pwa.png?v=2",
-    technologies: "JavaScript, CSS",
-    summary:
-      "Sports App is a progressive web application enabling the user to create custom tables.",
-    description: "",
-    repository: "https://github.com/michaelkolesidis/sports-app-pwa",
-    deployment: "https://sports-app-pwa.netlify.app/",
-    video: "",
-    visible: true,
-  },
-
-  {
     name: "Electronic Drum Kit",
     image: "./data/images/electronic-drum-kit.png?v=2",
     technologies: "JavaScript, CSS",
@@ -152,6 +165,32 @@ let projectList = [
     description: "",
     repository: "https://github.com/michaelkolesidis/electronic-drum-kit",
     deployment: "https://electronic-drumkit-js.netlify.app/",
+    video: "",
+    visible: true,
+  },
+
+  {
+    name: "Sticky Notes",
+    image: "./data/images/sticky-notes.png",
+    technologies: "TypeScript, CSS",
+    summary:
+      "A web application allowing the user to fill the screen with sticky notes of various colors.",
+    description: "",
+    repository: "https://github.com/michaelkolesidis/sticky-notes",
+    deployment: "https://sticky-notes-ts.netlify.app/",
+    video: "",
+    visible: true,
+  },
+
+  {
+    name: "Tic-Tac-Toe",
+    image: "./data/images/tic-tac-toe.png?v=2",
+    technologies: "JavaScript, CSS",
+    summary:
+      "The popular Tic-tac-toe game, implemented with vanilla JavaScript.",
+    description: "",
+    repository: "https://github.com/michaelkolesidis/tic-tac-toe",
+    deployment: "https://tic-tac-toe-michael.netlify.app/",
     video: "",
     visible: true,
   },
@@ -170,14 +209,13 @@ let projectList = [
   },
 
   {
-    name: "Tic-Tac-Toe",
-    image: "./data/images/tic-tac-toe.png?v=2",
-    technologies: "JavaScript, CSS",
-    summary:
-      "The popular Tic-tac-toe game, implemented with vanilla JavaScript.",
+    name: "CSS 3D",
+    image: "./data/images/css-3d.png?v=2",
+    technologies: "CSS",
+    summary: "A simple website showcasing CSS 3D examples and how they work.",
     description: "",
-    repository: "https://github.com/michaelkolesidis/tic-tac-toe",
-    deployment: "https://tic-tac-toe-michael.netlify.app/",
+    repository: "https://github.com/michaelkolesidis/css-3d",
+    deployment: "https://css-3d.netlify.app/",
     video: "",
     visible: true,
   },
@@ -232,18 +270,6 @@ let projectList = [
   },
 
   {
-    name: "CSS 3D",
-    image: "./data/images/css-3d.png?v=2",
-    technologies: "CSS",
-    summary: "A simple website showcasing CSS 3D examples and how they work.",
-    description: "",
-    repository: "https://github.com/michaelkolesidis/css-3d",
-    deployment: "https://css-3d.netlify.app/",
-    video: "",
-    visible: true,
-  },
-
-  {
     name: "3D Cube",
     image: "./data/images/3d-cube.gif",
     technologies: "p5.js, JavaScript",
@@ -270,7 +296,7 @@ let projectList = [
   {
     name: "Move Square",
     image: "./data/images/move-square.gif",
-    technologies: "SVG, JavaScript",
+    technologies: "TypeScript, SVG, CSS",
     summary: "A simple SVG example featuring a movable square.",
     description: "",
     repository: "https://github.com/michaelkolesidis/move-square",
