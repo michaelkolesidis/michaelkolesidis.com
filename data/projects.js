@@ -48,7 +48,7 @@ let projectList = [
 
   {
     name: "Camel Notes",
-    image: "./data/images/camelnotes.png",
+    image: "./data/images/camelnotes.gif",
     technologies: "React, JavaScript",
     summary: "A simple note-taking web application in React",
     description: "",
