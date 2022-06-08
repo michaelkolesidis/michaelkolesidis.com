@@ -21,7 +21,7 @@ let projectList = [
 
   {
     name: "Tenzi",
-    image: "./data/images/tenzi.png",
+    image: "./data/images/tenzi.gif",
     technologies: "React, JavaScript, Sass",
     summary:
       "A dice game at which the player needs to roll dice until they are all the same. Best scores are saved to local storage.",
