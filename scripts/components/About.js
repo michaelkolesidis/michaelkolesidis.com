@@ -24,7 +24,7 @@ export default function about() {
     "I have lived, studied and worked in Greece (Thessaloniki), Spain (Barcelona) and the UK (Brighton).",
     "I speak Greek, English, Spanish, and a bit of (actually hardly any nowadays) German.",
     "I love working with React and Sass.",
-    "The first programming language I ever \"tampered with\" was Pascal, and the first language I ever learnt was C.",
+    'The first programming language I ever "tampered with" was Pascal, and the first language I ever learnt was C.',
     "C remains one of my favourite languages, even though I hardly ever use it knowadays.",
     "I write almost all my code on VSCode. In the past, I've used Sublime, CLion, IntelliJ IDEA and (unfortunately) Eclipse.",
     "I use Linux (Ubuntu) as my daily drive, Windows 11 (for Adobe, OK, who am I kidding for games mostly) and my good (very) ol' MacBook when I'm not at home.",
