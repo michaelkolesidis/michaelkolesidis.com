@@ -25,7 +25,7 @@ export default function about() {
     "I speak Greek, English, Spanish, and a bit of (actually hardly any nowadays) German.",
     "I love working with React and Sass.",
     "The first programming language I ever \"tampered with\" was Pascal, and the first language I ever learnt was C.",
-    "C remains one of my favourite languages even though I hardly ever use it knowadays.",
+    "C remains one of my favourite languages, even though I hardly ever use it knowadays.",
     "I write almost all my code on VSCode.",
     "I use Linux (Ubuntu) as my daily drive, Windows 11 (for Adobe) and my good ol' MacBook when I'm not at home.",
     "I've been  to many countries.",
