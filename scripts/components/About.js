@@ -28,6 +28,7 @@ export default function about() {
     "C remains one of my favourite languages, even though I hardly ever use it knowadays.",
     "I write almost all my code on VSCode.",
     "I use Linux (Ubuntu) as my daily drive, Windows 11 (for Adobe) and my good ol' MacBook when I'm not at home.",
+    "One day I will add a blog about programming blog to my web page. It will abundant in interesting stories and classy humor.",
     "I've been  to many countries.",
     "I don't drink coffee or tea.",
     "I enjoy all board sports.",
