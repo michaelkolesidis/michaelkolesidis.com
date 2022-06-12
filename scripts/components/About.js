@@ -32,9 +32,13 @@ export default function about() {
     "One day I will add a blog about programming to my web page. It will abundant in interesting stories and classy humor.",
     "I've been  to many countries.",
     "I don't drink coffee or tea.",
-    "I enjoy all board sports.",
-    "The sport I'm best at is probably snowboarding.",
+    "When programming, sometimes I feel like a mighty sorcerer and sometimes like a sorcerer's apprentice.",
+    "I would like to learn a Lisp at some point. Should I go with Clojure, Common Lisp, or Scheme? Drop me a line if you can help me decide!",
+    "The sport I'm best at is (probably) snowboarding.",
+    "Appart from my huge respect for legends like Dennis Ritchie, Ken Thompson, and Richard Stallman, I really admire programming maintaining themselves, little, less known projects, used by millions.",
     "I hope that's enough for now!",
+    "P.S. Feel free to contact me if you encounter any bugs and/or typos in my web page. Any help is much appreciated!",
+    "P.P.S. The source code of my web page is released under the GNU General Public License v3.0, so feel free to study it, use it, edit it and redistribute it, in accordance with the licence's terms and conditions. If your are planning to use it for your own web page, changing the name in the title would be a good start.",
   ];
 
   for (let i = 0; i < sentences.length; i++) {
