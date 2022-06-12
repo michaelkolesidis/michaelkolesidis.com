@@ -35,7 +35,7 @@ export default function about() {
     "When programming, sometimes I feel like a mighty sorcerer and sometimes like a sorcerer's apprentice.",
     "I would like to learn a Lisp at some point. Should I go with Clojure, Common Lisp, or Scheme? Drop me a line if you can help me decide!",
     "The sport I'm best at is (probably) snowboarding.",
-    "Appart from my huge respect for legends like Dennis Ritchie, Ken Thompson, and Richard Stallman, I really admire programmers maintaining little, less known projects, used by millions, all by themselves",
+    "Appart from my huge respect for legends like Dennis Ritchie, Ken Thompson, and Richard Stallman, I really admire programmers maintaining little, less known projects, used by millions, all by themselves.",
     "I hope that's enough for now!",
     "\n",
     "P.S. Feel free to contact me if you encounter any bugs and/or typos in my web page. Any help is much appreciated!",
