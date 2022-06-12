@@ -37,9 +37,10 @@ export default function about() {
     "The sport I'm best at is (probably) snowboarding.",
     "Appart from my huge respect for legends like Dennis Ritchie, Ken Thompson, and Richard Stallman, I really admire programming maintaining themselves, little, less known projects, used by millions.",
     "I hope that's enough for now!",
-    " ",
+    "\n",
     "P.S. Feel free to contact me if you encounter any bugs and/or typos in my web page. Any help is much appreciated!",
     "P.P.S. The source code of my web page is released under the GNU General Public License v3.0, so feel free to study it, use it, edit it and redistribute it, in accordance with the licence's terms and conditions. If your are planning to use it for your own web page, changing the name in the title would be a good start.",
+    "\n",
   ];
 
   for (let i = 0; i < sentences.length; i++) {
