@@ -11,6 +11,6 @@ export default function intro() {
   let whatami = document.createElement("p");
   whatami.setAttribute("id", "right");
 
-  whatami.innerText = `I am a Front-End Web Developer with a diverse background in computer science, economics and the arts. I enjoy being creative and inquisitive, learning and building new things every day. My passion is to create innovative, engaging experiences and to tell exciting stories using the latest technologies.`;
+  whatami.innerText = `I am a Front-End Web Developer with a diverse background in computer science, economics and the arts. I enjoy being creative and inquisitive, learning and building exciting new things every day. I am passionate about solving problems, while creating innovative, engaging experiences using the appropriate tools and technologies.`;
   intro.appendChild(whatami);
 }
