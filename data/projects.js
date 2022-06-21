@@ -318,5 +318,7 @@ export default projectList;
 //   description: "",
 //   repository: "",
 //   deployment: "",
-//   video: "", visible: true
+//   video: "", 
+//   visible: true,
 // },
+
