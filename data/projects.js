@@ -34,7 +34,7 @@ let projectList = [
 
   {
     name: "Minesweeper Emoji",
-    image: "./data/images/minesweeper-emoji.gif",
+    image: "./data/images/minesweeper-emoji-02.gif",
     technologies: "p5.js, JavaScript, CSS",
     summary: "The classic game reimagined and implemented with emojis.",
     description: `The classic Minesweeper game reimagined and implemented with emojis. 
