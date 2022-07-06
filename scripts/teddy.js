@@ -35,7 +35,8 @@ let ted = (sketch) => {
       sketch.ambientMaterial(teddyColor);
     }
 
-    if (window.innerWidth > 800) { // Desktop
+    if (window.innerWidth > 800) {
+      // Desktop
       sketch.camera(
         0.1 * (sketch.mouseX - sketch.windowWidth / 2),
         0.2 * (sketch.mouseY - sketch.windowHeight / 2),
@@ -46,7 +47,8 @@ let ted = (sketch) => {
       sketch.rotateY(sketch.PI + sketch.radians(10));
 
       sketch.translate(0, -50, 40);
-    } else {  // Mobile
+    } else {
+      // Mobile
       sketch.rotateX(sketch.PI - sketch.radians(30));
       sketch.rotateY(sketch.PI + sketch.radians(10));
 

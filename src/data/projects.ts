@@ -1,7 +1,7 @@
 // © 2022 Michael Kolesidis. All rights reserved.
 // michael.kolesidis@gmail.com
 
-let projectList = [
+const projectList = [
   {
     name: "JSS-01",
     image: "./data/images/jss-01.png?v=2",
@@ -318,7 +318,6 @@ export default projectList;
 //   description: "",
 //   repository: "",
 //   deployment: "",
-//   video: "", 
+//   video: "",
 //   visible: true,
 // },
-

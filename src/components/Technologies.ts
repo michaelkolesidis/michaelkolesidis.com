@@ -16,5 +16,5 @@ export default function technologies() {
       <span style="--i:8">A</span>
       <span style="--i:9">C</span>
       <span style="--i:9">K</span>`;
-  projects.appendChild(technologiesTitle);
+  // projects.appendChild(technologiesTitle);
 }

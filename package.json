@@ -4,7 +4,9 @@
   "description": "This is my personal web page.",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch sass:styles --style compressed "
+    "sass": "sass --watch sass:styles --style compressed ",
+    "build": "tsc --build",
+    "clean": "tsc --build --clean"
   },
   "repository": {
     "type": "git",
@@ -18,10 +20,12 @@
   },
   "homepage": "https://github.com/michaelkolesidis/michaelkolesidis.github.io#readme",
   "dependencies": {
+    "@types/p5": "^1.4.2",
     "p5": "^1.4.1",
-    "sass": "^1.51.0"
+    "sass": "^1.51.0",
+    "yarn": "^1.22.19"
   },
   "devDependencies": {
-
+    "typescript": "^4.7.4"
   }
 }
