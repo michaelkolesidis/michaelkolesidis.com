@@ -4,4 +4,3 @@ node_modules
 other
 scripts
 !scripts/teddy.js
-!scripts/data/images
