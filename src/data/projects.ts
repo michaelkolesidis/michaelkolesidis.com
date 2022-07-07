@@ -5,7 +5,7 @@ const projectList = [
   {
     name: "JSS-01",
     image: "../../data/images/jss-01.png?v=2",
-    technologies: "Tone.js, WEBMIDI.js, JavaScript, Sass, npm",
+    technologies: "Tone.js, WEBMIDI.js, TypeScript, JavaScript, Sass",
     summary:
       "My flagship project. The JavaScript Software Synthesizer is a powerful synthesizer build with web technologies.",
     description: `The JavaScript Software Synthesizer is a web application
@@ -22,7 +22,7 @@ const projectList = [
   {
     name: "Tenzi",
     image: "../../data/images/tenzi.gif",
-    technologies: "React, JavaScript, Sass",
+    technologies: "React, TypeScript, Sass",
     summary:
       "A dice game at which the player needs to roll dice until they are all the same. Best scores are saved to local storage.",
     description: "",
@@ -74,7 +74,7 @@ const projectList = [
   {
     name: "Landmarks",
     image: "../../data/images/landmarks.png?v=2",
-    technologies: "React, JavaScript, Webpack, npm",
+    technologies: "React, TypeScript, Webpack, Y arn",
     summary: "A React web application showing landmarks around the globe.",
     description: "",
     repository: "https://github.com/michaelkolesidis/react-landmarks",
