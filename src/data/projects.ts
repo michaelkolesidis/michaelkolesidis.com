@@ -74,7 +74,7 @@ const projectList = [
   {
     name: "Landmarks",
     image: "../../data/images/landmarks.png?v=2",
-    technologies: "React, TypeScript, Webpack, Y arn",
+    technologies: "React, TypeScript, Webpack, Yarn",
     summary: "A React web application showing landmarks around the globe.",
     description: "",
     repository: "https://github.com/michaelkolesidis/react-landmarks",
