@@ -1,5 +1,6 @@
 {
-  "name": "michaelkolesidis.github.io",
+  "name": "michaelkolesidis.com",
+  "url": "https://michaelkolesidis.com",
   "version": "2.0.0",
   "description": "This is my personal web page.",
   "main": "index.js",
@@ -14,7 +15,8 @@
   },
   "keywords": [],
   "author": "Michael Kolesidis",
-  "license": "",
+  "email": "michael.kolesidis@gmail.com",
+  "license": "GPL-3.0-or-later",
   "bugs": {
     "url": "https://github.com/michaelkolesidis/michaelkolesidis.github.io/issues"
   },
