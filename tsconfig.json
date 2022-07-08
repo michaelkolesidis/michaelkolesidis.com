@@ -18,5 +18,5 @@
     "isolatedModules": true,
     "jsx": "react-jsx"
   },
-  "include": ["src/**/*.ts", "src/teddy.js", "src/teddy.js"]
+  "include": ["src/**/*.ts"]
 }
