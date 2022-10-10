@@ -473,12 +473,24 @@ $duration: 26s;
     }
   }
 
+  #about {
+    @extend #contact;
+
+    display: flex;
+    flex-direction: column;
+  
+    p {
+      margin-bottom: 3rem;
+      max-width: 50ch;
+    }
+  }
+
   footer {
     width: 100%;
     
     p {
       font-size: 1rem;
-      max-width: 20ch;
+      max-width: 80vw;
     }
   }
 }
