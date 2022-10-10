@@ -9,7 +9,7 @@ export default function body() {
     <div id="sketch-placeholder"></div>
     <div id="p5_loading" class="loadingclass">LOADING</div>
     <div id="intro"></div>
-    <div id="main-contant">
+    <div id="main-content">
     <section id="projects"></section>
     <section id="contact"></section>
     <section id="about"></section>

@@ -5,14 +5,22 @@ export default function ticker() {
   const tickerElemenets = document.getElementsByClassName("ticker");
   const ticker = tickerElemenets[0];
 
-  let message = document.createElement("div");
+  let message1 = document.createElement("div");
 
-  message.classList.add("ticker__item");
-  message.innerText = `UNDER CONSTRUCTION`;
+  message1.classList.add("ticker__item");
+  message1.innerText = `UNDER CONSTRUCTION`;
 
-  ticker.appendChild(message);
+  ticker.appendChild(message1);
 
-  for (let i = 0; i < 19; i++) {
-    ticker.appendChild(message.cloneNode(true));
+  let message2 = document.createElement("div");
+
+  message2.classList.add("ticker__item");
+  message2.innerText = `CLICK ANYWHERE FOR NEW COLORS`;
+
+  ticker.appendChild(message2);
+
+  for (let i = 0; i < 6; i++) {
+    ticker.appendChild(message1.cloneNode(true));
+    ticker.appendChild(message2.cloneNode(true));
   }
 }

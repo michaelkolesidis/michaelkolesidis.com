@@ -113,6 +113,7 @@ section {
 /* WAVY SECTION TITLES */
 .wavy {
   font-size: $hfs-xs;
+  max-width: -moz-fit-content;
   max-width: fit-content;
 }
 
@@ -231,9 +232,13 @@ section {
 #about {
   @extend #contact;
 
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+
   p {
     margin-bottom: 3rem;
-    max-width: 50ch;
+    max-width: 30ch;
   }
 }
 
@@ -424,6 +429,7 @@ $duration: 26s;
     flex-direction: column;
 
     p {
+      max-width: -moz-fit-content;
       max-width: fit-content;
       font-size: $hfs-xs;
     }
@@ -431,6 +437,7 @@ $duration: 26s;
 
   .wavy {
     font-size: 9vw;
+    max-width: -moz-fit-content;
     max-width: fit-content;
     margin-left: 1rem;
   }
