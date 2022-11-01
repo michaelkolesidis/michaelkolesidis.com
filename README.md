@@ -27,8 +27,9 @@ I went for a billboardesque aesthetic, with some elements of printing publicatio
 
 
 
-## More Screenshots
+## Screenshots
 
+<img src="./assets/screenshot-default-color.png" height="600px">
 <img src="./assets/screenshot-random-color.png" height="600px">
 <img src="./assets/screenshot-loading-splash.png" height="600px">
 
