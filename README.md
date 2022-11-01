@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="./assets/screenshot-default-color.png" width="600px">
+  <img src="./assets/drawing.png" width="500px">
   <h4>This is my personal web page and it's currently under construction.</h4>
 </div>
 
