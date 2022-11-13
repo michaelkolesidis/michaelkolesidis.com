@@ -32,14 +32,13 @@ html {
   font-family: "Beatrice", sans-serif;
   color: $main-color;
   margin: 0;
-  // background: $secondary-color;
   background-color: $main-color;
-  // color: $secondary-color;
   -webkit-user-select: none;
   -moz-user-select: none;
   user-select: none;
   overflow-x: hidden;
   cursor: url("../assets/windows95-cursor.png"), auto;
+  scroll-behavior: smooth;
 }
 
 a {
@@ -235,7 +234,6 @@ section {
   display: grid;
   grid-template-columns: 1fr 1fr;
 
-
   p {
     margin-bottom: 3rem;
     max-width: 30ch;
@@ -282,16 +280,46 @@ footer {
 /* GRAIN */
 #overlay {
   position: fixed;
+  z-index: 100;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
   background: url("../assets/grain.jpg") no-repeat;
   background-size: cover;
-  opacity: 0.05;
+  opacity: 0.03;
   filter: alpha(opacity=60);
   height: 100vh;
   pointer-events: none; // So that elements below grain are clickable
+}
+
+/* TOP BUTTON */
+#top-button {
+  display: none; // Hidden by default
+  position: fixed; // Fixed/sticky position
+  bottom: 2.5vw; // Place the button at the bottom of the page
+  right: 2vw; // Place the button 30px from the right
+  z-index: 99; // Make sure it does not overlap
+  border: none; // Remove borders
+  outline: none; // Remove outline
+  cursor: pointer; // Add a mouse pointer on hover
+  border-radius: 6vw; // Rounded corners
+  font-size: 2vw; // Increase font size
+  line-height: 6vw;
+  height: 6vw;
+  width: 6vw;
+  text-align: center;
+  mix-blend-mode: difference;
+  background: $main-color;
+  color: $secondary-color;
+  transition: transform 1s;
+}
+
+#top-button:hover {
+  mix-blend-mode: normal;
+  color: $main-color;
+  background: $secondary-color;
+  transform: rotate(360deg);
 }
 
 /* SCROLLBAR */
@@ -453,7 +481,7 @@ $duration: 26s;
 
   .project-title {
     max-width: 15ch;
-    white-space:unset
+    white-space: unset;
   }
 
   .project-image {
@@ -478,7 +506,7 @@ $duration: 26s;
 
     display: flex;
     flex-direction: column;
-  
+
     p {
       margin-bottom: 3rem;
       max-width: 50ch;
@@ -487,7 +515,7 @@ $duration: 26s;
 
   footer {
     width: 100%;
-    
+
     p {
       font-size: 1rem;
       max-width: 80vw;

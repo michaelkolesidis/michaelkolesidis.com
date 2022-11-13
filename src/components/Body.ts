@@ -17,6 +17,7 @@ export default function body() {
     </div>
 </main>
 <footer id="footer"></footer>
+<div id="top-button"></div>
 <div id="overlay"></div>
 `;
 }

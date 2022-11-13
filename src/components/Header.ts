@@ -9,9 +9,7 @@ export default function header() {
     // Name
     let name = document.createElement("h1");
     name.setAttribute("id", "name");
-
-    name.innerHTML = `MICHAEL K<span id="title-letter">O</span>LESIDIS`;    
-    name.title = "Michael Kolesidis";
+    name.innerHTML = `MICHAEL K<span id="title-letter">O</span>LESIDIS`;
 
     // let nameLink = document.createElement("a");
     // nameLink.innerHTML = `MICHAEL K<span id="title-letter">O</span>LESIDIS`;

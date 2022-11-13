@@ -1,7 +1,8 @@
 other
 scripts
 !scripts/teddy.js
-
+.vscode
+.hintrc
 
 # dependencies
 /node_modules
@@ -24,5 +25,3 @@ scripts
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-
-.vscode
