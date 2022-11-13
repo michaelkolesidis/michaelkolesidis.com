@@ -1,5 +1,6 @@
-// © 2022 Michael Kolesidis. All rights reserved.
-// michael.kolesidis@gmail.com
+// Copyright (c) 2022 Michael Kolesidis (michael.kolesidis@gmail.com)
+// Licensed under the GNU General Public License v3.0.
+// https://www.gnu.org/licenses/gpl-3.0.html
 
 export default function contact() {
   const contact = document.getElementById("contact");
