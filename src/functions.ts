@@ -2,7 +2,7 @@
 // Licensed under the GNU General Public License v3.0.
 // https://www.gnu.org/licenses/gpl-3.0.html
 
-export function scrollDisplay(target: HTMLElement, scrollDistance: number) {
+export function scrollFunction(target: HTMLElement, scrollDistance: number) {
   // When the user scrolls down the given distance from the top of the document, show the HTML element
   if (document.body.scrollTop > scrollDistance || document.documentElement.scrollTop > scrollDistance) {
     target.style.display = "block";

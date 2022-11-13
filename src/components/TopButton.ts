@@ -2,7 +2,7 @@
 // Licensed under the GNU General Public License v3.0.
 // https://www.gnu.org/licenses/gpl-3.0.html
 
-import { scrollDisplay, topFunction } from "../functions.js";
+import { scrollFunction, topFunction } from "../functions.js";
 
 export default function topButton() {
   const topButton = document.getElementById("top-button");
@@ -17,7 +17,7 @@ export default function topButton() {
 
     // When the user scrolls down the given distance from the top of the document, show the button
     window.onscroll = function () {
-        scrollDisplay(topButton, 300);
+        scrollFunction(topButton, 300);
     };
   }
 }
