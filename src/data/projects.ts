@@ -21,6 +21,18 @@ const projectList = [
   },
 
   {
+    name: "Emoji Minesweeper",
+    image: "../../images/emoji-minesweeper.png",
+    technologies: "p5.js, JavaScript, CSS",
+    summary: "Minesweeper made with emojis. The most fun way to play minesweeper!",
+    description: "The game logic and anything that happens inside the board\n is written in p5.js. The board is drawn inside a canvas element,\n with the help of the p5.js library. The rest of the UI\n is written in vanilla JavaScript.",
+    repository: "https://github.com/michaelkolesidis/emoji-minesweeper",
+    deployment: "https://emojiminesweeper.com/",
+    video: "",
+    visible: true,
+},
+
+  {
     name: "Tenzi",
     image: "../../images/tenzi.gif",
     technologies: "React, TypeScript, Sass",
@@ -29,20 +41,6 @@ const projectList = [
     description: "",
     repository: "https://github.com/michaelkolesidis/tenzi",
     deployment: "https://tenzi-react.netlify.app/",
-    video: "",
-    visible: true,
-  },
-
-  {
-    name: "Minesweeper Emoji",
-    image: "../../images/minesweeper-emoji-03.gif",
-    technologies: "p5.js, JavaScript, CSS",
-    summary: "The classic game reimagined and implemented with emojis.",
-    description: `The classic Minesweeper game reimagined and implemented with emojis. 
-                  It is an example of object-based JavaScript, each Cell is an instance 
-                  of the class Cell. Mines are allocated randomly on page load.`,
-    repository: "https://github.com/michaelkolesidis/minesweeper-emoji",
-    deployment: "https://minesweeper-emoji.netlify.app/",
     video: "",
     visible: true,
   },
