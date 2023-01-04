@@ -1,5 +1,5 @@
-// Copyright (c) 2022 Michael Kolesidis (michael.kolesidis@gmail.com)
-// Licensed under the GNU General Public License v3.0.
+// Copyright (c) 2023 Michael Kolesidis (michael.kolesidis@gmail.com)
+// Licensed under the GNU Affero General Public License v3.0.
 // https://www.gnu.org/licenses/gpl-3.0.html
 
 
@@ -47,7 +47,7 @@ export default function about() {
       "\n",
       "\n",
       "P.S. Feel free to contact me if you encounter any bugs and/or typos in my web page. Any help is much appreciated!",
-      "P.P.S. The source code of my web page is released under the GNU General Public License v3.0, so feel free to study it, use it, edit it and redistribute it, in accordance with the license's terms and conditions. If your are planning to use it for your own web page, changing the name in the title would be a good start.",
+      "P.P.S. The source code of my web page is released under the GNU Affero General Public License v3.0, so feel free to study it, use it, edit it and redistribute it, in accordance with the license's terms and conditions. If your are planning to use it for your own web page, changing the name in the title would be a good start.",
       "\n",
     ];
 

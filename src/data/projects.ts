@@ -1,5 +1,5 @@
-// Copyright (c) 2022 Michael Kolesidis (michael.kolesidis@gmail.com)
-// Licensed under the GNU General Public License v3.0.
+// Copyright (c) 2023 Michael Kolesidis (michael.kolesidis@gmail.com)
+// Licensed under the GNU Affero General Public License v3.0.
 // https://www.gnu.org/licenses/gpl-3.0.html
 
 const projectList = [
@@ -30,6 +30,18 @@ const projectList = [
     deployment: "https://emojiminesweeper.com/",
     video: "",
     visible: true,
+},
+
+{
+  name: "synthétique",
+  image: "../../images/synthetique.png",
+  technologies: "Three.js, JavaScript, CSS",
+  summary: "Retrofuturistic demo",
+  description: "",
+  repository: "https://github.com/michaelkolesidis/synthetique",
+  deployment: "https://synthetique.vercel.app/",
+  video: "",
+  visible: true,
 },
 
   {
@@ -191,7 +203,7 @@ const projectList = [
     repository: "https://github.com/michaelkolesidis/tic-tac-toe",
     deployment: "https://tic-tac-toe-michael.netlify.app/",
     video: "",
-    visible: true,
+    visible: false,
   },
 
   {
@@ -277,7 +289,7 @@ const projectList = [
     repository: "https://github.com/michaelkolesidis/3d-cube",
     deployment: "https://3d-cubejs.netlify.app/",
     video: "",
-    visible: true,
+    visible: false,
   },
 
   {
@@ -289,7 +301,7 @@ const projectList = [
     repository: "https://github.com/michaelkolesidis/3d-teddy-bear",
     deployment: "https://3d-teddy-bear.netlify.app/",
     video: "",
-    visible: true,
+    visible: false,
   },
 
   {
