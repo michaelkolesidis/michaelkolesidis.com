@@ -24,25 +24,27 @@ const projectList = [
     name: "Emoji Minesweeper",
     image: "../../images/emoji-minesweeper.png",
     technologies: "p5.js, JavaScript, CSS",
-    summary: "Minesweeper made with emojis. The most fun way to play minesweeper!",
-    description: "The game logic and anything that happens inside the board\n is written in p5.js. The board is drawn inside a canvas element,\n with the help of the p5.js library. The rest of the UI\n is written in vanilla JavaScript.",
+    summary:
+      "Minesweeper made with emojis. The most fun way to play minesweeper!",
+    description:
+      "The game logic and anything that happens inside the board\n is written in p5.js. The board is drawn inside a canvas element,\n with the help of the p5.js library. The rest of the UI\n is written in vanilla JavaScript.",
     repository: "https://github.com/michaelkolesidis/emoji-minesweeper",
     deployment: "https://emojiminesweeper.com/",
     video: "",
     visible: true,
-},
+  },
 
-{
-  name: "synthétique",
-  image: "../../images/synthetique.png",
-  technologies: "Three.js, JavaScript, CSS",
-  summary: "Retrofuturistic demo",
-  description: "",
-  repository: "https://github.com/michaelkolesidis/synthetique",
-  deployment: "https://synthetique.vercel.app/",
-  video: "",
-  visible: true,
-},
+  {
+    name: "synthétique",
+    image: "../../images/synthetique.png",
+    technologies: "Three.js, JavaScript, CSS",
+    summary: "Retrofuturistic demo",
+    description: "",
+    repository: "https://github.com/michaelkolesidis/synthetique",
+    deployment: "https://synthetique.vercel.app/",
+    video: "",
+    visible: true,
+  },
 
   {
     name: "Tenzi",
@@ -99,7 +101,7 @@ const projectList = [
     image: "../../images/music-reviews.png?v=2",
     technologies: "TypeScript, npm",
     summary:
-      "A (basic) music reviews web app made with and demonstrating the use of TypeScript.",
+      "A (basic) music reviews web app prototype demonstrating the usage of TypeScript.",
     description: "",
     repository: "https://github.com/michaelkolesidis/music-reviews",
     deployment: "https://music-reviews.netlify.app/",

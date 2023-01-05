@@ -231,12 +231,9 @@ section {
 #about {
   @extend #contact;
 
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-
   p {
     margin-bottom: 3rem;
-    max-width: 30ch;
+    max-width: 50ch;
   }
 }
 
@@ -502,7 +499,7 @@ $duration: 26s;
   }
 
   #about {
-    @extend #contact;
+    // @extend #contact;
 
     display: flex;
     flex-direction: column;

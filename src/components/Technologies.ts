@@ -3,10 +3,12 @@
 // https://www.gnu.org/licenses/gpl-3.0.html
 
 export default function technologies() {
-  // Project Title
-  let technologiesTitle = document.createElement("div");
-  technologiesTitle.classList.add("wavy");
-  technologiesTitle.innerHTML = `   
+  const technologies = document.getElementById("contact");
+  if (technologies != null) {
+    // Title
+    let technologiesTitle = document.createElement("div");
+    technologiesTitle.classList.add("wavy");
+    technologiesTitle.innerHTML = `   
       <span style="--i:1">T</span>
       <span style="--i:2">E</span>
       <span style="--i:3">C</span>
@@ -17,5 +19,6 @@ export default function technologies() {
       <span style="--i:8">A</span>
       <span style="--i:9">C</span>
       <span style="--i:9">K</span>`;
-  // projects.appendChild(technologiesTitle);
+    technologies.appendChild(technologiesTitle);
+  }
 }
