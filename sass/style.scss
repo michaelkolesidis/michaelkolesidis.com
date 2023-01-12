@@ -11,10 +11,10 @@
 
 /* VARIABLES */
 /* heading font size */
-$hfs-l: 7.5vw; // up from 7
-$hfs-m: 6.5vw;
-$hfs-s: 6vw;
-$hfs-xs: 5vw;
+$hfs-l: 8vmin;
+$hfs-m: 6.5vmin;
+$hfs-s: 5vmin;
+$hfs-xs: 5vmin;
 /* colors */
 $main-color: #fff;
 $secondary-color: #0a0a0a;
@@ -48,6 +48,7 @@ a {
 h1 {
   font-size: $hfs-l;
   font-weight: 500;
+
 }
 
 h2 {
@@ -56,7 +57,7 @@ h2 {
 }
 
 #large-text {
-  font-size: 1.8rem;
+  font-size: 1.7rem;
   text-align: start;
   line-height: 1.1;
   font-weight: 500;
@@ -434,7 +435,7 @@ $duration: 26s;
 }
 
 /* MEDIA QUERRIES */
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1050px) {
   h1 {
     font-size: 9vw;
     margin-top: 0.5rem;
@@ -456,7 +457,13 @@ $duration: 26s;
     p {
       max-width: -moz-fit-content;
       max-width: fit-content;
-      font-size: $hfs-xs;
+      font-size: 1.4rem;
+    }
+
+    #right {
+      column-count: 1;
+      max-width: fit-content;
+      font-size: 1.4rem;
     }
   }
 
@@ -526,7 +533,7 @@ $duration: 26s;
   }
 }
 
-@media only screen and (min-width: 1424px) {
+@media only screen and (min-width: 1500px) {
   #projects-container {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -535,5 +542,11 @@ $duration: 26s;
 @media only screen and (min-width: 1880px) {
   #projects-container {
     grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media only screen and (min-width: 2350px) {
+  #projects-container {
+    grid-template-columns: repeat(5, 1fr);
   }
 }
