@@ -16,8 +16,17 @@ let ted = (sketch) => {
   sketch.setup = () => {
     sketch.createCanvas(window.innerWidth, window.innerHeight, sketch.WEBGL);
 
-    // backgroundColor = sketch.color(10, 10, 10);
-    backgroundColor = sketch.color(205, 35, 10);
+    const teddyR = sketch.random(110, 230);
+    const teddyG = sketch.random(110, 230);
+    const teddyB = sketch.random(110, 230);
+
+    teddyColor = (teddyR, teddyG, teddyB);
+
+    backgroundColor = sketch.color(
+      sketch.random(120, 250),
+      sketch.random(120, 250),
+      sketch.random(120, 250)
+    );
   };
 
   sketch.draw = () => {
@@ -29,7 +38,7 @@ let ted = (sketch) => {
     sketch.directionalLight(128, 128, 128, 0, 0, -1);
 
     // sketch.ambientMaterial(194, 42, 132);
-    sketch.ambientMaterial(0, 255, 255);
+    sketch.ambientMaterial(teddyColor);
     // sketch.ambientMaterial(255, 255, 255);
 
     if (colored) {

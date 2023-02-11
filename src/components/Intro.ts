@@ -13,7 +13,7 @@ export default function intro() {
     let whatami = document.createElement("p");
     whatami.setAttribute("id", "right");
 
-    whatami.innerText = `I am a Front-End Engineer / Creative Developer with a diverse background in computer science, economics and the arts. I enjoy being creative and inquisitive, learning and building new things every day. I am passionate about crafting innovative, immersive and engaging experiences, playing my tiny little part in shaping the future of the web.`;
+    whatami.innerText = `I am a Front-End Engineer / New Media Artist with a diverse background in computer science, economics and the arts. I enjoy being creative and inquisitive, learning and building new things every day. I am passionate about crafting innovative, immersive and engaging experiences, playing my tiny little part in shaping the future of the web.`;
     intro!.appendChild(whatami);
   }
 }

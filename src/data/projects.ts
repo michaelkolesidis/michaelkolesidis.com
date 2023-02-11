@@ -47,6 +47,42 @@ const projectList = [
   },
 
   {
+    name: "Perlin Landscape",
+    image: "../../images/perlin-landscape.gif",
+    technologies: "p5.js, CCapture.js, JavaScript",
+    summary: "Landscape created dynamically using Perlin noise.",
+    description: "",
+    repository: "https://github.com/michaelkolesidis/perlin-landscape",
+    deployment: "https://perlin-landscape.netlify.app/",
+    video: "",
+    visible: true,
+  },
+
+  {
+    name: "Particircle",
+    image: "../../images/particircle.gif",
+    technologies: "p5.js, JavaScript",
+    summary: "A circle of particles.",
+    description: "",
+    repository: "https://github.com/michaelkolesidis/particircle",
+    deployment: "https://particircle.netlify.app/",
+    video: "",
+    visible: true,
+  },
+
+  {
+    name: "Fractal Mountain",
+    image: "../../images/fractal-mountain.gif",
+    technologies: "p5.js, CCapture.js, JavaScript",
+    summary: "A single triangle transforms into a mountain.",
+    description: "",
+    repository: "https://github.com/michaelkolesidis/fractal-mountain",
+    deployment: "https://fractal-mountain.netlify.app/",
+    video: "",
+    visible: true,
+  },
+
+  {
     name: "Tenzi",
     image: "../../images/tenzi.gif",
     technologies: "React, TypeScript, Sass",
@@ -85,18 +121,6 @@ const projectList = [
   },
 
   {
-    name: "Landmarks",
-    image: "../../images/landmarks.png?v=2",
-    technologies: "React, TypeScript, Webpack, Yarn",
-    summary: "A React web application showing landmarks around the globe.",
-    description: "",
-    repository: "https://github.com/michaelkolesidis/react-landmarks",
-    deployment: "https://react-landmarks.netlify.app/",
-    video: "",
-    visible: true,
-  },
-
-  {
     name: "Music Reviews",
     image: "../../images/music-reviews.png?v=2",
     technologies: "TypeScript, npm",
@@ -110,6 +134,18 @@ const projectList = [
   },
 
   {
+    name: "Landmarks",
+    image: "../../images/landmarks.png?v=2",
+    technologies: "React, TypeScript, Webpack, Yarn",
+    summary: "A React web application showing landmarks around the globe.",
+    description: "",
+    repository: "https://github.com/michaelkolesidis/react-landmarks",
+    deployment: "https://react-landmarks.netlify.app/",
+    video: "",
+    visible: true,
+  },
+
+  {
     name: "Sports App",
     image: "../../images/sport-app-pwa.png?v=2",
     technologies: "JavaScript, CSS",
@@ -118,42 +154,6 @@ const projectList = [
     description: "",
     repository: "https://github.com/michaelkolesidis/sports-app-pwa",
     deployment: "https://sports-app-pwa.netlify.app/",
-    video: "",
-    visible: true,
-  },
-
-  {
-    name: "Perlin Landscape",
-    image: "../../images/perlin-landscape.gif",
-    technologies: "p5.js, CCapture.js, JavaScript",
-    summary: "Landscape created dynamically using Perlin noise.",
-    description: "",
-    repository: "https://github.com/michaelkolesidis/perlin-landscape",
-    deployment: "https://perlin-landscape.netlify.app/",
-    video: "",
-    visible: true,
-  },
-
-  {
-    name: "Particircle",
-    image: "../../images/particircle.gif",
-    technologies: "p5.js, JavaScript",
-    summary: "A circle of particles.",
-    description: "",
-    repository: "https://github.com/michaelkolesidis/particircle",
-    deployment: "https://particircle.netlify.app/",
-    video: "",
-    visible: true,
-  },
-
-  {
-    name: "Fractal Mountain",
-    image: "../../images/fractal-mountain.gif",
-    technologies: "p5.js, CCapture.js, JavaScript",
-    summary: "A single triangle transforms into a mountain.",
-    description: "",
-    repository: "https://github.com/michaelkolesidis/fractal-mountain",
-    deployment: "https://fractal-mountain.netlify.app/",
     video: "",
     visible: true,
   },

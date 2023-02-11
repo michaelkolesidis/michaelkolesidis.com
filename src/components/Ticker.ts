@@ -9,7 +9,7 @@ export default function ticker() {
   let message1 = document.createElement("div");
 
   message1.classList.add("ticker__item");
-  message1.innerText = `UNDER CONSTRUCTION`;
+  message1.innerText = `PERPETUALLY UNDER CONSTRUCTION`;
 
   ticker.appendChild(message1);
 

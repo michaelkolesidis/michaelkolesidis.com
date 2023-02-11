@@ -34,8 +34,13 @@ export default function projects() {
       }
 
       let proj = document.createElement("div");
-
       proj.classList.add("project-card");
+
+      // Styling
+      const r = Math.floor(Math.random() * 131 + 120);
+      const g = Math.floor(Math.random() * 131 + 120);
+      const b = Math.floor(Math.random() * 131 + 120);
+      proj.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
 
       // Project Image + Link
       let imageLink = document.createElement("a");
@@ -92,6 +97,13 @@ export default function projects() {
 
     let more = document.createElement("p");
     more.setAttribute("id", "more");
+
+    // Styling
+    const r = Math.floor(Math.random() * 131 + 120);
+    const g = Math.floor(Math.random() * 131 + 120);
+    const b = Math.floor(Math.random() * 131 + 120);
+    more.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
+
     more.innerText = `The list gets updated regularly with new material. Check back again soon!`;
     projects.appendChild(more);
   }
