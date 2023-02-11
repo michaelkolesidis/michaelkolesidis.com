@@ -20,7 +20,7 @@ export default function ticker() {
 
   ticker.appendChild(message2);
 
-  for (let i = 0; i < 6; i++) {
+  for (let i = 0; i < 24; i++) {
     ticker.appendChild(message1.cloneNode(true));
     ticker.appendChild(message2.cloneNode(true));
   }
