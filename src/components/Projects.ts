@@ -99,12 +99,12 @@ export default function projects() {
     more.setAttribute("id", "more");
 
     // Styling
-    const r = Math.floor(Math.random() * 131 + 120);
-    const g = Math.floor(Math.random() * 131 + 120);
-    const b = Math.floor(Math.random() * 131 + 120);
-    more.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
+    // const r = Math.floor(Math.random() * 131 + 120);
+    // const g = Math.floor(Math.random() * 131 + 120);
+    // const b = Math.floor(Math.random() * 131 + 120);
+    // more.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
 
-    more.innerText = `The list gets updated regularly with new material. Check back again soon!`;
+    more.innerText = `The list gets updated regularly with new projects. Check back again soon!`;
     projects.appendChild(more);
   }
 }

@@ -19,18 +19,18 @@ export default function about() {
 
     // Sentences
     let sentences = [
-      `The official bio ↴↴↴`,
+      `The official bio ↴ ↴ ↴`,
 
       `I am a multidisciplinary new media artist, with a background in creative development, performance art and computer science. I work at the intersection of performativity and digitality, attempting to blend art with technology with varying degrees of success. Nowadays, I explore graphics programming and a multitude of new media technologies to create web art, audiovisual art and physical installations. I have presented my work in Greece and the UK.`,
 
-      `More info about me ↴↴↴`,
+      `More info about me ↴ ↴ ↴`,
 
       `I have lived, studied and worked in Greece (Thessaloniki), Spain (Barcelona) and the UK (Brighton).`,
 
       `I speak Greek, English, Spanish, and a bit of (actually hardly any nowadays) German.`,
       "The first programming language I ever tampered with was Pascal, and the first language I ever learnt was C.",
 
-      `The tools I mostly use today are three.js, OpenGL Shading Language, WebGL, JavaScript, React, TypeScript, Blender, and I am exploring tools in the intersection of graphics and sound.`,
+      `Today, I mostly use three.js, OpenGL Shading Language, WebGL, JavaScript, React, TypeScript, Blender, and I explore tools in the intersection of graphics and sound.`,
       `I have a small penguin figurine on my desk.`,
 
       `I've been  to many countries meeting people and discovering cultures from all over the world.`,

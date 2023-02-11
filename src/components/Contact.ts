@@ -51,7 +51,7 @@ export default function contact() {
     let linkedin = document.createElement("a");
     let linkedinText = document.createTextNode("LinkedIn");
     linkedin.appendChild(linkedinText);
-    linkedin.title = "my title text";
+    linkedin.title = "LinkedIn";
     linkedin.href = "https://www.linkedin.com/in/michaelkolesidis/";
     linkedin.target = "_blank";
     contact.appendChild(linkedin);

@@ -36,9 +36,9 @@ export default function aboutWebsite() {
 
       `I went for a billboardesque aesthetic, with some elements of printing publication design (fashion magazine covers etc.), plus a hint of a 90's TV / 90's MTV aesthetic. I like to think of it as an interactive billboard broadcasted on an old CRT television set. It's still a work in progress and new features will be added on a regular basis.`,
 
-      `The <a href="https://github.com/michaelkolesidis/michaelkolesidis.com" target="_blank" style="color: rgb(${r}, ${g}, ${b})">source code</a> of this website is released under the <a href="https://www.gnu.org/licenses/agpl-3.0.html" target="_blank" style="color: rgb(${r}, ${g}, ${b})">GNU Affero General Public License v3.0</a>, so feel free to study it, use it, edit it and redistribute it, in accordance with the license's terms and conditions. If your are planning to use it for your own web page, changing the name in the title would be a good start. ॐ`,
+      `The <a href="https://github.com/michaelkolesidis/michaelkolesidis.com" target="_blank" style="color: rgb(${r}, ${g}, ${b})">source code</a> of this website is released under the <a href="https://www.gnu.org/licenses/agpl-3.0.html" target="_blank" style="color: rgb(${r}, ${g}, ${b})">GNU Affero General Public License v3.0</a>, so feel free to study it, use it, edit it and redistribute it, in accordance with the license's terms and conditions. If your are planning to use it for your own web page, changing the name in the title would be a good start.`,
 
-      `My initial inspiration (or the prototype of my blatant and unushamed copy as others might say) was the beautiful and award-winning website of <a href="https://souldesign.gr/" target="_blank" style="color: rgb(${r}, ${g}, ${b})">SOUL Design</a>.`,
+      `My initial inspiration (or the original that I blatantly and unushamedly copied as others might say) was the beautiful and award-winning website of <a href="https://souldesign.gr/" target="_blank" style="color: rgb(${r}, ${g}, ${b})">SOUL Design</a>. ॐ`,
     ];
 
     for (let i = 0; i < sentences.length; i++) {
