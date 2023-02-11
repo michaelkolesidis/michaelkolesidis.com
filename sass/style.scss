@@ -43,6 +43,7 @@ html {
 
 a {
   text-decoration: none;
+  cursor: pointer;
 }
 
 h1 {
@@ -145,6 +146,7 @@ section {
 /* PROJECTS */
 #projects-container {
   display: grid;
+  gap: 1em;
   grid-template-columns: 1fr 1fr;
 
   h2 {
@@ -183,7 +185,7 @@ section {
 .project-image:hover {
   -webkit-filter: grayscale(0%);
   filter: grayscale(0%);
-  transform: perspective(600px) translateZ(200px) rotateX(15deg);
+  transform: perspective(600px) translateZ(200px) rotateX(20deg);
   opacity: 0.8;
 }
 
@@ -211,7 +213,6 @@ section {
   border: 2px solid $black;
   color: $black;
   padding: 20px;
-  // transform: rotateZ(5deg);
   margin: 4em auto;
 }
 
@@ -232,19 +233,31 @@ section {
   }
 }
 
-/* About */
+/* ABOUT */
 #about {
   @extend #contact;
-
+  display: grid;
   p {
     margin-bottom: 3rem;
     max-width: 50ch;
+    text-align: justify;
+    text-justify: inter-word;
+    padding-right: 2em;
+  }
+}
+
+/* THIS WEBSITE */
+#about-website {
+  @extend #about;
+
+  a:hover {
+    text-decoration: underline;
   }
 }
 
 /* FOOTER */
 footer {
-  height: 12.6vh;
+  height: 9.417em;
   background: url("../assets/floral.png");
   display: flex;
   align-items: center;
@@ -255,7 +268,7 @@ footer {
     font-size: 2.1rem;
     font-weight: 600;
     color: $white;
-    text-shadow: 3px 3px $black;
+    text-shadow: 4px 4px $black;
     margin: 2rem;
   }
 }

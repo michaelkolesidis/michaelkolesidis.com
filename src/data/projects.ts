@@ -49,7 +49,7 @@ const projectList = [
   {
     name: "Perlin Landscape",
     image: "../../images/perlin-landscape.gif",
-    technologies: "p5.js, CCapture.js, JavaScript",
+    technologies: "p5.js, JavaScript",
     summary: "Landscape created dynamically using Perlin noise.",
     description: "",
     repository: "https://github.com/michaelkolesidis/perlin-landscape",
@@ -73,7 +73,7 @@ const projectList = [
   {
     name: "Fractal Mountain",
     image: "../../images/fractal-mountain.gif",
-    technologies: "p5.js, CCapture.js, JavaScript",
+    technologies: "p5.js, JavaScript",
     summary: "A single triangle transforms into a mountain.",
     description: "",
     repository: "https://github.com/michaelkolesidis/fractal-mountain",
@@ -117,7 +117,7 @@ const projectList = [
     repository: "https://github.com/michaelkolesidis/japanese-restaurant",
     deployment: "http://michaelkolesidis.com/japanese-restaurant/",
     video: "",
-    visible: true,
+    visible: false,
   },
 
   {
@@ -218,7 +218,7 @@ const projectList = [
     repository: "https://github.com/michaelkolesidis/project-olympics",
     deployment: "https://project-olympics.netlify.app/",
     video: "",
-    visible: true,
+    visible: false,
   },
 
   {

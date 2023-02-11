@@ -14,6 +14,7 @@ export default function body() {
     <section id="projects"></section>
     <section id="contact"></section>
     <section id="about"></section>
+    <section id="about-website"></section>
     </div>
 </main>
 <footer id="footer"></footer>

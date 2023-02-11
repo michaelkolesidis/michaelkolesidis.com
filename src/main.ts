@@ -10,6 +10,7 @@ import intro from "./components/Intro.js";
 import projects from "./components/Projects.js";
 import contact from "./components/Contact.js";
 import about from "./components/About.js";
+import aboutWebsite from "./components/AboutWebsite.js";
 import footer from "./components/Footer.js";
 import topButton from "./components/TopButton.js";
 
@@ -22,5 +23,6 @@ intro();
 projects();
 contact();
 about();
+aboutWebsite();
 footer();
 topButton();

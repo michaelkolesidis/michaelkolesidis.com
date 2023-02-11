@@ -1,0 +1,50 @@
+// Copyright (c) 2023 Michael Kolesidis (michael.kolesidis@gmail.com)
+// Licensed under the GNU Affero General Public License v3.0.
+// https://www.gnu.org/licenses/gpl-3.0.html
+
+export default function aboutWebsite() {
+  const about = document.getElementById(`about-website`);
+
+  if (about != null) {
+    // Title
+    let aboutTitle = document.createElement(`div`);
+    aboutTitle.classList.add(`wavy`);
+    aboutTitle.innerHTML = `   
+        <span style="--i:1">T</span>
+        <span style="--i:2">H</span>
+        <span style="--i:3">I</span>
+        <span style="--i:4">S</span>
+        <span style="--i:5">&nbsp;</span>
+        <span style="--i:6">W</span>
+        <span style="--i:7">E</span>
+        <span style="--i:8">B</span>
+        <span style="--i:9">S</span>
+        <span style="--i:10">I</span>
+        <span style="--i:11">T</span>
+        <span style="--i:12">E</span>
+        
+        `;
+    about.appendChild(aboutTitle);
+
+    const r = Math.floor(Math.random() * 121 + 110);
+    const g = Math.floor(Math.random() * 121 + 110);
+    const b = Math.floor(Math.random() * 121 + 110);
+
+    // Sentences
+    let sentences = [
+      `This website was created and coded by me from scratch, without the use of any front-end UI libraries or frameworks. The only library used is a WebGL library named p5.js, that helped me with the 3D teddy bear at the top of the page.`,
+
+      `I went for a billboardesque aesthetic, with some elements of printing publication design (fashion magazine covers etc.), plus a hint of a 90's TV / 90's MTV aesthetic. I like to think of it as an interactive billboard broadcasted on an old CRT television set. It's still a work in progress and new features will be added on a regular basis.`,
+
+      `The <a style="color: rgb(${r}, ${g}, ${b})">source code</a> of this website is released under the <a style="color: rgb(${r}, ${g}, ${b})">GNU Affero General Public License v3.0</a>, so feel free to study it, use it, edit it and redistribute it, in accordance with the license's terms and conditions. If your are planning to use it for your own web page, changing the name in the title would be a good start. ॐ`,
+
+      `My initial inspiration (or the prototype of my blatant and unushamed copy as others might say) was the beautiful and award-winning website of <a style="color: rgb(${r}, ${g}, ${b})">SOUL Design</a>.`,
+    ];
+
+    for (let i = 0; i < sentences.length; i++) {
+      let sentence = document.createElement(`p`);
+      sentence.innerHTML = `${sentences[i]}`;
+      about.appendChild(sentence);
+    }
+  }
+}

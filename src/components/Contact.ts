@@ -23,18 +23,18 @@ export default function contact() {
     let email = document.createElement("p");
     email.setAttribute("id", "email");
 
-    email.innerText = `Like what you see? For business enquiries please drop me a line at:
+    email.innerText = `For inquiries please drop me a line at:
    michael.kolesidis@gmail.com`;
     contact.appendChild(email);
 
     // Links
-    let cv = document.createElement("a");
-    let cvText = document.createTextNode("CV");
-    cv.appendChild(cvText);
-    cv.title = "CV";
-    cv.href = "./assets/cv/michael-kolesidis-cv-3-4.pdf";
-    cv.target = "_blank";
-    contact.appendChild(cv);
+    // let cv = document.createElement("a");
+    // let cvText = document.createTextNode("CV");
+    // cv.appendChild(cvText);
+    // cv.title = "CV";
+    // cv.href = "./assets/cv/";
+    // cv.target = "_blank";
+    // contact.appendChild(cv);
 
     contact.innerHTML += "<br>";
 
