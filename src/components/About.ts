@@ -28,9 +28,11 @@ export default function about() {
       `I have lived, studied and worked in Greece (Thessaloniki), Spain (Barcelona) and the UK (Brighton).`,
 
       `I speak Greek, English, Spanish, and a bit of (actually hardly any nowadays) German.`,
+
       "The first programming language I ever tampered with was Pascal, and the first language I ever learnt was C.",
 
       `Today, I mostly use three.js, OpenGL Shading Language, WebGL, JavaScript, React, TypeScript, Blender, and I explore tools in the intersection of graphics and sound.`,
+
       `I have a small penguin figurine on my desk.`,
 
       `I've been  to many countries meeting people and discovering cultures from all over the world.`,
@@ -45,6 +47,14 @@ export default function about() {
     for (let i = 0; i < sentences.length; i++) {
       let sentence = document.createElement(`p`);
       sentence.innerHTML = `${sentences[i]}`;
+
+      // Styling
+      // const r = Math.floor(Math.random() * 131 + 120);
+      // const g = Math.floor(Math.random() * 131 + 120);
+      // const b = Math.floor(Math.random() * 131 + 120);
+      // sentence.style.background = `red`;
+      // sentence.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
+
       about.appendChild(sentence);
     }
   }
