@@ -22,7 +22,7 @@ const projectList = [
 
   {
     name: "Emoji Minesweeper",
-    image: "../../images/emoji-minesweeper.png",
+    image: "../../images/emoji-minesweeper.png?v=2",
     technologies: "p5.js, JavaScript, CSS",
     summary:
       "Minesweeper made with emojis. The most fun way to play minesweeper!",
@@ -125,7 +125,7 @@ const projectList = [
     image: "../../images/music-reviews.png?v=2",
     technologies: "TypeScript, npm",
     summary:
-      "A (basic) music reviews web app prototype demonstrating the usage of TypeScript.",
+      "A basic music reviews web app prototype demonstrating the usage of TypeScript.",
     description: "",
     repository: "https://github.com/michaelkolesidis/music-reviews",
     deployment: "https://music-reviews.netlify.app/",
@@ -137,7 +137,7 @@ const projectList = [
     name: "Landmarks",
     image: "../../images/landmarks.png?v=2",
     technologies: "React, TypeScript, Webpack, Yarn",
-    summary: "A React web application showing landmarks around the globe.",
+    summary: "A React static page showing landmarks around the globe.",
     description: "",
     repository: "https://github.com/michaelkolesidis/react-landmarks",
     deployment: "https://react-landmarks.netlify.app/",
@@ -150,7 +150,7 @@ const projectList = [
     image: "../../images/sport-app-pwa.png?v=2",
     technologies: "JavaScript, CSS",
     summary:
-      "Sports App is a progressive web application enabling the user to create custom tables.",
+      "A progressive web application enabling the user to create custom tables.",
     description: "",
     repository: "https://github.com/michaelkolesidis/sports-app-pwa",
     deployment: "https://sports-app-pwa.netlify.app/",
