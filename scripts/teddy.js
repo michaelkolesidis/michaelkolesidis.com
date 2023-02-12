@@ -14,7 +14,7 @@ let ted = (sketch) => {
   };
 
   sketch.setup = () => {
-    sketch.createCanvas(window.innerWidth, window.innerHeight, sketch.WEBGL);
+    sketch.createCanvas(window.innerWidth, window.innerHeight - 140, sketch.WEBGL);
 
     const teddyR = sketch.random(110, 230);
     const teddyG = sketch.random(110, 230);

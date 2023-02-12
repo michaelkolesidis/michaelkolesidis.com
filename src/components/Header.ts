@@ -19,10 +19,18 @@ export default function header() {
 
     header.appendChild(name);
 
+    // Top gap
+    let topGap = document.createElement("div");
+    topGap.setAttribute("id", "top-gap");
+    topGap.innerText = `.`;
+    topGap.style.color = `white`;
+    header.appendChild(topGap);
+
     // Menu button
-    let menuButton = document.createElement("h1");
-    menuButton.setAttribute("id", "menu-button");
-    menuButton.innerText = ` MENU`;
+    // let menuButton = document.createElement("h1");
+    // menuButton.setAttribute("id", "menu-button");
+    // menuButton.innerText = `.`;
+    // menuButton.style.color = `white`;
     // header.appendChild(menuButton);
   }
 }
