@@ -56,6 +56,6 @@ export default function contact() {
     linkedin.target = "_blank";
     contact.appendChild(linkedin);
 
-    contact.innerHTML += "<br>";
+    // contact.innerHTML += "<br>";
   }
 }
