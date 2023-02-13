@@ -41,7 +41,7 @@ export default function about() {
 
       `Apart from my huge respect for legends like Dennis Ritchie, Ken Thompson, and Richard Stallman, I really admire programmers maintaining little, less known projects, used by millions, all by themselves.`,
 
-      `In the unlike event that you need more info about me, please send me an email and I will respond in no more that 12 years.`,
+      `In the unlike event that you need more info about me, please send me an email and I will try to respond as soon as possible.`,
     ];
 
     for (let i = 0; i < sentences.length; i++) {
