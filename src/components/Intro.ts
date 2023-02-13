@@ -7,6 +7,7 @@ export default function intro() {
 
   if (intro != null) {
     let whoami = document.createElement("p");
+    whoami.setAttribute("id", "left");
     whoami.innerText = `I'm Michael Kolesidis.(as you might have already guessed from the huge heading)`;
     intro.appendChild(whoami);
 

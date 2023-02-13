@@ -444,29 +444,32 @@ $duration: 104s;
 
 /********** MEDIA QUERRIES **********/
 @media only screen and (max-width: 1050px) {
-  h1 {
-    font-size: 9vw;
-    margin-top: 0.5rem;
+  .ticker-wrap {
+    position: inherit;
   }
 
   #name {
+    font-size: 9vw;
     position: absolute;
     top: 0;
-  }
 
-  #title-letter {
-    font-size: 9vw;
+    span {
+      font-size: 9vw;
+    }
   }
 
   #intro {
     display: flex;
     flex-direction: column;
+    bottom: 0;
 
     p {
       max-width: -moz-fit-content;
       max-width: fit-content;
       font-size: 1.4rem;
     }
+
+
 
     #right {
       column-count: 1;
@@ -475,10 +478,12 @@ $duration: 104s;
     }
   }
 
+  #left {
+    display: none !important;
+  }
+
   .wavy {
     font-size: 9vw;
-    max-width: -moz-fit-content;
-    max-width: fit-content;
     margin-left: 1rem;
   }
 
@@ -516,6 +521,11 @@ $duration: 104s;
   #about {
     display: flex;
     flex-direction: column;
+    align-items: center;
+
+    .wavy {
+      align-self: baseline !important;
+    }
 
     p {
       margin-bottom: 3rem;
@@ -527,9 +537,16 @@ $duration: 104s;
     width: 100%;
 
     p {
-      font-size: 1rem;
+      font-size: 2rem;
       max-width: 80vw;
     }
+  }
+
+  #top-button {
+    line-height: 100px;
+    height: 100px;
+    width: 100px;
+    font-size: 33px;
   }
 }
 

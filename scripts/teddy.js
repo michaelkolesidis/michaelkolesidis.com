@@ -62,8 +62,8 @@ let ted = (sketch) => {
       sketch.rotateX(sketch.PI - sketch.radians(30));
       sketch.rotateY(sketch.PI + sketch.radians(10));
 
-      sketch.translate(-20, 0, 200);
-      sketch.scale(1.8);
+      sketch.translate(-20, -60, 200);
+      sketch.scale(3);
     }
 
     sketch.model(teddy);
