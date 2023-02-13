@@ -28,7 +28,7 @@ Visitors can click anywhere for new colors.
 <img src="./assets/screenshot-1.png" width="700px">
 <img src="./assets/screenshot-2.png" width="700px">
 <img src="./assets/screenshot-3.png" width="700px">
-<img src="./assets/screenshot-4.png" width="700px">
+<img src="./assets/screenshot-4b.png" width="700px">
 <img src="./assets/screenshot-5.png" width="700px">
 
 ## License
