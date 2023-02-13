@@ -21,6 +21,8 @@
 
 I went for a billboardesque aesthetic, with some elements of printing publication design (fashion magazine covers etc.), plus a hint of a 90's TV / 90's MTV aesthetic. I like to think of it as an interactive billboard broadcasted on an old CRT television set. It's still work in progress and new features will be added on a regular basis.
 
+Visitors can click anywhere for new colors.
+
 ## Screenshots
 
 <img src="./assets/screenshot-2.png" width="700px">
