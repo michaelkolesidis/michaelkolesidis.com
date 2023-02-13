@@ -45,11 +45,6 @@ a {
   cursor: url("../assets/windows95-pointer.png"), auto;
 }
 
-h1 {
-  font-size: $large;
-  font-weight: 400;
-}
-
 h2 {
   font-size: $extra-small;
 }
@@ -62,12 +57,15 @@ h2 {
   z-index: 1;
   mix-blend-mode: difference;
   color: $white;
+  font-size: 104px;
+  font-weight: 400;
 }
 
 #title-letter {
   display: inline-block;
   color: $white;
-  font-size: $large;
+  font-size: 104px;
+  font-weight: 400;
   transition: transform 2s ease;
 }
 
