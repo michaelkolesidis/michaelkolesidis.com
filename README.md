@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="./assets/screenshot-1.png" width="600px">
+  <img src="./assets/screenshot-0.png" width="700px">
   <h4>This is my personal web page and it's perpetually under construction.</h4>
 </div>
 
@@ -25,6 +25,7 @@ Visitors can click anywhere for new colors.
 
 ## Screenshots
 
+<img src="./assets/screenshot-1.png" width="700px">
 <img src="./assets/screenshot-2.png" width="700px">
 <img src="./assets/screenshot-3.png" width="700px">
 <img src="./assets/screenshot-4.png" width="700px">
