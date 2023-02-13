@@ -23,10 +23,10 @@ I went for a billboardesque aesthetic, with some elements of printing publicatio
 
 ## Screenshots
 
-<img src="./assets/screenshot-2.png" height="600px">
-<img src="./assets/screenshot-3.png" height="600px">
-<img src="./assets/screenshot-4.png" height="600px">
-<img src="./assets/screenshot-5.png" height="600px">
+<img src="./assets/screenshot-2.png" width="700px">
+<img src="./assets/screenshot-3.png" width="700px">
+<img src="./assets/screenshot-4.png" width="700px">
+<img src="./assets/screenshot-5.png" width="700px">
 
 ## License
 
