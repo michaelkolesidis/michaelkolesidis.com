@@ -469,18 +469,20 @@ $duration: 104s;
       font-size: 1.4rem;
     }
 
-
+    #left {
+      visibility: hidden;
+    }
 
     #right {
       column-count: 1;
       max-width: fit-content;
       font-size: 1.4rem;
+      display: sticky;
+      bottom: 0;
     }
   }
 
-  #left {
-    display: none !important;
-  }
+
 
   .wavy {
     font-size: 9vw;
