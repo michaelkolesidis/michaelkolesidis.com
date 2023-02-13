@@ -28,14 +28,6 @@ export default function contact() {
     contact.appendChild(email);
 
     // Links
-    // let cv = document.createElement("a");
-    // let cvText = document.createTextNode("CV");
-    // cv.appendChild(cvText);
-    // cv.title = "CV";
-    // cv.href = "./assets/cv/";
-    // cv.target = "_blank";
-    // contact.appendChild(cv);
-
     contact.innerHTML += "<br>";
 
     let github = document.createElement("a");
@@ -43,10 +35,10 @@ export default function contact() {
     github.title = "GitHub";
     github.href = "https://github.com/michaelkolesidis";
     github.target = "_blank";
-    // Styling
-    github.style.marginLeft = `23em`;
-
     contact.appendChild(github);
+
+    /* Styling */
+    github.style.marginLeft = `23em`;
 
     contact.innerHTML += "<br>";
 
@@ -55,10 +47,11 @@ export default function contact() {
     linkedin.title = "LinkedIn";
     linkedin.href = "https://www.linkedin.com/in/michaelkolesidis/";
     linkedin.target = "_blank";
-    // Styling
-    linkedin.style.marginLeft = `13em`;
 
     contact.appendChild(linkedin);
+
+    /* Styling */
+    linkedin.style.marginLeft = `13em`;
 
     contact.innerHTML += "<br>";
 
@@ -68,10 +61,6 @@ export default function contact() {
     stackoverflow.href =
       "https://stackoverflow.com/users/15253636/michael-kolesidis";
     stackoverflow.target = "_blank";
-    // Styling
-    // stackoverflow.style.marginLeft = `0em`;
     contact.appendChild(stackoverflow);
-
-    // contact.innerHTML += "<br>";
   }
 }

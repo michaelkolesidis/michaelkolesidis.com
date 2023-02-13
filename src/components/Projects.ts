@@ -36,7 +36,7 @@ export default function projects() {
       let proj = document.createElement("div");
       proj.classList.add("project-card");
 
-      // Styling
+      /* Styling */
       const r = Math.floor(Math.random() * 131 + 120);
       const g = Math.floor(Math.random() * 131 + 120);
       const b = Math.floor(Math.random() * 131 + 120);
@@ -88,6 +88,7 @@ export default function projects() {
     let allProjects = document.querySelectorAll(".project-card");
     allProjects.forEach((proj) => {
       proj.addEventListener("click", (e) => {
+        /* Styling */
         const target = e.target as HTMLElement;
         if (target.classList.contains("project-card")) {
           const r = Math.floor(Math.random() * 131 + 120);

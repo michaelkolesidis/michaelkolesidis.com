@@ -10,21 +10,16 @@ export default function header() {
     let name = document.createElement("h1");
     name.setAttribute("id", "name");
     name.innerHTML = `MICHAEL K<span id="title-letter">O</span>LESIDIS`;
-
-    // let nameLink = document.createElement("a");
-    // nameLink.innerHTML = `MICHAEL K<span id="title-letter">O</span>LESIDIS`;
-    // nameLink.title = "Michael Kolesidis";
-    // nameLink.href = "https://michaelkolesidis.com";
-    // name.appendChild(nameLink);
-
     header.appendChild(name);
 
     // Top gap
     let topGap = document.createElement("div");
     topGap.setAttribute("id", "top-gap");
     topGap.innerText = `.`;
-    topGap.style.color = `white`;
     header.appendChild(topGap);
+
+    /* Styling */
+    topGap.style.color = `white`;
 
     // Menu button
     // let menuButton = document.createElement("h1");

@@ -26,18 +26,6 @@ export default function aboutWebsite() {
         `;
     about.appendChild(aboutTitle);
 
-    // const r0 = Math.floor(Math.random() * 131 + 120);
-    // const g0 = Math.floor(Math.random() * 131 + 120);
-    // const b0 = Math.floor(Math.random() * 131 + 120);
-
-    // const r1 = Math.floor(Math.random() * 131 + 120);
-    // const g1 = Math.floor(Math.random() * 131 + 120);
-    // const b1 = Math.floor(Math.random() * 131 + 120);
-
-    // const r2 = Math.floor(Math.random() * 131 + 120);
-    // const g2 = Math.floor(Math.random() * 131 + 120);
-    // const b2 = Math.floor(Math.random() * 131 + 120);
-
     // Sentences
     let sentences = [
       `This website was created and coded by me from scratch, without the use of any front-end UI libraries or frameworks. The only library used is a WebGL library named p5.js, that helped me with the 3D teddy bear at the top of the page.`,

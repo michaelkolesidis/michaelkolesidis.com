@@ -9,63 +9,56 @@
     url("../fonts/Beatrice-Regular.ttf") format("truetype");
 }
 
-/* VARIABLES */
-/* heading font size */
-$large: 8vmin;
-$medium: 6.5vmin;
-$small: 5.5vmin;
-$extra-small: 5vmin;
-
+/********** VARIABLES **********/
 /* colors */
 $white: #fff;
 $black: #0a0a0a;
 
-/* GENERAL */
+/**********  GENERAL **********/
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  color: $black;
   font-family: "Beatrice", sans-serif;
+  color: $black;
 }
 
 body,
 html {
   background-color: $white;
+  cursor: url("../assets/windows95-cursor.png"), auto;
+  scroll-behavior: smooth;
   -webkit-user-select: none;
   -moz-user-select: none;
   user-select: none;
   overflow-x: hidden;
-  cursor: url("../assets/windows95-cursor.png"), auto;
-  scroll-behavior: smooth;
 }
 
 a {
-  text-decoration: none;
   cursor: url("../assets/windows95-pointer.png"), auto;
+  text-decoration: none;
 }
 
-h2 {
-  font-size: $extra-small;
-}
-
-/* HEADER */
+/********** HEADER **********/
 #name {
   position: fixed;
   top: 0px;
   left: 0.5rem;
   z-index: 1;
   mix-blend-mode: difference;
-  color: $white;
   font-size: 104px;
   font-weight: 400;
+  white-space: nowrap;
+  color: $white;
+
+  span {
+    font-size: 104px;
+  }
 }
 
 #title-letter {
   display: inline-block;
   color: $white;
-  font-size: 104px;
-  font-weight: 400;
   transition: transform 2s ease;
 }
 
@@ -75,26 +68,25 @@ h2 {
 
 #top-gap {
   height: 140px;
-  // margin-bottom: 10px;
 }
 
-/* INTRO */
+/********** INTRO **********/
 #intro {
+  position: absolute;
+  top: 40vh;
   display: flex;
   justify-content: space-between;
-  position: absolute;
   min-width: 98vw;
-  top: 40vh;
 
   p {
+    margin: 1rem;
+    max-width: 16ch;
+    margin-right: 2rem;
     font-size: 1.7rem;
     text-align: start;
     line-height: 1.1;
     font-weight: 500;
-    margin: 1rem;
     overflow: hidden;
-    max-width: 16ch;
-    margin-right: 2rem;
   }
 
   #right {
@@ -103,14 +95,14 @@ h2 {
   }
 }
 
-/* SECTIONS */
+/********** SECTIONS **********/
 section {
   margin: 0 6rem 3rem;
 }
 
-/* WAVY SECTION TITLES */
+/********** WAVY SECTION TITLES **********/
 .wavy {
-  font-size: $small;
+  font-size: 72px;
   margin: 1em 0 0.25em 0;
   max-width: -moz-fit-content;
   max-width: fit-content;
@@ -139,19 +131,11 @@ section {
   }
 }
 
-/* PROJECTS */
+/********** PROJECTS **********/
 #projects-container {
   display: grid;
   gap: 1em;
   grid-template-columns: 1fr 1fr;
-
-  h2 {
-    font-size: 1.7rem;
-    text-align: start;
-    line-height: 1.1;
-    font-weight: 500;
-    margin-bottom: 0.2rem;
-  }
 
   a {
     @extend p;
@@ -207,13 +191,13 @@ section {
 }
 
 #more {
-  max-width: 50ch;
-  border: 2px solid $black;
   padding: 20px;
   margin: 4em auto;
+  max-width: 50ch;
+  border: 2px solid $black;
 }
 
-/* CONTACT */
+/********** CONTACT **********/
 #contact {
   p,
   a {
@@ -228,7 +212,7 @@ section {
   }
 }
 
-/* ABOUT */
+/********** ABOUT **********/
 #about {
   @extend #contact;
   display: grid;
@@ -251,7 +235,7 @@ section {
   }
 }
 
-/* THIS WEBSITE */
+/********** THIS WEBSITE **********/
 #about-website {
   @extend #about;
   margin-bottom: 7em;
@@ -269,7 +253,7 @@ section {
   }
 }
 
-/* FOOTER */
+/********** FOOTER **********/
 footer {
   height: 9.417em;
   background: url("../assets/floral.png");
@@ -290,7 +274,7 @@ footer {
   }
 }
 
-/* LOADING */
+/********** LOADING **********/
 @keyframes flash {
   0% {
     opacity: 0;
@@ -309,7 +293,7 @@ footer {
   animation: flash 0.5s infinite;
 }
 
-/* GRAIN */
+/********** GRAIN **********/
 #overlay {
   position: fixed;
   z-index: 100;
@@ -320,12 +304,11 @@ footer {
   background: url("../assets/grain.jpg") no-repeat;
   background-size: cover;
   opacity: 0.03;
-  filter: alpha(opacity=60);
   height: 100vh;
-  pointer-events: none; // So that elements below grain are clickable
+  pointer-events: none;
 }
 
-/* TOP BUTTON */
+/********** TOP BUTTON **********/
 #top-button {
   display: none;
   position: fixed;
@@ -341,19 +324,16 @@ footer {
   height: 6vw;
   width: 6vw;
   text-align: center;
-  // mix-blend-mode: difference;
   background: $black;
   color: $white;
   transition: transform 1s;
 }
 
 #top-button:hover {
-  mix-blend-mode: normal;
-  background: $black;
   transform: rotate(360deg);
 }
 
-/* SCROLLBAR */
+/********** SCROLLBAR **********/
 body::-webkit-scrollbar {
   width: 1em;
   background: rgb(248, 248, 248);
@@ -364,7 +344,7 @@ body::-webkit-scrollbar-thumb {
   outline: 1px solid rgb(31, 31, 31);
 }
 
-/* UNDER CONSTRUCTION TICKER */
+/********** UNDER CONSTRUCTION TICKER **********/
 $duration: 104s;
 
 @-webkit-keyframes ticker {
@@ -462,7 +442,7 @@ $duration: 104s;
   }
 }
 
-/* MEDIA QUERRIES */
+/********** MEDIA QUERRIES **********/
 @media only screen and (max-width: 1050px) {
   h1 {
     font-size: 9vw;

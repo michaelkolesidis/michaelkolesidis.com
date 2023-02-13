@@ -48,29 +48,26 @@ export default function about() {
       let sentence = document.createElement(`p`);
       sentence.innerHTML = `${sentences[i]}`;
 
-      // Styling
+      about.appendChild(sentence);
+
+      /* Styling */
       const r = Math.floor(Math.random() * 131 + 120);
       const g = Math.floor(Math.random() * 131 + 120);
       const b = Math.floor(Math.random() * 131 + 120);
-
       const shadowR = Math.floor(Math.random() * 131 + 120);
       const shadowG = Math.floor(Math.random() * 131 + 120);
       const shadowB = Math.floor(Math.random() * 131 + 120);
-
       let angle = 0;
-
       while (angle === 0) {
         angle = Math.random() * 6 - 3;
       }
-
       sentence.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
       sentence.style.padding = `3rem`;
       sentence.style.transform = `rotate(${angle}deg)`;
       sentence.style.boxShadow = `8px 8px rgb(${shadowR}, ${shadowG}, ${shadowB})`;
 
-      about.appendChild(sentence);
-
       sentence.addEventListener("click", () => {
+
         const r = Math.floor(Math.random() * 131 + 120);
         const g = Math.floor(Math.random() * 131 + 120);
         const b = Math.floor(Math.random() * 131 + 120);
