@@ -1,9 +1,7 @@
 <div align="center">
-  <img src="./assets/drawing.png" width="500px">
-  <h4>This is my personal web page and it's currently under construction.</h4>
+  <img src="./assets/screenshot-1.png" width="600px">
+  <h4>This is my personal web page and it's perpetually under construction.</h4>
 </div>
-
-
 
 ## Technologies Used
 
@@ -19,21 +17,16 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <a href="https://en.wikipedia.org/wiki/HTML5"><img src="https://github.com/michaelkolesidis/tech-icons/blob/main/icons/html5/html5-plain.svg" height="50px" /></a>
 
-
-
 ## Concept
 
-I went for a billboardesque aesthetic, with some elements of printing publication design (fashion magazine covers etc.), plus a hint of a 90's TV / 90's MTV aesthetic. I like to think of it as an interactive billboard broadcasted on an old CRT television set. It's still a work in progress and new features will be added on a regular basis.
-
-
+I went for a billboardesque aesthetic, with some elements of printing publication design (fashion magazine covers etc.), plus a hint of a 90's TV / 90's MTV aesthetic. I like to think of it as an interactive billboard broadcasted on an old CRT television set. It's still work in progress and new features will be added on a regular basis.
 
 ## Screenshots
 
-<img src="./assets/screenshot-default-color.png" height="600px">
-<img src="./assets/screenshot-random-color.png" height="600px">
-<img src="./assets/screenshot-loading-splash.png" height="600px">
-
-
+<img src="./assets/screenshot-2.png" height="600px">
+<img src="./assets/screenshot-3.png" height="600px">
+<img src="./assets/screenshot-4.png" height="600px">
+<img src="./assets/screenshot-5.png" height="600px">
 
 ## License
 

@@ -17,7 +17,7 @@ export default function topButton() {
 
     // When the user scrolls down the given distance from the top of the document, show the button
     window.onscroll = function () {
-        scrollFunction(topButton, 300);
+      scrollFunction(topButton, 300);
     };
   }
 }

@@ -39,22 +39,38 @@ export default function contact() {
     contact.innerHTML += "<br>";
 
     let github = document.createElement("a");
-    let githubText = document.createTextNode("GitHub");
-    github.appendChild(githubText);
+    github.innerHTML = `GitHub`;
     github.title = "GitHub";
     github.href = "https://github.com/michaelkolesidis";
     github.target = "_blank";
+    // Styling
+    github.style.marginLeft = `23em`;
+
     contact.appendChild(github);
 
     contact.innerHTML += "<br>";
 
     let linkedin = document.createElement("a");
-    let linkedinText = document.createTextNode("LinkedIn");
-    linkedin.appendChild(linkedinText);
+    linkedin.innerHTML = `LinkedIn`;
     linkedin.title = "LinkedIn";
     linkedin.href = "https://www.linkedin.com/in/michaelkolesidis/";
     linkedin.target = "_blank";
+    // Styling
+    linkedin.style.marginLeft = `13em`;
+
     contact.appendChild(linkedin);
+
+    contact.innerHTML += "<br>";
+
+    let stackoverflow = document.createElement("a");
+    stackoverflow.innerHTML = `Stack Overflow`;
+    stackoverflow.title = "Stack Overflow";
+    stackoverflow.href =
+      "https://stackoverflow.com/users/15253636/michael-kolesidis";
+    stackoverflow.target = "_blank";
+    // Styling
+    // stackoverflow.style.marginLeft = `0em`;
+    contact.appendChild(stackoverflow);
 
     // contact.innerHTML += "<br>";
   }

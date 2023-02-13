@@ -15,6 +15,7 @@ $large: 8vmin;
 $medium: 6.5vmin;
 $small: 5.5vmin;
 $extra-small: 5vmin;
+
 /* colors */
 $white: #fff;
 $black: #0a0a0a;
@@ -41,7 +42,7 @@ html {
 
 a {
   text-decoration: none;
-  cursor: pointer;
+  cursor: url("../assets/windows95-pointer.png"), auto;
 }
 
 h1 {
@@ -56,6 +57,7 @@ h2 {
 /* HEADER */
 #name {
   position: fixed;
+  top: 0px;
   left: 0.5rem;
   z-index: 1;
   mix-blend-mode: difference;
@@ -75,6 +77,7 @@ h2 {
 
 #top-gap {
   height: 140px;
+  // margin-bottom: 10px;
 }
 
 /* INTRO */
@@ -122,7 +125,7 @@ section {
   margin: -0.2rem;
 }
 
-.wavy:hover > span {
+.wavy:hover span {
   animation: wavy 1s infinite;
   animation-delay: calc(0.1s * var(--i));
 }
@@ -165,18 +168,16 @@ section {
   padding: 4rem;
 }
 
-.project-card * {
-}
-
 .project-image {
   height: 20rem;
-  margin-bottom: 2em;
+  margin-bottom: 1.31em;
   border: 2px solid $black;
   transition: transform 1.2s ease-in-out, filter 1.5s ease-in-out,
     opacity 1.5s ease-in-out;
   opacity: 0.6;
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
+  cursor: url("../assets/windows95-pointer.png"), auto;
 }
 
 .project-image:hover {
@@ -187,8 +188,10 @@ section {
 }
 
 .project-title {
+  font-size: 1.7em;
   text-shadow: 1px 1px $black;
   white-space: nowrap;
+  text-align: left;
   transition: all 2s ease;
 }
 
@@ -197,7 +200,7 @@ section {
 }
 
 .technologies {
-  margin-top: 0.5rem;
+  margin: 0.5rem 0;
 }
 
 .repo-link {
@@ -237,16 +240,34 @@ section {
   display: grid;
   p {
     margin-bottom: 3rem;
-    max-width: 50ch;
+    max-width: 60ch;
     text-align: justify;
-    text-justify: inter-word;
+    text-justify: inter-cluster;
     padding-right: 2em;
+    transition: transform 0.5s ease-in-out;
+  }
+
+  p:hover {
+    transform: perspective(100px) translateZ(10px) !important;
+  }
+
+  p:last-child {
+    margin-bottom: 0;
   }
 }
 
 /* THIS WEBSITE */
 #about-website {
   @extend #about;
+  margin-bottom: 7em;
+
+  p:hover {
+    transform: translateZ(0) !important;
+  }
+
+  a {
+    text-decoration: line-through;
+  }
 
   a:hover {
     text-decoration: underline;
@@ -311,16 +332,16 @@ footer {
 
 /* TOP BUTTON */
 #top-button {
-  display: none; // Hidden by default
-  position: fixed; // Fixed/sticky position
-  bottom: 2.5vw; // Place the button at the bottom of the page
-  right: 2vw; // Place the button 2vw from the right
-  z-index: 99; // Make sure it does not overlap
-  border: none; // Remove borders
-  outline: none; // Remove outline
-  cursor: pointer; // Add a mouse pointer on hover
-  border-radius: 50%; // Rounded corners
-  font-size: 2vw; // Increase font size
+  display: none;
+  position: fixed;
+  bottom: 2.5vw;
+  right: 2vw;
+  z-index: 99;
+  border: none;
+  outline: none;
+  cursor: url("../assets/windows95-pointer.png"), auto;
+  border-radius: 50%;
+  font-size: 2vw;
   line-height: 6vw;
   height: 6vw;
   width: 6vw;
@@ -382,7 +403,7 @@ $duration: 104s;
   top: 0;
   height: 2.5rem;
   padding: 11px 40px;
-  z-index: 2;
+  z-index: 3;
   text-transform: uppercase;
   font-size: 0.875rem;
 }

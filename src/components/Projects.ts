@@ -43,30 +43,22 @@ export default function projects() {
       proj.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
 
       // Project Image + Link
-      let imageLink = document.createElement("a");
-      imageLink.href = `${project.deployment}`;
-      imageLink.target = "_blank";
+      let image = document.createElement("img");
+      image.setAttribute("src", project.image);
+      image.setAttribute("alt", project.name);
+      image.classList.add("project-image");
+      proj.appendChild(image);
 
-      let projectImage = document.createElement("img");
-      projectImage.src = project.image;
-
-      projectImage.alt = `${project.name}`;
-      projectImage.classList.add("project-image");
-
-      imageLink.appendChild(projectImage);
-      proj.appendChild(imageLink);
+      image.addEventListener("click", () => {
+        open(`${project.deployment}`);
+      });
 
       // Title
       let title = document.createElement("a");
+      title.classList.add("project-title");
       title.href = `${project.deployment}`;
       title.target = "_blank";
-
-      let titleText = document.createElement("h2");
-      titleText.innerText = `${project.name}`;
-      titleText.classList.add("project-title");
-
-      title.appendChild(titleText);
-
+      title.innerHTML = `<br>${project.name}`;
       proj.appendChild(title);
 
       // Summary
@@ -84,25 +76,30 @@ export default function projects() {
 
       // Repository Link
       let repoLink = document.createElement("a");
-      let linkText = document.createElement("p");
-      linkText.classList.add("repo-link");
-      linkText.innerText = "GitHub";
-      repoLink.appendChild(linkText);
-      proj.appendChild(repoLink);
+      repoLink.classList.add("repo-link");
+      repoLink.innerText = "GitHub";
       repoLink.href = `${project.repository}`;
       repoLink.target = "_blank";
+      proj.appendChild(repoLink);
 
       projectsContainer.appendChild(proj);
     }
 
+    let allProjects = document.querySelectorAll(".project-card");
+    allProjects.forEach((proj) => {
+      proj.addEventListener("click", (e) => {
+        const target = e.target as HTMLElement;
+        if (target.classList.contains("project-card")) {
+          const r = Math.floor(Math.random() * 131 + 120);
+          const g = Math.floor(Math.random() * 131 + 120);
+          const b = Math.floor(Math.random() * 131 + 120);
+          target.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
+        }
+      });
+    });
+
     let more = document.createElement("p");
     more.setAttribute("id", "more");
-
-    // Styling
-    // const r = Math.floor(Math.random() * 131 + 120);
-    // const g = Math.floor(Math.random() * 131 + 120);
-    // const b = Math.floor(Math.random() * 131 + 120);
-    // more.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
 
     more.innerText = `The list gets updated regularly with new projects. Check back again soon!`;
     projects.appendChild(more);

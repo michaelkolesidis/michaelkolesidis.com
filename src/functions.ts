@@ -4,7 +4,10 @@
 
 export function scrollFunction(target: HTMLElement, scrollDistance: number) {
   // When the user scrolls down the given distance from the top of the document, show the HTML element
-  if (document.body.scrollTop > scrollDistance || document.documentElement.scrollTop > scrollDistance) {
+  if (
+    document.body.scrollTop > scrollDistance ||
+    document.documentElement.scrollTop > scrollDistance
+  ) {
     target.style.display = "block";
   } else {
     target.style.display = "none";

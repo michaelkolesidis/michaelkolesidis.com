@@ -10,11 +10,11 @@ export default function about() {
     let aboutTitle = document.createElement(`div`);
     aboutTitle.classList.add(`wavy`);
     aboutTitle.innerHTML = `   
-      <span style="--i:1">A</span>
-      <span style="--i:2">B</span>
+      <span style="--i:5">A</span>
+      <span style="--i:4">B</span>
       <span style="--i:3">O</span>
-      <span style="--i:4">U</span>
-      <span style="--i:5">T</span>`;
+      <span style="--i:2">U</span>
+      <span style="--i:1">T</span>`;
     about.appendChild(aboutTitle);
 
     // Sentences
@@ -25,7 +25,7 @@ export default function about() {
 
       `More info about me ↴ ↴ ↴`,
 
-      `I have lived, studied and worked in Greece (Thessaloniki), Spain (Barcelona) and the UK (Brighton).`,
+      `I have lived, studied and worked in Greece, Spain (Barcelona) and the UK (Brighton).`,
 
       `I speak Greek, English, Spanish, and a bit of (actually hardly any nowadays) German.`,
 
@@ -49,13 +49,40 @@ export default function about() {
       sentence.innerHTML = `${sentences[i]}`;
 
       // Styling
-      // const r = Math.floor(Math.random() * 131 + 120);
-      // const g = Math.floor(Math.random() * 131 + 120);
-      // const b = Math.floor(Math.random() * 131 + 120);
-      // sentence.style.background = `red`;
-      // sentence.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
+      const r = Math.floor(Math.random() * 131 + 120);
+      const g = Math.floor(Math.random() * 131 + 120);
+      const b = Math.floor(Math.random() * 131 + 120);
+
+      const shadowR = Math.floor(Math.random() * 131 + 120);
+      const shadowG = Math.floor(Math.random() * 131 + 120);
+      const shadowB = Math.floor(Math.random() * 131 + 120);
+
+      let angle = 0;
+
+      while (angle === 0) {
+        angle = Math.random() * 6 - 3;
+      }
+
+      sentence.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
+      sentence.style.padding = `3rem`;
+      sentence.style.transform = `rotate(${angle}deg)`;
+      sentence.style.boxShadow = `8px 8px rgb(${shadowR}, ${shadowG}, ${shadowB})`;
 
       about.appendChild(sentence);
+
+      sentence.addEventListener("click", () => {
+        const r = Math.floor(Math.random() * 131 + 120);
+        const g = Math.floor(Math.random() * 131 + 120);
+        const b = Math.floor(Math.random() * 131 + 120);
+
+        const shadowR = Math.floor(Math.random() * 131 + 120);
+        const shadowG = Math.floor(Math.random() * 131 + 120);
+        const shadowB = Math.floor(Math.random() * 131 + 120);
+
+        sentence.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
+        sentence.style.padding = `3rem`;
+        sentence.style.boxShadow = `8px 8px rgb(${shadowR}, ${shadowG}, ${shadowB})`;
+      });
     }
   }
 }
