@@ -8,7 +8,7 @@ export default function footer() {
   if (footer != null) {
     // Copyright
     let copyright = document.createElement("p");
-    copyright.innerText = `© 2023 Michael Kolesidis`;
+    // copyright.innerText = `© 2023 Michael Kolesidis`;
     footer.appendChild(copyright);
   }
 }

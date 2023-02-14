@@ -196,6 +196,10 @@ section {
   font-size: 1.2rem;
 }
 
+.repo-link:hover::after {
+  content: " < < < < <"
+}
+
 #more {
   padding: 20px;
   margin: 4em auto;
@@ -281,6 +285,17 @@ footer {
     color: $white;
     text-shadow: 4px 4px $black;
     margin: 2rem;
+    transition: content 2s;
+    width: 19ch;
+    text-align: center;
+  }
+
+  p::before {
+    content: "© 2023 Michael Kolesidis";
+  }
+
+  p:hover::before {
+    content: "thanks  for your visit : )";
   }
 }
 
@@ -416,6 +431,7 @@ $duration: 104s;
 .ticker-wrap {
   position: fixed;
   top: 0;
+  z-index: 3;
   width: 100%;
   overflow: hidden;
   height: 1.6rem;
