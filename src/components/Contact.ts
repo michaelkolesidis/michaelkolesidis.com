@@ -22,7 +22,6 @@ export default function contact() {
     // Email
     let email = document.createElement("p");
     email.setAttribute("id", "email");
-
     email.innerText = `For inquiries please drop me a line at:
    michael.kolesidis@gmail.com`;
     contact.appendChild(email);
@@ -30,6 +29,7 @@ export default function contact() {
     // Links
     contact.innerHTML += "<br>";
 
+    // GitHub
     let github = document.createElement("a");
     github.innerHTML = `GitHub`;
     github.title = "GitHub";
@@ -42,12 +42,12 @@ export default function contact() {
 
     contact.innerHTML += "<br>";
 
+    // LinkedIn
     let linkedin = document.createElement("a");
     linkedin.innerHTML = `LinkedIn`;
     linkedin.title = "LinkedIn";
     linkedin.href = "https://www.linkedin.com/in/michaelkolesidis/";
     linkedin.target = "_blank";
-
     contact.appendChild(linkedin);
 
     /* Styling */
@@ -55,6 +55,7 @@ export default function contact() {
 
     contact.innerHTML += "<br>";
 
+    // Stack Overflow
     let stackoverflow = document.createElement("a");
     stackoverflow.innerHTML = `Stack Overflow`;
     stackoverflow.title = "Stack Overflow";

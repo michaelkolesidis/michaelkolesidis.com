@@ -38,6 +38,7 @@ export default function thisWebsite() {
       `One of my initial sources of inspiration (or the original creation that I blatantly and unashamedly copied as others might erroneously say) was the beautiful website of <a href="https://souldesign.gr/" target="_blank">SOUL Design</a>. ॐ`,
     ];
 
+    // Populate
     for (let i = 0; i < sentences.length; i++) {
       let sentence = document.createElement(`p`);
       sentence.innerHTML = `${sentences[i]}`;

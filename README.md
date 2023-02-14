@@ -23,7 +23,7 @@ I went for a billboardesque aesthetic, with some elements of printing publicatio
 
 The colors (and the angles on some elements) are generated randomly when the website is visited, chosen from a predefined palette/range.
 
-The visitors can customize the colors of all colored elements: clicking on an elements generates a new color, from the same predefined palette/range.
+The visitors can customize the colors of all colored elements: clicking on an element generates a new color, from the same predefined palette/range.
 
 Most of the elements are part of microinteractions and hovering over them or interacting with them in other ways triggers some animation. Make sure to explore all of them :-)
 

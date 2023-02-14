@@ -20,12 +20,5 @@ export default function header() {
 
     /* Styling */
     topGap.style.color = `white`;
-
-    // Menu button
-    // let menuButton = document.createElement("h1");
-    // menuButton.setAttribute("id", "menu-button");
-    // menuButton.innerText = `.`;
-    // menuButton.style.color = `white`;
-    // header.appendChild(menuButton);
   }
 }

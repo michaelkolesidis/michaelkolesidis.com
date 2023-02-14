@@ -6,14 +6,15 @@ export default function intro() {
   const intro = document.getElementById("intro");
 
   if (intro != null) {
+    // Who Am I (paragraph on the left)
     let whoami = document.createElement("p");
     whoami.setAttribute("id", "left");
     whoami.innerText = `I'm Michael Kolesidis.(as you might have already guessed from the huge heading)`;
     intro.appendChild(whoami);
 
+    // What Am I (paragraph on the right)
     let whatami = document.createElement("p");
     whatami.setAttribute("id", "right");
-
     whatami.innerText = `I am a Front-End Engineer / New Media Artist with a diverse background in computer science, economics and the arts. I enjoy being creative and inquisitive, learning and building new things every day. I am passionate about crafting innovative, immersive and engaging experiences, playing my tiny little part in shaping the future of the web.`;
     intro!.appendChild(whatami);
   }

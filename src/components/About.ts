@@ -67,7 +67,6 @@ export default function about() {
       sentence.style.boxShadow = `8px 8px rgb(${shadowR}, ${shadowG}, ${shadowB})`;
 
       sentence.addEventListener("click", () => {
-
         const r = Math.floor(Math.random() * 131 + 120);
         const g = Math.floor(Math.random() * 131 + 120);
         const b = Math.floor(Math.random() * 131 + 120);

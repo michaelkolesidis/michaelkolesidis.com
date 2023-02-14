@@ -33,6 +33,7 @@ export default function projects() {
         continue;
       }
 
+      // Project
       let proj = document.createElement("div");
       proj.classList.add("project-card");
 
@@ -42,13 +43,12 @@ export default function projects() {
       const b = Math.floor(Math.random() * 131 + 120);
       proj.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
 
-      // Project Image + Link
+      // Project Image with Link
       let image = document.createElement("img");
       image.setAttribute("src", project.image);
       image.setAttribute("alt", project.name);
       image.classList.add("project-image");
       proj.appendChild(image);
-
       image.addEventListener("click", () => {
         open(`${project.deployment}`);
       });
@@ -65,7 +65,6 @@ export default function projects() {
       let summary = document.createElement("p");
       summary.classList.add("project-summary");
       summary.innerText = `${project.summary}`;
-
       proj.appendChild(summary);
 
       // Technologies
@@ -100,9 +99,9 @@ export default function projects() {
       });
     });
 
+    // Info box
     let more = document.createElement("p");
     more.setAttribute("id", "more");
-
     more.innerText = `The list gets updated regularly with new projects. Check back again soon!`;
     projects.appendChild(more);
   }
