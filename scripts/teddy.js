@@ -5,7 +5,6 @@
 let ted = (sketch) => {
   let teddy;
   let teddyColor;
-  let colored = false;
   let backgroundColor;
 
   sketch.preload = () => {
@@ -22,34 +21,26 @@ let ted = (sketch) => {
 
     cnv.mouseClicked(sketch.colorize);
 
-    const teddyR = sketch.random(110, 230);
-    const teddyG = sketch.random(110, 230);
-    const teddyB = sketch.random(110, 230);
+    const teddyR = Math.floor(Math.random() * 121 + 110);
+    const teddyG = Math.floor(Math.random() * 121 + 110);
+    const teddyB = Math.floor(Math.random() * 121 + 110);
 
     teddyColor = (teddyR, teddyG, teddyB);
 
     backgroundColor = sketch.color(
-      sketch.random(120, 250),
-      sketch.random(120, 250),
-      sketch.random(120, 250)
+      Math.floor(Math.random() * 131 + 120),
+      Math.floor(Math.random() * 131 + 120),
+      Math.floor(Math.random() * 131 + 120)
     );
   };
 
   sketch.draw = () => {
     sketch.background(backgroundColor);
-    sketch.smooth();
     sketch.noStroke();
-
     sketch.ambientLight(108, 108, 108);
     sketch.directionalLight(128, 128, 128, 0, 0, -1);
 
-    // sketch.ambientMaterial(194, 42, 132);
     sketch.ambientMaterial(teddyColor);
-    // sketch.ambientMaterial(255, 255, 255);
-
-    if (colored) {
-      sketch.ambientMaterial(teddyColor);
-    }
 
     if (window.innerWidth > 800) {
       // Desktop
@@ -77,16 +68,15 @@ let ted = (sketch) => {
 
   sketch.colorize = () => {
     teddyColor = sketch.color(
-      sketch.random(110, 230),
-      sketch.random(110, 230),
-      sketch.random(110, 230)
+      Math.floor(Math.random() * 121 + 110),
+      Math.floor(Math.random() * 121 + 110),
+      Math.floor(Math.random() * 121 + 110)
     );
     backgroundColor = sketch.color(
-      sketch.random(120, 250),
-      sketch.random(120, 250),
-      sketch.random(120, 250)
+      Math.floor(Math.random() * 131 + 120),
+      Math.floor(Math.random() * 131 + 120),
+      Math.floor(Math.random() * 131 + 120)
     );
-    colored = true;
   };
 
   sketch.keyPressed = () => {
