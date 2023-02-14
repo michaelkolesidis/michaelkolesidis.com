@@ -182,6 +182,11 @@ section {
   letter-spacing: 0.25rem;
 }
 
+.project-summary,
+.technologies {
+  pointer-events: none;
+}
+
 .technologies {
   margin: 0.5rem 0;
 }

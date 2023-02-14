@@ -63,6 +63,7 @@ export default function projects() {
 
       // Summary
       let summary = document.createElement("p");
+      summary.classList.add("project-summary");
       summary.innerText = `${project.summary}`;
 
       proj.appendChild(summary);
