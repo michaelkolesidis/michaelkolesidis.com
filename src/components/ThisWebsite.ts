@@ -35,7 +35,7 @@ export default function thisWebsite() {
 
       `The source code of this website is released under the <a href="https://www.gnu.org/licenses/agpl-3.0.html" target="_blank" >GNU Affero General Public License v3.0</a>, so feel free to study it, use it, edit it and redistribute it, in accordance with the license's terms and conditions. You can find it on <a href="https://github.com/michaelkolesidis/michaelkolesidis.com" target="_blank">GitHub</a>. If your are planning to use it for your own web page, changing the name in the title would be a good start.`,
 
-      `My initial inspiration (or the original creation that I blatantly and unushamedly copied as others might say) was the beautiful and award-winning website of <a href="https://souldesign.gr/" target="_blank">SOUL Design</a>. ॐ`,
+      `One of the initial sources of inspiration (or the original creation that I blatantly and unushamedly copied as others might say) was the beautiful and award-winning website of <a href="https://souldesign.gr/" target="_blank">SOUL Design</a>. ॐ`,
     ];
 
     for (let i = 0; i < sentences.length; i++) {
