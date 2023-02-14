@@ -2,14 +2,14 @@
 // Licensed under the GNU Affero General Public License v3.0.
 // https://www.gnu.org/licenses/gpl-3.0.html
 
-export default function aboutWebsite() {
-  const about = document.getElementById(`about-website`);
+export default function thisWebsite() {
+  const website = document.getElementById(`this-website`);
 
-  if (about != null) {
+  if (website != null) {
     // Title
-    let aboutTitle = document.createElement(`div`);
-    aboutTitle.classList.add(`wavy`);
-    aboutTitle.innerHTML = `   
+    let websiteTitle = document.createElement(`div`);
+    websiteTitle.classList.add(`wavy`);
+    websiteTitle.innerHTML = `   
         <span style="--i:1">T</span>
         <span style="--i:2">H</span>
         <span style="--i:3">I</span>
@@ -24,10 +24,11 @@ export default function aboutWebsite() {
         <span style="--i:12">E</span>
         
         `;
-    about.appendChild(aboutTitle);
+        website.appendChild(websiteTitle);
 
     // Sentences
     let sentences = [
+      `(Finally a colourless section!)`,
       `This website was created and coded by me from scratch, without the use of any front-end UI libraries or frameworks. The only library used is a WebGL library named p5.js, that helped me with the 3D teddy bear at the top of the page.`,
 
       `I went for a billboardesque aesthetic, with some elements of printing publication design (fashion magazine covers etc.), plus a hint of a 90's TV / 90's MTV aesthetic. I like to think of it as an interactive billboard broadcasted on an old CRT television set. It's still work in progress and new features will be added on a regular basis.`,
@@ -40,7 +41,7 @@ export default function aboutWebsite() {
     for (let i = 0; i < sentences.length; i++) {
       let sentence = document.createElement(`p`);
       sentence.innerHTML = `${sentences[i]}`;
-      about.appendChild(sentence);
+      website.appendChild(sentence);
     }
   }
 }

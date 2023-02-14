@@ -236,9 +236,13 @@ section {
 }
 
 /********** THIS WEBSITE **********/
-#about-website {
+#this-website {
   @extend #about;
   margin-bottom: 7em;
+
+  p {
+    cursor: url("../assets/windows95-cursor.png"), auto;
+  }
 
   p:hover {
     transform: translateZ(0) !important;
@@ -481,8 +485,6 @@ $duration: 104s;
       bottom: 0;
     }
   }
-
-
 
   .wavy {
     font-size: 9vw;
