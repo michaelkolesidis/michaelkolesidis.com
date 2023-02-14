@@ -37,7 +37,7 @@ export default function about() {
 
       `I've been  to many countries meeting people and discovering cultures from all over the world.`,
 
-      `I don't drink coffee or tea.`,
+      `I don't drink coffee or tea. (OK, A few times a year I might drink tea)`,
 
       `Apart from my huge respect for legends like Dennis Ritchie, Ken Thompson, and Richard Stallman, I really admire programmers maintaining little, less known projects, used by millions, all by themselves.`,
 
