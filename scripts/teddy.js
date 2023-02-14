@@ -14,7 +14,13 @@ let ted = (sketch) => {
   };
 
   sketch.setup = () => {
-    sketch.createCanvas(window.innerWidth, window.innerHeight - 140, sketch.WEBGL);
+    cnv = sketch.createCanvas(
+      window.innerWidth,
+      window.innerHeight - 140,
+      sketch.WEBGL
+    );
+
+    cnv.mouseClicked(sketch.colorize);
 
     const teddyR = sketch.random(110, 230);
     const teddyG = sketch.random(110, 230);
@@ -63,7 +69,7 @@ let ted = (sketch) => {
       sketch.rotateY(sketch.PI + sketch.radians(10));
 
       sketch.translate(-20, 0, 200);
-      sketch.scale(sketch.windowWidth/ 1000 * 4);
+      sketch.scale((sketch.windowWidth / 1000) * 4);
     }
 
     sketch.model(teddy);
@@ -81,10 +87,6 @@ let ted = (sketch) => {
       sketch.random(120, 250)
     );
     colored = true;
-  };
-
-  sketch.mousePressed = () => {
-    sketch.colorize();
   };
 
   sketch.keyPressed = () => {

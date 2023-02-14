@@ -16,7 +16,7 @@ export default function ticker() {
   let message2 = document.createElement("div");
 
   message2.classList.add("ticker__item");
-  message2.innerText = `CLICK ANYWHERE FOR NEW COLORS`;
+  message2.innerText = `CLICK ON ANYTHING COLORFUL FOR NEW COLORS`;
 
   ticker.appendChild(message2);
 
