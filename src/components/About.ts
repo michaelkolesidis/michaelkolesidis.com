@@ -33,7 +33,7 @@ export default function about() {
 
       `Today, I mostly use three.js, OpenGL Shading Language, WebGL, JavaScript, React, TypeScript, Blender, and I explore tools in the intersection of graphics and sound.`,
 
-      `I have a small penguin figurine on my desk.`,
+      `I keep a small penguin figurine on my desk. (Thank you Mr. Torvalds)`,
 
       `I've been  to many countries meeting people and discovering cultures from all over the world.`,
 
