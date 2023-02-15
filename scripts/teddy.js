@@ -15,7 +15,9 @@ let ted = (sketch) => {
   sketch.setup = () => {
     cnv = sketch.createCanvas(
       window.innerWidth,
-      window.innerHeight - 140,
+      window.innerHeight > 800
+        ? window.innerHeight - 140
+        : window.innerHeight - 40,
       sketch.WEBGL
     );
 

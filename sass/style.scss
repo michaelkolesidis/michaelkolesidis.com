@@ -245,6 +245,14 @@ section {
   }
 }
 
+#github {
+  margin-left: 23em;
+}
+
+#linkedin {
+  margin-left: 13em;
+}
+
 /********** THIS WEBSITE **********/
 #this-website {
   @extend #about;
@@ -474,10 +482,14 @@ $duration: 104s;
     position: inherit;
   }
 
+  #top-gap {
+    height: 40px;
+  }
+
   #name {
     font-size: 9vw;
     position: absolute;
-    top: 0;
+    top: 10px;
 
     span {
       font-size: 9vw;
@@ -492,7 +504,6 @@ $duration: 104s;
     p {
       max-width: -moz-fit-content;
       max-width: fit-content;
-      font-size: 1.4rem;
     }
 
     #left {
@@ -501,10 +512,9 @@ $duration: 104s;
 
     #right {
       column-count: 1;
-      max-width: fit-content;
-      font-size: 1.4rem;
+      font-size: 1.1rem;
       display: sticky;
-      bottom: 0;
+      bottom: 10px;
     }
   }
 
@@ -528,7 +538,7 @@ $duration: 104s;
   }
 
   .project-image {
-    height: 15rem;
+    height: 11rem;
   }
 
   #contact {
@@ -542,6 +552,14 @@ $duration: 104s;
       margin: 4rem;
       text-decoration: underline;
     }
+  }
+
+  #github {
+    margin-left: 0;
+  }
+
+  #linkedin {
+    margin-left: 0;
   }
 
   #about {
@@ -559,20 +577,28 @@ $duration: 104s;
     }
   }
 
+  #this-website {
+    @extend #about;
+
+    a {
+      font-size: 1em;
+    }
+  }
+
   footer {
     width: 100%;
 
     p {
-      font-size: 2rem;
+      font-size: 1rem;
       max-width: 80vw;
     }
   }
 
   #top-button {
-    line-height: 100px;
-    height: 100px;
-    width: 100px;
-    font-size: 33px;
+    line-height: 50px;
+    height: 50px;
+    width: 50px;
+    font-size: 15px;
   }
 }
 

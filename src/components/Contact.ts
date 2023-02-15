@@ -31,27 +31,23 @@ export default function contact() {
 
     // GitHub
     let github = document.createElement("a");
+    github.setAttribute("id", "github");
     github.innerHTML = `GitHub`;
     github.title = "GitHub";
     github.href = "https://github.com/michaelkolesidis";
     github.target = "_blank";
     contact.appendChild(github);
 
-    /* Styling */
-    github.style.marginLeft = `23em`;
-
     contact.innerHTML += "<br>";
 
     // LinkedIn
     let linkedin = document.createElement("a");
+    linkedin.setAttribute("id", "linkedin");
     linkedin.innerHTML = `LinkedIn`;
     linkedin.title = "LinkedIn";
     linkedin.href = "https://www.linkedin.com/in/michaelkolesidis/";
     linkedin.target = "_blank";
     contact.appendChild(linkedin);
-
-    /* Styling */
-    linkedin.style.marginLeft = `13em`;
 
     contact.innerHTML += "<br>";
 
