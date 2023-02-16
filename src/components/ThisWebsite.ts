@@ -7,7 +7,7 @@ export default function thisWebsite() {
 
   if (website != null) {
     // Title
-    let websiteTitle = document.createElement(`div`);
+    const websiteTitle = document.createElement(`div`);
     websiteTitle.classList.add(`wavy`);
     websiteTitle.innerHTML = `   
         <span style="--i:1">T</span>
@@ -27,7 +27,7 @@ export default function thisWebsite() {
     website.appendChild(websiteTitle);
 
     // Sentences
-    let sentences = [
+    const sentences = [
       `(Finally a colourless section!)`,
       `This website was created and coded by me from scratch, without the use of any front-end UI libraries or frameworks. The only library used is a WebGL library named p5.js, that helped me with the 3D teddy bear at the top of the page.`,
 
@@ -40,7 +40,7 @@ export default function thisWebsite() {
 
     // Populate
     for (let i = 0; i < sentences.length; i++) {
-      let sentence = document.createElement(`p`);
+      const sentence = document.createElement(`p`);
       sentence.innerHTML = `${sentences[i]}`;
       website.appendChild(sentence);
     }

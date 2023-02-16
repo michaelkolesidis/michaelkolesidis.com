@@ -7,13 +7,13 @@ export default function header() {
 
   if (header != null) {
     // Name
-    let name = document.createElement("h1");
+    const name = document.createElement("h1");
     name.setAttribute("id", "name");
     name.innerHTML = `MICHAEL K<span id="title-letter">O</span>LESIDIS`;
     header.appendChild(name);
 
     // Top gap
-    let topGap = document.createElement("div");
+    const topGap = document.createElement("div");
     topGap.setAttribute("id", "top-gap");
     topGap.innerText = `.`;
     header.appendChild(topGap);

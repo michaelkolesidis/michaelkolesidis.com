@@ -9,7 +9,7 @@ export default function projects() {
 
   if (projects != null) {
     // Project Title
-    let projectsTitle = document.createElement("div");
+    const projectsTitle = document.createElement("div");
     projectsTitle.classList.add("wavy");
     projectsTitle.innerHTML = `   
         <span style="--i:1">P</span>
@@ -23,7 +23,7 @@ export default function projects() {
         <span style="--i:9">O</span>`;
     projects.appendChild(projectsTitle);
 
-    let projectsContainer = document.createElement("div");
+    const projectsContainer = document.createElement("div");
     projectsContainer.setAttribute("id", "projects-container");
     projects.appendChild(projectsContainer);
 
@@ -34,7 +34,7 @@ export default function projects() {
       }
 
       // Project
-      let proj = document.createElement("div");
+      const proj = document.createElement("div");
       proj.classList.add("project-card");
 
       /* Styling */
@@ -44,7 +44,7 @@ export default function projects() {
       proj.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
 
       // Project Image with Link
-      let image = document.createElement("img");
+      const image = document.createElement("img");
       image.setAttribute("src", project.image);
       image.setAttribute("alt", project.name);
       image.classList.add("project-image");
@@ -54,7 +54,7 @@ export default function projects() {
       });
 
       // Title
-      let title = document.createElement("a");
+      const title = document.createElement("a");
       title.classList.add("project-title");
       title.href = `${project.deployment}`;
       title.target = "_blank";
@@ -62,20 +62,20 @@ export default function projects() {
       proj.appendChild(title);
 
       // Summary
-      let summary = document.createElement("p");
+      const summary = document.createElement("p");
       summary.classList.add("project-summary");
       summary.innerText = `${project.summary}`;
       proj.appendChild(summary);
 
       // Technologies
 
-      let techonolgies = document.createElement("p");
+      const techonolgies = document.createElement("p");
       techonolgies.classList.add("technologies");
       techonolgies.innerText = `${project.technologies}`;
       proj.appendChild(techonolgies);
 
       // Repository Link
-      let repoLink = document.createElement("a");
+      const repoLink = document.createElement("a");
       repoLink.classList.add("repo-link");
       repoLink.innerText = "GitHub";
       repoLink.href = `${project.repository}`;
@@ -85,7 +85,7 @@ export default function projects() {
       projectsContainer.appendChild(proj);
     }
 
-    let allProjects = document.querySelectorAll(".project-card");
+    const allProjects = document.querySelectorAll(".project-card");
     allProjects.forEach((proj) => {
       proj.addEventListener("click", (e) => {
         /* Styling */
@@ -100,7 +100,7 @@ export default function projects() {
     });
 
     // Info box
-    let more = document.createElement("p");
+    const more = document.createElement("p");
     more.setAttribute("id", "more");
     more.innerText = `The list gets updated regularly with new projects. Check back again soon!`;
     projects.appendChild(more);

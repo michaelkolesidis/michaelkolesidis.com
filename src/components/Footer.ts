@@ -7,7 +7,7 @@ export default function footer() {
 
   if (footer != null) {
     // Copyright
-    let copyright = document.createElement("p");
+    const copyright = document.createElement("p");
     footer.appendChild(copyright);
   }
 }

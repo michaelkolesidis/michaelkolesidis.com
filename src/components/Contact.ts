@@ -7,7 +7,7 @@ export default function contact() {
 
   if (contact != null) {
     // Contact Title
-    let contactTitle = document.createElement("div");
+    const contactTitle = document.createElement("div");
     contactTitle.classList.add("wavy");
     contactTitle.innerHTML = `   
      <span style="--i:1">C</span>
@@ -20,7 +20,7 @@ export default function contact() {
     contact.appendChild(contactTitle);
 
     // Email
-    let email = document.createElement("p");
+    const email = document.createElement("p");
     email.setAttribute("id", "email");
     email.innerText = `For inquiries please drop me a line at:
    michael.kolesidis@gmail.com`;
@@ -30,7 +30,7 @@ export default function contact() {
     contact.innerHTML += "<br>";
 
     // GitHub
-    let github = document.createElement("a");
+    const github = document.createElement("a");
     github.setAttribute("id", "github");
     github.innerHTML = `GitHub`;
     github.title = "GitHub";
@@ -41,7 +41,7 @@ export default function contact() {
     contact.innerHTML += "<br>";
 
     // LinkedIn
-    let linkedin = document.createElement("a");
+    const linkedin = document.createElement("a");
     linkedin.setAttribute("id", "linkedin");
     linkedin.innerHTML = `LinkedIn`;
     linkedin.title = "LinkedIn";
@@ -52,7 +52,7 @@ export default function contact() {
     contact.innerHTML += "<br>";
 
     // Stack Overflow
-    let stackoverflow = document.createElement("a");
+    const stackoverflow = document.createElement("a");
     stackoverflow.innerHTML = `Stack Overflow`;
     stackoverflow.title = "Stack Overflow";
     stackoverflow.href =

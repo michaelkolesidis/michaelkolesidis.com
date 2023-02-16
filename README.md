@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="./assets/screenshot-0.png" width="700px">
+  <img src="./screenshots/screenshot-0.png" width="700px">
   <h4>This is my personal web page and it's perpetually under construction.</h4>
 </div>
 
@@ -27,18 +27,28 @@ The visitors can customize the colors of all colored elements: clicking on an el
 
 Most of the elements are part of microinteractions and hovering over them or interacting with them in other ways triggers some animation. Make sure to explore all of them :-)
 
+## Awards
+
+### DESIGN AWARD - Honorable One Page Website
+
+**[One Page Love](https://onepagelove.com/michael-kolesidis)**
+
+_February 2023_
+
+Awarded by One Page Love, a One Page website design gallery showcasing the best Single Page websites, templates and resources.
+
 ## Screenshots
 
-<img src="./assets/screenshot-3.png" width="700px">
-<img src="./assets/screenshot-4b.png" width="700px">
-<img src="./assets/screenshot-1.png" width="700px">
-<img src="./assets/screenshot-2.png" width="700px">
-<img src="./assets/screenshot-4a.png" width="700px">
-<img src="./assets/screenshot-4c.png" width="700px">
-<img src="./assets/screenshot-4d.png" width="700px">
-<img src="./assets/screenshot-4e.png" width="700px">
-<img src="./assets/screenshot-4f.png" width="700px">
-<img src="./assets/screenshot-5.png" width="700px">
+<img src="./screenshots/screenshot-3.png" width="700px">
+<img src="./screenshots/screenshot-4b.png" width="700px">
+<img src="./screenshots/screenshot-1.png" width="700px">
+<img src="./screenshots/screenshot-2.png" width="700px">
+<img src="./screenshots/screenshot-4a.png" width="700px">
+<img src="./screenshots/screenshot-4c.png" width="700px">
+<img src="./screenshots/screenshot-4d.png" width="700px">
+<img src="./screenshots/screenshot-4e.png" width="700px">
+<img src="./screenshots/screenshot-4f.png" width="700px">
+<img src="./screenshots/screenshot-5.png" width="700px">
 
 ## License
 

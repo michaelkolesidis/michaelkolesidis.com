@@ -258,6 +258,52 @@ section {
   margin-left: 13em;
 }
 
+/********** AWARDS **********/
+#award {
+  display: flex;
+  flex-direction: row;
+  margin-top: -2em;
+  max-height: fit-content;
+  align-items: flex-start;
+}
+
+.award-star {
+  margin-right: 0.3em;
+  font-size: 5em;
+  line-height: 2em;
+}
+
+.award-details {
+  margin-top: 3.7em;
+}
+
+.award-title {
+  font-weight: 600;
+  font-size: 1.7rem;
+}
+
+.award-awarder {
+  font-size: 1.7rem;
+}
+
+.award-title > span,
+.award-awarder > span {
+  display: inline-block;
+  white-space: pre;
+  letter-spacing: 0.03em;
+  transition: all 1s ease-out;
+}
+
+.award-title:hover > span,
+.award-awarder:hover > span {
+  transform: rotate(-15deg);
+}
+
+.award-description {
+  max-width: 78ch;
+  font-size: 1.1rem;
+}
+
 /********** THIS WEBSITE **********/
 #this-website {
   @extend #about;

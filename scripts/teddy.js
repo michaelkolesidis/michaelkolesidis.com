@@ -2,7 +2,7 @@
 // Licensed under the GNU General Public License v3.0.
 // https://www.gnu.org/licenses/gpl-3.0.html
 
-let ted = (sketch) => {
+const ted = (sketch) => {
   let teddy;
   let teddyColor;
   let backgroundColor;
@@ -90,4 +90,4 @@ let ted = (sketch) => {
   };
 };
 
-let teddySketch = new p5(ted, "sketch-placeholder");
+const teddySketch = new p5(ted, "sketch-placeholder");

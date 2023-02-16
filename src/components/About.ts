@@ -7,7 +7,7 @@ export default function about() {
 
   if (about != null) {
     // Title
-    let aboutTitle = document.createElement(`div`);
+    const aboutTitle = document.createElement(`div`);
     aboutTitle.classList.add(`wavy`);
     aboutTitle.innerHTML = `   
       <span style="--i:5">A</span>
@@ -18,7 +18,7 @@ export default function about() {
     about.appendChild(aboutTitle);
 
     // Sentences
-    let sentences = [
+    const sentences = [
       `The official bio ↴ ↴ ↴`,
 
       `I am a multidisciplinary new media artist, with a background in creative development, performance art and computer science. I work at the intersection of performativity and digitality, attempting to blend art with technology with varying degrees of success. Nowadays, I explore graphics programming and a multitude of new media technologies to create web art, audiovisual art and physical installations. I have presented my work in Greece and the UK.`,
@@ -45,7 +45,7 @@ export default function about() {
     ];
 
     for (let i = 0; i < sentences.length; i++) {
-      let sentence = document.createElement(`p`);
+      const sentence = document.createElement(`p`);
       sentence.innerHTML = `${sentences[i]}`;
 
       about.appendChild(sentence);

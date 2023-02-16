@@ -15,6 +15,7 @@ export default function body() {
           <section id="projects"></section>
           <section id="contact"></section>
           <section id="about"></section>
+          <section id="awards"></section>
           <section id="this-website"></section>
           </div>
       </main>

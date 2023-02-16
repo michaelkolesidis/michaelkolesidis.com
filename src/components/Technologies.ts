@@ -6,7 +6,7 @@ export default function technologies() {
   const technologies = document.getElementById("contact");
   if (technologies != null) {
     // Title
-    let technologiesTitle = document.createElement("div");
+    const technologiesTitle = document.createElement("div");
     technologiesTitle.classList.add("wavy");
     technologiesTitle.innerHTML = `   
       <span style="--i:1">T</span>
