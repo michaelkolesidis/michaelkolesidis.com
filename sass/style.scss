@@ -21,6 +21,11 @@ $black: #0a0a0a;
   box-sizing: border-box;
   font-family: "Beatrice", sans-serif;
   color: $black;
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  user-drag: none;
 }
 
 body,

@@ -47,6 +47,18 @@ const projectList = [
   },
 
   {
+    name: "Bird Generator",
+    image: "../../images/bird-generator.png",
+    technologies: "p5.js, JavaScript",
+    summary: "A Bird Generator made with p5.js.",
+    description: "",
+    repository: "https://github.com/michaelkolesidis/bird-generator",
+    deployment: "https://bird-generator.vercel.app/",
+    video: "",
+    visible: true,
+  },
+
+  {
     name: "Perlin Landscape",
     image: "../../images/perlin-landscape.gif",
     technologies: "p5.js, JavaScript",
