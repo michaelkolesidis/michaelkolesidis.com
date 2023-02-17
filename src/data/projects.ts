@@ -83,6 +83,19 @@ const projectList = [
   },
 
   {
+    name: "Sticky Notes",
+    image: "../../images/sticky-notes-02.png",
+    technologies: "TypeScript, CSS",
+    summary:
+      "Fill your screen with sticky notes of various colors. Notes are editable and are saved on local storage",
+    description: "",
+    repository: "https://github.com/michaelkolesidis/sticky-notes",
+    deployment: "https://sticky-notes-ts.vercel.app/",
+    video: "",
+    visible: true,
+  },
+
+  {
     name: "Fractal Mountain",
     image: "../../images/fractal-mountain.gif",
     technologies: "p5.js, JavaScript",
@@ -108,6 +121,18 @@ const projectList = [
   },
 
   {
+    name: "Pong",
+    image: "../../images/pong.gif",
+    technologies: "Processing, Java",
+    summary: "The classic Pong game recreated from scratch.",
+    description: "",
+    repository: "https://github.com/michaelkolesidis/pong-processing",
+    deployment: "https://github.com/michaelkolesidis/pong-processing",
+    video: "",
+    visible: true,
+  },
+
+  {
     name: "Camel Notes",
     image: "../../images/camelnotes.gif",
     technologies: "React, JavaScript",
@@ -120,16 +145,15 @@ const projectList = [
   },
 
   {
-    name: "Japanese Restaurant",
-    image: "../../images/japanese-restaurant.png?v=2",
-    technologies: "JavaScript, Sass, Webpack, npm",
-    summary:
-      "A JavaScript single-page application (SPA) showcasing the use of ES6 modules as well as Webpack.",
+    name: "Circle Random Lines",
+    image: "../../images/circle-random-lines.gif",
+    technologies: "p5.js, JavaScript",
+    summary: "A circle created dynamically by random lines",
     description: "",
-    repository: "https://github.com/michaelkolesidis/japanese-restaurant",
-    deployment: "http://michaelkolesidis.com/japanese-restaurant/",
+    repository: "https://github.com/michaelkolesidis/circle-random-lines",
+    deployment: "https://circle-random-lines.netlify.app/",
     video: "",
-    visible: false,
+    visible: true,
   },
 
   {
@@ -146,19 +170,6 @@ const projectList = [
   },
 
   {
-    name: "Sticky Notes",
-    image: "../../images/sticky-notes-01.png",
-    technologies: "TypeScript, CSS",
-    summary:
-      "Fill your screen with sticky notes of various colors. It's one of my very first projects (and it shows).",
-    description: "",
-    repository: "https://github.com/michaelkolesidis/sticky-notes",
-    deployment: "https://sticky-notes-ts.netlify.app/",
-    video: "",
-    visible: true,
-  },
-
-  {
     name: "Landmarks",
     image: "../../images/landmarks.png?v=2",
     technologies: "React, TypeScript, Webpack, Yarn",
@@ -168,56 +179,6 @@ const projectList = [
     deployment: "https://react-landmarks.netlify.app/",
     video: "",
     visible: true,
-  },
-
-  {
-    name: "Pong",
-    image: "../../images/pong.gif",
-    technologies: "Processing, Java",
-    summary: "The classic Pong game recreated from scratch.",
-    description: "",
-    repository: "https://github.com/michaelkolesidis/pong-processing",
-    deployment: "https://github.com/michaelkolesidis/pong-processing",
-    video: "",
-    visible: true,
-  },
-
-  {
-    name: "Electronic Drum Kit",
-    image: "../../images/electronic-drum-kit.png?v=2",
-    technologies: "JavaScript, CSS",
-    summary: "An Electronic Drumkit that can be used with mouse or keyboard.",
-    description: "",
-    repository: "https://github.com/michaelkolesidis/electronic-drum-kit",
-    deployment: "https://electronic-drumkit-js.netlify.app/",
-    video: "",
-    visible: false,
-  },
-
-  {
-    name: "Tic-Tac-Toe",
-    image: "../../images/tic-tac-toe.png?v=2",
-    technologies: "JavaScript, CSS",
-    summary:
-      "The popular Tic-tac-toe game, implemented with vanilla JavaScript.",
-    description: "",
-    repository: "https://github.com/michaelkolesidis/tic-tac-toe",
-    deployment: "https://tic-tac-toe-michael.netlify.app/",
-    video: "",
-    visible: false,
-  },
-
-  {
-    name: "Olympics",
-    image: "../../images/olympics.png?v=2",
-    technologies: "CSS",
-    summary:
-      "An animation-abundant responsive website showing Olympics results.",
-    description: "",
-    repository: "https://github.com/michaelkolesidis/project-olympics",
-    deployment: "https://project-olympics.netlify.app/",
-    video: "",
-    visible: false,
   },
 
   {
@@ -283,15 +244,66 @@ const projectList = [
   },
 
   {
-    name: "Circle Random Lines",
-    image: "../../images/circle-random-lines.gif",
-    technologies: "p5.js, JavaScript",
-    summary: "A circle created dynamically by random lines",
+    name: "Move Square",
+    image: "../../images/move-square.gif",
+    technologies: "TypeScript, SVG, CSS",
+    summary: "A simple SVG example featuring a movable square.",
     description: "",
-    repository: "https://github.com/michaelkolesidis/circle-random-lines",
-    deployment: "https://circle-random-lines.netlify.app/",
+    repository: "https://github.com/michaelkolesidis/move-square",
+    deployment: "https://move-square.netlify.app/",
     video: "",
     visible: true,
+  },
+
+  {
+    name: "Japanese Restaurant",
+    image: "../../images/japanese-restaurant.png?v=2",
+    technologies: "JavaScript, Sass, Webpack, npm",
+    summary:
+      "A JavaScript single-page application (SPA) showcasing the use of ES6 modules as well as Webpack.",
+    description: "",
+    repository: "https://github.com/michaelkolesidis/japanese-restaurant",
+    deployment: "http://michaelkolesidis.com/japanese-restaurant/",
+    video: "",
+    visible: false,
+  },
+
+  {
+    name: "Electronic Drum Kit",
+    image: "../../images/electronic-drum-kit.png?v=2",
+    technologies: "JavaScript, CSS",
+    summary: "An Electronic Drumkit that can be used with mouse or keyboard.",
+    description: "",
+    repository: "https://github.com/michaelkolesidis/electronic-drum-kit",
+    deployment: "https://electronic-drumkit-js.netlify.app/",
+    video: "",
+    visible: false,
+  },
+
+  {
+    name: "Tic-Tac-Toe",
+    image: "../../images/tic-tac-toe.png?v=2",
+    technologies: "JavaScript, CSS",
+    summary:
+      "The popular Tic-tac-toe game, implemented with vanilla JavaScript.",
+    description: "",
+    repository: "https://github.com/michaelkolesidis/tic-tac-toe",
+    deployment: "https://tic-tac-toe-michael.netlify.app/",
+    video: "",
+    visible: false,
+  },
+
+  {
+    name: "Olympics",
+    image: "../../images/olympics.png?v=2",
+    technologies: "CSS",
+    summary:
+      "An animation-abundant responsive website showing Olympics results.",
+    description: "",
+    repository: "https://github.com/michaelkolesidis/project-olympics",
+    deployment: "https://project-olympics.netlify.app/",
+    video: "",
+    visible: false,
   },
 
   {
@@ -316,18 +328,6 @@ const projectList = [
     deployment: "https://3d-teddy-bear.netlify.app/",
     video: "",
     visible: false,
-  },
-
-  {
-    name: "Move Square",
-    image: "../../images/move-square.gif",
-    technologies: "TypeScript, SVG, CSS",
-    summary: "A simple SVG example featuring a movable square.",
-    description: "",
-    repository: "https://github.com/michaelkolesidis/move-square",
-    deployment: "https://move-square.netlify.app/",
-    video: "",
-    visible: true,
   },
 ];
 
