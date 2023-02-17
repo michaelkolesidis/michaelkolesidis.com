@@ -61,8 +61,10 @@ export default function about() {
       while (angle === 0) {
         angle = Math.random() * 6 - 3;
       }
+      let margin = Math.random() * 3;
       sentence.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
       sentence.style.padding = `3rem`;
+      sentence.style.marginLeft = `${margin}em`
       sentence.style.transform = `rotate(${angle}deg)`;
       sentence.style.boxShadow = `8px 8px rgb(${shadowR}, ${shadowG}, ${shadowB})`;
 
