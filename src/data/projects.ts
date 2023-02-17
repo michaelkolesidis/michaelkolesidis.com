@@ -2,6 +2,8 @@
 // Licensed under the GNU Affero General Public License v3.0.
 // https://www.gnu.org/licenses/gpl-3.0.html
 
+/* Keep visible projects <= 20 */
+
 const projectList = [
   {
     name: "JSS-01",
