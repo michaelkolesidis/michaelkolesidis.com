@@ -41,12 +41,11 @@ export default function awards() {
       const award = document.createElement("div");
       award.setAttribute("id", "award");
 
-      // Star
-      const star = document.createElement("div");
-      star.classList.add("award-star");
-
-      star.innerHTML = `✖`;
-      award.appendChild(star);
+      // X
+      const awardX = document.createElement("div");
+      awardX.classList.add("award-x");
+      awardX.innerHTML = `✖`;
+      award.appendChild(awardX);
 
       /* Styling */
       const r = Math.floor(Math.random() * 131 + 120);
@@ -55,18 +54,18 @@ export default function awards() {
       const shadowR = Math.floor(Math.random() * 131 + 120);
       const shadowG = Math.floor(Math.random() * 131 + 120);
       const shadowB = Math.floor(Math.random() * 131 + 120);
-      star.style.color = `rgb(${r}, ${g}, ${b})`;
-      star.style.textShadow = `3px 3px rgb(${shadowR}, ${shadowG}, ${shadowB})`;
+      awardX.style.color = `rgb(${r}, ${g}, ${b})`;
+      awardX.style.textShadow = `4px 4px rgb(${shadowR}, ${shadowG}, ${shadowB})`;
 
-      star.addEventListener("click", () => {
+      awardX.addEventListener("click", () => {
         const r = Math.floor(Math.random() * 131 + 120);
         const g = Math.floor(Math.random() * 131 + 120);
         const b = Math.floor(Math.random() * 131 + 120);
         const shadowR = Math.floor(Math.random() * 131 + 120);
         const shadowG = Math.floor(Math.random() * 131 + 120);
         const shadowB = Math.floor(Math.random() * 131 + 120);
-        star.style.color = `rgb(${r}, ${g}, ${b})`;
-        star.style.textShadow = `3px 3px rgb(${shadowR}, ${shadowG}, ${shadowB})`;
+        awardX.style.color = `rgb(${r}, ${g}, ${b})`;
+        awardX.style.textShadow = `4px 4px rgb(${shadowR}, ${shadowG}, ${shadowB})`;
       });
 
       // Award Details

@@ -267,10 +267,13 @@ section {
   align-items: flex-start;
 }
 
-.award-star {
-  margin-right: 0.3em;
+.award-x {
+  margin: 0.25em 0.3em 0 0;
+  padding-right: 0.05em;
   font-size: 5em;
-  line-height: 2em;
+  text-align: center;
+  border: 3px dashed black;
+  transform: rotateZ(-10deg);
 }
 
 .award-details {
@@ -280,6 +283,7 @@ section {
 .award-title {
   font-weight: 600;
   font-size: 1.7rem;
+  margin-left: -0.4em;
 }
 
 .award-awarder {
@@ -290,18 +294,19 @@ section {
 .award-awarder > span {
   display: inline-block;
   white-space: pre;
-  letter-spacing: 0.03em;
-  transition: all 1s ease-out;
+  letter-spacing: 0.04em;
+  transition: all 0.5s ease-out;
 }
 
 .award-title:hover > span,
 .award-awarder:hover > span {
-  transform: rotate(-15deg);
+  transform: rotate(-20deg);
 }
 
 .award-description {
-  max-width: 78ch;
+  max-width: 60ch;
   font-size: 1.1rem;
+  margin-left: 0.9em;
 }
 
 /********** THIS WEBSITE **********/
