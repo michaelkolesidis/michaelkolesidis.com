@@ -146,6 +146,19 @@ const projectList = [
   },
 
   {
+    name: "Sticky Notes",
+    image: "../../images/sticky-notes-01.png",
+    technologies: "TypeScript, CSS",
+    summary:
+      "Fill your screen with sticky notes of various colors. It's one of my very first projects (and it shows).",
+    description: "",
+    repository: "https://github.com/michaelkolesidis/sticky-notes",
+    deployment: "https://sticky-notes-ts.netlify.app/",
+    video: "",
+    visible: true,
+  },
+
+  {
     name: "Landmarks",
     image: "../../images/landmarks.png?v=2",
     technologies: "React, TypeScript, Webpack, Yarn",
@@ -153,19 +166,6 @@ const projectList = [
     description: "",
     repository: "https://github.com/michaelkolesidis/react-landmarks",
     deployment: "https://react-landmarks.netlify.app/",
-    video: "",
-    visible: true,
-  },
-
-  {
-    name: "Sports App",
-    image: "../../images/sport-app-pwa.png?v=2",
-    technologies: "JavaScript, CSS",
-    summary:
-      "A progressive web application enabling the user to create custom tables.",
-    description: "",
-    repository: "https://github.com/michaelkolesidis/sports-app-pwa",
-    deployment: "https://sports-app-pwa.netlify.app/",
     video: "",
     visible: true,
   },
@@ -191,20 +191,7 @@ const projectList = [
     repository: "https://github.com/michaelkolesidis/electronic-drum-kit",
     deployment: "https://electronic-drumkit-js.netlify.app/",
     video: "",
-    visible: true,
-  },
-
-  {
-    name: "Sticky Notes",
-    image: "../../images/sticky-notes.png",
-    technologies: "TypeScript, CSS",
-    summary:
-      "A web application allowing the user to fill the screen with sticky notes of various colors.",
-    description: "",
-    repository: "https://github.com/michaelkolesidis/sticky-notes",
-    deployment: "https://sticky-notes-ts.netlify.app/",
-    video: "",
-    visible: true,
+    visible: false,
   },
 
   {
@@ -241,6 +228,19 @@ const projectList = [
     description: "",
     repository: "https://github.com/michaelkolesidis/css-3d",
     deployment: "https://css-3d.netlify.app/",
+    video: "",
+    visible: true,
+  },
+
+  {
+    name: "Sports App",
+    image: "../../images/sport-app-pwa.png?v=2",
+    technologies: "JavaScript, CSS",
+    summary:
+      "A progressive web application enabling the user to create custom tables.",
+    description: "",
+    repository: "https://github.com/michaelkolesidis/sports-app-pwa",
+    deployment: "https://sports-app-pwa.netlify.app/",
     video: "",
     visible: true,
   },
