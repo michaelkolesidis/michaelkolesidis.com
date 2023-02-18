@@ -3,6 +3,7 @@
 // https://www.gnu.org/licenses/gpl-3.0.html
 
 import projectList from "../data/projects.js";
+import { generateColor } from "../functions.js";
 
 export default function projects() {
   const projects = document.getElementById("projects");
@@ -38,10 +39,7 @@ export default function projects() {
       proj.classList.add("project-card");
 
       /* Styling */
-      const r = Math.floor(Math.random() * 131 + 120);
-      const g = Math.floor(Math.random() * 131 + 120);
-      const b = Math.floor(Math.random() * 131 + 120);
-      proj.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
+      proj.style.backgroundColor = `rgb(${generateColor().rgb})`;
 
       // Project Image with Link
       const image = document.createElement("img");
@@ -91,10 +89,7 @@ export default function projects() {
         /* Styling */
         const target = e.target as HTMLElement;
         if (target.classList.contains("project-card")) {
-          const r = Math.floor(Math.random() * 131 + 120);
-          const g = Math.floor(Math.random() * 131 + 120);
-          const b = Math.floor(Math.random() * 131 + 120);
-          target.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
+          target.style.backgroundColor = `rgb(${generateColor().rgb})`;
         }
       });
     });

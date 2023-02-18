@@ -32,8 +32,15 @@ export default function contact() {
     // GitHub
     const github = document.createElement("a");
     github.setAttribute("id", "github");
-    github.innerHTML = `GitHub`;
-    github.title = "GitHub";
+    github.innerHTML = `
+        <span>G</span>
+        <span>i</span>
+        <span>t</span>
+        <span>H</span>
+        <span>u</span>
+        <span>b</span>
+   `;
+    // github.title = "GitHub";
     github.href = "https://github.com/michaelkolesidis";
     github.target = "_blank";
     contact.appendChild(github);
@@ -43,8 +50,17 @@ export default function contact() {
     // LinkedIn
     const linkedin = document.createElement("a");
     linkedin.setAttribute("id", "linkedin");
-    linkedin.innerHTML = `LinkedIn`;
-    linkedin.title = "LinkedIn";
+    linkedin.innerHTML = `
+        <span>L</span>
+        <span>i</span>
+        <span>n</span>
+        <span>k</span>
+        <span>e</span>
+        <span>d</span>
+        <span>I</span>
+        <span>n</span>
+  `;
+    // linkedin.title = "LinkedIn";
     linkedin.href = "https://www.linkedin.com/in/michaelkolesidis/";
     linkedin.target = "_blank";
     contact.appendChild(linkedin);
@@ -53,8 +69,23 @@ export default function contact() {
 
     // Stack Overflow
     const stackoverflow = document.createElement("a");
-    stackoverflow.innerHTML = `Stack Overflow`;
-    stackoverflow.title = "Stack Overflow";
+    stackoverflow.setAttribute("id", "stack-overflow");
+    stackoverflow.innerHTML = `<span>S</span>
+        <span>t</span>
+        <span>a</span>
+        <span>c</span>
+        <span>k</span>
+        <span>&nbsp;</span>
+        <span>O</span>
+        <span>v</span>
+        <span>e</span>
+        <span>r</span>
+        <span>f</span>
+        <span>l</span>
+        <span>o</span>
+    <span>w</span>
+  `;
+    // stackoverflow.title = "Stack Overflow";
     stackoverflow.href =
       "https://stackoverflow.com/users/15253636/michael-kolesidis";
     stackoverflow.target = "_blank";
