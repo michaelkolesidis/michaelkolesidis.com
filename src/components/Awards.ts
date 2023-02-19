@@ -2,6 +2,9 @@
 // Licensed under the GNU Affero General Public License v3.0.
 // https://www.gnu.org/licenses/gpl-3.0.html
 
+import { generateColor } from "../functions.js";
+import { colors } from "../colors.js";
+
 export default function awards() {
   const awards = document.getElementById("awards");
 
@@ -48,24 +51,11 @@ export default function awards() {
       award.appendChild(awardX);
 
       /* Styling */
-      const r = Math.floor(Math.random() * 131 + 120);
-      const g = Math.floor(Math.random() * 131 + 120);
-      const b = Math.floor(Math.random() * 131 + 120);
-      const shadowR = Math.floor(Math.random() * 131 + 120);
-      const shadowG = Math.floor(Math.random() * 131 + 120);
-      const shadowB = Math.floor(Math.random() * 131 + 120);
-      awardX.style.color = `rgb(${r}, ${g}, ${b})`;
-      awardX.style.textShadow = `4px 4px rgb(${shadowR}, ${shadowG}, ${shadowB})`;
+      awardX.style.color = `rgb(${generateColor(colors).rgb})`;
+      awardX.style.textShadow = `4px 4px rgb(0, 0, 0)`;
 
       awardX.addEventListener("click", () => {
-        const r = Math.floor(Math.random() * 131 + 120);
-        const g = Math.floor(Math.random() * 131 + 120);
-        const b = Math.floor(Math.random() * 131 + 120);
-        const shadowR = Math.floor(Math.random() * 131 + 120);
-        const shadowG = Math.floor(Math.random() * 131 + 120);
-        const shadowB = Math.floor(Math.random() * 131 + 120);
-        awardX.style.color = `rgb(${r}, ${g}, ${b})`;
-        awardX.style.textShadow = `4px 4px rgb(${shadowR}, ${shadowG}, ${shadowB})`;
+        awardX.style.color = `rgb(${generateColor(colors).rgb})`;
       });
 
       // Award Details

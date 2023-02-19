@@ -18,6 +18,12 @@ export default function topButton() {
     // When the user scrolls down the given distance from the top of the document, show the button
     window.onscroll = function () {
       scrollFunction(topButton, 300);
+
+      if (window.innerHeight + window.scrollY >= document.body.offsetHeight) {
+        topButton.style.border = `3px solid white`;
+      } else {
+        topButton.style.border = `0`;
+      }
     };
   }
 }

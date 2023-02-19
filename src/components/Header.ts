@@ -9,7 +9,7 @@ export default function header() {
     // Name
     const name = document.createElement("h1");
     name.setAttribute("id", "name");
-    name.innerHTML = `MICHAEL K<span id="title-letter">O</span>LESIDIS`;
+    name.innerHTML = `MICHAEL K<span id="title-letter">O</span>LESIDIS <span id="version">v. 2.0</span>`;
     header.appendChild(name);
 
     // Top gap
@@ -20,5 +20,48 @@ export default function header() {
 
     /* Styling */
     topGap.style.color = `white`;
+
+    // Message window (old)
+    // const messageWindow = document.createElement("div");
+    // messageWindow.setAttribute("id", "message-window");
+    // messageWindow.innerHTML = `DESIGN AWARD`
+    // messageWindow.innerHTML += `<br>One Page Love<br>February 2023`;
+    // const removeButton = document.createElement("button");
+    // removeButton.classList.add("remove-button");
+    // removeButton.textContent = "✕";
+    // removeButton.addEventListener("click", () => {
+    //   messageWindow.style.opacity = "0";
+    //   console.log("clicked");
+    // });
+    // messageWindow.appendChild(removeButton);
+    // header.appendChild(messageWindow);
+
+    // Message Box
+    const messageBox = document.createElement("div");
+    messageBox.setAttribute("id", "box");
+
+    const content = document.createElement("div");
+    content.classList.add("content");
+    content.innerHTML = /* html */ `
+        <p>DESIGN AWARD</p>
+        <p>One Page Love</p>
+        <p>February 2023</p>`;
+    messageBox.appendChild(content);
+
+    const removeButton = document.createElement("button");
+    removeButton.classList.add("remove-button");
+    removeButton.textContent = "✕";
+    removeButton.addEventListener("click", () => {
+      messageBox.style.opacity = "0";
+      header.removeChild(messageBox);
+    });
+    messageBox.appendChild(removeButton);
+    header.appendChild(messageBox);
   }
 }
+
+// <div class="content">
+// <h2>DESIGN AWARD</h2>
+// <h3>One Page Love</h3>
+// <h3>February 2023</h3>
+// </div>
