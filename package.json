@@ -6,7 +6,7 @@
   "main": "index.js",
   "scripts": {
     "sass": "sass --watch sass:styles --style compressed ",
-    "build": "tsc --build",
+    "build": "tsc --build --watch",
     "clean": "tsc --build --clean"
   },
   "repository": {

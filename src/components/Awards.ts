@@ -3,6 +3,7 @@
 // https://www.gnu.org/licenses/gpl-3.0.html
 
 import { generateColor } from "../functions.js";
+import { colors } from "../colors.js";
 
 export default function awards() {
   const awards = document.getElementById("awards");
@@ -50,11 +51,11 @@ export default function awards() {
       award.appendChild(awardX);
 
       /* Styling */
-      awardX.style.color = `rgb(${generateColor().rgb})`;
+      awardX.style.color = `rgb(${generateColor(colors).rgb})`;
       awardX.style.textShadow = `4px 4px rgb(0, 0, 0)`;
 
       awardX.addEventListener("click", () => {
-        awardX.style.color = `rgb(${generateColor().rgb})`;
+        awardX.style.color = `rgb(${generateColor(colors).rgb})`;
       });
 
       // Award Details

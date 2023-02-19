@@ -3,6 +3,7 @@
 // https://www.gnu.org/licenses/gpl-3.0.html
 
 import { generateColor } from "../functions.js";
+import { colors } from "../colors.js";
 
 export default function about() {
   const about = document.getElementById(`about`);
@@ -60,7 +61,7 @@ export default function about() {
       while (angle === 0) {
         angle = Math.random() * 6 - 3;
       }
-      sentence.style.backgroundColor = `rgb(${generateColor().rgb})`;
+      sentence.style.backgroundColor = `rgb(${generateColor(colors).rgb})`;
       if (i < 8) {
         leftMargin += window.innerWidth * 0.012 * i;
       } else {
@@ -74,7 +75,7 @@ export default function about() {
       sentence.style.boxShadow = `8px 8px rgb(0, 0, 0)`;
 
       sentence.addEventListener("click", () => {
-        sentence.style.backgroundColor = `rgb(${generateColor().rgb})`;
+        sentence.style.backgroundColor = `rgb(${generateColor(colors).rgb})`;
       });
     }
   }

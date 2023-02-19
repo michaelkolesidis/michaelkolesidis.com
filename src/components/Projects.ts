@@ -4,6 +4,7 @@
 
 import projectList from "../data/projects.js";
 import { generateColor } from "../functions.js";
+import { colors } from "../colors.js";
 
 export default function projects() {
   const projects = document.getElementById("projects");
@@ -39,7 +40,7 @@ export default function projects() {
       proj.classList.add("project-card");
 
       /* Styling */
-      proj.style.backgroundColor = `rgb(${generateColor().rgb})`;
+      proj.style.backgroundColor = `rgb(${generateColor(colors).rgb})`;
 
       // Project Image with Link
       const image = document.createElement("img");
@@ -89,7 +90,7 @@ export default function projects() {
         /* Styling */
         const target = e.target as HTMLElement;
         if (target.classList.contains("project-card")) {
-          target.style.backgroundColor = `rgb(${generateColor().rgb})`;
+          target.style.backgroundColor = `rgb(${generateColor(colors).rgb})`;
         }
       });
     });
