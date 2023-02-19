@@ -280,8 +280,9 @@ section {
   height: 20rem;
   margin-bottom: 1.31em;
   border: 3px solid $black;
+  box-shadow: 8px 8px rgb(0, 0, 0);
   transition: transform 1.2s ease-in-out, filter 1.5s ease-in-out,
-    opacity 1.5s ease-in-out;
+    opacity 1.5s ease-in-out, box-shadow 1s ease-in-out;
   opacity: 0.6;
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
@@ -292,6 +293,7 @@ section {
   -webkit-filter: grayscale(0%);
   filter: grayscale(0%);
   transform: perspective(600px) translateZ(200px) rotateX(20deg);
+  box-shadow: 0px 0px rgb(0, 0, 0);
   opacity: 0.8;
 }
 
@@ -432,15 +434,18 @@ section {
     padding: 3rem;
     margin-bottom: 1em;
     border: 3px solid $black;
-    max-width: 78ch;
+    max-width: 60ch;
     // text-align: justify;
+    box-shadow: 8px 8px rgb(0, 0, 0);
     text-justify: inter-cluster;
-    transition: transform 0.5s ease-in-out;
+    transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
     cursor: url("../assets/windows95-pointer.png"), auto;
   }
 
   p:hover {
+    max-width: 60ch;
     transform: perspective(100px) translateZ(10px) !important;
+    box-shadow: 0px 0px rgb(0, 0, 0);
   }
 }
 
@@ -515,6 +520,7 @@ section {
     max-width: 60ch;
     margin: 1.3em 3em;
     border: 0;
+    box-shadow: none;
   }
 
   p:hover {

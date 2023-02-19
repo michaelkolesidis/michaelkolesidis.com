@@ -72,8 +72,7 @@ export default function about() {
       }
       sentence.style.marginLeft = `${leftMargin}px`;
       sentence.style.transform = `rotate(${angle}deg)`;
-      sentence.style.boxShadow = `8px 8px rgb(0, 0, 0)`;
-
+      
       sentence.addEventListener("click", () => {
         sentence.style.backgroundColor = `rgb(${generateColor(colors).rgb})`;
       });
