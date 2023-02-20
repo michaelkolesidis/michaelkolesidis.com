@@ -1,6 +1,7 @@
 other
-scripts
-!scripts/teddy.js
+!scripts/
+scripts/*
+!scripts/duck.js
 .vscode
 .hintrc
 

@@ -39,6 +39,12 @@ Awarded by One Page Love, a One Page website design gallery showcasing the best 
 
 ## Screenshots
 
+### v. 2.0
+
+Coming soon
+
+### v. 1.0
+
 <img src="./screenshots/screenshot-3.png" width="700px">
 <img src="./screenshots/screenshot-4b.png" width="700px">
 <img src="./screenshots/screenshot-1.png" width="700px">

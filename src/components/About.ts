@@ -2,6 +2,9 @@
 // Licensed under the GNU Affero General Public License v3.0.
 // https://www.gnu.org/licenses/gpl-3.0.html
 
+import { generateNewColor } from "../functions.js";
+import { colors } from "../colors.js";
+
 export default function about() {
   const about = document.getElementById(`about`);
 
@@ -31,9 +34,9 @@ export default function about() {
 
       "The first programming language I ever tampered with was Pascal, and the first language I ever learnt was C.",
 
-      `Today, I mostly use three.js, OpenGL Shading Language, WebGL, JavaScript, React, TypeScript, Blender, and I explore tools in the intersection of graphics and sound.`,
+      `Today, I mostly use three.js, OpenGL Shading Language, WebGL, JavaScript, React, TypeScript, and Blender.`,
 
-      `I keep a small penguin figurine on my desk. (Thank you Mr. Torvalds)`,
+      `I always keep a rubber duck on my desk.`,
 
       `I've been  to many countries meeting people and discovering cultures from all over the world.`,
 
@@ -44,40 +47,39 @@ export default function about() {
       `In the unlike event that you need more info about me, please send me an email and I will try to respond as soon as possible.`,
     ];
 
+    let leftMargin = 0;
+    let colorIndex = 0;
+
     for (let i = 0; i < sentences.length; i++) {
       const sentence = document.createElement(`p`);
+      sentence.classList.add("sentence");
       sentence.innerHTML = `${sentences[i]}`;
 
       about.appendChild(sentence);
 
       /* Styling */
-      const r = Math.floor(Math.random() * 131 + 120);
-      const g = Math.floor(Math.random() * 131 + 120);
-      const b = Math.floor(Math.random() * 131 + 120);
-      const shadowR = Math.floor(Math.random() * 131 + 120);
-      const shadowG = Math.floor(Math.random() * 131 + 120);
-      const shadowB = Math.floor(Math.random() * 131 + 120);
       let angle = 0;
       while (angle === 0) {
         angle = Math.random() * 6 - 3;
       }
-      sentence.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
-      sentence.style.padding = `3rem`;
+      const color = colors[colorIndex % colors.length].rgb;
+      sentence.style.backgroundColor = `rgb(${color})`;
+      colorIndex += 1;
+      if (i < 8) {
+        leftMargin += window.innerWidth * 0.012 * i;
+      } else {
+        leftMargin -= window.innerWidth * 0.012 * i;
+        if (leftMargin < 0) {
+          leftMargin = 0;
+        }
+      }
+      sentence.style.marginLeft = `${leftMargin}px`;
       sentence.style.transform = `rotate(${angle}deg)`;
-      sentence.style.boxShadow = `8px 8px rgb(${shadowR}, ${shadowG}, ${shadowB})`;
 
       sentence.addEventListener("click", () => {
-        const r = Math.floor(Math.random() * 131 + 120);
-        const g = Math.floor(Math.random() * 131 + 120);
-        const b = Math.floor(Math.random() * 131 + 120);
-
-        const shadowR = Math.floor(Math.random() * 131 + 120);
-        const shadowG = Math.floor(Math.random() * 131 + 120);
-        const shadowB = Math.floor(Math.random() * 131 + 120);
-
-        sentence.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
-        sentence.style.padding = `3rem`;
-        sentence.style.boxShadow = `8px 8px rgb(${shadowR}, ${shadowG}, ${shadowB})`;
+        sentence.style.backgroundColor = `rgb(${
+          generateNewColor(colors, sentence, "backgroundColor").rgb
+        })`;
       });
     }
   }

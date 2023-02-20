@@ -28,3 +28,6 @@ awards();
 thisWebsite();
 footer();
 topButton();
+
+// Other
+document.addEventListener("contextmenu", (e) => e.preventDefault());

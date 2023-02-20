@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat&display=swap");
 @font-face {
   font-family: "Beatrice";
   font-display: block;
@@ -25,7 +26,6 @@ $black: #0a0a0a;
   -khtml-user-drag: none;
   -moz-user-drag: none;
   -o-user-drag: none;
-  user-drag: none;
 }
 
 body,
@@ -52,7 +52,6 @@ a {
   z-index: 1;
   mix-blend-mode: difference;
   font-size: 104px;
-  font-weight: 400;
   white-space: nowrap;
   color: $white;
 
@@ -73,12 +72,105 @@ a {
 
 #top-gap {
   height: 140px;
+  border-bottom: 3px solid black;
+}
+
+#box {
+  background: $black;
+  color: $white;
+  position: absolute;
+  top: 160px;
+  right: 20px;
+  width: 200px;
+  height: 200px;
+  padding: 15px;
+  overflow: hidden;
+  z-index: 2;
+
+  button {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    padding-top: -0.3rem;
+    border: 0;
+    background-color: $black;
+    color: $white;
+    cursor: pointer;
+    height: 30px;
+    width: 30px;
+    border-radius: 100px;
+    font-weight: 900;
+    font-size: 1.4rem;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    transition: transform 0.15s linear;
+    z-index: 3;
+    cursor: url("../assets/windows95-pointer.png"), auto;
+  }
+
+  button:hover {
+    transform: scale(1.5);
+  }
+}
+
+#box::before {
+  content: "";
+  position: absolute;
+  width: 150%;
+  height: 150%;
+  background: repeating-linear-gradient(
+    white 0%,
+    white 7.5px,
+    black 7.5px,
+    black 15px,
+    white 15px,
+    white 22.5px,
+    black 22.5px,
+    black 30px
+  );
+  transform: translateX(-20%) translateY(-20%) rotate(-45deg);
+  animation: animate 20s linear infinite;
+}
+
+#box .content {
+  position: relative;
+  background-color: black;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 10px;
+  text-align: center;
+  font-family: sans-serif;
+  z-index: 2;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#box {
+  box-shadow: 8px 8px black;
+}
+
+#box .content p {
+  font-weight: 600;
+  color: white;
+}
+
+@keyframes animate {
+  from {
+    background-position: 0;
+  }
+
+  to {
+    background-position: 0 450px;
+  }
 }
 
 /********** INTRO **********/
 #intro {
   position: absolute;
-  top: 40vh;
+  top: 73vh;
   display: flex;
   justify-content: space-between;
   min-width: 98vw;
@@ -91,27 +183,39 @@ a {
     font-size: 1.7rem;
     text-align: start;
     line-height: 1.1;
-    font-weight: 500;
     overflow: hidden;
   }
 
   #right {
-    max-width: 30ch;
+    max-width: 31ch;
     column-count: 2;
+  }
+
+  #handwriting {
+    position: relative;
+    top: -38.1vh;
+    right: -10em;
+    right: -35vh;
+    font-family: "Caveat", sans-serif;
+    font-size: 2.5em;
+    text-align: center;
+    transform: rotate(20deg);
+    max-width: 13ch;
+    line-height: 1em;
   }
 }
 
-/********** SECTIONS **********/
-section {
-  margin: 0 6rem 3rem;
+canvas {
+  border-bottom: 3px solid black;
 }
 
-/********** WAVY SECTION TITLES **********/
+/********** SECTION TITLES **********/
 .wavy {
   font-size: 72px;
-  margin: 1em 0 0.25em 0;
+  margin: 1em 0 1em 1em;
   max-width: -moz-fit-content;
   max-width: fit-content;
+  font-weight: 600;
 }
 
 .wavy span {
@@ -140,28 +244,27 @@ section {
 /********** PROJECTS **********/
 #projects-container {
   display: grid;
-  gap: 1em;
+
   grid-template-columns: 1fr 1fr;
 
   a {
     @extend p;
   }
-
-  a:hover {
-    text-decoration: underline;
-  }
 }
 
 .project-card {
-  padding: 4rem;
+  padding: 3rem;
+  border: 3px solid black;
+  margin: -1.5px;
 }
 
 .project-image {
   height: 20rem;
   margin-bottom: 1.31em;
-  border: 2px solid $black;
+  border: 3px solid $black;
+  box-shadow: 8px 8px rgb(0, 0, 0);
   transition: transform 1.2s ease-in-out, filter 1.5s ease-in-out,
-    opacity 1.5s ease-in-out;
+    opacity 1.5s ease-in-out, box-shadow 1s ease-in-out;
   opacity: 0.6;
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
@@ -172,19 +275,21 @@ section {
   -webkit-filter: grayscale(0%);
   filter: grayscale(0%);
   transform: perspective(600px) translateZ(200px) rotateX(20deg);
+  box-shadow: 0px 0px rgb(0, 0, 0);
   opacity: 0.8;
 }
 
 .project-title {
   font-size: 1.7em;
-  text-shadow: 1px 1px $black;
+  font-weight: 600;
   white-space: nowrap;
   text-align: left;
-  transition: all 2s ease;
+  transition: all 1s ease;
 }
 
 .project-title:hover {
-  letter-spacing: 0.25rem;
+  letter-spacing: 0.4rem;
+  text-shadow: 2px 0px black;
 }
 
 .project-summary,
@@ -198,71 +303,136 @@ section {
 
 .repo-link {
   margin-top: 0.5rem;
+  font-weight: 600;
   font-size: 1.2rem;
 }
 
 .repo-link:hover::after {
-  content: " < < < < <";
+  content: " < < < < < <";
 }
 
 #more {
   padding: 20px;
-  margin: 4em auto;
-  max-width: 50ch;
-  border: 2px solid $black;
+  text-align: center;
+  border-bottom: 3px solid $black;
+  border-top: 3px solid $black;
+  margin-top: -1.5px;
+  font-size: 1.5em;
 }
 
 /********** CONTACT **********/
 #contact {
-  p,
-  a {
+  padding-bottom: 7em;
+  border-bottom: 3px solid $black;
+
+  p {
     font-size: 1.7rem;
-    text-align: start;
     line-height: 1.1;
-    font-weight: 500;
+    margin-left: 5em;
+    margin-bottom: 1em;
   }
 
-  a:hover {
-    text-decoration: underline;
+  a {
+    font-size: 1.9rem;
+    font-weight: 600;
   }
+}
+
+#github,
+#linkedin,
+#stack-overflow {
+  display: inline-block;
+  transform: rotate(10deg);
+  transform-origin: top right;
+  letter-spacing: 2px;
+
+  span {
+    display: inline-block;
+    transform: rotate(-10deg);
+  }
+}
+
+#github::after,
+#linkedin::after,
+#stack-overflow::after {
+  color: rgba(0, 0, 0, 0);
+  content: "......";
+  background-image: url("../assets/duck_white.svg");
+  background-size: 40px 50px;
+  height: 40px;
+  width: 50px;
+}
+
+#github:hover::after,
+#linkedin:hover::after,
+#stack-overflow:hover::after {
+  color: rgba(0, 0, 0, 0);
+  content: "......";
+  background-image: url("../assets/duck.svg");
+  background-size: 40px 50px;
+  height: 40px;
+  width: 50px;
+  background-repeat: no-repeat;
+}
+
+#github {
+  margin-left: 28em;
+}
+
+#linkedin {
+  margin-left: 19.3em;
+}
+
+#stack-overflow {
+  margin-left: 5em;
 }
 
 /********** ABOUT **********/
 #about {
   @extend #contact;
-  display: grid;
+
+  margin: 5em 7rem;
+  border: 0;
+
+  .wavy {
+    margin-left: 0em;
+  }
+
+  .sentence {
+    margin-left: 100rem;
+  }
+
   p {
-    margin-bottom: 3rem;
+    padding: 3rem;
+    margin-bottom: 1em;
+    border: 3px solid $black;
     max-width: 60ch;
-    text-align: justify;
+    box-shadow: 8px 8px rgb(0, 0, 0);
     text-justify: inter-cluster;
-    padding-right: 2em;
-    transition: transform 0.5s ease-in-out;
+    transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
     cursor: url("../assets/windows95-pointer.png"), auto;
   }
 
   p:hover {
+    max-width: 60ch;
     transform: perspective(100px) translateZ(10px) !important;
+    box-shadow: 0px 0px rgb(0, 0, 0);
   }
-
-  p:last-child {
-    margin-bottom: 0;
-  }
-}
-
-#github {
-  margin-left: 23em;
-}
-
-#linkedin {
-  margin-left: 13em;
 }
 
 /********** AWARDS **********/
+#awards {
+  border-top: 3px solid $black;
+  border-bottom: 3px solid $black;
+  padding: 1em 0;
+}
+
 #award {
   display: flex;
   flex-direction: row;
-  margin-top: -2em;
+  margin-left: 10em;
+  margin-bottom: 7em;
+
   max-height: fit-content;
   align-items: flex-start;
 }
@@ -273,7 +443,17 @@ section {
   font-size: 5em;
   text-align: center;
   border: 3px dashed black;
-  transform: rotateZ(-10deg);
+  transform-style: preserve-3d;
+  animation: loader 5s infinite;
+}
+
+@keyframes loader {
+  0% {
+    transform: rotateX(0deg) rotateY(0deg) rotateZ(-10deg);
+  }
+  100% {
+    transform: rotateX(180deg) rotateY(180deg) rotateZ(170deg);
+  }
 }
 
 .award-details {
@@ -312,18 +492,20 @@ section {
 /********** THIS WEBSITE **********/
 #this-website {
   @extend #about;
-  margin-bottom: 7em;
+  margin-bottom: 0.3em;
+  padding-bottom: 7em;
 
   p {
     cursor: url("../assets/windows95-cursor.png"), auto;
+    padding: 0;
+    max-width: 60ch;
+    margin: 1.3em 3em;
+    border: 0;
+    box-shadow: none;
   }
 
   p:hover {
     transform: translateZ(0) !important;
-  }
-
-  a {
-    text-decoration: line-through;
   }
 
   a:hover {
@@ -333,13 +515,15 @@ section {
 
 /********** FOOTER **********/
 footer {
-  height: 9.417em;
-  background: url("../assets/floral.png");
+  height: 26em;
+  background-color: $black;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  border-top: 3px solid $black;
 
-  p {
+  #copyright {
     font-size: 1.7rem;
     text-align: start;
     line-height: 1.1;
@@ -354,12 +538,30 @@ footer {
     text-align: center;
   }
 
-  p::before {
-    content: "© 2023 Michael Kolesidis";
+  #disclaimer {
+    color: $white;
+    max-width: 44ch;
+    text-align: center;
+    margin-top: 2em;
   }
 
-  p:hover::before {
-    content: "thanks  for your visit : )";
+  #ducks {
+    margin-top: 3em;
+    margin-bottom: -2em;
+    color: $white;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+
+    svg {
+      margin: 1.5em;
+      cursor: url("../assets/windows95-pointer.png"), auto;
+      transition: all 0.25s;
+    }
+
+    svg:hover {
+      transform: rotateZ(15deg);
+    }
   }
 }
 
@@ -375,26 +577,12 @@ footer {
 
 #p5_loading {
   font-size: 20vw;
+  font-weight: 600;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
   animation: flash 0.5s infinite;
-}
-
-/********** GRAIN **********/
-#overlay {
-  position: fixed;
-  z-index: 100;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background: url("../assets/grain.jpg") no-repeat;
-  background-size: cover;
-  opacity: 0.03;
-  height: 100vh;
-  pointer-events: none;
 }
 
 /********** TOP BUTTON **********/
@@ -404,18 +592,19 @@ footer {
   bottom: 2.5vw;
   right: 2vw;
   z-index: 99;
-  border: none;
-  outline: none;
+  font-weight: 600;
   cursor: url("../assets/windows95-pointer.png"), auto;
   border-radius: 50%;
   font-size: 2vw;
-  line-height: 6vw;
-  height: 6vw;
-  width: 6vw;
+  line-height: 6.5vw;
+  height: 6.5vw;
+  width: 6.5vw;
   text-align: center;
   background: $black;
   color: $white;
   transition: transform 1s;
+  border: 4px solid transparent;
+  background-clip: padding-box;
 }
 
 #top-button:hover {
@@ -493,6 +682,7 @@ $duration: 104s;
 }
 
 .ticker-wrap {
+  font-weight: 600;
   position: fixed;
   top: 0;
   z-index: 3;
@@ -601,7 +791,6 @@ $duration: 104s;
     p {
       font-size: 1rem;
       margin: 0.6rem;
-      max-width: 30ch;
     }
 
     a {
@@ -622,14 +811,12 @@ $duration: 104s;
     display: flex;
     flex-direction: column;
     align-items: center;
-
     .wavy {
       align-self: baseline !important;
     }
 
     p {
       margin-bottom: 3rem;
-      max-width: 50ch;
     }
   }
 
@@ -664,13 +851,13 @@ $duration: 104s;
   }
 }
 
-@media only screen and (min-width: 1880px) {
+@media only screen and (min-width: 1600px) {
   #projects-container {
     grid-template-columns: repeat(3, 1fr);
   }
 }
 
-@media only screen and (min-width: 2350px) {
+@media only screen and (min-width: 2200px) {
   #projects-container {
     grid-template-columns: repeat(4, 1fr);
   }
