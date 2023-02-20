@@ -115,7 +115,7 @@ const ted = (sketch) => {
       {
         name: `purple`,
         hex: `#90a8ed`,
-        rgb: `62, 207, 193`,
+        rgb: `144, 168, 237`,
       },
     ];
 
@@ -124,7 +124,7 @@ const ted = (sketch) => {
       sketch.color(255, 201, 0),
       sketch.color(255, 112, 81),
       sketch.color(62, 207, 193),
-      sketch.color(62, 207, 193),
+      sketch.color(144, 168, 237),
     ];
 
     const num = Math.floor(Math.random() * colors.length);
