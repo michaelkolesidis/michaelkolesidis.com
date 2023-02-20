@@ -12,7 +12,7 @@ export default function awards() {
     // Contact Title
     const awardsTitle = document.createElement("div");
     awardsTitle.classList.add("wavy");
-    awardsTitle.innerHTML = `   
+    awardsTitle.innerHTML = /* html */ `   
        <span style="--i:1">C</span>
        <span style="--i:2">A</span>
        <span style="--i:3">S</span>

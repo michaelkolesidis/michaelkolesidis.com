@@ -9,7 +9,7 @@ export default function header() {
     // Name
     const name = document.createElement("h1");
     name.setAttribute("id", "name");
-    name.innerHTML = `MICHAEL K<span id="title-letter">O</span>LESIDIS`;
+    name.innerHTML = /* html */ `MICHAEL K<span id="title-letter">O</span>LESIDIS`;
     header.appendChild(name);
 
     // Top gap

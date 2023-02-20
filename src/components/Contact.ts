@@ -9,7 +9,7 @@ export default function contact() {
     // Contact Title
     const contactTitle = document.createElement("div");
     contactTitle.classList.add("wavy");
-    contactTitle.innerHTML = `   
+    contactTitle.innerHTML = /* html */ `   
      <span style="--i:1">C</span>
      <span style="--i:2">O</span>
      <span style="--i:3">N</span>
@@ -32,7 +32,7 @@ export default function contact() {
     // GitHub
     const github = document.createElement("a");
     github.setAttribute("id", "github");
-    github.innerHTML = `
+    github.innerHTML = /* html */ `
         <span>G</span>
         <span>i</span>
         <span>t</span>
@@ -50,7 +50,7 @@ export default function contact() {
     // LinkedIn
     const linkedin = document.createElement("a");
     linkedin.setAttribute("id", "linkedin");
-    linkedin.innerHTML = `
+    linkedin.innerHTML = /* html */ `
         <span>L</span>
         <span>i</span>
         <span>n</span>
@@ -70,7 +70,7 @@ export default function contact() {
     // Stack Overflow
     const stackoverflow = document.createElement("a");
     stackoverflow.setAttribute("id", "stack-overflow");
-    stackoverflow.innerHTML = `<span>S</span>
+    stackoverflow.innerHTML = /* html */ `<span>S</span>
         <span>t</span>
         <span>a</span>
         <span>c</span>

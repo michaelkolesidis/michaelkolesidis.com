@@ -13,7 +13,7 @@ export default function projects() {
     // Project Title
     const projectsTitle = document.createElement("div");
     projectsTitle.classList.add("wavy");
-    projectsTitle.innerHTML = `   
+    projectsTitle.innerHTML = /* html */ `   
         <span style="--i:1">P</span>
         <span style="--i:2">O</span>
         <span style="--i:3">R</span>

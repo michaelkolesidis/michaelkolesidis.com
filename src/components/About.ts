@@ -12,7 +12,7 @@ export default function about() {
     // Title
     const aboutTitle = document.createElement(`div`);
     aboutTitle.classList.add(`wavy`);
-    aboutTitle.innerHTML = `   
+    aboutTitle.innerHTML = /* html */ `   
       <span style="--i:5">A</span>
       <span style="--i:4">B</span>
       <span style="--i:3">O</span>
