@@ -23,7 +23,7 @@ This is my personal portfolio website / personal playground.
 
 I was influenced by print publication design and by 90's MTV on-screen graphics.
 
-I call this style **frivobrutalism**, placing emphasis of the frivolity of the deisgn/experience and its priority over the (neo)brutalist aesthetic.
+I call this style **frivobrutalism**, placing emphasis on the frivolity of the deisgn/experience and its priority over the (neo)brutalist aesthetic.
 
 The visitors can customize the colors of all colorful elements: clicking on an element generates a new color, from the predefined color palette.
 
