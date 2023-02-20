@@ -1,6 +1,6 @@
 <div align="center">
-  <img src="./screenshots/screenshot-0.png" width="700px">
-  <h4>This is my personal web page and it's perpetually under construction.</h4>
+  <img src="./screenshots/1.png" width="700px">
+  <h4>My personal portfolio website / playground.</h4>
 </div>
 
 ## Technologies Used
@@ -19,13 +19,15 @@
 
 ## Concept
 
-I went for a billboardesque aesthetic, with some elements of printing publication design (fashion magazine covers etc.), plus a hint of a 90's TV / 90's MTV aesthetic. I like to think of it as an interactive billboard broadcasted on an old CRT television set.
+This is my personal portfolio website / personal playground.
 
-The colors (and the angles on some elements) are generated randomly when the website is visited, chosen from a predefined palette/range.
+I was influenced by print publication design and by 90's MTV on-screen graphics.
 
-The visitors can customize the colors of all colored elements: clicking on an element generates a new color, from the same predefined palette/range.
+I call its style "frivobrutalist", placing more emphasis of the frivolity of the deisgn/experience and its priority over the (neo)brutalist aesthetic.
 
-Most of the elements are part of microinteractions and hovering over them or interacting with them in other ways triggers some animation. Make sure to explore all of them :-)
+The visitors can customize the colors of all colorful elements: clicking on an element generates a new color, from the predefined color palette.
+
+Most of the elements are part of microinteractions and hovering over them or interacting with them in other ways triggers some animation (and in one case it also triggers sound).
 
 ## Awards
 
@@ -39,22 +41,13 @@ Awarded by One Page Love, a One Page website design gallery showcasing the best 
 
 ## Screenshots
 
-### v. 2.0
-
-Coming soon
-
-### v. 1.0
-
-<img src="./screenshots/screenshot-3.png" width="700px">
-<img src="./screenshots/screenshot-4b.png" width="700px">
-<img src="./screenshots/screenshot-1.png" width="700px">
-<img src="./screenshots/screenshot-2.png" width="700px">
-<img src="./screenshots/screenshot-4a.png" width="700px">
-<img src="./screenshots/screenshot-4c.png" width="700px">
-<img src="./screenshots/screenshot-4d.png" width="700px">
-<img src="./screenshots/screenshot-4e.png" width="700px">
-<img src="./screenshots/screenshot-4f.png" width="700px">
-<img src="./screenshots/screenshot-5.png" width="700px">
+<img src="./screenshots/2.png" width="700px">
+<img src="./screenshots/3.png" width="700px">
+<img src="./screenshots/4.png" width="700px">
+<img src="./screenshots/5.png" width="700px">
+<img src="./screenshots/6.png" width="700px">
+<img src="./screenshots/7.png" width="700px">
+<img src="./screenshots/8.png" width="700px">
 
 ## License
 

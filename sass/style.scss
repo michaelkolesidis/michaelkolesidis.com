@@ -167,10 +167,17 @@ a {
   }
 }
 
+#new {
+  position: absolute;
+  top: 165px;
+  left: 25px;
+  transform: rotateZ(-10deg);
+}
+
 /********** INTRO **********/
 #intro {
   position: absolute;
-  top: 73vh;
+  top: 68vh;
   display: flex;
   justify-content: space-between;
   min-width: 98vw;

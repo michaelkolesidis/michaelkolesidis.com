@@ -57,6 +57,12 @@ export default function header() {
     });
     messageBox.appendChild(removeButton);
     header.appendChild(messageBox);
+
+    // Sticker
+    const sticker = document.createElement("div");
+    sticker.setAttribute("id", "new");
+    sticker.innerHTML = `<img width="150px" src="../../assets/new.svg" />`;
+    header.appendChild(sticker);
   }
 }
 
