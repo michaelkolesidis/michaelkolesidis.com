@@ -1,6 +1,6 @@
 <div align="center">
   <img src="./screenshots/screen1.png" width="700px">
-  <h4>My personal portfolio website / playground.</h4>
+  <h4>My portfolio website / playground</h4>
 </div>
 
 ## Technologies Used
@@ -23,13 +23,13 @@ This is my personal portfolio website / personal playground.
 
 I was influenced by print publication design and by 90's MTV on-screen graphics.
 
-I call its style "frivobrutalist", placing more emphasis of the frivolity of the deisgn/experience and its priority over the (neo)brutalist aesthetic.
-
 The visitors can customize the colors of all colorful elements: clicking on an element generates a new color, from the predefined color palette.
 
 The rubber duck responds to mouse move.
 
 Most of the elements are part of microinteractions and hovering over them or interacting with them in other ways triggers some animation (and in one case it also triggers sound).
+
+I call its style "frivobrutalism", placing emphasis of the frivolity of the deisgn/experience and its priority over the (neo)brutalist aesthetic.
 
 ## Awards
 
@@ -52,8 +52,6 @@ Awarded by One Page Love, a One Page website design gallery showcasing the best 
 <img src="./screenshots/screen8.png" width="700px">
 <img src="./screenshots/screen9.png" width="700px">
 <img src="./screenshots/screen10.png" width="700px">
-
-
 
 ## License
 
