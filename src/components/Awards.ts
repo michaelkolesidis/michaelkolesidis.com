@@ -70,7 +70,6 @@ export default function awards() {
       for (let i = 0; i < awa.title.length; i++) {
         titleContent += `<span>${awa.title[i]}</span>`;
       }
-
       const title = document.createElement("a");
       title.classList.add("award-title");
       title.href = `${awa.link}`;

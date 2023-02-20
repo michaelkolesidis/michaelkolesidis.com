@@ -47,9 +47,11 @@ export default function about() {
       `In the unlike event that you need more info about me, please send me an email and I will try to respond as soon as possible.`,
     ];
 
+    /* Styling */
     let leftMargin = 0;
     let colorIndex = 0;
 
+    // Populate
     for (let i = 0; i < sentences.length; i++) {
       const sentence = document.createElement(`p`);
       sentence.classList.add("sentence");

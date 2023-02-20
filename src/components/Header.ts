@@ -21,21 +21,6 @@ export default function header() {
     /* Styling */
     topGap.style.color = `white`;
 
-    // Message window (old)
-    // const messageWindow = document.createElement("div");
-    // messageWindow.setAttribute("id", "message-window");
-    // messageWindow.innerHTML = `DESIGN AWARD`
-    // messageWindow.innerHTML += `<br>One Page Love<br>February 2023`;
-    // const removeButton = document.createElement("button");
-    // removeButton.classList.add("remove-button");
-    // removeButton.textContent = "✕";
-    // removeButton.addEventListener("click", () => {
-    //   messageWindow.style.opacity = "0";
-    //   console.log("clicked");
-    // });
-    // messageWindow.appendChild(removeButton);
-    // header.appendChild(messageWindow);
-
     // Message Box
     const messageBox = document.createElement("div");
     messageBox.setAttribute("id", "box");
@@ -65,9 +50,3 @@ export default function header() {
     header.appendChild(sticker);
   }
 }
-
-// <div class="content">
-// <h2>DESIGN AWARD</h2>
-// <h3>One Page Love</h3>
-// <h3>February 2023</h3>
-// </div>

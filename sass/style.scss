@@ -251,8 +251,9 @@ canvas {
 /********** PROJECTS **********/
 #projects-container {
   display: grid;
-
   grid-template-columns: 1fr 1fr;
+  background: url("../assets/zigzag.svg");
+  background-position: bottom right;
 
   a {
     @extend p;
