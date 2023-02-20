@@ -9,13 +9,21 @@ export default function intro() {
     // Who Am I (paragraph on the left)
     const whoami = document.createElement("p");
     whoami.setAttribute("id", "left");
-    whoami.innerText = `I'm Michael Kolesidis.(as you might have already guessed from the huge heading)`;
+    whoami.innerHTML = `I'm Michael Kolesidis.(as you might have already guessed from the huge heading)`;
     intro.appendChild(whoami);
+
+    // Handwriting
+    const handwriting = document.createElement("div");
+    handwriting.setAttribute("id", "handwriting");
+    handwriting.innerHTML = `⤺ I use it for 
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    bebugging`;
+    intro.appendChild(handwriting);
 
     // What Am I (paragraph on the right)
     const whatami = document.createElement("p");
     whatami.setAttribute("id", "right");
-    whatami.innerText = `I am a Front-End Engineer / New Media Artist with a diverse background in computer science, economics and the arts. I enjoy being creative and inquisitive, learning and building new things every day. I am passionate about crafting innovative, immersive and engaging experiences, playing my tiny little part in shaping the future of the web.`;
-    intro!.appendChild(whatami);
+    whatami.innerHTML = `I am a Front-End Engineer / New Media Artist with a background in art and computer science. I am passionate about crafting immersive and engaging experiences, playing my tiny little part in shaping the future of the web. But, enough about me, tell me about yourself.`;
+    intro.appendChild(whatami);
   }
 }
