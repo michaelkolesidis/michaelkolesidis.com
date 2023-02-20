@@ -205,7 +205,8 @@ a {
   #handwriting {
     position: relative;
     top: -38.1vh;
-    right: -40vh;
+    // right: -40vh;
+    right: clamp(-100em, max(-40vh, -37vw), 10em);
     font-family: "Caveat", sans-serif;
     // font-size: 2.5em; // olde value
     font-size: clamp(1em, 4vh, 2.5em);
@@ -735,7 +736,7 @@ $duration: 104s;
 
 /********** MEDIA QUERRIES **********/
 /********** MOBILE **********/
-@media only screen and (max-width: 1050px) {
+@media only screen and (max-width: 640px) {
   html,
   body {
     border: 0;
@@ -839,8 +840,7 @@ $duration: 104s;
   #contact {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    // margin: 0;
+    align-items: baseline;
 
     p {
       font-size: 1rem;
@@ -943,7 +943,36 @@ $duration: 104s;
 }
 
 /********** MEDIA QUERRIES: Grid **********/
-@media only screen and (min-width: 1500px) {
+
+@media only screen and (min-width: 640px) and (max-width: 820px) {
+  #handwriting {
+    display: none;
+  }
+
+  #top-gap {
+    height: 100px;
+  }
+
+  #name {
+    font-size: 9vw;
+    position: absolute;
+    top: 10px;
+
+    span {
+      font-size: 9vw;
+    }
+  }
+
+  #right {
+    column-count: 1;
+  }
+
+  #projects-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (min-width: 992px) {
   #projects-container {
     grid-template-columns: repeat(2, 1fr);
   }
