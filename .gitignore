@@ -1,5 +1,6 @@
 other
-scripts
+!scripts/
+scripts/*
 !scripts/duck.js
 .vscode
 .hintrc

@@ -19,10 +19,13 @@ export default function topButton() {
     window.onscroll = function () {
       scrollFunction(topButton, 300);
 
-      if (window.innerHeight + window.scrollY >= document.body.offsetHeight) {
-        topButton.style.border = `3px solid white`;
+      if (
+        window.innerHeight + window.scrollY >=
+        document.body.offsetHeight - 300
+      ) {
+        topButton.style.border = `4px solid white`;
       } else {
-        topButton.style.border = `0`;
+        topButton.style.border = `4px solid transparent`;
       }
     };
   }

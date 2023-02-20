@@ -21,8 +21,24 @@ export function topFunction() {
 }
 
 export function generateColor(colors: any) {
- 
+  const num = Math.floor(Math.random() * colors.length);
+  return colors[num];
+}
 
-  const num = Math.floor(Math.random() * (colors.length));
+export function generateNewColor(colors: any, element: any, property: string) {
+  const oldColor = element["style"][property];
+
+  let num = 0;
+  let isColorNew = false;
+
+  while (isColorNew === false) {
+    num = Math.floor(Math.random() * colors.length);
+    let newColor = `rgb(${colors[num].rgb})`;
+
+    if (oldColor !== newColor) {
+      isColorNew = true;
+    }
+  }
+
   return colors[num];
 }

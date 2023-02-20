@@ -15,13 +15,15 @@ export default function intro() {
     // Handwriting
     const handwriting = document.createElement("div");
     handwriting.setAttribute("id", "handwriting");
-    handwriting.innerHTML = `⤺ I use it for bebugging`;
+    handwriting.innerHTML = `⤺ I use it for 
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    bebugging`;
     intro.appendChild(handwriting);
 
     // What Am I (paragraph on the right)
     const whatami = document.createElement("p");
     whatami.setAttribute("id", "right");
-    whatami.innerHTML = `I am a Front-End Engineer / New Media Artist with a diverse background in computer science, economics and the arts. I enjoy being creative and inquisitive, learning and building new things every day.<br>I am passionate about crafting innovative, immersive and engaging experiences, playing my tiny little part in shaping the future of the web.`;
+    whatami.innerHTML = `I am a Front-End Engineer / New Media Artist with a background in art and computer science. I am passionate about crafting immersive and engaging experiences, playing my tiny little part in shaping the future of the web. But, enough about me, tell me about yourself.`;
     intro.appendChild(whatami);
   }
 }

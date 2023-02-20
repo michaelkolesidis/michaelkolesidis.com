@@ -26,7 +26,6 @@ $black: #0a0a0a;
   -khtml-user-drag: none;
   -moz-user-drag: none;
   -o-user-drag: none;
-  user-drag: none;
 }
 
 body,
@@ -58,12 +57,6 @@ a {
 
   span {
     font-size: 104px;
-  }
-
-  #version {
-    display: inline-block;
-    color: $white;
-    font-size: 0.2em;
   }
 }
 
@@ -149,7 +142,6 @@ a {
   text-align: center;
   font-family: sans-serif;
   z-index: 2;
-
   height: 100%;
   display: flex;
   align-items: center;
@@ -178,7 +170,7 @@ a {
 /********** INTRO **********/
 #intro {
   position: absolute;
-  top: 60vh;
+  top: 73vh;
   display: flex;
   justify-content: space-between;
   min-width: 98vw;
@@ -195,14 +187,13 @@ a {
   }
 
   #right {
-    max-width: 30ch;
+    max-width: 31ch;
     column-count: 2;
   }
 
   #handwriting {
     position: relative;
-    // top: -9em;
-    top: -28.1vh;
+    top: -38.1vh;
     right: -10em;
     right: -35vh;
     font-family: "Caveat", sans-serif;
@@ -218,12 +209,7 @@ canvas {
   border-bottom: 3px solid black;
 }
 
-/********** SECTIONS **********/
-section {
-  // margin: 0 6rem 3rem;
-}
-
-/********** WAVY SECTION TITLES **********/
+/********** SECTION TITLES **********/
 .wavy {
   font-size: 72px;
   margin: 1em 0 1em 1em;
@@ -258,15 +244,11 @@ section {
 /********** PROJECTS **********/
 #projects-container {
   display: grid;
-  // gap: 1em;
+
   grid-template-columns: 1fr 1fr;
 
   a {
     @extend p;
-  }
-
-  a:hover {
-    text-decoration: underline;
   }
 }
 
@@ -300,14 +282,14 @@ section {
 .project-title {
   font-size: 1.7em;
   font-weight: 600;
-  // text-shadow: 1px 1px $black;
   white-space: nowrap;
   text-align: left;
-  transition: all 2s ease;
+  transition: all 1s ease;
 }
 
 .project-title:hover {
-  letter-spacing: 0.25rem;
+  letter-spacing: 0.4rem;
+  text-shadow: 2px 0px black;
 }
 
 .project-summary,
@@ -326,13 +308,11 @@ section {
 }
 
 .repo-link:hover::after {
-  content: " < < < < <";
+  content: " < < < < < <";
 }
 
 #more {
   padding: 20px;
-  // margin: 4em auto;
-  // max-width: 50ch;
   text-align: center;
   border-bottom: 3px solid $black;
   border-top: 3px solid $black;
@@ -355,9 +335,6 @@ section {
   a {
     font-size: 1.9rem;
     font-weight: 600;
-  }
-  a:hover {
-    // text-decoration: underline;
   }
 }
 
@@ -398,11 +375,6 @@ section {
   background-repeat: no-repeat;
 }
 
-// :hover span {
-//   animation: wavy 1s infinite;
-//   animation-delay: calc(0.1s * var(--i));
-// }
-
 #github {
   margin-left: 28em;
 }
@@ -435,7 +407,6 @@ section {
     margin-bottom: 1em;
     border: 3px solid $black;
     max-width: 60ch;
-    // text-align: justify;
     box-shadow: 8px 8px rgb(0, 0, 0);
     text-justify: inter-cluster;
     transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
@@ -472,7 +443,17 @@ section {
   font-size: 5em;
   text-align: center;
   border: 3px dashed black;
-  transform: rotateZ(-10deg);
+  transform-style: preserve-3d;
+  animation: loader 5s infinite;
+}
+
+@keyframes loader {
+  0% {
+    transform: rotateX(0deg) rotateY(0deg) rotateZ(-10deg);
+  }
+  100% {
+    transform: rotateX(180deg) rotateY(180deg) rotateZ(170deg);
+  }
 }
 
 .award-details {
@@ -527,10 +508,6 @@ section {
     transform: translateZ(0) !important;
   }
 
-  a {
-    text-decoration: line-through;
-  }
-
   a:hover {
     text-decoration: underline;
   }
@@ -538,15 +515,15 @@ section {
 
 /********** FOOTER **********/
 footer {
-  height: 9.417em;
-  // background: url("../assets/floral.png");
+  height: 26em;
   background-color: $black;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   border-top: 3px solid $black;
 
-  p {
+  #copyright {
     font-size: 1.7rem;
     text-align: start;
     line-height: 1.1;
@@ -561,12 +538,30 @@ footer {
     text-align: center;
   }
 
-  p::before {
-    content: "© 2023 Michael Kolesidis";
+  #disclaimer {
+    color: $white;
+    max-width: 44ch;
+    text-align: center;
+    margin-top: 2em;
   }
 
-  p:hover::before {
-    content: "thanks  for your visit : )";
+  #ducks {
+    margin-top: 3em;
+    margin-bottom: -2em;
+    color: $white;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+
+    svg {
+      margin: 1.5em;
+      cursor: url("../assets/windows95-pointer.png"), auto;
+      transition: all 0.25s;
+    }
+
+    svg:hover {
+      transform: rotateZ(15deg);
+    }
   }
 }
 
@@ -590,22 +585,6 @@ footer {
   animation: flash 0.5s infinite;
 }
 
-/********** GRAIN **********/
-#overlay {
-  position: fixed;
-  z-index: 100;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background: url("../assets/grain.jpg") no-repeat;
-  background-size: cover;
-  opacity: 0.03;
-  height: 100vh;
-  pointer-events: none;
-  visibility: hidden;
-}
-
 /********** TOP BUTTON **********/
 #top-button {
   display: none;
@@ -613,18 +592,19 @@ footer {
   bottom: 2.5vw;
   right: 2vw;
   z-index: 99;
-  // border: 3px solid $white;
   font-weight: 600;
   cursor: url("../assets/windows95-pointer.png"), auto;
   border-radius: 50%;
   font-size: 2vw;
-  line-height: 6vw;
-  height: 6vw;
-  width: 6vw;
+  line-height: 6.5vw;
+  height: 6.5vw;
+  width: 6.5vw;
   text-align: center;
   background: $black;
   color: $white;
   transition: transform 1s;
+  border: 4px solid transparent;
+  background-clip: padding-box;
 }
 
 #top-button:hover {

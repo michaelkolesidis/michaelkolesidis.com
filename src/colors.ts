@@ -16,8 +16,8 @@ export const colors = [
     },
     {
       name: `green`,
-      hex: `#23a094`,
-      rgb: `35, 160, 148`,
+      hex: `#3ecfc1`,
+      rgb: `62, 207, 193`,
     },
     {
       name: `purple`,

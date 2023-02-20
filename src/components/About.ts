@@ -2,7 +2,7 @@
 // Licensed under the GNU Affero General Public License v3.0.
 // https://www.gnu.org/licenses/gpl-3.0.html
 
-import { generateColor } from "../functions.js";
+import { generateNewColor } from "../functions.js";
 import { colors } from "../colors.js";
 
 export default function about() {
@@ -36,7 +36,7 @@ export default function about() {
 
       `Today, I mostly use three.js, OpenGL Shading Language, WebGL, JavaScript, React, TypeScript, and Blender.`,
 
-      `I always keep a rubber duck on my desk)`,
+      `I always keep a rubber duck on my desk.`,
 
       `I've been  to many countries meeting people and discovering cultures from all over the world.`,
 
@@ -48,6 +48,7 @@ export default function about() {
     ];
 
     let leftMargin = 0;
+    let colorIndex = 0;
 
     for (let i = 0; i < sentences.length; i++) {
       const sentence = document.createElement(`p`);
@@ -61,7 +62,9 @@ export default function about() {
       while (angle === 0) {
         angle = Math.random() * 6 - 3;
       }
-      sentence.style.backgroundColor = `rgb(${generateColor(colors).rgb})`;
+      const color = colors[colorIndex % colors.length].rgb;
+      sentence.style.backgroundColor = `rgb(${color})`;
+      colorIndex += 1;
       if (i < 8) {
         leftMargin += window.innerWidth * 0.012 * i;
       } else {
@@ -72,9 +75,11 @@ export default function about() {
       }
       sentence.style.marginLeft = `${leftMargin}px`;
       sentence.style.transform = `rotate(${angle}deg)`;
-      
+
       sentence.addEventListener("click", () => {
-        sentence.style.backgroundColor = `rgb(${generateColor(colors).rgb})`;
+        sentence.style.backgroundColor = `rgb(${
+          generateNewColor(colors, sentence, "backgroundColor").rgb
+        })`;
       });
     }
   }
