@@ -47,7 +47,7 @@ export default function awards() {
       // X
       const awardX = document.createElement("div");
       awardX.classList.add("award-x");
-      awardX.innerHTML = `★`;
+      awardX.innerHTML = `!★`;
       award.appendChild(awardX);
 
       /* Styling */
