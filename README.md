@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="./screenshots/1.png" width="700px">
+  <img src="./screenshots/screen1.png" width="700px">
   <h4>My personal portfolio website / playground.</h4>
 </div>
 
@@ -27,6 +27,8 @@ I call its style "frivobrutalist", placing more emphasis of the frivolity of the
 
 The visitors can customize the colors of all colorful elements: clicking on an element generates a new color, from the predefined color palette.
 
+The rubber duck responds to mouse move.
+
 Most of the elements are part of microinteractions and hovering over them or interacting with them in other ways triggers some animation (and in one case it also triggers sound).
 
 ## Awards
@@ -41,13 +43,17 @@ Awarded by One Page Love, a One Page website design gallery showcasing the best 
 
 ## Screenshots
 
-<img src="./screenshots/2.png" width="700px">
-<img src="./screenshots/3.png" width="700px">
-<img src="./screenshots/4.png" width="700px">
-<img src="./screenshots/5.png" width="700px">
-<img src="./screenshots/6.png" width="700px">
-<img src="./screenshots/7.png" width="700px">
-<img src="./screenshots/8.png" width="700px">
+<img src="./screenshots/screen2.png" width="700px">
+<img src="./screenshots/screen3.png" width="700px">
+<img src="./screenshots/screen4.png" width="700px">
+<img src="./screenshots/screen5.png" width="700px">
+<img src="./screenshots/screen6.png" width="700px">
+<img src="./screenshots/screen7.png" width="700px">
+<img src="./screenshots/screen8.png" width="700px">
+<img src="./screenshots/screen9.png" width="700px">
+<img src="./screenshots/screen10.png" width="700px">
+
+
 
 ## License
 
