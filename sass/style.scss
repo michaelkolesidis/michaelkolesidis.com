@@ -30,6 +30,7 @@ $black: #0a0a0a;
 
 body,
 html {
+  border-right: 1.5px solid $black;
   background-color: $white;
   cursor: url("../assets/windows95-cursor.png"), auto;
   scroll-behavior: smooth;
