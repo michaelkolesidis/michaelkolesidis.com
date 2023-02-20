@@ -75,7 +75,12 @@ export default function about() {
           leftMargin = 0;
         }
       }
-      sentence.style.marginLeft = `${leftMargin}px`;
+
+      if (window.innerWidth > 1050) {
+        sentence.style.marginLeft = `${leftMargin}px`;
+      } else {
+        sentence.style.marginLeft = `5px`;
+      }
       sentence.style.transform = `rotate(${angle}deg)`;
 
       sentence.addEventListener("click", () => {

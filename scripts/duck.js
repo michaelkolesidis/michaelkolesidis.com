@@ -16,9 +16,9 @@ const ted = (sketch) => {
   sketch.setup = () => {
     cnv = sketch.createCanvas(
       window.innerWidth,
-      window.innerHeight > 800
+      window.innerHeight > 1050
         ? window.innerHeight - 140
-        : window.innerHeight - 40,
+        : window.innerHeight - 30,
       sketch.WEBGL
     );
 
@@ -34,7 +34,7 @@ const ted = (sketch) => {
     sketch.directionalLight(255, 255, 255, 0, 0, -1);
     sketch.ambientMaterial(duckColor);
 
-    if (window.innerWidth > 800) {
+    if (window.innerWidth > 1050) {
       // Desktop
       sketch.camera(
         0.1 * (sketch.mouseX - sketch.windowWidth / 2),
@@ -50,6 +50,8 @@ const ted = (sketch) => {
       sketch.rotateX(sketch.PI - sketch.radians(30));
       sketch.rotateY(sketch.PI + sketch.radians(10));
       sketch.scale((sketch.windowWidth / 1000) * 4);
+      sketch.translate(0, -150, -20);
+
     }
 
     sketch.texture(img);

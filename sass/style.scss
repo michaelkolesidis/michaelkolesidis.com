@@ -734,13 +734,44 @@ $duration: 104s;
 }
 
 /********** MEDIA QUERRIES **********/
+/********** MOBILE **********/
 @media only screen and (max-width: 1050px) {
-  .ticker-wrap {
-    position: inherit;
+  html,
+  body {
+    border: 0;
   }
 
+  /********** MOBILE: Ticker **********/
+  .ticker-wrap {
+    position: inherit;
+    font-size: 0.1em;
+  }
+
+  /********** MOBILE: Header **********/
   #top-gap {
-    height: 40px;
+    height: 35px;
+  }
+
+  #new {
+    img {
+      position: absolute;
+      top: -80px;
+      width: 100px;
+    }
+  }
+
+  #box {
+    position: absolute;
+    top: 80px;
+    width: 120px;
+    height: 120px;
+    padding: 10px;
+    font-size: 0.8em;
+    width: 150px;
+
+    button {
+      display: none;
+    }
   }
 
   #name {
@@ -753,40 +784,42 @@ $duration: 104s;
     }
   }
 
+  /********** MOBILE: Intro **********/
   #intro {
-    display: flex;
-    flex-direction: column;
-    bottom: 0;
-
-    p {
-      max-width: -moz-fit-content;
-      max-width: fit-content;
-    }
+    // display: none;
 
     #left {
-      visibility: hidden;
+      display: none;
     }
 
     #right {
+      display: block;
+      font-size: 1em;
       column-count: 1;
-      font-size: 1.1rem;
-      display: sticky;
-      bottom: 10px;
     }
   }
 
+  #handwriting {
+    display: none;
+  }
+
+  /********** MOBILE: Sections **********/
   .wavy {
     font-size: 9vw;
-    margin-left: 1rem;
   }
 
   section {
     margin: 4rem 0.1rem 0 0.1rem;
   }
 
+  /********** MOBILE: Projects **********/
   #projects-container {
     display: flex;
     flex-direction: column;
+  }
+
+  .project-card {
+    padding: 20px;
   }
 
   .project-title {
@@ -798,26 +831,52 @@ $duration: 104s;
     height: 11rem;
   }
 
+  #more {
+    font-size: 1em;
+  }
+
+  /********** MOBILE: Contact **********/
   #contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // margin: 0;
+
     p {
       font-size: 1rem;
-      margin: 0.6rem;
+      // margin: 0rem;
     }
 
     a {
-      margin: 4rem;
-      text-decoration: underline;
+      margin: 0rem;
     }
   }
 
-  #github {
-    margin-left: 0;
+  #github,
+  #linkedin,
+  #stack-overflow {
+    transform: rotate(0);
+    span {
+      display: none;
+    }
   }
 
-  #linkedin {
-    margin-left: 0;
+  #github::after {
+    color: $black;
+    content: "GitHub";
   }
 
+  #linkedin::after {
+    color: $black;
+    content: "LinkedIn";
+  }
+
+  #stack-overflow::after {
+    color: $black;
+    content: "Stack Overflow";
+  }
+
+  /********** MOBILE: About **********/
   #about {
     display: flex;
     flex-direction: column;
@@ -828,34 +887,62 @@ $duration: 104s;
 
     p {
       margin-bottom: 3rem;
+      padding: 10px;
+      font-size: 1.4em;
+      width: 20ch;
     }
   }
 
+  /********** MOBILE: Award **********/
+  #awards {
+    margin-left: 1em;
+    display: none;
+  }
+
+  .award-x {
+    display: none;
+  }
+
+  .award-title {
+    font-size: 1.4em;
+    width: 10ch;
+  }
+
+  .award-awarder {
+    font-size: 1.2em;
+  }
+
   #this-website {
+    display: none;
+    margin: 0.1em;
+    text-align: left;
     @extend #about;
 
     a {
       font-size: 1em;
     }
   }
-
+  /********** MOBILE: Footer **********/
   footer {
     width: 100%;
+    height: 70vh;
+    padding: 0 1em;
 
     p {
-      font-size: 1rem;
       max-width: 80vw;
     }
   }
 
+  /********** MOBILE: Top Button **********/
   #top-button {
-    line-height: 50px;
-    height: 50px;
-    width: 50px;
-    font-size: 15px;
+    line-height: 60px;
+    height: 60px;
+    width: 60px;
+    font-size: 20px;
   }
 }
 
+/********** MEDIA QUERRIES: Grid **********/
 @media only screen and (min-width: 1500px) {
   #projects-container {
     grid-template-columns: repeat(2, 1fr);
