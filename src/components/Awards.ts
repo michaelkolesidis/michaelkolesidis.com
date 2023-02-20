@@ -2,7 +2,7 @@
 // Licensed under the GNU Affero General Public License v3.0.
 // https://www.gnu.org/licenses/gpl-3.0.html
 
-import { generateColor, generateNewColor } from "../functions.js";
+import { generateNewColor } from "../functions.js";
 import { colors } from "../colors.js";
 
 export default function awards() {
@@ -51,8 +51,24 @@ export default function awards() {
       award.appendChild(awardX);
 
       /* Styling */
-      awardX.style.color = `rgb(${generateColor(colors).rgb})`;
-      awardX.style.textShadow = `4px 4px rgb(0, 0, 0)`;
+      awardX.style.color = `rgb(${colors[1].rgb})`;
+      awardX.style.textShadow = `
+       -2px -2px rgb(0, 0, 0),
+       -1px -1px rgb(0, 0, 0),
+        1px 1px rgb(0, 0, 0),
+        2px 2px rgb(0, 0, 0), 
+        3px 3px rgb(0, 0, 0), 
+        4px 4px rgb(0, 0, 0), 
+        5px 5px rgb(0, 0, 0), 
+        6px 6px rgb(0, 0, 0), 
+        7px 7px rgb(0, 0, 0), 
+        8px 8px rgb(0, 0, 0), 
+        9px 9px rgb(0, 0, 0), 
+        10px 10px rgb(0, 0, 0), 
+        11px 11px rgb(0, 0, 0), 
+        12px 12px rgb(0, 0, 0), 
+        13px 13px rgb(0, 0, 0)
+        `;
 
       awardX.addEventListener("click", () => {
         awardX.style.color = `rgb(${

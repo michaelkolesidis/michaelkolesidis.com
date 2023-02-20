@@ -20,11 +20,6 @@ export function topFunction() {
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
 
-export function generateColor(colors: any) {
-  const num = Math.floor(Math.random() * colors.length);
-  return colors[num];
-}
-
 export function generateNewColor(colors: any, element: any, property: string) {
   const oldColor = element["style"][property];
 

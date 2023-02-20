@@ -450,7 +450,7 @@ canvas {
   padding-right: 0.05em;
   font-size: 5em;
   text-align: center;
-  border: 3px dashed black;
+  border: 4px dashed $black;
   transform-style: preserve-3d;
   animation: loader 5s infinite;
 }
