@@ -53,7 +53,7 @@ const ted = (sketch) => {
     }
 
     sketch.texture(img);
-    sketch.scale(200);
+    sketch.scale(210);
     // sketch.rotateY(sketch.frameCount * 0.01); // auto rotate model
     sketch.rotateY(0.1);
     sketch.model(duck);

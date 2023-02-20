@@ -187,8 +187,10 @@ a {
   p {
     margin: 1rem;
     max-width: 16ch;
+    min-width: 12ch;
     margin-right: 2rem;
-    font-size: 1.7rem;
+    // font-size: 1.7rem; // old value
+    font-size: clamp(0.8rem, 2.5vh, 2rem);
     text-align: start;
     line-height: 1.1;
     overflow: hidden;
@@ -196,19 +198,20 @@ a {
 
   #right {
     max-width: 31ch;
+    min-width: 16ch;
     column-count: 2;
   }
 
   #handwriting {
     position: relative;
     top: -38.1vh;
-    right: -10em;
-    right: -35vh;
+    right: -40vh;
     font-family: "Caveat", sans-serif;
-    font-size: 2.5em;
+    // font-size: 2.5em; // olde value
+    font-size: clamp(1em, 4vh, 2.5em);
     text-align: center;
     transform: rotate(20deg);
-    max-width: 13ch;
+    white-space: nowrap;
     line-height: 1em;
   }
 }

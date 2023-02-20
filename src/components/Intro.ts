@@ -15,8 +15,8 @@ export default function intro() {
     // Handwriting
     const handwriting = document.createElement("div");
     handwriting.setAttribute("id", "handwriting");
-    handwriting.innerHTML = /* html */ `⤺ I use it for 
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    handwriting.innerHTML = /* html */ `⤺ I use it for<br> 
+    &nbsp;&nbsp;&nbsp;
     bebugging`;
     intro.appendChild(handwriting);
 
