@@ -21,7 +21,7 @@ export default function topButton() {
 
       if (
         window.innerHeight + window.scrollY >=
-        document.body.offsetHeight - 300
+        document.body.offsetHeight - 500
       ) {
         topButton.style.border = `4px solid white`;
       } else {
