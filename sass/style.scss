@@ -283,7 +283,7 @@ canvas {
 .project-image:hover {
   -webkit-filter: grayscale(0%);
   filter: grayscale(0%);
-  transform: perspective(600px) translateZ(200px) rotateX(20deg);
+  transform: perspective(600px) translateZ(200px) rotateX(20deg) rotateZ(5deg);
   box-shadow: 0px 0px rgb(0, 0, 0);
   opacity: 0.8;
 }
