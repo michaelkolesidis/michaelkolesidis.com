@@ -599,7 +599,8 @@ footer {
 
 /********** TOP BUTTON **********/
 #top-button {
-  display: none;
+  pointer-events: none;
+  opacity: 0;
   position: fixed;
   bottom: 2.5vw;
   right: 2vw;
@@ -617,6 +618,7 @@ footer {
   transition: transform 1s;
   border: 4px solid transparent;
   background-clip: padding-box;
+  transition: opacity 1s;
 }
 
 #top-button:hover {

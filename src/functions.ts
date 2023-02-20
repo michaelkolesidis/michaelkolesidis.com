@@ -8,9 +8,11 @@ export function scrollFunction(target: HTMLElement, scrollDistance: number) {
     document.body.scrollTop > scrollDistance ||
     document.documentElement.scrollTop > scrollDistance
   ) {
-    target.style.display = "block";
+    target.style.opacity = "1";
+    target.style.pointerEvents = "all";
   } else {
-    target.style.display = "none";
+    target.style.opacity = "0";
+    target.style.pointerEvents = "none";
   }
 }
 
