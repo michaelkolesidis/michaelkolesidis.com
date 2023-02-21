@@ -15,6 +15,31 @@
 $white: #fff;
 $black: #0a0a0a;
 
+/* stripes */
+$stripes: linear-gradient(
+  45deg,
+  #ff90e8 10%,
+  #ffc900 10%,
+  #ffc900 20%,
+  #ff7051 20%,
+  #ff7051 30%,
+  #3ecfc1 30%,
+  #3ecfc1 40%,
+  #90a8ed 40%,
+  #90a8ed 50%,
+  #ff90e8 50%,
+  #ff90e8 60%,
+  #ffc900 60%,
+  #ffc900 70%,
+  #ff7051 70%,
+  #ff7051 80%,
+  #3ecfc1 80%,
+  #3ecfc1 90%,
+  #90a8ed 90%,
+  #90a8ed 100%
+);
+$stripes-size: 141.42px 141.42px;
+
 /**********  GENERAL **********/
 * {
   margin: 0;
@@ -46,6 +71,10 @@ a {
 }
 
 /********** HEADER **********/
+#header {
+  background-color: $white;
+}
+
 #name {
   position: fixed;
   top: 0px;
@@ -457,6 +486,8 @@ canvas {
   border: 4px dashed $black;
   transform-style: preserve-3d;
   animation: loader 5s infinite;
+  background-image: $stripes;
+  background-size: $stripes-size;
 }
 
 @keyframes loader {
