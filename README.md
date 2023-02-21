@@ -31,6 +31,8 @@ The rubber duck responds to mouse move.
 
 Most of the elements are part of microinteractions and hovering over them or interacting with them in other ways triggers some animation (and in one case it also triggers sound).
 
+The website is responsive for desktop and mobile.
+
 ## Awards
 
 ### DESIGN AWARD - Honorable One Page Website
@@ -40,6 +42,12 @@ Most of the elements are part of microinteractions and hovering over them or int
 _February 2023_
 
 Awarded by One Page Love, a One Page website design gallery showcasing the best Single Page websites, templates and resources.
+
+**[CSS Winner](https://www.csswinner.com/details/michael-kolesidis/16936)**
+
+_February 2023_
+
+Nominated by CSS Winner, a unique global platform awarding and showcasing the best websites and promoting innovative web designers, developers and agencies.
 
 ## Screenshots
 
