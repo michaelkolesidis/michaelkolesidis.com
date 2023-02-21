@@ -57,9 +57,9 @@ Awarded by One Page Love, a One Page website design gallery showcasing the best 
 
 ### Mobile
 
-<img src="./screenshots/mobile1.png" width="400px">
-<img src="./screenshots/mobile2.png" width="400px">
-<img src="./screenshots/mobile3.png" width="400px">
+<img src="./screenshots/mobile1.jpg" width="400px">
+<img src="./screenshots/mobile2.jpg" width="400px">
+<img src="./screenshots/mobile3.jpg" width="400px">
 
 ## Design
 
