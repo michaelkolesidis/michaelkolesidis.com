@@ -43,6 +43,8 @@ Awarded by One Page Love, a One Page website design gallery showcasing the best 
 
 ## Screenshots
 
+### Desktop
+
 <img src="./screenshots/screen2.png" width="700px">
 <img src="./screenshots/screen3.png" width="700px">
 <img src="./screenshots/screen4.png" width="700px">
@@ -52,6 +54,12 @@ Awarded by One Page Love, a One Page website design gallery showcasing the best 
 <img src="./screenshots/screen8.png" width="700px">
 <img src="./screenshots/screen9.png" width="700px">
 <img src="./screenshots/screen10.png" width="700px">
+
+### Mobile
+
+<img src="./screenshots/mobile1.png" width="400px">
+<img src="./screenshots/mobile2.png" width="400px">
+<img src="./screenshots/mobile3.png" width="400px">
 
 ## Design
 
