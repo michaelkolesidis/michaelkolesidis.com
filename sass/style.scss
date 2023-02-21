@@ -642,7 +642,6 @@ footer {
 
 /********** TOP BUTTON **********/
 #top-button {
-  pointer-events: none;
   opacity: 0;
   position: fixed;
   bottom: 2.5vw;
@@ -658,10 +657,9 @@ footer {
   text-align: center;
   background: $black;
   color: $white;
-  transition: transform 1s;
+  transition: all 1s;
   border: 4px solid transparent;
   background-clip: padding-box;
-  transition: opacity 1s;
 }
 
 #top-button:hover {
