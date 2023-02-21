@@ -57,7 +57,7 @@ body,
 html {
   border-right: 1.5px solid $black;
   background-color: $white;
-  cursor: url("../assets/windows95-cursor.png"), auto;
+  cursor: url("../assets/cursors/windows95-cursor.png"), auto;
   scroll-behavior: smooth;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -66,7 +66,7 @@ html {
 }
 
 a {
-  cursor: url("../assets/windows95-pointer.png"), auto;
+  cursor: url("../assets/cursors/windows95-pointer.png"), auto;
   text-decoration: none;
 }
 
@@ -138,7 +138,7 @@ a {
     text-align: center;
     transition: transform 0.15s linear;
     z-index: 3;
-    cursor: url("../assets/windows95-pointer.png"), auto;
+    cursor: url("../assets/cursors/windows95-pointer.png"), auto;
   }
 
   button:hover {
@@ -204,7 +204,7 @@ a {
   top: 165px;
   left: 25px;
   transform: rotateZ(-10deg);
-  cursor: url("../assets/windows95-grab.png"), auto;
+  cursor: url("../assets/cursors/windows95-grab.png"), auto;
   z-index: 3;
   padding: 0;
   border-radius: 100px;
@@ -321,7 +321,7 @@ canvas {
   opacity: 0.6;
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
-  cursor: url("../assets/windows95-pointer.png"), auto;
+  cursor: url("../assets/cursors/windows95-pointer.png"), auto;
 }
 
 .project-image:hover {
@@ -462,7 +462,7 @@ canvas {
     box-shadow: 8px 8px rgb(0, 0, 0);
     text-justify: inter-cluster;
     transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
-    cursor: url("../assets/windows95-pointer.png"), auto;
+    cursor: url("../assets/cursors/windows95-pointer.png"), auto;
   }
 
   p:hover {
@@ -550,7 +550,7 @@ canvas {
   padding-bottom: 7em;
 
   p {
-    cursor: url("../assets/windows95-cursor.png"), auto;
+    cursor: url("../assets/cursors/windows95-cursor.png"), auto;
     padding: 0;
     max-width: 60ch;
     margin: 1.3em 3em;
@@ -609,7 +609,7 @@ footer {
 
     svg {
       margin: 1.5em;
-      cursor: url("../assets/windows95-pointer.png"), auto;
+      cursor: url("../assets/cursors/windows95-pointer.png"), auto;
       transition: all 0.25s;
     }
 
@@ -648,7 +648,7 @@ footer {
   right: 2vw;
   z-index: 99;
   font-weight: 600;
-  cursor: url("../assets/windows95-pointer.png"), auto;
+  cursor: url("../assets/cursors/windows95-pointer.png"), auto;
   border-radius: 50%;
   font-size: 2vw;
   line-height: 6.5vw;
