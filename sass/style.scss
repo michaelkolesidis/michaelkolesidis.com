@@ -84,6 +84,7 @@ a {
   font-size: 104px;
   white-space: nowrap;
   color: $white;
+  pointer-events: none;
 
   span {
     font-size: 104px;
@@ -94,6 +95,7 @@ a {
   display: inline-block;
   color: $white;
   transition: transform 2s ease;
+  pointer-events: all;
 }
 
 #name:hover #title-letter {
@@ -202,6 +204,15 @@ a {
   top: 165px;
   left: 25px;
   transform: rotateZ(-10deg);
+  cursor: url("../assets/windows95-grab.png"), auto;
+  z-index: 3;
+  padding: 0;
+  border-radius: 100px;
+
+  img {
+    border-radius: 100px;
+    margin-bottom: -0.5em;
+  }
 }
 
 /********** INTRO **********/

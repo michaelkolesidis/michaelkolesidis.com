@@ -2,6 +2,8 @@
 // Licensed under the GNU Affero General Public License v3.0.
 // https://www.gnu.org/licenses/gpl-3.0.html
 
+import { dragElement } from "../functions.js";
+
 export default function header() {
   const header = document.getElementById("header");
 
@@ -48,5 +50,7 @@ export default function header() {
     sticker.setAttribute("id", "new");
     sticker.innerHTML = `<img width="150px" src="../../assets/new.svg" />`;
     header.appendChild(sticker);
+
+    dragElement(sticker);
   }
 }
