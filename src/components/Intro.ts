@@ -15,10 +15,13 @@ export default function intro() {
     // Handwriting
     const handwriting = document.createElement("div");
     handwriting.setAttribute("id", "handwriting");
-    handwriting.innerHTML = /* html */ `⤺ I use it for<br> 
+    handwriting.innerHTML = /* html */ `<p>⤺ I use it for<br> 
     &nbsp;&nbsp;&nbsp;
-    bebugging`;
+    debugging</p>`;
     intro.appendChild(handwriting);
+    handwriting.addEventListener("click", () => {
+      window.open("https://en.wikipedia.org/wiki/Rubber_duck_debugging");
+    });
 
     // What Am I (paragraph on the right)
     const whatami = document.createElement("p");

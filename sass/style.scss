@@ -247,13 +247,18 @@ a {
     top: -38.1vh;
     // right: -40vh;
     right: clamp(-100em, max(-40vh, -37vw), 10em);
-    font-family: "Caveat", sans-serif;
-    // font-size: 2.5em; // olde value
-    font-size: clamp(1em, 4vh, 2.5em);
-    text-align: center;
     transform: rotate(20deg);
-    white-space: nowrap;
-    line-height: 1em;
+
+    p {
+      font-family: "Caveat", sans-serif;
+      // font-size: 2.5em; // olde value
+      font-size: clamp(1em, 4vh, 2.5em);
+      text-align: center;
+      white-space: nowrap;
+      line-height: 1em;
+      pointer-events: auto;
+      cursor: url("../assets/cursors/windows95-question.png"), auto;
+    }
   }
 }
 
@@ -637,7 +642,7 @@ footer {
   text-align: center;
   height: 90vh;
   background-color: $white;
-  // transition: opacity 1s;
+  cursor: url("../assets/cursors/windows95-hourglass.png"), auto;
 
   div {
     height: 100%;
