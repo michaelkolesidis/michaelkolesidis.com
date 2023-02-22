@@ -48,7 +48,7 @@ export default function header() {
     // Sticker
     const sticker = document.createElement("div");
     sticker.setAttribute("id", "new");
-    sticker.innerHTML = `<img width="150px" src="../../assets/new.svg" />`;
+    sticker.innerHTML = `<img alt="New! sticker" width="150px" src="../../assets/new.svg" />`;
     header.appendChild(sticker);
 
     dragElement(sticker);
