@@ -48,6 +48,7 @@ export default function projects() {
 
       // Project Image with Link
       const image = document.createElement("img");
+      image.loading = "lazy";
       image.setAttribute("src", project.image);
       image.setAttribute("alt", project.name);
       image.classList.add("project-image");

@@ -9,7 +9,9 @@ export default function body() {
       <header id="header"></header>
       <main id="main">
           <div id="sketch-placeholder"></div>
-          <div id="p5_loading" class="loadingclass">¡QUACK!</div>
+          <div id="p5_loading" class="loadingclass">
+          <div><div>LOADING</div></div>
+          </div>
           <div id="intro"></div>
           <div id="main-content">
           <section id="projects"></section>
