@@ -117,7 +117,6 @@ a {
   height: 200px;
   padding: 15px;
   overflow: hidden;
-  z-index: 1;
   cursor: url("../assets/cursors/windows95-grab.png"), auto;
 
   button {
@@ -206,7 +205,6 @@ a {
   left: 25px;
   transform: rotateZ(-10deg);
   cursor: url("../assets/cursors/windows95-grab.png"), auto;
-  z-index: 3;
   padding: 0;
   border-radius: 100px;
 
@@ -271,7 +269,6 @@ a {
       border-top: 35px solid $black;
       background-color: $white;
       padding: 1em;
-      z-index: 3;
       cursor: url("../assets/cursors/windows95-grab.png"), auto;
 
       a {
