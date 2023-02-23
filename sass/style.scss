@@ -270,7 +270,6 @@ a {
       border-top: 35px solid $black;
       background-color: $white;
       padding: 1em;
-
       cursor: url("../assets/cursors/windows95-grab.png"), auto;
 
       a {
@@ -284,19 +283,19 @@ a {
 
       button {
         position: absolute;
-        top: -30px;
-        right: 0px;
+        top: -35px;
+        right: -2px;
         padding-top: -0.3rem;
         border: 0;
         background-color: $black;
         color: $white;
         cursor: pointer;
-        height: 27px;
-        width: 27px;
-        border-radius: 100px;
+        height: 30px;
+        width: 37px;
+
         font-weight: 900;
         font-size: 1.4rem;
-        line-height: 27px;
+        line-height: 40px;
         text-align: center;
         transition: transform 0.15s linear;
         cursor: url("../assets/cursors/windows95-pointer.png"), auto;

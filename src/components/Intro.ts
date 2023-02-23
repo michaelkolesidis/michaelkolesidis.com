@@ -28,7 +28,7 @@ export default function intro() {
       duckDebuggingModal.style.pointerEvents = "all";
     });
 
-    // Window
+    // Modal
     const duckDebuggingModal = document.createElement("div");
     duckDebuggingModal.setAttribute("id", "duck-modal");
     duckDebuggingModal.innerHTML = /* html */ `
@@ -43,6 +43,7 @@ export default function intro() {
     </a>`;
     handwriting.appendChild(duckDebuggingModal);
 
+    // Modal X Button
     const removeButton = document.createElement("button");
     removeButton.classList.add("remove-button");
     removeButton.textContent = "✕";
