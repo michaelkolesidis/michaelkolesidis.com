@@ -34,7 +34,7 @@ export default function intro() {
     duckDebuggingModal.innerHTML = /* html */ `
     When programmers try to find and resolve bugs in their code, 
     it helps to explain it line-by-line to a rubber duck. 
-    This technique is called rubber duck debugging.<br>
+    This technique is known as rubber duck debugging.<br>
     <a 
       target="_blank" 
       href="https://en.wikipedia.org/wiki/Rubber_duck_debugging"
@@ -60,5 +60,26 @@ export default function intro() {
     whatami.setAttribute("id", "right");
     whatami.innerHTML = /* html */ `I am a Front-End Engineer / New Media Artist with a background in art and computer science, always passionate about crafting immersive and engaging experiences, playing my tiny little part in shaping the future of the web.`;
     intro.appendChild(whatami);
+
+    // Scroll prompt
+    const scrollPrompt = document.createElement("div");
+    scrollPrompt.setAttribute("id", "scroll-prompt");
+    scrollPrompt.innerHTML = `SCROLL DOWN FOR MORE • SCROLL DOWN FOR MORE • SCROLL DOWN FOR MORE • SCROLL DOWN FOR MORE • SCROLL DOWN FOR MORE • SCROLL DOWN FOR MORE`;
+
+    setTimeout(() => {
+      if (document.documentElement.scrollTop === 0) {
+        intro.appendChild(scrollPrompt);
+
+        const flash = setInterval(
+          () => (scrollPrompt.hidden = !scrollPrompt.hidden),
+          700
+        );
+
+        setTimeout(() => {
+          clearInterval(flash);
+          scrollPrompt.hidden = true;
+        }, 5000);
+      }
+    }, 20000);
   }
 }

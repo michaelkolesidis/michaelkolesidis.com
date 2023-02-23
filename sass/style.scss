@@ -292,7 +292,6 @@ a {
         cursor: pointer;
         height: 30px;
         width: 37px;
-
         font-weight: 900;
         font-size: 1.4rem;
         line-height: 40px;
@@ -301,6 +300,19 @@ a {
         cursor: url("../assets/cursors/windows95-pointer.png"), auto;
       }
     }
+  }
+
+  #scroll-prompt {
+    position: absolute;
+    bottom: -3em;
+    left: -2em;
+    white-space: nowrap;
+    font-weight: 600;
+    background-color: $black;
+    color: $white;
+    padding: 0.1em;
+    font-size: 2em;
+    transform: rotate(3deg);
   }
 }
 
