@@ -33,7 +33,7 @@ export default function intro() {
     duckDebuggingModal.setAttribute("id", "duck-modal");
     duckDebuggingModal.innerHTML = /* html */ `
     When programmers try to find and resolve bugs, 
-    it helps to explain their code line-by-line to a rubber duck. 
+    it helps to explain their code line-by-line to an inanimate object. 
     This technique is known as rubber duck debugging.<br>
     <a 
       target="_blank" 
