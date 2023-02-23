@@ -2,8 +2,8 @@
 // Licensed under the GNU Affero General Public License v3.0.
 // https://www.gnu.org/licenses/gpl-3.0.html
 
-import { generateNewColor } from "../functions.js";
-import { colors } from "../colors.js";
+import { generateNewColor } from "../utils/functions.js";
+import { colors } from "../utils/colors.js";
 
 export default function about() {
   const about = document.getElementById(`about`);

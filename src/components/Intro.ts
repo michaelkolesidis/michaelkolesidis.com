@@ -2,7 +2,10 @@
 // Licensed under the GNU Affero General Public License v3.0.
 // https://www.gnu.org/licenses/gpl-3.0.html
 
-import { dragElement } from "../functions.js";
+import { dragElement } from "../utils/functions.js";
+import WindowSystem from "../utils/windowSystem.js";
+
+let windowSystem = new WindowSystem();
 
 export default function intro() {
   const intro = document.getElementById("intro");
@@ -54,6 +57,10 @@ export default function intro() {
     duckDebuggingModal.appendChild(removeButton);
 
     dragElement(duckDebuggingModal);
+    duckDebuggingModal.style.zIndex = windowSystem.base.toString();
+    duckDebuggingModal.addEventListener("mousedown", () => {
+      duckDebuggingModal.style.zIndex = windowSystem.moveOnTop().toString();
+    });
 
     // What Am I (paragraph on the right)
     const whatami = document.createElement("p");

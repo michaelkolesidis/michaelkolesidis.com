@@ -2,7 +2,10 @@
 // Licensed under the GNU Affero General Public License v3.0.
 // https://www.gnu.org/licenses/gpl-3.0.html
 
-import { dragElement } from "../functions.js";
+import { dragElement } from "../utils/functions.js";
+import WindowSystem from "../utils/windowSystem.js";
+
+let windowSystem = new WindowSystem();
 
 export default function header() {
   const header = document.getElementById("header");
@@ -35,6 +38,12 @@ export default function header() {
         <p>February 2023</p>`;
     messageBox.appendChild(content);
 
+    dragElement(messageBox);
+    messageBox.style.zIndex = windowSystem.base.toString();
+    messageBox.addEventListener("mousedown", () => {
+      messageBox.style.zIndex = windowSystem.moveOnTop().toString();
+    });
+
     const removeButton = document.createElement("button");
     removeButton.classList.add("remove-button");
     removeButton.textContent = "✕";
@@ -52,5 +61,10 @@ export default function header() {
     header.appendChild(sticker);
 
     dragElement(sticker);
+    sticker.style.zIndex = windowSystem.base.toString();
+
+    sticker.addEventListener("mousedown", () => {
+      sticker.style.zIndex = windowSystem.moveOnTop().toString();
+    });
   }
 }

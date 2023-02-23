@@ -3,8 +3,8 @@
 // https://www.gnu.org/licenses/gpl-3.0.html
 
 import projectList from "../data/projects.js";
-import { generateNewColor } from "../functions.js";
-import { colors } from "../colors.js";
+import { generateNewColor } from "../utils/functions.js";
+import { colors } from "../utils/colors.js";
 
 export default function projects() {
   const projects = document.getElementById("projects");

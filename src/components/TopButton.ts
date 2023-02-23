@@ -2,7 +2,7 @@
 // Licensed under the GNU Affero General Public License v3.0.
 // https://www.gnu.org/licenses/gpl-3.0.html
 
-import { scrollFunction, topFunction } from "../functions.js";
+import { scrollFunction, topFunction } from "../utils/functions.js";
 
 export default function topButton() {
   const topButton = document.getElementById("top-button");
