@@ -434,6 +434,7 @@ canvas {
 
 /********** CONTACT **********/
 #contact {
+  padding-top: 1em;
   padding-bottom: 7em;
   border-bottom: 3px solid $black;
 
@@ -521,7 +522,6 @@ canvas {
     box-shadow: 8px 8px rgb(0, 0, 0);
     text-justify: inter-cluster;
     transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
-    cursor: url("../assets/cursors/windows95-pointer.png"), auto;
   }
 
   p:hover {
@@ -536,6 +536,12 @@ canvas {
   border-top: 3px solid $black;
   border-bottom: 3px solid $black;
   padding: 1em 0;
+  background-color: $black;
+  color: $white;
+
+  .wavy span{
+    color: $white;
+  }
 }
 
 #award {
@@ -543,7 +549,7 @@ canvas {
   flex-direction: row;
   margin-left: 10em;
   margin-bottom: 7em;
-
+  color: $white;
   max-height: fit-content;
   align-items: flex-start;
 }
@@ -553,7 +559,7 @@ canvas {
   padding: 0.1em 0.05em;
   font-size: 5em;
   text-align: center;
-  border: 4px dashed $black;
+  border: 4px dashed $white;
   transform-style: preserve-3d;
   animation: loader 5s infinite;
   background-image: $stripes;
@@ -589,6 +595,7 @@ canvas {
   white-space: pre;
   letter-spacing: 0.04em;
   transition: all 0.5s ease-out;
+  color: $white;
 }
 
 .award-title:hover > span,
@@ -600,6 +607,7 @@ canvas {
   max-width: 60ch;
   font-size: 1.1rem;
   margin-left: 0.9em;
+  color: $white;
 }
 
 /********** THIS WEBSITE **********/
