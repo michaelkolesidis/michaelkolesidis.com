@@ -8,7 +8,7 @@ const projectList = [
     image: "../../images/jss-01.png?v=2",
     technologies: "Tone.js, WEBMIDI.js, TypeScript, JavaScript, Sass",
     summary:
-      "My flagship project. The JavaScript Software Synthesizer is a powerful synthesizer build with web technologies.",
+      "The JavaScript Software Synthesizer is a powerful software synthesizer build with web technologies.",
     description: `The JavaScript Software Synthesizer is a web application
                   enabling users to make and play music in the browser. It is
                   a software synthesizer utilizing the Web Audio API by
@@ -49,7 +49,7 @@ const projectList = [
   {
     name: "Bird Generator",
     image: "../../images/bird-generator.png",
-    technologies: "p5.js, JavaScript",
+    technologies: "p5.js, JavaScript, CSS",
     summary: "A Bird Generator made with p5.js.",
     description: "",
     repository: "https://github.com/michaelkolesidis/bird-generator",
@@ -87,7 +87,7 @@ const projectList = [
     image: "../../images/sticky-notes-02.png",
     technologies: "TypeScript, CSS",
     summary:
-      "Fill your screen with sticky notes of various colors. Notes are editable and are saved on local storage",
+      "Fill your screen with sticky notes of all colors. Notes are editable and saved on local storage. (I use it on a daily basis!)",
     description: "",
     repository: "https://github.com/michaelkolesidis/sticky-notes",
     deployment: "https://sticky-notes-ts.vercel.app/",
@@ -112,7 +112,7 @@ const projectList = [
     image: "../../images/tenzi.gif",
     technologies: "React, TypeScript, Sass",
     summary:
-      "A dice game at which the player needs to roll dice until they are all the same. Best scores are saved to local storage.",
+      "A dice game at which players needs to roll dice until they get them all on the same number. Best scores are saved on local storage.",
     description: "",
     repository: "https://github.com/michaelkolesidis/tenzi",
     deployment: "https://tenzi-react.netlify.app/",
@@ -159,7 +159,7 @@ const projectList = [
   {
     name: "Music Reviews",
     image: "../../images/music-reviews.png?v=2",
-    technologies: "TypeScript, npm",
+    technologies: "TypeScript, CSS",
     summary:
       "A basic music reviews web app prototype demonstrating the usage of TypeScript.",
     description: "",
@@ -172,7 +172,7 @@ const projectList = [
   {
     name: "Landmarks",
     image: "../../images/landmarks.png?v=2",
-    technologies: "React, TypeScript, Webpack, Yarn",
+    technologies: "React, TypeScript",
     summary: "A React static page showing landmarks around the globe.",
     description: "",
     repository: "https://github.com/michaelkolesidis/react-landmarks",
@@ -198,7 +198,7 @@ const projectList = [
     image: "../../images/sport-app-pwa.png?v=2",
     technologies: "JavaScript, CSS",
     summary:
-      "A progressive web application enabling the user to create custom tables.",
+      "A progressive web application enabling users to create custom tables.",
     description: "",
     repository: "https://github.com/michaelkolesidis/sports-app-pwa",
     deployment: "https://sports-app-pwa.netlify.app/",
