@@ -74,7 +74,7 @@ Nominated by CSS Winner, a unique global platform awarding and showcasing the be
 
 ### Color Palette
 
-<img src="./screenshots/paletter.png">
+<img src="./screenshots/palette.png">
 
 #ff90e8 -
 rgb(255, 144, 232)
