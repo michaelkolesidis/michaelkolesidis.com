@@ -24,10 +24,18 @@ export default function ticker() {
   message3.innerText = `CLICK ON ANYTHING COLORFUL FOR A NEW COLOR`;
   ticker.appendChild(message3);
 
+    // Message 4
+    const message4 = document.createElement("div");
+    message4.classList.add("ticker__item");
+    message4.innerText = `TRY MOVING THINGS AROUND`;
+    ticker.appendChild(message4);
+
   // Populate
-  for (let i = 0; i < 12; i++) {
+  for (let i = 0; i < 10; i++) {
     ticker.appendChild(message1.cloneNode(true));
     ticker.appendChild(message2.cloneNode(true));
     ticker.appendChild(message3.cloneNode(true));
+    ticker.appendChild(message4.cloneNode(true));
+
   }
 }
