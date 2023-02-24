@@ -68,14 +68,14 @@ export default function projects() {
       // Summary
       const summary = document.createElement("p");
       summary.classList.add("project-summary");
-      summary.innerText = `${project.summary}`;
+      summary.innerHTML = `${project.summary}`;
       proj.appendChild(summary);
 
       // Technologies
 
       const techonolgies = document.createElement("p");
       techonolgies.classList.add("technologies");
-      techonolgies.innerText = `${project.technologies}`;
+      techonolgies.innerHTML = `${project.technologies}`;
       proj.appendChild(techonolgies);
 
       // Repository Link
