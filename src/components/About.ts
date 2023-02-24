@@ -26,7 +26,7 @@ export default function about() {
 
       `I am a multidisciplinary new media artist, with a background in creative development, performance art and computer science. I work at the intersection of performativity and digitality, attempting to blend art with technology with varying degrees of success. Nowadays, I explore graphics programming and a multitude of new media technologies to create web art, audiovisual art and physical installations. I have presented my work in Greece and the UK.`,
 
-      `More info about me ↴ ↴ ↴`,
+      `More ↴ ↴ ↴`,
 
       `I have lived, studied and worked in Greece, Spain (Barcelona) and the UK (Brighton).`,
 
@@ -41,10 +41,6 @@ export default function about() {
       `I've been  to many countries meeting people and discovering cultures from all over the world.`,
 
       `I don't drink coffee or tea. (OK, I might drink tea a few times a year)`,
-
-      `Apart from my huge respect for legends like Dennis Ritchie, Ken Thompson, and Richard Stallman, I really admire programmers maintaining little, less known projects, used by millions, all by themselves.`,
-
-      `In the unlike event that you need more info about me, please send me an email and I will try to respond as soon as possible.`,
     ];
 
     /* Styling */
@@ -67,16 +63,16 @@ export default function about() {
       const color = colors[colorIndex % colors.length].rgb;
       sentence.style.backgroundColor = `rgb(${color})`;
       colorIndex += 1;
-      if (i < 8) {
-        leftMargin += window.innerWidth * 0.012 * i;
+      if (i < 6) {
+        leftMargin += window.innerWidth * 0.024 * i;
       } else {
-        leftMargin -= window.innerWidth * 0.012 * i;
+        leftMargin -= window.innerWidth * 0.024 * i;
         if (leftMargin < 0) {
           leftMargin = 0;
         }
       }
 
-      if (window.innerWidth > 1050) {
+      if (window.innerWidth > 1500) {
         sentence.style.marginLeft = `${leftMargin}px`;
       } else {
         sentence.style.marginLeft = `5px`;

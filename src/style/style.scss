@@ -511,6 +511,7 @@ canvas {
 
   .sentence {
     margin-left: 100rem;
+    letter-spacing: 0.05em;
   }
 
   p {
@@ -518,6 +519,7 @@ canvas {
     margin-bottom: 1em;
     border: 3px solid $black;
     max-width: 60ch;
+    min-width: 12ch;
     box-shadow: 8px 8px rgb(0, 0, 0);
     text-justify: inter-cluster;
     transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
