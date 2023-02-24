@@ -85,10 +85,6 @@ a {
   white-space: nowrap;
   color: $white;
   pointer-events: none;
-
-  span {
-    font-size: 104px;
-  }
 }
 
 #title-letter {
@@ -96,10 +92,11 @@ a {
   color: $white;
   transition: transform 2s ease;
   pointer-events: all;
+  font-size: 104px;
 }
 
 #name:hover #title-letter {
-  transform: scaleX(-1);
+  transform: rotateY(180deg);
 }
 
 #top-gap {
@@ -772,12 +769,12 @@ footer {
 /********** SCROLLBAR **********/
 body::-webkit-scrollbar {
   width: 1em;
-  background: rgb(248, 248, 248);
+  background: $white;
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: rgb(27, 27, 27);
-  outline: 1px solid rgb(31, 31, 31);
+  background-color: $black;
+  outline: 1px solid $black;
 }
 
 /********** UNDER CONSTRUCTION TICKER **********/
@@ -1068,6 +1065,7 @@ $duration: 104s;
       font-size: 1em;
     }
   }
+
   /********** MOBILE: Footer **********/
   footer {
     width: 100%;
@@ -1089,7 +1087,6 @@ $duration: 104s;
 }
 
 /********** MEDIA QUERRIES: Grid **********/
-
 @media only screen and (min-width: 640px) and (max-width: 820px) {
   #handwriting {
     display: none;
