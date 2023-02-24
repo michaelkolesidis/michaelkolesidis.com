@@ -32,13 +32,11 @@ export default function about() {
 
       `I speak Greek, English, Spanish, and a bit of (actually hardly any nowadays) German.`,
 
-      "The first programming language I ever tampered with was Pascal, and the first language I ever learnt was C.",
+      "The first programming language I ever tampered with was Pascal, and the first I ever learnt was C.",
 
       `Today, I mostly use three.js, OpenGL Shading Language, WebGL, JavaScript, React, TypeScript, and Blender.`,
 
       `I always keep a rubber duck on my desk.`,
-
-      `I've been  to many countries meeting people and discovering cultures from all over the world.`,
 
       `I don't drink coffee or tea. (OK, I might drink tea a few times a year)`,
     ];
