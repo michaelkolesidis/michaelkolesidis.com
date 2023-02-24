@@ -22,9 +22,9 @@ This is my personal portfolio website / personal playground.
 
 I was influenced by print publication design and by 90's MTV on-screen graphics.
 
-I call this style **frivobrutalism**, placing emphasis on the frivolity of the deisgn/experience and its priority over the (neo)brutalist aesthetic.
+I call this style **frivobrutalism**, placing emphasis on the blend of the frivolity of the deisgn/experience with the brutalist aesthetic.
 
-The visitors can customize the colors of all colorful elements: clicking on an element generates a new color, from the predefined color palette.
+Visitors can customize the colors of all colorful elements: clicking on an element generates a new color, from the predefined color palette.
 
 The rubber duck responds to mouse move.
 
@@ -73,6 +73,8 @@ Nominated by CSS Winner, a unique global platform awarding and showcasing the be
 ## Design
 
 ### Color Palette
+
+<img src="./screenshots/paletter.png">
 
 #ff90e8 -
 rgb(255, 144, 232)
