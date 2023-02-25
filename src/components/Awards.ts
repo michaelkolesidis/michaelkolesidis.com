@@ -30,6 +30,15 @@ export default function awards() {
 
     const awardList = [
       {
+        plaque:  `!✦`,
+        title: `DESIGN AWARD - Honorable One Page Website`,
+        link: `../../assets/design-award.png`,
+        awarder: `One Page Love`,
+        awarderLink: `https://onepagelove.com/michael-kolesidis`,
+        description: `An award for my personal portofolio website (the site you are currently at!) awarded by One Page Love, a One Page website design gallery showcasing the best Single Page websites, templates and resources.`,
+      },
+      {
+        plaque:  `!★`,
         title: `DESIGN AWARD - Honorable One Page Website`,
         link: `../../assets/design-award.png`,
         awarder: `One Page Love`,
@@ -47,7 +56,7 @@ export default function awards() {
       // X
       const awardX = document.createElement("div");
       awardX.classList.add("award-x");
-      awardX.innerHTML = `!★`;
+      awardX.innerHTML = `${awa.plaque}`;
       award.appendChild(awardX);
 
       /* Styling */

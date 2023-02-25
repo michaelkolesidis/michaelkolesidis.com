@@ -3,9 +3,9 @@
 // https://www.gnu.org/licenses/gpl-3.0.html
 
 import { dragElement } from "../utils/functions.js";
-import WindowSystem from "../utils/windowSystem.js";
+import WindowManager from "../utils/windowManager.js";
 
-let windowSystem = new WindowSystem();
+let windowManager = new WindowManager();
 
 export default function header() {
   const header = document.getElementById("header");
@@ -39,9 +39,9 @@ export default function header() {
     messageBox.appendChild(content);
 
     dragElement(messageBox);
-    messageBox.style.zIndex = windowSystem.base.toString();
+    messageBox.style.zIndex = windowManager.base;
     messageBox.addEventListener("mousedown", () => {
-      messageBox.style.zIndex = windowSystem.moveOnTop().toString();
+      messageBox.style.zIndex = windowManager.moveOnTop();
     });
 
     const removeButton = document.createElement("button");
@@ -61,10 +61,10 @@ export default function header() {
     header.appendChild(sticker);
 
     dragElement(sticker);
-    sticker.style.zIndex = windowSystem.base.toString();
+    sticker.style.zIndex = windowManager.base;
 
     sticker.addEventListener("mousedown", () => {
-      sticker.style.zIndex = windowSystem.moveOnTop().toString();
+      sticker.style.zIndex = windowManager.moveOnTop();
     });
   }
 }

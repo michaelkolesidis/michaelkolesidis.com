@@ -536,6 +536,8 @@ canvas {
   padding: 1em 0;
   background-color: $black;
   color: $white;
+  display: flex;
+  flex-direction: column;
 
   .wavy span {
     color: $white;

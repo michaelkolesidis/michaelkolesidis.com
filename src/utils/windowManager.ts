@@ -4,25 +4,25 @@
 
 let instance: any = null;
 
-export default class WindowSystem {
-  base!: number;
-  highZ!: number;
+export default class WindowManager {
+  base!: string;
+  highZ!: string;
 
-  constructor() {
+  constructor(base = 1) {
     if (instance) {
       return instance;
     }
 
     instance = this;
 
-    // Options
-    this.base = 2;
+    // Values
+    this.base = base.toString();
     this.highZ = this.base;
   }
 
   moveOnTop() {
-    let newHigh = this.highZ + 2;
-    this.highZ = newHigh;
-    return newHigh;
+    let newHigh = parseInt(this.highZ) + 1;
+    this.highZ = newHigh.toString();
+    return newHigh.toString();
   }
 }

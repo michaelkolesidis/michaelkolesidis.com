@@ -3,9 +3,9 @@
 // https://www.gnu.org/licenses/gpl-3.0.html
 
 import { dragElement } from "../utils/functions.js";
-import WindowSystem from "../utils/windowSystem.js";
+import WindowManager from "../utils/windowManager.js";
 
-let windowSystem = new WindowSystem();
+let windowManager = new WindowManager();
 
 export default function intro() {
   const intro = document.getElementById("intro");
@@ -57,9 +57,9 @@ export default function intro() {
     duckDebuggingModal.appendChild(removeButton);
 
     dragElement(duckDebuggingModal);
-    duckDebuggingModal.style.zIndex = windowSystem.base.toString();
+    duckDebuggingModal.style.zIndex = windowManager.base;
     duckDebuggingModal.addEventListener("mousedown", () => {
-      duckDebuggingModal.style.zIndex = windowSystem.moveOnTop().toString();
+      duckDebuggingModal.style.zIndex = windowManager.moveOnTop();
     });
 
     // What Am I (paragraph on the right)
