@@ -42,13 +42,13 @@ _February 2023_
 
 Awarded by One Page Love, a One Page website design gallery showcasing the best Single Page websites, templates and resources.
 
-### NOMINEE - Web Design Award Contest
+### STAR AWARD
 
 **[CSS Winner](https://www.csswinner.com/details/michael-kolesidis/16936)**
 
 _February 2023_
 
-Nominated by CSS Winner, a unique global platform awarding and showcasing the best websites and promoting innovative web designers, developers and agencies.
+Awarded by CSS Winner, a unique global platform awarding and showcasing the best websites and promoting innovative web designers, developers and agencies.
 
 ## Screenshots
 
