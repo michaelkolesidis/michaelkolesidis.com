@@ -2,8 +2,7 @@
 // Licensed under the GNU Affero General Public License v3.0.
 // https://www.gnu.org/licenses/gpl-3.0.html
 
-import { dragElement } from "../utils/functions.js";
-import WindowManager from "../utils/windowManager.js";
+import { WindowManager, dragElement }  from "../utils/windowManager.js";
 
 let windowManager = new WindowManager();
 
