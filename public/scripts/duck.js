@@ -24,7 +24,9 @@ const duck = (sketch) => {
 
     cnv.mouseClicked(sketch.recolorize);
 
-    sketch.colorize();
+    sketch.colorize(); // random color
+    // duckColor = sketch.color(255, 201, 0); // yellow color
+    // backgroundColor = sketch.color(255, 201, 0);
   };
 
   sketch.draw = () => {
