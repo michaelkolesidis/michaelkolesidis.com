@@ -30,20 +30,20 @@ export default function awards() {
 
     const awardList = [
       {
-        plaque:  `!✦`,
+        plaque: `!✦`,
         title: `DESIGN AWARD - Honorable One Page Website`,
         link: `../../assets/design-award.png`,
         awarder: `One Page Love`,
         awarderLink: `https://onepagelove.com/michael-kolesidis`,
-        description: `An award for my personal portofolio website (the site you are currently at!) awarded by One Page Love, a One Page website design gallery showcasing the best Single Page websites, templates and resources.`,
+        description: `An award for my portofolio website (the site you are currently at!) awarded by One Page Love, a One Page website design gallery showcasing the best Single Page websites, templates and resources.`,
       },
       {
-        plaque:  `!★`,
-        title: `DESIGN AWARD - Honorable One Page Website`,
-        link: `../../assets/design-award.png`,
-        awarder: `One Page Love`,
-        awarderLink: `https://onepagelove.com/michael-kolesidis`,
-        description: `An award for my personal portofolio website (the site you are currently at!) awarded by One Page Love, a One Page website design gallery showcasing the best Single Page websites, templates and resources.`,
+        plaque: `!★`,
+        title: `STAR AWARD`,
+        link: `https://www.csswinner.com/details/michael-kolesidis/16936`,
+        awarder: `CSS Winner`,
+        awarderLink: `https://www.csswinner.com/details/michael-kolesidis/16936`,
+        description: `Another award for my portofolio website, awarded by CSS Winner, a unique global platform awarding and showcasing the best websites and promoting innovative web designers, developers and agencies`,
       },
     ];
 
