@@ -566,6 +566,14 @@ canvas {
   background-size: $stripes-size;
 }
 
+.award-x:hover {
+  -webkit-animation-play-state: paused;
+  -moz-animation-play-state: paused;
+  -ms-animation-play-state: paused;
+  -o-animation-play-state: paused;
+  animation-play-state: paused;
+}
+
 @keyframes loader {
   0% {
     transform: rotateX(0deg) rotateY(0deg) rotateZ(-10deg);
@@ -817,6 +825,7 @@ $duration: 104s;
   text-transform: uppercase;
   font-size: 0.875rem;
 }
+
 .ticker-wrap .ticker__item:before {
   content: "";
   height: 11px;
@@ -849,6 +858,7 @@ $duration: 104s;
   background-color: rgba(0, 0, 0, 0);
   padding-left: 100%;
   box-sizing: content-box;
+
   .ticker:hover {
     -webkit-animation-play-state: paused;
     -moz-animation-play-state: paused;
@@ -856,6 +866,7 @@ $duration: 104s;
     -o-animation-play-state: paused;
     animation-play-state: paused;
   }
+
   .ticker {
     display: inline-block;
     height: 1.6rem;
