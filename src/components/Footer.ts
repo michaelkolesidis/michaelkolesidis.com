@@ -14,7 +14,7 @@ export default function footer() {
 
     const disclaimer = document.createElement("p");
     disclaimer.setAttribute("id", "disclaimer");
-    disclaimer.innerHTML = `This website does NOT collect, store, use, or distribute any personal data or information about its visitors.`;
+    disclaimer.innerHTML = `For a minimal and accessible for people with color blindness (CVD) version of this page, please click <a href="minimal/index.html" target="_blank" >here</a>.`;
     footer.appendChild(disclaimer);
 
     const ducks = document.createElement("div");

@@ -1,0 +1,54 @@
+@font-face {
+  font-family: "Canva Sans";
+  font-display: block;
+  block-timeout: 0.3;
+  swap-timeout: 0;
+  src: url("./canva_sans.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Canva Sans Bold";
+  font-display: block;
+  block-timeout: 0.3;
+  swap-timeout: 0;
+  src: url("./canva_sans_bold.woff2") format("woff2");
+}
+
+:root {
+  --blue: #024ae3;
+  --white: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Canva Sans", Arial, Helvetica, sans-serif;
+  color: var(--blue);
+}
+
+#header {
+  font-size: 13.8vw;
+  font-family: "Canva Sans Bold", Arial, Helvetica, sans-serif;
+  line-height: 0.8em;
+  text-align: center;
+  letter-spacing: -0.07em;
+  margin-left: -0.1em;
+}
+
+#subheader {
+  font-weight: 600;
+  text-align: center;
+  font-size: 1.85em;
+  font-size: 2.92vw;
+}
+
+#container {
+  text-align: center;
+  margin-top: 10em;
+  font-size: 2.92vw;
+}
+
+#duck {
+  margin-top: 2em;
+  width: 2em;
+}

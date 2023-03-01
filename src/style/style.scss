@@ -672,6 +672,11 @@ footer {
     max-width: 44ch;
     text-align: center;
     margin-top: 2em;
+
+    a {
+      color: $white;
+      text-decoration: underline;
+    }
   }
 
   #ducks {
