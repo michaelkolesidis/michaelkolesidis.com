@@ -24,12 +24,18 @@
   padding: 0;
   font-family: "Canva Sans", Arial, Helvetica, sans-serif;
   color: var(--blue);
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
 }
 
 body {
   display: flex;
   flex-direction: column;
-  margin: 0 13vw 5vh 13vw;
+  margin: 1vh 13vw 0.5em 13vw;
+  font-size: 18px;
+  justify-content: center;
+  align-items: center;
 }
 
 #header {
@@ -47,17 +53,23 @@ body {
   font-size: 1.85em;
   font-size: clamp(10px, 2.1vw, 42.5px);
   white-space: nowrap;
+  margin-bottom: 0.5em;
 }
 
 .container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 10px;
-  /* grid-auto-flow: dense; */
+  max-width: 1450px;
 }
 
 .section {
   padding: 1em;
+}
+
+#top-section {
+  display: flex;
+  grid-column: 1 / 3;
 }
 
 #summary {
@@ -94,6 +106,11 @@ body {
 
 .project-title {
   font-family: "Canva Sans Bold", Arial, Helvetica, sans-serif;
+  font-size: 1.2em;
+}
+
+.technologies {
+  font-style: italic;
 }
 
 .repo-link {
@@ -102,21 +119,38 @@ body {
 
 #projects-container {
   display: grid;
-  gap: 1em;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  grid-gap: 32px;
+  grid-auto-flow: dense;
 }
 
 #awards {
   background-color: var(--blue);
   grid-column: 1 / 3;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  display: flex;
+  flex-direction: row;
 }
 
 #awards * {
   color: var(--white);
+  text-decoration: none;
 }
 
 .award {
   padding: 2em;
+}
+
+#duck {
+  margin: 3em;
+  width: 3em;
+}
+
+@media (max-width: 775px) {
+  #top-section {
+    flex-direction: column;
+  }
+
+  #awards {
+    flex-direction: column;
+  }
 }
