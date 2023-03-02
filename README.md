@@ -99,8 +99,6 @@ rgb(62, 207, 193)
 #90a8ed -
 rgb(144, 168, 237)
 
-## Minimal Version
-
 ## License
 
 <a href="https://www.gnu.org/licenses/agpl-3.0.html"><img src="https://upload.wikimedia.org/wikipedia/commons/0/06/AGPLv3_Logo.svg" height="100px" /></a>
