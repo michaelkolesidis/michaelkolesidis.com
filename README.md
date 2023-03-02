@@ -32,6 +32,10 @@ Most of the elements are part of microinteractions and hovering over them or int
 
 The website is responsive for desktop and mobile.
 
+### Minimal Version
+
+Since the website is quite colorful and full of animations, it might be difficult for people with disabilities to navigate through it. That's why I decided to create a minimal version as well, to assist people with color blindness and/or other disabilities with their experience. The minimal version can be accesses from the website's footer, which points to [https://michaelkolesidis.com/minimal/](https://michaelkolesidis.com/minimal/).
+
 ## Awards
 
 ### DESIGN AWARD - Honorable One Page Website
@@ -70,6 +74,10 @@ Awarded by CSS Winner, a unique global platform awarding and showcasing the best
 <img src="./screenshots/mobile2.jpg" width="400px">
 <img src="./screenshots/mobile3.jpg" width="400px">
 
+### Minimal Version
+
+<img src="./screenshots/minimal.png" width="700px">
+
 ## Design
 
 ### Color Palette
@@ -90,6 +98,8 @@ rgb(62, 207, 193)
 
 #90a8ed -
 rgb(144, 168, 237)
+
+## Minimal Version
 
 ## License
 
