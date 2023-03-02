@@ -26,29 +26,97 @@
   color: var(--blue);
 }
 
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 0 13vw 5vh 13vw;
+}
+
 #header {
-  font-size: 13.8vw;
+  font-size: clamp(32px, 10vw, 200px);
   font-family: "Canva Sans Bold", Arial, Helvetica, sans-serif;
   line-height: 0.8em;
   text-align: center;
   letter-spacing: -0.07em;
-  margin-left: -0.1em;
+  white-space: nowrap;
 }
 
 #subheader {
   font-weight: 600;
   text-align: center;
   font-size: 1.85em;
-  font-size: 2.92vw;
+  font-size: clamp(10px, 2.1vw, 42.5px);
+  white-space: nowrap;
 }
 
-#container {
-  text-align: center;
-  margin-top: 2em;
-  font-size: 2.92vw;
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+  /* grid-auto-flow: dense; */
 }
 
-#duck {
-  margin-top: 2em;
-  width: 2em;
+.section {
+  padding: 1em;
+}
+
+#summary {
+  padding: 2em;
+}
+
+#contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px dashed var(--blue);
+}
+
+#links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#links > a {
+  text-decoration: none;
+  font-family: "Canva Sans Bold", Arial, Helvetica, sans-serif;
+  max-width: fit-content;
+}
+
+#projects {
+  grid-column: 1 / 3;
+}
+
+.project-card > a {
+  text-decoration: none;
+}
+
+.project-title {
+  font-family: "Canva Sans Bold", Arial, Helvetica, sans-serif;
+}
+
+.repo-link {
+  font-family: "Canva Sans Bold", Arial, Helvetica, sans-serif;
+}
+
+#projects-container {
+  display: grid;
+  gap: 1em;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+#awards {
+  background-color: var(--blue);
+  grid-column: 1 / 3;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+#awards * {
+  color: var(--white);
+}
+
+.award {
+  padding: 2em;
 }
