@@ -39,7 +39,7 @@ body {
 }
 
 #header {
-  font-size: clamp(32px, 10vw, 200px);
+  font-size: clamp(47px, 10vw, 200px);
   font-family: "Canva Sans Bold", Arial, Helvetica, sans-serif;
   line-height: 0.8em;
   text-align: center;
