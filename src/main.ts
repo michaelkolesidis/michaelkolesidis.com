@@ -21,7 +21,6 @@ body();
 ticker();
 header();
 intro();
-// technologies();
 projects();
 contact();
 about();
@@ -30,5 +29,20 @@ thisWebsite();
 footer();
 topButton();
 
-// Other
+// Disable right click
 document.addEventListener("contextmenu", (e) => e.preventDefault());
+
+// Get scroll distance as a CSS variable
+window.addEventListener(
+  "scroll",
+  () => {
+    document.body.style.setProperty(
+      "--scroll",
+      (
+        window.pageYOffset /
+        (document.body.offsetHeight - window.innerHeight)
+      ).toString()
+    );
+  },
+  false
+);
