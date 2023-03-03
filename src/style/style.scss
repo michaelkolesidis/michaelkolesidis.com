@@ -204,13 +204,13 @@ a {
   cursor: url("../assets/cursors/windows95-grab.png"), auto;
   padding: 0;
   border-radius: 100px;
-  animation: rotate 1s linear infinite;
-  animation-play-state: paused;
-  animation-delay: calc(var(--scroll) * -1s);
 
   img {
     border-radius: 100px;
     margin-bottom: -0.5em;
+    animation: rotate 1s linear infinite;
+    animation-play-state: paused;
+    animation-delay: calc(var(--scroll) * -1s);
   }
 }
 
