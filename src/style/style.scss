@@ -455,7 +455,6 @@ canvas {
   color: $white;
   background-color: $black;
   border: 0;
-  border: calc($line / 1.5) solid $black;
   cursor: url("../assets/cursors/windows95-pointer.png"), auto;
 }
 
@@ -539,7 +538,7 @@ canvas {
 /********** ABOUT **********/
 #about {
   @extend #contact;
-  margin: 5em 7rem;
+  margin: 0 4.5rem;
   border: 0;
 
   .wavy {
