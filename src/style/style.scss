@@ -376,7 +376,27 @@ canvas {
   padding: 3rem;
   border: $line solid black;
   margin: -3px;
+  display: block;
+  animation: fadeInFromNone 0.5s ease-out;
 }
+
+@keyframes fadeInFromNone {
+  0% {
+      display: none;
+      opacity: 0;
+  }
+
+  1% {
+      display: block;
+      opacity: 0;
+  }
+
+  100% {
+      display: block;
+      opacity: 1;
+  }
+}
+
 
 .project-image {
   height: 20rem;
@@ -443,7 +463,7 @@ canvas {
   padding: 20px;
   text-align: center;
   border-bottom: calc($line / 1.5) solid $black;
-  // border-top: calc($line / 1.5) solid $black;
+  border-top: calc($line / 1.5) solid $black;
   margin-top: -1.5px;
   font-size: 1.5em;
 }

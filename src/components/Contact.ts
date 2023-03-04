@@ -22,8 +22,7 @@ export default function contact() {
     // Email
     const email = document.createElement("p");
     email.setAttribute("id", "email");
-    email.innerHTML = `For inquiries please drop me a line at:
-   michael.kolesidis@gmail.com`;
+    email.innerHTML = `For inquiries please drop me a line at:<br>michael.kolesidis@gmail.com`;
     contact.appendChild(email);
 
     // Links
