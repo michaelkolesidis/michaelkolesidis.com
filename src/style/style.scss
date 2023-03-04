@@ -557,7 +557,8 @@ canvas {
 }
 
 #awards-container {
-  
+  display: flex;
+  flex-direction: column;
 }
 
 #award {
@@ -1164,5 +1165,9 @@ $duration: 104s;
 @media only screen and (min-width: 2200px) {
   #projects-container {
     grid-template-columns: repeat(4, 1fr);
+  }
+
+  #awards-container {
+    flex-direction: row;
   }
 }
