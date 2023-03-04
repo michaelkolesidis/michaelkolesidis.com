@@ -34,7 +34,7 @@ The website is responsive for desktop and mobile.
 
 ### Minimal Version
 
-Since the website is quite colorful and full of animations, it might be difficult for people with disabilities to navigate through it. That's why I decided to create a minimal version as well, to assist people with color blindness and/or other disabilities with their experience. The minimal version can be accesses from the website's footer, which points to [https://michaelkolesidis.com/minimal/](https://michaelkolesidis.com/minimal/).
+Since the website is quite colorful and full of animations, it might be difficult for people with disabilities to navigate through it. That's why I decided to create a minimal version as well, to assist people with color blindness and/or other disabilities with their experience. The minimal version can be accessed from the website's footer, which points to [https://michaelkolesidis.com/minimal/](https://michaelkolesidis.com/minimal/).
 
 ## Awards
 
