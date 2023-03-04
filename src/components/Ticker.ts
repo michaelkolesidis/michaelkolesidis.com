@@ -9,25 +9,25 @@ export default function ticker() {
   // Message 1
   const message1 = document.createElement("div");
   message1.classList.add("ticker__item");
-  message1.innerText = `WELCOME TO MY PLAYGROUND`;
+  message1.innerHTML = `WELCOME TO MY PLAYGROUND`;
   ticker.appendChild(message1);
 
   // Message 2
   const message2 = document.createElement("div");
   message2.classList.add("ticker__item");
-  message2.innerText = `FEEL FREE TO PLAY WITH MY RUBBER DUCK`;
+  message2.innerHTML = `FEEL FREE TO PLAY WITH MY RUBBER DUCK`;
   ticker.appendChild(message2);
 
   // Message 3
   const message3 = document.createElement("div");
   message3.classList.add("ticker__item");
-  message3.innerText = `CLICK ON ANYTHING COLORFUL FOR A NEW COLOR`;
+  message3.innerHTML = `CLICK ON ANYTHING COLORFUL FOR A NEW COLOR`;
   ticker.appendChild(message3);
 
     // Message 4
     const message4 = document.createElement("div");
     message4.classList.add("ticker__item");
-    message4.innerText = `TRY MOVING THINGS AROUND`;
+    message4.innerHTML = `TRY MOVING THINGS AROUND`;
     ticker.appendChild(message4);
 
   // Populate

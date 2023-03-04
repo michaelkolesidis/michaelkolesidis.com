@@ -122,7 +122,7 @@ export default function awards() {
       // Description
       const summary = document.createElement("p");
       summary.classList.add("award-description");
-      summary.innerText = `${awa.description}`;
+      summary.innerHTML = `${awa.description}`;
       awardDetails.appendChild(summary);
 
       awardsContainer.appendChild(award);

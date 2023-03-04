@@ -30,9 +30,12 @@ export default function projects() {
     projects.appendChild(projectsContainer);
 
     let colorIndex = 0;
+    const numberOfProjects = projectList.length;
+    const upTo = 8;
 
     // Ppopulate Projects
-    for (const project of projectList) {
+    for (let i = 0; i < upTo; i++) {
+      const project = projectList[i];
       if (project.visible === false) {
         continue;
       }
@@ -72,7 +75,6 @@ export default function projects() {
       proj.appendChild(summary);
 
       // Technologies
-
       const techonolgies = document.createElement("p");
       techonolgies.classList.add("technologies");
       techonolgies.innerHTML = `${project.technologies}`;
@@ -81,7 +83,7 @@ export default function projects() {
       // Repository Link
       const repoLink = document.createElement("a");
       repoLink.classList.add("repo-link");
-      repoLink.innerText = "GitHub";
+      repoLink.innerHTML = "GitHub";
       repoLink.href = `${project.repository}`;
       repoLink.target = "_blank";
       proj.appendChild(repoLink);
@@ -102,10 +104,92 @@ export default function projects() {
       });
     });
 
+    // Show More
+    const showMore = document.createElement("p");
+    showMore.setAttribute("id", "show-more");
+    showMore.innerHTML = `Show more`;
+    projects.appendChild(showMore);
+
+    showMore.addEventListener("click", () => {
+      // Hide button
+      showMore.style.display = "none";
+
+      // Ppopulate Additional Projects
+      for (let i = upTo; i < numberOfProjects; i++) {
+        const project = projectList[i];
+        if (project.visible === false) {
+          continue;
+        }
+
+        // Project
+        const proj = document.createElement("div");
+        proj.classList.add("project-card");
+
+        /* Styling */
+        const color = colors[colorIndex % colors.length].rgb;
+        proj.style.backgroundColor = `rgb(${color})`;
+        colorIndex += 1;
+
+        // Project Image with Link
+        const image = document.createElement("img");
+        image.loading = "lazy";
+        image.setAttribute("src", project.image);
+        image.setAttribute("alt", project.name);
+        image.classList.add("project-image");
+        proj.appendChild(image);
+        image.addEventListener("click", () => {
+          open(`${project.deployment}`);
+        });
+
+        // Title
+        const title = document.createElement("a");
+        title.classList.add("project-title");
+        title.href = `${project.deployment}`;
+        title.target = "_blank";
+        title.innerHTML = `<br>${project.name.toLocaleUpperCase()}`;
+        proj.appendChild(title);
+
+        // Summary
+        const summary = document.createElement("p");
+        summary.classList.add("project-summary");
+        summary.innerHTML = `${project.summary}`;
+        proj.appendChild(summary);
+
+        // Technologies
+        const techonolgies = document.createElement("p");
+        techonolgies.classList.add("technologies");
+        techonolgies.innerHTML = `${project.technologies}`;
+        proj.appendChild(techonolgies);
+
+        // Repository Link
+        const repoLink = document.createElement("a");
+        repoLink.classList.add("repo-link");
+        repoLink.innerHTML = "GitHub";
+        repoLink.href = `${project.repository}`;
+        repoLink.target = "_blank";
+        proj.appendChild(repoLink);
+
+        projectsContainer.appendChild(proj);
+      }
+
+      const allProjects = document.querySelectorAll(".project-card");
+      allProjects.forEach((proj) => {
+        proj.addEventListener("click", (e) => {
+          /* Styling */
+          const target = e.target as HTMLElement;
+          if (target.classList.contains("project-card")) {
+            target.style.backgroundColor = `rgb(${
+              generateNewColor(colors, target, "backgroundColor").rgb
+            })`;
+          }
+        });
+      });
+    });
+
     // Info box
     const more = document.createElement("p");
     more.setAttribute("id", "more");
-    more.innerText = `The list gets updated regularly with new projects. Check back again soon!`;
+    more.innerHTML = `The list gets updated regularly with new projects. Check back again soon!`;
     projects.appendChild(more);
   }
 }

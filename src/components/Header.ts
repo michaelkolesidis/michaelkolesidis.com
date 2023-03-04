@@ -19,7 +19,7 @@ export default function header() {
     // Top gap
     const topGap = document.createElement("div");
     topGap.setAttribute("id", "top-gap");
-    topGap.innerText = `.`;
+    topGap.innerHTML = `.`;
     header.appendChild(topGap);
 
     /* Styling */

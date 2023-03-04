@@ -431,11 +431,19 @@ canvas {
   content: " < < < < < <";
 }
 
+#show-more {
+  @extend #more;
+  color: $white;
+  background-color: $black;
+  border: 0;
+  cursor: url("../assets/cursors/windows95-pointer.png"), auto;
+}
+
 #more {
   padding: 20px;
   text-align: center;
   border-bottom: calc($line / 1.5) solid $black;
-  border-top: calc($line / 1.5) solid $black;
+  // border-top: calc($line / 1.5) solid $black;
   margin-top: -1.5px;
   font-size: 1.5em;
 }

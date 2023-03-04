@@ -38,7 +38,7 @@ for (const project of projectList) {
   // Repository Link
   const repoLink = document.createElement("a");
   repoLink.classList.add("repo-link");
-  repoLink.innerText = "GitHub";
+  repoLink.innerHTML = "GitHub";
   repoLink.href = `${project.repository}`;
   repoLink.target = "_blank";
   proj.appendChild(repoLink);
