@@ -757,16 +757,16 @@ footer {
       -webkit-background-clip: text;
       background-clip: text;
       -webkit-text-fill-color: transparent;
-      animation: barberpole 2s linear infinite;
+      animation: barberpole 3s linear infinite;
     }
   }
 
   @keyframes barberpole {
     0% {
-      background-position: -100% -100%;
+      background-position: -50% -50%;
     }
     100% {
-      background-position: 100% 100%;
+      background-position: 50% 50%;
     }
   }
 }
