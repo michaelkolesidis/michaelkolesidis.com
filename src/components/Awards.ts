@@ -28,6 +28,11 @@ export default function awards() {
        <span style="--i:13">S</span>`;
     awards.appendChild(awardsTitle);
 
+    const awardsContainer = document.createElement("div");
+    awardsContainer.setAttribute("id", "awards-container");
+
+    awards.appendChild(awardsContainer);
+
     const awardList = [
       {
         plaque: `!✦`,
@@ -120,7 +125,7 @@ export default function awards() {
       summary.innerText = `${awa.description}`;
       awardDetails.appendChild(summary);
 
-      awards.appendChild(award);
+      awardsContainer.appendChild(award);
     }
   }
 }
