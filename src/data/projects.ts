@@ -8,7 +8,7 @@ const projectList = [
     image: "../../images/jss-01.png?v=2",
     technologies: "Tone.js, WEBMIDI.js, TypeScript, JavaScript, Sass",
     summary:
-      "The JavaScript Software Synthesizer is a powerful software synthesizer build with web technologies.",
+      "A powerful software synthesizer build with web technologies.",
     description: `The JavaScript Software Synthesizer is a web application
                   enabling users to make and play music in the browser. It is
                   a software synthesizer utilizing the Web Audio API by
@@ -38,7 +38,7 @@ const projectList = [
     name: "synthétique",
     image: "../../images/synthetique.png",
     technologies: "Three.js, JavaScript, CSS",
-    summary: "Retrofuturistic demo",
+    summary: "Retrofuturistic demo.",
     description: "",
     repository: "https://github.com/michaelkolesidis/synthetique",
     deployment: "https://synthetique.vercel.app/",
@@ -50,7 +50,7 @@ const projectList = [
     name: "Bird Generator",
     image: "../../images/bird-generator.png",
     technologies: "p5.js, JavaScript, CSS",
-    summary: "A Bird Generator made with p5.js.",
+    summary: "A Bird Generator™ for the creation of all sorts of birds.",
     description: "",
     repository: "https://github.com/michaelkolesidis/bird-generator",
     deployment: "https://bird-generator.vercel.app/",
@@ -87,7 +87,7 @@ const projectList = [
     image: "../../images/sticky-notes-02.png",
     technologies: "TypeScript, CSS",
     summary:
-      "Fill your screen with sticky notes of all colors. Notes are editable and saved on local storage. (I use it on a daily basis!)",
+      "Fill your screen with sticky notes of all colors. Notes are editable and saved on local storage.",
     description: "",
     repository: "https://github.com/michaelkolesidis/sticky-notes",
     deployment: "https://sticky-notes-ts.vercel.app/",
@@ -99,7 +99,7 @@ const projectList = [
     name: "Fractal Mountain",
     image: "../../images/fractal-mountain.gif",
     technologies: "p5.js, JavaScript",
-    summary: "A single triangle transforms into a mountain.",
+    summary: "A single triangle transforms into a fraction of mountain.",
     description: "",
     repository: "https://github.com/michaelkolesidis/fractal-mountain",
     deployment: "https://fractal-mountain.netlify.app/",
@@ -112,7 +112,7 @@ const projectList = [
     image: "../../images/tenzi.gif",
     technologies: "React, TypeScript, Sass",
     summary:
-      "A dice game at which players needs to roll dice until they get them all on the same number. Best scores are saved on local storage.",
+      "A dice game at which players needs to roll dice until they get them all on the same number.",
     description: "",
     repository: "https://github.com/michaelkolesidis/tenzi",
     deployment: "https://tenzi-react.netlify.app/",
@@ -161,7 +161,7 @@ const projectList = [
     image: "../../images/music-reviews.png?v=2",
     technologies: "TypeScript, CSS",
     summary:
-      "A basic music reviews web app prototype demonstrating the usage of TypeScript.",
+      "A basic music reviews web app prototype.",
     description: "",
     repository: "https://github.com/michaelkolesidis/music-reviews",
     deployment: "https://music-reviews.netlify.app/",
@@ -235,7 +235,7 @@ const projectList = [
     image: "../../images/random-triangles-cube.gif",
     technologies: "Three.js, JavaScript",
     summary:
-      "Random triangles form a cube. Right/left-click, move mouse and scroll to explore. Double-click to toggle fullscreen mode.",
+      "Random triangles form a cube.",
     description: "",
     repository: "https://github.com/michaelkolesidis/random-triangles-cube",
     deployment: "https://random-triangles-cube.netlify.app/",
