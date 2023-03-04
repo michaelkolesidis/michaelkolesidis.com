@@ -62,7 +62,7 @@ export default function projects() {
       title.classList.add("project-title");
       title.href = `${project.deployment}`;
       title.target = "_blank";
-      title.innerHTML = `<br>${project.name}`;
+      title.innerHTML = `<br>${project.name.toLocaleUpperCase()}`;
       proj.appendChild(title);
 
       // Summary

@@ -40,6 +40,9 @@ $stripes: linear-gradient(
 );
 $stripes-size: 141.42px 141.42px;
 
+/* lines */
+$line: 0.3em;
+
 /**********  GENERAL **********/
 * {
   margin: 0;
@@ -55,7 +58,7 @@ $stripes-size: 141.42px 141.42px;
 
 body,
 html {
-  border-right: 1.5px solid $black;
+  border-right: calc($line / 2) solid $black;
   background-color: $white;
   cursor: url("../assets/cursors/windows95-cursor.png"), auto;
   scroll-behavior: smooth;
@@ -101,7 +104,7 @@ a {
 
 #top-gap {
   height: 140px;
-  border-bottom: 3px solid black;
+  border-bottom: $line solid black;
 }
 
 #box {
@@ -271,7 +274,7 @@ a {
       right: 15em;
       width: 25em;
       color: $black;
-      border: 3px solid $black;
+      border: $line solid $black;
       border-top: 35px solid $black;
       background-color: $white;
       padding: 1em;
@@ -322,7 +325,7 @@ a {
 }
 
 canvas {
-  border-bottom: 3px solid black;
+  border-bottom: $line solid black;
 }
 
 /********** SECTION TITLES **********/
@@ -371,14 +374,14 @@ canvas {
 
 .project-card {
   padding: 3rem;
-  border: 3px solid black;
-  margin: -1.5px;
+  border: $line solid black;
+  margin: -3px;
 }
 
 .project-image {
   height: 20rem;
   margin-bottom: 1.31em;
-  border: 3px solid $black;
+  border: $line solid $black;
   box-shadow: 8px 8px rgb(0, 0, 0);
   transition: transform 0.8s ease-in-out, filter 0.9s ease-in-out,
     opacity 0.9s ease-in-out, box-shadow 0.7s ease-in-out;
@@ -431,8 +434,8 @@ canvas {
 #more {
   padding: 20px;
   text-align: center;
-  border-bottom: 3px solid $black;
-  border-top: 3px solid $black;
+  border-bottom: calc($line / 1.5) solid $black;
+  border-top: calc($line / 1.5) solid $black;
   margin-top: -1.5px;
   font-size: 1.5em;
 }
@@ -441,7 +444,7 @@ canvas {
 #contact {
   padding-top: 1em;
   padding-bottom: 7em;
-  border-bottom: 3px solid $black;
+  border-bottom: $line solid $black;
 
   p {
     font-size: 1.7rem;
@@ -523,7 +526,7 @@ canvas {
   p {
     padding: 3rem;
     margin-bottom: 1em;
-    border: 3px solid $black;
+    border: calc($line / 2) solid $black;
     max-width: 60ch;
     min-width: 12ch;
     box-shadow: 8px 8px rgb(0, 0, 0);
@@ -540,8 +543,8 @@ canvas {
 
 /********** AWARDS **********/
 #awards {
-  border-top: 3px solid $black;
-  border-bottom: 3px solid $black;
+  border-top: $line solid $black;
+  border-bottom: $line solid $black;
   padding: 1em 0;
   background-color: $black;
   color: $white;
@@ -659,7 +662,7 @@ footer {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  border-top: 3px solid $black;
+  border-top: $line solid $black;
 
   #copyright {
     font-size: 1.7rem;
