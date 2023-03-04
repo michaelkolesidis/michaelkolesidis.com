@@ -29,11 +29,11 @@ export default function thisWebsite() {
     // Sentences
     const sentences = [
       `(Finally a colourless section!)`,
-      `This website was designed and developed by me from scratch, without the use of any front-end UI libraries or frameworks. The only library used is a graphics library named <a href="https://p5js.org" target="_blank">p5.js</a>, that helped me with the 3D rubber duck.`,
+      `It was designed and developed from scratch, without the use of any front-end UI libraries or frameworks. The only library used is a graphics library named <a href="https://p5js.org" target="_blank">p5.js</a>, that helped me with the 3D rubber duck.`,
 
-      `I was influenced by print publication design and by <a href="https://vimeo.com/694306367" target="_blank">90's MTV on-screen graphics.</a>`,
+      `My main influences were print publication design and by <a href="https://vimeo.com/694306367" target="_blank">90's MTV graphics.</a>`,
 
-      `I call this style <i>frivobrutalism</i>, placing emphasis on the blend of the frivolity of the deisgn/experience with the brutalist aesthetic.`,
+      `I call this style <i>frivobrutalism</i>, placing emphasis on the blend of the frivolity and playfulness of the deisgn/experience with the brutalist aesthetic.`,
 
       `The source code is released under the <a href="https://www.gnu.org/licenses/agpl-3.0.html" target="_blank" >GNU Affero General Public License v3.0</a>, so feel free to study it, use it, edit it and redistribute it, in accordance with the license's terms and conditions. You can find it on <a href="https://github.com/michaelkolesidis/michaelkolesidis.com" target="_blank">GitHub</a>. If your are planning to use it for your own web page, changing the name in the title would be a good start.`,
     ];
