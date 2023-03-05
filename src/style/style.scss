@@ -493,6 +493,8 @@ canvas {
   transform: rotate(10deg);
   transform-origin: top right;
   letter-spacing: 2px;
+  border: calc($line / 2) solid $black;
+  padding: 0.5em;
 
   span {
     display: inline-block;
@@ -1060,6 +1062,8 @@ $duration: 104s;
   #github,
   #linkedin,
   #stack-overflow {
+    border: 0;
+    padding: 0;
     transform: rotate(0);
     span {
       display: none;
