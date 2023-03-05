@@ -35,7 +35,7 @@ export default function thisWebsite() {
 
       `I call this style <i>frivobrutalism</i>, placing emphasis on the blend of the frivolity and playfulness of the deisgn/experience with the brutalist aesthetic.`,
 
-      `The source code is released under the <a href="https://www.gnu.org/licenses/agpl-3.0.html" target="_blank" >GNU Affero General Public License v3.0</a>, so feel free to study it, use it, edit it and redistribute it, in accordance with the license's terms and conditions. You can find it on <a href="https://github.com/michaelkolesidis/michaelkolesidis.com" target="_blank">GitHub</a>. If your are planning to use it for your own web page, changing the name in the title would be a good start.`,
+      `The source code is released under the <a href="https://www.gnu.org/licenses/agpl-3.0.html" target="_blank" >GNU Affero General Public License v3.0</a>, so feel free to study it, use it, edit it and redistribute it, in accordance with the license's terms and conditions. You can find it on <a href="https://github.com/michaelkolesidis/michaelkolesidis.com" target="_blank">GitHub</a>. If you're planning to use it for your own web page, changing the name in the title would be a good start.`,
     ];
 
     // Populate
