@@ -53,7 +53,6 @@ const duck = (sketch) => {
       sketch.rotateY(sketch.PI + sketch.radians(10));
       sketch.scale((sketch.windowWidth / 1000) * 4);
       sketch.translate(0, -150, -20);
-
     }
 
     sketch.texture(img);
