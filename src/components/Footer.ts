@@ -12,6 +12,13 @@ export default function footer() {
     copyright.innerHTML = `© 2023 Michael Kolesidis`;
     footer.appendChild(copyright);
 
+    if (window.innerWidth < 700) {
+      const desktopPrompt = document.createElement("p");
+      desktopPrompt.setAttribute("id", "desktop-prompt");
+      desktopPrompt.innerHTML = `If you liked my website, visit it from your desktop / laptop for the full experience!`;
+      footer.appendChild(desktopPrompt);
+    }
+
     const disclaimer = document.createElement("p");
     disclaimer.setAttribute("id", "disclaimer");
     disclaimer.innerHTML = `For a minimal and accessible for people with color blindness version of this website, please click <a href="minimal" target="_blank" >here</a>.`;
