@@ -716,23 +716,19 @@ footer {
     }
   }
 
-  #ducks {
+  #duck {
     margin-top: 3em;
-    margin-bottom: -2em;
+    margin-bottom: 1em;
     color: $white;
-    width: 400px;
+    width: 50px;
     display: flex;
     justify-content: center;
+    cursor: url("../assets/cursors/windows95-pointer.png"), auto;
+    transition: all 0.25s;
+  }
 
-    svg {
-      margin: 1.5em;
-      cursor: url("../assets/cursors/windows95-pointer.png"), auto;
-      transition: all 0.25s;
-    }
-
-    svg:hover {
-      transform: rotateZ(15deg);
-    }
+  #duck:hover {
+    transform: rotateZ(15deg);
   }
 }
 
