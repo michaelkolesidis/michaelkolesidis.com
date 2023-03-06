@@ -22,11 +22,11 @@ export default function about() {
 
     // Sentences
     const sentences = [
-      `<strong>The official [artist] bio ↴ ↴ ↴</strong>`,
+      `I am obsessed with visual details, interactivity, animations and 3D web development. Always passionate about crafting innovative, immersive experiences, helping brands share their stories and engage their audience.`,
 
-      `I am a multidisciplinary new media artist, with a background in creative development, performance art and computer science. I work at the intersection of performativity and digitality, attempting to blend art with technology with varying degrees of success. Nowadays, I explore graphics programming and a multitude of new media technologies to create web art, audiovisual art and physical installations. I have presented my work in Greece and the UK.`,
+      `As a multidisciplinary new media artist, I work at the intersection of performativity and digitality, attempting to blend art with technology with varying degrees of success.`,
 
-      `<strong>More ↴ ↴ ↴</strong>`,
+      `Nowadays, I explore graphics programming and a multitude of new media technologies to create web art, audiovisual art and physical installations.`,
 
       `I have lived, studied and worked in Greece, Spain (Barcelona) and the UK (Brighton).`,
 
