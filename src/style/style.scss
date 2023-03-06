@@ -450,6 +450,8 @@ canvas {
 
 #show-more {
   @extend #more;
+  font-weight: 600;
+  letter-spacing: 0.05em;
   color: $white;
   background-color: $black;
   border: 0;
@@ -1065,6 +1067,7 @@ $duration: 104s;
 
   #more {
     font-size: 1em;
+    border-bottom: $line solid $black;
   }
 
   /********** MOBILE: Contact **********/
@@ -1131,6 +1134,7 @@ $duration: 104s;
       font-size: 1.1em;
       width: 25ch;
       box-shadow: none;
+      border: $line solid $black;
     }
 
     p:hover {
