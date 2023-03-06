@@ -28,7 +28,6 @@ export default function thisWebsite() {
 
     // Sentences
     const sentences = [
-      `(Finally a colourless section!)`,
       `It was designed and developed from scratch, without the use of any front-end UI libraries or frameworks. The only library used is a graphics library named <a href="https://p5js.org" target="_blank">p5.js</a>, that helped me with the 3D rubber duck.`,
 
       `My main influences were print publication design and by <a href="https://vimeo.com/694306367" target="_blank">90's MTV graphics.</a>`,

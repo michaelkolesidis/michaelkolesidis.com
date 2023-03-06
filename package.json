@@ -7,7 +7,7 @@
   "email": "michael.kolesidis@gmail.com",
   "license": "AGPL-3.0-or-later",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --host",
     "build": "tsc && vite build",
     "preview": "vite preview"
   },

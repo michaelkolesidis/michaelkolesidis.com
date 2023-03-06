@@ -36,7 +36,7 @@ export default function awards() {
     const awardList = [
       {
         plaque: `!✦`,
-        title: `DESIGN AWARD - Honorable One Page Website`,
+        title: `DESIGN AWARD`,
         link: `../../assets/design-award.png`,
         awarder: `One Page Love`,
         awarderLink: `https://onepagelove.com/michael-kolesidis`,

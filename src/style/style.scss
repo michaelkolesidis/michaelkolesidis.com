@@ -331,7 +331,8 @@ canvas {
 /********** SECTION TITLES **********/
 .wavy {
   font-size: 72px;
-  margin: 1em 0 1em 1em;
+  margin: 0em 0 1em 1em;
+  padding-top: 1em;
   max-width: -moz-fit-content;
   max-width: fit-content;
   font-weight: 600;
@@ -540,7 +541,7 @@ canvas {
 /********** ABOUT **********/
 #about {
   @extend #contact;
-  margin: 0 4.5rem;
+  padding: 0 4.5rem 4.5rem 4.5rem;
   border: 0;
 
   .wavy {
@@ -651,8 +652,14 @@ canvas {
 /********** THIS WEBSITE **********/
 #this-website {
   @extend #about;
-  margin-bottom: 0.3em;
+  padding-top: 5.5em;
   padding-bottom: 7em;
+  background-size: auto auto;
+
+  .wavy {
+    padding: 0 0.2em;
+    margin-left: -0.2em;
+  }
 
   p {
     cursor: url("../assets/cursors/windows95-cursor.png"), auto;
@@ -995,6 +1002,10 @@ $duration: 104s;
     display: none;
   }
 
+  #scroll-prompt {
+    display: none;
+  }
+
   /********** MOBILE: Sections **********/
   .wavy {
     font-size: 9vw;
@@ -1019,8 +1030,19 @@ $duration: 104s;
     white-space: unset;
   }
 
+  .project-title:hover {
+    letter-spacing: normal;
+    text-shadow: none;
+  }
+
   .project-image {
     height: 11rem;
+    box-shadow: none;
+  }
+
+  .project-image:hover {
+    transform: none;
+    box-shadow: none;
   }
 
   #more {
@@ -1080,9 +1102,15 @@ $duration: 104s;
 
     p {
       margin-bottom: 3rem;
-      padding: 10px;
+      padding: 30px;
       font-size: 1.4em;
       width: 20ch;
+      box-shadow: none;
+    }
+
+    p:hover {
+      transform: none;
+      box-shadow: none;
     }
   }
 
