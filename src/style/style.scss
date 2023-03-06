@@ -1022,6 +1022,12 @@ $duration: 104s;
     display: none;
   }
 
+  #new {
+    img {
+      animation: none;
+    }
+  }
+
   /********** MOBILE: Sections **********/
   .wavy {
     font-size: 9vw;
@@ -1037,6 +1043,7 @@ $duration: 104s;
   #projects-container {
     display: flex;
     flex-direction: column;
+    background: none;
   }
 
   .project-card {
@@ -1190,6 +1197,10 @@ $duration: 104s;
     height: 60px;
     width: 60px;
     font-size: 20px;
+  }
+
+  #top-button:hover {
+    transform: none;
   }
 }
 
