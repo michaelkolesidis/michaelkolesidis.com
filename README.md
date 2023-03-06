@@ -99,6 +99,10 @@ rgb(62, 207, 193)
 #90a8ed -
 rgb(144, 168, 237)
 
+## Acknowledgements
+
+A huge thanks to everyone (from friends and colleagues to the anonymous people of the internet) who provided my with valuable feedback throught the development process.
+
 ## License
 
 <a href="https://www.gnu.org/licenses/agpl-3.0.html"><img src="https://upload.wikimedia.org/wikipedia/commons/0/06/AGPLv3_Logo.svg" height="100px" /></a>
