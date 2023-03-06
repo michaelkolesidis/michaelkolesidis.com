@@ -27,7 +27,7 @@ if (window.innerWidth > 700) {
 
       sketch.colorize(); // random color
       // duckColor = sketch.color(255, 201, 0); // yellow color
-      // backgroundColor = sketch.color(255, 201, 0);
+      // backgroundColor = sketch.color(255, 201, 0); // yellow color
     };
 
     sketch.draw = () => {
@@ -37,7 +37,6 @@ if (window.innerWidth > 700) {
       sketch.directionalLight(255, 255, 255, 0, 0, -1);
       sketch.ambientMaterial(duckColor);
 
-      // Desktop
       sketch.camera(
         0.1 * (sketch.mouseX - sketch.windowWidth / 2),
         0.2 * (sketch.mouseY - sketch.windowHeight / 2),

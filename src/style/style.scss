@@ -237,7 +237,6 @@ a {
     max-width: 16ch;
     min-width: 12ch;
     margin-right: 2rem;
-    // font-size: 1.7rem; // old value
     font-size: clamp(0.8rem, 2.5vh, 2rem);
     text-align: start;
     line-height: 1.1;
@@ -253,12 +252,10 @@ a {
   #handwriting {
     position: relative;
     top: -38.1vh;
-    // right: -40vh;
     right: clamp(-100em, max(-42vh, -41vw), 12em);
 
     p {
       font-family: "Caveat", sans-serif;
-      // font-size: 2.5em; // olde value
       font-size: clamp(1em, 4vh, 2.5em);
       text-align: center;
       white-space: nowrap;
@@ -984,14 +981,12 @@ $duration: 104s;
 
   /********** MOBILE: Intro **********/
   #intro {
-    // display: none;
     background-color: #f7d106;
     background-image: url("../assets/duck.gif");
     background-position: center center;
     background-repeat: no-repeat;
     position: static;
     top: 65px;
-    width: 100%;
     height: 95vh;
     border-bottom: $line solid $black;
     background-size: 100%;
@@ -1028,10 +1023,12 @@ $duration: 104s;
   /********** MOBILE: Sections **********/
   .wavy {
     font-size: 9vw;
+    margin-top: 0;
+    padding: 0;
   }
 
   section {
-    margin: 4rem 0.1rem 0 0.1rem;
+    margin: 2rem 0.1rem 0 0.1rem;
   }
 
   /********** MOBILE: Projects **********/
@@ -1074,15 +1071,19 @@ $duration: 104s;
   #contact {
     display: flex;
     flex-direction: column;
-    align-items: baseline;
+    align-items: flex-start;
+    justify-content: left;
 
     p {
       font-size: 1rem;
-      // margin: 0rem;
+      margin: 0;
+      margin-left: 5vw;
     }
 
     a {
       margin: 0rem;
+      margin-left: 5vw;
+      font-size: 1.5em;
     }
   }
 
@@ -1116,16 +1117,19 @@ $duration: 104s;
   #about {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    margin-left: 0;
+    padding: 0;
+    margin-left: 5vw;
+
     .wavy {
-      align-self: baseline !important;
+      margin-left: 5vw;
     }
 
     p {
       margin-bottom: 3rem;
       padding: 30px;
-      font-size: 1.4em;
-      width: 20ch;
+      font-size: 1.1em;
+      width: 25ch;
       box-shadow: none;
     }
 
