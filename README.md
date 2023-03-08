@@ -60,20 +60,37 @@ Awarded by CSS Winner, a unique global platform awarding and showcasing the best
 
 ### Desktop
 
+The Portfolio section
 <img src="./screenshots/desktop_2.png" width="700px">
+
+THe end of the Portfolio section
 <img src="./screenshots/desktop_3.png" width="700px">
+
+The Contact section
 <img src="./screenshots/desktop_4.png" width="700px">
+
 <img src="./screenshots/desktop_5.png" width="700px">
+
 <img src="./screenshots/desktop_6.png" width="700px">
+
 <img src="./screenshots/desktop_7.png" width="700px">
+
 <img src="./screenshots/desktop_8.png" width="700px">
+
 <img src="./screenshots/desktop_9.png" width="700px">
+
 <img src="./screenshots/desktop_10.png" width="700px">
+
 <img src="./screenshots/desktop_11.png" width="700px">
+
 <img src="./screenshots/desktop_12.png" width="700px">
+
 <img src="./screenshots/desktop_13.png" width="700px">
+
 <img src="./screenshots/desktop_14.png" width="700px">
+
 <img src="./screenshots/desktop_15.png" width="700px">
+
 <img src="./screenshots/desktop_16.png" width="700px">
 
 ### Mobile
