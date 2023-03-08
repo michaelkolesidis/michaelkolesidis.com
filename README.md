@@ -63,43 +63,65 @@ Awarded by CSS Winner, a unique global platform awarding and showcasing the best
 The Portfolio section
 <img src="./screenshots/desktop_2.png" width="700px">
 
-THe end of the Portfolio section
+The end of the Portfolio section
 <img src="./screenshots/desktop_3.png" width="700px">
 
 The Contact section
 <img src="./screenshots/desktop_4.png" width="700px">
 
+The About section
 <img src="./screenshots/desktop_5.png" width="700px">
+
 
 <img src="./screenshots/desktop_6.png" width="700px">
 
+
 <img src="./screenshots/desktop_7.png" width="700px">
+
 
 <img src="./screenshots/desktop_8.png" width="700px">
 
+
 <img src="./screenshots/desktop_9.png" width="700px">
+
 
 <img src="./screenshots/desktop_10.png" width="700px">
 
+
 <img src="./screenshots/desktop_11.png" width="700px">
+
 
 <img src="./screenshots/desktop_12.png" width="700px">
 
+
 <img src="./screenshots/desktop_13.png" width="700px">
+
 
 <img src="./screenshots/desktop_14.png" width="700px">
 
+
 <img src="./screenshots/desktop_15.png" width="700px">
+
 
 <img src="./screenshots/desktop_16.png" width="700px">
 
 ### Mobile
 
 <img src="./screenshots/mobile_1.png" width="400px">
+
+
 <img src="./screenshots/mobile_2.png" width="400px">
+
+
 <img src="./screenshots/mobile_3.png" width="400px">
+
+
 <img src="./screenshots/mobile_4.png" width="400px">
+
+
 <img src="./screenshots/mobile_5.png" width="400px">
+
+
 <img src="./screenshots/mobile_6.png" width="400px">
 
 ### Minimal Version
@@ -115,7 +137,7 @@ The Contact section
 
 ### Color Palette
 
-<img src="./other/color_palette.png">
+<img src="./other/color_palette.png" width="700px">
 
 | HEX     |      RGB      |
 | ------- | :-----------: |
