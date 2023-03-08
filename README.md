@@ -101,119 +101,53 @@ This library is imported using CDN:
 
 ### Desktop
 
-<figure>
 <img src="./screenshots/desktop_2.png" width="700px">
-<figcaption align="center"><b>Portfolio section</b></figcaption>
-</figure>
 
-<figure>
 <img src="./screenshots/desktop_3.png" width="700px">
-<figcaption align="center"><b>The end of the Portfolio section</b></figcaption>
-</figure>
 
-<figure>
 <img src="./screenshots/desktop_4.png" width="700px">
-<figcaption align="center"><b>The Contact section</b></figcaption>
-</figure>
 
-<figure>
-<img src="/screenshots/desktop_5.png" width="700px">
-<figcaption align="center"><b>About section</b></figcaption>
-</figure>
+<img src="./screenshots/desktop_5.png" width="700px">
 
-<figure>
 <img src="./screenshots/desktop_6.png" width="700px">
-<figcaption align="center"><b></b></figcaption>
-</figure>
 
-<figure>
 <img src="./screenshots/desktop_7.png" width="700px">
-<figcaption align ="center"><b></b></figcaption>
-</figure>
 
-<figure>
 <img src="./screenshots/desktop_8.png" width="700px">
-<figcaption align ="center"><b></b></figcaption>
-</figure>
 
-<figure>
 <img src="./screenshots/desktop_9.png" width="700px">
-<figcaption align ="center"><b></b></figcaption>
-</figure>
 
-<figure>
 <img src="./screenshots/desktop_10.png" width="700px">
-<figcaption align ="center"><b></b></figcaption>
-</figure>
 
-<figure>
 <img src="./screenshots/desktop_11.png" width="700px">
-<figcaption align ="center"><b></b></figcaption>
-</figure>
 
-<figure>
 <img src="./screenshots/desktop_12.png" width="700px">
-<figcaption align ="center"><b></b></figcaption>
-</figure>
 
-<figure>
 <img src="./screenshots/desktop_13.png" width="700px">
-<figcaption align ="center"><b></b></figcaption>
-</figure>
 
-<figure>
 <img src="./screenshots/desktop_14.png" width="700px">
-<figcaption align ="center"><b></b></figcaption>
-</figure>
 
-<figure>
 <img src="./screenshots/desktop_15.png" width="700px">
-<figcaption align ="center"><b></b></figcaption>
-</figure>
 
-<figure>
 <img src="./screenshots/desktop_16.png" width="700px">
-<figcaption align ="center"><b></b></figcaption>
-</figure>
 
 ### Mobile
 
-<figure>
-<img src="./screenshots/mobile_1.png" width="700px">
-<figcaption align = "center"><b></b></figcaption>
-</figure>
+<img src="./screenshots/mobile_1.png" width="400px">
 
-<figure>
-<img src="./screenshots/mobile_2.png" width="700px">
-<figcaption align = "center"><b></b></figcaption>
-</figure>
+<img src="./screenshots/mobile_2.png" width="400px">
 
-<figure>
-<img src="./screenshots/mobile_3.png" width="700px">
-<figcaption align = "center"><b></b></figcaption>
-</figure>
+<img src="./screenshots/mobile_3.png" width="400px">
 
-<figure>
-<img src="./screenshots/mobile_4.png" width="700px">
-<figcaption align = "center"><b></b></figcaption>
-</figure>
+<img src="./screenshots/mobile_4.png" width="400px">
 
-<figure>
-<img src="./screenshots/mobile_5.png" width="700px">
-<figcaption align = "center"><b></b></figcaption>
-</figure>
+<img src="./screenshots/mobile_5.png" width="400px">
 
-<figure>
-<img src="./screenshots/mobile_6.png" width="700px">
-<figcaption align = "center"><b></b></figcaption>
-</figure>
+<img src="./screenshots/mobile_6.png" width="400px">
 
 ### Minimal Version
 
-<figure>
 <img src="./screenshots/minimal.png" width="700px">
-<figcaption align = "center"><b>The whole minimal version</b></figcaption>
-</figure>
 
 ### Full Page
 
@@ -222,7 +156,7 @@ This library is imported using CDN:
 
 ## Acknowledgements
 
-A huge thanks to everyone (from friends and colleagues to the anonymous people of the internet) who provided my with valuable feedback throught the development process.
+A huge thanks to everyone (from friends and colleagues to the anonymous people of the internet) who supported me and provided me with valuable feedback throught the development process.
 
 ## License
 
