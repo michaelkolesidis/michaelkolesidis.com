@@ -56,99 +56,6 @@ _February 2023_
 
 Awarded by CSS Winner, a unique global platform awarding and showcasing the best websites and promoting innovative web designers, developers and agencies.
 
-## Screenshots
-
-### Desktop
-
-The Portfolio section
-<img src="./screenshots/desktop_2.png" width="700px">
-
-The end of the Portfolio section
-<img src="./screenshots/desktop_3.png" width="700px">
-
-The Contact section
-<img src="./screenshots/desktop_4.png" width="700px">
-
-The About section
-<img src="./screenshots/desktop_5.png" width="700px">
-
-
-<img src="./screenshots/desktop_6.png" width="700px">
-
-
-<img src="./screenshots/desktop_7.png" width="700px">
-
-
-<img src="./screenshots/desktop_8.png" width="700px">
-
-
-<img src="./screenshots/desktop_9.png" width="700px">
-
-
-<img src="./screenshots/desktop_10.png" width="700px">
-
-
-<img src="./screenshots/desktop_11.png" width="700px">
-
-
-<img src="./screenshots/desktop_12.png" width="700px">
-
-
-<img src="./screenshots/desktop_13.png" width="700px">
-
-
-<img src="./screenshots/desktop_14.png" width="700px">
-
-
-<img src="./screenshots/desktop_15.png" width="700px">
-
-
-<img src="./screenshots/desktop_16.png" width="700px">
-
-### Mobile
-
-<img src="./screenshots/mobile_1.png" width="400px">
-
-
-<img src="./screenshots/mobile_2.png" width="400px">
-
-
-<img src="./screenshots/mobile_3.png" width="400px">
-
-
-<img src="./screenshots/mobile_4.png" width="400px">
-
-
-<img src="./screenshots/mobile_5.png" width="400px">
-
-
-<img src="./screenshots/mobile_6.png" width="400px">
-
-### Minimal Version
-
-<img src="./screenshots/minimal.png" width="700px">
-
-### Full Page
-
-- [Desktop](./screenshots/desktop_fullpage.png)
-- [Mobile](./screenshots/mobile_fullpage.png)
-
-## Design
-
-### Color Palette
-
-<img src="./other/color_palette.png" width="700px">
-
-| HEX     |      RGB      |
-| ------- | :-----------: |
-| #ff90e8 | 255, 144, 232 |
-| #ffc900 |  255, 201, 0  |
-| #ff7051 | 255, 112, 81  |
-| #3ecfc1 | 62, 207, 193  |
-| #90a8ed | 144, 168, 237 |
-| #ffffff | 255, 255, 255 |
-| #0a0a0a |  10, 10, 10   |
-
 ## Dependencies
 
 The project uses the following npm packages:
@@ -177,6 +84,83 @@ This library is imported using CDN:
 - GNOME Screenshot
 - KDE Spectacle
 - GNOME Terminal
+
+## Design
+
+### Color Palette
+
+<img src="./other/color_palette.png" width="700px">
+
+| HEX     |      RGB      |
+| ------- | :-----------: |
+| #ff90e8 | 255, 144, 232 |
+| #ffc900 |  255, 201, 0  |
+| #ff7051 | 255, 112, 81  |
+| #3ecfc1 | 62, 207, 193  |
+| #90a8ed | 144, 168, 237 |
+| #ffffff | 255, 255, 255 |
+| #0a0a0a |  10, 10, 10   |
+
+## Screenshots
+
+### Desktop
+
+The Portfolio section
+<img src="./screenshots/desktop_2.png" width="700px">
+
+The end of the Portfolio section
+<img src="./screenshots/desktop_3.png" width="700px">
+
+The Contact section
+<img src="./screenshots/desktop_4.png" width="700px">
+
+The About section
+<img src="./screenshots/desktop_5.png" width="700px">
+
+<img src="./screenshots/desktop_6.png" width="700px">
+
+<img src="./screenshots/desktop_7.png" width="700px">
+
+<img src="./screenshots/desktop_8.png" width="700px">
+
+<img src="./screenshots/desktop_9.png" width="700px">
+
+<img src="./screenshots/desktop_10.png" width="700px">
+
+<img src="./screenshots/desktop_11.png" width="700px">
+
+<img src="./screenshots/desktop_12.png" width="700px">
+
+<img src="./screenshots/desktop_13.png" width="700px">
+
+<img src="./screenshots/desktop_14.png" width="700px">
+
+<img src="./screenshots/desktop_15.png" width="700px">
+
+<img src="./screenshots/desktop_16.png" width="700px">
+
+### Mobile
+
+<img src="./screenshots/mobile_1.png" width="400px">
+
+<img src="./screenshots/mobile_2.png" width="400px">
+
+<img src="./screenshots/mobile_3.png" width="400px">
+
+<img src="./screenshots/mobile_4.png" width="400px">
+
+<img src="./screenshots/mobile_5.png" width="400px">
+
+<img src="./screenshots/mobile_6.png" width="400px">
+
+### Minimal Version
+
+<img src="./screenshots/minimal.png" width="700px">
+
+### Full Page
+
+- [Desktop](./screenshots/desktop_fullpage.png)
+- [Mobile](./screenshots/mobile_fullpage.png)
 
 ## Acknowledgements
 
