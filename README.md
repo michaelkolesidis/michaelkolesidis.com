@@ -20,11 +20,9 @@
 
 This is my personal portfolio website / personal playground.
 
-It is a love letter to the internet of the old, the era of the naïve (web) art, the era of the romantic amateur, the era of Geocities. I first experienced the magical world of the world wide web in the 90s and I hope I managed to capture a glimpse of that time.
+It is a love letter to the internet of the old, the era of the naïve (web) art, the era of the romantic amateur, the era of Geocities. I first experienced the magical world of the world wide web in the 90s and I hope I managed to capture a glimpse of that time. I was also influenced by print publication design and by 90's MTV on-screen graphics.
 
-I was also influenced by print publication design and by 90's MTV on-screen graphics.
-
-I call this style **frivobrutalism**, placing emphasis on the blend of the frivolity of the deisgn/experience with the brutalist aesthetic.
+I call this style **frivobrutalism**, placing emphasis on the blend of the playfulness frivolity of the deisgn/experience with the brutalist aesthetic.
 
 Visitors can move thins around and customize the colors of all colorful elements: clicking on an element generates a new color, from the predefined color palette. The rubber duck responds to mouse move.
 
@@ -38,7 +36,7 @@ Since the website is quite colorful and full of animations, it might be difficul
 
 ## Awards
 
-### ★ DESIGN AWARD - Honorable One Page Website
+### ★ DESIGN AWARD
 
 **[One Page Love](https://onepagelove.com/michael-kolesidis)**
 
@@ -103,57 +101,121 @@ This library is imported using CDN:
 
 ### Desktop
 
-The Portfolio section
+<figure>
 <img src="./screenshots/desktop_2.png" width="700px">
+<figcaption align = "center"><b>Portfolio section</b></figcaption>
+</figure>
 
-The end of the Portfolio section
+<figure>
 <img src="./screenshots/desktop_3.png" width="700px">
+The end of the Portfolio section
+<figcaption align = "center"><b></b></figcaption>
+</figure>
 
-The Contact section
+<figure>
 <img src="./screenshots/desktop_4.png" width="700px">
+The Contact section
+<figcaption align = "center"><b></b></figcaption>
+</figure>
 
-The About section
-<img src="./screenshots/desktop_5.png" width="700px">
+<figure>
+<img src="/screenshots/desktop_5.png" width="700px">
+<figcaption align = "center"><b>About section</b></figcaption>
+</figure>
 
+<figure>
 <img src="./screenshots/desktop_6.png" width="700px">
+<figcaption align = "center"><b></b></figcaption>
+</figure>
 
+<figure>
 <img src="./screenshots/desktop_7.png" width="700px">
+<figcaption align = "center"><b></b></figcaption>
+</figure>
 
+<figure>
 <img src="./screenshots/desktop_8.png" width="700px">
+<figcaption align = "center"><b></b></figcaption>
+</figure>
 
+<figure>
 <img src="./screenshots/desktop_9.png" width="700px">
+<figcaption align = "center"><b></b></figcaption>
+</figure>
 
+<figure>
 <img src="./screenshots/desktop_10.png" width="700px">
+<figcaption align = "center"><b></b></figcaption>
+</figure>
 
+<figure>
 <img src="./screenshots/desktop_11.png" width="700px">
+<figcaption align = "center"><b></b></figcaption>
+</figure>
 
+<figure>
 <img src="./screenshots/desktop_12.png" width="700px">
+<figcaption align = "center"><b></b></figcaption>
+</figure>
 
+<figure>
 <img src="./screenshots/desktop_13.png" width="700px">
+<figcaption align = "center"><b></b></figcaption>
+</figure>
 
+<figure>
 <img src="./screenshots/desktop_14.png" width="700px">
+<figcaption align = "center"><b></b></figcaption>
+</figure>
 
+<figure>
 <img src="./screenshots/desktop_15.png" width="700px">
+<figcaption align = "center"><b></b></figcaption>
+</figure>
 
+<figure>
 <img src="./screenshots/desktop_16.png" width="700px">
+<figcaption align = "center"><b></b></figcaption>
+</figure>
 
 ### Mobile
 
-<img src="./screenshots/mobile_1.png" width="400px">
+<figure>
+<img src="./screenshots/mobile_1.png" width="700px">
+<figcaption align = "center"><b></b></figcaption>
+</figure>
 
-<img src="./screenshots/mobile_2.png" width="400px">
+<figure>
+<img src="./screenshots/mobile_2.png" width="700px">
+<figcaption align = "center"><b></b></figcaption>
+</figure>
 
-<img src="./screenshots/mobile_3.png" width="400px">
+<figure>
+<img src="./screenshots/mobile_3.png" width="700px">
+<figcaption align = "center"><b></b></figcaption>
+</figure>
 
-<img src="./screenshots/mobile_4.png" width="400px">
+<figure>
+<img src="./screenshots/mobile_4.png" width="700px">
+<figcaption align = "center"><b></b></figcaption>
+</figure>
 
-<img src="./screenshots/mobile_5.png" width="400px">
+<figure>
+<img src="./screenshots/mobile_5.png" width="700px">
+<figcaption align = "center"><b></b></figcaption>
+</figure>
 
-<img src="./screenshots/mobile_6.png" width="400px">
+<figure>
+<img src="./screenshots/mobile_6.png" width="700px">
+<figcaption align = "center"><b></b></figcaption>
+</figure>
 
 ### Minimal Version
 
+<figure>
 <img src="./screenshots/minimal.png" width="700px">
+<figcaption align = "center"><b>The whole minimal version</b></figcaption>
+</figure>
 
 ### Full Page
 
