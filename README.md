@@ -103,27 +103,27 @@ This library is imported using CDN:
 
 <figure>
 <img src="./screenshots/desktop_2.png" width="700px">
-<figcaption align ="center"><b>Portfolio section</b></figcaption>
+<figcaption align="center"><b>Portfolio section</b></figcaption>
 </figure>
 
 <figure>
 <img src="./screenshots/desktop_3.png" width="700px">
-<figcaption align ="center"><b>The end of the Portfolio section</b></figcaption>
+<figcaption align="center"><b>The end of the Portfolio section</b></figcaption>
 </figure>
 
 <figure>
 <img src="./screenshots/desktop_4.png" width="700px">
-<figcaption align ="center"><b>The Contact section</b></figcaption>
+<figcaption align="center"><b>The Contact section</b></figcaption>
 </figure>
 
 <figure>
 <img src="/screenshots/desktop_5.png" width="700px">
-<figcaption align ="center"><b>About section</b></figcaption>
+<figcaption align="center"><b>About section</b></figcaption>
 </figure>
 
 <figure>
 <img src="./screenshots/desktop_6.png" width="700px">
-<figcaption align ="center"><b></b></figcaption>
+<figcaption align="center"><b></b></figcaption>
 </figure>
 
 <figure>
