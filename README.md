@@ -103,79 +103,77 @@ This library is imported using CDN:
 
 <figure>
 <img src="./screenshots/desktop_2.png" width="700px">
-<figcaption align = "center"><b>Portfolio section</b></figcaption>
+<figcaption align ="center"><b>Portfolio section</b></figcaption>
 </figure>
 
 <figure>
 <img src="./screenshots/desktop_3.png" width="700px">
-The end of the Portfolio section
-<figcaption align = "center"><b></b></figcaption>
+<figcaption align ="center"><b>The end of the Portfolio section</b></figcaption>
 </figure>
 
 <figure>
 <img src="./screenshots/desktop_4.png" width="700px">
-The Contact section
-<figcaption align = "center"><b></b></figcaption>
+<figcaption align ="center"><b>The Contact section</b></figcaption>
 </figure>
 
 <figure>
 <img src="/screenshots/desktop_5.png" width="700px">
-<figcaption align = "center"><b>About section</b></figcaption>
+<figcaption align ="center"><b>About section</b></figcaption>
 </figure>
 
 <figure>
 <img src="./screenshots/desktop_6.png" width="700px">
-<figcaption align = "center"><b></b></figcaption>
+<figcaption align ="center"><b></b></figcaption>
 </figure>
 
 <figure>
 <img src="./screenshots/desktop_7.png" width="700px">
-<figcaption align = "center"><b></b></figcaption>
+<figcaption align ="center"><b></b></figcaption>
 </figure>
 
 <figure>
 <img src="./screenshots/desktop_8.png" width="700px">
-<figcaption align = "center"><b></b></figcaption>
+<figcaption align ="center"><b></b></figcaption>
 </figure>
 
 <figure>
 <img src="./screenshots/desktop_9.png" width="700px">
-<figcaption align = "center"><b></b></figcaption>
+<figcaption align ="center"><b></b></figcaption>
 </figure>
 
 <figure>
 <img src="./screenshots/desktop_10.png" width="700px">
-<figcaption align = "center"><b></b></figcaption>
+<figcaption align ="center"><b></b></figcaption>
 </figure>
 
 <figure>
 <img src="./screenshots/desktop_11.png" width="700px">
-<figcaption align = "center"><b></b></figcaption>
+<figcaption align ="center"><b></b></figcaption>
 </figure>
 
 <figure>
 <img src="./screenshots/desktop_12.png" width="700px">
-<figcaption align = "center"><b></b></figcaption>
+<figcaption align ="center"><b></b></figcaption>
 </figure>
 
 <figure>
 <img src="./screenshots/desktop_13.png" width="700px">
-<figcaption align = "center"><b></b></figcaption>
+<figcaption align ="center"><b></b></figcaption>
 </figure>
 
 <figure>
 <img src="./screenshots/desktop_14.png" width="700px">
-<figcaption align = "center"><b></b></figcaption>
+<figcaption align ="center"><b></b></figcaption>
 </figure>
 
 <figure>
 <img src="./screenshots/desktop_15.png" width="700px">
-<figcaption align = "center"><b></b></figcaption>
+<figcaption align ="center"><b></b></figcaption>
 </figure>
 
 <figure>
 <img src="./screenshots/desktop_16.png" width="700px">
-<figcaption align = "center"><b></b></figcaption>
+<figcaption align ="center"><b></b></figcaption>
 </figure>
 
 ### Mobile
