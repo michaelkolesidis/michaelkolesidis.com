@@ -16,7 +16,7 @@
     "vite": "^4.1.4"
   },
   "dependencies": {
-    "dom-window-manager": "^1.0.1",
+    "dom-window-manager": "^1.0.3",
     "sass": "^1.58.3"
   }
 }

@@ -1,3 +1,4 @@
+// https://michaelkolesidis.com
 // Copyright (c) 2023 Michael Kolesidis (michael.kolesidis@gmail.com)
 // Licensed under the GNU Affero General Public License v3.0.
 // https://www.gnu.org/licenses/gpl-3.0.html
@@ -24,11 +25,11 @@ export default function ticker() {
   message3.innerHTML = `CLICK ON ANYTHING COLORFUL FOR A NEW COLOR`;
   ticker.appendChild(message3);
 
-    // Message 4
-    const message4 = document.createElement("div");
-    message4.classList.add("ticker__item");
-    message4.innerHTML = `TRY MOVING THINGS AROUND`;
-    ticker.appendChild(message4);
+  // Message 4
+  const message4 = document.createElement("div");
+  message4.classList.add("ticker__item");
+  message4.innerHTML = `TRY MOVING THINGS AROUND`;
+  ticker.appendChild(message4);
 
   // Populate
   for (let i = 0; i < 10; i++) {
@@ -36,6 +37,5 @@ export default function ticker() {
     ticker.appendChild(message2.cloneNode(true));
     ticker.appendChild(message3.cloneNode(true));
     ticker.appendChild(message4.cloneNode(true));
-
   }
 }

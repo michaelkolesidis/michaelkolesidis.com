@@ -1,3 +1,4 @@
+// https://michaelkolesidis.com
 // Copyright (c) 2023 Michael Kolesidis (michael.kolesidis@gmail.com)
 // Licensed under the GNU Affero General Public License v3.0.
 // https://www.gnu.org/licenses/gpl-3.0.html
@@ -7,8 +8,7 @@ const projectList = [
     name: "JSS-01",
     image: "../../images/jss-01.png?v=2",
     technologies: "Tone.js, WEBMIDI.js, TypeScript, JavaScript, Sass",
-    summary:
-      "A powerful software synthesizer build with web technologies.",
+    summary: "A powerful software synthesizer build with web technologies.",
     description: `The JavaScript Software Synthesizer is a web application
                   enabling users to make and play music in the browser. It is
                   a software synthesizer utilizing the Web Audio API by
@@ -160,8 +160,7 @@ const projectList = [
     name: "Music Reviews",
     image: "../../images/music-reviews.png?v=2",
     technologies: "TypeScript, CSS",
-    summary:
-      "A basic music reviews web app prototype.",
+    summary: "A basic music reviews web app prototype.",
     description: "",
     repository: "https://github.com/michaelkolesidis/music-reviews",
     deployment: "https://music-reviews.netlify.app/",
@@ -234,8 +233,7 @@ const projectList = [
     name: "Random Triangles Cube",
     image: "../../images/random-triangles-cube.gif",
     technologies: "Three.js, JavaScript",
-    summary:
-      "Random triangles form a cube.",
+    summary: "Random triangles form a cube.",
     description: "",
     repository: "https://github.com/michaelkolesidis/random-triangles-cube",
     deployment: "https://random-triangles-cube.netlify.app/",
@@ -302,30 +300,6 @@ const projectList = [
     description: "",
     repository: "https://github.com/michaelkolesidis/project-olympics",
     deployment: "https://project-olympics.netlify.app/",
-    video: "",
-    visible: false,
-  },
-
-  {
-    name: "3D Cube",
-    image: "../../images/3d-cube.gif",
-    technologies: "p5.js, JavaScript",
-    summary: "A 3D cube rotating according to mouse movement.",
-    description: "",
-    repository: "https://github.com/michaelkolesidis/3d-cube",
-    deployment: "https://3d-cubejs.netlify.app/",
-    video: "",
-    visible: false,
-  },
-
-  {
-    name: "3D Teddy Bear",
-    image: "../../images/teddy.gif",
-    technologies: "p5.js, JavaScript",
-    summary: "A rotating 3D Teddy Bear animation",
-    description: "",
-    repository: "https://github.com/michaelkolesidis/3d-teddy-bear",
-    deployment: "https://3d-teddy-bear.netlify.app/",
     video: "",
     visible: false,
   },

@@ -147,10 +147,10 @@ braces@~3.0.2:
   optionalDependencies:
     fsevents "~2.3.2"
 
-dom-window-manager@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/dom-window-manager/-/dom-window-manager-1.0.1.tgz#3dde4dd0cfa0f15f39b3f5a3d8f726fc46bfd8d9"
-  integrity sha512-gbIr4XmW8+Kp9PO+cJ6lhUVaK0TFwdnxD5uMPgvfXLItaR4UG4hW957HkogAHWeMNSIYZeliH8OhlmOdoGKb7A==
+dom-window-manager@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/dom-window-manager/-/dom-window-manager-1.0.3.tgz#d0b46c89fbe1ce0570fb2467629b386e8c14c79e"
+  integrity sha512-g+ExX6ZFL4QA0xhTUlV8NzkHcj0H/yEwoLCUxIb4aFoyO3eKIq6yxMS5c+qpwHh+Q/MK8Kzh3KJdpTTlBOnLjQ==
 
 esbuild@^0.16.14:
   version "0.16.17"
