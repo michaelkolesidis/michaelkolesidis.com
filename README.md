@@ -26,9 +26,7 @@ I was also influenced by print publication design and by 90's MTV on-screen grap
 
 I call this style **frivobrutalism**, placing emphasis on the blend of the frivolity of the deisgn/experience with the brutalist aesthetic.
 
-Visitors can move thins around and customize the colors of all colorful elements: clicking on an element generates a new color, from the predefined color palette.
-
-The rubber duck responds to mouse move.
+Visitors can move thins around and customize the colors of all colorful elements: clicking on an element generates a new color, from the predefined color palette. The rubber duck responds to mouse move.
 
 Most of the elements are part of microinteractions and hovering over them or interacting with them in other ways triggers some animation (and in one case it also triggers sound).
 
