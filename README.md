@@ -101,35 +101,35 @@ This library is imported using CDN:
 
 ### Desktop
 
-<img src="./screenshots/desktop_2b.png" width="700px">
+<img src="./screenshots/desktop_2b.png" width="800px">
 
-<img src="./screenshots/desktop_3b.png" width="700px">
+<img src="./screenshots/desktop_3b.png" width="800px">
 
-<img src="./screenshots/desktop_4.png" width="700px">
+<img src="./screenshots/desktop_4.png" width="800px">
 
-<img src="./screenshots/desktop_5.png" width="700px">
+<img src="./screenshots/desktop_5.png" width="800px">
 
-<img src="./screenshots/desktop_6.png" width="700px">
+<img src="./screenshots/desktop_6.png" width="800px">
 
-<img src="./screenshots/desktop_7.png" width="700px">
+<img src="./screenshots/desktop_7.png" width="800px">
 
-<img src="./screenshots/desktop_8.png" width="700px">
+<img src="./screenshots/desktop_8.png" width="800px">
 
-<img src="./screenshots/desktop_9.png" width="700px">
+<img src="./screenshots/desktop_9.png" width="800px">
 
-<img src="./screenshots/desktop_10.png" width="700px">
+<img src="./screenshots/desktop_10.png" width="800px">
 
-<img src="./screenshots/desktop_11.png" width="700px">
+<img src="./screenshots/desktop_11.png" width="800px">
 
-<img src="./screenshots/desktop_12.png" width="700px">
+<img src="./screenshots/desktop_12.png" width="800px">
 
-<img src="./screenshots/desktop_13.png" width="700px">
+<img src="./screenshots/desktop_13.png" width="800px">
 
-<img src="./screenshots/desktop_14.png" width="700px">
+<img src="./screenshots/desktop_14.png" width="800px">
 
-<img src="./screenshots/desktop_15.png" width="700px">
+<img src="./screenshots/desktop_15.png" width="800px">
 
-<img src="./screenshots/desktop_16.png" width="700px">
+<img src="./screenshots/desktop_16.png" width="800px">
 
 ### Mobile
 
@@ -147,7 +147,7 @@ This library is imported using CDN:
 
 ### Minimal Version
 
-<img src="./screenshots/minimal.png" width="700px">
+<img src="./screenshots/minimal.png" width="800px">
 
 ### Full Page
 
