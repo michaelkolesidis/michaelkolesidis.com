@@ -34,7 +34,7 @@ export function populateProjects(
     if (window.innerWidth > 700) {
       const imageContainer = document.createElement("div");
       imageContainer.classList.add("project-image-container");
-  
+
       const image = document.createElement("img");
       image.loading = "lazy";
       image.setAttribute("src", project.image);
@@ -42,10 +42,6 @@ export function populateProjects(
       image.classList.add("project-image");
       imageContainer.appendChild(image);
       proj.appendChild(imageContainer);
-  
-      image.addEventListener("click", () => {
-        open(`${project.deployment}`);
-      });
     } else {
       const image = document.createElement("img");
       image.loading = "lazy";
@@ -53,12 +49,11 @@ export function populateProjects(
       image.setAttribute("alt", project.name);
       image.classList.add("project-image");
       proj.appendChild(image);
-  
+
       image.addEventListener("click", () => {
         open(`${project.deployment}`);
       });
     }
-
 
     // Title
     const title = document.createElement("a");
