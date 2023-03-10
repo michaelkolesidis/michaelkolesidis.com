@@ -31,7 +31,8 @@ export default function thisWebsite() {
     const sentences = [
       `It was designed and developed from scratch, without the use of any front-end UI libraries or frameworks. The only library used is a graphics library named <a href="https://p5js.org" target="_blank">p5.js</a>, that helped me with the 3D rubber duck.`,
 
-      `My main influences were print publication design and by <a href="https://vimeo.com/694306367" target="_blank">90's MTV graphics.</a>`,
+      `It is yet another <a href="https://www.cameronsworld.net/" target="_blank">love letter to the Internet of the old</a>, the era of naïve (web) art, the era of the romantic amateur, the era of Geocities. I first experienced the magical world of the world wide web in the 90's and I hope I have managed to capture a glimpse of that time. I was also influenced by print publication design and by 
+      <a href="https://vimeo.com/694306367" target="_blank">90's MTV graphics.</a>`,
 
       `I call this style <i>frivobrutalism</i>, placing emphasis on the blend of the frivolity and playfulness of the deisgn/experience with the brutalist aesthetic.`,
 

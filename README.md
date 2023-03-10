@@ -20,7 +20,7 @@
 
 This is my personal portfolio website / personal playground.
 
-It is a love letter to the internet of the old, the era of the naïve (web) art, the era of the romantic amateur, the era of Geocities. I first experienced the magical world of the world wide web in the 90s and I hope I managed to capture a glimpse of that time. I was also influenced by print publication design and by 90's MTV on-screen graphics.
+It is a love letter to the internet of the old, the era of the naïve (web) art, the era of the romantic amateur, the era of Geocities. I first experienced the magical world of the world wide web in the 90's and I hope I managed to capture a glimpse of that time. I was also influenced by print publication design and by 90's MTV on-screen graphics.
 
 I call this style **frivobrutalism**, placing emphasis on the blend of the playfulness frivolity of the deisgn/experience with the brutalist aesthetic.
 
