@@ -31,15 +31,34 @@ export function populateProjects(
     colorIndex += 1;
 
     // Project Image with Link
-    const image = document.createElement("img");
-    image.loading = "lazy";
-    image.setAttribute("src", project.image);
-    image.setAttribute("alt", project.name);
-    image.classList.add("project-image");
-    proj.appendChild(image);
-    image.addEventListener("click", () => {
-      open(`${project.deployment}`);
-    });
+    if (window.innerWidth > 700) {
+      const imageContainer = document.createElement("div");
+      imageContainer.classList.add("project-image-container");
+  
+      const image = document.createElement("img");
+      image.loading = "lazy";
+      image.setAttribute("src", project.image);
+      image.setAttribute("alt", project.name);
+      image.classList.add("project-image");
+      imageContainer.appendChild(image);
+      proj.appendChild(imageContainer);
+  
+      image.addEventListener("click", () => {
+        open(`${project.deployment}`);
+      });
+    } else {
+      const image = document.createElement("img");
+      image.loading = "lazy";
+      image.setAttribute("src", project.image);
+      image.setAttribute("alt", project.name);
+      image.classList.add("project-image");
+      proj.appendChild(image);
+  
+      image.addEventListener("click", () => {
+        open(`${project.deployment}`);
+      });
+    }
+
 
     // Title
     const title = document.createElement("a");
