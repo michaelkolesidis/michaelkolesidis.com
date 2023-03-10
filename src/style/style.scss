@@ -104,7 +104,7 @@ a {
 
 #top-gap {
   height: 140px;
-  border-bottom: $line solid black;
+  border-bottom: $line solid $black;
 }
 
 #box {
@@ -152,14 +152,14 @@ a {
   width: 150%;
   height: 150%;
   background: repeating-linear-gradient(
-    white 0%,
-    white 7.5px,
-    black 7.5px,
-    black 15px,
-    white 15px,
-    white 22.5px,
-    black 22.5px,
-    black 30px
+    $white 0%,
+    $white 7.5px,
+    $black 7.5px,
+    $black 15px,
+    $white 15px,
+    $white 22.5px,
+    $black 22.5px,
+    $black 30px
   );
   transform: translateX(-20%) translateY(-20%) rotate(-45deg);
   animation: animate 20s linear infinite;
@@ -167,7 +167,7 @@ a {
 
 #box .content {
   position: relative;
-  background-color: black;
+  background-color: $black;
   flex-direction: column;
   box-sizing: border-box;
   padding: 10px;
@@ -181,12 +181,12 @@ a {
 }
 
 #box {
-  box-shadow: 8px 8px black;
+  box-shadow: 8px 8px $black;
 }
 
 #box .content p {
   font-weight: 600;
-  color: white;
+  color: $white;
 }
 
 @keyframes animate {
@@ -322,7 +322,7 @@ a {
 }
 
 canvas {
-  border-bottom: $line solid black;
+  border-bottom: $line solid $black;
 }
 
 /********** SECTION TITLES **********/
@@ -372,7 +372,7 @@ canvas {
 
 .project-card {
   padding: 3rem;
-  border: $line solid black;
+  border: $line solid $black;
   margin: -3px;
   display: block;
   animation: fadeInFromNone 0.5s ease-out;
@@ -399,7 +399,7 @@ canvas {
   height: 20rem;
   margin-bottom: 1.31em;
   border: $line solid $black;
-  box-shadow: 8px 8px rgb(0, 0, 0);
+  box-shadow: 8px 8px $black;
   transition: transform 0.8s ease-in-out, filter 0.9s ease-in-out,
     opacity 0.9s ease-in-out, box-shadow 0.7s ease-in-out;
   opacity: 0.6;
@@ -412,7 +412,7 @@ canvas {
   -webkit-filter: grayscale(0%);
   filter: grayscale(0%);
   transform: perspective(600px) translateZ(200px) rotateX(20deg) rotateZ(5deg);
-  box-shadow: 0px 0px rgb(0, 0, 0);
+  box-shadow: 0px 0px $black;
   opacity: 0.8;
 }
 
@@ -421,12 +421,11 @@ canvas {
   font-weight: 600;
   white-space: nowrap;
   text-align: left;
-  transition: all 1s ease;
+  transition: all 0.25s ease-in-out;
 }
 
 .project-title:hover {
-  letter-spacing: 0.2rem;
-  text-shadow: 2px 0px black;
+  text-shadow: 1px 1px $black, 3px 3px $white, 4px 4px $black;
 }
 
 .project-summary,
@@ -558,7 +557,7 @@ canvas {
     border: calc($line / 2) solid $black;
     max-width: 60ch;
     min-width: 12ch;
-    box-shadow: 8px 8px rgb(0, 0, 0);
+    box-shadow: 8px 8px $black;
     text-justify: inter-cluster;
     transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
   }
@@ -566,7 +565,7 @@ canvas {
   p:hover {
     max-width: 60ch;
     transform: perspective(100px) translateZ(10px) !important;
-    box-shadow: 0px 0px rgb(0, 0, 0);
+    box-shadow: 0px 0px $black;
   }
 }
 
