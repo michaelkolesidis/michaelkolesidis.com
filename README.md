@@ -101,9 +101,9 @@ This library is imported using CDN:
 
 ### Desktop
 
-<img src="./screenshots/desktop_2.png" width="700px">
+<img src="./screenshots/desktop_2b.png" width="700px">
 
-<img src="./screenshots/desktop_3.png" width="700px">
+<img src="./screenshots/desktop_3b.png" width="700px">
 
 <img src="./screenshots/desktop_4.png" width="700px">
 
