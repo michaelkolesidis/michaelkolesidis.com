@@ -4,16 +4,16 @@
 // https://www.gnu.org/licenses/gpl-3.0.html
 
 import projectList from "../data/projects.js";
-import { colors } from "./colors.js";
+import { colors } from "../data/colors.js";
 import { generateNewColor } from "./functions.js";
 
 let colorIndex = 0;
 
-export function populateProjects(
+export const populateProjects = (
   start: number,
   end: number,
   parent: HTMLElement
-) {
+) => {
   // Ppopulate Projects
   for (let i = start; i < end; i++) {
     const project = projectList[i];
@@ -91,4 +91,4 @@ export function populateProjects(
       }
     });
   });
-}
+};

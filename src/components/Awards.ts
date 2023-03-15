@@ -4,7 +4,7 @@
 // https://www.gnu.org/licenses/gpl-3.0.html
 
 import { generateNewColor } from "../utils/functions.js";
-import { colors } from "../utils/colors.js";
+import { colors } from "../data/colors.js";
 
 export default function awards() {
   const awards = document.getElementById("awards");

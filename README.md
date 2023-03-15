@@ -18,7 +18,7 @@
 
 ## Concept
 
-This is my personal portfolio website / personal playground.
+This is my portfolio website / playground.
 
 It is a love letter to the internet of the old, the era of the naïve (web) art, the era of the romantic amateur, the era of Geocities. I first experienced the magical world of the world wide web in the 90's and I hope I managed to capture a glimpse of that time. I was also influenced by print publication design and by 90's MTV on-screen graphics.
 
@@ -156,7 +156,7 @@ This library is imported using CDN:
 
 ## Acknowledgements
 
-A huge thanks to everyone (from friends and colleagues to the anonymous people of the internet) who supported me and provided me with valuable feedback throught the development process.
+A huge thanks to everyone (from friends and colleagues to the anonymous people of the internet) who supported me and provided me with valuable feedback throughout the development process.
 
 ## License
 

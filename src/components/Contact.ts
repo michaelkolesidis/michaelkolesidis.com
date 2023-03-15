@@ -40,7 +40,6 @@ export default function contact() {
         <span>u</span>
         <span>b</span>
    `;
-    // github.title = "GitHub";
     github.href = "https://github.com/michaelkolesidis";
     github.target = "_blank";
     contact.appendChild(github);
@@ -60,7 +59,6 @@ export default function contact() {
         <span>I</span>
         <span>n</span>
   `;
-    // linkedin.title = "LinkedIn";
     linkedin.href = "https://www.linkedin.com/in/michaelkolesidis/";
     linkedin.target = "_blank";
     contact.appendChild(linkedin);
@@ -70,7 +68,8 @@ export default function contact() {
     // Stack Overflow
     const stackoverflow = document.createElement("a");
     stackoverflow.setAttribute("id", "stack-overflow");
-    stackoverflow.innerHTML = /* html */ `<span>S</span>
+    stackoverflow.innerHTML = /* html */ `
+        <span>S</span>
         <span>t</span>
         <span>a</span>
         <span>c</span>
@@ -83,9 +82,8 @@ export default function contact() {
         <span>f</span>
         <span>l</span>
         <span>o</span>
-    <span>w</span>
+        <span>w</span>
   `;
-    // stackoverflow.title = "Stack Overflow";
     stackoverflow.href =
       "https://stackoverflow.com/users/15253636/michael-kolesidis";
     stackoverflow.target = "_blank";

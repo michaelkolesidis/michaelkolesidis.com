@@ -209,7 +209,7 @@ const projectList = [
     name: "Scribble Text",
     image: "../../images/scribble-text.gif",
     technologies: "p5.js, JavaScript",
-    summary: "Text gradually appears whilte scribbling.",
+    summary: "Text gradually appears while scribbling.",
     description: "",
     repository: "https://github.com/michaelkolesidis/scribble-text",
     deployment: "https://scribble-text.netlify.app/",

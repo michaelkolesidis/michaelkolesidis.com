@@ -11,15 +11,15 @@ export default function body() {
       <main id="main">
           <div id="sketch-placeholder"></div>
           <div id="p5_loading" class="loadingclass">
-          <div><div>LOADING</div></div>
+            <div><div>LOADING</div></div>
           </div>
           <div id="intro"></div>
           <div id="main-content">
-          <section id="projects"></section>
-          <section id="contact"></section>
-          <section id="about"></section>
-          <section id="awards"></section>
-          <section id="this-website"></section>
+            <section id="projects"></section>
+            <section id="contact"></section>
+            <section id="about"></section>
+            <section id="awards"></section>
+            <section id="this-website"></section>
           </div>
       </main>
       <footer id="footer"></footer>

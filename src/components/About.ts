@@ -4,7 +4,8 @@
 // https://www.gnu.org/licenses/gpl-3.0.html
 
 import { generateNewColor } from "../utils/functions.js";
-import { colors } from "../utils/colors.js";
+import { colors } from "../data/colors.js";
+import { sentencesAbout as sentences } from "../data/sentences.js";
 
 export default function about() {
   const about = document.getElementById(`about`);
@@ -20,27 +21,6 @@ export default function about() {
       <span style="--i:2">U</span>
       <span style="--i:1">T</span>`;
     about.appendChild(aboutTitle);
-
-    // Sentences
-    const sentences = [
-      `I am obsessed with visual details, interactivity, animations and 3D web development. Always passionate about crafting innovative, immersive experiences, helping brands share their stories and engage their audience.`,
-
-      `As a multidisciplinary new media artist, I work at the intersection of performativity and digitality, attempting to blend art with technology with varying degrees of success.`,
-
-      `Nowadays, I explore graphics programming and a multitude of new media technologies to create web art, audiovisual art and physical installations.`,
-
-      `I have lived, studied and worked in Greece, Spain (Barcelona) and the UK (Brighton).`,
-
-      `I speak Greek, English, Spanish, and a bit of (actually hardly any nowadays) German.`,
-
-      "The first programming language I ever tampered with was Pascal, and the first I ever learnt was C.",
-
-      `Today, I mostly use three.js, OpenGL Shading Language, WebGL, JavaScript, React, TypeScript, and Blender.`,
-
-      `I always keep a rubber duck on my desk.`,
-
-      `I don't drink coffee or tea. (OK, I might drink tea a few times a year)`,
-    ];
 
     /* Styling */
     let leftMargin = 0;

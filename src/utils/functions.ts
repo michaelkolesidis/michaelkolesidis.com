@@ -3,27 +3,12 @@
 // Licensed under the GNU Affero General Public License v3.0.
 // https://www.gnu.org/licenses/gpl-3.0.html
 
-export function scrollFunction(target: HTMLElement, scrollDistance: number) {
-  // When the user scrolls down the given distance from the top of the document, show the HTML element
-  if (
-    document.body.scrollTop > scrollDistance ||
-    document.documentElement.scrollTop > scrollDistance
-  ) {
-    target.style.opacity = "1";
-    target.style.pointerEvents = "all";
-  } else {
-    target.style.opacity = "0";
-    target.style.pointerEvents = "none";
-  }
-}
-
-export function topFunction() {
-  // When the user clicks on the button, scroll to the top of the document
-  document.body.scrollTop = 0; // For Safari
-  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-}
-
-export function generateNewColor(colors: any, element: any, property: string) {
+// Generates a new color from a predefined palette (array) of colors
+export const generateNewColor = (
+  colors: any,
+  element: any,
+  property: string
+) => {
   const oldColor = element["style"][property];
 
   let num = 0;
@@ -39,4 +24,26 @@ export function generateNewColor(colors: any, element: any, property: string) {
   }
 
   return colors[num];
-}
+};
+
+// Get scroll distance as a CSS variable
+export const getScrollDistanceCss = () => {
+  window.addEventListener(
+    "scroll",
+    () => {
+      document.body.style.setProperty(
+        "--scroll",
+        (
+          window.pageYOffset /
+          (document.body.offsetHeight - window.innerHeight)
+        ).toString()
+      );
+    },
+    false
+  );
+};
+
+// Disable right click
+export const disableRightClick = () => {
+  document.addEventListener("contextmenu", (e) => e.preventDefault());
+};
