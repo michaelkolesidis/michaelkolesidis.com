@@ -3,6 +3,10 @@
 // Licensed under the GNU Affero General Public License v3.0.
 // https://www.gnu.org/licenses/gpl-3.0.html
 
+/*****************************************/
+/* The component is not currently in use */
+/*****************************************/
+
 export default function technologies() {
   const technologies = document.getElementById("contact");
   if (technologies != null) {
