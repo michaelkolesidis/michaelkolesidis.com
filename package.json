@@ -36,11 +36,11 @@
     "preview": "vite preview"
   },
   "devDependencies": {
-    "typescript": "^4.9.5",
-    "vite": "^4.1.4"
+    "typescript": "^5.0.2",
+    "vite": "^4.2.1"
   },
   "dependencies": {
     "dom-window-manager": "^1.0.3",
-    "sass": "^1.58.3"
+    "sass": "^1.59.3"
   }
 }
