@@ -633,6 +633,7 @@ canvas {
   background-image: $stripes;
   background-size: $stripes-size;
   transform: rotateZ(-10deg);
+  white-space: nowrap;
 }
 
 .award-details {

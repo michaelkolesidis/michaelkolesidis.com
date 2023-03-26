@@ -5,6 +5,7 @@
 
 import { generateNewColor } from "../utils/functions.js";
 import { colors } from "../data/colors.js";
+import { awardList } from "../data/awards.js";
 
 export default function awards() {
   const awards = document.getElementById("awards");
@@ -33,25 +34,6 @@ export default function awards() {
     awardsContainer.setAttribute("id", "awards-container");
 
     awards.appendChild(awardsContainer);
-
-    const awardList = [
-      {
-        plaque: `!✦`,
-        title: `DESIGN AWARD`,
-        link: `../../assets/design-award.png`,
-        awarder: `One Page Love`,
-        awarderLink: `https://onepagelove.com/michael-kolesidis`,
-        description: `An award for my portofolio website (the site you are currently at) awarded by One Page Love, a One Page website design gallery showcasing the best Single Page websites, templates and resources.`,
-      },
-      {
-        plaque: `!★`,
-        title: `STAR AWARD`,
-        link: `https://www.csswinner.com/details/michael-kolesidis/16936`,
-        awarder: `CSS Winner`,
-        awarderLink: `https://www.csswinner.com/details/michael-kolesidis/16936`,
-        description: `Another award for my portofolio website, awarded by CSS Winner, a unique global platform awarding and showcasing the best websites and promoting innovative web designers, developers and agencies.`,
-      },
-    ];
 
     // Ppopulate
     for (const awa of awardList) {
