@@ -52,6 +52,14 @@ _February 2023_
 
 Awarded by CSS Winner, a unique global platform awarding and showcasing the best websites and promoting innovative web designers, developers and agencies.
 
+### ★ SITE OF THE DAY
+
+**[Best CSS](https://www.bestcss.in/user/detail/michaelkolesidiscom-34682)**
+
+_March 2023_
+
+Awarded by Best CSS, a web platform that discovers, recognizes and promotes the talent and effort of web designers, developers and agencies who create unique digital experiences that are useful, innovative, intuitive and beautiful.
+
 ## Dependencies
 
 The project uses the following npm packages:
@@ -96,6 +104,12 @@ This library is imported using CDN:
 | #90a8ed | 144, 168, 237 |
 | #ffffff | 255, 255, 255 |
 | #0a0a0a |  10, 10, 10   |
+
+## Videos
+
+- [Desktop](https://www.youtube.com/watch?v=wfPkxVaBJ-o)
+
+- [Mobile](https://www.youtube.com/watch?v=dSMdDVQPQdw)
 
 ## Screenshots
 
