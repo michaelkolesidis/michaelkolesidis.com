@@ -8,6 +8,8 @@ if (window.innerWidth > 700) {
     let duck;
     let duckColor;
     let backgroundColor;
+    let autorotate = false;
+    let shake = false;
 
     sketch.preload = () => {
       // Load model with normalise parameter set to true will affect translate
@@ -47,10 +49,14 @@ if (window.innerWidth > 700) {
       sketch.rotateX(sketch.PI - sketch.radians(30));
       sketch.rotateY(sketch.PI + sketch.radians(10));
       sketch.translate(0, -100, -20);
-
+      if (autorotate) {
+        sketch.rotateY(sketch.frameCount * 0.01); // auto rotate model
+      }
+      if (shake) {
+        sketch.rotateY(sketch.noise(sketch.frameCount) * 0.1); //shake model
+      }
       sketch.texture(img);
       sketch.scale(210);
-      // sketch.rotateY(sketch.frameCount * 0.01); // auto rotate model
       sketch.rotateY(0.1);
       sketch.model(duck);
     };
@@ -113,18 +119,33 @@ if (window.innerWidth > 700) {
           hex: `#90a8ed`,
           rgb: `144, 168, 237`,
         },
+        {
+          name: `yellow`,
+          hex: `#ffc900`,
+          rgb: `255, 201, 0`,
+        },
       ];
 
       const colorsP5 = [
-        sketch.color(255, 144, 232),
-        sketch.color(255, 201, 0),
-        sketch.color(255, 112, 81),
-        sketch.color(62, 207, 193),
-        sketch.color(144, 168, 237),
+        sketch.color(255, 144, 232), // pink
+        sketch.color(255, 201, 0), // yellow
+        sketch.color(255, 112, 81), // orange
+        sketch.color(62, 207, 193), // green
+        sketch.color(144, 168, 237), // purple
+        sketch.color(255, 201, 0), // yellow (2)
       ];
 
       const num = Math.floor(Math.random() * colors.length);
       return colorsP5[num];
+    };
+
+    sketch.keyPressed = () => {
+      if (sketch.keyCode === 82) {
+        autorotate = !autorotate;
+      }
+      if (sketch.keyCode === 83) {
+        shake = !shake;
+      }
     };
   };
 
