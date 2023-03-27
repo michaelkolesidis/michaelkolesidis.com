@@ -145,7 +145,7 @@ const projectList = [
   },
 
   {
-    name: "interwoven oversemantization",
+    name: "Interwoven Over.",
     image: "../../images/circle-random-lines.gif",
     technologies: "p5.js, JavaScript",
     summary: "A circle created dynamically by random lines",
