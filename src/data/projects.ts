@@ -145,13 +145,13 @@ const projectList = [
   },
 
   {
-    name: "Circle Random Lines",
+    name: "interwoven over.",
     image: "../../images/circle-random-lines.gif",
     technologies: "p5.js, JavaScript",
     summary: "A circle created dynamically by random lines",
     description: "",
-    repository: "https://github.com/michaelkolesidis/circle-random-lines",
-    deployment: "https://circle-random-lines.netlify.app/",
+    repository: "https://github.com/michaelkolesidis/interwoven-oversemantization",
+    deployment: "https://interwoven-oversemantization.netlify.app/",
     video: "",
     visible: true,
   },
