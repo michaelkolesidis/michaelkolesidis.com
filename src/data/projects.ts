@@ -207,7 +207,7 @@ const projectList = [
 
   {
     name: "Scribble Text",
-    image: "../../images/scribble-text.gif",
+    image: "../../images/scribble-text.gif?v=2",
     technologies: "p5.js, JavaScript",
     summary: "Text gradually appears while scribbling.",
     description: "",
