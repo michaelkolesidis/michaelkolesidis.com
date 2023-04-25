@@ -21,6 +21,19 @@ const projectList = [
   },
 
   {
+    name: "UNCANNY CANYON",
+    image: "../../images/uncanny-canyon.png",
+    technologies: "Three.js, GLSL, Howler.js, JavaScript, Vite",
+    summary:
+      "An interactive 3D web experience, featured in Athens Digital Arts Festival 2023 in the Web Art category.",
+    description: ``,
+    repository: "https://github.com/michaelkolesidis/uncanny-canyon",
+    deployment: "https://online.adaf.gr/video/uncanny-canyon/",
+    video: "",
+    visible: true,
+  },
+
+  {
     name: "Emoji Minesweeper",
     image: "../../images/emoji-minesweeper.png?v=2",
     technologies: "p5.js, JavaScript, CSS",
@@ -150,7 +163,8 @@ const projectList = [
     technologies: "p5.js, JavaScript",
     summary: "A circle created dynamically by random lines",
     description: "",
-    repository: "https://github.com/michaelkolesidis/interwoven-oversemantization",
+    repository:
+      "https://github.com/michaelkolesidis/interwoven-oversemantization",
     deployment: "https://interwoven-oversemantization.netlify.app/",
     video: "",
     visible: true,
@@ -164,18 +178,6 @@ const projectList = [
     description: "",
     repository: "https://github.com/michaelkolesidis/music-reviews",
     deployment: "https://music-reviews.netlify.app/",
-    video: "",
-    visible: true,
-  },
-
-  {
-    name: "Landmarks",
-    image: "../../images/landmarks.png?v=2",
-    technologies: "React, TypeScript",
-    summary: "A React static page showing landmarks around the globe.",
-    description: "",
-    repository: "https://github.com/michaelkolesidis/react-landmarks",
-    deployment: "https://react-landmarks.netlify.app/",
     video: "",
     visible: true,
   },
@@ -251,6 +253,18 @@ const projectList = [
     deployment: "https://move-square.netlify.app/",
     video: "",
     visible: true,
+  },
+
+  {
+    name: "Landmarks",
+    image: "../../images/landmarks.png?v=2",
+    technologies: "React, TypeScript",
+    summary: "A React static page showing landmarks around the globe.",
+    description: "",
+    repository: "https://github.com/michaelkolesidis/react-landmarks",
+    deployment: "https://react-landmarks.netlify.app/",
+    video: "",
+    visible: false,
   },
 
   {
