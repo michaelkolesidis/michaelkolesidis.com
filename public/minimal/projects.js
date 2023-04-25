@@ -84,6 +84,20 @@ const projectList = [
   },
 
   {
+    name: "DIV SURROGATES",
+    image: "../../images/div-surrogates.png",
+    technologies: "JavaScript, CSS, DOM Window Manager",
+    summary:
+      "A piece of web art that makes use of the DOM Window Manager, a tiny library created by me.",
+    description: "",
+    repository:
+      "https://github.com/michaelkolesidis/collection-of-div-surrogates",
+    deployment: "https://collection-of-div-surrogates.vercel.app/",
+    video: "",
+    visible: true,
+  },
+
+  {
     name: "Particircle",
     image: "../../images/particircle.gif",
     technologies: "p5.js, JavaScript",
@@ -195,19 +209,6 @@ const projectList = [
   },
 
   {
-    name: "Sports App",
-    image: "../../images/sport-app-pwa.png?v=2",
-    technologies: "JavaScript, CSS",
-    summary:
-      "A progressive web application enabling users to create custom tables.",
-    description: "",
-    repository: "https://github.com/michaelkolesidis/sports-app-pwa",
-    deployment: "https://sports-app-pwa.netlify.app/",
-    video: "",
-    visible: true,
-  },
-
-  {
     name: "Scribble Text",
     image: "../../images/scribble-text.gif?v=2",
     technologies: "p5.js, JavaScript",
@@ -253,6 +254,19 @@ const projectList = [
     deployment: "https://move-square.netlify.app/",
     video: "",
     visible: true,
+  },
+
+  {
+    name: "Sports App",
+    image: "../../images/sport-app-pwa.png?v=2",
+    technologies: "JavaScript, CSS",
+    summary:
+      "A progressive web application enabling users to create custom tables.",
+    description: "",
+    repository: "https://github.com/michaelkolesidis/sports-app-pwa",
+    deployment: "https://sports-app-pwa.netlify.app/",
+    video: "",
+    visible: false,
   },
 
   {
