@@ -21,7 +21,7 @@ const projectList = [
   },
 
   {
-    name: "UNCANNY CANYON",
+    name: "Uncanny Canyon",
     image: "../../images/uncanny-canyon.png",
     technologies: "Three.js, GLSL, Howler.js, JavaScript, Vite",
     summary:
@@ -43,6 +43,18 @@ const projectList = [
       "The game logic and anything that happens inside the board\n is written in p5.js. The board is drawn inside a canvas element,\n with the help of the p5.js library. The rest of the UI\n is written in vanilla JavaScript.",
     repository: "https://github.com/michaelkolesidis/emoji-minesweeper",
     deployment: "https://emojiminesweeper.com/",
+    video: "",
+    visible: true,
+  },
+
+  {
+    name: "Rock Paper Scissors 3D",
+    image: "../../images/rock-paper-scissors-3d.png",
+    technologies: "Three.js, React, React Three Fiber",
+    summary: "The classic game of rock, paper, scissors in 3D!",
+    description: "",
+    repository: "https://github.com/michaelkolesidis/rock-paper-scissors-3d",
+    deployment: "https://rock-paper-scissors-3d.vercel.app/",
     video: "",
     visible: true,
   },
@@ -84,7 +96,7 @@ const projectList = [
   },
 
   {
-    name: "DIV SURROGATES",
+    name: "Div Surrogates",
     image: "../../images/div-surrogates.png",
     technologies: "JavaScript, CSS, DOM Window Manager",
     summary:
@@ -185,18 +197,6 @@ const projectList = [
   },
 
   {
-    name: "Music Reviews",
-    image: "../../images/music-reviews.png?v=2",
-    technologies: "TypeScript, CSS",
-    summary: "A basic music reviews web app prototype.",
-    description: "",
-    repository: "https://github.com/michaelkolesidis/music-reviews",
-    deployment: "https://music-reviews.netlify.app/",
-    video: "",
-    visible: true,
-  },
-
-  {
     name: "CSS 3D",
     image: "../../images/css-3d.png?v=2",
     technologies: "CSS",
@@ -254,6 +254,18 @@ const projectList = [
     deployment: "https://move-square.netlify.app/",
     video: "",
     visible: true,
+  },
+
+  {
+    name: "Music Reviews",
+    image: "../../images/music-reviews.png?v=2",
+    technologies: "TypeScript, CSS",
+    summary: "A basic music reviews web app prototype.",
+    description: "",
+    repository: "https://github.com/michaelkolesidis/music-reviews",
+    deployment: "https://music-reviews.netlify.app/",
+    video: "",
+    visible: false,
   },
 
   {
