@@ -37,10 +37,10 @@
   },
   "devDependencies": {
     "typescript": "^5.0.4",
-    "vite": "^4.3.1"
+    "vite": "^4.3.5"
   },
   "dependencies": {
     "dom-window-manager": "^1.0.3",
-    "sass": "^1.62.0"
+    "sass": "^1.62.1"
   }
 }
