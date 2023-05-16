@@ -34,6 +34,18 @@ const projectList = [
   },
 
   {
+    name: "Beachy Beachy Ball",
+    image: "../../images/beachy_beachy_ball.png",
+    technologies: "Three.js, React, React Three Fiber, Rapier",
+    summary: "A beach ball adventure! Can you make it to the end?",
+    description: "",
+    repository: "https://github.com/michaelkolesidis/beachy-beachy-ball",
+    deployment: "https://beachy-beachy-ball.vercel.app/",
+    video: "",
+    visible: true,
+  },
+
+  {
     name: "Emoji Minesweeper",
     image: "../../images/emoji-minesweeper.png?v=2",
     technologies: "p5.js, JavaScript, CSS",
@@ -253,7 +265,7 @@ const projectList = [
     repository: "https://github.com/michaelkolesidis/move-square",
     deployment: "https://move-square.netlify.app/",
     video: "",
-    visible: true,
+    visible: false,
   },
 
   {
