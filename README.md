@@ -22,9 +22,9 @@ This is my portfolio website / playground.
 
 It is a love letter to the internet of the old, the era of the naïve (web) art, the era of the romantic amateur, the era of Geocities. I first experienced the magical world of the world wide web in the 90's and I hope I managed to capture a glimpse of that time. I was also influenced by print publication design and by 90's MTV on-screen graphics.
 
-I call this style **frivobrutalism**, placing emphasis on the blend of the playfulness frivolity of the deisgn/experience with the brutalist aesthetic.
+I call this style **frivobrutalism**, placing emphasis on the blend of the playfulness frivolity of the design/experience with the brutalist aesthetic.
 
-Visitors can move thins around and customize the colors of all colorful elements: clicking on an element generates a new color, from the predefined color palette. The rubber duck responds to mouse move.
+Visitors can move things around and customize the colors of all colorful elements: clicking on an element generates a new color, from the predefined color palette. The rubber duck responds to mouse movement.
 
 Most of the elements are part of microinteractions and hovering over them or interacting with them in other ways triggers some animation (and in one case it also triggers sound).
 

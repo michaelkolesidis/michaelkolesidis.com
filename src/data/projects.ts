@@ -1,5 +1,5 @@
 // https://michaelkolesidis.com
-// Copyright (c) 2023 Michael Kolesidis (michael.kolesidis@gmail.com)
+// Copyright (c) 2023 Michael Kolesidis <michael.kolesidis@gmail.com>
 // Licensed under the GNU Affero General Public License v3.0.
 // https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -34,8 +34,20 @@ const projectList = [
   },
 
   {
+    name: "Scratch Bonanza",
+    image: "../../images/scratch-bonanza.gif",
+    technologies: "React, TypeScript, Zustand, Vite",
+    summary: "An online scratchcard game. Do you feel lucky?",
+    description: "",
+    repository: "https://github.com/michaelkolesidis/scratch-bonanza",
+    deployment: "https://scratch-bonanza.vercel.app/",
+    video: "",
+    visible: true,
+  },
+
+  {
     name: "Beachy Beachy Ball",
-    image: "../../images/beachy_beachy_ball.png",
+    image: "../../images/beachy-beachy-ball.png",
     technologies: "Three.js, React, React Three Fiber, Rapier",
     summary: "A beach ball adventure! Can you make it to the end?",
     description: "",
@@ -233,18 +245,6 @@ const projectList = [
   },
 
   {
-    name: "Intersecting Circles",
-    image: "../../images/intersecting-circles.gif",
-    technologies: "p5.js, JavaScript",
-    summary: "Colorful explosions occur when two circles are interescting.",
-    description: "",
-    repository: "https://github.com/michaelkolesidis/intersecting-circles",
-    deployment: "https://intersecting-circles.netlify.app/",
-    video: "",
-    visible: true,
-  },
-
-  {
     name: "Random Triangles Cube",
     image: "../../images/random-triangles-cube.gif",
     technologies: "Three.js, JavaScript",
@@ -254,6 +254,18 @@ const projectList = [
     deployment: "https://random-triangles-cube.netlify.app/",
     video: "",
     visible: true,
+  },
+
+  {
+    name: "Intersecting Circles",
+    image: "../../images/intersecting-circles.gif",
+    technologies: "p5.js, JavaScript",
+    summary: "Colorful explosions occur when two circles are intersecting.",
+    description: "",
+    repository: "https://github.com/michaelkolesidis/intersecting-circles",
+    deployment: "https://intersecting-circles.netlify.app/",
+    video: "",
+    visible: false,
   },
 
   {
@@ -322,7 +334,7 @@ const projectList = [
     name: "Electronic Drum Kit",
     image: "../../images/electronic-drum-kit.png?v=2",
     technologies: "JavaScript, CSS",
-    summary: "An Electronic Drumkit that can be used with mouse or keyboard.",
+    summary: "An Electronic Drum Kit that can be used with mouse or keyboard.",
     description: "",
     repository: "https://github.com/michaelkolesidis/electronic-drum-kit",
     deployment: "https://electronic-drumkit-js.netlify.app/",
