@@ -84,18 +84,6 @@ const projectList = [
   },
 
   {
-    name: "Rock Paper Scissors 3D",
-    image: "../../images/rock-paper-scissors-3d.png",
-    technologies: "Three.js, React, React Three Fiber",
-    summary: "The classic game of rock, paper, scissors in 3D!",
-    description: "",
-    repository: "https://github.com/michaelkolesidis/rock-paper-scissors-3d",
-    deployment: "https://rock-paper-scissors-3d.vercel.app/",
-    video: "",
-    visible: true,
-  },
-
-  {
     name: "synthétique",
     image: "../../images/synthetique.png",
     technologies: "Three.js, JavaScript, CSS",
@@ -103,6 +91,30 @@ const projectList = [
     description: "",
     repository: "https://github.com/michaelkolesidis/synthetique",
     deployment: "https://synthetique.vercel.app/",
+    video: "",
+    visible: true,
+  },
+
+  {
+    name: "Cube Rabbit",
+    image: "../../images/cube_rabbit_coming_soon.png",
+    technologies: "Three.js, React, React Three Fiber",
+    summary: "COMING SOON",
+    description: "",
+    repository: "",
+    deployment: "",
+    video: "",
+    visible: true,
+  },
+
+  {
+    name: "Rock Paper Scissors 3D",
+    image: "../../images/rock-paper-scissors-3d.png",
+    technologies: "Three.js, React, React Three Fiber",
+    summary: "The classic game of rock, paper, scissors in 3D!",
+    description: "",
+    repository: "https://github.com/michaelkolesidis/rock-paper-scissors-3d",
+    deployment: "https://rock-paper-scissors-3d.vercel.app/",
     video: "",
     visible: true,
   },
