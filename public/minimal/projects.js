@@ -34,6 +34,18 @@ const projectList = [
   },
 
   {
+    name: "Fintech World",
+    image: "../../images/fintech_world.png",
+    technologies: "Three.js, React, React Three Fiber",
+    summary: `An immersive 3D gamification web platform that promotes, educates, and informs visitors about digital payment solutions, through a fun and engaging experience.`,
+    description: "",
+    repository: "https://github.com/michaelkolesidis/fintech-world",
+    deployment: "https://fintech-world.vercel.app/",
+    video: "",
+    visible: true,
+  },
+
+  {
     name: "Scratch Bonanza",
     image: "../../images/scratch-bonanza.gif",
     technologies: "React, TypeScript, Zustand, Vite",
@@ -253,7 +265,7 @@ const projectList = [
     repository: "https://github.com/michaelkolesidis/random-triangles-cube",
     deployment: "https://random-triangles-cube.netlify.app/",
     video: "",
-    visible: true,
+    visible: false,
   },
 
   {
