@@ -208,18 +208,6 @@ const projectList = [
   },
 
   {
-    name: "Pong",
-    image: "../../images/pong.gif",
-    technologies: "Processing, Java",
-    summary: "The classic Pong game recreated from scratch.",
-    description: "",
-    repository: "https://github.com/michaelkolesidis/pong-processing",
-    deployment: "https://github.com/michaelkolesidis/pong-processing",
-    video: "",
-    visible: true,
-  },
-
-  {
     name: "Camel Notes",
     image: "../../images/camelnotes.gif",
     technologies: "React, JavaScript",
@@ -266,6 +254,18 @@ const projectList = [
     deployment: "https://scribble-text.netlify.app/",
     video: "",
     visible: true,
+  },
+
+  {
+    name: "Pong",
+    image: "../../images/pong.gif",
+    technologies: "Processing, Java",
+    summary: "The classic Pong game recreated from scratch.",
+    description: "",
+    repository: "https://github.com/michaelkolesidis/pong-processing",
+    deployment: "https://github.com/michaelkolesidis/pong-processing",
+    video: "",
+    visible: false,
   },
 
   {
