@@ -510,23 +510,24 @@ canvas {
 
 #github,
 #linkedin,
-#stack-overflow {
+#twitter {
   display: inline-block;
   transform: rotate(10deg);
   transform-origin: top right;
-  letter-spacing: 2px;
   border: calc($line / 2) solid $black;
   padding: 0.5em;
 
   span {
     display: inline-block;
-    transform: rotate(-10deg);
+    transform: rotate(-11deg);
+    width: 20px;
+    text-align: center;
   }
 }
 
 #github::after,
 #linkedin::after,
-#stack-overflow::after {
+#twitter::after {
   color: rgba(0, 0, 0, 0);
   content: "......";
   background-image: url("../assets/duck_white.svg");
@@ -537,7 +538,7 @@ canvas {
 
 #github:hover::after,
 #linkedin:hover::after,
-#stack-overflow:hover::after {
+#twitter:hover::after {
   color: rgba(0, 0, 0, 0);
   content: "......";
   background-image: url("../assets/duck.svg");
@@ -548,14 +549,14 @@ canvas {
 }
 
 #github {
-  margin-left: 28em;
+  margin-left: 26em;
 }
 
 #linkedin {
-  margin-left: 19.3em;
+  margin-left: 15em;
 }
 
-#stack-overflow {
+#twitter {
   margin-left: 5em;
 }
 

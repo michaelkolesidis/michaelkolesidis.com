@@ -65,28 +65,20 @@ export default function contact() {
 
     contact.innerHTML += "<br>";
 
-    // Stack Overflow
-    const stackoverflow = document.createElement("a");
-    stackoverflow.setAttribute("id", "stack-overflow");
-    stackoverflow.innerHTML = /* html */ `
-        <span>S</span>
+    // Twitter
+    const twitter = document.createElement("a");
+    twitter.setAttribute("id", "twitter");
+    twitter.innerHTML = /* html */ `
+        <span>T</span>
+        <span>w</span>
+        <span>i</span>
         <span>t</span>
-        <span>a</span>
-        <span>c</span>
-        <span>k</span>
-        <span>&nbsp;</span>
-        <span>O</span>
-        <span>v</span>
+        <span>t</span>
         <span>e</span>
         <span>r</span>
-        <span>f</span>
-        <span>l</span>
-        <span>o</span>
-        <span>w</span>
   `;
-    stackoverflow.href =
-      "https://stackoverflow.com/users/15253636/michael-kolesidis";
-    stackoverflow.target = "_blank";
-    contact.appendChild(stackoverflow);
+    twitter.href = "https://twitter.com/michael_kol_";
+    twitter.target = "_blank";
+    contact.appendChild(twitter);
   }
 }
