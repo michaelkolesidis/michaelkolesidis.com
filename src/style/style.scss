@@ -1126,7 +1126,7 @@ $duration: 104s;
 
   #github,
   #linkedin,
-  #stack-overflow {
+  #twitter {
     border: 0;
     padding: 0;
     transform: rotate(0);
@@ -1145,9 +1145,28 @@ $duration: 104s;
     content: "LinkedIn";
   }
 
-  #stack-overflow::after {
+  #twitter::after {
     color: $black;
-    content: "Stack Overflow";
+    content: "Twitter";
+  }
+
+  #github:hover::after,
+  #linkedin:hover::after,
+  #twitter:hover::after {
+    color: $black;
+    background-image: none;
+  }
+
+  #github:hover::after {
+    content: "GitHub";
+  }
+
+  #linkedin:hover::after {
+    content: "LinkedIn";
+  }
+
+  #twitter:hover::after {
+    content: "Twitter";
   }
 
   /********** MOBILE: About **********/
