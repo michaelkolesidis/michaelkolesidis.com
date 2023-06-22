@@ -36,7 +36,7 @@ const projectList = [
   {
     name: "Fintech World",
     image: "../../images/fintech_world.png",
-    technologies: "Three.js, React, React Three Fiber",
+    technologies: "Three.js, React, React Three Fiber, Zustand",
     summary: `An immersive 3D gamification web platform that promotes, educates, and informs visitors about digital payment solutions, through a fun and engaging experience.`,
     description: "",
     repository: "https://github.com/michaelkolesidis/fintech-world",
@@ -48,7 +48,7 @@ const projectList = [
   {
     name: "Scratch Bonanza",
     image: "../../images/scratch-bonanza.gif",
-    technologies: "React, TypeScript, Zustand, Vite",
+    technologies: "React, TypeScript, Zustand",
     summary: "An online scratchcard game. Do you feel lucky?",
     description: "",
     repository: "https://github.com/michaelkolesidis/scratch-bonanza",
@@ -60,7 +60,7 @@ const projectList = [
   {
     name: "Beachy Beachy Ball",
     image: "../../images/beachy-beachy-ball.png",
-    technologies: "Three.js, React, React Three Fiber, Rapier",
+    technologies: "Three.js, React, React Three Fiber, Rapier, Zustand",
     summary: "A beach ball adventure! Can you make it to the end?",
     description: "",
     repository: "https://github.com/michaelkolesidis/beachy-beachy-ball",
@@ -96,9 +96,21 @@ const projectList = [
   },
 
   {
+    name: "Cherry Charm",
+    image: "../../images/cherry-charm.png",
+    technologies: "",
+    summary: "An online 3D slot machine game.",
+    description: "",
+    repository: "https://github.com/michaelkolesidis/cherry-charm",
+    deployment: "https://cherry-charm.vercel.app/",
+    video: "",
+    visible: true,
+  },
+
+  {
     name: "Rock Paper Scissors 3D",
     image: "../../images/rock-paper-scissors-3d.png",
-    technologies: "Three.js, React, React Three Fiber",
+    technologies: "Three.js, React, React Three Fiber, Zustand",
     summary: "The classic game of rock, paper, scissors in 3D!",
     description: "",
     repository: "https://github.com/michaelkolesidis/rock-paper-scissors-3d",
@@ -114,7 +126,7 @@ const projectList = [
     summary: "COMING SOON",
     description: "",
     repository: "",
-    deployment: "",
+    deployment: "https://cuberabbit.com/",
     video: "",
     visible: true,
   },
@@ -233,18 +245,6 @@ const projectList = [
   },
 
   {
-    name: "CSS 3D",
-    image: "../../images/css-3d.png?v=2",
-    technologies: "CSS",
-    summary: "A simple website showcasing CSS 3D examples and how they work.",
-    description: "",
-    repository: "https://github.com/michaelkolesidis/css-3d",
-    deployment: "https://css-3d.netlify.app/",
-    video: "",
-    visible: true,
-  },
-
-  {
     name: "Scribble Text",
     image: "../../images/scribble-text.gif?v=2",
     technologies: "p5.js, JavaScript",
@@ -254,6 +254,18 @@ const projectList = [
     deployment: "https://scribble-text.netlify.app/",
     video: "",
     visible: true,
+  },
+
+  {
+    name: "CSS 3D",
+    image: "../../images/css-3d.png?v=2",
+    technologies: "CSS",
+    summary: "A simple website showcasing CSS 3D examples and how they work.",
+    description: "",
+    repository: "https://github.com/michaelkolesidis/css-3d",
+    deployment: "https://css-3d.netlify.app/",
+    video: "",
+    visible: false,
   },
 
   {
