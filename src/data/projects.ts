@@ -23,7 +23,7 @@ const projectList = [
   {
     name: "Uncanny Canyon",
     image: "../../images/uncanny-canyon.png",
-    technologies: "Three.js, GLSL, Howler.js, JavaScript, Vite",
+    technologies: "Three.js, GLSL, Howler.js, JavaScript",
     summary:
       "An interactive 3D web experience, featured in Athens Digital Arts Festival 2023 in the Web Art category.",
     description: ``,
@@ -84,6 +84,18 @@ const projectList = [
   },
 
   {
+    name: "Cherry Charm",
+    image: "../../images/cherry-charm.png",
+    technologies: "Three.js, React, TypeScript, React Three Fiber, Zustand",
+    summary: "An online 3D slot machine game.",
+    description: "",
+    repository: "https://github.com/michaelkolesidis/cherry-charm",
+    deployment: "https://cherry-charm.vercel.app/",
+    video: "",
+    visible: true,
+  },
+
+  {
     name: "synthétique",
     image: "../../images/synthetique.png",
     technologies: "Three.js, JavaScript, CSS",
@@ -91,18 +103,6 @@ const projectList = [
     description: "",
     repository: "https://github.com/michaelkolesidis/synthetique",
     deployment: "https://synthetique.vercel.app/",
-    video: "",
-    visible: true,
-  },
-
-  {
-    name: "Cherry Charm",
-    image: "../../images/cherry-charm.png",
-    technologies: "",
-    summary: "An online 3D slot machine game.",
-    description: "",
-    repository: "https://github.com/michaelkolesidis/cherry-charm",
-    deployment: "https://cherry-charm.vercel.app/",
     video: "",
     visible: true,
   },
@@ -122,7 +122,7 @@ const projectList = [
   {
     name: "Cube Rabbit",
     image: "../../images/cube_rabbit_coming_soon.png",
-    technologies: "Three.js, React, React Three Fiber",
+    technologies: "Three.js, React, TypeScript, React Three Fiber, Zustand",
     summary: "COMING SOON",
     description: "",
     repository: "",
