@@ -38,8 +38,9 @@ export default function footer() {
     if (duckImage !== null) {
       duckImage.addEventListener("click", function (event) {
         event.stopPropagation();
-        const duckSound = new Audio("../../assets/rubber-duck.mp3");
-        duckSound.play();
+        const squeak = new Audio("../../assets/squeak.mp3");
+        squeak.playbackRate = 1.35;
+        squeak.play();
       });
     }
   }
