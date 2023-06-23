@@ -46,6 +46,20 @@ const projectList = [
   },
 
   {
+    name: "OKTO.DIRECT",
+    image: "../../images/okto-direct.png",
+    technologies:
+      "React, Redux, MUI, Styled Components, WebSocket, Spring Boot",
+    summary:
+      "Member of the core team that conceptualized, designed, and develpoped OKTO.DIRECT, the first and only retail payments gateway that unlocks with one integration multiple digital payment methods for users to deposit and withdraw in real-time.",
+    description: "",
+    repository: "",
+    deployment: "https://www.oktopay.eu/okto-direct/",
+    video: "",
+    visible: true,
+  },
+
+  {
     name: "Scratch Bonanza",
     image: "../../images/scratch-bonanza.gif",
     technologies: "React, TypeScript, Zustand",
