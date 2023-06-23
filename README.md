@@ -163,6 +163,12 @@ This library is imported using CDN:
 
 <img src="./screenshots/minimal.png" width="800px">
 
+_Trivia_
+
+For the minimal version of my website I tried to replicate the styling of my printed CV!
+
+<img src="./screenshots/cv_thumbnail.png">
+
 ### Full Page
 
 - [Desktop](./screenshots/desktop_fullpage.png)
