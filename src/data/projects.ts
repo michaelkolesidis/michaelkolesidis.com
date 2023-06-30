@@ -15,7 +15,7 @@ const projectList = [
                   implementing a variety of JavaScript libraries.`,
     repository:
       "https://github.com/michaelkolesidis/javascript-software-synthesizer",
-    deployment: "https://javascript-software-synthesizer.netlify.app/",
+    deployment: "https://javascript-software-synthesizer.vercel.app/",
     video: "",
     visible: true,
   },
