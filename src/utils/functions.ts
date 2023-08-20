@@ -34,7 +34,7 @@ export const getScrollDistanceCss = () => {
       document.body.style.setProperty(
         "--scroll",
         (
-          window.pageYOffset /
+          window.scrollY /
           (document.body.offsetHeight - window.innerHeight)
         ).toString()
       );

@@ -51,7 +51,7 @@ const projectList = [
     technologies:
       "React, Redux, MUI, Styled Components, WebSocket, Spring Boot",
     summary:
-      "Member of the core team that conceptualized, designed, and develpoped OKTO.DIRECT, the first and only retail payments gateway that unlocks with one integration multiple digital payment methods for users to deposit and withdraw in real-time.",
+      "Member of the core team that conceptualized, designed, and developed OKTO.DIRECT, the first and only retail payments gateway that unlocks with one integration multiple digital payment methods for users to deposit and withdraw in real-time.",
     description: "",
     repository: "",
     deployment: "https://www.oktopay.eu/okto-direct/",

@@ -31,7 +31,7 @@ export const sentencesThisWebsite = [
   `It is yet another <a href="https://www.cameronsworld.net/" target="_blank">love letter to the Internet of the old</a>, the era of naïve (web) art, the era of the romantic amateur, the era of Geocities. I first experienced the magical world of the world wide web in the 90's and I hope I have managed to capture a glimpse of that time. I was also influenced by print publication design and by 
     <a href="https://vimeo.com/694306367" target="_blank">90's MTV graphics.</a>`,
 
-  `I call this style <i>frivobrutalism</i>, placing emphasis on the blend of the frivolity and playfulness of the deisgn/experience with the brutalist aesthetic.`,
+  `I call this style <i>frivobrutalism</i>, placing emphasis on the blend of the frivolity and playfulness of the design/experience with the brutalist aesthetic.`,
 
   `The source code is released under the <a href="https://www.gnu.org/licenses/agpl-3.0.html" target="_blank" >GNU Affero General Public License v3.0</a>, so feel free to study it, use it, edit it and redistribute it, in accordance with the license's terms and conditions. You can find it on <a href="https://github.com/michaelkolesidis/michaelkolesidis.com" target="_blank">GitHub</a>. If you're planning to use it for your own web page, changing the name in the title would be a good start.`,
 ];
