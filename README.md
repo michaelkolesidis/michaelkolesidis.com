@@ -1,6 +1,7 @@
 <div align="center">
   <img src="./screenshots/desktop_1.png" width="700px">
   <h4>My portfolio website / playground</h4>
+  <a href='https://ko-fi.com/michaelkolesidis' target='_blank'><img src='https://cdn.ko-fi.com/cdn/kofi1.png' style='border:0px;height:45px;' alt='Buy Me a Coffee at ko-fi.com' /></a>
 </div>
 
 ## Technologies Used
@@ -173,6 +174,12 @@ For the minimal version of my website I tried to replicate the styling of my pri
 ## Acknowledgements
 
 A huge thanks to everyone (from friends and colleagues to the anonymous people of the internet) who supported me and provided me with valuable feedback throughout the development process.
+
+## 💖 Support the Project
+
+Thank you so much for your interest in my project! If you want to go a step further and support my work, buy me a coffee:
+
+<a href='https://ko-fi.com/michaelkolesidis' target='_blank'><img src='https://cdn.ko-fi.com/cdn/kofi1.png' style='border:0px;height:45px;' alt='Buy Me a Coffee at ko-fi.com' /></a>
 
 ## License
 
