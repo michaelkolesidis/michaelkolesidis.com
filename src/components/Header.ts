@@ -14,14 +14,14 @@ export default function header() {
     // Name
     const name = document.createElement("h1");
     name.setAttribute("id", "name");
-    name.innerHTML = /* html */ `MICHAEL K<span id="title-letter">O</span>LESIDIS`;
+    name.innerHTML = /* html */ `Michael Kolesidis`;
     header.appendChild(name);
 
     // Top gap
     const topGap = document.createElement("div");
     topGap.setAttribute("id", "top-gap");
     topGap.innerHTML = `.`;
-    header.appendChild(topGap);
+    // header.appendChild(topGap);
 
     /* Styling */
     topGap.style.color = `white`;
