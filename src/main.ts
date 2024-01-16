@@ -20,16 +20,16 @@ import { disableRightClick } from "./utils/functions.js";
 
 // Components
 body();
-ticker();
+// ticker();
 header();
 intro();
-projects();
-contact();
-about();
-awards();
-thisWebsite();
-footer();
-topButton();
+// projects();
+// contact();
+// about();
+// awards();
+// thisWebsite();
+// footer();
+// topButton();
 
 // Global Functions
 disableRightClick(); // Disable right click

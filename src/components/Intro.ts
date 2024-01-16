@@ -14,7 +14,9 @@ export default function intro() {
     // Who Am I (paragraph on the left)
     const whoami = document.createElement("p");
     whoami.setAttribute("id", "left");
-    whoami.innerHTML = `I'm Michael Kolesidis.<br>(as you might have already guessed from the huge heading)`;
+    // whoami.innerHTML = `I'm Michael Kolesidis.<br>(as you might have already guessed from the huge heading)`;
+    whoami.innerHTML = `A new version of my website is coming soon.`;
+
     intro.appendChild(whoami);
 
     // Handwriting
@@ -25,7 +27,7 @@ export default function intro() {
                                               &nbsp;&nbsp;&nbsp;
                                               debugging`;
     handwriting.appendChild(handwritingText);
-    intro.appendChild(handwriting);
+    // intro.appendChild(handwriting);
     handwritingText.addEventListener("click", () => {
       duckDebuggingModal.style.display = "block";
       duckDebuggingModal.style.pointerEvents = "all";
@@ -66,27 +68,27 @@ export default function intro() {
     const whatami = document.createElement("p");
     whatami.setAttribute("id", "right");
     whatami.innerHTML = /* html */ `I am a Front-End Engineer / New Media Artist with a background in art and computer science, always passionate about crafting immersive and engaging experiences, playing my tiny little part in shaping the future of the web.`;
-    intro.appendChild(whatami);
+    // intro.appendChild(whatami);
 
     // Scroll prompt
     const scrollPrompt = document.createElement("div");
     scrollPrompt.setAttribute("id", "scroll-prompt");
     scrollPrompt.innerHTML = `SCROLL DOWN FOR MORE • SCROLL DOWN FOR MORE • SCROLL DOWN FOR MORE • SCROLL DOWN FOR MORE • SCROLL DOWN FOR MORE • SCROLL DOWN FOR MORE`;
 
-    setTimeout(() => {
-      if (document.documentElement.scrollTop === 0) {
-        intro.appendChild(scrollPrompt);
+    // setTimeout(() => {
+    //   if (document.documentElement.scrollTop === 0) {
+    //     intro.appendChild(scrollPrompt);
 
-        const flash = setInterval(
-          () => (scrollPrompt.hidden = !scrollPrompt.hidden),
-          700
-        );
+    //     const flash = setInterval(
+    //       () => (scrollPrompt.hidden = !scrollPrompt.hidden),
+    //       700
+    //     );
 
-        setTimeout(() => {
-          clearInterval(flash);
-          scrollPrompt.hidden = true;
-        }, 5000);
-      }
-    }, 20000);
+    //     setTimeout(() => {
+    //       clearInterval(flash);
+    //       scrollPrompt.hidden = true;
+    //     }, 5000);
+    //   }
+    // }, 20000);
   }
 }

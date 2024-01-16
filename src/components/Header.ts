@@ -52,13 +52,13 @@ export default function header() {
       header.removeChild(messageBox);
     });
     messageBox.appendChild(removeButton);
-    header.appendChild(messageBox);
+    // header.appendChild(messageBox);
 
     // Sticker
     const sticker = document.createElement("div");
     sticker.setAttribute("id", "new");
     sticker.innerHTML = `<img alt="New! sticker" width="150px" src="../../assets/new.svg" />`;
-    header.appendChild(sticker);
+    // header.appendChild(sticker);
 
     dragElement(sticker);
     sticker.style.zIndex = windowManager.base;
