@@ -14,14 +14,14 @@ export default function header() {
     // Name
     const name = document.createElement("h1");
     name.setAttribute("id", "name");
-    name.innerHTML = /* html */ `Michael Kolesidis`;
+    name.innerHTML = /* html */ `MICHAEL K<span id="title-letter">O</span>LESIDIS`;
     header.appendChild(name);
 
     // Top gap
     const topGap = document.createElement("div");
     topGap.setAttribute("id", "top-gap");
     topGap.innerHTML = `.`;
-    // header.appendChild(topGap);
+    header.appendChild(topGap);
 
     /* Styling */
     topGap.style.color = `white`;
@@ -52,13 +52,13 @@ export default function header() {
       header.removeChild(messageBox);
     });
     messageBox.appendChild(removeButton);
-    // header.appendChild(messageBox);
+    header.appendChild(messageBox);
 
     // Sticker
     const sticker = document.createElement("div");
     sticker.setAttribute("id", "new");
     sticker.innerHTML = `<img alt="New! sticker" width="150px" src="../../assets/new.svg" />`;
-    // header.appendChild(sticker);
+    header.appendChild(sticker);
 
     dragElement(sticker);
     sticker.style.zIndex = windowManager.base;
