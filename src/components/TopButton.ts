@@ -1,10 +1,10 @@
 // https://michaelkolesidis.com
-// Copyright (c) 2023 Michael Kolesidis <michael.kolesidis@gmail.com>
+// Copyright (c) 2024 Michael Kolesidis <michael.kolesidis@gmail.com>
 // Licensed under the GNU Affero General Public License v3.0.
 // https://www.gnu.org/licenses/gpl-3.0.html
 
 export default function topButton() {
-  const topButton = document.getElementById("top-button");
+  const topButton = document.getElementById('top-button');
 
   const scrollFunction = (target: HTMLElement, scrollDistance: number) => {
     // When the user scrolls down the given distance from the top of the document, show the HTML element
@@ -12,11 +12,11 @@ export default function topButton() {
       document.body.scrollTop > scrollDistance ||
       document.documentElement.scrollTop > scrollDistance
     ) {
-      target.style.opacity = "1";
-      target.style.pointerEvents = "all";
+      target.style.opacity = '1';
+      target.style.pointerEvents = 'all';
     } else {
-      target.style.opacity = "0";
-      target.style.pointerEvents = "none";
+      target.style.opacity = '0';
+      target.style.pointerEvents = 'none';
     }
   };
 
@@ -27,10 +27,10 @@ export default function topButton() {
   };
 
   if (topButton != null) {
-    topButton.innerHTML = "TOP";
+    topButton.innerHTML = 'TOP';
 
     // When the user clicks on the button, scroll to the top of the document
-    topButton.addEventListener("click", () => {
+    topButton.addEventListener('click', () => {
       topFunction();
     });
 

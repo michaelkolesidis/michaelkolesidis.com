@@ -1,15 +1,15 @@
 // https://michaelkolesidis.com
-// Copyright (c) 2023 Michael Kolesidis <michael.kolesidis@gmail.com>
+// Copyright (c) 2024 Michael Kolesidis <michael.kolesidis@gmail.com>
 // Licensed under the GNU Affero General Public License v3.0.
 // https://www.gnu.org/licenses/gpl-3.0.html
 
 export default function contact() {
-  const contact = document.getElementById("contact");
+  const contact = document.getElementById('contact');
 
   if (contact != null) {
     // Contact Title
-    const contactTitle = document.createElement("div");
-    contactTitle.classList.add("wavy");
+    const contactTitle = document.createElement('div');
+    contactTitle.classList.add('wavy');
     contactTitle.innerHTML = /* html */ `   
      <span style="--i:1">C</span>
      <span style="--i:2">O</span>
@@ -21,17 +21,17 @@ export default function contact() {
     contact.appendChild(contactTitle);
 
     // Email
-    const email = document.createElement("p");
-    email.setAttribute("id", "email");
+    const email = document.createElement('p');
+    email.setAttribute('id', 'email');
     email.innerHTML = `For inquiries please drop me a line at:<br>michael.kolesidis@gmail.com`;
     contact.appendChild(email);
 
     // Links
-    contact.innerHTML += "<br>";
+    contact.innerHTML += '<br>';
 
     // GitHub
-    const github = document.createElement("a");
-    github.setAttribute("id", "github");
+    const github = document.createElement('a');
+    github.setAttribute('id', 'github');
     github.innerHTML = /* html */ `
         <span>G</span>
         <span>i</span>
@@ -40,15 +40,15 @@ export default function contact() {
         <span>u</span>
         <span>b</span>
    `;
-    github.href = "https://github.com/michaelkolesidis";
-    github.target = "_blank";
+    github.href = 'https://github.com/michaelkolesidis';
+    github.target = '_blank';
     contact.appendChild(github);
 
-    contact.innerHTML += "<br>";
+    contact.innerHTML += '<br>';
 
     // LinkedIn
-    const linkedin = document.createElement("a");
-    linkedin.setAttribute("id", "linkedin");
+    const linkedin = document.createElement('a');
+    linkedin.setAttribute('id', 'linkedin');
     linkedin.innerHTML = /* html */ `
         <span>L</span>
         <span>i</span>
@@ -59,15 +59,15 @@ export default function contact() {
         <span>I</span>
         <span>n</span>
   `;
-    linkedin.href = "https://www.linkedin.com/in/michaelkolesidis/";
-    linkedin.target = "_blank";
+    linkedin.href = 'https://www.linkedin.com/in/michaelkolesidis/';
+    linkedin.target = '_blank';
     contact.appendChild(linkedin);
 
-    contact.innerHTML += "<br>";
+    contact.innerHTML += '<br>';
 
     // Twitter
-    const twitter = document.createElement("a");
-    twitter.setAttribute("id", "twitter");
+    const twitter = document.createElement('a');
+    twitter.setAttribute('id', 'twitter');
     twitter.innerHTML = /* html */ `
         <span>T</span>
         <span>w</span>
@@ -77,8 +77,8 @@ export default function contact() {
         <span>e</span>
         <span>r</span>
   `;
-    twitter.href = "https://twitter.com/michael_kol_";
-    twitter.target = "_blank";
+    twitter.href = 'https://twitter.com/michael_kol_';
+    twitter.target = '_blank';
     contact.appendChild(twitter);
   }
 }

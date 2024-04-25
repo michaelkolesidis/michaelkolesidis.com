@@ -1,5 +1,5 @@
 // https://michaelkolesidis.com
-// Copyright (c) 2023 Michael Kolesidis <michael.kolesidis@gmail.com>
+// Copyright (c) 2024 Michael Kolesidis <michael.kolesidis@gmail.com>
 // Licensed under the GNU Affero General Public License v3.0.
 // https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -13,8 +13,8 @@ if (window.innerWidth > 700) {
 
     sketch.preload = () => {
       // Load model with normalise parameter set to true will affect translate
-      img = sketch.loadImage("assets/3d-models/duck.png");
-      duck = sketch.loadModel("./assets/3d-models/duck.obj", false);
+      img = sketch.loadImage('assets/3d-models/duck.png');
+      duck = sketch.loadModel('./assets/3d-models/duck.obj', false);
     };
 
     sketch.setup = () => {
@@ -76,9 +76,9 @@ if (window.innerWidth > 700) {
         chosenColor = generateColor();
 
         if (
-          oldColor["levels"][0] !== chosenColor["levels"][0] ||
-          oldColor["levels"][1] !== chosenColor["levels"][1] ||
-          oldColor["levels"][2] !== chosenColor["levels"][2]
+          oldColor['levels'][0] !== chosenColor['levels'][0] ||
+          oldColor['levels'][1] !== chosenColor['levels'][1] ||
+          oldColor['levels'][2] !== chosenColor['levels'][2]
         ) {
           isNew = true;
         }
@@ -149,5 +149,5 @@ if (window.innerWidth > 700) {
     };
   };
 
-  const duckSketch = new p5(duck, "sketch-placeholder");
+  const duckSketch = new p5(duck, 'sketch-placeholder');
 }

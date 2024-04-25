@@ -1,5 +1,5 @@
 // https://michaelkolesidis.com
-// Copyright (c) 2023 Michael Kolesidis <michael.kolesidis@gmail.com>
+// Copyright (c) 2024 Michael Kolesidis <michael.kolesidis@gmail.com>
 // Licensed under the GNU Affero General Public License v3.0.
 // https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -9,7 +9,7 @@ export const generateNewColor = (
   element: any,
   property: string
 ) => {
-  const oldColor = element["style"][property];
+  const oldColor = element['style'][property];
 
   let num = 0;
   let isColorNew = false;
@@ -29,10 +29,10 @@ export const generateNewColor = (
 // Get scroll distance as a CSS variable
 export const getScrollDistanceCss = () => {
   window.addEventListener(
-    "scroll",
+    'scroll',
     () => {
       document.body.style.setProperty(
-        "--scroll",
+        '--scroll',
         (
           window.scrollY /
           (document.body.offsetHeight - window.innerHeight)
@@ -45,5 +45,5 @@ export const getScrollDistanceCss = () => {
 
 // Disable right click
 export const disableRightClick = () => {
-  document.addEventListener("contextmenu", (e) => e.preventDefault());
+  document.addEventListener('contextmenu', (e) => e.preventDefault());
 };

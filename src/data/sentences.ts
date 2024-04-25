@@ -1,5 +1,5 @@
 // https://michaelkolesidis.com
-// Copyright (c) 2023 Michael Kolesidis <michael.kolesidis@gmail.com>
+// Copyright (c) 2024 Michael Kolesidis <michael.kolesidis@gmail.com>
 // Licensed under the GNU Affero General Public License v3.0.
 // https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -15,7 +15,7 @@ export const sentencesAbout = [
 
   `I speak Greek, English, Spanish, and a bit of (actually hardly any nowadays) German.`,
 
-  "The first programming language I ever tampered with was Pascal, and the first I ever learnt was C.",
+  'The first programming language I ever tampered with was Pascal, and the first I ever learnt was C.',
 
   `Today, I mostly use three.js, OpenGL Shading Language, WebGL, JavaScript, React, TypeScript, and Blender.`,
 

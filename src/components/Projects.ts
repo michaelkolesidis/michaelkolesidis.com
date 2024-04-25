@@ -1,18 +1,18 @@
 // https://michaelkolesidis.com
-// Copyright (c) 2023 Michael Kolesidis <michael.kolesidis@gmail.com>
+// Copyright (c) 2024 Michael Kolesidis <michael.kolesidis@gmail.com>
 // Licensed under the GNU Affero General Public License v3.0.
 // https://www.gnu.org/licenses/gpl-3.0.html
 
-import projectList from "../data/projects.js";
-import { populateProjects } from "../utils/populateProjects.js";
+import projectList from '../data/projects.js';
+import { populateProjects } from '../utils/populateProjects.js';
 
 export default function projects() {
-  const projects = document.getElementById("projects");
+  const projects = document.getElementById('projects');
 
   if (projects != null) {
     // Project Title
-    const projectsTitle = document.createElement("div");
-    projectsTitle.classList.add("wavy");
+    const projectsTitle = document.createElement('div');
+    projectsTitle.classList.add('wavy');
     projectsTitle.innerHTML = /* html */ `   
         <span style="--i:1">P</span>
         <span style="--i:2">O</span>
@@ -25,8 +25,8 @@ export default function projects() {
         <span style="--i:9">O</span>`;
     projects.appendChild(projectsTitle);
 
-    const projectsContainer = document.createElement("div");
-    projectsContainer.setAttribute("id", "projects-container");
+    const projectsContainer = document.createElement('div');
+    projectsContainer.setAttribute('id', 'projects-container');
     projects.appendChild(projectsContainer);
 
     const numberOfProjects = projectList.length;
@@ -36,21 +36,21 @@ export default function projects() {
     populateProjects(0, upTo, projectsContainer);
 
     // Show More
-    const showMore = document.createElement("p");
-    showMore.setAttribute("id", "show-more");
+    const showMore = document.createElement('p');
+    showMore.setAttribute('id', 'show-more');
     showMore.innerHTML = `Show more`;
     projects.appendChild(showMore);
 
-    showMore.addEventListener("click", () => {
+    showMore.addEventListener('click', () => {
       // Hide button
-      showMore.style.display = "none";
+      showMore.style.display = 'none';
       // Ppopulate additional projects
       populateProjects(upTo, numberOfProjects, projectsContainer);
     });
 
     // Info box
-    const more = document.createElement("p");
-    more.setAttribute("id", "more");
+    const more = document.createElement('p');
+    more.setAttribute('id', 'more');
     more.innerHTML = `The list gets updated regularly with new projects. Check back again soon!`;
     projects.appendChild(more);
   }

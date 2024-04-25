@@ -1,9 +1,9 @@
 // https://michaelkolesidis.com
-// Copyright (c) 2023 Michael Kolesidis <michael.kolesidis@gmail.com>
+// Copyright (c) 2024 Michael Kolesidis <michael.kolesidis@gmail.com>
 // Licensed under the GNU Affero General Public License v3.0.
 // https://www.gnu.org/licenses/gpl-3.0.html
 
-import { sentencesThisWebsite as sentences } from "../data/sentences.js";
+import { sentencesThisWebsite as sentences } from '../data/sentences.js';
 
 export default function thisWebsite() {
   const website = document.getElementById(`this-website`);
@@ -33,7 +33,7 @@ export default function thisWebsite() {
     for (let i = 0; i < sentences.length; i++) {
       const sentence = document.createElement(`p`);
 
-      i === 0 ? (sentence.style.marginRight = `auto`) : "";
+      i === 0 ? (sentence.style.marginRight = `auto`) : '';
 
       sentence.innerHTML = `${sentences[i]}`;
       website.appendChild(sentence);

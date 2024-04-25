@@ -1,11 +1,11 @@
 // https://michaelkolesidis.com
-// Copyright (c) 2023 Michael Kolesidis <michael.kolesidis@gmail.com>
+// Copyright (c) 2024 Michael Kolesidis <michael.kolesidis@gmail.com>
 // Licensed under the GNU Affero General Public License v3.0.
 // https://www.gnu.org/licenses/gpl-3.0.html
 
-import { generateNewColor } from "../utils/functions.js";
-import { colors } from "../data/colors.js";
-import { sentencesAbout as sentences } from "../data/sentences.js";
+import { generateNewColor } from '../utils/functions.js';
+import { colors } from '../data/colors.js';
+import { sentencesAbout as sentences } from '../data/sentences.js';
 
 export default function about() {
   const about = document.getElementById(`about`);
@@ -29,7 +29,7 @@ export default function about() {
     // Populate
     for (let i = 0; i < sentences.length; i++) {
       const sentence = document.createElement(`p`);
-      sentence.classList.add("sentence");
+      sentence.classList.add('sentence');
       sentence.innerHTML = `${sentences[i]}`;
 
       about.appendChild(sentence);
@@ -58,9 +58,9 @@ export default function about() {
       }
       sentence.style.transform = `rotate(${angle}deg)`;
 
-      sentence.addEventListener("click", () => {
+      sentence.addEventListener('click', () => {
         sentence.style.backgroundColor = `rgb(${
-          generateNewColor(colors, sentence, "backgroundColor").rgb
+          generateNewColor(colors, sentence, 'backgroundColor').rgb
         })`;
       });
     }

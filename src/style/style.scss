@@ -1,18 +1,18 @@
 // https://michaelkolesidis.com
-// Copyright (c) 2023 Michael Kolesidis <michael.kolesidis@gmail.com>
+// Copyright (c) 2024 Michael Kolesidis <michael.kolesidis@gmail.com>
 // Licensed under the GNU Affero General Public License v3.0.
 // https://www.gnu.org/licenses/gpl-3.0.html
 
-@import url("https://fonts.googleapis.com/css2?family=Caveat&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
 @font-face {
-  font-family: "Beatrice";
+  font-family: 'Beatrice';
   font-display: block;
   block-timeout: 0.3;
   swap-timeout: 0;
-  src: url("../fonts/Beatrice-Regular.eot");
-  src: url("../fonts/Beatrice-Regular.woff2") format("woff2"),
-    url("../fonts/Beatrice-Regular.woff") format("woff"),
-    url("../fonts/Beatrice-Regular.ttf") format("truetype");
+  src: url('../fonts/Beatrice-Regular.eot');
+  src: url('../fonts/Beatrice-Regular.woff2') format('woff2'),
+    url('../fonts/Beatrice-Regular.woff') format('woff'),
+    url('../fonts/Beatrice-Regular.ttf') format('truetype');
 }
 
 /********** VARIABLES **********/
@@ -53,7 +53,7 @@ $line: 0.3em;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Beatrice", sans-serif;
+  font-family: 'Beatrice', sans-serif;
   color: $black;
   -webkit-user-drag: none;
   -khtml-user-drag: none;
@@ -65,7 +65,7 @@ body,
 html {
   border-right: calc($line / 2) solid $black;
   background-color: $white;
-  cursor: url("../assets/cursors/windows95-cursor.png"), auto;
+  cursor: url('../assets/cursors/windows95-cursor.png'), auto;
   scroll-behavior: smooth;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -74,7 +74,7 @@ html {
 }
 
 a {
-  cursor: url("../assets/cursors/windows95-pointer.png"), auto;
+  cursor: url('../assets/cursors/windows95-pointer.png'), auto;
   text-decoration: none;
 }
 
@@ -122,7 +122,7 @@ a {
   height: 200px;
   padding: 15px;
   overflow: hidden;
-  cursor: url("../assets/cursors/windows95-grab.png"), auto;
+  cursor: url('../assets/cursors/windows95-grab.png'), auto;
 
   button {
     position: absolute;
@@ -143,7 +143,7 @@ a {
     text-align: center;
     transition: transform 0.15s linear;
     z-index: 2;
-    cursor: url("../assets/cursors/windows95-pointer.png"), auto;
+    cursor: url('../assets/cursors/windows95-pointer.png'), auto;
   }
 
   button:hover {
@@ -152,7 +152,7 @@ a {
 }
 
 #box::before {
-  content: "";
+  content: '';
   position: absolute;
   width: 150%;
   height: 150%;
@@ -209,7 +209,7 @@ a {
   top: 165px;
   left: 25px;
   transform: rotateZ(-10deg);
-  cursor: url("../assets/cursors/windows95-grab.png"), auto;
+  cursor: url('../assets/cursors/windows95-grab.png'), auto;
   padding: 0;
   border-radius: 100px;
 
@@ -260,13 +260,13 @@ a {
     right: clamp(-100em, max(-42vh, -41vw), 12em);
 
     p {
-      font-family: "Caveat", sans-serif;
+      font-family: 'Caveat', sans-serif;
       font-size: clamp(1em, 4vh, 2.5em);
       text-align: center;
       white-space: nowrap;
       line-height: 1em;
       pointer-events: auto;
-      cursor: url("../assets/cursors/windows95-question.png"), auto;
+      cursor: url('../assets/cursors/windows95-question.png'), auto;
       transform: rotate(20deg);
     }
 
@@ -280,11 +280,11 @@ a {
       border-top: 35px solid $black;
       background-color: $white;
       padding: 1em;
-      cursor: url("../assets/cursors/windows95-grab.png"), auto;
+      cursor: url('../assets/cursors/windows95-grab.png'), auto;
 
       a {
         font-weight: 600;
-        cursor: url("../assets/cursors/windows95-pointer.png"), auto;
+        cursor: url('../assets/cursors/windows95-pointer.png'), auto;
       }
 
       a:hover {
@@ -307,7 +307,7 @@ a {
         line-height: 40px;
         text-align: center;
         transition: transform 0.15s linear;
-        cursor: url("../assets/cursors/windows95-pointer.png"), auto;
+        cursor: url('../assets/cursors/windows95-pointer.png'), auto;
       }
     }
   }
@@ -367,7 +367,7 @@ canvas {
 #projects-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  background: url("../assets/zigzag.svg");
+  background: url('../assets/zigzag.svg');
   background-position: bottom right;
 
   a {
@@ -405,7 +405,7 @@ canvas {
     box-shadow 0.7s ease-in-out;
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
-  cursor: url("../assets/cursors/windows95-pointer.png"), auto;
+  cursor: url('../assets/cursors/windows95-pointer.png'), auto;
 }
 
 .project-image-container:hover {
@@ -467,7 +467,7 @@ canvas {
 }
 
 .repo-link:hover::after {
-  content: " < < < < < <";
+  content: ' < < < < < <';
 }
 
 #show-more {
@@ -477,7 +477,7 @@ canvas {
   color: $white;
   background-color: $black;
   border: 0;
-  cursor: url("../assets/cursors/windows95-pointer.png"), auto;
+  cursor: url('../assets/cursors/windows95-pointer.png'), auto;
 }
 
 #more {
@@ -529,8 +529,8 @@ canvas {
 #linkedin::after,
 #twitter::after {
   color: rgba(0, 0, 0, 0);
-  content: "......";
-  background-image: url("../assets/duck_white.svg");
+  content: '......';
+  background-image: url('../assets/duck_white.svg');
   background-size: 40px 50px;
   height: 40px;
   width: 50px;
@@ -540,8 +540,8 @@ canvas {
 #linkedin:hover::after,
 #twitter:hover::after {
   color: rgba(0, 0, 0, 0);
-  content: "......";
-  background-image: url("../assets/duck.svg");
+  content: '......';
+  background-image: url('../assets/duck.svg');
   background-size: 40px 50px;
   height: 40px;
   width: 50px;
@@ -685,7 +685,7 @@ canvas {
   }
 
   p {
-    cursor: url("../assets/cursors/windows95-cursor.png"), auto;
+    cursor: url('../assets/cursors/windows95-cursor.png'), auto;
     padding: 0;
     max-width: 60ch;
     margin: 1.3em 3em;
@@ -747,7 +747,7 @@ footer {
     width: 50px;
     display: flex;
     justify-content: center;
-    cursor: url("../assets/cursors/windows95-pointer.png"), auto;
+    cursor: url('../assets/cursors/windows95-pointer.png'), auto;
     transition: all 0.25s;
   }
 
@@ -774,7 +774,7 @@ footer {
   text-align: center;
   height: 90vh;
   background-color: $white;
-  cursor: url("../assets/cursors/windows95-hourglass.png"), auto;
+  cursor: url('../assets/cursors/windows95-hourglass.png'), auto;
 
   div {
     height: 100%;
@@ -820,7 +820,7 @@ footer {
   right: 2vw;
   z-index: 99;
   font-weight: 600;
-  cursor: url("../assets/cursors/windows95-pointer.png"), auto;
+  cursor: url('../assets/cursors/windows95-pointer.png'), auto;
   border-radius: 50%;
   font-size: 2vw;
   line-height: 6.5vw;
@@ -889,7 +889,7 @@ $duration: 104s;
 }
 
 .ticker-wrap .ticker__item:before {
-  content: "";
+  content: '';
   height: 11px;
   width: 11px;
   display: inline-block;
@@ -900,7 +900,7 @@ $duration: 104s;
 }
 
 .ticker-heading:after {
-  content: "";
+  content: '';
   width: 0;
   height: 0;
   border-top: 8px solid transparent;
@@ -1005,7 +1005,7 @@ $duration: 104s;
   /********** MOBILE: Intro **********/
   #intro {
     background-color: #f7d106;
-    background-image: url("../assets/duck.gif");
+    background-image: url('../assets/duck.gif');
     background-position: center center;
     background-repeat: no-repeat;
     position: static;
@@ -1137,17 +1137,17 @@ $duration: 104s;
 
   #github::after {
     color: $black;
-    content: "GitHub";
+    content: 'GitHub';
   }
 
   #linkedin::after {
     color: $black;
-    content: "LinkedIn";
+    content: 'LinkedIn';
   }
 
   #twitter::after {
     color: $black;
-    content: "Twitter";
+    content: 'Twitter';
   }
 
   #github:hover::after,
@@ -1158,15 +1158,15 @@ $duration: 104s;
   }
 
   #github:hover::after {
-    content: "GitHub";
+    content: 'GitHub';
   }
 
   #linkedin:hover::after {
-    content: "LinkedIn";
+    content: 'LinkedIn';
   }
 
   #twitter:hover::after {
-    content: "Twitter";
+    content: 'Twitter';
   }
 
   /********** MOBILE: About **********/

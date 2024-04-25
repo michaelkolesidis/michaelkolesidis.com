@@ -1,5 +1,5 @@
 // https://michaelkolesidis.com
-// Copyright (c) 2023 Michael Kolesidis <michael.kolesidis@gmail.com>
+// Copyright (c) 2024 Michael Kolesidis <michael.kolesidis@gmail.com>
 // Licensed under the GNU Affero General Public License v3.0.
 // https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -54,7 +54,7 @@ const projectList = [
       "Member of the core team that conceptualized, designed, and developed OKTO.DIRECT, the first and only retail payments gateway that unlocks with one integration multiple digital payment methods for users to deposit and withdraw in real-time.",
     description: "",
     repository: "",
-    deployment: "https://www.oktopay.eu/okto-direct/",
+    deployment: "https://www.oktopayments.com/okto-direct/",
     video: "",
     visible: true,
   },
@@ -164,7 +164,7 @@ const projectList = [
     summary: "Landscape created dynamically using Perlin noise.",
     description: "",
     repository: "https://github.com/michaelkolesidis/perlin-landscape",
-    deployment: "https://perlin-landscape.netlify.app/",
+    deployment: "https://perlin-landscape.vercel.app/",
     video: "",
     visible: true,
   },
@@ -190,7 +190,7 @@ const projectList = [
     summary: "A circle of particles.",
     description: "",
     repository: "https://github.com/michaelkolesidis/particircle",
-    deployment: "https://particircle.netlify.app/",
+    deployment: "https://particircle.vercel.app/",
     video: "",
     visible: true,
   },
@@ -215,7 +215,7 @@ const projectList = [
     summary: "A single triangle transforms into a fraction of mountain.",
     description: "",
     repository: "https://github.com/michaelkolesidis/fractal-mountain",
-    deployment: "https://fractal-mountain.netlify.app/",
+    deployment: "https://fractal-mountain.vercel.app/",
     video: "",
     visible: true,
   },
@@ -253,7 +253,7 @@ const projectList = [
     description: "",
     repository:
       "https://github.com/michaelkolesidis/interwoven-oversemantization",
-    deployment: "https://interwoven-oversemantization.netlify.app/",
+    deployment: "https://interwoven-oversemantization.vercel.app/",
     video: "",
     visible: true,
   },
@@ -265,7 +265,7 @@ const projectList = [
     summary: "Text gradually appears while scribbling.",
     description: "",
     repository: "https://github.com/michaelkolesidis/scribble-text",
-    deployment: "https://scribble-text.netlify.app/",
+    deployment: "hhttps://scribble-text.vercel.app/",
     video: "",
     visible: true,
   },

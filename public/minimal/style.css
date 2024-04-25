@@ -1,17 +1,17 @@
 @font-face {
-  font-family: "Canva Sans";
+  font-family: 'Canva Sans';
   font-display: block;
   block-timeout: 0.3;
   swap-timeout: 0;
-  src: url("./canva_sans.woff2") format("woff2");
+  src: url('./canva_sans.woff2') format('woff2');
 }
 
 @font-face {
-  font-family: "Canva Sans Bold";
+  font-family: 'Canva Sans Bold';
   font-display: block;
   block-timeout: 0.3;
   swap-timeout: 0;
-  src: url("./canva_sans_bold.woff2") format("woff2");
+  src: url('./canva_sans_bold.woff2') format('woff2');
 }
 
 /********** General **********/
@@ -23,7 +23,7 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: "Canva Sans", Arial, Helvetica, sans-serif;
+  font-family: 'Canva Sans', Arial, Helvetica, sans-serif;
   color: var(--blue);
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -41,7 +41,7 @@ body {
 
 #header {
   font-size: clamp(47px, 10vw, 200px);
-  font-family: "Canva Sans Bold", Arial, Helvetica, sans-serif;
+  font-family: 'Canva Sans Bold', Arial, Helvetica, sans-serif;
   line-height: 0.8em;
   text-align: center;
   letter-spacing: -0.07em;
@@ -93,7 +93,7 @@ body {
 
 #links > a {
   text-decoration: none;
-  font-family: "Canva Sans Bold", Arial, Helvetica, sans-serif;
+  font-family: 'Canva Sans Bold', Arial, Helvetica, sans-serif;
   max-width: fit-content;
 }
 
@@ -106,7 +106,7 @@ body {
 }
 
 .project-title {
-  font-family: "Canva Sans Bold", Arial, Helvetica, sans-serif;
+  font-family: 'Canva Sans Bold', Arial, Helvetica, sans-serif;
   font-size: 1.2em;
 }
 
@@ -115,7 +115,7 @@ body {
 }
 
 .repo-link {
-  font-family: "Canva Sans Bold", Arial, Helvetica, sans-serif;
+  font-family: 'Canva Sans Bold', Arial, Helvetica, sans-serif;
 }
 
 #projects-container {
