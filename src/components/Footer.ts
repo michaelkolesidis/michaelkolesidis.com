@@ -22,7 +22,7 @@ export default function footer() {
 
     const disclaimer = document.createElement('p');
     disclaimer.setAttribute('id', 'disclaimer');
-    disclaimer.innerHTML = `For a minimal and accessible for people with color blindness version of this website, please click <a href="minimal" target="_blank" >here</a>.`;
+    disclaimer.innerHTML = `For a minimal and accessible for people with color blindness version of this website, please click <a href="https://michaelkolesidis.com/minimal/" target="_blank" >here</a>.`;
     footer.appendChild(disclaimer);
 
     const duck = document.createElement('div');
