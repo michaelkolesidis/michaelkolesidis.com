@@ -65,7 +65,7 @@ export default function intro() {
     // What Am I (paragraph on the right)
     const whatami = document.createElement('p');
     whatami.setAttribute('id', 'right');
-    whatami.innerHTML = /* html */ `I am a Front-End Engineer / New Media Artist with a background in art and computer science, always passionate about crafting immersive and engaging experiences, playing my tiny little part in shaping the future of the web.`;
+    whatami.innerHTML = /* html */ `I am a Full-Stack Web Engineer with a background in computer science, economics, and art, passionate about crafting meaningful and engaging experiences, playing my tiny little part in shaping the future of the web.`;
     intro.appendChild(whatami);
 
     // Scroll prompt
