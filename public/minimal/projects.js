@@ -1,5 +1,5 @@
 // https://michaelkolesidis.com
-// Copyright (c) 2024 Michael Kolesidis <michael.kolesidis@gmail.com>
+// Copyright (c) 2025 Michael Kolesidis <michael.kolesidis@gmail.com>
 // Licensed under the GNU Affero General Public License v3.0.
 // https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -78,14 +78,14 @@ const projectList = [
     summary: 'A beach ball adventure! Can you make it to the end?',
     description: '',
     repository: 'https://github.com/michaelkolesidis/beachy-beachy-ball',
-    deployment: 'https://beachy-beachy-ball.vercel.app/',
+    deployment: 'https://beachybeachyball.vercel.app/',
     video: '',
     visible: true,
   },
 
   {
     name: 'Emoji Minesweeper',
-    image: '../../images/emoji-minesweeper.png?v=2',
+    image: '../../images/emoji-minesweeper.png?v=3',
     technologies: 'p5.js, JavaScript, CSS',
     summary:
       'Minesweeper made with emojis. The most fun way to play minesweeper!',
@@ -158,13 +158,13 @@ const projectList = [
   },
 
   {
-    name: 'Perlin Landscape',
+    name: 'p5.js Experiments',
     image: '../../images/perlin-landscape.gif',
     technologies: 'p5.js, JavaScript',
-    summary: 'Landscape created dynamically using Perlin noise.',
+    summary: 'A collection of p5.js visual experiments.',
     description: '',
-    repository: 'https://github.com/michaelkolesidis/perlin-landscape',
-    deployment: 'https://perlin-landscape.vercel.app/',
+    repository: 'https://github.com/michaelkolesidis/p5js-experiments',
+    deployment: 'https://p5jsexperiments.vercel.app/',
     video: '',
     visible: true,
   },
@@ -184,18 +184,6 @@ const projectList = [
   },
 
   {
-    name: 'Particircle',
-    image: '../../images/particircle.gif',
-    technologies: 'p5.js, JavaScript',
-    summary: 'A circle of particles.',
-    description: '',
-    repository: 'https://github.com/michaelkolesidis/particircle',
-    deployment: 'https://particircle.vercel.app/',
-    video: '',
-    visible: true,
-  },
-
-  {
     name: 'Sticky Notes',
     image: '../../images/sticky-notes-02.png',
     technologies: 'TypeScript, CSS',
@@ -204,18 +192,6 @@ const projectList = [
     description: '',
     repository: 'https://github.com/michaelkolesidis/sticky-notes',
     deployment: 'https://sticky-notes-ts.vercel.app/',
-    video: '',
-    visible: true,
-  },
-
-  {
-    name: 'Fractal Mountain',
-    image: '../../images/fractal-mountain.gif',
-    technologies: 'p5.js, JavaScript',
-    summary: 'A single triangle transforms into a fraction of mountain.',
-    description: '',
-    repository: 'https://github.com/michaelkolesidis/fractal-mountain',
-    deployment: 'https://fractal-mountain.vercel.app/',
     video: '',
     visible: true,
   },
@@ -246,7 +222,43 @@ const projectList = [
   },
 
   {
-    name: 'interwoven over.',
+    name: 'Perlin Landscape',
+    image: '../../images/perlin-landscape.gif',
+    technologies: 'p5.js, JavaScript',
+    summary: 'Landscape created dynamically using Perlin noise.',
+    description: '',
+    repository: 'https://github.com/michaelkolesidis/perlin-landscape',
+    deployment: 'https://perlin-landscape.vercel.app/',
+    video: '',
+    visible: false,
+  },
+
+  {
+    name: 'Particircle',
+    image: '../../images/particircle.gif',
+    technologies: 'p5.js, JavaScript',
+    summary: 'A circle of particles.',
+    description: '',
+    repository: 'https://github.com/michaelkolesidis/particircle',
+    deployment: 'https://particircle.vercel.app/',
+    video: '',
+    visible: false,
+  },
+
+  {
+    name: 'Fractal Mountain',
+    image: '../../images/fractal-mountain.gif',
+    technologies: 'p5.js, JavaScript',
+    summary: 'A single triangle transforms into a fraction of mountain.',
+    description: '',
+    repository: 'https://github.com/michaelkolesidis/fractal-mountain',
+    deployment: 'https://fractal-mountain.vercel.app/',
+    video: '',
+    visible: false,
+  },
+
+  {
+    name: 'Interwoven Over.',
     image: '../../images/circle-random-lines.gif',
     technologies: 'p5.js, JavaScript',
     summary: 'A circle created dynamically by random lines',
@@ -255,7 +267,7 @@ const projectList = [
       'https://github.com/michaelkolesidis/interwoven-oversemantization',
     deployment: 'https://interwoven-oversemantization.vercel.app/',
     video: '',
-    visible: true,
+    visible: false,
   },
 
   {
@@ -267,7 +279,7 @@ const projectList = [
     repository: 'https://github.com/michaelkolesidis/scribble-text',
     deployment: 'hhttps://scribble-text.vercel.app/',
     video: '',
-    visible: true,
+    visible: false,
   },
 
   {

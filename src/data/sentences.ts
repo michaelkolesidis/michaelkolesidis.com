@@ -1,25 +1,19 @@
 // https://michaelkolesidis.com
-// Copyright (c) 2024 Michael Kolesidis <michael.kolesidis@gmail.com>
+// Copyright (c) 2025 Michael Kolesidis <michael.kolesidis@gmail.com>
 // Licensed under the GNU Affero General Public License v3.0.
 // https://www.gnu.org/licenses/gpl-3.0.html
 
 // About section sentences
 export const sentencesAbout = [
-  `I am obsessed with visual details, interactivity, animations and 3D web development. Always passionate about crafting innovative, immersive experiences, helping brands share their stories and engage their audience.`,
+  `I am passionate about designing robust architectures and navigating through complex systems to ensure the scalability and long-term viability of projects.`,
 
-  `As a multidisciplinary new media artist, I work at the intersection of performativity and digitality, attempting to blend art with technology with varying degrees of success.`,
-
-  `Nowadays, I explore graphics programming and a multitude of new media technologies to create web art, audiovisual art and physical installations.`,
+  `I primarily work with Elixir, React, Next.js, Node.js, and TypeScript, along with various other frameworks and libraries, and I am highly adaptable to different technologies and situations.`,
 
   `I have lived, studied and worked in Greece, Spain (Barcelona) and the UK (Brighton).`,
 
   `I speak Greek, English, Spanish, and a bit of (actually hardly any nowadays) German.`,
 
-  'The first programming language I ever tampered with was Pascal, and the first I ever learnt was C.',
-
-  `Today, I mostly use three.js, OpenGL Shading Language, WebGL, JavaScript, React, TypeScript, and Blender.`,
-
-  `I always keep a rubber duck on my desk.`,
+  `I used to have a rubber duck on my desk, but now I've replaced it with a Maneki-neko  (a Japanese lucky cat figurine)!`,
 
   `I don't drink coffee or tea. (OK, I might drink tea a few times a year)`,
 ];
