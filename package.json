@@ -44,8 +44,5 @@
   "dependencies": {
     "dom-window-manager": "^1.0.3",
     "sass": "^1.77.8"
-  },
-  "volta": {
-    "node": "18.18.2"
   }
 }

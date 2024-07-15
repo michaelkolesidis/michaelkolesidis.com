@@ -5,6 +5,20 @@
 
 const projectList = [
   {
+    name: 'OKTO.DIRECT',
+    image: '../../images/okto-direct.png',
+    technologies:
+      'React, Redux, MUI, Styled Components, WebSocket, Spring Boot',
+    summary:
+      'Member of the core team that conceptualized, designed, and developed OKTO.DIRECT, the first and only retail payments gateway that unlocks with one integration multiple digital payment methods for users to deposit and withdraw in real-time.',
+    description: '',
+    repository: '',
+    deployment: 'https://www.oktopayments.com/okto-direct/',
+    video: '',
+    visible: true,
+  },
+
+  {
     name: 'JSS-01',
     image: '../../images/jss-01.png?v=2',
     technologies: 'Tone.js, WEBMIDI.js, TypeScript, JavaScript, Sass',
@@ -46,15 +60,13 @@ const projectList = [
   },
 
   {
-    name: 'OKTO.DIRECT',
-    image: '../../images/okto-direct.png',
-    technologies:
-      'React, Redux, MUI, Styled Components, WebSocket, Spring Boot',
-    summary:
-      'Member of the core team that conceptualized, designed, and developed OKTO.DIRECT, the first and only retail payments gateway that unlocks with one integration multiple digital payment methods for users to deposit and withdraw in real-time.',
+    name: 'Timberland 3D Customizer',
+    image: '../../images/timberland-3d-customizer.png',
+    technologies: 'Three.js, React, TypeScript, React Three Fiber, Zustand',
+    summary: 'Customize and preview Timberland boots in 3D',
     description: '',
-    repository: '',
-    deployment: 'https://www.oktopayments.com/okto-direct/',
+    repository: 'https://github.com/michaelkolesidis/timberland-3d-customizer',
+    deployment: 'https://timberland-3d-customizer.vercel.app/',
     video: '',
     visible: true,
   },
@@ -67,18 +79,6 @@ const projectList = [
     description: '',
     repository: 'https://github.com/michaelkolesidis/scratch-bonanza',
     deployment: 'https://scratch-bonanza.vercel.app/',
-    video: '',
-    visible: true,
-  },
-
-  {
-    name: 'Beachy Beachy Ball',
-    image: '../../images/beachy-beachy-ball.png',
-    technologies: 'Three.js, React, React Three Fiber, Rapier, Zustand',
-    summary: 'A beach ball adventure! Can you make it to the end?',
-    description: '',
-    repository: 'https://github.com/michaelkolesidis/beachy-beachy-ball',
-    deployment: 'https://beachybeachyball.vercel.app/',
     video: '',
     visible: true,
   },
@@ -105,6 +105,31 @@ const projectList = [
     description: '',
     repository: 'https://github.com/michaelkolesidis/cherry-charm',
     deployment: 'https://cherry-charm.vercel.app/',
+    video: '',
+    visible: true,
+  },
+
+  {
+    name: 'Beachy Beachy Ball',
+    image: '../../images/beachy-beachy-ball.png',
+    technologies: 'Three.js, React, React Three Fiber, Rapier, Zustand',
+    summary: 'A beach ball adventure! Can you make it to the end?',
+    description: '',
+    repository: 'https://github.com/michaelkolesidis/beachy-beachy-ball',
+    deployment: 'https://beachybeachyball.vercel.app/',
+    video: '',
+    visible: true,
+  },
+
+  {
+    name: "Chompy O'Croc",
+    image: '../../images/chompy-o-croc.png',
+    technologies: 'Phaser, TypeScript ',
+    summary:
+      'Run and jump around platforms, collecting stars, chomping on delicious food, and avoiding bombs!',
+    description: '',
+    repository: 'https://github.com/michaelkolesidis/chompy-o-croc',
+    deployment: 'https://chompy-o-croc.vercel.app/',
     video: '',
     visible: true,
   },
