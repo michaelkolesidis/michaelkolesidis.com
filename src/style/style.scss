@@ -1,5 +1,5 @@
 // https://michaelkolesidis.com
-// Copyright (c) 2025 Michael Kolesidis <michael.kolesidis@gmail.com>
+// Copyright (c) Michael Kolesidis <michael.kolesidis@gmail.com>
 // Licensed under the GNU Affero General Public License v3.0.
 // https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -43,7 +43,10 @@ $stripes: linear-gradient(
   #90a8ed 90%,
   #90a8ed 100%
 );
+
+/* sizes */
 $stripes-size: 141.42px 141.42px;
+$title-size: 104px;
 
 /* lines */
 $line: 0.3em;
@@ -89,7 +92,7 @@ a {
   left: 0.5rem;
   z-index: 1;
   mix-blend-mode: difference;
-  font-size: 104px;
+  font-size: $title-size;
   white-space: nowrap;
   color: $white;
   pointer-events: none;
@@ -100,7 +103,7 @@ a {
   color: $white;
   transition: transform 2s ease;
   pointer-events: all;
-  font-size: 104px;
+  font-size: $title-size;
 }
 
 #name:hover #title-letter {
