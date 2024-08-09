@@ -60,7 +60,7 @@ const projectList = [
   },
 
   {
-    name: 'Timberland 3D Customizer',
+    name: 'Timberland 3D',
     image: '../../images/timberland-3d-customizer.png',
     technologies: 'Three.js, React, TypeScript, React Three Fiber, Zustand',
     summary: 'Customize and preview Timberland boots in 3D',
@@ -147,7 +147,7 @@ const projectList = [
   },
 
   {
-    name: 'Rock Paper Scissors 3D',
+    name: 'Rock Paper 3D',
     image: '../../images/rock-paper-scissors-3d.png',
     technologies: 'Three.js, React, React Three Fiber, Zustand',
     summary: 'The classic game of rock, paper, scissors in 3D!',
