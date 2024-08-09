@@ -62,6 +62,12 @@ export const populateProjects = (
     summary.innerHTML = `${project.summary}`;
     proj.appendChild(summary);
 
+    // Seperator
+    const seperator = document.createElement('div');
+    seperator.classList.add('seperator');
+    seperator.innerHTML = `MADE WITH`;
+    proj.appendChild(seperator);
+
     // Technologies
     const techonolgies = document.createElement('p');
     techonolgies.classList.add('technologies');

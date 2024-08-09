@@ -19,6 +19,7 @@
 /* colors */
 $white: #fff;
 $black: #0a0a0a;
+$transparent: rgba(0, 0, 0, 0);
 
 /* stripes */
 $stripes: linear-gradient(
@@ -379,7 +380,7 @@ canvas {
 }
 
 .project-card {
-  padding: 3rem;
+  padding: 1.5rem;
   border: $line solid $black;
   margin: -3px;
   display: block;
@@ -403,7 +404,7 @@ canvas {
   box-shadow: 8px 8px $black;
   border: $line solid $black;
   max-width: fit-content;
-  height: 20.5rem;
+  height: 19.5rem;
   transition: transform 0.6s ease-in-out, filter 0.6s ease-in-out,
     box-shadow 0.7s ease-in-out;
   -webkit-filter: grayscale(100%);
@@ -419,7 +420,7 @@ canvas {
 }
 
 .project-image {
-  height: 20rem;
+  height: 19rem;
   opacity: 0.8;
   transition: opacity 0.9s ease-in-out;
 }
@@ -459,14 +460,29 @@ canvas {
   pointer-events: none;
 }
 
+.project-summary {
+  padding: 1em 1em 1em 0;
+}
+
+.seperator {
+  font-weight: 900;
+  text-shadow: 0.5px 0.5px 0 black;
+  font-size: 0.85rem;
+}
+
 .technologies {
-  margin: 0.6rem 0;
+  margin: 0 0 1.5rem 0;
+  font-size: 0.75rem;
+  background-color: black;
+  color: white;
+  max-width: fit-content;
+  padding: 0.4em 0.6em;
+  transform: rotate(-3deg);
 }
 
 .repo-link {
-  margin-top: rem;
   font-weight: 600;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
 }
 
 .repo-link:hover::after {
@@ -531,7 +547,7 @@ canvas {
 #github::after,
 #linkedin::after,
 #twitter::after {
-  color: rgba(0, 0, 0, 0);
+  color: $transparent;
   content: '......';
   background-image: url('../assets/duck_white.svg');
   background-size: 40px 50px;
@@ -542,7 +558,7 @@ canvas {
 #github:hover::after,
 #linkedin:hover::after,
 #twitter:hover::after {
-  color: rgba(0, 0, 0, 0);
+  color: $transparent;
   content: '......';
   background-image: url('../assets/duck.svg');
   background-size: 40px 50px;
@@ -896,7 +912,7 @@ $duration: 104s;
   height: 11px;
   width: 11px;
   display: inline-block;
-  background-color: rgba(0, 0, 0, 0);
+  background-color: $transparent;
   border-radius: 100%;
   position: relative;
   margin-right: 15px;
@@ -920,7 +936,7 @@ $duration: 104s;
   width: 100%;
   overflow: hidden;
   height: 1.6rem;
-  background-color: rgba(0, 0, 0, 0);
+  background-color: $transparent;
   padding-left: 100%;
   box-sizing: content-box;
 
