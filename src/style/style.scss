@@ -466,15 +466,15 @@ canvas {
 
 .seperator {
   font-weight: 900;
-  text-shadow: 0.5px 0.5px 0 black;
+  text-shadow: 0.5px 0.5px 0 $black;
   font-size: 0.85rem;
 }
 
 .technologies {
   margin: 0 0 1.5rem 0;
   font-size: 0.75rem;
-  background-color: black;
-  color: white;
+  background-color: $black;
+  color: $white;
   max-width: fit-content;
   padding: 0.4em 0.6em;
   transform: rotate(-3deg);
