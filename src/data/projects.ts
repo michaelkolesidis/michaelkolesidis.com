@@ -5,20 +5,6 @@
 
 const projectList = [
   {
-    name: 'OKTO.DIRECT',
-    image: '../../images/okto-direct.png',
-    technologies:
-      'React, Redux, MUI, Styled Components, WebSocket, Spring Boot',
-    summary:
-      'Member of the core team that conceptualized, designed, and developed OKTO.DIRECT, the first and only retail payments gateway that unlocks with one integration multiple digital payment methods for users to deposit and withdraw in real-time.',
-    description: '',
-    repository: '',
-    deployment: 'https://www.oktopayments.com/okto-direct/',
-    video: '',
-    visible: true,
-  },
-
-  {
     name: 'JSS-01',
     image: '../../images/jss-01.png?v=2',
     technologies: 'Tone.js, WEBMIDI.js, TypeScript, JavaScript, Sass',
@@ -43,6 +29,20 @@ const projectList = [
     description: ``,
     repository: 'https://github.com/michaelkolesidis/uncanny-canyon',
     deployment: 'https://online.adaf.gr/video/uncanny-canyon/',
+    video: '',
+    visible: true,
+  },
+
+  {
+    name: 'OKTO.DIRECT',
+    image: '../../images/okto-direct.png',
+    technologies:
+      'React, Redux, MUI, Styled Components, WebSocket, Spring Boot',
+    summary:
+      'Member of the core team that conceptualized, designed, and developed OKTO.DIRECT, the first and only retail payments gateway that unlocks with one integration multiple digital payment methods for users to deposit and withdraw in real-time.',
+    description: '',
+    repository: '',
+    deployment: 'https://www.oktopayments.com/okto-direct/',
     video: '',
     visible: true,
   },

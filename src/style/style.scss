@@ -51,6 +51,7 @@ $title-size: 104px;
 
 /* lines */
 $line: 0.3em;
+$line-around: 0.4em;
 
 /**********  GENERAL **********/
 * {
@@ -67,7 +68,7 @@ $line: 0.3em;
 
 body,
 html {
-  border-right: calc($line / 2) solid $black;
+  border-right: calc($line-around / 2) solid $black;
   background-color: $white;
   cursor: url('../assets/cursors/windows95-cursor.png'), auto;
   scroll-behavior: smooth;
@@ -94,9 +95,17 @@ a {
   z-index: 1;
   mix-blend-mode: difference;
   font-size: $title-size;
-  white-space: nowrap;
   color: $white;
+  white-space: nowrap;
   pointer-events: none;
+  text-align: justify;
+  font-weight: 600;
+}
+
+#name::after {
+  content: '';
+  display: inline-block;
+  width: 100%;
 }
 
 #title-letter {
@@ -113,7 +122,7 @@ a {
 
 #top-gap {
   height: 140px;
-  border-bottom: $line solid $black;
+  border-bottom: $line-around solid $black;
 }
 
 #box {
@@ -181,7 +190,6 @@ a {
   box-sizing: border-box;
   padding: 10px;
   text-align: center;
-  font-family: sans-serif;
   z-index: 2;
   height: 100%;
   display: flex;
@@ -223,12 +231,43 @@ a {
     animation: rotate 1s linear infinite;
     animation-play-state: paused;
     animation-delay: calc(var(--scroll) * -1s);
+    width: 170px;
   }
 }
 
 @keyframes rotate {
   to {
     transform: rotate(35800deg);
+  }
+}
+
+#smiley {
+  position: absolute;
+  top: 29px;
+  right: 110px;
+  z-index: 2;
+
+  img {
+    position: absolute;
+    width: 90px;
+    cursor: url('../assets/cursors/windows95-pointer.png'), auto;
+    transition: transform 0.25s ease-in-out;
+  }
+}
+
+#smiley.move-left img {
+  animation: moveAndRotate 2s ease-in-out;
+}
+
+@keyframes moveAndRotate {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  50% {
+    transform: translate(-600px, 0) rotate(720deg);
+  }
+  100% {
+    transform: translate(0, 0) rotate(1440deg);
   }
 }
 
@@ -249,6 +288,8 @@ a {
     font-size: clamp(0.8rem, 2.5vh, 2rem);
     text-align: start;
     line-height: 1.1;
+    font-weight: 600;
+    letter-spacing: 0.025em;
     overflow: hidden;
   }
 
@@ -272,6 +313,7 @@ a {
       pointer-events: auto;
       cursor: url('../assets/cursors/windows95-question.png'), auto;
       transform: rotate(20deg);
+      font-weight: 600;
     }
 
     #duck-modal {
@@ -279,15 +321,20 @@ a {
       display: none;
       right: 15em;
       width: 25em;
+      height: 11.5em;
       color: $black;
-      border: $line solid $black;
+      border: $line-around solid $black;
       border-top: 35px solid $black;
       background-color: $white;
       padding: 1em;
+      font-weight: 600;
       cursor: url('../assets/cursors/windows95-grab.png'), auto;
 
       a {
         font-weight: 600;
+        font-size: 1.1em;
+        letter-spacing: 1.4em;
+        text-wrap: nowrap;
         cursor: url('../assets/cursors/windows95-pointer.png'), auto;
       }
 
@@ -331,14 +378,14 @@ a {
 }
 
 canvas {
-  border-bottom: $line solid $black;
+  border-bottom: $line-around solid $black;
 }
 
 /********** SECTION TITLES **********/
 .wavy {
-  font-size: 72px;
-  margin: 0em 0 1em 1em;
-  padding-top: 1em;
+  font-size: 80px;
+  margin: 0em 0 0.5em 0.5em;
+  padding-top: 0.5em;
   max-width: -moz-fit-content;
   max-width: fit-content;
   font-weight: 600;
@@ -381,7 +428,7 @@ canvas {
 
 .project-card {
   padding: 1.5rem;
-  border: $line solid $black;
+  border: $line-around solid $black;
   margin: -3px;
   display: block;
   animation: fadeInFromNone 0.5s ease-out;
@@ -462,6 +509,8 @@ canvas {
 
 .project-summary {
   padding: 1em 1em 1em 0;
+  font-weight: 600;
+  text-align: justify;
 }
 
 .seperator {
@@ -502,28 +551,34 @@ canvas {
 #more {
   padding: 20px;
   text-align: center;
-  border-bottom: calc($line / 1.5) solid $black;
-  border-top: calc($line / 1.5) solid $black;
+  border-bottom: calc($line-around / 1.5) solid $black;
+  border-top: calc($line-around / 1.5) solid $black;
   margin-top: -1.5px;
   font-size: 1.5em;
+  font-weight: 600;
+}
+
+#exclamation {
+  animation: flash 0.3s infinite;
+  font-weight: 600;
 }
 
 /********** CONTACT **********/
 #contact {
   padding-top: 1em;
   padding-bottom: 7em;
-  border-bottom: $line solid $black;
+  border-bottom: $line-around solid $black;
 
   p {
     font-size: 1.7rem;
     line-height: 1.1;
     margin-left: 5em;
     margin-bottom: 1em;
+    font-weight: 600;
   }
 
   a {
     font-size: 1.9rem;
-    font-weight: 600;
   }
 }
 
@@ -533,7 +588,7 @@ canvas {
   display: inline-block;
   transform: rotate(10deg);
   transform-origin: top right;
-  border: calc($line / 2) solid $black;
+  border: calc($line-around / 2) solid $black;
   padding: 0.5em;
 
   span {
@@ -541,6 +596,8 @@ canvas {
     transform: rotate(-11deg);
     width: 20px;
     text-align: center;
+    font-weight: 600;
+    text-shadow: $black 0.5px 0.5px 0.5px;
   }
 }
 
@@ -597,7 +654,7 @@ canvas {
   p {
     padding: 3rem;
     margin-bottom: 1em;
-    border: calc($line / 2) solid $black;
+    border: calc($line-around / 2) solid $black;
     max-width: 60ch;
     min-width: 12ch;
     box-shadow: 8px 8px $black;
@@ -614,8 +671,8 @@ canvas {
 
 /********** AWARDS **********/
 #awards {
-  border-top: $line solid $black;
-  border-bottom: $line solid $black;
+  border-top: $line-around solid $black;
+  border-bottom: $line-around solid $black;
   padding: 1em 0;
   background-color: $black;
   color: $white;
@@ -716,8 +773,13 @@ canvas {
     transform: translateZ(0) !important;
   }
 
-  a:hover {
+  a {
+    font-weight: 600;
     text-decoration: underline;
+  }
+
+  a:hover {
+    text-decoration: line-through;
   }
 }
 
@@ -729,7 +791,7 @@ footer {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  border-top: $line solid $black;
+  border-top: $line-around solid $black;
 
   #copyright {
     font-size: 1.7rem;
@@ -831,7 +893,8 @@ footer {
 }
 
 /********** TOP BUTTON **********/
-#top-button {
+#top-button,
+#sound-button {
   pointer-events: none;
   opacity: 0;
   position: fixed;
@@ -855,6 +918,18 @@ footer {
 
 #top-button:hover {
   transform: rotate(360deg);
+}
+
+/********** SOUND BUTTON **********/
+#sound-button {
+  background: $white;
+  left: 2vw;
+  pointer-events: all;
+  padding: 0.25em;
+  width: 5.5vw;
+  height: 5.5vw;
+  line-height: 5.5vw;
+  transition: all 1s;
 }
 
 /********** SCROLLBAR **********/
@@ -967,6 +1042,7 @@ $duration: 104s;
     &__item {
       display: inline-block;
       font-size: 0.875rem;
+      text-shadow: $black 0.5px 0.5px 0.5px;
     }
   }
 }
@@ -1019,6 +1095,10 @@ $duration: 104s;
     span {
       font-size: 9vw;
     }
+  }
+
+  #smiley {
+    display: none;
   }
 
   /********** MOBILE: Intro **********/
@@ -1271,6 +1351,10 @@ $duration: 104s;
 
 /********** MEDIA QUERRIES: Grid **********/
 @media only screen and (min-width: 700px) and (max-width: 820px) {
+  #sound {
+    display: none;
+  }
+
   #handwriting {
     display: none;
   }

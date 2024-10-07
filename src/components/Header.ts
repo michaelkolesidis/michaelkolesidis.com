@@ -12,10 +12,22 @@ export default function header() {
 
   if (header != null) {
     // Name
-    const name = document.createElement('h1');
+    const name = document.createElement('div');
     name.setAttribute('id', 'name');
     name.innerHTML = /* html */ `MICHAEL K<span id="title-letter">O</span>LESIDIS`;
     header.appendChild(name);
+
+    const smiley = document.createElement('div');
+    smiley.setAttribute('id', 'smiley');
+    smiley.innerHTML = `<img alt=Smiley" src="../../assets/smiley.svg" />`;
+    header.appendChild(smiley);
+
+    smiley.addEventListener('click', () => {
+      smiley.classList.add('move-left');
+      setTimeout(() => {
+        smiley.classList.remove('move-left');
+      }, 2000);
+    });
 
     // Top gap
     const topGap = document.createElement('div');

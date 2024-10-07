@@ -51,7 +51,7 @@ export default function projects() {
     // Info box
     const more = document.createElement('p');
     more.setAttribute('id', 'more');
-    more.innerHTML = `The list gets updated regularly with new projects. Check back again soon!`;
+    more.innerHTML = `The list gets updated regularly with new projects. Check back again soon<span id="exclamation">!</span>`;
     projects.appendChild(more);
   }
 }

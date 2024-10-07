@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg enable-background="new 0 0 220 220" version="1.1" viewBox="0 0 220 220" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+  <style type="text/css">
+    .a, .b {
+      fill: none;
+      stroke-linejoin: round;
+      stroke-linecap: round;
+      stroke-width: 15;
+    }
+    .a { stroke: black; }
+    .b { stroke: lightgrey; }
+    .x { display: none; }
+  </style>
+  <g transform="translate(100 110) scale(1.4)" display="none" fill="none" stroke="green" stroke-width="12">
+    <circle r="30"/>
+    <circle r="50"/>
+    <circle r="70"/>
+    <path d="m-40 0 260 130v-260z"/>
+  </g>
+
+  <path class="a" d="m100 30-50 50h-25v60h25l50 50z"/>
+  <path class="x" d="m125.8 142.9c9.8-7.7 16.2-19.5 16.2-32.9s-6.4-25.2-16.2-32.9"/>
+  <path class="x" d="m152.5 156.2c10.8-12.3 17.5-28.5 17.5-46.2s-6.7-33.9-17.5-46.2"/>
+  <path class="x" d="m178.1 169c12.4-16.4 19.9-36.8 19.9-59s-7.5-42.6-19.9-59"/>
+  <path class="a" d="m125.8 75 70 70m0-70-70 70"/>
+</svg>

@@ -5,11 +5,11 @@
 
 // About section sentences
 export const sentencesAbout = [
-  `I am passionate about designing robust architectures and navigating through complex systems to ensure the scalability and long-term viability of projects.`,
+  `I primarily work with React, Next.js, and TypeScript, along with various other frameworks and libraries, and I am highly adaptable to different technologies and situations.`,
 
-  `I primarily work with Elixir, React, Next.js, Node.js, and TypeScript, along with various other frameworks and libraries, and I am highly adaptable to different technologies and situations.`,
+  `I am passionate about filmmaking, cinematography, and video production, as well as an avid cinephile.`,
 
-  `I have lived, studied and worked in Greece, Spain (Barcelona) and the UK (Brighton).`,
+  `I have lived, studied and worked in Greece, Spain (Barcelona) and the UK (Brighton). I studied Filmmaking, as well as Drama, Theatre, and Performance in the UK. Before that, I had studied Economics in Greece.`,
 
   `I speak Greek, English, Spanish, and a bit of (actually hardly any nowadays) German.`,
 

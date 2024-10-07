@@ -47,3 +47,24 @@ export const getScrollDistanceCss = () => {
 export const disableRightClick = () => {
   document.addEventListener('contextmenu', (e) => e.preventDefault());
 };
+
+// Animate page title
+export const animateTitle = () => {
+  document.addEventListener('DOMContentLoaded', () => {
+    const message = 'MICHAEL KOLESIDIS 🙂';
+    const speed = 200;
+    let position = 0;
+    let forward = true;
+
+    const updateTitle = () => {
+      document.title = forward
+        ? message.substring(0, ++position)
+        : message.substring(message.length - --position);
+
+      if (position === message.length || position === 0) forward = !forward;
+
+      setTimeout(updateTitle, speed);
+    };
+    updateTitle();
+  });
+};

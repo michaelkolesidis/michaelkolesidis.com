@@ -24,6 +24,7 @@ export default function body() {
       </main>
       <footer id="footer"></footer>
       <div id="top-button"></div>
+      <div id="sound-button"></div>
       <div id="overlay"></div>
 `;
 }

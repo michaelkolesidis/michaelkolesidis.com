@@ -10,7 +10,7 @@ export default function footer() {
     // Copyright
     const copyright = document.createElement('p');
     copyright.setAttribute('id', 'copyright');
-    copyright.innerHTML = `© 2024 Michael Kolesidis`;
+    copyright.innerHTML = `© 2025 Michael Kolesidis`;
     footer.appendChild(copyright);
 
     if (window.innerWidth < 700) {
@@ -38,7 +38,7 @@ export default function footer() {
     if (duckImage !== null) {
       duckImage.addEventListener('click', function (event) {
         event.stopPropagation();
-        const squeak = new Audio('../../assets/squeak.mp3');
+        const squeak = new Audio('../../assets/sounds/squeak.mp3');
         squeak.playbackRate = 1.35;
         squeak.play();
       });

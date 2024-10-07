@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="./screenshots/desktop_1.png" width="700px">
+  <img src="./screenshots/desktop_0.png" width="700px">
   <h4>My portfolio website / playground</h4>
   <a href='https://ko-fi.com/michaelkolesidis' target='_blank'><img src='https://cdn.ko-fi.com/cdn/kofi1.png' style='border:0px;height:45px;' alt='Buy Me a Coffee at ko-fi.com' /></a>
 </div>
@@ -114,7 +114,11 @@ This library is imported using CDN:
 
 ## Screenshots
 
+**Note:** The following screenshots are outdated and reflect older versions of the website!
+
 ### Desktop
+
+<img src="./screenshots/desktop_1.png" width="800px">
 
 <img src="./screenshots/desktop_2b.png" width="800px">
 
@@ -164,7 +168,7 @@ This library is imported using CDN:
 
 <img src="./screenshots/minimal.png" width="800px">
 
-For the minimal version of my website I tried to replicate the styling of my printed CV!
+For the minimal version of my website I tried to replicate the styling of my printed CV.
 
 ### Full Page
 
