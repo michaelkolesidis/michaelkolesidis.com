@@ -216,7 +216,8 @@ a {
   }
 }
 
-#new {
+#new,
+#welcome {
   position: absolute;
   top: 165px;
   left: 25px;
@@ -235,9 +236,19 @@ a {
   }
 }
 
+#welcome {
+  top: 45%;
+  left: 12.5px;
+
+  img {
+    width: 200px;
+    animation: none;
+  }
+}
+
 @keyframes rotate {
   to {
-    transform: rotate(35800deg);
+    transform: rotate(3580deg);
   }
 }
 
@@ -892,22 +903,17 @@ footer {
   }
 }
 
-/********** TOP BUTTON **********/
+/********** TOP BUTTON & SOUND BUTTON **********/
 #top-button,
 #sound-button {
-  pointer-events: none;
   opacity: 0;
   position: fixed;
-  bottom: 2.5vw;
-  right: 2vw;
+  bottom: 1.5vh;
   z-index: 99;
   font-weight: 600;
   cursor: url('../assets/cursors/windows95-pointer.png'), auto;
   border-radius: 50%;
   font-size: 2vw;
-  line-height: 6.5vw;
-  height: 6.5vw;
-  width: 6.5vw;
   text-align: center;
   background: $black;
   color: $white;
@@ -916,19 +922,24 @@ footer {
   background-clip: padding-box;
 }
 
+#top-button {
+  height: 6.5vw;
+  width: 6.5vw;
+  line-height: 6.5vw;
+  right: 1vw;
+  pointer-events: none;
+}
+
 #top-button:hover {
   transform: rotate(360deg);
 }
 
-/********** SOUND BUTTON **********/
 #sound-button {
   background: $white;
-  left: 2vw;
-  pointer-events: all;
+  left: 1vw;
   padding: 0.25em;
   width: 5.5vw;
   height: 5.5vw;
-  line-height: 5.5vw;
   transition: all 1s;
 }
 

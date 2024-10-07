@@ -69,7 +69,7 @@ export default function header() {
     // Sticker
     const sticker = document.createElement('div');
     sticker.setAttribute('id', 'new');
-    sticker.innerHTML = `<img alt="New! sticker" width="150px" src="../../assets/new.svg" />`;
+    sticker.innerHTML = `<img alt="New! sticker" src="../../assets/new.svg" />`;
     header.appendChild(sticker);
 
     dragElement(sticker);
@@ -77,6 +77,19 @@ export default function header() {
 
     sticker.addEventListener('mousedown', () => {
       sticker.style.zIndex = windowManager.moveOnTop();
+    });
+
+    // Welcome
+    const welcome = document.createElement('div');
+    welcome.setAttribute('id', 'welcome');
+    welcome.innerHTML = `<img alt="Welcome sign" src="../../assets/welcome.gif" />`;
+    header.appendChild(welcome);
+
+    dragElement(welcome);
+    welcome.style.zIndex = windowManager.base;
+
+    welcome.addEventListener('mousedown', () => {
+      welcome.style.zIndex = windowManager.moveOnTop();
     });
   }
 }

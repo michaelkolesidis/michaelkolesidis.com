@@ -51,7 +51,7 @@ export const disableRightClick = () => {
 // Animate page title
 export const animateTitle = () => {
   document.addEventListener('DOMContentLoaded', () => {
-    const message = 'MICHAEL KOLESIDIS 🙂';
+    const message = 'MICHAEL KOLESIDIS';
     const speed = 200;
     let position = 0;
     let forward = true;
