@@ -53,6 +53,11 @@ $title-size: 104px;
 $line: 0.3em;
 $line-around: 0.4em;
 
+/* shadows */
+$stroke-shadow: 3px 3px 0px black, -3px 3px 0px black, 3px -3px 0px black,
+  -3px -3px 0px black, 3px 0px 0px black, -3px 0px 0px black, 0px 3px 0px black,
+  0px -3px 0px black;
+
 /**********  GENERAL **********/
 * {
   margin: 0;
@@ -136,6 +141,7 @@ a {
   padding: 15px;
   overflow: hidden;
   cursor: url('../assets/cursors/windows95-grab.png'), auto;
+  box-shadow: 8px 8px $black;
 
   button {
     position: absolute;
@@ -197,10 +203,6 @@ a {
   justify-content: center;
 }
 
-#box {
-  box-shadow: 8px 8px $black;
-}
-
 #box .content p {
   font-weight: 600;
   color: $white;
@@ -217,12 +219,18 @@ a {
 }
 
 #new,
-#welcome {
+#welcome,
+#chinese,
+#rays,
+#flowers {
   position: absolute;
-  top: 165px;
-  left: 25px;
-  transform: rotateZ(-10deg);
   cursor: url('../assets/cursors/windows95-grab.png'), auto;
+}
+
+#new {
+  top: 155px;
+  left: 105px;
+  transform: rotateZ(-10deg);
   padding: 0;
   border-radius: 100px;
 
@@ -237,12 +245,60 @@ a {
 }
 
 #welcome {
-  top: 165px;
-  left: 195px;
+  top: 410px;
+  transform: rotateZ(-10deg);
+  border-radius: 100px;
+  right: 10px;
+  max-width: fit-content;
 
   img {
     width: 200px;
-    animation: none;
+    border-radius: 100px;
+  }
+}
+
+#rays {
+  top: 385px;
+  right: 30px;
+  border-radius: 200px;
+  max-width: fit-content;
+  max-height: 150px;
+  background-color: $white;
+  animation: rotate 180s infinite;
+
+  img {
+    border-radius: 200px;
+    width: 150px;
+  }
+}
+
+#chinese {
+  left: 10px;
+  top: 150px;
+  font-weight: 600;
+  font-size: 2.5em;
+  color: $black;
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  transition: text-shadow 0.25s;
+  background-color: white;
+  padding: 0.25em 0.05em 0.25em 0em;
+  border: 6px solid $black;
+  text-align: center;
+  box-shadow: 8px 8px $black;
+}
+
+#flowers {
+  width: 150px;
+  height: 150px;
+  left: 115px;
+  top: 352px;
+
+  img {
+    width: 150px;
+    height: 150px;
+    border: 6px solid $black;
+    box-shadow: 8px 8px $black;
   }
 }
 
@@ -301,7 +357,8 @@ a {
     line-height: 1.1;
     font-weight: 600;
     letter-spacing: 0.025em;
-    overflow: hidden;
+    color: $white;
+    text-shadow: $stroke-shadow;
   }
 
   #right {
@@ -325,6 +382,8 @@ a {
       cursor: url('../assets/cursors/windows95-question.png'), auto;
       transform: rotate(20deg);
       font-weight: 600;
+      text-shadow: none;
+      color: $black;
     }
 
     #duck-modal {
@@ -340,6 +399,7 @@ a {
       padding: 1em;
       font-weight: 600;
       cursor: url('../assets/cursors/windows95-grab.png'), auto;
+      box-shadow: 10px 10px $black;
 
       a {
         font-weight: 600;
@@ -370,6 +430,13 @@ a {
         text-align: center;
         transition: transform 0.15s linear;
         cursor: url('../assets/cursors/windows95-pointer.png'), auto;
+      }
+
+      #duck-modal-title {
+        position: absolute;
+        color: $white;
+        top: -28px;
+        left: 3px;
       }
     }
   }
@@ -954,7 +1021,7 @@ body::-webkit-scrollbar-thumb {
   outline: 1px solid $black;
 }
 
-/********** UNDER CONSTRUCTION TICKER **********/
+/********** TICKER **********/
 $duration: 104s;
 
 @-webkit-keyframes ticker {
@@ -1059,6 +1126,12 @@ $duration: 104s;
 }
 
 /********** MEDIA QUERRIES **********/
+@media only screen and (max-width: 820px) {
+  #smiley {
+    display: none;
+  }
+}
+
 /********** MOBILE **********/
 @media only screen and (max-width: 700px) {
   html,
@@ -1108,6 +1181,8 @@ $duration: 104s;
     }
   }
 
+  #chinese,
+  #welcome,
   #smiley {
     display: none;
   }
@@ -1123,6 +1198,11 @@ $duration: 104s;
     height: 95vh;
     border-bottom: $line solid $black;
     background-size: 100%;
+
+    p {
+      text-shadow: none;
+      color: $black;
+    }
 
     #left {
       display: none;

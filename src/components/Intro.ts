@@ -44,6 +44,12 @@ export default function intro() {
     >
       LEARN MORE
     </a>`;
+
+    const duckDebuggingModalTitle = document.createElement('div');
+    duckDebuggingModalTitle.setAttribute('id', 'duck-modal-title');
+    duckDebuggingModalTitle.innerHTML = `Rubber Duck Debugging`;
+    duckDebuggingModal.appendChild(duckDebuggingModalTitle);
+
     handwriting.appendChild(duckDebuggingModal);
 
     // Modal X Button
@@ -65,7 +71,7 @@ export default function intro() {
     // What Am I (paragraph on the right)
     const whatami = document.createElement('p');
     whatami.setAttribute('id', 'right');
-    whatami.innerHTML = /* html */ `I am a Visual Storyteller; a Web Developer and Designer. I strive to create narratives that reflect of our shared human experiences, exploring themes of connection and understanding, playing my part in shaping the future of the web.`;
+    whatami.innerHTML = /* html */ `I am a Visual Storyteller, a Web Developer and Designer. I strive to create narratives that reflect of our shared human experiences, exploring themes of connection and understanding, playing my part in shaping the future of the web.`;
     intro.appendChild(whatami);
 
     // Scroll prompt

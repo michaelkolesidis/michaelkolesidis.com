@@ -79,6 +79,57 @@ export default function header() {
       sticker.style.zIndex = windowManager.moveOnTop();
     });
 
+    // Chinese
+    const chinese = document.createElement('p');
+    chinese.setAttribute('id', 'chinese');
+    chinese.innerHTML = `欢迎来到我的网站`;
+    header.appendChild(chinese);
+
+    dragElement(chinese);
+    chinese.style.zIndex = windowManager.base;
+
+    chinese.addEventListener('mousedown', () => {
+      chinese.style.zIndex = windowManager.moveOnTop();
+    });
+
+    // Rays
+    const rays = document.createElement('p');
+    rays.setAttribute('id', 'rays');
+    rays.innerHTML = `<img alt="Ray disc" src="../../assets/rays.svg" />`;
+    header.appendChild(rays);
+
+    dragElement(rays);
+    rays.style.zIndex = windowManager.base;
+
+    rays.addEventListener('mousedown', () => {
+      rays.style.zIndex = windowManager.moveOnTop();
+    });
+
+    // Flowers
+    const flowers = document.createElement('p');
+    flowers.setAttribute('id', 'flowers');
+    flowers.innerHTML = `<img alt="Flowers" src="../../assets/flowers.gif" />`;
+    header.appendChild(flowers);
+
+    let flowerNumber = 1;
+
+    setInterval(() => {
+      if (flowerNumber === 1) {
+        flowers.innerHTML = `<img alt="Welcome sign" src="../../assets/flowers2.gif" />`;
+        flowerNumber = 2;
+      } else if (flowerNumber === 2) {
+        flowers.innerHTML = `<img alt="Welcome sign" src="../../assets/flowers.gif" />`;
+        flowerNumber = 1;
+      }
+    }, 4000);
+
+    dragElement(flowers);
+    flowers.style.zIndex = windowManager.base;
+
+    flowers.addEventListener('mousedown', () => {
+      flowers.style.zIndex = windowManager.moveOnTop();
+    });
+
     // Welcome
     const welcome = document.createElement('div');
     welcome.setAttribute('id', 'welcome');
