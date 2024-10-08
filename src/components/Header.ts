@@ -47,7 +47,7 @@ export default function header() {
     content.innerHTML = /* html */ `
         <p>DESIGN AWARD</p>
         <p>One Page Love</p>
-        <p>February 2024</p>`;
+        <p>February 2023</p>`;
     messageBox.appendChild(content);
 
     dragElement(messageBox);
@@ -108,17 +108,27 @@ export default function header() {
     // Flowers
     const flowers = document.createElement('p');
     flowers.setAttribute('id', 'flowers');
-    flowers.innerHTML = `<img alt="Flowers" src="../../assets/flowers.gif" />`;
+    flowers.innerHTML = `<img id="flowers-1" alt="Flowers" src="../../assets/flowers1.gif" />
+    <img alt="Welcome sign" id="flowers-2" src="../../assets/flowers2.gif" />`;
     header.appendChild(flowers);
+
+    const flowers1 = document.getElementById('flowers-1');
+    const flowers2 = document.getElementById('flowers-2');
 
     let flowerNumber = 1;
 
     setInterval(() => {
       if (flowerNumber === 1) {
-        flowers.innerHTML = `<img alt="Welcome sign" src="../../assets/flowers2.gif" />`;
+        if (flowers1 && flowers2) {
+          flowers1.style.opacity = '0';
+          flowers2.style.opacity = '1';
+        }
         flowerNumber = 2;
       } else if (flowerNumber === 2) {
-        flowers.innerHTML = `<img alt="Welcome sign" src="../../assets/flowers.gif" />`;
+        if (flowers1 && flowers2) {
+          flowers2.style.opacity = '0';
+          flowers1.style.opacity = '1';
+        }
         flowerNumber = 1;
       }
     }, 4000);

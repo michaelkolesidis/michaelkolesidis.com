@@ -1,6 +1,6 @@
 <div align="center">
-  <img src="./screenshots/desktop_0.png" width="700px">
-  <h4>My portfolio website / playground</h4>
+  <img src="./screenshots/desktop_1b.png" width="700px">
+  <h4>My award-winning playground / portfolio website</h4>
   <a href='https://ko-fi.com/michaelkolesidis' target='_blank'><img src='https://cdn.ko-fi.com/cdn/kofi1.png' style='border:0px;height:45px;' alt='Buy Me a Coffee at ko-fi.com' /></a>
 </div>
 
@@ -23,7 +23,7 @@ This is my portfolio website / playground.
 
 It is a love letter to the internet of the old, the era of the naïve (web) art, the era of the romantic amateur, the era of Geocities. I first experienced the magical world of the world wide web in the 90's and I hope I managed to capture a glimpse of that time. I was also influenced by print publication design and by 90's MTV on-screen graphics.
 
-I call this style **frivobrutalism**, placing emphasis on the blend of the playfulness frivolity of the design/experience with the brutalist aesthetic.
+I call this style **frivobrutalism**, placing emphasis on the blend of the playful frivolity of the design/experience with the brutalist aesthetic.
 
 Visitors can move things around and customize the colors of all colorful elements: clicking on an element generates a new color, from the predefined color palette. The rubber duck responds to mouse movement.
 
@@ -63,32 +63,43 @@ Awarded by Best CSS, a web platform that discovers, recognizes and promotes the 
 
 ## Dependencies
 
-The project uses the following npm packages:
+This project uses the following npm packages:
 
 - [Vite](https://www.npmjs.com/package/vite)
 - [TypeScript](https://www.npmjs.com/package/typescript)
 - [Sass](https://www.npmjs.com/package/sass)
+- [Howler.js](https://www.npmjs.com/package/howler)
 - [DOM Window Manager](https://www.npmjs.com/package/dom-window-manager) (created by me)
 
-This library is imported using CDN:
+The following library is imported via CDN:
 
 - [p5.js](https://cdnjs.com/libraries/p5.js)
 
 ## Software used
 
+### Development
+
 - Visual Studio Code
 - Google Chrome
+- Blender
+- Adobe Illustrator
+- Adobe Photoshop
+- Inkscape
+- Krita
+- Ableton Live
+- Audacity
+- GNOME Screenshot
+- KDE Spectacle
+- Windows Terminal
+- GNOME Terminal
+
+### Testing
+
 - Chromium
 - Mozilla Firefox
 - GNOME Web
 - Microsoft Edge
-- Blender
-- Inkscape
-- Krita
-- Audacity
-- GNOME Screenshot
-- KDE Spectacle
-- GNOME Terminal
+- Safari
 
 ## Design
 
@@ -108,17 +119,23 @@ This library is imported using CDN:
 
 ## Videos
 
+**Note:** Note: The following videos are outdated and reflect slightly different, older versions of the website:
+
 - [Desktop](https://www.youtube.com/watch?v=wfPkxVaBJ-o)
 
 - [Mobile](https://www.youtube.com/watch?v=dSMdDVQPQdw)
 
 ## Screenshots
 
-**Note:** The following screenshots are outdated and reflect older versions of the website!
-
 ### Desktop
 
-<img src="./screenshots/desktop_1.png" width="800px">
+<img src="./screenshots/desktop_9b.png" width="800px">
+
+<img src="./screenshots/desktop_10b.png" width="800px">
+
+<img src="./screenshots/desktop_11b.png" width="800px">
+
+**Note:** Note: The following screenshots are outdated and reflect slightly different, older versions of the website:
 
 <img src="./screenshots/desktop_2b.png" width="800px">
 
@@ -133,12 +150,6 @@ This library is imported using CDN:
 <img src="./screenshots/desktop_7.png" width="800px">
 
 <img src="./screenshots/desktop_8.png" width="800px">
-
-<img src="./screenshots/desktop_9.png" width="800px">
-
-<img src="./screenshots/desktop_10.png" width="800px">
-
-<img src="./screenshots/desktop_11.png" width="800px">
 
 <img src="./screenshots/desktop_12.png" width="800px">
 
@@ -177,11 +188,11 @@ For the minimal version of my website I tried to replicate the styling of my pri
 
 ## Acknowledgements
 
-A huge thanks to everyone (from friends and colleagues to the anonymous people of the internet) who supported me and provided me with valuable feedback throughout the development process.
+A huge thanks to everyone who supported me, from friends and colleagues to anonymous internet users, providing valuable feedback throughout the development process.
 
 ## 💖 Support the Project
 
-Thank you so much for your interest in my project! If you want to go a step further and support my work, buy me a coffee:
+Thank you for your interest in my project! If you'd like to go further and support my work, you can buy me a coffee:
 
 <a href='https://ko-fi.com/michaelkolesidis' target='_blank'><img src='https://cdn.ko-fi.com/cdn/kofi1.png' style='border:0px;height:45px;' alt='Buy Me a Coffee at ko-fi.com' /></a>
 

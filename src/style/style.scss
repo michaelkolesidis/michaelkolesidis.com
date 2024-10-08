@@ -229,7 +229,7 @@ a {
 
 #new {
   top: 155px;
-  left: 105px;
+  left: 110px;
   transform: rotateZ(-10deg);
   padding: 0;
   border-radius: 100px;
@@ -240,7 +240,7 @@ a {
     animation: rotate 1s linear infinite;
     animation-play-state: paused;
     animation-delay: calc(var(--scroll) * -1s);
-    width: 170px;
+    width: 190px;
   }
 }
 
@@ -276,7 +276,7 @@ a {
   left: 10px;
   top: 150px;
   font-weight: 600;
-  font-size: 2.5em;
+  font-size: 2.75em;
   color: $black;
   writing-mode: vertical-rl;
   text-orientation: upright;
@@ -291,12 +291,15 @@ a {
 #flowers {
   width: 150px;
   height: 150px;
-  left: 115px;
-  top: 352px;
+  left: 120px;
+  top: 360px;
 
   img {
-    width: 150px;
-    height: 150px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 175px;
+    height: 175px;
     border: 6px solid $black;
     box-shadow: 8px 8px $black;
   }
@@ -1022,7 +1025,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 /********** TICKER **********/
-$duration: 104s;
+$duration: 250s;
 
 @-webkit-keyframes ticker {
   0% {
