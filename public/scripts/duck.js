@@ -1,7 +1,6 @@
 if (window.innerWidth > 700) {
   const duck = (sketch) => {
     let duck;
-    let duckColor;
     let backgroundColor;
 
     // Variables to smoothly transition between mouse control and auto-rotation
@@ -33,7 +32,6 @@ if (window.innerWidth > 700) {
       sketch.noStroke();
       sketch.ambientLight(100, 100, 100);
       sketch.directionalLight(255, 255, 255, 0, 0, -1);
-      sketch.ambientMaterial(duckColor);
 
       let isMouseInBounds =
         sketch.mouseX > 0 &&
@@ -68,13 +66,12 @@ if (window.innerWidth > 700) {
 
     sketch.colorize = () => {
       let chosenColor = generateColor();
-      duckColor = chosenColor;
       backgroundColor = chosenColor;
     };
 
     sketch.recolorize = () => {
       let isNew = false;
-      let oldColor = duckColor;
+      let oldColor = backgroundColor;
       let chosenColor;
 
       while (isNew === false) {
@@ -89,7 +86,6 @@ if (window.innerWidth > 700) {
         }
       }
 
-      duckColor = chosenColor;
       backgroundColor = chosenColor;
     };
 
