@@ -362,6 +362,7 @@ a {
     letter-spacing: 0.025em;
     color: $white;
     text-shadow: $stroke-shadow;
+    z-index: 1;
   }
 
   #right {
@@ -377,7 +378,7 @@ a {
 
     p {
       font-family: 'Caveat', sans-serif;
-      font-size: clamp(1em, 4vh, 2.5em);
+      font-size: clamp(1em, 4vh, 2.25em);
       text-align: center;
       white-space: nowrap;
       line-height: 1em;
@@ -527,6 +528,12 @@ canvas {
   }
 }
 
+.project-image-container,
+.project-image {
+  position: relative;
+  z-index: 3;
+}
+
 .project-image-container {
   margin-bottom: -1em;
   box-shadow: 8px 8px $black;
@@ -549,12 +556,7 @@ canvas {
 
 .project-image {
   height: 19rem;
-  opacity: 0.8;
   transition: opacity 0.9s ease-in-out;
-}
-
-.project-image:hover {
-  opacity: 1;
 }
 
 .project-title {
@@ -1025,28 +1027,28 @@ body::-webkit-scrollbar-thumb {
 }
 
 /********** TICKER **********/
-$duration: 250s;
+$duration: 500s;
 
 @-webkit-keyframes ticker {
   0% {
-    -webkit-transform: translate3d(0, 0, 0);
+    -webkit-transform: translate3d(0, 0, 0); // Start from the top left corner
     transform: translate3d(0, 0, 0);
     visibility: visible;
   }
   100% {
-    -webkit-transform: translate3d(-100%, 0, 0);
+    -webkit-transform: translate3d(-100%, 0, 0); // Move to the left by 100%
     transform: translate3d(-100%, 0, 0);
   }
 }
 
 @keyframes ticker {
   0% {
-    -webkit-transform: translate3d(0, 0, 0);
+    -webkit-transform: translate3d(0, 0, 0); // Start from the top left corner
     transform: translate3d(0, 0, 0);
     visibility: visible;
   }
   100% {
-    -webkit-transform: translate3d(-100%, 0, 0);
+    -webkit-transform: translate3d(-100%, 0, 0); // Move to the left by 100%
     transform: translate3d(-100%, 0, 0);
   }
 }
@@ -1088,12 +1090,13 @@ $duration: 250s;
   font-weight: 600;
   position: fixed;
   top: 0;
+  left: 0; // Ensure the ticker starts from the left
   z-index: 3;
   width: 100%;
   overflow: hidden;
   height: 1.6rem;
   background-color: $transparent;
-  padding-left: 100%;
+  padding-left: 0; // Remove padding so it starts immediately
   box-sizing: content-box;
 
   .ticker:hover {
@@ -1123,7 +1126,7 @@ $duration: 250s;
     &__item {
       display: inline-block;
       font-size: 0.875rem;
-      text-shadow: $black 0.5px 0.5px 0.5px;
+      text-shadow: $black 0.5px 0.5px 0.5px, $white 1.5px 1.5px 1.5px;
     }
   }
 }
@@ -1187,14 +1190,6 @@ $duration: 250s;
     span {
       font-size: 9vw;
     }
-  }
-
-  #chinese,
-  #welcome,
-  #smiley,
-  #flowers,
-  #rays {
-    display: none;
   }
 
   /********** MOBILE: Intro **********/

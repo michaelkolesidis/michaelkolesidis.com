@@ -31,11 +31,18 @@ export default function ticker() {
   message4.innerHTML = `TRY MOVING THINGS AROUND`;
   ticker.appendChild(message4);
 
+  // Message 5
+  const message5 = document.createElement('div');
+  message5.classList.add('ticker__item');
+  message5.innerHTML = `TRUST ME, I AM AN ARTIST`;
+  ticker.appendChild(message5);
+
   // Populate
-  for (let i = 0; i < 10; i++) {
+  for (let i = 0; i < 20; i++) {
     ticker.appendChild(message1.cloneNode(true));
     ticker.appendChild(message2.cloneNode(true));
     ticker.appendChild(message3.cloneNode(true));
     ticker.appendChild(message4.cloneNode(true));
+    ticker.appendChild(message5.cloneNode(true));
   }
 }

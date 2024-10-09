@@ -5,7 +5,7 @@
 
 import { WindowManager, dragElement } from 'dom-window-manager';
 
-let windowManager = new WindowManager();
+let windowManager = new WindowManager(3);
 
 export default function intro() {
   const intro = document.getElementById('intro');
