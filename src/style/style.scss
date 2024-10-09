@@ -1130,7 +1130,12 @@ $duration: 250s;
 
 /********** MEDIA QUERRIES **********/
 @media only screen and (max-width: 820px) {
-  #smiley {
+  #smiley,
+  #chinese,
+  #welcome,
+  #smiley,
+  #flowers,
+  #rays {
     display: none;
   }
 }
@@ -1186,7 +1191,9 @@ $duration: 250s;
 
   #chinese,
   #welcome,
-  #smiley {
+  #smiley,
+  #flowers,
+  #rays {
     display: none;
   }
 
@@ -1241,6 +1248,7 @@ $duration: 250s;
   }
 
   #new {
+    left: 20px;
     img {
       animation: none;
     }
