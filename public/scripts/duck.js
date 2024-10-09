@@ -60,8 +60,8 @@ if (window.innerWidth > 700) {
       }
 
       // Smooth interpolation between current and target camera positions
-      camX = sketch.lerp(camX, targetCamX, 0.05);
-      camY = sketch.lerp(camY, targetCamY, 0.05);
+      camX = sketch.lerp(camX, targetCamX, 0.035);
+      camY = sketch.lerp(camY, targetCamY, 0.035);
 
       sketch.camera(camX, camY, 250);
 
