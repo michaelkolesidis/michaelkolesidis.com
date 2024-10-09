@@ -116,13 +116,13 @@ a {
 #title-letter {
   display: inline-block;
   color: $white;
-  transition: transform 2s ease;
+  transition: transform 50s ease;
   pointer-events: all;
   font-size: $title-size;
 }
 
 #name:hover #title-letter {
-  transform: rotateY(180deg);
+  transform: rotateY(3600deg);
 }
 
 #top-gap {
@@ -1165,7 +1165,8 @@ $duration: 500s;
   #new {
     img {
       position: absolute;
-      top: -80px;
+      top: -70px;
+      left: -5px;
       width: 100px;
     }
   }
@@ -1173,6 +1174,7 @@ $duration: 500s;
   #box {
     position: absolute;
     top: 80px;
+    right: 30px;
     width: 120px;
     height: 120px;
     padding: 10px;
