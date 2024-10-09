@@ -17,9 +17,7 @@ if (window.innerWidth > 700) {
     sketch.setup = () => {
       cnv = sketch.createCanvas(
         window.innerWidth,
-        window.innerHeight > 1050
-          ? window.innerHeight - 140
-          : window.innerHeight - 30,
+        window.innerHeight - 140,
         sketch.WEBGL
       );
 
