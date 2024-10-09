@@ -514,6 +514,7 @@ canvas {
   margin: -3px;
   display: block;
   animation: fadeInFromNone 0.5s ease-out;
+  transition: background-color 0.25s ease;
 }
 
 @keyframes fadeInFromNone {
@@ -735,6 +736,7 @@ canvas {
   }
 
   p {
+    will-change: transform, box-shadow, background-color;
     padding: 3rem;
     margin-bottom: 1em;
     border: calc($line-around / 2) solid $black;
@@ -742,7 +744,7 @@ canvas {
     min-width: 12ch;
     box-shadow: 8px 8px $black;
     text-justify: inter-cluster;
-    transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+    transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out, background-color 0.25s ease;
   }
 
   p:hover {

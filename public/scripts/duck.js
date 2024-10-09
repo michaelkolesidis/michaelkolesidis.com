@@ -1,7 +1,9 @@
 if (window.innerWidth > 700) {
   const duck = (sketch) => {
     let duck;
-    let backgroundColor;
+    let backgroundColor; // Current background color
+    let targetBackgroundColor; // Target background color
+    let transitionSpeed = 0.23; // Speed of background color transition
 
     // Variables to smoothly transition between mouse control and auto-rotation
     let camX = 0;
@@ -22,11 +24,21 @@ if (window.innerWidth > 700) {
       );
 
       cnv.mouseClicked(sketch.recolorize);
-      sketch.colorize();
+      // Initialize both current and target background colors
+      let initialColor = generateColor();
+      backgroundColor = initialColor;
+      targetBackgroundColor = initialColor;
     };
 
     sketch.draw = () => {
+      // Smooth background color transition using lerpColor
+      backgroundColor = sketch.lerpColor(
+        backgroundColor,
+        targetBackgroundColor,
+        transitionSpeed
+      );
       sketch.background(backgroundColor);
+
       sketch.noStroke();
       sketch.ambientLight(100, 100, 100);
       sketch.directionalLight(255, 255, 255, 0, 0, -1);
@@ -62,14 +74,9 @@ if (window.innerWidth > 700) {
       sketch.model(duck);
     };
 
-    sketch.colorize = () => {
-      let chosenColor = generateColor();
-      backgroundColor = chosenColor;
-    };
-
     sketch.recolorize = () => {
       let isNew = false;
-      let oldColor = backgroundColor;
+      let oldColor = targetBackgroundColor;
       let chosenColor;
 
       while (isNew === false) {
@@ -84,7 +91,8 @@ if (window.innerWidth > 700) {
         }
       }
 
-      backgroundColor = chosenColor;
+      // Set the new target background color to transition to
+      targetBackgroundColor = chosenColor;
     };
 
     sketch.windowResized = () => {
@@ -93,11 +101,11 @@ if (window.innerWidth > 700) {
 
     generateColor = () => {
       const colors = [
-        sketch.color(255, 144, 232), // pink
-        sketch.color(255, 201, 0), // yellow
-        sketch.color(255, 112, 81), // orange
-        sketch.color(62, 207, 193), // green
-        sketch.color(144, 168, 237), // purple
+        sketch.color(255, 144, 232), // Pink
+        sketch.color(255, 201, 0), // Yellow
+        sketch.color(255, 112, 81), // Orange
+        sketch.color(62, 207, 193), // Green
+        sketch.color(144, 168, 237), // Purple
       ];
 
       const num = Math.floor(Math.random() * colors.length);
