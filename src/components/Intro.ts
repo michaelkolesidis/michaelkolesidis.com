@@ -27,7 +27,7 @@ export default function intro() {
     handwriting.appendChild(handwritingText);
     intro.appendChild(handwriting);
     handwritingText.addEventListener('click', () => {
-      duckDebuggingModal.style.display = 'block';
+      duckDebuggingModal.style.opacity = '100';
       duckDebuggingModal.style.pointerEvents = 'all';
     });
 
@@ -35,15 +35,9 @@ export default function intro() {
     const duckDebuggingModal = document.createElement('div');
     duckDebuggingModal.setAttribute('id', 'duck-modal');
     duckDebuggingModal.innerHTML = /* html */ `
-    When programmers try to find and resolve bugs, 
+    When programmers try to find bugs, 
     it helps to explain their code line-by-line to an inanimate object. 
-    This technique is known as rubber duck debugging.<br>
-    <a 
-      target="_blank" 
-      href="https://en.wikipedia.org/wiki/Rubber_duck_debugging"
-    >
-      LEARN MORE
-    </a>`;
+    This is known as rubber duck debugging.`;
 
     const duckDebuggingModalTitle = document.createElement('div');
     duckDebuggingModalTitle.setAttribute('id', 'duck-modal-title');
@@ -58,7 +52,12 @@ export default function intro() {
     removeButton.textContent = '✕';
     removeButton.addEventListener('click', () => {
       handwritingText.style.pointerEvents = 'none';
-      handwriting.removeChild(duckDebuggingModal);
+      duckDebuggingModal.style.opacity = '0';
+
+      setTimeout(() => {
+        duckDebuggingModal.style.display = 'none';
+        handwriting.removeChild(duckDebuggingModal);
+      }, 500);
     });
     duckDebuggingModal.appendChild(removeButton);
 

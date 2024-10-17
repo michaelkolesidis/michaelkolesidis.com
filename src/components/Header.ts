@@ -9,6 +9,7 @@ let windowManager = new WindowManager(3);
 
 export default function header() {
   const header = document.getElementById('header');
+  let contactModalAppended = true;
 
   if (header != null) {
     // Name
@@ -17,6 +18,7 @@ export default function header() {
     name.innerHTML = /* html */ `MICHAEL K<span id="title-letter">O</span>LESIDIS`;
     header.appendChild(name);
 
+    // Smiley
     const smiley = document.createElement('div');
     smiley.setAttribute('id', 'smiley');
     smiley.innerHTML = `<img alt=Smiley" src="../../assets/smiley.svg" />`;
@@ -27,16 +29,105 @@ export default function header() {
       setTimeout(() => {
         smiley.classList.remove('move-left');
       }, 2000);
+
+      if (!contactModalAppended) {
+        header.appendChild(contactModal);
+        contactModalAppended = true;
+      }
+
+      setTimeout(() => {
+        contactModal.style.opacity = '100';
+        contactModal.style.pointerEvents = 'all';
+      }, 0);
     });
+
+    // Contact modal
+    const contactModal = document.createElement('div');
+    contactModal.setAttribute('id', 'contact-modal');
+    contactModal.innerHTML = /* html */ `
+    <a 
+      target="_blank" 
+      href="https://www.imdb.com/name/nm9251920/"
+    >
+    IMDB
+    </a>
+    <a 
+    target="_blank" 
+    href="https://pro.imdb.com/name/nm9251920/"
+    >
+    IMDBPRO
+    </a>
+    <a 
+      target="_blank" 
+      href="https://www.linkedin.com/in/michaelkolesidis"
+    >
+    LINKEDIN
+    </a>
+    <a 
+      target="_blank" 
+      href="https://mastodon.social/@michaelkolesidis"
+    >
+    MASTODON
+    </a>
+    <a 
+      target="_blank" 
+      href="https://www.instagram.com/michaelkolesidis"
+    >
+    INSTA
+    </a>
+    <a
+      target="_blank" 
+      href="https://x.com/michael_kol_"
+    >
+    X/TWITTER
+    </a>
+    <a 
+      target="_blank" 
+      href="https://github.com/michaelkolesidis"
+    >
+    GITHUB
+    </a>
+    <a 
+      target="_blank" 
+      href="mailto:michael.kolesidis@gmail.com"
+    >
+    EMAIL
+    </a>
+    `;
+
+    const contactModalTitle = document.createElement('div');
+    contactModalTitle.setAttribute('id', 'duck-modal-title');
+    contactModalTitle.innerHTML = `Contact`;
+    contactModal.appendChild(contactModalTitle);
+
+    header.appendChild(contactModal);
+
+    dragElement(contactModal);
+    contactModal.style.zIndex = windowManager.base;
+    contactModal.addEventListener('mousedown', () => {
+      contactModal.style.zIndex = windowManager.moveOnTop();
+    });
+
+    // Remove button (contact modal)
+    const removeButtonModal = document.createElement('button');
+    removeButtonModal.classList.add('remove-button');
+    removeButtonModal.textContent = '✕';
+    removeButtonModal.addEventListener('click', () => {
+      contactModal.style.opacity = '0';
+
+      setTimeout(() => {
+        header.removeChild(contactModal);
+        contactModalAppended = false;
+      }, 500);
+    });
+    contactModal.appendChild(removeButtonModal);
 
     // Top gap
     const topGap = document.createElement('div');
     topGap.setAttribute('id', 'top-gap');
     topGap.innerHTML = `.`;
-    header.appendChild(topGap);
-
-    /* Styling */
     topGap.style.color = `white`;
+    header.appendChild(topGap);
 
     // Message Box
     const messageBox = document.createElement('div');
@@ -56,6 +147,7 @@ export default function header() {
       messageBox.style.zIndex = windowManager.moveOnTop();
     });
 
+    // Remove button (message box)
     const removeButton = document.createElement('button');
     removeButton.classList.add('remove-button');
     removeButton.textContent = '✕';

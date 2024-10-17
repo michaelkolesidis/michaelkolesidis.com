@@ -26,56 +26,49 @@ export default function contact() {
     email.innerHTML = `For inquiries please drop me a line at:<br>michael.kolesidis@gmail.com`;
     contact.appendChild(email);
 
-    // Links
-    contact.innerHTML += '<br>';
-
     // GitHub
     const github = document.createElement('a');
     github.setAttribute('id', 'github');
     github.innerHTML = /* html */ `
         <span>G</span>
-        <span>i</span>
-        <span>t</span>
+        <span>I</span>
+        <span>T</span>
         <span>H</span>
-        <span>u</span>
-        <span>b</span>
+        <span>U</span>
+        <span>B</span>
    `;
     github.href = 'https://github.com/michaelkolesidis';
     github.target = '_blank';
     contact.appendChild(github);
-
-    contact.innerHTML += '<br>';
 
     // LinkedIn
     const linkedin = document.createElement('a');
     linkedin.setAttribute('id', 'linkedin');
     linkedin.innerHTML = /* html */ `
         <span>L</span>
-        <span>i</span>
-        <span>n</span>
-        <span>k</span>
-        <span>e</span>
-        <span>d</span>
         <span>I</span>
-        <span>n</span>
+        <span>N</span>
+        <span>K</span>
+        <span>E</span>
+        <span>D</span>
+        <span>I</span>
+        <span>N</span>
   `;
     linkedin.href = 'https://www.linkedin.com/in/michaelkolesidis/';
     linkedin.target = '_blank';
     contact.appendChild(linkedin);
-
-    contact.innerHTML += '<br>';
 
     // Twitter
     const twitter = document.createElement('a');
     twitter.setAttribute('id', 'twitter');
     twitter.innerHTML = /* html */ `
         <span>T</span>
-        <span>w</span>
-        <span>i</span>
-        <span>t</span>
-        <span>t</span>
-        <span>e</span>
-        <span>r</span>
+        <span>W</span>
+        <span>I</span>
+        <span>T</span>
+        <span>T</span>
+        <span>E</span>
+        <span>R</span>
   `;
     twitter.href = 'https://twitter.com/michael_kol_';
     twitter.target = '_blank';

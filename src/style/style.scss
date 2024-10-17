@@ -8,7 +8,7 @@
   font-family: 'Beatrice';
   font-display: block;
   block-timeout: 0.3;
-  swap-timeout: 0;
+  swap-timeout: 0.1;
   src: url('../fonts/Beatrice-Regular.eot');
   src: url('../fonts/Beatrice-Regular.woff2') format('woff2'),
     url('../fonts/Beatrice-Regular.woff') format('woff'),
@@ -105,6 +105,9 @@ a {
   pointer-events: none;
   text-align: justify;
   font-weight: 600;
+  paint-order: stroke fill;
+  -webkit-text-stroke: 3px $white;
+  letter-spacing: 1px;
 }
 
 #name::after {
@@ -119,6 +122,8 @@ a {
   transition: transform 50s ease;
   pointer-events: all;
   font-size: $title-size;
+  paint-order: stroke fill;
+  -webkit-text-stroke: 3px $white;
 }
 
 #name:hover #title-letter {
@@ -370,93 +375,114 @@ a {
     min-width: 16ch;
     column-count: 2;
   }
+}
 
-  #handwriting {
-    position: relative;
-    top: -38.1vh;
-    right: clamp(-100em, max(-42vh, -41vw), 12em);
+#handwriting {
+  position: relative;
+  top: -38.1vh;
+  right: clamp(-100em, max(-42vh, -41vw), 12em);
 
-    p {
-      font-family: 'Caveat', sans-serif;
-      font-size: clamp(1em, 4vh, 2.25em);
-      text-align: center;
-      white-space: nowrap;
-      line-height: 1em;
-      pointer-events: auto;
-      cursor: url('../assets/cursors/windows95-question.png'), auto;
-      transform: rotate(20deg);
-      font-weight: 600;
-      text-shadow: none;
-      color: $black;
-    }
-
-    #duck-modal {
-      position: absolute;
-      display: none;
-      right: 15em;
-      width: 25em;
-      height: 11.5em;
-      color: $black;
-      border: $line-around solid $black;
-      border-top: 35px solid $black;
-      background-color: $white;
-      padding: 1em;
-      font-weight: 600;
-      cursor: url('../assets/cursors/windows95-grab.png'), auto;
-      box-shadow: 10px 10px $black;
-
-      a {
-        font-weight: 600;
-        font-size: 1.1em;
-        letter-spacing: 1.4em;
-        text-wrap: nowrap;
-        cursor: url('../assets/cursors/windows95-pointer.png'), auto;
-      }
-
-      a:hover {
-        text-decoration: line-through;
-      }
-
-      button {
-        position: absolute;
-        top: -35px;
-        right: -2px;
-        padding-top: -0.3rem;
-        border: 0;
-        background-color: $black;
-        color: $white;
-        cursor: pointer;
-        height: 30px;
-        width: 37px;
-        font-weight: 900;
-        font-size: 1.4rem;
-        line-height: 40px;
-        text-align: center;
-        transition: transform 0.15s linear;
-        cursor: url('../assets/cursors/windows95-pointer.png'), auto;
-      }
-
-      #duck-modal-title {
-        position: absolute;
-        color: $white;
-        top: -28px;
-        left: 3px;
-      }
-    }
-  }
-
-  #scroll-prompt {
-    position: absolute;
-    bottom: -1em;
-    left: -2em;
+  p {
+    font-family: 'Caveat', sans-serif;
+    font-size: clamp(1em, 4vh, 2.25em);
+    text-align: center;
     white-space: nowrap;
+    line-height: 1em;
+    pointer-events: auto;
+    cursor: url('../assets/cursors/windows95-question.png'), auto;
+    transform: rotate(20deg);
     font-weight: 600;
+    text-shadow: none;
+    paint-order: stroke fill;
+    -webkit-text-stroke: 1px $black;
+    color: $black;
+  }
+}
+
+#duck-modal {
+  width: 22em;
+  height: 170px;
+  right: 15em;
+  paint-order: stroke fill;
+  -webkit-text-stroke: 1px $black;
+}
+
+#duck-modal,
+#contact-modal {
+  pointer-events: none;
+  position: absolute;
+  opacity: 0;
+  color: $black;
+  border: $line-around solid $black;
+  border-top: 35px solid $black;
+  background-color: $white;
+  padding: 1em;
+  cursor: url('../assets/cursors/windows95-grab.png'), auto;
+  box-shadow: 10px 10px $black;
+  transition: opacity 0.35s;
+
+  button {
+    position: absolute;
+    top: -35px;
+    right: -2px;
+    padding-top: -0.3rem;
+    border: 0;
     background-color: $black;
     color: $white;
-    padding: 0.1em;
-    font-size: 2em;
-    transform: rotate(3deg);
+    cursor: pointer;
+    height: 30px;
+    width: 37px;
+    font-weight: 900;
+    font-size: 1.4rem;
+    line-height: 40px;
+    text-align: center;
+    transition: transform 0.15s linear;
+    cursor: url('../assets/cursors/windows95-pointer.png'), auto;
   }
+
+  #duck-modal-title {
+    position: absolute;
+    color: $white;
+    top: -28px;
+    left: 3px;
+  }
+}
+
+#contact-modal {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  right: 250px;
+  top: 160px;
+  width: 16em;
+  height: 175px;
+  text-shadow: 1px 1px 1px $black;
+  paint-order: stroke fill;
+  -webkit-text-stroke: 1px $black;
+
+  a {
+    font-size: 1.1em;
+    letter-spacing: normal;
+    text-wrap: nowrap;
+    max-width: fit-content;
+    cursor: url('../assets/cursors/windows95-pointer.png'), auto;
+  }
+
+  a:hover {
+    text-decoration: line-through;
+  }
+}
+
+#scroll-prompt {
+  position: absolute;
+  bottom: -1em;
+  left: -2em;
+  white-space: nowrap;
+  font-weight: 600;
+  background-color: $black;
+  color: $white;
+  padding: 0.1em;
+  font-size: 2em;
+  transform: rotate(3deg);
 }
 
 canvas {
@@ -470,7 +496,7 @@ canvas {
   padding-top: 0.5em;
   max-width: -moz-fit-content;
   max-width: fit-content;
-  font-weight: 600;
+  -webkit-text-stroke: 6px $black;
 }
 
 .wavy span {
@@ -650,19 +676,20 @@ canvas {
 /********** CONTACT **********/
 #contact {
   padding-top: 1em;
-  padding-bottom: 7em;
+  padding-bottom: 6em;
   border-bottom: $line-around solid $black;
-
+  display: flex;
+  flex-direction: column;
   p {
     font-size: 1.7rem;
     line-height: 1.1;
     margin-left: 5em;
-    margin-bottom: 1em;
+    margin-bottom: 3em;
     font-weight: 600;
   }
 
   a {
-    font-size: 1.9rem;
+    font-size: 2rem;
   }
 }
 
@@ -670,18 +697,13 @@ canvas {
 #linkedin,
 #twitter {
   display: inline-block;
-  transform: rotate(10deg);
-  transform-origin: top right;
-  border: calc($line-around / 2) solid $black;
   padding: 0.5em;
+  margin-left: 5em;
 
   span {
-    display: inline-block;
-    transform: rotate(-11deg);
-    width: 20px;
-    text-align: center;
-    font-weight: 600;
-    text-shadow: $black 0.5px 0.5px 0.5px;
+    paint-order: stroke fill;
+    -webkit-text-stroke: 2px $black;
+    letter-spacing: 1px;
   }
 }
 
@@ -706,18 +728,7 @@ canvas {
   height: 40px;
   width: 50px;
   background-repeat: no-repeat;
-}
-
-#github {
-  margin-left: 26em;
-}
-
-#linkedin {
-  margin-left: 15em;
-}
-
-#twitter {
-  margin-left: 5em;
+  scale: 2;
 }
 
 /********** ABOUT **********/
@@ -744,7 +755,8 @@ canvas {
     min-width: 12ch;
     box-shadow: 8px 8px $black;
     text-justify: inter-cluster;
-    transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out, background-color 0.25s ease;
+    transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out,
+      background-color 0.25s ease;
   }
 
   p:hover {
@@ -1100,6 +1112,7 @@ $duration: 500s;
   background-color: $transparent;
   padding-left: 0; // Remove padding so it starts immediately
   box-sizing: content-box;
+  mix-blend-mode: difference;
 
   .ticker:hover {
     -webkit-animation-play-state: paused;
@@ -1126,9 +1139,12 @@ $duration: 500s;
     animation-duration: $duration;
 
     &__item {
+      color: $white;
       display: inline-block;
       font-size: 0.875rem;
-      text-shadow: $black 0.5px 0.5px 0.5px, $white 1.5px 1.5px 1.5px;
+      paint-order: stroke fill;
+      -webkit-text-stroke: 0.2px $white;
+      letter-spacing: 1.5px;
     }
   }
 }
