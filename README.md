@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="./screenshots/desktop_1b.png" width="700px">
+  <img src="./screenshots/desktop_1c.png" width="700px">
   <h4>My award-winning playground / portfolio website</h4>
   <a href='https://ko-fi.com/michaelkolesidis' target='_blank'><img src='https://cdn.ko-fi.com/cdn/kofi1.png' style='border:0px;height:45px;' alt='Buy Me a Coffee at ko-fi.com' /></a>
 </div>
@@ -21,7 +21,7 @@
 
 This is my portfolio website / playground.
 
-It is a love letter to the internet of the old, the era of the naïve (web) art, the era of the romantic amateur, the era of Geocities. I first experienced the magical world of the world wide web in the 90's and I hope I managed to capture a glimpse of that time. I was also influenced by print publication design and by 90's MTV on-screen graphics.
+It is yet another love letter to the Internet of the old<, the era of naïve (web) art, the era of the romantic amateur, the era of Geocities. I first encountered the magical world of the world wide web in the 90's and I hope I have captured a glimpse of that time. My design is also influenced by print publication layouts and the bold graphics of 90s MTV.
 
 I call this style **frivobrutalism**, placing emphasis on the blend of the playful frivolity of the design/experience with the brutalist aesthetic.
 
@@ -119,7 +119,7 @@ The following library is imported via CDN:
 
 ## Videos
 
-**Note:** Note: The following videos are outdated and reflect slightly different, older versions of the website:
+**Note:** Note: The following screenshots are outdated and reflect older versions of the website:
 
 - [Desktop](https://www.youtube.com/watch?v=wfPkxVaBJ-o)
 
@@ -129,13 +129,13 @@ The following library is imported via CDN:
 
 ### Desktop
 
+**Note:** Note: The following screenshots are outdated and reflect older versions of the website:
+
 <img src="./screenshots/desktop_9b.png" width="800px">
 
 <img src="./screenshots/desktop_10b.png" width="800px">
 
 <img src="./screenshots/desktop_11b.png" width="800px">
-
-**Note:** Note: The following screenshots are outdated and reflect slightly different, older versions of the website:
 
 <img src="./screenshots/desktop_2b.png" width="800px">
 
@@ -182,6 +182,8 @@ The following library is imported via CDN:
 For the minimal version of my website I tried to replicate the styling of my printed CV.
 
 ### Full Page
+
+**Note:** Note: The following screenshots are outdated and reflect older versions of the website:
 
 - [Desktop](./screenshots/desktop_fullpage.png)
 - [Mobile](./screenshots/mobile_fullpage.png)

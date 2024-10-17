@@ -1,8 +1,3 @@
-// https://michaelkolesidis.com
-// Copyright (c) Michael Kolesidis <michael.kolesidis@gmail.com>
-// Licensed under the GNU Affero General Public License v3.0.
-// https://www.gnu.org/licenses/gpl-3.0.html
-
 export default function contact() {
   const contact = document.getElementById('contact');
 
@@ -26,52 +21,66 @@ export default function contact() {
     email.innerHTML = `For inquiries please drop me a line at:<br>michael.kolesidis@gmail.com`;
     contact.appendChild(email);
 
-    // GitHub
-    const github = document.createElement('a');
-    github.setAttribute('id', 'github');
-    github.innerHTML = /* html */ `
-        <span>G</span>
-        <span>I</span>
-        <span>T</span>
-        <span>H</span>
-        <span>U</span>
-        <span>B</span>
-   `;
-    github.href = 'https://github.com/michaelkolesidis';
-    github.target = '_blank';
-    contact.appendChild(github);
+    // Socials
+    const socials = document.createElement('div');
+    socials.setAttribute('id', 'socials');
+
+    // IMDb
+    const imdb = document.createElement('a');
+    imdb.classList.add('social');
+    imdb.innerHTML = /* html */ `<span>IMDB</span>`;
+    imdb.href = 'https://www.imdb.com/name/nm9251920/';
+    imdb.target = '_blank';
+    socials.appendChild(imdb);
+
+    // IMDbPro
+    const imdbPro = document.createElement('a');
+    imdbPro.classList.add('social');
+    imdbPro.innerHTML = /* html */ `<span>IMDBPRO</span>`;
+    imdbPro.href = 'https://pro.imdb.com/name/nm9251920/';
+    imdbPro.target = '_blank';
+    socials.appendChild(imdbPro);
 
     // LinkedIn
     const linkedin = document.createElement('a');
-    linkedin.setAttribute('id', 'linkedin');
-    linkedin.innerHTML = /* html */ `
-        <span>L</span>
-        <span>I</span>
-        <span>N</span>
-        <span>K</span>
-        <span>E</span>
-        <span>D</span>
-        <span>I</span>
-        <span>N</span>
-  `;
+    linkedin.classList.add('social');
+    linkedin.innerHTML = /* html */ `<span>LINKEDIN</span>`;
     linkedin.href = 'https://www.linkedin.com/in/michaelkolesidis/';
     linkedin.target = '_blank';
-    contact.appendChild(linkedin);
+    socials.appendChild(linkedin);
 
-    // Twitter
+    // Mastodon
+    const mastodon = document.createElement('a');
+    mastodon.classList.add('social');
+    mastodon.innerHTML = /* html */ `<span>MASTODON</span>`;
+    mastodon.href = 'https://mastodon.social/@michaelkolesidis';
+    mastodon.target = '_blank';
+    socials.appendChild(mastodon);
+
+    // Instagram
+    const instagram = document.createElement('a');
+    instagram.classList.add('social');
+    instagram.innerHTML = /* html */ `<span>INSTAGRAM</span>`;
+    instagram.href = 'https://www.instagram.com/michaelkolesidis';
+    instagram.target = '_blank';
+    socials.appendChild(instagram);
+
+    // X/Twitter
     const twitter = document.createElement('a');
-    twitter.setAttribute('id', 'twitter');
-    twitter.innerHTML = /* html */ `
-        <span>T</span>
-        <span>W</span>
-        <span>I</span>
-        <span>T</span>
-        <span>T</span>
-        <span>E</span>
-        <span>R</span>
-  `;
+    twitter.classList.add('social');
+    twitter.innerHTML = /* html */ `<span>X/TWITTER</span>`;
     twitter.href = 'https://twitter.com/michael_kol_';
     twitter.target = '_blank';
-    contact.appendChild(twitter);
+    socials.appendChild(twitter);
+
+    // GitHub
+    const github = document.createElement('a');
+    github.classList.add('social');
+    github.innerHTML = /* html */ `<span>GITHUB</span>`;
+    github.href = 'https://github.com/michaelkolesidis';
+    github.target = '_blank';
+    socials.appendChild(github);
+
+    contact.appendChild(socials);
   }
 }

@@ -1,8 +1,3 @@
-// https://michaelkolesidis.com
-// Copyright (c) Michael Kolesidis <michael.kolesidis@gmail.com>
-// Licensed under the GNU Affero General Public License v3.0.
-// https://www.gnu.org/licenses/gpl-3.0.html
-
 import { generateNewColor } from '../utils/functions.js';
 import { colors } from '../data/colors.js';
 import { awardList } from '../data/awards.js';
@@ -13,6 +8,7 @@ export default function awards() {
   if (awards != null) {
     // Contact Title
     const awardsTitle = document.createElement('div');
+    awardsTitle.setAttribute('id', 'awards-title');
     awardsTitle.classList.add('wavy');
     awardsTitle.innerHTML = /* html */ `   
        <span style="--i:1">C</span>

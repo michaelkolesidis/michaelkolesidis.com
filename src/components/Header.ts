@@ -1,8 +1,3 @@
-// https://michaelkolesidis.com
-// Copyright (c) Michael Kolesidis <michael.kolesidis@gmail.com>
-// Licensed under the GNU Affero General Public License v3.0.
-// https://www.gnu.org/licenses/gpl-3.0.html
-
 import { WindowManager, dragElement } from 'dom-window-manager';
 
 let windowManager = new WindowManager(3);
@@ -48,6 +43,7 @@ export default function header() {
     <a 
       target="_blank" 
       href="https://www.imdb.com/name/nm9251920/"
+      class="left"      
     >
     IMDB
     </a>
@@ -60,6 +56,7 @@ export default function header() {
     <a 
       target="_blank" 
       href="https://www.linkedin.com/in/michaelkolesidis"
+      class="left"
     >
     LINKEDIN
     </a>
@@ -72,6 +69,7 @@ export default function header() {
     <a 
       target="_blank" 
       href="https://www.instagram.com/michaelkolesidis"
+      class="left"
     >
     INSTA
     </a>
@@ -84,6 +82,7 @@ export default function header() {
     <a 
       target="_blank" 
       href="https://github.com/michaelkolesidis"
+      class="left"
     >
     GITHUB
     </a>
