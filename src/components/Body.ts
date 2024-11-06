@@ -23,3 +23,5 @@ export default function body() {
       <div id="overlay"></div>
 `;
 }
+
+// <div class="overlay"></div>

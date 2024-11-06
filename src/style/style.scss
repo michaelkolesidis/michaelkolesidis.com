@@ -68,6 +68,62 @@ $stroke-shadow: 3px 3px 0px black, -3px 3px 0px black, 3px -3px 0px black,
   user-select: none;
 }
 
+// .overlay {
+//   position: absolute;
+//   width: 100vw;
+//   height: 100vh;
+//   z-index: 999;
+//   pointer-events: none;
+// }
+
+// .overlay:after{
+//   content:"";
+//   background-image:url("https://upload.wikimedia.org/wikipedia/commons/7/76/1k_Dissolve_Noise_Texture.png");
+//   height: 300%;
+//   width: 300%;
+//   position: fixed;
+//   opacity:0.1;
+//    animation: animateGrain 8s steps(10) infinite;
+// }
+
+@keyframes animateGrain {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+  10% {
+    transform: translate(-5%, -10%);
+  }
+  20% {
+    transform: translate(-15%, -20%);
+  }
+  30% {
+    transform: translate(-5%, -10%);
+  }
+  40% {
+    transform: translate(-15%, -20%);
+  }
+
+  50% {
+    transform: translate(-5%, -10%);
+  }
+  60% {
+    transform: translate(-15%, -20%);
+  }
+  70% {
+    transform: translate(-5%, -10%);
+  }
+  80% {
+    transform: translate(-15%, -20%);
+  }
+  90% {
+    transform: translate(-5%, -10%);
+  }
+  100% {
+    transform: translate(-15%, -20%);
+  }
+}
+
 body,
 html {
   border-right: calc($line-around / 2) solid $black;
@@ -286,6 +342,7 @@ a {
   border: 6px solid $black;
   text-align: center;
   box-shadow: 8px 8px $black;
+  white-space: nowrap;
 }
 
 #flowers {
