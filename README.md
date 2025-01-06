@@ -196,7 +196,7 @@ A huge thanks to everyone who supported me, from friends and colleagues to anony
 
 Thank you for your interest in my project! If you'd like to go further and support my work, you can buy me a coffee:
 
-<a href='https://ko-fi.com/michaelkolesidis' target='_blank'><img src='https://cdn.ko-fi.com/cdn/kofi1.png' style='border:0px;height:45px;' alt='Buy Me a Coffee at ko-fi.com' /></a>
+<a href='https://ko-fi.com/michaelkolesidis' target='_blank'><img src='https://cdn.ko-fi.com/cdn/kofi2.png' style='border:0px;height:45px;' alt='Buy Me a Coffee at ko-fi.com' /></a>
 
 ## License
 
