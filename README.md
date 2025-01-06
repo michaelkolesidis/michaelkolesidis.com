@@ -1,7 +1,7 @@
 <div align="center">
   <img src="./screenshots/desktop_1c.png" width="700px">
   <h4>My award-winning playground / portfolio website</h4>
-  <a href='https://ko-fi.com/michaelkolesidis' target='_blank'><img src='https://cdn.ko-fi.com/cdn/kofi1.png' style='border:0px;height:45px;' alt='Buy Me a Coffee at ko-fi.com' /></a>
+  <a href='https://ko-fi.com/michaelkolesidis' target='_blank'><img src='https://cdn.ko-fi.com/cdn/kofi2.png' style='border:0px;height:45px;' alt='Buy Me a Coffee at ko-fi.com' /></a>
 </div>
 
 ## Technologies Used
@@ -202,5 +202,5 @@ Thank you for your interest in my project! If you'd like to go further and suppo
 
 <a href="https://www.gnu.org/licenses/agpl-3.0.html"><img src="https://upload.wikimedia.org/wikipedia/commons/0/06/AGPLv3_Logo.svg" height="100px" /></a>
 
-Copyright (c) Michael Kolesidis<br>
+Copyright (c) Michael Kolesidis  
 Licensed under the [GNU Affero General Public License v3.0](https://www.gnu.org/licenses/agpl-3.0.html).
