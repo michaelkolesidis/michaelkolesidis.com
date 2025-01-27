@@ -21,7 +21,7 @@
 
 This is my portfolio website / playground.
 
-It is yet another love letter to the Internet of the old<, the era of naïve (web) art, the era of the romantic amateur, the era of Geocities. I first encountered the magical world of the world wide web in the 90's and I hope I have captured a glimpse of that time. My design is also influenced by print publication layouts and the bold graphics of 90s MTV.
+It is yet another love letter to the Internet of the old, the era of naïve (web) art, the era of the romantic amateur, the era of GeoCities. I first encountered the magical world of the world wide web in the 90's and I hope I have captured a glimpse of that time. My design is also influenced by print publication layouts and the bold graphics of 90s MTV.
 
 I call this style **frivobrutalism**, placing emphasis on the blend of the playful frivolity of the design/experience with the brutalist aesthetic.
 
@@ -119,7 +119,7 @@ The following library is imported via CDN:
 
 ## Videos
 
-**Note:** Note: The following screenshots are outdated and reflect older versions of the website:
+**Note:** The following screenshots are outdated and reflect older versions of the website:
 
 - [Desktop](https://www.youtube.com/watch?v=wfPkxVaBJ-o)
 
@@ -129,7 +129,7 @@ The following library is imported via CDN:
 
 ### Desktop
 
-**Note:** Note: The following screenshots are outdated and reflect older versions of the website:
+**Note:** The following screenshots are outdated and reflect older versions of the website:
 
 <img src="./screenshots/desktop_9b.png" width="800px">
 
@@ -200,7 +200,7 @@ Thank you for your interest in my project! If you'd like to go further and suppo
 
 ## License
 
-<a href="https://www.gnu.org/licenses/agpl-3.0.html"><img src="https://upload.wikimedia.org/wikipedia/commons/0/06/AGPLv3_Logo.svg" height="100px" /></a>
+<a href="https://www.gnu.org/licenses/agpl-3.0.html"><img src="https://upload.wikimedia.org/wikipedia/commons/0/06/AGPLv3_Logo.svg" height="80px" /></a>
 
 Copyright (c) Michael Kolesidis  
 Licensed under the [GNU Affero General Public License v3.0](https://www.gnu.org/licenses/agpl-3.0.html).

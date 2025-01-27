@@ -25,22 +25,6 @@ export default function contact() {
     const socials = document.createElement('div');
     socials.setAttribute('id', 'socials');
 
-    // IMDb
-    const imdb = document.createElement('a');
-    imdb.classList.add('social');
-    imdb.innerHTML = /* html */ `<span>IMDB</span>`;
-    imdb.href = 'https://www.imdb.com/name/nm9251920/';
-    imdb.target = '_blank';
-    socials.appendChild(imdb);
-
-    // IMDbPro
-    const imdbPro = document.createElement('a');
-    imdbPro.classList.add('social');
-    imdbPro.innerHTML = /* html */ `<span>IMDBPRO</span>`;
-    imdbPro.href = 'https://pro.imdb.com/name/nm9251920/';
-    imdbPro.target = '_blank';
-    socials.appendChild(imdbPro);
-
     // LinkedIn
     const linkedin = document.createElement('a');
     linkedin.classList.add('social');
@@ -57,6 +41,14 @@ export default function contact() {
     mastodon.target = '_blank';
     socials.appendChild(mastodon);
 
+    // Bluesky
+    const bluesky = document.createElement('a');
+    bluesky.classList.add('social');
+    bluesky.innerHTML = /* html */ `<span>BLUESKY</span>`;
+    bluesky.href = 'https://bsky.app/profile/michaelkolesidis.bsky.social';
+    bluesky.target = '_blank';
+    socials.appendChild(bluesky);
+
     // Instagram
     const instagram = document.createElement('a');
     instagram.classList.add('social');
@@ -65,14 +57,6 @@ export default function contact() {
     instagram.target = '_blank';
     socials.appendChild(instagram);
 
-    // X/Twitter
-    const twitter = document.createElement('a');
-    twitter.classList.add('social');
-    twitter.innerHTML = /* html */ `<span>X/TWITTER</span>`;
-    twitter.href = 'https://twitter.com/michael_kol_';
-    twitter.target = '_blank';
-    socials.appendChild(twitter);
-
     // GitHub
     const github = document.createElement('a');
     github.classList.add('social');
@@ -80,6 +64,14 @@ export default function contact() {
     github.href = 'https://github.com/michaelkolesidis';
     github.target = '_blank';
     socials.appendChild(github);
+
+    // X/Twitter
+    const twitter = document.createElement('a');
+    twitter.classList.add('social');
+    twitter.innerHTML = /* html */ `<span>X/TWITTER</span>`;
+    twitter.href = 'https://twitter.com/michael_kol_';
+    twitter.target = '_blank';
+    socials.appendChild(twitter);
 
     contact.appendChild(socials);
   }

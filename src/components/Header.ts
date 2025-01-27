@@ -42,25 +42,12 @@ export default function header() {
     contactModal.innerHTML = /* html */ `
     <a 
       target="_blank" 
-      href="https://www.imdb.com/name/nm9251920/"
-      class="left"      
-    >
-    IMDB
-    </a>
-    <a 
-    target="_blank" 
-    href="https://pro.imdb.com/name/nm9251920/"
-    >
-    IMDBPRO
-    </a>
-    <a 
-      target="_blank" 
       href="https://www.linkedin.com/in/michaelkolesidis"
       class="left"
     >
     LINKEDIN
     </a>
-    <a 
+        <a 
       target="_blank" 
       href="https://mastodon.social/@michaelkolesidis"
     >
@@ -68,16 +55,16 @@ export default function header() {
     </a>
     <a 
       target="_blank" 
+      href="https://bsky.app/profile/michaelkolesidis.bsky.social"
+      class="left"      
+    >
+    BLUESKY
+    </a>
+    <a 
+      target="_blank" 
       href="https://www.instagram.com/michaelkolesidis"
-      class="left"
     >
     INSTA
-    </a>
-    <a
-      target="_blank" 
-      href="https://x.com/michael_kol_"
-    >
-    X/TWITTER
     </a>
     <a 
       target="_blank" 
@@ -86,11 +73,11 @@ export default function header() {
     >
     GITHUB
     </a>
-    <a 
+    <a
       target="_blank" 
-      href="mailto:michael.kolesidis@gmail.com"
+      href="https://x.com/michael_kol_"
     >
-    EMAIL
+    X/TWITTER
     </a>
     `;
 
