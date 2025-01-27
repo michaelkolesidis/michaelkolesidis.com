@@ -4,7 +4,7 @@ export const sentencesAbout = [
 
   `As a web developer, I primarily work with React, Next.js, and TypeScript, alongside various other frameworks and libraries. I am highly adaptable to different technologies and situations.`,
 
-  `I have lived, studied and worked in Greece, Spain (Barcelona) and the UK (Brighton). I studied Filmmaking, as well as Drama, Theatre, and Performance in the UK. Before that, I had studied Economics in Greece.`,
+  `I have lived, studied, and worked in Greece, Spain (Barcelona), and the UK (Brighton). I am fluent in Greek, English, and Spanish, and have traveled to over 30 countries.`,
 
   `I used to have a rubber duck on my desk, but now it shares space with a Maneki-neko, the iconic Japanese lucky cat figurine. Together, they bring a mix of fun and good fortune to my workspace!`,
 

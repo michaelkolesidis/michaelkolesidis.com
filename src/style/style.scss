@@ -78,7 +78,7 @@ $stroke-shadow: 3px 3px 0px black, -3px 3px 0px black, 3px -3px 0px black,
 
 .overlay:after {
   content: '';
-  background-image: url('https://upload.wikimedia.org/wikipedia/commons/7/76/1k_Dissolve_Noise_Texture.png');
+  background-image: url('../assets/noise-texture.png');
   height: 300%;
   width: 300%;
   position: fixed;
@@ -772,7 +772,7 @@ canvas {
 .social::after {
   color: $transparent;
   content: '......';
-  background-image: url('../assets/duck_white.svg');
+  background-image: url('../assets/duck-white.svg');
   background-size: 40px 50px;
   height: 40px;
   width: 50px;
