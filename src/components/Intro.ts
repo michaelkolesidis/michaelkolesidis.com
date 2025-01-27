@@ -65,7 +65,7 @@ export default function intro() {
     // What Am I (paragraph on the right)
     const whatami = document.createElement('p');
     whatami.setAttribute('id', 'right');
-    whatami.innerHTML = /* html */ `I am a Designer guided by simplicity and purpose. I strive to create meaningful experiences that reflect our shared humanity, exploring themes of connection and understanding. I design with care, for a kinder world.`;
+    whatami.innerHTML = /* html */ `I am a designer guided by simplicity and purpose, striving to create meaningful experiences that reflect our shared humanity — design that understands, connects, and enriches the world for a kinder future.`;
     intro.appendChild(whatami);
 
     // Scroll prompt
