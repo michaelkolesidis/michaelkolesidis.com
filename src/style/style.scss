@@ -333,6 +333,7 @@ a {
   left: 10px;
   top: 150px;
   font-weight: 600;
+  text-shadow: 0.5px 0.5px 0 black;
   font-size: 2.75em;
   color: $black;
   writing-mode: vertical-rl;
@@ -541,6 +542,7 @@ a {
   padding: 0.1em;
   font-size: 2em;
   transform: rotate(3deg);
+  z-index: 998;
 }
 
 canvas {
