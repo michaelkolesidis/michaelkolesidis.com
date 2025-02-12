@@ -89,7 +89,7 @@ export default function header() {
     header.appendChild(contactModal);
 
     dragElement(contactModal);
-    contactModal.style.zIndex = windowManager.base;
+    contactModal.style.zIndex = windowManager.moveOnTop() + 1;
     contactModal.addEventListener('mousedown', () => {
       contactModal.style.zIndex = windowManager.moveOnTop();
     });
