@@ -21,9 +21,9 @@
 
 This is my portfolio website / playground.
 
-It is yet another love letter to the Internet of the old, the era of naïve (web) art, the era of the romantic amateur, the era of GeoCities. I first encountered the magical world of the world wide web in the 90's and I hope I have captured a glimpse of that time. My design is also influenced by print publication layouts and the bold graphics of 90s MTV.
+It is yet another love letter to the Internet of the old, the era of naïve (web) art, the era of the romantic amateur, the era of GeoCities. When did the web become so serious? I first discovered the magical world of the world wide web in the 90's and I hope I have captured a glimpse of that time. My design is also influenced by print publication layouts and the bold graphics of 90s MTV.
 
-I call this style **frivobrutalism**, placing emphasis on the blend of the playful frivolity of the design/experience with the brutalist aesthetic.
+I call this style **frivobrutalism**, a fusion of playful, whimsical design with the raw, unapologetic aesthetic of brutalism.
 
 Visitors can move things around and customize the colors of all colorful elements: clicking on an element generates a new color, from the predefined color palette. The rubber duck responds to mouse movement.
 
@@ -191,6 +191,10 @@ For the minimal version of my website I tried to replicate the styling of my pri
 ## Acknowledgements
 
 A huge thanks to everyone who supported me, from friends and colleagues to anonymous internet users, providing valuable feedback throughout the development process.
+
+## Contact
+
+If you use my code in your projects, I’d love to hear about it! Feel free to email me — I'm always excited (and curious) to see how it's being used!
 
 ## 💖 Support the Project
 

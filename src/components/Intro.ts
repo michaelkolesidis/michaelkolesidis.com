@@ -29,13 +29,14 @@ export default function intro() {
     // Window
     const duckDebuggingWindow = document.createElement('div');
     duckDebuggingWindow.setAttribute('id', 'duck-window');
+    duckDebuggingWindow.classList.add('window');
     duckDebuggingWindow.innerHTML = /* html */ `
     When programmers try to find bugs, 
     it helps to explain their code line-by-line to an inanimate object. 
     This is known as rubber duck debugging.`;
 
     const duckDebuggingWindowTitle = document.createElement('div');
-    duckDebuggingWindowTitle.setAttribute('id', 'window-title');
+    duckDebuggingWindowTitle.classList.add('window-title');
     duckDebuggingWindowTitle.innerHTML = `Rubber Duck Debugging`;
     duckDebuggingWindow.appendChild(duckDebuggingWindowTitle);
 

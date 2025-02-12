@@ -5,7 +5,7 @@ export default function footer() {
     // Copyright
     const copyright = document.createElement('p');
     copyright.setAttribute('id', 'copyright');
-    copyright.innerHTML = `© 2025 Michael Kolesidis`;
+    copyright.innerHTML = `© Michael Kolesidis`;
     footer.appendChild(copyright);
 
     if (window.innerWidth < 700) {

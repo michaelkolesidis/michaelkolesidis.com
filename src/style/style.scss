@@ -453,16 +453,7 @@ a {
   }
 }
 
-#duck-window {
-  width: 22em;
-  height: 170px;
-  right: 15em;
-  paint-order: stroke fill;
-  -webkit-text-stroke: 1px $black;
-}
-
-#duck-window,
-#contact-window {
+.window {
   pointer-events: none;
   position: absolute;
   opacity: 0;
@@ -494,7 +485,7 @@ a {
     cursor: url('../assets/cursors/windows95-pointer.png'), auto;
   }
 
-  #window-title {
+  .window-title {
     position: absolute;
     color: $white;
     top: -28px;
@@ -502,7 +493,7 @@ a {
   }
 }
 
-#contact-window {
+.list-window {
   padding-right: 70px;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -514,8 +505,10 @@ a {
   text-shadow: 1px 1px 1px $black;
   paint-order: stroke fill;
   -webkit-text-stroke: 1px $black;
+  transition: background-color 0.25s ease;
 
-  a {
+  a,
+  div {
     font-size: 1.1em;
     letter-spacing: normal;
     text-wrap: nowrap;
@@ -526,9 +519,62 @@ a {
     text-align: right;
   }
 
+  div:hover,
   a:hover {
     text-decoration: line-through;
   }
+}
+
+#apps-window {
+  right: 250px;
+  top: 160px;
+  width: 14em;
+  height: 150px;
+}
+
+#contact-window {
+  right: 230px;
+  top: 390px;
+  width: 16em;
+  height: 150px;
+}
+
+#duck-window-1 {
+  left: 10px;
+  bottom: 30px;
+  width: 400px;
+  height: 300px;
+  background-image: url('../assets/duck-1.gif');
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#duck-window-2 {
+  bottom: 30px;
+  right: 30px;
+  width: 500px;
+  height: 290px;
+  background-image: url('../assets/duck-2.gif');
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#duck-window-3 {
+  left: 328px;
+  top: 206px;
+  width: 200px;
+  height: 300px;
+  background-image: url('../assets/duck-3.gif');
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#duck-window {
+  width: 22em;
+  height: 170px;
+  right: 15em;
+  paint-order: stroke fill;
+  -webkit-text-stroke: 1px $black;
 }
 
 #scroll-prompt {

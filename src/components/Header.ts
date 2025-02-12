@@ -1,10 +1,20 @@
 import { WindowManager, dragElement } from 'dom-window-manager';
+import { colors } from '../data/colors';
 
 let windowManager = new WindowManager(3);
 
 export default function header() {
   const header = document.getElementById('header');
+  let appsWindowAppended = true;
   let contactWindowAppended = true;
+  let noiseWindowAppended = true;
+  let radioWindowAppended = true;
+  let duckWindowsAppended = true;
+  let duckWindow1Appended = true;
+  let duckWindow2Appended = true;
+  let duckWindow3Appended = true;
+  let pixelWindowAppended = true;
+  let emojiWindowAppended = true;
 
   if (header != null) {
     // Name
@@ -25,6 +35,38 @@ export default function header() {
         smiley.classList.remove('move-left');
       }, 2000);
 
+      if (!appsWindowAppended) {
+        header.appendChild(appsWindow);
+        appsWindowAppended = true;
+      }
+
+      appsWindow.style.zIndex = windowManager.moveOnTop();
+
+      setTimeout(() => {
+        appsWindow.style.opacity = '100';
+        appsWindow.style.pointerEvents = 'all';
+      }, 0);
+    });
+
+    // Apps window
+    const appsWindow = document.createElement('div');
+    appsWindow.setAttribute('id', 'apps-window');
+    appsWindow.classList.add('window', 'list-window');
+
+    const contactButton = document.createElement('div');
+    contactButton.classList.add('left');
+    contactButton.textContent = 'CONTACT';
+    appsWindow.appendChild(contactButton);
+
+    contactButton.addEventListener('mouseover', () => {
+      appsWindow.style.background = colors[0].hex;
+    });
+
+    contactButton.addEventListener('mouseout', () => {
+      appsWindow.style.background = '#ffffff';
+    });
+
+    contactButton.addEventListener('click', () => {
       if (!contactWindowAppended) {
         header.appendChild(contactWindow);
         contactWindowAppended = true;
@@ -38,9 +80,123 @@ export default function header() {
       }, 0);
     });
 
+    const noiseButton = document.createElement('div');
+    noiseButton.textContent = 'NOISE';
+    appsWindow.appendChild(noiseButton);
+
+    noiseButton.addEventListener('mouseover', () => {
+      appsWindow.style.background = colors[1].hex;
+    });
+
+    noiseButton.addEventListener('mouseout', () => {
+      appsWindow.style.background = '#ffffff';
+    });
+
+    const radioButton = document.createElement('div');
+    radioButton.classList.add('left');
+    radioButton.textContent = 'RADIO';
+    appsWindow.appendChild(radioButton);
+
+    radioButton.addEventListener('mouseover', () => {
+      appsWindow.style.background = colors[2].hex;
+    });
+
+    radioButton.addEventListener('mouseout', () => {
+      appsWindow.style.background = '#ffffff';
+    });
+
+    const ducksButton = document.createElement('div');
+    ducksButton.textContent = 'DUCKS';
+    appsWindow.appendChild(ducksButton);
+
+    ducksButton.addEventListener('mouseover', () => {
+      appsWindow.style.background = colors[3].hex;
+    });
+
+    ducksButton.addEventListener('mouseout', () => {
+      appsWindow.style.background = '#ffffff';
+    });
+
+    ducksButton.addEventListener('click', () => {
+      if (!duckWindowsAppended) {
+        header.appendChild(duckWindow1);
+        header.appendChild(duckWindow2);
+        header.appendChild(duckWindow3);
+        duckWindowsAppended = true;
+        duckWindow1Appended = true;
+        duckWindow2Appended = true;
+        duckWindow3Appended = true;
+      }
+
+      duckWindow1.style.zIndex = windowManager.moveOnTop();
+      duckWindow2.style.zIndex = windowManager.moveOnTop();
+      duckWindow3.style.zIndex = windowManager.moveOnTop();
+
+      setTimeout(() => {
+        duckWindow1.style.opacity = '100';
+        duckWindow1.style.pointerEvents = 'all';
+        duckWindow2.style.opacity = '100';
+        duckWindow2.style.pointerEvents = 'all';
+        duckWindow3.style.opacity = '100';
+        duckWindow3.style.pointerEvents = 'all';
+      }, 0);
+    });
+
+    const pixelButton = document.createElement('div');
+    pixelButton.classList.add('left');
+    pixelButton.textContent = 'PIXEL';
+    appsWindow.appendChild(pixelButton);
+
+    pixelButton.addEventListener('mouseover', () => {
+      appsWindow.style.background = colors[4].hex;
+    });
+
+    pixelButton.addEventListener('mouseout', () => {
+      appsWindow.style.background = '#ffffff';
+    });
+
+    const emojiButton = document.createElement('div');
+    emojiButton.textContent = 'EMOJI';
+    appsWindow.appendChild(emojiButton);
+
+    emojiButton.addEventListener('mouseover', () => {
+      appsWindow.style.background = colors[1].hex;
+    });
+
+    emojiButton.addEventListener('mouseout', () => {
+      appsWindow.style.background = '#ffffff';
+    });
+
+    const appsWindowTitle = document.createElement('div');
+    appsWindowTitle.classList.add('window-title');
+    appsWindowTitle.innerHTML = `Apps`;
+    appsWindow.appendChild(appsWindowTitle);
+
+    header.appendChild(appsWindow);
+
+    dragElement(appsWindow);
+    appsWindow.addEventListener('mousedown', () => {
+      appsWindow.style.zIndex = windowManager.moveOnTop();
+    });
+
+    // Close button (apps window)
+    const closeButtonAppsWindow = document.createElement('button');
+    closeButtonAppsWindow.classList.add('remove-button');
+    closeButtonAppsWindow.textContent = '✕';
+    closeButtonAppsWindow.addEventListener('click', () => {
+      appsWindow.style.opacity = '0';
+
+      setTimeout(() => {
+        header.removeChild(appsWindow);
+        appsWindowAppended = false;
+      }, 500);
+    });
+    appsWindow.appendChild(closeButtonAppsWindow);
+
     // Contact window
     const contactWindow = document.createElement('div');
     contactWindow.setAttribute('id', 'contact-window');
+    contactWindow.classList.add('window', 'list-window');
     contactWindow.innerHTML = /* html */ `
     <a 
       target="_blank" 
@@ -84,7 +240,7 @@ export default function header() {
     `;
 
     const contactWindowTitle = document.createElement('div');
-    contactWindowTitle.setAttribute('id', 'window-title');
+    contactWindowTitle.classList.add('window-title');
     contactWindowTitle.innerHTML = `Contact`;
     contactWindow.appendChild(contactWindowTitle);
 
@@ -95,11 +251,11 @@ export default function header() {
       contactWindow.style.zIndex = windowManager.moveOnTop();
     });
 
-    // Remove button (contact window)
-    const closeButtonWindow = document.createElement('button');
-    closeButtonWindow.classList.add('remove-button');
-    closeButtonWindow.textContent = '✕';
-    closeButtonWindow.addEventListener('click', () => {
+    // Close button (contact window)
+    const closeButtonContactWindow = document.createElement('button');
+    closeButtonContactWindow.classList.add('remove-button');
+    closeButtonContactWindow.textContent = '✕';
+    closeButtonContactWindow.addEventListener('click', () => {
       contactWindow.style.opacity = '0';
 
       setTimeout(() => {
@@ -107,7 +263,92 @@ export default function header() {
         contactWindowAppended = false;
       }, 500);
     });
-    contactWindow.appendChild(closeButtonWindow);
+    contactWindow.appendChild(closeButtonContactWindow);
+
+    // Duck windows
+    const duckWindow1 = document.createElement('div');
+    duckWindow1.setAttribute('id', 'duck-window-1');
+    duckWindow1.classList.add('window');
+    const duckWindow1Title = document.createElement('div');
+    duckWindow1Title.classList.add('window-title');
+    duckWindow1Title.innerHTML = `Duck in a bathtub`;
+    duckWindow1.appendChild(duckWindow1Title);
+    const closeButtonDuckWindow1 = document.createElement('button');
+    closeButtonDuckWindow1.classList.add('remove-button');
+    closeButtonDuckWindow1.textContent = '✕';
+    closeButtonDuckWindow1.addEventListener('click', () => {
+      duckWindow1.style.opacity = '0';
+      setTimeout(() => {
+        header.removeChild(duckWindow1);
+        duckWindow1Appended = false;
+
+        if (!duckWindow2Appended && !duckWindow3Appended) {
+          duckWindowsAppended = false;
+        }
+      }, 500);
+    });
+    duckWindow1.appendChild(closeButtonDuckWindow1);
+    header.appendChild(duckWindow1);
+    dragElement(duckWindow1);
+    duckWindow1.addEventListener('mousedown', () => {
+      duckWindow1.style.zIndex = windowManager.moveOnTop();
+    });
+
+    const duckWindow2 = document.createElement('div');
+    duckWindow2.setAttribute('id', 'duck-window-2');
+    duckWindow2.classList.add('window');
+    const duckWindow2Title = document.createElement('div');
+    duckWindow2Title.classList.add('window-title');
+    duckWindow2Title.innerHTML = `Duck in the sea`;
+    duckWindow2.appendChild(duckWindow2Title);
+    const closeButtonDuckWindow2 = document.createElement('button');
+    closeButtonDuckWindow2.classList.add('remove-button');
+    closeButtonDuckWindow2.textContent = '✕';
+    closeButtonDuckWindow2.addEventListener('click', () => {
+      duckWindow2.style.opacity = '0';
+      setTimeout(() => {
+        header.removeChild(duckWindow2);
+        duckWindow2Appended = false;
+
+        if (!duckWindow1Appended && !duckWindow3Appended) {
+          duckWindowsAppended = false;
+        }
+      }, 500);
+    });
+    duckWindow2.appendChild(closeButtonDuckWindow2);
+    header.appendChild(duckWindow2);
+    dragElement(duckWindow2);
+    duckWindow2.addEventListener('mousedown', () => {
+      duckWindow2.style.zIndex = windowManager.moveOnTop();
+    });
+
+    const duckWindow3 = document.createElement('div');
+    duckWindow3.setAttribute('id', 'duck-window-3');
+    duckWindow3.classList.add('window');
+    const duckWindow3Title = document.createElement('div');
+    duckWindow3Title.classList.add('window-title');
+    duckWindow3Title.innerHTML = `Duck in a pool`;
+    duckWindow3.appendChild(duckWindow3Title);
+    const closeButtonDuckWindow3 = document.createElement('button');
+    closeButtonDuckWindow3.classList.add('remove-button');
+    closeButtonDuckWindow3.textContent = '✕';
+    closeButtonDuckWindow3.addEventListener('click', () => {
+      duckWindow3.style.opacity = '0';
+      setTimeout(() => {
+        header.removeChild(duckWindow3);
+        duckWindow3Appended = false;
+
+        if (!duckWindow1Appended && !duckWindow2Appended) {
+          duckWindowsAppended = false;
+        }
+      }, 500);
+    });
+    duckWindow3.appendChild(closeButtonDuckWindow3);
+    header.appendChild(duckWindow3);
+    dragElement(duckWindow3);
+    duckWindow3.addEventListener('mousedown', () => {
+      duckWindow3.style.zIndex = windowManager.moveOnTop();
+    });
 
     // Top gap
     const topGap = document.createElement('div');
