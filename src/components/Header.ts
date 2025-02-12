@@ -30,6 +30,8 @@ export default function header() {
         contactWindowAppended = true;
       }
 
+      contactWindow.style.zIndex = windowManager.moveOnTop();
+
       setTimeout(() => {
         contactWindow.style.opacity = '100';
         contactWindow.style.pointerEvents = 'all';
@@ -89,7 +91,6 @@ export default function header() {
     header.appendChild(contactWindow);
 
     dragElement(contactWindow);
-    contactWindow.style.zIndex = windowManager.moveOnTop() + 1;
     contactWindow.addEventListener('mousedown', () => {
       contactWindow.style.zIndex = windowManager.moveOnTop();
     });
