@@ -4,7 +4,7 @@ let windowManager = new WindowManager(3);
 
 export default function header() {
   const header = document.getElementById('header');
-  let contactModalAppended = true;
+  let contactWindowAppended = true;
 
   if (header != null) {
     // Name
@@ -25,21 +25,21 @@ export default function header() {
         smiley.classList.remove('move-left');
       }, 2000);
 
-      if (!contactModalAppended) {
-        header.appendChild(contactModal);
-        contactModalAppended = true;
+      if (!contactWindowAppended) {
+        header.appendChild(contactWindow);
+        contactWindowAppended = true;
       }
 
       setTimeout(() => {
-        contactModal.style.opacity = '100';
-        contactModal.style.pointerEvents = 'all';
+        contactWindow.style.opacity = '100';
+        contactWindow.style.pointerEvents = 'all';
       }, 0);
     });
 
-    // Contact modal
-    const contactModal = document.createElement('div');
-    contactModal.setAttribute('id', 'contact-modal');
-    contactModal.innerHTML = /* html */ `
+    // Contact window
+    const contactWindow = document.createElement('div');
+    contactWindow.setAttribute('id', 'contact-window');
+    contactWindow.innerHTML = /* html */ `
     <a 
       target="_blank" 
       href="https://www.linkedin.com/in/michaelkolesidis"
@@ -81,32 +81,32 @@ export default function header() {
     </a>
     `;
 
-    const contactModalTitle = document.createElement('div');
-    contactModalTitle.setAttribute('id', 'duck-modal-title');
-    contactModalTitle.innerHTML = `Contact`;
-    contactModal.appendChild(contactModalTitle);
+    const contactWindowTitle = document.createElement('div');
+    contactWindowTitle.setAttribute('id', 'window-title');
+    contactWindowTitle.innerHTML = `Contact`;
+    contactWindow.appendChild(contactWindowTitle);
 
-    header.appendChild(contactModal);
+    header.appendChild(contactWindow);
 
-    dragElement(contactModal);
-    contactModal.style.zIndex = windowManager.moveOnTop() + 1;
-    contactModal.addEventListener('mousedown', () => {
-      contactModal.style.zIndex = windowManager.moveOnTop();
+    dragElement(contactWindow);
+    contactWindow.style.zIndex = windowManager.moveOnTop() + 1;
+    contactWindow.addEventListener('mousedown', () => {
+      contactWindow.style.zIndex = windowManager.moveOnTop();
     });
 
-    // Remove button (contact modal)
-    const removeButtonModal = document.createElement('button');
-    removeButtonModal.classList.add('remove-button');
-    removeButtonModal.textContent = '✕';
-    removeButtonModal.addEventListener('click', () => {
-      contactModal.style.opacity = '0';
+    // Remove button (contact window)
+    const closeButtonWindow = document.createElement('button');
+    closeButtonWindow.classList.add('remove-button');
+    closeButtonWindow.textContent = '✕';
+    closeButtonWindow.addEventListener('click', () => {
+      contactWindow.style.opacity = '0';
 
       setTimeout(() => {
-        header.removeChild(contactModal);
-        contactModalAppended = false;
+        header.removeChild(contactWindow);
+        contactWindowAppended = false;
       }, 500);
     });
-    contactModal.appendChild(removeButtonModal);
+    contactWindow.appendChild(closeButtonWindow);
 
     // Top gap
     const topGap = document.createElement('div');
@@ -134,14 +134,14 @@ export default function header() {
     });
 
     // Remove button (message box)
-    const removeButton = document.createElement('button');
-    removeButton.classList.add('remove-button');
-    removeButton.textContent = '✕';
-    removeButton.addEventListener('click', () => {
+    const closeButton = document.createElement('button');
+    closeButton.classList.add('remove-button');
+    closeButton.textContent = '✕';
+    closeButton.addEventListener('click', () => {
       messageBox.style.opacity = '0';
       header.removeChild(messageBox);
     });
-    messageBox.appendChild(removeButton);
+    messageBox.appendChild(closeButton);
     header.appendChild(messageBox);
 
     // Sticker

@@ -453,7 +453,7 @@ a {
   }
 }
 
-#duck-modal {
+#duck-window {
   width: 22em;
   height: 170px;
   right: 15em;
@@ -461,8 +461,8 @@ a {
   -webkit-text-stroke: 1px $black;
 }
 
-#duck-modal,
-#contact-modal {
+#duck-window,
+#contact-window {
   pointer-events: none;
   position: absolute;
   opacity: 0;
@@ -494,7 +494,7 @@ a {
     cursor: url('../assets/cursors/windows95-pointer.png'), auto;
   }
 
-  #duck-modal-title {
+  #window-title {
     position: absolute;
     color: $white;
     top: -28px;
@@ -502,7 +502,7 @@ a {
   }
 }
 
-#contact-modal {
+#contact-window {
   padding-right: 70px;
   display: grid;
   grid-template-columns: 1fr 1fr;

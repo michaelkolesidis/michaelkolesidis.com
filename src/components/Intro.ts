@@ -22,44 +22,44 @@ export default function intro() {
     handwriting.appendChild(handwritingText);
     intro.appendChild(handwriting);
     handwritingText.addEventListener('click', () => {
-      duckDebuggingModal.style.opacity = '100';
-      duckDebuggingModal.style.pointerEvents = 'all';
+      duckDebuggingWindow.style.opacity = '100';
+      duckDebuggingWindow.style.pointerEvents = 'all';
     });
 
-    // Modal
-    const duckDebuggingModal = document.createElement('div');
-    duckDebuggingModal.setAttribute('id', 'duck-modal');
-    duckDebuggingModal.innerHTML = /* html */ `
+    // Window
+    const duckDebuggingWindow = document.createElement('div');
+    duckDebuggingWindow.setAttribute('id', 'duck-window');
+    duckDebuggingWindow.innerHTML = /* html */ `
     When programmers try to find bugs, 
     it helps to explain their code line-by-line to an inanimate object. 
     This is known as rubber duck debugging.`;
 
-    const duckDebuggingModalTitle = document.createElement('div');
-    duckDebuggingModalTitle.setAttribute('id', 'duck-modal-title');
-    duckDebuggingModalTitle.innerHTML = `Rubber Duck Debugging`;
-    duckDebuggingModal.appendChild(duckDebuggingModalTitle);
+    const duckDebuggingWindowTitle = document.createElement('div');
+    duckDebuggingWindowTitle.setAttribute('id', 'window-title');
+    duckDebuggingWindowTitle.innerHTML = `Rubber Duck Debugging`;
+    duckDebuggingWindow.appendChild(duckDebuggingWindowTitle);
 
-    handwriting.appendChild(duckDebuggingModal);
+    handwriting.appendChild(duckDebuggingWindow);
 
-    // Modal X Button
-    const removeButton = document.createElement('button');
-    removeButton.classList.add('remove-button');
-    removeButton.textContent = '✕';
-    removeButton.addEventListener('click', () => {
+    // Window X Button
+    const closeButton = document.createElement('button');
+    closeButton.classList.add('remove-button');
+    closeButton.textContent = '✕';
+    closeButton.addEventListener('click', () => {
       handwritingText.style.pointerEvents = 'none';
-      duckDebuggingModal.style.opacity = '0';
+      duckDebuggingWindow.style.opacity = '0';
 
       setTimeout(() => {
-        duckDebuggingModal.style.display = 'none';
-        handwriting.removeChild(duckDebuggingModal);
+        duckDebuggingWindow.style.display = 'none';
+        handwriting.removeChild(duckDebuggingWindow);
       }, 500);
     });
-    duckDebuggingModal.appendChild(removeButton);
+    duckDebuggingWindow.appendChild(closeButton);
 
-    dragElement(duckDebuggingModal);
-    duckDebuggingModal.style.zIndex = windowManager.base;
-    duckDebuggingModal.addEventListener('mousedown', () => {
-      duckDebuggingModal.style.zIndex = windowManager.moveOnTop();
+    dragElement(duckDebuggingWindow);
+    duckDebuggingWindow.style.zIndex = windowManager.base;
+    duckDebuggingWindow.addEventListener('mousedown', () => {
+      duckDebuggingWindow.style.zIndex = windowManager.moveOnTop();
     });
 
     // What Am I (paragraph on the right)
