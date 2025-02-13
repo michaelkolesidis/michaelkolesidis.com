@@ -1,4 +1,5 @@
 import { WindowManager, dragElement } from 'dom-window-manager';
+import { generateNewColor } from '../utils/functions';
 import { colors } from '../data/colors';
 
 let windowManager = new WindowManager(3);
@@ -472,5 +473,52 @@ export default function header() {
     welcome.addEventListener('mousedown', () => {
       welcome.style.zIndex = windowManager.moveOnTop();
     });
+
+    // Canvas
+    const sketchPlaceholder = document.getElementById('sketch-placeholder');
+
+    if (sketchPlaceholder) {
+      sketchPlaceholder.style.height = `${window.innerHeight - 140}px`;
+
+      window.addEventListener('resize', () => {
+        sketchPlaceholder.style.height = `${window.innerHeight - 140}px`;
+        sunscreen.style.top = `${window.innerHeight}px`;
+
+        const canvas = document.querySelector('canvas');
+        if (canvas) {
+          console.log(canvas);
+          canvas.style.height = `${window.innerHeight - 140}px`;
+        }
+      });
+
+      sketchPlaceholder.style.background = `rgb(${
+        generateNewColor(colors, sketchPlaceholder, 'background').rgb
+      })`;
+
+      sketchPlaceholder.addEventListener('click', () => {
+        sketchPlaceholder.style.background = `rgb(${
+          generateNewColor(colors, sketchPlaceholder, 'background').rgb
+        })`;
+      });
+    }
+
+    // Sunscreen
+    const sunscreen = document.createElement('img');
+    sunscreen.setAttribute('src', 'assets/sunscreen.png');
+    sunscreen.setAttribute('id', 'sunscreen');
+    sunscreen.style.top = `${window.innerHeight}px`;
+
+    sunscreen.addEventListener('click', () => {
+      sunscreen.classList.add('shake');
+      setTimeout(() => {
+        sunscreen.classList.remove('shake');
+      }, 500);
+
+      if (sketchPlaceholder) {
+        sketchPlaceholder.style.background = "url('../../assets/water.png')";
+      }
+    });
+
+    header.appendChild(sunscreen);
   }
 }

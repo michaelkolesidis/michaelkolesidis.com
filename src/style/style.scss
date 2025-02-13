@@ -595,6 +595,37 @@ canvas {
   border-bottom: $line-around solid $black;
 }
 
+#sketch-placeholder {
+  transition: background-color 0.25s ease;
+}
+
+#p5_loading {
+  position: absolute;
+  top: 140px;
+  margin: auto;
+  width: 100vw;
+}
+
+#sunscreen {
+  position: absolute;
+  transform: rotate(-90deg);
+  width: 100px;
+  right: 100px;
+  cursor: url('../assets/cursors/windows95-pointer.png'), auto;
+}
+
+@keyframes shake {
+  0% { transform: rotate(-90deg) translateX(0); }
+  25% { transform: rotate(-90deg) translateX(-10px); }
+  50% { transform: rotate(-90deg) translateX(10px); }
+  75% { transform: rotate(-90deg) translateX(-10px); }
+  100% { transform: rotate(-90deg) translateX(0); }
+}
+
+.shake {
+  animation: shake 0.5s ease-in-out;
+}
+
 /********** SECTION TITLES **********/
 .wavy {
   font-size: 80px;
@@ -1531,6 +1562,18 @@ $duration: 500s;
 
 /********** MEDIA QUERRIES: Grid **********/
 @media only screen and (min-width: 700px) and (max-width: 820px) {
+  #sketch-placeholder {
+    display: none;
+  }
+
+  #p5_loading {
+    display: none;
+  }
+
+  canvas {
+    display: none;
+  }
+
   #sound {
     display: none;
   }
