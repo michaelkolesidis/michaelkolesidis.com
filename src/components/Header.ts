@@ -8,14 +8,14 @@ export default function header() {
   const header = document.getElementById('header');
   let appsWindowAppended = true;
   let contactWindowAppended = true;
-  let noiseWindowAppended = true;
-  let radioWindowAppended = true;
+  // let noiseWindowAppended = true;
+  // let radioWindowAppended = true;
   let duckWindowsAppended = true;
   let duckWindow1Appended = true;
   let duckWindow2Appended = true;
   let duckWindow3Appended = true;
-  let pixelWindowAppended = true;
-  let emojiWindowAppended = true;
+  // let pixelWindowAppended = true;
+  // let emojiWindowAppended = true;
 
   if (header != null) {
     // Name
