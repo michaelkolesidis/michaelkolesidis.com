@@ -21,7 +21,7 @@
 
 This is my portfolio website / playground.
 
-It is yet another love letter to the Internet of the old, the era of naïve (web) art, the era of the romantic amateur, the era of GeoCities. When did the web become so serious? I first discovered the magical world of the world wide web in the 90's and I hope I have captured a glimpse of that time. My design is also influenced by print publication layouts and the bold graphics of 90s MTV.
+It is yet another love letter to the Internet of the old, the era of naïve (web) art, the era of the romantic amateur, the era of GeoCities. When did the web become so serious? I first discovered the magical world of the world wide web in the 90's and I hope I have captured a glimpse of that time. My design is also influenced by print publication layouts and the bold, graphic style of 90s MTV.
 
 I call this style **frivobrutalism**, a fusion of playful, whimsical design with the raw, unapologetic aesthetic of brutalism.
 
