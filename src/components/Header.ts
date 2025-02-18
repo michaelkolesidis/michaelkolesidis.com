@@ -1,3 +1,5 @@
+// @ts-nocheck
+
 import { WindowManager, dragElement } from 'dom-window-manager';
 import { generateNewColor } from '../utils/functions';
 import { colors } from '../data/colors';
@@ -8,7 +10,7 @@ export default function header() {
   const header = document.getElementById('header');
   let appsWindowAppended = true;
   let contactWindowAppended = true;
-  // let noiseWindowAppended = true;
+  let noiseWindowAppended = true;
   // let radioWindowAppended = true;
   let duckWindowsAppended = true;
   let duckWindow1Appended = true;
@@ -82,7 +84,7 @@ export default function header() {
     });
 
     const noiseButton = document.createElement('div');
-    noiseButton.textContent = 'NOISE';
+    noiseButton.textContent = 'TV';
     appsWindow.appendChild(noiseButton);
 
     noiseButton.addEventListener('mouseover', () => {
@@ -91,6 +93,20 @@ export default function header() {
 
     noiseButton.addEventListener('mouseout', () => {
       appsWindow.style.background = '#ffffff';
+    });
+
+    noiseButton.addEventListener('click', () => {
+      if (!noiseWindowAppended) {
+        header.appendChild(noiseWindow);
+        noiseWindowAppended = true;
+      }
+
+      noiseWindow.style.zIndex = windowManager.moveOnTop();
+
+      setTimeout(() => {
+        noiseWindow.style.opacity = '100';
+        noiseWindow.style.pointerEvents = 'all';
+      }, 0);
     });
 
     const radioButton = document.createElement('div');
@@ -265,6 +281,143 @@ export default function header() {
       }, 500);
     });
     contactWindow.appendChild(closeButtonContactWindow);
+
+    // Noise window
+    const noiseWindow = document.createElement('div');
+    noiseWindow.setAttribute('id', 'noise-window');
+    noiseWindow.classList.add('window');
+    const noiseWindowTitle = document.createElement('div');
+    noiseWindowTitle.classList.add('window-title');
+    noiseWindowTitle.innerHTML = `The Only Real Channel™`;
+    noiseWindow.appendChild(noiseWindowTitle);
+
+    const canvas = document.createElement('canvas');
+    canvas.setAttribute('id', 'noise');
+    noiseWindow.appendChild(canvas);
+
+    const gl = canvas.getContext('webgl');
+
+    // Vertex shader
+    const vertexShaderSource = `
+    attribute vec4 a_position;
+    void main() {
+        gl_Position = a_position;
+    }
+`;
+
+    // Fragment shader
+    const fragmentShaderSource = `
+    precision highp float;
+    uniform float u_time;
+    uniform vec2 u_resolution;
+
+    float noise(vec2 pos, float evolve) {
+        float e = fract((evolve*0.01));
+        float cx = pos.x*e;
+        float cy = pos.y*e;
+        return fract(23.0*fract(2.0/fract(fract(cx*2.4/cy*23.0+pow(abs(cy/22.4),3.3))*fract(cx*evolve/pow(abs(cy),0.050)))));
+    }
+
+    void main() {
+        vec2 fragCoord = gl_FragCoord.xy;
+        float noise_val = noise(fragCoord, u_time);
+        gl_FragColor = vec4(vec3(noise_val), 1.0);
+    }
+`;
+
+    // Create shader program
+    function createShaderProgram(
+      gl: any,
+      vertexShaderSource: any,
+      fragmentShaderSource: any
+    ) {
+      const vertexShader = gl.createShader(gl.VERTEX_SHADER);
+      gl.shaderSource(vertexShader, vertexShaderSource);
+      gl.compileShader(vertexShader);
+
+      const fragmentShader = gl.createShader(gl.FRAGMENT_SHADER);
+      gl.shaderSource(fragmentShader, fragmentShaderSource);
+      gl.compileShader(fragmentShader);
+
+      const program = gl.createProgram();
+      gl.attachShader(program, vertexShader);
+      gl.attachShader(program, fragmentShader);
+      gl.linkProgram(program);
+
+      return program;
+    }
+
+    const program = createShaderProgram(
+      gl,
+      vertexShaderSource,
+      fragmentShaderSource
+    );
+    gl.useProgram(program);
+
+    // Define vertex positions for a full-screen quad (spanning normalized device coordinates [-1, 1])
+    const positionBuffer = gl.createBuffer();
+    gl.bindBuffer(gl.ARRAY_BUFFER, positionBuffer);
+    gl.bufferData(
+      gl.ARRAY_BUFFER,
+      new Float32Array([-1.0, -1.0, 1.0, -1.0, -1.0, 1.0, 1.0, 1.0]),
+      gl.STATIC_DRAW
+    );
+
+    // Set up attributes and uniforms
+    const positionAttributeLocation = gl.getAttribLocation(
+      program,
+      'a_position'
+    );
+    gl.enableVertexAttribArray(positionAttributeLocation);
+    gl.vertexAttribPointer(positionAttributeLocation, 2, gl.FLOAT, false, 0, 0);
+
+    const timeUniformLocation = gl.getUniformLocation(program, 'u_time');
+    const resolutionUniformLocation = gl.getUniformLocation(
+      program,
+      'u_resolution'
+    );
+
+    let isPaused = false;
+
+    // Pause/unpause on click
+    canvas.addEventListener('click', () => {
+      isPaused = !isPaused;
+    });
+
+    // Render loop
+    function render() {
+      if (!isPaused) {
+        gl.uniform1f(timeUniformLocation, performance.now() * 0.001);
+      }
+
+      // Set resolution
+      gl.uniform2f(resolutionUniformLocation, canvas.width, canvas.height);
+
+      // Draw
+      gl.drawArrays(gl.TRIANGLE_STRIP, 0, 4);
+
+      // Continue rendering
+      requestAnimationFrame(render);
+    }
+
+    render();
+
+    const closeButtonNoiseWindow = document.createElement('button');
+    closeButtonNoiseWindow.classList.add('remove-button');
+    closeButtonNoiseWindow.textContent = '✕';
+    closeButtonNoiseWindow.addEventListener('click', () => {
+      noiseWindow.style.opacity = '0';
+      setTimeout(() => {
+        header.removeChild(noiseWindow);
+        noiseWindowAppended = false;
+      }, 500);
+    });
+    noiseWindow.appendChild(closeButtonNoiseWindow);
+    header.appendChild(noiseWindow);
+    dragElement(noiseWindow);
+    noiseWindow.addEventListener('mousedown', () => {
+      noiseWindow.style.zIndex = windowManager.moveOnTop();
+    });
 
     // Duck windows
     const duckWindow1 = document.createElement('div');
@@ -486,7 +639,6 @@ export default function header() {
 
         const canvas = document.querySelector('canvas');
         if (canvas) {
-          console.log(canvas);
           canvas.style.height = `${window.innerHeight - 140}px`;
         }
       });
