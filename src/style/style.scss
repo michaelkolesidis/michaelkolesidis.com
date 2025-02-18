@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
 @font-face {
   font-family: 'Beatrice';
   font-display: block;
@@ -8,6 +7,13 @@
   src: url('../fonts/Beatrice-Regular.woff2') format('woff2'),
     url('../fonts/Beatrice-Regular.woff') format('woff'),
     url('../fonts/Beatrice-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Caveat';
+  font-display: block;
+  block-timeout: 0.3;
+  swap-timeout: 0.1;
+  src: url('../fonts/Caveat.woff2') format('woff2');
 }
 
 /********** VARIABLES **********/
