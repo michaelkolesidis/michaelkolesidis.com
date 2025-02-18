@@ -51,7 +51,10 @@ $line-around: 0.4em;
 /* shadows */
 $stroke-shadow: 3px 3px 0px black, -3px 3px 0px black, 3px -3px 0px black,
   -3px -3px 0px black, 3px 0px 0px black, -3px 0px 0px black, 0px 3px 0px black,
-  0px -3px 0px black;
+  0px -3px 0px black, 2px 3px 0px black, -2px 3px 0px black, 2px -3px 0px black,
+  -2px -3px 0px black, 3px 2px 0px black, -3px 2px 0px black, 3px -2px 0px black,
+  -3px -2px 0px black, 2px 2px 0px black, -2px 2px 0px black, 2px -2px 0px black,
+  -2px -2px 0px black;
 
 /**********  GENERAL **********/
 * {
@@ -615,11 +618,21 @@ canvas {
 }
 
 @keyframes shake {
-  0% { transform: rotate(-90deg) translateX(0); }
-  25% { transform: rotate(-90deg) translateX(-10px); }
-  50% { transform: rotate(-90deg) translateX(10px); }
-  75% { transform: rotate(-90deg) translateX(-10px); }
-  100% { transform: rotate(-90deg) translateX(0); }
+  0% {
+    transform: rotate(-90deg) translateX(0);
+  }
+  25% {
+    transform: rotate(-90deg) translateX(-10px);
+  }
+  50% {
+    transform: rotate(-90deg) translateX(10px);
+  }
+  75% {
+    transform: rotate(-90deg) translateX(-10px);
+  }
+  100% {
+    transform: rotate(-90deg) translateX(0);
+  }
 }
 
 .shake {
