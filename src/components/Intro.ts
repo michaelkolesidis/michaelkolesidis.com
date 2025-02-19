@@ -22,6 +22,7 @@ export default function intro() {
     handwriting.appendChild(handwritingText);
     intro.appendChild(handwriting);
     handwritingText.addEventListener('click', () => {
+      duckDebuggingWindow.style.zIndex = windowManager.moveOnTop();
       duckDebuggingWindow.style.opacity = '100';
       duckDebuggingWindow.style.pointerEvents = 'all';
     });
