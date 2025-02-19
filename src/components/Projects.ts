@@ -41,6 +41,6 @@ export default function projects() {
   const more = document.createElement('p');
   more.id = 'more';
   more.innerHTML =
-    'The list gets updated regularly with new projects. Check back again soon<span id="exclamation">!</span>';
+    'The list gets updated regularly with new projects. Check back again soon!';
   projects.appendChild(more);
 }

@@ -885,11 +885,7 @@ canvas {
   margin-top: -1.5px;
   font-size: 1.5em;
   font-weight: 600;
-}
-
-#exclamation {
-  animation: flash 0.5s infinite;
-  font-weight: 600;
+  white-space: nowrap;
 }
 
 /********** CONTACT **********/
@@ -928,10 +924,6 @@ canvas {
     -webkit-text-stroke: 2px $black;
     letter-spacing: 10px;
   }
-}
-
-.social:hover {
-  font-style: italic;
 }
 
 .social::after {
@@ -1366,6 +1358,7 @@ $duration: 500s;
   html,
   body {
     border: 0;
+    overflow-x: hidden;
   }
 
   /********** MOBILE: Ticker **********/
@@ -1455,6 +1448,14 @@ $duration: 500s;
   }
 
   canvas {
+    display: none;
+  }
+
+  #sunscreen {
+    display: none;
+  }
+
+  #sketch-placeholder {
     display: none;
   }
 
@@ -1632,10 +1633,7 @@ $duration: 500s;
 
   /********** MOBILE: Top Button **********/
   #top-button {
-    line-height: 60px;
-    height: 60px;
-    width: 60px;
-    font-size: 20px;
+display: none;
   }
 
   #top-button:hover {
