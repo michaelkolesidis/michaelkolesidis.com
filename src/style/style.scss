@@ -571,19 +571,15 @@ a {
   top: 400px;
   width: 110px;
   height: 130px;
-
-  padding: 0;
+  padding: 4px;
 }
 
 #play-button {
   background: $white;
   color: $black;
-  border: none;
   font-size: 80px;
   line-height: 85px;
   text-align: center;
-  margin: 0;
-  padding: 0;
   height: 100%;
   width: 100%;
   cursor: url('../assets/cursors/windows95-pointer.png'), auto;
@@ -592,7 +588,6 @@ a {
 #play-button:hover {
   background: $black;
   color: $white;
-  border: 4px solid $white;
 }
 
 #duck-window-1 {
@@ -1633,7 +1628,7 @@ $duration: 500s;
 
   /********** MOBILE: Top Button **********/
   #top-button {
-display: none;
+    display: none;
   }
 
   #top-button:hover {
