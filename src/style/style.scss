@@ -15,6 +15,13 @@
   swap-timeout: 0.1;
   src: url('../fonts/Caveat.woff2') format('woff2');
 }
+@font-face {
+  font-family: 'Helvetica Now';
+  font-display: block;
+  block-timeout: 0.3;
+  swap-timeout: 0.1;
+  src: url('../fonts/HelveticaNowVar.woff2') format('woff2');
+}
 
 /********** VARIABLES **********/
 /* colors */
@@ -423,7 +430,7 @@ a {
     max-width: 16ch;
     min-width: 12ch;
     margin-right: 2rem;
-    font-size: clamp(0.8rem, 2.5vh, 2rem);
+    font-size: clamp(0.8rem, 2.6vh, 2rem);
     text-align: start;
     line-height: 1.1;
     font-weight: 600;
@@ -431,6 +438,7 @@ a {
     color: $white;
     text-shadow: $stroke-shadow;
     z-index: 1;
+    font-family: 'Helvetica Now', sans-serif;
   }
 
   #right {
@@ -942,7 +950,7 @@ canvas {
 
   .sentence {
     margin-left: 100rem;
-    letter-spacing: 0.05em;
+    // letter-spacing: 0.05em;
   }
 
   p {
