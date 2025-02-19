@@ -1,4 +1,16 @@
-const projectList = [
+export interface Project {
+  name: string; // The name of the project
+  image: string; // URL to the project's image
+  technologies: string; // Technologies used in the project
+  summary: string; // A brief summary of the project
+  description: string; // A detailed description of the project
+  repository: string; // Link to the project’s repository (GitHub)
+  deployment: string; // Link to the project’s live deployment
+  video: string; // Optional link to a video demonstration
+  visible: boolean; // Whether the project is visible or not
+}
+
+export const projectList: Project[] = [
   {
     name: 'JSS-01',
     image: '../../images/jss-01.png?v=2',
@@ -155,7 +167,7 @@ const projectList = [
 
   {
     name: 'Cube Rabbit',
-    image: '../../images/cube_rabbit_coming_soon.png',
+    image: '../../images/cube-rabbit.png',
     technologies: 'Three.js, React, TypeScript, React Three Fiber, Zustand',
     summary: 'The story of a cube-shaped rabbit.',
     description: '',

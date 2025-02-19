@@ -12,6 +12,8 @@ export const populateProjects = (
   // Ppopulate Projects
   for (let i = start; i < end; i++) {
     const project = projectList[i];
+    if (!project) return;
+
     if (project.visible === false) {
       continue;
     }
@@ -21,7 +23,7 @@ export const populateProjects = (
     proj.classList.add('project-card');
 
     /* Styling */
-    const color = colors[colorIndex % colors.length].rgb;
+    const color = colors[colorIndex % colors.length]!.rgb;
     proj.style.backgroundColor = `rgb(${color})`;
     colorIndex += 1;
 

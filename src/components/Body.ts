@@ -1,5 +1,4 @@
 export default function body() {
-  // The structure of the HTML body
   document.body.innerHTML += /*html*/ `   
     <div class="overlay"></div>
     <div class="ticker-wrap"><div class="ticker"></div></div>

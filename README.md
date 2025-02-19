@@ -105,7 +105,7 @@ The following library is imported via CDN:
 
 ### Color Palette
 
-<img src="./other/color_palette.png" width="700px">
+<img src="./other/color-palette.png" width="700px">
 
 | HEX     |      RGB      |
 | ------- | :-----------: |

@@ -1,43 +1,28 @@
 export default function ticker() {
-  const tickerElemenets = document.getElementsByClassName('ticker');
-  const ticker = tickerElemenets[0];
+  const ticker = document.getElementsByClassName('ticker')?.[0];
+  if (!ticker) return;
 
-  // Message 1
-  const message1 = document.createElement('div');
-  message1.classList.add('ticker__item');
-  message1.innerHTML = `WELCOME TO MY PLAYGROUND`;
-  ticker.appendChild(message1);
+  const messages = [
+    'WELCOME TO MY PLAYGROUND',
+    'FEEL FREE TO PLAY WITH MY RUBBER DUCK',
+    'CLICK ON ANYTHING COLORFUL FOR A NEW COLOR',
+    'TRY MOVING THINGS AROUND',
+    'SMILEY IS YOUR FRIEND',
+  ];
 
-  // Message 2
-  const message2 = document.createElement('div');
-  message2.classList.add('ticker__item');
-  message2.innerHTML = `FEEL FREE TO PLAY WITH MY RUBBER DUCK`;
-  ticker.appendChild(message2);
+  // Create elements
+  const messageElements = messages.map((text) => {
+    const div = document.createElement('div');
+    div.classList.add('ticker-item');
+    div.innerHTML = text;
+    return div;
+  });
 
-  // Message 3
-  const message3 = document.createElement('div');
-  message3.classList.add('ticker__item');
-  message3.innerHTML = `CLICK ON ANYTHING COLORFUL FOR A NEW COLOR`;
-  ticker.appendChild(message3);
+  // Append original messages
+  messageElements.forEach((msg) => ticker.appendChild(msg));
 
-  // Message 4
-  const message4 = document.createElement('div');
-  message4.classList.add('ticker__item');
-  message4.innerHTML = `TRY MOVING THINGS AROUND`;
-  ticker.appendChild(message4);
-
-  // Message 5
-  const message5 = document.createElement('div');
-  message5.classList.add('ticker__item');
-  message5.innerHTML = `SMILEY IS YOUR FRIEND`;
-  ticker.appendChild(message5);
-
-  // Populate
+  // Append additional copies
   for (let i = 0; i < 25; i++) {
-    ticker.appendChild(message1.cloneNode(true));
-    ticker.appendChild(message2.cloneNode(true));
-    ticker.appendChild(message3.cloneNode(true));
-    ticker.appendChild(message4.cloneNode(true));
-    ticker.appendChild(message5.cloneNode(true));
+    messageElements.forEach((msg) => ticker.appendChild(msg.cloneNode(true)));
   }
 }

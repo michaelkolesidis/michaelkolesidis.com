@@ -1,5 +1,3 @@
-// @ts-nocheck
-
 import { WindowManager, dragElement } from 'dom-window-manager';
 import { generateNewColor } from '../utils/functions';
 import { colors } from '../data/colors';
@@ -8,6 +6,8 @@ let windowManager = new WindowManager(3);
 
 export default function header() {
   const header = document.getElementById('header');
+  if (!header) return;
+
   let appsWindowAppended = true;
   let contactWindowAppended = true;
   let noiseWindowAppended = true;
@@ -19,202 +19,201 @@ export default function header() {
   // let pixelWindowAppended = true;
   // let emojiWindowAppended = true;
 
-  if (header != null) {
-    // Name
-    const name = document.createElement('div');
-    name.setAttribute('id', 'name');
-    name.innerHTML = /* html */ `MICHAEL K<span id="title-letter">O</span>LESIDIS`;
-    header.appendChild(name);
+  // Name
+  const name = document.createElement('div');
+  name.setAttribute('id', 'name');
+  name.innerHTML = /* html */ `MICHAEL K<span id="title-letter">O</span>LESIDIS`;
+  header.appendChild(name);
 
-    // Smiley
-    const smiley = document.createElement('div');
-    smiley.setAttribute('id', 'smiley');
-    smiley.innerHTML = `<img alt=Smiley" src="../../assets/smiley.svg" />`;
-    header.appendChild(smiley);
+  // Smiley
+  const smiley = document.createElement('div');
+  smiley.setAttribute('id', 'smiley');
+  smiley.innerHTML = `<img alt=Smiley" src="../../assets/smiley.svg" />`;
+  header.appendChild(smiley);
 
-    smiley.addEventListener('click', () => {
-      smiley.classList.add('move-left');
-      setTimeout(() => {
-        smiley.classList.remove('move-left');
-      }, 2000);
+  smiley.addEventListener('click', () => {
+    smiley.classList.add('move-left');
+    setTimeout(() => {
+      smiley.classList.remove('move-left');
+    }, 2000);
 
-      if (!appsWindowAppended) {
-        header.appendChild(appsWindow);
-        appsWindowAppended = true;
-      }
+    if (!appsWindowAppended) {
+      header.appendChild(appsWindow);
+      appsWindowAppended = true;
+    }
 
-      appsWindow.style.zIndex = windowManager.moveOnTop();
+    appsWindow.style.zIndex = windowManager.moveOnTop();
 
-      setTimeout(() => {
-        appsWindow.style.opacity = '100';
-        appsWindow.style.pointerEvents = 'all';
-      }, 0);
-    });
+    setTimeout(() => {
+      appsWindow.style.opacity = '100';
+      appsWindow.style.pointerEvents = 'all';
+    }, 0);
+  });
 
-    // Apps window
-    const appsWindow = document.createElement('div');
-    appsWindow.setAttribute('id', 'apps-window');
-    appsWindow.classList.add('window', 'list-window');
+  // Apps window
+  const appsWindow = document.createElement('div');
+  appsWindow.setAttribute('id', 'apps-window');
+  appsWindow.classList.add('window', 'list-window');
 
-    const contactButton = document.createElement('div');
-    contactButton.classList.add('left');
-    contactButton.textContent = 'CONTACT';
-    appsWindow.appendChild(contactButton);
+  const contactButton = document.createElement('div');
+  contactButton.classList.add('left');
+  contactButton.textContent = 'CONTACT';
+  appsWindow.appendChild(contactButton);
 
-    contactButton.addEventListener('mouseover', () => {
-      appsWindow.style.background = colors[0].hex;
-    });
+  contactButton.addEventListener('mouseover', () => {
+    appsWindow.style.background = colors[0]!.hex;
+  });
 
-    contactButton.addEventListener('mouseout', () => {
-      appsWindow.style.background = '#ffffff';
-    });
+  contactButton.addEventListener('mouseout', () => {
+    appsWindow.style.background = '#ffffff';
+  });
 
-    contactButton.addEventListener('click', () => {
-      if (!contactWindowAppended) {
-        header.appendChild(contactWindow);
-        contactWindowAppended = true;
-      }
+  contactButton.addEventListener('click', () => {
+    if (!contactWindowAppended) {
+      header.appendChild(contactWindow);
+      contactWindowAppended = true;
+    }
 
-      contactWindow.style.zIndex = windowManager.moveOnTop();
+    contactWindow.style.zIndex = windowManager.moveOnTop();
 
-      setTimeout(() => {
-        contactWindow.style.opacity = '100';
-        contactWindow.style.pointerEvents = 'all';
-      }, 0);
-    });
+    setTimeout(() => {
+      contactWindow.style.opacity = '100';
+      contactWindow.style.pointerEvents = 'all';
+    }, 0);
+  });
 
-    const noiseButton = document.createElement('div');
-    noiseButton.textContent = 'TV';
-    appsWindow.appendChild(noiseButton);
+  const noiseButton = document.createElement('div');
+  noiseButton.textContent = 'TV';
+  appsWindow.appendChild(noiseButton);
 
-    noiseButton.addEventListener('mouseover', () => {
-      appsWindow.style.background = colors[1].hex;
-    });
+  noiseButton.addEventListener('mouseover', () => {
+    appsWindow.style.background = colors[1]!.hex;
+  });
 
-    noiseButton.addEventListener('mouseout', () => {
-      appsWindow.style.background = '#ffffff';
-    });
+  noiseButton.addEventListener('mouseout', () => {
+    appsWindow.style.background = '#ffffff';
+  });
 
-    noiseButton.addEventListener('click', () => {
-      if (!noiseWindowAppended) {
-        header.appendChild(noiseWindow);
-        noiseWindowAppended = true;
-      }
+  noiseButton.addEventListener('click', () => {
+    if (!noiseWindowAppended) {
+      header.appendChild(noiseWindow);
+      noiseWindowAppended = true;
+    }
 
-      noiseWindow.style.zIndex = windowManager.moveOnTop();
+    noiseWindow.style.zIndex = windowManager.moveOnTop();
 
-      setTimeout(() => {
-        noiseWindow.style.opacity = '100';
-        noiseWindow.style.pointerEvents = 'all';
-      }, 0);
-    });
+    setTimeout(() => {
+      noiseWindow.style.opacity = '100';
+      noiseWindow.style.pointerEvents = 'all';
+    }, 0);
+  });
 
-    const radioButton = document.createElement('div');
-    radioButton.classList.add('left');
-    radioButton.textContent = 'RADIO';
-    appsWindow.appendChild(radioButton);
+  const radioButton = document.createElement('div');
+  radioButton.classList.add('left');
+  radioButton.textContent = 'RADIO';
+  appsWindow.appendChild(radioButton);
 
-    radioButton.addEventListener('mouseover', () => {
-      appsWindow.style.background = colors[2].hex;
-    });
+  radioButton.addEventListener('mouseover', () => {
+    appsWindow.style.background = colors[2]!.hex;
+  });
 
-    radioButton.addEventListener('mouseout', () => {
-      appsWindow.style.background = '#ffffff';
-    });
+  radioButton.addEventListener('mouseout', () => {
+    appsWindow.style.background = '#ffffff';
+  });
 
-    const ducksButton = document.createElement('div');
-    ducksButton.textContent = 'DUCKS';
-    appsWindow.appendChild(ducksButton);
+  const ducksButton = document.createElement('div');
+  ducksButton.textContent = 'DUCKS';
+  appsWindow.appendChild(ducksButton);
 
-    ducksButton.addEventListener('mouseover', () => {
-      appsWindow.style.background = colors[3].hex;
-    });
+  ducksButton.addEventListener('mouseover', () => {
+    appsWindow.style.background = colors[3]!.hex;
+  });
 
-    ducksButton.addEventListener('mouseout', () => {
-      appsWindow.style.background = '#ffffff';
-    });
+  ducksButton.addEventListener('mouseout', () => {
+    appsWindow.style.background = '#ffffff';
+  });
 
-    ducksButton.addEventListener('click', () => {
-      if (!duckWindowsAppended) {
-        header.appendChild(duckWindow1);
-        header.appendChild(duckWindow2);
-        header.appendChild(duckWindow3);
-        duckWindowsAppended = true;
-        duckWindow1Appended = true;
-        duckWindow2Appended = true;
-        duckWindow3Appended = true;
-      }
+  ducksButton.addEventListener('click', () => {
+    if (!duckWindowsAppended) {
+      header.appendChild(duckWindow1);
+      header.appendChild(duckWindow2);
+      header.appendChild(duckWindow3);
+      duckWindowsAppended = true;
+      duckWindow1Appended = true;
+      duckWindow2Appended = true;
+      duckWindow3Appended = true;
+    }
 
-      duckWindow1.style.zIndex = windowManager.moveOnTop();
-      duckWindow2.style.zIndex = windowManager.moveOnTop();
-      duckWindow3.style.zIndex = windowManager.moveOnTop();
+    duckWindow1.style.zIndex = windowManager.moveOnTop();
+    duckWindow2.style.zIndex = windowManager.moveOnTop();
+    duckWindow3.style.zIndex = windowManager.moveOnTop();
 
-      setTimeout(() => {
-        duckWindow1.style.opacity = '100';
-        duckWindow1.style.pointerEvents = 'all';
-        duckWindow2.style.opacity = '100';
-        duckWindow2.style.pointerEvents = 'all';
-        duckWindow3.style.opacity = '100';
-        duckWindow3.style.pointerEvents = 'all';
-      }, 0);
-    });
+    setTimeout(() => {
+      duckWindow1.style.opacity = '100';
+      duckWindow1.style.pointerEvents = 'all';
+      duckWindow2.style.opacity = '100';
+      duckWindow2.style.pointerEvents = 'all';
+      duckWindow3.style.opacity = '100';
+      duckWindow3.style.pointerEvents = 'all';
+    }, 0);
+  });
 
-    const pixelButton = document.createElement('div');
-    pixelButton.classList.add('left');
-    pixelButton.textContent = 'PIXEL';
-    appsWindow.appendChild(pixelButton);
+  const pixelButton = document.createElement('div');
+  pixelButton.classList.add('left');
+  pixelButton.textContent = 'PIXEL';
+  appsWindow.appendChild(pixelButton);
 
-    pixelButton.addEventListener('mouseover', () => {
-      appsWindow.style.background = colors[4].hex;
-    });
+  pixelButton.addEventListener('mouseover', () => {
+    appsWindow.style.background = colors[4]!.hex;
+  });
 
-    pixelButton.addEventListener('mouseout', () => {
-      appsWindow.style.background = '#ffffff';
-    });
+  pixelButton.addEventListener('mouseout', () => {
+    appsWindow.style.background = '#ffffff';
+  });
 
-    const emojiButton = document.createElement('div');
-    emojiButton.textContent = 'EMOJI';
-    appsWindow.appendChild(emojiButton);
+  const emojiButton = document.createElement('div');
+  emojiButton.textContent = 'EMOJI';
+  appsWindow.appendChild(emojiButton);
 
-    emojiButton.addEventListener('mouseover', () => {
-      appsWindow.style.background = colors[1].hex;
-    });
+  emojiButton.addEventListener('mouseover', () => {
+    appsWindow.style.background = colors[1]!.hex;
+  });
 
-    emojiButton.addEventListener('mouseout', () => {
-      appsWindow.style.background = '#ffffff';
-    });
+  emojiButton.addEventListener('mouseout', () => {
+    appsWindow.style.background = '#ffffff';
+  });
 
-    const appsWindowTitle = document.createElement('div');
-    appsWindowTitle.classList.add('window-title');
-    appsWindowTitle.innerHTML = `Apps`;
-    appsWindow.appendChild(appsWindowTitle);
+  const appsWindowTitle = document.createElement('div');
+  appsWindowTitle.classList.add('window-title');
+  appsWindowTitle.innerHTML = `Apps`;
+  appsWindow.appendChild(appsWindowTitle);
 
-    header.appendChild(appsWindow);
+  header.appendChild(appsWindow);
 
-    dragElement(appsWindow);
-    appsWindow.addEventListener('mousedown', () => {
-      appsWindow.style.zIndex = windowManager.moveOnTop();
-    });
+  dragElement(appsWindow);
+  appsWindow.addEventListener('mousedown', () => {
+    appsWindow.style.zIndex = windowManager.moveOnTop();
+  });
 
-    // Close button (apps window)
-    const closeButtonAppsWindow = document.createElement('button');
-    closeButtonAppsWindow.classList.add('remove-button');
-    closeButtonAppsWindow.textContent = '✕';
-    closeButtonAppsWindow.addEventListener('click', () => {
-      appsWindow.style.opacity = '0';
+  // Close button (apps window)
+  const closeButtonAppsWindow = document.createElement('button');
+  closeButtonAppsWindow.classList.add('remove-button');
+  closeButtonAppsWindow.textContent = '✕';
+  closeButtonAppsWindow.addEventListener('click', () => {
+    appsWindow.style.opacity = '0';
 
-      setTimeout(() => {
-        header.removeChild(appsWindow);
-        appsWindowAppended = false;
-      }, 500);
-    });
-    appsWindow.appendChild(closeButtonAppsWindow);
+    setTimeout(() => {
+      header.removeChild(appsWindow);
+      appsWindowAppended = false;
+    }, 500);
+  });
+  appsWindow.appendChild(closeButtonAppsWindow);
 
-    // Contact window
-    const contactWindow = document.createElement('div');
-    contactWindow.setAttribute('id', 'contact-window');
-    contactWindow.classList.add('window', 'list-window');
-    contactWindow.innerHTML = /* html */ `
+  // Contact window
+  const contactWindow = document.createElement('div');
+  contactWindow.setAttribute('id', 'contact-window');
+  contactWindow.classList.add('window', 'list-window');
+  contactWindow.innerHTML = /* html */ `
     <a 
       target="_blank" 
       href="https://www.linkedin.com/in/michaelkolesidis"
@@ -256,57 +255,57 @@ export default function header() {
     </a>
     `;
 
-    const contactWindowTitle = document.createElement('div');
-    contactWindowTitle.classList.add('window-title');
-    contactWindowTitle.innerHTML = `Contact`;
-    contactWindow.appendChild(contactWindowTitle);
+  const contactWindowTitle = document.createElement('div');
+  contactWindowTitle.classList.add('window-title');
+  contactWindowTitle.innerHTML = `Contact`;
+  contactWindow.appendChild(contactWindowTitle);
 
-    header.appendChild(contactWindow);
+  header.appendChild(contactWindow);
 
-    dragElement(contactWindow);
-    contactWindow.addEventListener('mousedown', () => {
-      contactWindow.style.zIndex = windowManager.moveOnTop();
-    });
+  dragElement(contactWindow);
+  contactWindow.addEventListener('mousedown', () => {
+    contactWindow.style.zIndex = windowManager.moveOnTop();
+  });
 
-    // Close button (contact window)
-    const closeButtonContactWindow = document.createElement('button');
-    closeButtonContactWindow.classList.add('remove-button');
-    closeButtonContactWindow.textContent = '✕';
-    closeButtonContactWindow.addEventListener('click', () => {
-      contactWindow.style.opacity = '0';
+  // Close button (contact window)
+  const closeButtonContactWindow = document.createElement('button');
+  closeButtonContactWindow.classList.add('remove-button');
+  closeButtonContactWindow.textContent = '✕';
+  closeButtonContactWindow.addEventListener('click', () => {
+    contactWindow.style.opacity = '0';
 
-      setTimeout(() => {
-        header.removeChild(contactWindow);
-        contactWindowAppended = false;
-      }, 500);
-    });
-    contactWindow.appendChild(closeButtonContactWindow);
+    setTimeout(() => {
+      header.removeChild(contactWindow);
+      contactWindowAppended = false;
+    }, 500);
+  });
+  contactWindow.appendChild(closeButtonContactWindow);
 
-    // Noise window
-    const noiseWindow = document.createElement('div');
-    noiseWindow.setAttribute('id', 'noise-window');
-    noiseWindow.classList.add('window');
-    const noiseWindowTitle = document.createElement('div');
-    noiseWindowTitle.classList.add('window-title');
-    noiseWindowTitle.innerHTML = `The Only Real Channel™`;
-    noiseWindow.appendChild(noiseWindowTitle);
+  // Noise window
+  const noiseWindow = document.createElement('div');
+  noiseWindow.setAttribute('id', 'noise-window');
+  noiseWindow.classList.add('window');
+  const noiseWindowTitle = document.createElement('div');
+  noiseWindowTitle.classList.add('window-title');
+  noiseWindowTitle.innerHTML = `The Only Real Channel™`;
+  noiseWindow.appendChild(noiseWindowTitle);
 
-    const canvas = document.createElement('canvas');
-    canvas.setAttribute('id', 'noise');
-    noiseWindow.appendChild(canvas);
+  const canvas = document.createElement('canvas');
+  canvas.setAttribute('id', 'noise');
+  noiseWindow.appendChild(canvas);
 
-    const gl = canvas.getContext('webgl');
+  const gl = canvas.getContext('webgl');
 
-    // Vertex shader
-    const vertexShaderSource = `
+  // Vertex shader
+  const vertexShaderSource = `
     attribute vec4 a_position;
     void main() {
         gl_Position = a_position;
     }
 `;
 
-    // Fragment shader
-    const fragmentShaderSource = `
+  // Fragment shader
+  const fragmentShaderSource = `
     precision highp float;
     uniform float u_time;
     uniform vec2 u_resolution;
@@ -325,352 +324,350 @@ export default function header() {
     }
 `;
 
-    // Create shader program
-    function createShaderProgram(
-      gl: any,
-      vertexShaderSource: any,
-      fragmentShaderSource: any
-    ) {
-      const vertexShader = gl.createShader(gl.VERTEX_SHADER);
-      gl.shaderSource(vertexShader, vertexShaderSource);
-      gl.compileShader(vertexShader);
+  // Create shader program
+  function createShaderProgram(
+    gl: any,
+    vertexShaderSource: any,
+    fragmentShaderSource: any
+  ) {
+    const vertexShader = gl.createShader(gl.VERTEX_SHADER);
+    gl.shaderSource(vertexShader, vertexShaderSource);
+    gl.compileShader(vertexShader);
 
-      const fragmentShader = gl.createShader(gl.FRAGMENT_SHADER);
-      gl.shaderSource(fragmentShader, fragmentShaderSource);
-      gl.compileShader(fragmentShader);
+    const fragmentShader = gl.createShader(gl.FRAGMENT_SHADER);
+    gl.shaderSource(fragmentShader, fragmentShaderSource);
+    gl.compileShader(fragmentShader);
 
-      const program = gl.createProgram();
-      gl.attachShader(program, vertexShader);
-      gl.attachShader(program, fragmentShader);
-      gl.linkProgram(program);
+    const program = gl.createProgram();
+    gl.attachShader(program, vertexShader);
+    gl.attachShader(program, fragmentShader);
+    gl.linkProgram(program);
 
-      return program;
+    return program;
+  }
+
+  const program = createShaderProgram(
+    gl,
+    vertexShaderSource,
+    fragmentShaderSource
+  );
+  if (!gl) return;
+  gl.useProgram(program);
+
+  // Define vertex positions for a full-screen quad (spanning normalized device coordinates [-1, 1])
+  const positionBuffer = gl.createBuffer();
+  gl.bindBuffer(gl.ARRAY_BUFFER, positionBuffer);
+  gl.bufferData(
+    gl.ARRAY_BUFFER,
+    new Float32Array([-1.0, -1.0, 1.0, -1.0, -1.0, 1.0, 1.0, 1.0]),
+    gl.STATIC_DRAW
+  );
+
+  // Set up attributes and uniforms
+  const positionAttributeLocation = gl.getAttribLocation(program, 'a_position');
+  gl.enableVertexAttribArray(positionAttributeLocation);
+  gl.vertexAttribPointer(positionAttributeLocation, 2, gl.FLOAT, false, 0, 0);
+
+  const timeUniformLocation = gl.getUniformLocation(program, 'u_time');
+  const resolutionUniformLocation = gl.getUniformLocation(
+    program,
+    'u_resolution'
+  );
+
+  let isPaused = false;
+
+  // Pause/unpause on click
+  canvas.addEventListener('click', () => {
+    isPaused = !isPaused;
+  });
+
+  // Render loop
+  function render() {
+    if (!gl) return;
+    if (!isPaused) {
+      gl.uniform1f(timeUniformLocation, performance.now() * 0.001);
     }
 
-    const program = createShaderProgram(
-      gl,
-      vertexShaderSource,
-      fragmentShaderSource
-    );
-    gl.useProgram(program);
+    // Set resolution
+    gl.uniform2f(resolutionUniformLocation, canvas.width, canvas.height);
 
-    // Define vertex positions for a full-screen quad (spanning normalized device coordinates [-1, 1])
-    const positionBuffer = gl.createBuffer();
-    gl.bindBuffer(gl.ARRAY_BUFFER, positionBuffer);
-    gl.bufferData(
-      gl.ARRAY_BUFFER,
-      new Float32Array([-1.0, -1.0, 1.0, -1.0, -1.0, 1.0, 1.0, 1.0]),
-      gl.STATIC_DRAW
-    );
+    // Draw
+    gl.drawArrays(gl.TRIANGLE_STRIP, 0, 4);
 
-    // Set up attributes and uniforms
-    const positionAttributeLocation = gl.getAttribLocation(
-      program,
-      'a_position'
-    );
-    gl.enableVertexAttribArray(positionAttributeLocation);
-    gl.vertexAttribPointer(positionAttributeLocation, 2, gl.FLOAT, false, 0, 0);
+    // Continue rendering
+    requestAnimationFrame(render);
+  }
 
-    const timeUniformLocation = gl.getUniformLocation(program, 'u_time');
-    const resolutionUniformLocation = gl.getUniformLocation(
-      program,
-      'u_resolution'
-    );
+  render();
 
-    let isPaused = false;
+  const closeButtonNoiseWindow = document.createElement('button');
+  closeButtonNoiseWindow.classList.add('remove-button');
+  closeButtonNoiseWindow.textContent = '✕';
+  closeButtonNoiseWindow.addEventListener('click', () => {
+    noiseWindow.style.opacity = '0';
+    setTimeout(() => {
+      header.removeChild(noiseWindow);
+      noiseWindowAppended = false;
+    }, 500);
+  });
+  noiseWindow.appendChild(closeButtonNoiseWindow);
+  header.appendChild(noiseWindow);
+  dragElement(noiseWindow);
+  noiseWindow.addEventListener('mousedown', () => {
+    noiseWindow.style.zIndex = windowManager.moveOnTop();
+  });
 
-    // Pause/unpause on click
-    canvas.addEventListener('click', () => {
-      isPaused = !isPaused;
-    });
+  // Duck windows
+  const duckWindow1 = document.createElement('div');
+  duckWindow1.setAttribute('id', 'duck-window-1');
+  duckWindow1.classList.add('window');
+  const duckWindow1Title = document.createElement('div');
+  duckWindow1Title.classList.add('window-title');
+  duckWindow1Title.innerHTML = `Duck in a bathtub`;
+  duckWindow1.appendChild(duckWindow1Title);
+  const closeButtonDuckWindow1 = document.createElement('button');
+  closeButtonDuckWindow1.classList.add('remove-button');
+  closeButtonDuckWindow1.textContent = '✕';
+  closeButtonDuckWindow1.addEventListener('click', () => {
+    duckWindow1.style.opacity = '0';
+    setTimeout(() => {
+      header.removeChild(duckWindow1);
+      duckWindow1Appended = false;
 
-    // Render loop
-    function render() {
-      if (!isPaused) {
-        gl.uniform1f(timeUniformLocation, performance.now() * 0.001);
+      if (!duckWindow2Appended && !duckWindow3Appended) {
+        duckWindowsAppended = false;
       }
+    }, 500);
+  });
+  duckWindow1.appendChild(closeButtonDuckWindow1);
+  header.appendChild(duckWindow1);
+  dragElement(duckWindow1);
+  duckWindow1.addEventListener('mousedown', () => {
+    duckWindow1.style.zIndex = windowManager.moveOnTop();
+  });
 
-      // Set resolution
-      gl.uniform2f(resolutionUniformLocation, canvas.width, canvas.height);
+  const duckWindow2 = document.createElement('div');
+  duckWindow2.setAttribute('id', 'duck-window-2');
+  duckWindow2.classList.add('window');
+  const duckWindow2Title = document.createElement('div');
+  duckWindow2Title.classList.add('window-title');
+  duckWindow2Title.innerHTML = `Duck in the sea`;
+  duckWindow2.appendChild(duckWindow2Title);
+  const closeButtonDuckWindow2 = document.createElement('button');
+  closeButtonDuckWindow2.classList.add('remove-button');
+  closeButtonDuckWindow2.textContent = '✕';
+  closeButtonDuckWindow2.addEventListener('click', () => {
+    duckWindow2.style.opacity = '0';
+    setTimeout(() => {
+      header.removeChild(duckWindow2);
+      duckWindow2Appended = false;
 
-      // Draw
-      gl.drawArrays(gl.TRIANGLE_STRIP, 0, 4);
+      if (!duckWindow1Appended && !duckWindow3Appended) {
+        duckWindowsAppended = false;
+      }
+    }, 500);
+  });
+  duckWindow2.appendChild(closeButtonDuckWindow2);
+  header.appendChild(duckWindow2);
+  dragElement(duckWindow2);
+  duckWindow2.addEventListener('mousedown', () => {
+    duckWindow2.style.zIndex = windowManager.moveOnTop();
+  });
 
-      // Continue rendering
-      requestAnimationFrame(render);
-    }
+  const duckWindow3 = document.createElement('div');
+  duckWindow3.setAttribute('id', 'duck-window-3');
+  duckWindow3.classList.add('window');
+  const duckWindow3Title = document.createElement('div');
+  duckWindow3Title.classList.add('window-title');
+  duckWindow3Title.innerHTML = `Duck in a pool`;
+  duckWindow3.appendChild(duckWindow3Title);
+  const closeButtonDuckWindow3 = document.createElement('button');
+  closeButtonDuckWindow3.classList.add('remove-button');
+  closeButtonDuckWindow3.textContent = '✕';
+  closeButtonDuckWindow3.addEventListener('click', () => {
+    duckWindow3.style.opacity = '0';
+    setTimeout(() => {
+      header.removeChild(duckWindow3);
+      duckWindow3Appended = false;
 
-    render();
+      if (!duckWindow1Appended && !duckWindow2Appended) {
+        duckWindowsAppended = false;
+      }
+    }, 500);
+  });
+  duckWindow3.appendChild(closeButtonDuckWindow3);
+  header.appendChild(duckWindow3);
+  dragElement(duckWindow3);
+  duckWindow3.addEventListener('mousedown', () => {
+    duckWindow3.style.zIndex = windowManager.moveOnTop();
+  });
 
-    const closeButtonNoiseWindow = document.createElement('button');
-    closeButtonNoiseWindow.classList.add('remove-button');
-    closeButtonNoiseWindow.textContent = '✕';
-    closeButtonNoiseWindow.addEventListener('click', () => {
-      noiseWindow.style.opacity = '0';
-      setTimeout(() => {
-        header.removeChild(noiseWindow);
-        noiseWindowAppended = false;
-      }, 500);
-    });
-    noiseWindow.appendChild(closeButtonNoiseWindow);
-    header.appendChild(noiseWindow);
-    dragElement(noiseWindow);
-    noiseWindow.addEventListener('mousedown', () => {
-      noiseWindow.style.zIndex = windowManager.moveOnTop();
-    });
+  // Top gap
+  const topGap = document.createElement('div');
+  topGap.setAttribute('id', 'top-gap');
+  topGap.innerHTML = `.`;
+  topGap.style.color = `white`;
+  header.appendChild(topGap);
 
-    // Duck windows
-    const duckWindow1 = document.createElement('div');
-    duckWindow1.setAttribute('id', 'duck-window-1');
-    duckWindow1.classList.add('window');
-    const duckWindow1Title = document.createElement('div');
-    duckWindow1Title.classList.add('window-title');
-    duckWindow1Title.innerHTML = `Duck in a bathtub`;
-    duckWindow1.appendChild(duckWindow1Title);
-    const closeButtonDuckWindow1 = document.createElement('button');
-    closeButtonDuckWindow1.classList.add('remove-button');
-    closeButtonDuckWindow1.textContent = '✕';
-    closeButtonDuckWindow1.addEventListener('click', () => {
-      duckWindow1.style.opacity = '0';
-      setTimeout(() => {
-        header.removeChild(duckWindow1);
-        duckWindow1Appended = false;
+  // Message Box
+  const messageBox = document.createElement('div');
+  messageBox.setAttribute('id', 'box');
 
-        if (!duckWindow2Appended && !duckWindow3Appended) {
-          duckWindowsAppended = false;
-        }
-      }, 500);
-    });
-    duckWindow1.appendChild(closeButtonDuckWindow1);
-    header.appendChild(duckWindow1);
-    dragElement(duckWindow1);
-    duckWindow1.addEventListener('mousedown', () => {
-      duckWindow1.style.zIndex = windowManager.moveOnTop();
-    });
-
-    const duckWindow2 = document.createElement('div');
-    duckWindow2.setAttribute('id', 'duck-window-2');
-    duckWindow2.classList.add('window');
-    const duckWindow2Title = document.createElement('div');
-    duckWindow2Title.classList.add('window-title');
-    duckWindow2Title.innerHTML = `Duck in the sea`;
-    duckWindow2.appendChild(duckWindow2Title);
-    const closeButtonDuckWindow2 = document.createElement('button');
-    closeButtonDuckWindow2.classList.add('remove-button');
-    closeButtonDuckWindow2.textContent = '✕';
-    closeButtonDuckWindow2.addEventListener('click', () => {
-      duckWindow2.style.opacity = '0';
-      setTimeout(() => {
-        header.removeChild(duckWindow2);
-        duckWindow2Appended = false;
-
-        if (!duckWindow1Appended && !duckWindow3Appended) {
-          duckWindowsAppended = false;
-        }
-      }, 500);
-    });
-    duckWindow2.appendChild(closeButtonDuckWindow2);
-    header.appendChild(duckWindow2);
-    dragElement(duckWindow2);
-    duckWindow2.addEventListener('mousedown', () => {
-      duckWindow2.style.zIndex = windowManager.moveOnTop();
-    });
-
-    const duckWindow3 = document.createElement('div');
-    duckWindow3.setAttribute('id', 'duck-window-3');
-    duckWindow3.classList.add('window');
-    const duckWindow3Title = document.createElement('div');
-    duckWindow3Title.classList.add('window-title');
-    duckWindow3Title.innerHTML = `Duck in a pool`;
-    duckWindow3.appendChild(duckWindow3Title);
-    const closeButtonDuckWindow3 = document.createElement('button');
-    closeButtonDuckWindow3.classList.add('remove-button');
-    closeButtonDuckWindow3.textContent = '✕';
-    closeButtonDuckWindow3.addEventListener('click', () => {
-      duckWindow3.style.opacity = '0';
-      setTimeout(() => {
-        header.removeChild(duckWindow3);
-        duckWindow3Appended = false;
-
-        if (!duckWindow1Appended && !duckWindow2Appended) {
-          duckWindowsAppended = false;
-        }
-      }, 500);
-    });
-    duckWindow3.appendChild(closeButtonDuckWindow3);
-    header.appendChild(duckWindow3);
-    dragElement(duckWindow3);
-    duckWindow3.addEventListener('mousedown', () => {
-      duckWindow3.style.zIndex = windowManager.moveOnTop();
-    });
-
-    // Top gap
-    const topGap = document.createElement('div');
-    topGap.setAttribute('id', 'top-gap');
-    topGap.innerHTML = `.`;
-    topGap.style.color = `white`;
-    header.appendChild(topGap);
-
-    // Message Box
-    const messageBox = document.createElement('div');
-    messageBox.setAttribute('id', 'box');
-
-    const content = document.createElement('div');
-    content.classList.add('content');
-    content.innerHTML = /* html */ `
+  const content = document.createElement('div');
+  content.classList.add('content');
+  content.innerHTML = /* html */ `
         <p>DESIGN AWARD</p>
         <p>One Page Love</p>
         <p>February 2023</p>`;
-    messageBox.appendChild(content);
+  messageBox.appendChild(content);
 
-    dragElement(messageBox);
-    messageBox.style.zIndex = windowManager.base;
-    messageBox.addEventListener('mousedown', () => {
-      messageBox.style.zIndex = windowManager.moveOnTop();
-    });
+  dragElement(messageBox);
+  messageBox.style.zIndex = windowManager.base;
+  messageBox.addEventListener('mousedown', () => {
+    messageBox.style.zIndex = windowManager.moveOnTop();
+  });
 
-    // Remove button (message box)
-    const closeButton = document.createElement('button');
-    closeButton.classList.add('remove-button');
-    closeButton.textContent = '✕';
-    closeButton.addEventListener('click', () => {
-      messageBox.style.opacity = '0';
-      header.removeChild(messageBox);
-    });
-    messageBox.appendChild(closeButton);
-    header.appendChild(messageBox);
+  // Remove button (message box)
+  const closeButton = document.createElement('button');
+  closeButton.classList.add('remove-button');
+  closeButton.textContent = '✕';
+  closeButton.addEventListener('click', () => {
+    messageBox.style.opacity = '0';
+    header.removeChild(messageBox);
+  });
+  messageBox.appendChild(closeButton);
+  header.appendChild(messageBox);
 
-    // Sticker
-    const sticker = document.createElement('div');
-    sticker.setAttribute('id', 'new');
-    sticker.innerHTML = `<img alt="New! sticker" src="../../assets/new.svg" />`;
-    header.appendChild(sticker);
+  // Sticker
+  const sticker = document.createElement('div');
+  sticker.setAttribute('id', 'new');
+  sticker.innerHTML = `<img alt="New! sticker" src="../../assets/new.svg" />`;
+  header.appendChild(sticker);
 
-    dragElement(sticker);
-    sticker.style.zIndex = windowManager.base;
+  dragElement(sticker);
+  sticker.style.zIndex = windowManager.base;
 
-    sticker.addEventListener('mousedown', () => {
-      sticker.style.zIndex = windowManager.moveOnTop();
-    });
+  sticker.addEventListener('mousedown', () => {
+    sticker.style.zIndex = windowManager.moveOnTop();
+  });
 
-    // Chinese
-    const chinese = document.createElement('p');
-    chinese.setAttribute('id', 'chinese');
-    chinese.innerHTML = `欢迎来到我的网站`;
-    header.appendChild(chinese);
+  // Chinese
+  const chinese = document.createElement('p');
+  chinese.setAttribute('id', 'chinese');
+  chinese.innerHTML = `欢迎来到我的网站`;
+  header.appendChild(chinese);
 
-    dragElement(chinese);
-    chinese.style.zIndex = windowManager.base;
+  dragElement(chinese);
+  chinese.style.zIndex = windowManager.base;
 
-    chinese.addEventListener('mousedown', () => {
-      chinese.style.zIndex = windowManager.moveOnTop();
-    });
+  chinese.addEventListener('mousedown', () => {
+    chinese.style.zIndex = windowManager.moveOnTop();
+  });
 
-    // Rays
-    const rays = document.createElement('p');
-    rays.setAttribute('id', 'rays');
-    rays.innerHTML = `<img alt="Ray disc" src="../../assets/rays.svg" />`;
-    header.appendChild(rays);
+  // Rays
+  const rays = document.createElement('p');
+  rays.setAttribute('id', 'rays');
+  rays.innerHTML = `<img alt="Ray disc" src="../../assets/rays.svg" />`;
+  header.appendChild(rays);
 
-    dragElement(rays);
-    rays.style.zIndex = windowManager.base;
+  dragElement(rays);
+  rays.style.zIndex = windowManager.base;
 
-    rays.addEventListener('mousedown', () => {
-      rays.style.zIndex = windowManager.moveOnTop();
-    });
+  rays.addEventListener('mousedown', () => {
+    rays.style.zIndex = windowManager.moveOnTop();
+  });
 
-    // Flowers
-    const flowers = document.createElement('p');
-    flowers.setAttribute('id', 'flowers');
-    flowers.innerHTML = `<img id="flowers-1" alt="Flowers" src="../../assets/flowers1.gif" />
-    <img alt="Welcome sign" id="flowers-2" src="../../assets/flowers2.gif" />`;
-    header.appendChild(flowers);
+  // Flowers
+  const flowers = document.createElement('p');
+  flowers.setAttribute('id', 'flowers');
+  flowers.innerHTML = `<img id="flowers-1" alt="Flowers" src="../../assets/flowers-1.gif" />
+    <img alt="Welcome sign" id="flowers-2" src="../../assets/flowers-2.gif" />`;
+  header.appendChild(flowers);
 
-    const flowers1 = document.getElementById('flowers-1');
-    const flowers2 = document.getElementById('flowers-2');
+  const flowers1 = document.getElementById('flowers-1');
+  const flowers2 = document.getElementById('flowers-2');
 
-    let flowerNumber = 1;
+  let flowerNumber = 1;
 
-    setInterval(() => {
-      if (flowerNumber === 1) {
-        if (flowers1 && flowers2) {
-          flowers1.style.opacity = '0';
-          flowers2.style.opacity = '1';
-        }
-        flowerNumber = 2;
-      } else if (flowerNumber === 2) {
-        if (flowers1 && flowers2) {
-          flowers2.style.opacity = '0';
-          flowers1.style.opacity = '1';
-        }
-        flowerNumber = 1;
+  setInterval(() => {
+    if (flowerNumber === 1) {
+      if (flowers1 && flowers2) {
+        flowers1.style.opacity = '0';
+        flowers2.style.opacity = '1';
       }
-    }, 4000);
+      flowerNumber = 2;
+    } else if (flowerNumber === 2) {
+      if (flowers1 && flowers2) {
+        flowers2.style.opacity = '0';
+        flowers1.style.opacity = '1';
+      }
+      flowerNumber = 1;
+    }
+  }, 4000);
 
-    dragElement(flowers);
-    flowers.style.zIndex = windowManager.base;
+  dragElement(flowers);
+  flowers.style.zIndex = windowManager.base;
 
-    flowers.addEventListener('mousedown', () => {
-      flowers.style.zIndex = windowManager.moveOnTop();
-    });
+  flowers.addEventListener('mousedown', () => {
+    flowers.style.zIndex = windowManager.moveOnTop();
+  });
 
-    // Welcome
-    const welcome = document.createElement('div');
-    welcome.setAttribute('id', 'welcome');
-    welcome.innerHTML = `<img alt="Welcome sign" src="../../assets/welcome.gif" />`;
-    header.appendChild(welcome);
+  // Welcome
+  const welcome = document.createElement('div');
+  welcome.setAttribute('id', 'welcome');
+  welcome.innerHTML = `<img alt="Welcome sign" src="../../assets/welcome.gif" />`;
+  header.appendChild(welcome);
 
-    dragElement(welcome);
-    welcome.style.zIndex = windowManager.base;
+  dragElement(welcome);
+  welcome.style.zIndex = windowManager.base;
 
-    welcome.addEventListener('mousedown', () => {
-      welcome.style.zIndex = windowManager.moveOnTop();
-    });
+  welcome.addEventListener('mousedown', () => {
+    welcome.style.zIndex = windowManager.moveOnTop();
+  });
 
-    // Canvas
-    const sketchPlaceholder = document.getElementById('sketch-placeholder');
+  // Canvas
+  const sketchPlaceholder = document.getElementById('sketch-placeholder');
 
-    if (sketchPlaceholder) {
+  if (sketchPlaceholder) {
+    sketchPlaceholder.style.height = `${window.innerHeight - 140}px`;
+
+    window.addEventListener('resize', () => {
       sketchPlaceholder.style.height = `${window.innerHeight - 140}px`;
+      sunscreen.style.top = `${window.innerHeight}px`;
 
-      window.addEventListener('resize', () => {
-        sketchPlaceholder.style.height = `${window.innerHeight - 140}px`;
-        sunscreen.style.top = `${window.innerHeight}px`;
+      const canvas = document.querySelector('canvas');
+      if (canvas) {
+        canvas.style.height = `${window.innerHeight - 140}px`;
+      }
+    });
 
-        const canvas = document.querySelector('canvas');
-        if (canvas) {
-          canvas.style.height = `${window.innerHeight - 140}px`;
-        }
-      });
+    sketchPlaceholder.style.background = `rgb(${
+      generateNewColor(colors, sketchPlaceholder, 'background').rgb
+    })`;
 
+    sketchPlaceholder.addEventListener('click', () => {
       sketchPlaceholder.style.background = `rgb(${
         generateNewColor(colors, sketchPlaceholder, 'background').rgb
       })`;
-
-      sketchPlaceholder.addEventListener('click', () => {
-        sketchPlaceholder.style.background = `rgb(${
-          generateNewColor(colors, sketchPlaceholder, 'background').rgb
-        })`;
-      });
-    }
-
-    // Sunscreen
-    const sunscreen = document.createElement('img');
-    sunscreen.setAttribute('src', 'assets/sunscreen.png');
-    sunscreen.setAttribute('id', 'sunscreen');
-    sunscreen.style.top = `${window.innerHeight}px`;
-
-    sunscreen.addEventListener('click', () => {
-      sunscreen.classList.add('shake');
-      setTimeout(() => {
-        sunscreen.classList.remove('shake');
-      }, 500);
-
-      if (sketchPlaceholder) {
-        sketchPlaceholder.style.background = "url('../../assets/water.png')";
-      }
     });
-
-    header.appendChild(sunscreen);
   }
+
+  // Sunscreen
+  const sunscreen = document.createElement('img');
+  sunscreen.setAttribute('src', 'assets/sunscreen.png');
+  sunscreen.setAttribute('id', 'sunscreen');
+  sunscreen.style.top = `${window.innerHeight}px`;
+
+  sunscreen.addEventListener('click', () => {
+    sunscreen.classList.add('shake');
+    setTimeout(() => {
+      sunscreen.classList.remove('shake');
+    }, 500);
+
+    if (sketchPlaceholder) {
+      sketchPlaceholder.style.background = "url('../../assets/water.png')";
+    }
+  });
+
+  header.appendChild(sunscreen);
 }

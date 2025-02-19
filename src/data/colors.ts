@@ -1,4 +1,11 @@
-export const colors = [
+export interface Color {
+  name: string;
+  hex: string;
+  rgb: string;
+}
+
+// The color palette used throughout the website
+export const colors: Color[] = [
   {
     name: `pink`,
     hex: `#ff90e8`,

@@ -4,21 +4,13 @@
 
 export default function technologies() {
   const technologies = document.getElementById('contact');
-  if (technologies != null) {
-    // Title
-    const technologiesTitle = document.createElement('div');
-    technologiesTitle.classList.add('wavy');
-    technologiesTitle.innerHTML = `   
-      <span style="--i:1">T</span>
-      <span style="--i:2">E</span>
-      <span style="--i:3">C</span>
-      <span style="--i:4">H</span>
-      <span style="--i:5"> </span>
-      <span style="--i:6">S</span>
-      <span style="--i:7">T</span>
-      <span style="--i:8">A</span>
-      <span style="--i:9">C</span>
-      <span style="--i:9">K</span>`;
-    technologies.appendChild(technologiesTitle);
-  }
+  if (!technologies) return;
+
+  const titleText = 'TECH STACK';
+  const technologiesTitle = document.createElement('div');
+  technologiesTitle.classList.add('wavy');
+  technologiesTitle.innerHTML = [...titleText]
+    .map((char, i) => `<span style="--i:${i + 1}">${char}</span> `)
+    .join('');
+  technologies.appendChild(technologiesTitle);
 }

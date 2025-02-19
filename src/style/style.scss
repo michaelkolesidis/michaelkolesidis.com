@@ -1236,7 +1236,7 @@ $duration: 500s;
   }
 }
 
-.ticker-wrap .ticker__item:before {
+.ticker-wrap .ticker-item:before {
   content: '';
   height: 11px;
   width: 11px;
@@ -1288,7 +1288,7 @@ $duration: 500s;
     font-size: 0.875rem;
     letter-spacing: 1.5px;
 
-    &__item {
+    &-item {
       display: inline-block;
     }
   }

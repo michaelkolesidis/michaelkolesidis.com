@@ -1,5 +1,5 @@
-// About section sentences
-export const sentencesAbout = [
+// About section
+export const sentencesAbout: string[] = [
   `I am passionate about design, from industrial design and architecture to branding and web design.`,
 
   `As a web developer, I primarily work with React, Next.js, and TypeScript, alongside various other frameworks and libraries. I am highly adaptable to different technologies and situations.`,
@@ -11,8 +11,8 @@ export const sentencesAbout = [
   `I don't drink coffee or tea—well, maybe tea a few times a year, but that's about it.`,
 ];
 
-// This Website section sentences
-export const sentencesThisWebsite = [
+// This Website section
+export const sentencesThisWebsite: string[] = [
   `It has been designed and developed from scratch, without the use of any front-end UI libraries, frameworks, or templates. The only library used is a graphics library named <a href="https://p5js.org" target="_blank">p5.js</a>, that helped me with the 3D rubber duck.`,
 
   `It is yet another <a href="https://www.cameronsworld.net/" target="_blank">love letter to the Internet of the old</a>, the era of naïve (web) art, the era of the romantic amateur, the era of GeoCities. When did the web become so serious? I first discovered the magical world of the world wide web in the 90's and I hope I have captured a glimpse of that time. My design is also influenced by print publication layouts and the bold, graphic style of 90s MTV.`,

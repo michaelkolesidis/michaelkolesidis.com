@@ -2,6 +2,7 @@ import { Howl } from 'howler';
 
 export default function soundButton() {
   const soundButton = document.getElementById('sound-button');
+  if (!soundButton) return;
 
   let soundtrackStarted = false;
   let soundtrackPlaying = false;
@@ -26,28 +27,26 @@ export default function soundButton() {
     soundtrackStarted = true;
     soundtrackPlaying = true;
 
-    if (soundButton != null) {
-      soundButton.innerHTML = `<img alt=Smiley" src="../../assets/speaker.svg" />`;
-      soundButton.style.opacity = '100';
+    soundButton.innerHTML = `<img alt=Smiley" src="../../assets/speaker.svg" />`;
+    soundButton.style.opacity = '100';
 
-      setTimeout(() => {
+    setTimeout(() => {
+      soundButton.style.opacity = '0';
+    }, 15000);
+
+    setTimeout(() => {
+      soundButton.style.display = 'none';
+    }, 16000);
+
+    soundButton.addEventListener('click', () => {
+      if (soundtrackPlaying) {
+        soundtrack.pause();
         soundButton.style.opacity = '0';
-      }, 15000);
 
-      setTimeout(() => {
-        soundButton.style.display = 'none';
-      }, 16000);
-
-      soundButton.addEventListener('click', () => {
-        if (soundtrackPlaying) {
-          soundtrack.pause();
-          soundButton.style.opacity = '0';
-
-          setTimeout(() => {
-            soundButton.style.display = 'none';
-          }, 1000);
-        }
-      });
-    }
+        setTimeout(() => {
+          soundButton.style.display = 'none';
+        }, 1000);
+      }
+    });
   });
 }

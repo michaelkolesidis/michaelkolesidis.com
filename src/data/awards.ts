@@ -1,4 +1,14 @@
-export const awardList = [
+export interface Award {
+  plaque: string; // Symbol or icon representing the award
+  title: string; // The title of the award
+  link: string; // Link to the award's details (image, page, etc.)
+  awarder: string; // The name of the organization that gave the award
+  awarderLink: string; // Link to the awarder's website
+  description: string; // Description of the award
+}
+
+// The list of the awards used in the Awards section
+export const awardList: Award[] = [
   {
     plaque: `!✦`,
     title: `DESIGN AWARD`,

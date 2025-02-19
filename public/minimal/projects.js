@@ -155,7 +155,7 @@ const projectList = [
 
   {
     name: 'Cube Rabbit',
-    image: '../../images/cube_rabbit_coming_soon.png',
+    image: '../../images/cube-rabbit.png',
     technologies: 'Three.js, React, TypeScript, React Three Fiber, Zustand',
     summary: 'The story of a cube-shaped rabbit.',
     description: '',
