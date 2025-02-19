@@ -531,9 +531,10 @@ a {
 
   div:hover,
   a:hover {
-    text-decoration: line-through;
     font-style: italic;
     cursor: url('../assets/cursors/windows95-pointer.png'), auto;
+    animation: flash 0.5s infinite;
+    animation-timing-function: steps(4, jump-both);
   }
 }
 
@@ -799,14 +800,25 @@ canvas {
 }
 
 .project-title:hover {
-  animation: flash 0.3s infinite;
+  font-style: italic;
+  animation: flash 0.5s infinite;
   animation-timing-function: steps(4, jump-both);
 }
 
 @keyframes flash {
   0% {
+    display: block;
+    opacity: 1;
+  }
+
+  5% {
     display: none;
     opacity: 0;
+  }
+
+  50% {
+    display: block;
+    opacity: 0.5;
   }
 
   100% {
@@ -847,6 +859,10 @@ canvas {
   font-size: 1.4rem;
 }
 
+.repo-link:hover {
+  font-style: italic;
+}
+
 .repo-link:hover::after {
   content: ' < < < < < <';
 }
@@ -872,7 +888,7 @@ canvas {
 }
 
 #exclamation {
-  animation: flash 0.3s infinite;
+  animation: flash 0.5s infinite;
   font-weight: 600;
 }
 
@@ -950,7 +966,7 @@ canvas {
 
   .sentence {
     margin-left: 100rem;
-    // letter-spacing: 0.05em;
+    letter-spacing: 0.05em;
   }
 
   p {
@@ -1084,10 +1100,12 @@ canvas {
   a {
     font-weight: 600;
     text-decoration: underline;
+    font-size: 1em;
   }
 
   a:hover {
     text-decoration: line-through;
+    font-style: italic;
   }
 }
 
@@ -1127,6 +1145,10 @@ footer {
       color: $white;
       text-decoration: underline;
     }
+
+    a:hover {
+      font-style: italic;
+    }
   }
 
   #duck {
@@ -1146,15 +1168,6 @@ footer {
 }
 
 /********** LOADING **********/
-@keyframes flash {
-  0% {
-    opacity: 0.2;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
 #p5_loading {
   display: flex;
   flex-direction: column;
