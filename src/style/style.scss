@@ -557,6 +557,35 @@ a {
   border-bottom: none;
 }
 
+#radio-window {
+  right: 520px;
+  top: 400px;
+  width: 110px;
+  height: 130px;
+
+  padding: 0;
+}
+
+#play-button {
+  background: $white;
+  color: $black;
+  border: none;
+  font-size: 80px;
+  line-height: 85px;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  cursor: url('../assets/cursors/windows95-pointer.png'), auto;
+}
+
+#play-button:hover {
+  background: $black;
+  color: $white;
+  border: 4px solid $white;
+}
+
 #duck-window-1 {
   left: 10px;
   bottom: 30px;

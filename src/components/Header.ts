@@ -11,7 +11,7 @@ export default function header() {
   let appsWindowAppended = true;
   let contactWindowAppended = true;
   let noiseWindowAppended = true;
-  // let radioWindowAppended = true;
+  let radioWindowAppended = true;
   let duckWindowsAppended = true;
   let duckWindow1Appended = true;
   let duckWindow2Appended = true;
@@ -119,6 +119,20 @@ export default function header() {
 
   radioButton.addEventListener('mouseout', () => {
     appsWindow.style.background = '#ffffff';
+  });
+
+  radioButton.addEventListener('click', () => {
+    if (!radioWindowAppended) {
+      header.appendChild(radioWindow);
+      radioWindowAppended = true;
+    }
+
+    radioWindow.style.zIndex = windowManager.moveOnTop();
+
+    setTimeout(() => {
+      radioWindow.style.opacity = '100';
+      radioWindow.style.pointerEvents = 'all';
+    }, 0);
   });
 
   const ducksButton = document.createElement('div');
@@ -415,6 +429,79 @@ export default function header() {
   dragElement(noiseWindow);
   noiseWindow.addEventListener('mousedown', () => {
     noiseWindow.style.zIndex = windowManager.moveOnTop();
+  });
+
+  // Radio window
+  const radioWindow = document.createElement('div');
+  radioWindow.setAttribute('id', 'radio-window');
+  radioWindow.classList.add('window');
+  const radioWindowTitle = document.createElement('div');
+  radioWindowTitle.classList.add('window-title');
+  radioWindowTitle.innerHTML = `Radio`;
+  radioWindow.appendChild(radioWindowTitle);
+
+  const playButton = document.createElement('div');
+  playButton.setAttribute('id', 'play-button');
+  playButton.innerHTML = `⏵`;
+  radioWindow.appendChild(playButton);
+
+  const audioPlayer = document.createElement('audio');
+  audioPlayer.setAttribute('id', 'audio-player');
+  audioPlayer.volume = 0.4;
+  radioWindow.appendChild(audioPlayer);
+
+  async function loadM3UPlaylist(url: string) {
+    try {
+      const response = await fetch(url);
+      const text = await response.text();
+      const lines = text.split('\n').map((line) => line.trim());
+      let streamUrl = null;
+
+      for (let i = 0; i < lines.length; i++) {
+        if (lines[i]!.startsWith('http')) {
+          streamUrl = lines[i];
+          break; // Use the first stream URL found
+        }
+      }
+
+      if (!streamUrl) {
+        return;
+      }
+
+      audioPlayer.src = streamUrl;
+
+      playButton.addEventListener('click', () => {
+        if (audioPlayer.paused) {
+          playButton.innerHTML = `⏸`;
+          audioPlayer.play();
+        } else {
+          playButton.innerHTML = `⏵`;
+          audioPlayer.pause();
+        }
+      });
+    } catch (error) {
+      console.error('Error loading M3U file:', error);
+    }
+  }
+  loadM3UPlaylist('../../assets/music/asp.m3u');
+
+  const closeButtonRadioWindow = document.createElement('button');
+  closeButtonRadioWindow.classList.add('remove-button');
+  closeButtonRadioWindow.textContent = '✕';
+  closeButtonRadioWindow.addEventListener('click', () => {
+    audioPlayer.pause();
+    radioWindow.style.opacity = '0';
+    setTimeout(() => {
+      header.removeChild(radioWindow);
+      radioWindowAppended = false;
+      playButton.innerHTML = `⏵`;
+    }, 500);
+  });
+  radioWindow.appendChild(closeButtonRadioWindow);
+  header.appendChild(radioWindow);
+  dragElement(radioWindow);
+  radioWindow.addEventListener('mousedown', () => {
+    radioWindow.style.zIndex = windowManager.moveOnTop();
   });
 
   // Duck windows
