@@ -35,7 +35,7 @@ export default function contact() {
     link.classList.add('social');
     link.href = url;
     link.target = '_blank';
-    link.innerHTML = `<span>${name}</span>`;
+    link.innerHTML = `<span>${name} </span> `;
     socials.appendChild(link);
   });
 
