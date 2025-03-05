@@ -305,6 +305,8 @@ export default function header() {
   noiseWindow.appendChild(noiseWindowTitle);
 
   const canvas = document.createElement('canvas');
+  canvas.width = 400;
+  canvas.height = 100;
   canvas.setAttribute('id', 'noise');
   noiseWindow.appendChild(canvas);
 
@@ -391,9 +393,9 @@ export default function header() {
   let isPaused = false;
 
   // Pause/unpause on click
-  canvas.addEventListener('click', () => {
-    isPaused = !isPaused;
-  });
+  // canvas.addEventListener('click', () => {
+  //   isPaused = !isPaused;
+  // });
 
   // Render loop
   function render() {
@@ -447,7 +449,7 @@ export default function header() {
 
   const audioPlayer = document.createElement('audio');
   audioPlayer.setAttribute('id', 'audio-player');
-  audioPlayer.volume = 0.4;
+  audioPlayer.volume = 0.5;
   radioWindow.appendChild(audioPlayer);
 
   async function loadM3UPlaylist(url: string) {
