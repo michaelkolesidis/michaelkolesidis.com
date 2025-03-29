@@ -1,3 +1,19 @@
+/*
+ *  Copyright (c) Michael Kolesidis <michael.kolesidis@gmail.com>
+ *  GNU Affero General Public License v3.0
+ *
+ *  ATTENTION! FREE SOFTWARE
+ *  This website is free software (free as in freedom).
+ *  If you use any part of this code, you must make your entire project's source code
+ *  publicly available under the same license. This applies whether you modify the code
+ *  or use it as it is in your own project. This ensures that all modifications and
+ *  derivative works remain free software, so that everyone can benefit.
+ *  If you are not willing to comply with these terms, you must refrain from using any part of this code.
+ *
+ *  For full license terms and conditions, you can read the AGPL-3.0 here:
+ *  https://www.gnu.org/licenses/agpl-3.0.html
+ */
+
 // About section
 export const sentencesAbout: string[] = [
   `I am passionate about design, from industrial design and architecture to branding and web design.`,
@@ -19,5 +35,9 @@ export const sentencesThisWebsite: string[] = [
 
   `I call this style <i>frivobrutalism</i>, a fusion of playful, whimsical design with the raw, unapologetic aesthetic of brutalism.`,
 
-  `The source code is released under the <a href="https://www.gnu.org/licenses/agpl-3.0.html" target="_blank" >GNU Affero General Public License v3.0</a>, so feel free to study it, use it, edit it and redistribute it, in accordance with the license's terms and conditions. You can find it on <a href="https://github.com/michaelkolesidis/michaelkolesidis.com" target="_blank">GitHub</a>.`,
+  `The source code is released under the <a href="https://www.gnu.org/licenses/agpl-3.0.html" target="_blank" >GNU Affero General Public License v3.0</a>, and you can only use it in accordance with the license's terms and conditions. You can find it on <a href="https://github.com/michaelkolesidis/michaelkolesidis.com" target="_blank">GitHub</a>.`,
+
+  `<img src="../public/assets/attention-free-software.png" />`,
+
+  `This website is free software (free as in freedom). <span class="red">If you use any part of its code, you  must make your entire project's source code publicly available under the same license.</span> This applies whether you modify the code or use it as it is in your own project. This ensures that all modifications and derivative works remain free software, so that everyone can benefit. If you are not willing to comply with these terms, you must refrain from using any part of this code.`,
 ];
