@@ -1,14 +1,14 @@
+![Attention! Free Software](./public/assets/attention-free-software.png)
+
+ <p>This website is free software (free as in freedom) and is licensed under the AGPL-3.0.  <span style="color: red; font-wieght: 1000;">If you use any part of this code, you must make your entire project's source code publicly available under the same license.</span> This applies whether you modify the code or use it as it is in your own project. This ensures that all modifications and derivative works remain free software, so that everyone can benefit. If you are not willing to comply with these terms, you must refrain from using any part of this code.</p>
+
+For full license terms and conditions, you can read the AGPL-3.0 here: <https://www.gnu.org/licenses/agpl-3.0.html>.
+
 <div align="center">
   <img src="./screenshots/desktop_1c.png" width="700px">
   <h4>My award-winning playground / portfolio website</h4>
   <a href='https://ko-fi.com/michaelkolesidis' target='_blank'><img src='https://cdn.ko-fi.com/cdn/kofi2.png' style='border:0px;height:45px;' alt='Buy Me a Coffee at ko-fi.com' /></a>
 </div>
-
-![Attention! Free Software](./public/assets/attention-free-software.png)
-
-**This website is free software (free as in freedom) and is licensed under the AGPL-3.0.** If you use any part of this code, you **must** make your entire project's source code publicly available under the same license. This applies whether you modify the code or use it as it is in your own project. This ensures that all modifications and derivative works remain free software, so that everyone can benefit. **If you are not willing to comply with these terms, you must refrain from using any part of this code.**
-
-For full license terms and conditions, you can read the AGPL-3.0 here: <https://www.gnu.org/licenses/agpl-3.0.html>.
 
 ## Technologies Used
 
