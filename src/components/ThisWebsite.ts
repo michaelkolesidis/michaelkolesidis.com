@@ -14,7 +14,8 @@
  *  https://www.gnu.org/licenses/agpl-3.0.html
  */
 
-import { sentencesThisWebsite as sentences } from '../data/sentences.js';
+import { textsThisWebsite as texts } from '../data/texts.js';
+import { colors } from '../data/colors.js';
 
 export default function thisWebsite() {
   const website = document.getElementById('this-website');
@@ -23,16 +24,30 @@ export default function thisWebsite() {
   // Title
   const websiteTitle = document.createElement('div');
   websiteTitle.classList.add('wavy');
-  websiteTitle.innerHTML = [...'THIS WEBSITE']
+  websiteTitle.innerHTML = [...'WEBSITE']
     .map((char, i) => `<span style="--i:${12 - i}">${char}</span> `)
     .join('');
   website.appendChild(websiteTitle);
 
-  // Populate sentences
-  sentences.forEach((text, index) => {
+  texts.forEach((text) => {
     const sentence = document.createElement('p');
-    if (index === 0) sentence.style.marginRight = 'auto';
     sentence.innerHTML = text;
     website.appendChild(sentence);
   });
+
+  let currentIndex = 0;
+
+  const cycleAttentionFillColors = () => {
+    const elements = document.querySelectorAll<HTMLElement>('.attention-fill');
+
+    setInterval(() => {
+      const color = colors[currentIndex];
+      elements.forEach((el) => {
+        el.style.fill = color!.hex;
+      });
+      currentIndex = (currentIndex + 1) % colors.length;
+    }, 1000);
+  };
+
+  cycleAttentionFillColors();
 }

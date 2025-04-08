@@ -25,26 +25,50 @@ export default function header() {
   if (!header) return;
 
   let appsWindowAppended = true;
-  let contactWindowAppended = true;
-  let noiseWindowAppended = true;
+  let linksWindowAppended = true;
+  let tvWindowAppended = true;
   let radioWindowAppended = true;
-  let duckWindowsAppended = true;
-  let duckWindow1Appended = true;
-  let duckWindow2Appended = true;
-  let duckWindow3Appended = true;
   // let pixelWindowAppended = true;
-  // let emojiWindowAppended = true;
 
   // Name
   const name = document.createElement('div');
   name.setAttribute('id', 'name');
-  name.innerHTML = /* html */ `MICHAEL K<span id="title-letter">O</span>LESIDIS`;
+  name.innerHTML = /* html */ `Michael Kolesidi<span id="falling-letter">s</span>`;
+
+  document.addEventListener('DOMContentLoaded', () => {
+    const fallingLetter = document.getElementById('falling-letter');
+
+    if (fallingLetter) {
+      fallingLetter.addEventListener('click', () => {
+        fallingLetter.classList.add('clicked');
+      });
+    }
+  });
+
+  window.addEventListener('scroll', function () {
+    if (window.scrollY >= 30) {
+      name.classList.add('scrolled');
+      name.innerHTML = /* html */ `Michael Kolesidis`;
+    } else {
+      name.classList.remove('scrolled');
+      name.innerHTML = /* html */ `Michael Kolesidi<span id="falling-letter">s</span>`;
+
+      const fallingLetter = document.getElementById('falling-letter');
+
+      if (fallingLetter) {
+        fallingLetter.addEventListener('click', () => {
+          fallingLetter.classList.add('clicked');
+        });
+      }
+    }
+  });
+
   header.appendChild(name);
 
   // Smiley
   const smiley = document.createElement('div');
   smiley.setAttribute('id', 'smiley');
-  smiley.innerHTML = `<img alt=Smiley" src="../../assets/smiley.svg" />`;
+  smiley.innerHTML = `<img alt=Smiley" src="../../assets/smiley-melting.svg" />`;
   header.appendChild(smiley);
 
   smiley.addEventListener('click', () => {
@@ -71,66 +95,71 @@ export default function header() {
   appsWindow.setAttribute('id', 'apps-window');
   appsWindow.classList.add('window', 'list-window');
 
-  const contactButton = document.createElement('div');
-  contactButton.classList.add('left');
-  contactButton.textContent = 'CONTACT';
-  appsWindow.appendChild(contactButton);
+  // Links button
+  const linksButton = document.createElement('div');
+  linksButton.classList.add('app-button', 'left');
+  linksButton.textContent = 'Links';
+  appsWindow.appendChild(linksButton);
 
-  contactButton.addEventListener('mouseover', () => {
+  linksButton.addEventListener('mouseover', () => {
     appsWindow.style.background = colors[0]!.hex;
   });
 
-  contactButton.addEventListener('mouseout', () => {
+  linksButton.addEventListener('mouseout', () => {
     appsWindow.style.background = '#ffffff';
   });
 
-  contactButton.addEventListener('click', () => {
-    if (!contactWindowAppended) {
-      header.appendChild(contactWindow);
-      contactWindowAppended = true;
+  linksButton.addEventListener('click', () => {
+    if (!linksWindowAppended) {
+      header.appendChild(linksWindow);
+      linksWindowAppended = true;
     }
 
-    contactWindow.style.zIndex = windowManager.moveOnTop();
+    linksWindow.style.zIndex = windowManager.moveOnTop();
 
     setTimeout(() => {
-      contactWindow.style.opacity = '100';
-      contactWindow.style.pointerEvents = 'all';
+      linksWindow.style.opacity = '100';
+      linksWindow.style.pointerEvents = 'all';
     }, 0);
   });
 
-  const noiseButton = document.createElement('div');
-  noiseButton.textContent = 'TV';
-  appsWindow.appendChild(noiseButton);
+  // TV button
+  const tvButton = document.createElement('div');
+  tvButton.classList.add('app-button');
+  tvButton.textContent = 'TV';
+  appsWindow.appendChild(tvButton);
 
-  noiseButton.addEventListener('mouseover', () => {
+  tvButton.addEventListener('mouseover', () => {
     appsWindow.style.background = colors[1]!.hex;
   });
 
-  noiseButton.addEventListener('mouseout', () => {
+  tvButton.addEventListener('mouseout', () => {
     appsWindow.style.background = '#ffffff';
   });
 
-  noiseButton.addEventListener('click', () => {
-    if (!noiseWindowAppended) {
-      header.appendChild(noiseWindow);
-      noiseWindowAppended = true;
+  tvButton.addEventListener('click', () => {
+    if (!tvWindowAppended) {
+      header.appendChild(tvWindow);
+      tvWindowAppended = true;
     }
 
-    noiseWindow.style.zIndex = windowManager.moveOnTop();
+    tvWindow.style.zIndex = windowManager.moveOnTop();
 
     setTimeout(() => {
-      noiseWindow.style.opacity = '100';
-      noiseWindow.style.pointerEvents = 'all';
+      showNextDuck();
+      tvWindow.style.opacity = '100';
+      tvWindow.style.pointerEvents = 'all';
     }, 0);
   });
 
+  // Radio button
   const radioButton = document.createElement('div');
-  radioButton.classList.add('left');
-  radioButton.textContent = 'RADIO';
+  radioButton.classList.add('app-button', 'left');
+  radioButton.textContent = 'Radio';
   appsWindow.appendChild(radioButton);
 
   radioButton.addEventListener('mouseover', () => {
-    appsWindow.style.background = colors[2]!.hex;
+    appsWindow.style.background = colors[3]!.hex;
   });
 
   radioButton.addEventListener('mouseout', () => {
@@ -151,46 +180,11 @@ export default function header() {
     }, 0);
   });
 
-  const ducksButton = document.createElement('div');
-  ducksButton.textContent = 'DUCKS';
-  appsWindow.appendChild(ducksButton);
-
-  ducksButton.addEventListener('mouseover', () => {
-    appsWindow.style.background = colors[3]!.hex;
-  });
-
-  ducksButton.addEventListener('mouseout', () => {
-    appsWindow.style.background = '#ffffff';
-  });
-
-  ducksButton.addEventListener('click', () => {
-    if (!duckWindowsAppended) {
-      header.appendChild(duckWindow1);
-      header.appendChild(duckWindow2);
-      header.appendChild(duckWindow3);
-      duckWindowsAppended = true;
-      duckWindow1Appended = true;
-      duckWindow2Appended = true;
-      duckWindow3Appended = true;
-    }
-
-    duckWindow1.style.zIndex = windowManager.moveOnTop();
-    duckWindow2.style.zIndex = windowManager.moveOnTop();
-    duckWindow3.style.zIndex = windowManager.moveOnTop();
-
-    setTimeout(() => {
-      duckWindow1.style.opacity = '100';
-      duckWindow1.style.pointerEvents = 'all';
-      duckWindow2.style.opacity = '100';
-      duckWindow2.style.pointerEvents = 'all';
-      duckWindow3.style.opacity = '100';
-      duckWindow3.style.pointerEvents = 'all';
-    }, 0);
-  });
-
+  // Pixel button
   const pixelButton = document.createElement('div');
-  pixelButton.classList.add('left');
-  pixelButton.textContent = 'PIXEL';
+  pixelButton.classList.add('app-button');
+
+  pixelButton.textContent = 'Pixel';
   appsWindow.appendChild(pixelButton);
 
   pixelButton.addEventListener('mouseover', () => {
@@ -198,18 +192,6 @@ export default function header() {
   });
 
   pixelButton.addEventListener('mouseout', () => {
-    appsWindow.style.background = '#ffffff';
-  });
-
-  const emojiButton = document.createElement('div');
-  emojiButton.textContent = 'EMOJI';
-  appsWindow.appendChild(emojiButton);
-
-  emojiButton.addEventListener('mouseover', () => {
-    appsWindow.style.background = colors[1]!.hex;
-  });
-
-  emojiButton.addEventListener('mouseout', () => {
     appsWindow.style.background = '#ffffff';
   });
 
@@ -239,121 +221,171 @@ export default function header() {
   });
   appsWindow.appendChild(closeButtonAppsWindow);
 
-  // Contact window
-  const contactWindow = document.createElement('div');
-  contactWindow.setAttribute('id', 'contact-window');
-  contactWindow.classList.add('window', 'list-window');
-  contactWindow.innerHTML = /* html */ `
+  // Links window
+  const linksWindow = document.createElement('div');
+  linksWindow.setAttribute('id', 'links-window');
+  linksWindow.classList.add('window', 'list-window');
+  linksWindow.innerHTML = /* html */ `
     <a 
       target="_blank" 
       href="https://www.linkedin.com/in/michaelkolesidis"
-      class="left"
+
     >
-    LINKEDIN
+    <img src="../../assets/icons/linkedin.svg" class="social-icon" alt="LinkedIn logo">
     </a>
         <a 
       target="_blank" 
       href="https://mastodon.social/@michaelkolesidis"
     >
-    MASTODON
+    <img src="../../assets/icons/mastodon.svg" class="social-icon" alt="Mastodon logo">
     </a>
     <a 
       target="_blank" 
       href="https://bsky.app/profile/michaelkolesidis.bsky.social"
-      class="left"      
+      
     >
-    BLUESKY
+    <img src="../../assets/icons/bluesky.svg" class="social-icon" alt="Bluesky logo">
     </a>
     <a 
       target="_blank" 
       href="https://www.instagram.com/michaelkolesidis"
     >
-    INSTA
+    <img src="../../assets/icons/instagram.svg" class="social-icon" alt="Instagram logo">
     </a>
     <a 
       target="_blank" 
       href="https://github.com/michaelkolesidis"
-      class="left"
+
     >
-    GITHUB
+    <img src="../../assets/icons/github.svg" class="social-icon" alt="GitHub logo">
     </a>
     <a
       target="_blank" 
       href="https://x.com/michael_kol_"
     >
-    X/TWITTER
+    <img src="../../assets/icons/twitter.svg" class="social-icon" alt="Twitter logo">
     </a>
     `;
 
-  const contactWindowTitle = document.createElement('div');
-  contactWindowTitle.classList.add('window-title');
-  contactWindowTitle.innerHTML = `Contact`;
-  contactWindow.appendChild(contactWindowTitle);
+  const linksWindowTitle = document.createElement('div');
+  linksWindowTitle.classList.add('window-title');
+  linksWindowTitle.innerHTML = `Links`;
+  linksWindow.appendChild(linksWindowTitle);
 
-  header.appendChild(contactWindow);
+  header.appendChild(linksWindow);
 
-  dragElement(contactWindow);
-  contactWindow.addEventListener('mousedown', () => {
-    contactWindow.style.zIndex = windowManager.moveOnTop();
+  dragElement(linksWindow);
+  linksWindow.addEventListener('mousedown', () => {
+    linksWindow.style.zIndex = windowManager.moveOnTop();
   });
 
-  // Close button (contact window)
-  const closeButtonContactWindow = document.createElement('button');
-  closeButtonContactWindow.classList.add('remove-button');
-  closeButtonContactWindow.textContent = '✕';
-  closeButtonContactWindow.addEventListener('click', () => {
-    contactWindow.style.opacity = '0';
+  // Close button (links window)
+  const closeButtonLinksWindow = document.createElement('button');
+  closeButtonLinksWindow.classList.add('remove-button');
+  closeButtonLinksWindow.textContent = '✕';
+  closeButtonLinksWindow.addEventListener('click', () => {
+    linksWindow.style.opacity = '0';
 
     setTimeout(() => {
-      header.removeChild(contactWindow);
-      contactWindowAppended = false;
+      header.removeChild(linksWindow);
+      linksWindowAppended = false;
     }, 500);
   });
-  contactWindow.appendChild(closeButtonContactWindow);
+  linksWindow.appendChild(closeButtonLinksWindow);
 
-  // Noise window
-  const noiseWindow = document.createElement('div');
-  noiseWindow.setAttribute('id', 'noise-window');
-  noiseWindow.classList.add('window');
-  const noiseWindowTitle = document.createElement('div');
-  noiseWindowTitle.classList.add('window-title');
-  noiseWindowTitle.innerHTML = `The Only Real Channel™`;
-  noiseWindow.appendChild(noiseWindowTitle);
+  // TV window
+  const tvWindow = document.createElement('div');
+  tvWindow.setAttribute('id', 'tv-window');
+  tvWindow.classList.add('window');
 
+  // Title
+  const tvWindowTitle = document.createElement('div');
+  tvWindowTitle.classList.add('window-title');
+  tvWindowTitle.innerHTML = `Duck TV`;
+  tvWindow.appendChild(tvWindowTitle);
+
+  // Canvas for noise
   const canvas = document.createElement('canvas');
-  canvas.width = 400;
-  canvas.height = 100;
+  canvas.width = 480;
+  canvas.height = 330;
   canvas.setAttribute('id', 'noise');
-  noiseWindow.appendChild(canvas);
+  tvWindow.appendChild(canvas);
 
+  // Overlay for duck images
+  const overlay = document.createElement('div');
+  overlay.setAttribute('id', 'duck-overlay');
+  overlay.classList.add('duck-overlay');
+  tvWindow.appendChild(overlay);
+
+  const duckImages = [
+    { src: '../../assets/duck-tv-1.gif', duration: 5000 },
+    { src: '../../assets/duck-tv-2.gif', duration: 8300 },
+    { src: '../../assets/duck-tv-3.gif', duration: 2000 },
+    { src: '../../assets/duck-tv-4.gif', duration: 4000 },
+    { src: '../../assets/duck-tv-5.gif', duration: 3000 },
+    { src: '../../assets/duck-tv-6.gif', duration: 10000 },
+  ];
+
+  // Create duck image elements
+  const duckElements = duckImages.map(({ src }) => {
+    const img = document.createElement('img');
+    img.src = src;
+    img.classList.add('duck-img');
+    overlay.appendChild(img);
+    return img;
+  });
+
+  // Cycle logic
+  let currentIndex = 0;
+  function showNextDuck() {
+    console.log('SHOW NEXT DUCK');
+    duckElements.forEach((img) => (img.style.opacity = '0'));
+
+    // Wait 2s for tv before showing image
+    setTimeout(() => {
+      const currentImg = duckElements[currentIndex];
+      if (!currentImg) return;
+
+      currentImg.style.opacity = '1';
+
+      const duration = duckImages[currentIndex]?.duration;
+      setTimeout(() => {
+        currentIndex = (currentIndex + 1) % duckImages.length;
+        showNextDuck();
+      }, duration);
+    }, 1500);
+  }
+
+  // WebGL Tv Shader
   const gl = canvas.getContext('webgl');
+  if (!gl) return;
 
   // Vertex shader
   const vertexShaderSource = `
-    attribute vec4 a_position;
-    void main() {
-        gl_Position = a_position;
-    }
+ attribute vec4 a_position;
+ void main() {
+     gl_Position = a_position;
+ }
 `;
 
   // Fragment shader
   const fragmentShaderSource = `
-    precision highp float;
-    uniform float u_time;
-    uniform vec2 u_resolution;
+ precision highp float;
+ uniform float u_time;
+ uniform vec2 u_resolution;
 
-    float noise(vec2 pos, float evolve) {
-        float e = fract((evolve*0.01));
-        float cx = pos.x*e;
-        float cy = pos.y*e;
-        return fract(23.0*fract(2.0/fract(fract(cx*2.4/cy*23.0+pow(abs(cy/22.4),3.3))*fract(cx*evolve/pow(abs(cy),0.050)))));
-    }
+ float tv(vec2 pos, float evolve) {
+     float e = fract((evolve*0.01));
+     float cx = pos.x*e;
+     float cy = pos.y*e;
+     return fract(23.0*fract(2.0/fract(fract(cx*2.4/cy*23.0+pow(abs(cy/22.4),3.3))*fract(cx*evolve/pow(abs(cy),0.050)))));
+ }
 
-    void main() {
-        vec2 fragCoord = gl_FragCoord.xy;
-        float noise_val = noise(fragCoord, u_time);
-        gl_FragColor = vec4(vec3(noise_val), 1.0);
-    }
+ void main() {
+     vec2 fragCoord = gl_FragCoord.xy;
+     float tv_val = tv(fragCoord, u_time);
+     gl_FragColor = vec4(vec3(tv_val), 1.0);
+ }
 `;
 
   // Create shader program
@@ -406,19 +438,11 @@ export default function header() {
     'u_resolution'
   );
 
-  let isPaused = false;
-
-  // Pause/unpause on click
-  // canvas.addEventListener('click', () => {
-  //   isPaused = !isPaused;
-  // });
-
   // Render loop
   function render() {
     if (!gl) return;
-    if (!isPaused) {
-      gl.uniform1f(timeUniformLocation, performance.now() * 0.001);
-    }
+
+    gl.uniform1f(timeUniformLocation, performance.now() * 0.001);
 
     // Set resolution
     gl.uniform2f(resolutionUniformLocation, canvas.width, canvas.height);
@@ -432,21 +456,24 @@ export default function header() {
 
   render();
 
-  const closeButtonNoiseWindow = document.createElement('button');
-  closeButtonNoiseWindow.classList.add('remove-button');
-  closeButtonNoiseWindow.textContent = '✕';
-  closeButtonNoiseWindow.addEventListener('click', () => {
-    noiseWindow.style.opacity = '0';
+  // Close button
+  const closeButtonTvWindow = document.createElement('button');
+  closeButtonTvWindow.classList.add('remove-button');
+  closeButtonTvWindow.textContent = '✕';
+  closeButtonTvWindow.addEventListener('click', () => {
+    tvWindow.style.opacity = '0';
     setTimeout(() => {
-      header.removeChild(noiseWindow);
-      noiseWindowAppended = false;
+      header.removeChild(tvWindow);
+      tvWindowAppended = false;
     }, 500);
   });
-  noiseWindow.appendChild(closeButtonNoiseWindow);
-  header.appendChild(noiseWindow);
-  dragElement(noiseWindow);
-  noiseWindow.addEventListener('mousedown', () => {
-    noiseWindow.style.zIndex = windowManager.moveOnTop();
+  tvWindow.appendChild(closeButtonTvWindow);
+
+  // Add to DOM
+  header.appendChild(tvWindow);
+  dragElement(tvWindow);
+  tvWindow.addEventListener('mousedown', () => {
+    tvWindow.style.zIndex = windowManager.moveOnTop();
   });
 
   // Radio window
@@ -458,9 +485,10 @@ export default function header() {
   radioWindowTitle.innerHTML = `Radio`;
   radioWindow.appendChild(radioWindowTitle);
 
-  const playButton = document.createElement('div');
+  const playButton = document.createElement('img');
   playButton.setAttribute('id', 'play-button');
-  playButton.innerHTML = `⏵`;
+  playButton.src = '../../assets/buttons/play.svg';
+  playButton.alt = 'Play';
   radioWindow.appendChild(playButton);
 
   const audioPlayer = document.createElement('audio');
@@ -490,10 +518,14 @@ export default function header() {
 
       playButton.addEventListener('click', () => {
         if (audioPlayer.paused) {
-          playButton.innerHTML = `⏸`;
+          // playButton.innerHTML = `⏸`;
+          playButton.src = '../../assets/buttons/pause.svg';
+
           audioPlayer.play();
         } else {
-          playButton.innerHTML = `⏵`;
+          // playButton.innerHTML = `⏵`;
+          playButton.src = '../../assets/buttons/play.svg';
+
           audioPlayer.pause();
         }
       });
@@ -512,7 +544,7 @@ export default function header() {
     setTimeout(() => {
       header.removeChild(radioWindow);
       radioWindowAppended = false;
-      playButton.innerHTML = `⏵`;
+      playButton.src = '../../assets/buttons/play.svg';
     }, 500);
   });
   radioWindow.appendChild(closeButtonRadioWindow);
@@ -520,91 +552,6 @@ export default function header() {
   dragElement(radioWindow);
   radioWindow.addEventListener('mousedown', () => {
     radioWindow.style.zIndex = windowManager.moveOnTop();
-  });
-
-  // Duck windows
-  const duckWindow1 = document.createElement('div');
-  duckWindow1.setAttribute('id', 'duck-window-1');
-  duckWindow1.classList.add('window');
-  const duckWindow1Title = document.createElement('div');
-  duckWindow1Title.classList.add('window-title');
-  duckWindow1Title.innerHTML = `Duck in a bathtub`;
-  duckWindow1.appendChild(duckWindow1Title);
-  const closeButtonDuckWindow1 = document.createElement('button');
-  closeButtonDuckWindow1.classList.add('remove-button');
-  closeButtonDuckWindow1.textContent = '✕';
-  closeButtonDuckWindow1.addEventListener('click', () => {
-    duckWindow1.style.opacity = '0';
-    setTimeout(() => {
-      header.removeChild(duckWindow1);
-      duckWindow1Appended = false;
-
-      if (!duckWindow2Appended && !duckWindow3Appended) {
-        duckWindowsAppended = false;
-      }
-    }, 500);
-  });
-  duckWindow1.appendChild(closeButtonDuckWindow1);
-  header.appendChild(duckWindow1);
-  dragElement(duckWindow1);
-  duckWindow1.addEventListener('mousedown', () => {
-    duckWindow1.style.zIndex = windowManager.moveOnTop();
-  });
-
-  const duckWindow2 = document.createElement('div');
-  duckWindow2.setAttribute('id', 'duck-window-2');
-  duckWindow2.classList.add('window');
-  const duckWindow2Title = document.createElement('div');
-  duckWindow2Title.classList.add('window-title');
-  duckWindow2Title.innerHTML = `Duck in the sea`;
-  duckWindow2.appendChild(duckWindow2Title);
-  const closeButtonDuckWindow2 = document.createElement('button');
-  closeButtonDuckWindow2.classList.add('remove-button');
-  closeButtonDuckWindow2.textContent = '✕';
-  closeButtonDuckWindow2.addEventListener('click', () => {
-    duckWindow2.style.opacity = '0';
-    setTimeout(() => {
-      header.removeChild(duckWindow2);
-      duckWindow2Appended = false;
-
-      if (!duckWindow1Appended && !duckWindow3Appended) {
-        duckWindowsAppended = false;
-      }
-    }, 500);
-  });
-  duckWindow2.appendChild(closeButtonDuckWindow2);
-  header.appendChild(duckWindow2);
-  dragElement(duckWindow2);
-  duckWindow2.addEventListener('mousedown', () => {
-    duckWindow2.style.zIndex = windowManager.moveOnTop();
-  });
-
-  const duckWindow3 = document.createElement('div');
-  duckWindow3.setAttribute('id', 'duck-window-3');
-  duckWindow3.classList.add('window');
-  const duckWindow3Title = document.createElement('div');
-  duckWindow3Title.classList.add('window-title');
-  duckWindow3Title.innerHTML = `Duck in a pool`;
-  duckWindow3.appendChild(duckWindow3Title);
-  const closeButtonDuckWindow3 = document.createElement('button');
-  closeButtonDuckWindow3.classList.add('remove-button');
-  closeButtonDuckWindow3.textContent = '✕';
-  closeButtonDuckWindow3.addEventListener('click', () => {
-    duckWindow3.style.opacity = '0';
-    setTimeout(() => {
-      header.removeChild(duckWindow3);
-      duckWindow3Appended = false;
-
-      if (!duckWindow1Appended && !duckWindow2Appended) {
-        duckWindowsAppended = false;
-      }
-    }, 500);
-  });
-  duckWindow3.appendChild(closeButtonDuckWindow3);
-  header.appendChild(duckWindow3);
-  dragElement(duckWindow3);
-  duckWindow3.addEventListener('mousedown', () => {
-    duckWindow3.style.zIndex = windowManager.moveOnTop();
   });
 
   // Top gap
@@ -647,6 +594,8 @@ export default function header() {
   const sticker = document.createElement('div');
   sticker.setAttribute('id', 'new');
   sticker.innerHTML = `<img alt="New! sticker" src="../../assets/new.svg" />`;
+  sticker.style.top = `${window.innerHeight + 50}px`;
+
   header.appendChild(sticker);
 
   dragElement(sticker);
@@ -656,17 +605,30 @@ export default function header() {
     sticker.style.zIndex = windowManager.moveOnTop();
   });
 
-  // Chinese
-  const chinese = document.createElement('p');
-  chinese.setAttribute('id', 'chinese');
-  chinese.innerHTML = `欢迎来到我的网站`;
-  header.appendChild(chinese);
+  // Project Request
+  const projectRequest = document.createElement('p');
+  projectRequest.classList.add('project-request');
+  projectRequest.innerHTML = `<a href="https://forms.gle/Vg7kH5PRosqU3HYx6" target="_blank">Submit Project Request</a>`;
+  header.appendChild(projectRequest);
 
-  dragElement(chinese);
-  chinese.style.zIndex = windowManager.base;
+  dragElement(projectRequest);
+  projectRequest.style.zIndex = windowManager.base;
 
-  chinese.addEventListener('mousedown', () => {
-    chinese.style.zIndex = windowManager.moveOnTop();
+  projectRequest.addEventListener('mousedown', () => {
+    projectRequest.style.zIndex = windowManager.moveOnTop();
+  });
+
+  // Japanese
+  const japanese = document.createElement('p');
+  japanese.setAttribute('id', 'japanese');
+  japanese.innerHTML = `ラバーダック`;
+  header.appendChild(japanese);
+
+  dragElement(japanese);
+  japanese.style.zIndex = windowManager.base;
+
+  japanese.addEventListener('mousedown', () => {
+    japanese.style.zIndex = windowManager.moveOnTop();
   });
 
   // Rays
@@ -682,45 +644,45 @@ export default function header() {
     rays.style.zIndex = windowManager.moveOnTop();
   });
 
-  // Flowers
-  const flowers = document.createElement('p');
-  flowers.setAttribute('id', 'flowers');
-  flowers.innerHTML = `<img id="flowers-1" alt="Flowers" src="../../assets/flowers-1.gif" />
-    <img alt="Welcome sign" id="flowers-2" src="../../assets/flowers-2.gif" />`;
-  header.appendChild(flowers);
+  // Art
+  const art = document.createElement('p');
+  art.setAttribute('id', 'art');
+  art.innerHTML = `<img id="art-1" alt="Art" src="../../assets/art-2.gif" />
+    <img alt="Welcome sign" id="art-2" src="../../assets/art-1.gif" />`;
+  header.appendChild(art);
 
-  const flowers1 = document.getElementById('flowers-1');
-  const flowers2 = document.getElementById('flowers-2');
+  const art1 = document.getElementById('art-1');
+  const art2 = document.getElementById('art-2');
 
   let flowerNumber = 1;
 
   setInterval(() => {
     if (flowerNumber === 1) {
-      if (flowers1 && flowers2) {
-        flowers1.style.opacity = '0';
-        flowers2.style.opacity = '1';
+      if (art1 && art2) {
+        art1.style.opacity = '0';
+        art2.style.opacity = '1';
       }
       flowerNumber = 2;
     } else if (flowerNumber === 2) {
-      if (flowers1 && flowers2) {
-        flowers2.style.opacity = '0';
-        flowers1.style.opacity = '1';
+      if (art1 && art2) {
+        art2.style.opacity = '0';
+        art1.style.opacity = '1';
       }
       flowerNumber = 1;
     }
   }, 4000);
 
-  dragElement(flowers);
-  flowers.style.zIndex = windowManager.base;
+  dragElement(art);
+  art.style.zIndex = windowManager.base;
 
-  flowers.addEventListener('mousedown', () => {
-    flowers.style.zIndex = windowManager.moveOnTop();
+  art.addEventListener('mousedown', () => {
+    art.style.zIndex = windowManager.moveOnTop();
   });
 
   // Welcome
   const welcome = document.createElement('div');
   welcome.setAttribute('id', 'welcome');
-  welcome.innerHTML = `<img alt="Welcome sign" src="../../assets/welcome.gif" />`;
+  welcome.innerHTML = `<img alt="Welcome sign" src="../../assets/welcome.svg" />`;
   header.appendChild(welcome);
 
   dragElement(welcome);
@@ -738,7 +700,8 @@ export default function header() {
 
     window.addEventListener('resize', () => {
       sketchPlaceholder.style.height = `${window.innerHeight - 140}px`;
-      sunscreen.style.top = `${window.innerHeight}px`;
+      sunscreen.style.top = `${window.innerHeight + 50}px`;
+      sticker.style.top = `${window.innerHeight + 50}px`;
 
       const canvas = document.querySelector('canvas');
       if (canvas) {
@@ -761,7 +724,14 @@ export default function header() {
   const sunscreen = document.createElement('img');
   sunscreen.setAttribute('src', 'assets/sunscreen.png');
   sunscreen.setAttribute('id', 'sunscreen');
-  sunscreen.style.top = `${window.innerHeight}px`;
+  sunscreen.style.top = `${window.innerHeight + 50}px`;
+
+  dragElement(sunscreen);
+  sunscreen.style.zIndex = windowManager.base;
+
+  sunscreen.addEventListener('mousedown', () => {
+    sunscreen.style.zIndex = windowManager.moveOnTop();
+  });
 
   sunscreen.addEventListener('click', () => {
     sunscreen.classList.add('shake');

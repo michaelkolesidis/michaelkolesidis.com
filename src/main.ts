@@ -29,7 +29,6 @@ import topButton from './components/TopButton.js';
 import { getScrollDistanceCss } from './utils/functions.js';
 import { disableRightClick } from './utils/functions.js';
 import { animateTitle } from './utils/functions.js';
-// import soundButton from './components/SoundButton.js';
 
 // Components
 body();
@@ -43,7 +42,6 @@ awards();
 thisWebsite();
 footer();
 topButton();
-// soundButton();
 
 // Global Functions
 disableRightClick(); // Disable right click

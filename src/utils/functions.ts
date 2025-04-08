@@ -53,7 +53,7 @@ export const disableRightClick = (): void => {
 
 // Animate page title with a scrolling effect
 export const animateTitle = (): void => {
-  const message = 'MICHAEL KOLESIDIS';
+  const message = 'Michael Kolesidis';
   let position = 0;
   let forward = true;
 

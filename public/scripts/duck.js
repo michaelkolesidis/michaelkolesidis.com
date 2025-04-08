@@ -40,8 +40,8 @@ if (window.innerWidth > 700) {
     sketch.draw = () => {
       sketch.background(0, 0, 0, 0);
       sketch.noStroke();
-      sketch.ambientLight(100, 100, 100);
-      sketch.directionalLight(255, 255, 255, 0, 0, -1);
+      sketch.ambientLight(255);
+      sketch.directionalLight(120, 0, 0, -1);
 
       let isMouseInBounds =
         sketch.mouseX > 0 &&

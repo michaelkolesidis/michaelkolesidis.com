@@ -1,12 +1,20 @@
 @font-face {
-  font-family: 'Beatrice';
+  font-family: 'Karlsbader Grotesk';
   font-display: block;
   block-timeout: 0.3;
   swap-timeout: 0.1;
-  src: url('../fonts/Beatrice-Regular.eot');
-  src: url('../fonts/Beatrice-Regular.woff2') format('woff2'),
-    url('../fonts/Beatrice-Regular.woff') format('woff'),
-    url('../fonts/Beatrice-Regular.ttf') format('truetype');
+  src: url('../fonts/KarlsbaderGrotesk-400.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Karlsbader Grotesk';
+  font-display: block;
+  block-timeout: 0.3;
+  swap-timeout: 0.1;
+  src: url('../fonts/KarlsbaderGrotesk-500.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
 }
 @font-face {
   font-family: 'Caveat';
@@ -14,13 +22,6 @@
   block-timeout: 0.3;
   swap-timeout: 0.1;
   src: url('../fonts/Caveat.woff2') format('woff2');
-}
-@font-face {
-  font-family: 'Helvetica Now';
-  font-display: block;
-  block-timeout: 0.3;
-  swap-timeout: 0.1;
-  src: url('../fonts/HelveticaNowVar.woff2') format('woff2');
 }
 
 /********** VARIABLES **********/
@@ -55,30 +56,45 @@ $stripes: linear-gradient(
 
 /* sizes */
 $stripes-size: 141.42px 141.42px;
-$title-size: 104px;
+$title-size: 90px;
 
 /* lines */
-$line: 0.3em;
-$line-around: 0.4em;
+$line: 1px;
+
+/* weights */
+$thin: 400;
+$bold: 500;
+$heavy: 600;
+
+/* cursors */
+$cursor: url('../assets/cursors/cursor.png'), auto;
+$pointer: pointer;
+$grab: grab;
+$help: help;
+$wait: wait;
+
+/* borders */
+$border: $line solid $black;
+
+/* animations */
+$flash: flash 0.5s infinite;
 
 /* shadows */
-$stroke-shadow: 3px 3px 0px black, -3px 3px 0px black, 3px -3px 0px black,
-  -3px -3px 0px black, 3px 0px 0px black, -3px 0px 0px black, 0px 3px 0px black,
-  0px -3px 0px black, 2px 3px 0px black, -2px 3px 0px black, 2px -3px 0px black,
-  -2px -3px 0px black, 3px 2px 0px black, -3px 2px 0px black, 3px -2px 0px black,
-  -3px -2px 0px black, 2px 2px 0px black, -2px 2px 0px black, 2px -2px 0px black,
-  -2px -2px 0px black;
-
-.red {
-  color: #ff0000;
-}
+$shadow: 6px 6px black;
+$stroke-shadow: 1.5px 1.5px 0px $black, -1.5px 1.5px 0px $black,
+  1.5px -1.5px 0px $black, -1.5px -1.5px 0px $black, 1.5px 0px 0px $black,
+  -1.5px 0px 0px $black, 0px 1.5px 0px $black, 0px -1.5px 0px $black,
+  1px 1.5px 0px $black, -1px 1.5px 0px $black, 1px -1.5px 0px $black,
+  -1px -1.5px 0px $black, 1.5px 1px 0px $black, -1.5px 1px 0px $black,
+  1.5px -1px 0px $black, -1.5px -1px 0px $black, 1px 1px 0px $black,
+  -1px 1px 0px $black, 1px -1px 0px $black, -1px -1px 0px $black;
 
 /**********  GENERAL **********/
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Beatrice', sans-serif;
+  font-family: 'Karlsbader Grotesk', sans-serif;
   -webkit-user-drag: none;
   -khtml-user-drag: none;
   -moz-user-drag: none;
@@ -88,74 +104,20 @@ $stroke-shadow: 3px 3px 0px black, -3px 3px 0px black, 3px -3px 0px black,
   user-select: none;
 }
 
-.overlay {
-  position: absolute;
-  width: 100vw;
-  height: 100vh;
-  z-index: 999;
-  pointer-events: none;
-}
-
-.overlay:after {
-  content: '';
-  background-image: url('../assets/noise-texture.png');
-  height: 300%;
-  width: 300%;
-  position: fixed;
-  opacity: 0.1;
-  animation: animateGrain 8s steps(10) infinite;
-  filter: brightness(2);
-}
-
-@keyframes animateGrain {
-  0%,
-  100% {
-    transform: translate(0, 0);
-  }
-  10% {
-    transform: translate(-5%, -10%);
-  }
-  20% {
-    transform: translate(-15%, -20%);
-  }
-  30% {
-    transform: translate(-5%, -10%);
-  }
-  40% {
-    transform: translate(-15%, -20%);
-  }
-
-  50% {
-    transform: translate(-5%, -10%);
-  }
-  60% {
-    transform: translate(-15%, -20%);
-  }
-  70% {
-    transform: translate(-5%, -10%);
-  }
-  80% {
-    transform: translate(-15%, -20%);
-  }
-  90% {
-    transform: translate(-5%, -10%);
-  }
-  100% {
-    transform: translate(-15%, -20%);
-  }
-}
-
 body,
 html {
-  border-right: calc($line-around / 2) solid $black;
   background-color: $white;
-  cursor: url('../assets/cursors/windows95-cursor.png'), auto;
+  cursor: $cursor;
   scroll-behavior: smooth;
   overflow-x: hidden;
 }
 
+body {
+  border-right: $border;
+}
+
 a {
-  cursor: url('../assets/cursors/windows95-pointer.png'), auto;
+  cursor: $pointer;
   color: $black;
   text-decoration: none;
 }
@@ -167,49 +129,68 @@ a {
 
 #name {
   position: fixed;
-  top: 7px;
-  left: 0.5rem;
-  z-index: 1;
-  mix-blend-mode: difference;
-  font-size: $title-size;
-  color: $white;
+  top: 28px;
+  // top: 24px;
+  left: 18px;
+  z-index: 4;
+  color: $black;
   white-space: nowrap;
-  pointer-events: none;
-  text-align: justify;
+  font-size: $title-size;
+  transition: font-size 0.3s ease, top 0.3s ease, left 0.3s ease;
+  // font-family: 'TT Firs Text';
   font-weight: 600;
-  paint-order: stroke fill;
-  -webkit-text-stroke: 3px $white;
   letter-spacing: 1px;
 }
 
-#name::after {
-  content: '';
-  display: inline-block;
-  width: 100%;
-}
-
-#title-letter {
-  display: inline-block;
-  color: $white;
-  transition: transform 50s ease;
-  pointer-events: all;
+#falling-letter {
+  color: $black;
   font-size: $title-size;
-  paint-order: stroke fill;
-  -webkit-text-stroke: 3px $white;
+  // font-family: 'TT Firs Text';
+  cursor: $pointer;
 }
 
-#name:hover #title-letter {
-  transform: rotateY(3600deg);
+#name.scrolled {
+  font-size: 25px;
+  top: 10px;
+  left: 12px;
+  mix-blend-mode: difference;
+  color: $white;
+}
+
+#falling-letter {
+  display: inline-block;
+  transform-origin: center;
+}
+
+#falling-letter.clicked {
+  animation: breakAndFall 2s ease-in forwards;
+}
+
+@keyframes breakAndFall {
+  0% {
+    transform: translateY(0) translateX(0) rotate(0deg);
+  }
+  10% {
+    transform: translateY(0) translateX(-1px) rotate(10deg);
+  }
+  20% {
+    transform: translateY(0) translateX(1px) rotate(-10deg);
+  }
+  30% {
+    transform: translateY(0) translateX(-1px) rotate(5deg);
+  }
+  100% {
+    transform: translateY(100vh) translateX(0) rotate(360deg);
+  }
 }
 
 #top-gap {
-  height: 140px;
-  border-bottom: $line-around solid $black;
+  height: 115px;
+  border-bottom: $border;
 }
 
+/********** HEADER ELEMENTS **********/
 #box {
-  background: $black;
-  color: $white;
   position: absolute;
   top: 160px;
   right: 20px;
@@ -217,33 +198,31 @@ a {
   height: 200px;
   padding: 15px;
   overflow: hidden;
-  cursor: url('../assets/cursors/windows95-grab.png'), auto;
-  box-shadow: 8px 8px $black;
+  cursor: $grab;
+  box-shadow: $shadow;
+  border: $border;
 
   button {
     position: absolute;
-    top: 30px;
-    right: 30px;
+    top: 18px;
+    right: 18px;
     padding-top: -0.3rem;
     border: 0;
     background-color: $black;
     color: $white;
-    cursor: pointer;
-    height: 30px;
-    width: 30px;
-    border-radius: 100px;
-    font-weight: 900;
+    height: 34px;
+    width: 37px;
     font-size: 1.4rem;
-    height: 30px;
-    line-height: 30px;
+    line-height: 34px;
     text-align: center;
     transition: transform 0.15s linear;
     z-index: 2;
-    cursor: url('../assets/cursors/windows95-pointer.png'), auto;
+    cursor: $pointer;
   }
 
   button:hover {
-    transform: scale(1.5);
+    font-weight: 600;
+    transform: scale(1.1);
   }
 }
 
@@ -281,7 +260,6 @@ a {
 }
 
 #box .content p {
-  font-weight: 600;
   color: $white;
 }
 
@@ -297,16 +275,16 @@ a {
 
 #new,
 #welcome,
-#chinese,
+#japanese,
 #rays,
-#flowers {
+#art,
+.project-request {
   position: absolute;
-  cursor: url('../assets/cursors/windows95-grab.png'), auto;
+  cursor: $grab;
 }
 
 #new {
-  top: 155px;
-  left: 110px;
+  left: 30px;
   transform: rotateZ(-10deg);
   padding: 0;
   border-radius: 100px;
@@ -322,21 +300,18 @@ a {
 }
 
 #welcome {
-  top: 410px;
-  transform: rotateZ(-10deg);
-  border-radius: 100px;
-  right: 10px;
+  top: 210px;
+  left: 25px;
   max-width: fit-content;
 
   img {
-    width: 200px;
-    border-radius: 100px;
+    width: 210px;
   }
 }
 
 #rays {
-  top: 385px;
-  right: 30px;
+  top: 165px;
+  left: 50px;
   border-radius: 200px;
   width: 150px;
   max-height: 150px;
@@ -349,38 +324,66 @@ a {
   }
 }
 
-#chinese {
-  left: 10px;
-  top: 150px;
+#japanese {
+  right: 20px;
+  top: 385px;
   font-weight: 600;
-  text-shadow: 0.5px 0.5px 0 black;
-  font-size: 2.75em;
+  text-shadow: 0.5px 0.5px 0 $black;
+  font-size: 2.3em;
   color: $black;
   writing-mode: vertical-rl;
   text-orientation: upright;
-  transition: text-shadow 0.25s;
-  background-color: white;
+  background-color: $white;
   padding: 0.25em 0.05em 0.25em 0em;
-  border: 6px solid $black;
+  border: $border;
   text-align: center;
-  box-shadow: 8px 8px $black;
+  box-shadow: $shadow;
   white-space: nowrap;
+  max-width: fit-content;
 }
 
-#flowers {
-  width: 150px;
-  height: 150px;
-  left: 120px;
-  top: 360px;
+.project-request {
+  color: $black;
+  background-color: $white;
+  box-shadow: $shadow;
+  border: $border;
+  padding: 0.5em 0.75em;
+  text-align: center;
+  font-size: 1.1em;
+  right: 160px;
+  top: 58px;
+  white-space: nowrap;
+  max-height: fit-content;
+  cursor: $grab;
+  max-width: fit-content;
+  min-width: fit-content;
+
+  a {
+    margin: 2.5px 5px;
+    max-width: fit-content;
+    max-height: fit-content;
+    display: inline-block;
+    cursor: $pointer;
+  }
+
+  a:hover {
+    animation: $flash;
+    animation-timing-function: steps(4, jump-both);
+  }
+}
+
+#art {
+  left: 30px;
+  top: 339px;
 
   img {
     position: absolute;
     left: 0;
     top: 0;
-    width: 175px;
-    height: 175px;
-    border: 6px solid $black;
-    box-shadow: 8px 8px $black;
+    width: 200px;
+    height: 200px;
+    border: $border;
+    box-shadow: $shadow;
   }
 }
 
@@ -392,15 +395,38 @@ a {
 
 #smiley {
   position: absolute;
-  top: 34px;
+  top: 35px;
   right: 110px;
   z-index: 2;
+  animation: moveSmiley 3s ease-in-out forwards,
+    levitate 2s ease-in-out infinite;
 
   img {
     position: absolute;
-    width: 90px;
-    cursor: url('../assets/cursors/windows95-pointer.png'), auto;
+    width: 85px;
+    cursor: $pointer;
     transition: transform 0.25s ease-in-out;
+  }
+}
+
+@keyframes moveSmiley {
+  0% {
+    top: -150px;
+  }
+  100% {
+    top: 35px;
+  }
+}
+
+@keyframes levitate {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0);
   }
 }
 
@@ -434,15 +460,17 @@ a {
     max-width: 16ch;
     min-width: 12ch;
     margin-right: 2rem;
-    font-size: clamp(0.8rem, 2.6vh, 2rem);
+    font-size: clamp(0.8rem, 2.5vh, 2rem);
     text-align: start;
     line-height: 1.1;
-    font-weight: 600;
+    font-weight: 400;
     letter-spacing: 0.025em;
-    color: $white;
-    text-shadow: $stroke-shadow;
-    z-index: 1;
-    font-family: 'Helvetica Now', sans-serif;
+    color: $black;
+    // background-color: $white;
+    // border: $border;
+    // box-shadow: $shadow;
+    max-height: fit-content;
+    padding: 10px;
   }
 
   #right {
@@ -464,13 +492,17 @@ a {
     white-space: nowrap;
     line-height: 1em;
     pointer-events: auto;
-    cursor: url('../assets/cursors/windows95-question.png'), auto;
+    cursor: $help;
     transform: rotate(20deg);
-    font-weight: 600;
     text-shadow: none;
-    paint-order: stroke fill;
-    -webkit-text-stroke: 1px $black;
+    font-weight: 400;
+    -webkit-text-stroke: 0;
     color: $black;
+    background: $transparent;
+    border: none;
+    box-shadow: none;
+    opacity: 1;
+    transition: opacity 1s ease;
   }
 }
 
@@ -479,12 +511,12 @@ a {
   position: absolute;
   opacity: 0;
   color: $black;
-  border: $line-around solid $black;
+  border: $border;
   border-top: 35px solid $black;
   background-color: $white;
   padding: 1em;
-  cursor: url('../assets/cursors/windows95-grab.png'), auto;
-  box-shadow: 10px 10px $black;
+  cursor: $grab;
+  box-shadow: $shadow;
   transition: opacity 0.35s;
 
   button {
@@ -493,51 +525,56 @@ a {
     right: -2px;
     padding-top: -0.3rem;
     border: 0;
-    background-color: $black;
+    background-color: $transparent;
     color: $white;
-    cursor: pointer;
-    height: 30px;
+    cursor: $pointer;
+    height: 34px;
     width: 37px;
-    font-weight: 900;
     font-size: 1.4rem;
-    line-height: 40px;
+    line-height: 34px;
     text-align: center;
     transition: transform 0.15s linear;
-    cursor: url('../assets/cursors/windows95-pointer.png'), auto;
+    cursor: $pointer;
+  }
+
+  button:hover {
+    font-weight: 600;
+    transform: scale(1.1);
   }
 
   .window-title {
     position: absolute;
     color: $white;
-    top: -28px;
-    left: 3px;
+    top: -27px;
+    left: 9px;
     pointer-events: none;
   }
 }
 
 .list-window {
-  padding-right: 70px;
+  padding-right: 8px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 1em;
-  right: 250px;
-  top: 160px;
-  width: 16em;
-  height: 150px;
-  text-shadow: 1px 1px 1px $black;
-  paint-order: stroke fill;
-  -webkit-text-stroke: 1px $black;
   transition: background-color 0.25s ease;
+
+  .app-button {
+    font-size: 1.1em;
+  }
 
   .left {
     text-align: right;
   }
 
+  div,
+  a {
+    transition: transform 0.15s linear;
+  }
+
   div:hover,
   a:hover {
-    font-style: italic;
-    cursor: url('../assets/cursors/windows95-pointer.png'), auto;
-    animation: flash 0.5s infinite;
+    cursor: $pointer;
+    animation: $flash;
     animation-timing-function: steps(4, jump-both);
   }
 }
@@ -545,23 +582,54 @@ a {
 #apps-window {
   right: 250px;
   top: 160px;
-  width: 14em;
-  height: 150px;
+  width: 10em;
+  height: 120px;
 }
 
-#contact-window {
-  right: 230px;
-  top: 390px;
-  width: 16em;
+#links-window {
+  right: 250px;
+  top: 310px;
+  width: 13em;
+  padding-right: 40px;
+  padding-left: 2.5em;
   height: 150px;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 1em;
+  align-items: center;
 }
 
-#noise-window {
+.social-icon {
+  width: 30px;
+}
+
+#tv-window {
   left: 520px;
   top: 540px;
   width: 480px;
-  height: 330px;
+  height: 350px;
   padding: 0;
+}
+
+#duck-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.duck-img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  pointer-events: none;
 }
 
 #noise {
@@ -571,84 +639,44 @@ a {
 }
 
 #radio-window {
-  right: 520px;
-  top: 400px;
+  right: 490px;
+  top: 380px;
   width: 110px;
   height: 130px;
-  padding: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #play-button {
-  background: $white;
-  color: $black;
-  font-size: 80px;
-  line-height: 85px;
-  text-align: center;
-  height: 100%;
-  width: 100%;
-  cursor: url('../assets/cursors/windows95-pointer.png'), auto;
-}
-
-#play-button:hover {
-  background: $black;
-  color: $white;
-}
-
-#duck-window-1 {
-  left: 10px;
-  bottom: 30px;
-  width: 400px;
-  height: 300px;
-  background-image: url('../assets/duck-1.gif');
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-#duck-window-2 {
-  bottom: 30px;
-  right: 30px;
-  width: 500px;
-  height: 290px;
-  background-image: url('../assets/duck-2.gif');
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-#duck-window-3 {
-  left: 328px;
-  top: 206px;
-  width: 200px;
-  height: 300px;
-  background-image: url('../assets/duck-3b.gif');
-  background-position: center;
-  background-repeat: no-repeat;
+  cursor: $pointer;
+  width: 30px;
 }
 
 #duck-window {
-  width: 22em;
-  height: 170px;
+  width: 20em;
+  height: 150px;
   right: 15em;
   top: 70px;
-  paint-order: stroke fill;
-  -webkit-text-stroke: 1px $black;
+  font-weight: 400;
 }
 
 #scroll-prompt {
   position: absolute;
-  bottom: -1em;
-  left: -2em;
+  bottom: 0;
   white-space: nowrap;
-  font-weight: 600;
-  background-color: $black;
-  color: $white;
-  padding: 0.1em;
+  font-weight: 500;
+  background-color: $white;
+  box-shadow: $shadow;
+  color: $black;
+  border: $border;
+  padding: 0.1em 0.5em;
   font-size: 2em;
-  transform: rotate(3deg);
   z-index: 998;
 }
 
 canvas {
-  border-bottom: $line-around solid $black;
+  border-bottom: $border;
 }
 
 #sketch-placeholder {
@@ -667,7 +695,7 @@ canvas {
   transform: rotate(-90deg);
   width: 100px;
   right: 100px;
-  cursor: url('../assets/cursors/windows95-pointer.png'), auto;
+  cursor: $pointer;
 }
 
 @keyframes shake {
@@ -692,21 +720,28 @@ canvas {
   animation: shake 0.5s ease-in-out;
 }
 
+/********** SECTIONS **********/
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 100px 0 100px 0;
+  padding-bottom: 50px;
+}
+
 /********** SECTION TITLES **********/
 .wavy {
-  font-size: 80px;
-  margin: 0em 0 0.5em 0.5em;
-  padding-top: 0.5em;
-  max-width: -moz-fit-content;
+  font-size: 70px;
+  display: flex;
+  font-weight: 600;
+  color: $black;
+  margin: 0 0 80px 0;
   max-width: fit-content;
-  -webkit-text-stroke: 6px $black;
 }
 
 .wavy span {
   position: relative;
   display: inline-block;
-  text-transform: uppercase;
-  margin: -0.2rem;
 }
 
 .wavy:hover span {
@@ -726,11 +761,14 @@ canvas {
 }
 
 /********** PROJECTS **********/
+
 #projects-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  background: url('../assets/stripes.svg');
+  background-color: $white;
   background-position: bottom right;
+  padding: 20px 20px;
+  gap: 20px;
 
   a {
     @extend p;
@@ -738,12 +776,13 @@ canvas {
 }
 
 .project-card {
-  padding: 1.5rem;
-  border: $line-around solid $black;
-  margin: -3px;
+  padding: 1.5rem 2.5rem;
   display: block;
   animation: fadeInFromNone 0.5s ease-out;
-  transition: background-color 0.25s ease;
+  background-color: $white;
+  color: $black;
+  border: $border;
+  transition: background-color 0.25s ease, box-shadow 0.4s ease-in-out;
 }
 
 @keyframes fadeInFromNone {
@@ -766,22 +805,23 @@ canvas {
 
 .project-image-container {
   margin-bottom: -1em;
-  box-shadow: 8px 8px $black;
-  border: $line solid $black;
+  border: $border;
   max-width: fit-content;
-  height: 19.5rem;
-  transition: transform 0.6s ease-in-out, filter 0.6s ease-in-out,
-    box-shadow 0.7s ease-in-out;
-  -webkit-filter: grayscale(100%);
-  filter: grayscale(100%);
-  cursor: url('../assets/cursors/windows95-pointer.png'), auto;
+  height: 19.15rem;
+  transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
+  cursor: $pointer;
+}
+
+.project-card:hover:not(:has(.project-image-container:hover)) {
+  box-shadow: $shadow;
 }
 
 .project-image-container:hover {
-  transform: perspective(600px) translateZ(160px) rotateY(-10deg) rotateX(20deg);
-  box-shadow: 0px 0px $black;
-  -webkit-filter: grayscale(0%);
-  filter: grayscale(0%);
+  box-shadow: $shadow;
+}
+
+.project-card:has(.project-image-container:hover) {
+  box-shadow: none;
 }
 
 .project-image {
@@ -795,12 +835,12 @@ canvas {
   white-space: nowrap;
   text-align: left;
   letter-spacing: 0.1em;
-  text-shadow: 1px 1px $white, 2px 2px $white, 3px 3px $black;
+  color: $black;
+  text-shadow: 2px 2px $white, 3px 3px $black;
 }
 
 .project-title:hover {
-  font-style: italic;
-  animation: flash 0.5s infinite;
+  animation: $flash;
   animation-timing-function: steps(4, jump-both);
 }
 
@@ -833,74 +873,105 @@ canvas {
 
 .project-summary {
   padding: 1em 1em 1em 0;
-  font-weight: 600;
+  font-weight: 500;
   text-align: justify;
 }
 
-.seperator {
-  font-weight: 900;
-  text-shadow: 0.5px 0.5px 0 $black;
-  font-size: 0.85rem;
+.separator {
+  font-weight: 500;
+  font-size: 0.9rem;
+  opacity: 0;
 }
 
 .technologies {
-  margin: 0 0 1.5rem 0;
+  margin: 0.2rem 0 1.5rem 0;
   font-size: 0.75rem;
   background-color: $black;
   color: $white;
   max-width: fit-content;
-  padding: 0.4em 0.6em;
-  transform: rotate(-3deg);
+  padding: 0.5em 0.8em;
+  opacity: 0;
 }
 
 .repo-link {
-  font-weight: 600;
+  font-weight: 500;
   font-size: 1.4rem;
+  opacity: 0;
 }
 
-.repo-link:hover {
-  font-style: italic;
+.project-card:hover .separator,
+.project-card:hover .technologies,
+.project-card:hover .repo-link {
+  opacity: 1;
+}
+
+.repo-link::after {
+  color: $transparent;
+  display: none;
 }
 
 .repo-link:hover::after {
-  content: ' < < < < < <';
+  color: $transparent;
+  content: '.......';
+  background-image: url('../assets/duck.svg');
+  background-size: 50px 25px;
+  // height: 10px;
+
+  background-repeat: no-repeat;
+  display: inherit;
 }
 
 #show-more {
-  @extend #more;
-  font-weight: 600;
+  padding: 20px;
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: 400;
+  white-space: nowrap;
   letter-spacing: 0.05em;
-  color: $white;
-  background-color: $black;
-  border: 0;
-  cursor: url('../assets/cursors/windows95-pointer.png'), auto;
+  color: $black;
+  border: $border;
+  width: 60%;
+  transition: box-shadow 0.4s ease-in-out;
+  cursor: $pointer;
+}
+
+#show-more:hover {
+  box-shadow: $shadow;
 }
 
 #more {
   padding: 20px;
   text-align: center;
-  border-bottom: calc($line-around / 1.5) solid $black;
-  border-top: calc($line-around / 1.5) solid $black;
-  margin-top: -1.5px;
+  border-top: $border;
+  border-bottom: $border;
   font-size: 1.5em;
-  font-weight: 600;
+  font-weight: 400;
   white-space: nowrap;
+  width: 100%;
 }
 
 /********** CONTACT **********/
 #contact {
-  padding-top: 1em;
-  padding-bottom: 6em;
-  border-bottom: $line-around solid $black;
-  display: flex;
-  flex-direction: column;
+  border-bottom: $border;
+
+  #project-request-contact {
+    position: static;
+    transition: box-shadow 0.4s ease-in-out;
+    box-shadow: none;
+  }
+
+  #project-request-contact:hover {
+    animation: none;
+    box-shadow: $shadow;
+  }
 
   p {
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     line-height: 1.1;
-    margin-left: 5em;
     margin-bottom: 3em;
-    font-weight: 600;
+    font-weight: 400;
+    max-width: 40ch;
+    text-align: center;
   }
 
   a {
@@ -909,54 +980,29 @@ canvas {
 }
 
 #socials {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
 }
 
 .social {
   display: inline-block;
-  padding: 0.5em;
-  margin-left: 5em;
-
-  span {
-    paint-order: stroke fill;
-    -webkit-text-stroke: 2px $black;
-    letter-spacing: 10px;
-  }
+  margin: 2vw;
+  font-weight: 600;
+  max-width: fit-content;
 }
 
-.social::after {
-  color: $transparent;
-  content: '......';
-  background-image: url('../assets/duck-white.svg');
-  background-size: 40px 50px;
-  height: 40px;
-  width: 50px;
+.social:hover {
+  animation: $flash;
 }
 
-.social:hover::after {
-  color: $transparent;
-  content: '......';
-  background-image: url('../assets/duck.svg');
-  background-size: 40px 50px;
-  height: 40px;
-  width: 50px;
-  background-repeat: no-repeat;
-  scale: 2;
+.social-icon-large {
+  width: 70px;
 }
 
 /********** ABOUT **********/
 #about {
   @extend #contact;
-  padding: 0 4.5rem 4.5rem 4.5rem;
-  border: 0;
-
-  .wavy {
-    margin-left: 0em;
-  }
 
   .sentence {
-    margin-left: 100rem;
     letter-spacing: 0.05em;
   }
 
@@ -964,10 +1010,10 @@ canvas {
     will-change: transform, box-shadow, background-color;
     padding: 3rem;
     margin-bottom: 1em;
-    border: calc($line-around / 2) solid $black;
+    border: $border;
+    box-shadow: none;
     max-width: 60ch;
     min-width: 12ch;
-    box-shadow: 8px 8px $black;
     text-justify: inter-cluster;
     transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out,
       background-color 0.25s ease;
@@ -976,56 +1022,47 @@ canvas {
   p:hover {
     max-width: 60ch;
     transform: perspective(100px) translateZ(10px) !important;
-    box-shadow: 0px 0px $black;
+    box-shadow: $shadow;
+    z-index: 99;
   }
 }
 
 /********** AWARDS **********/
 #awards {
-  border-top: $line-around solid $black;
-  border-bottom: $line-around solid $black;
+  border-bottom: $border;
   padding: 1em 0;
-  background-color: $black;
-  color: $white;
+  background-color: $white;
+  color: $black;
   display: flex;
-  flex-direction: column;
-
-  .wavy span {
-    color: $white;
-  }
-}
-
-#awards-title {
-  -webkit-text-stroke: 5px $white;
 }
 
 #awards-container {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-#award {
+.award {
   display: flex;
-  flex-direction: row;
-  margin-left: 10em;
   margin-bottom: 7em;
-  color: $white;
+  color: $black;
   max-height: fit-content;
-  align-items: flex-start;
 }
 
-.award-x {
-  margin: 0.25em 0.4em 0 0;
-  padding: 0.1em 0.05em;
-  font-size: 5em;
-  text-align: center;
-  border: 4px dashed $white;
-  transform-style: preserve-3d;
-  animation: loader 5s infinite;
-  background-image: $stripes;
-  background-size: $stripes-size;
-  transform: rotateZ(-10deg);
-  white-space: nowrap;
+.award-certificate {
+  margin: 20px 30px;
+  padding: 20px 10px;
+  border: $border;
+  transition: background-color 0.25s ease, box-shadow 0.4s ease-in-out;
+
+  img {
+    width: 130px;
+  }
+}
+
+.award-certificate:hover {
+  box-shadow: $shadow;
 }
 
 .award-details {
@@ -1035,7 +1072,6 @@ canvas {
 .award-title {
   font-weight: 600;
   font-size: 1.7rem;
-  margin-left: -0.4em;
 }
 
 .award-awarder {
@@ -1048,7 +1084,7 @@ canvas {
   white-space: pre;
   letter-spacing: 0.04em;
   transition: all 0.5s ease-out;
-  color: $white;
+  color: $black;
 }
 
 .award-title:hover > span,
@@ -1060,102 +1096,114 @@ canvas {
   max-width: 60ch;
   font-size: 1.1rem;
   margin-left: 0.9em;
-  color: $white;
+  color: $black;
 }
 
 /********** THIS WEBSITE **********/
 #this-website {
   @extend #about;
-  padding-top: 5.5em;
-  padding-bottom: 7em;
-  background-size: auto auto;
 
-  .wavy {
-    padding: 0 0.2em;
-    margin-left: -0.2em;
-  }
+  border: none;
 
   p {
-    cursor: url('../assets/cursors/windows95-cursor.png'), auto;
     padding: 0;
     max-width: 60ch;
-    margin: 1.3em 3em;
-    border: 0;
+    margin: 0 3em 1.3em 3em;
+    border: none;
     box-shadow: none;
+    font-size: 1.4em;
+    text-align: left;
   }
 
   p:hover {
     transform: translateZ(0) !important;
+    box-shadow: none;
   }
 
-  a {
+  svg {
+    margin: 50px 0 25px 0;
+    width: 325px;
+  }
+
+  .highlight {
     font-weight: 600;
-    text-decoration: underline;
-    font-size: 1em;
-  }
-
-  a:hover {
-    text-decoration: line-through;
-    font-style: italic;
   }
 }
 
 /********** FOOTER **********/
 footer {
-  height: 26em;
+  height: 35em;
   background-color: $black;
   display: flex;
   flex-direction: column;
   align-items: center;
+  // justify-content: center;
+  position: relative;
+
+  a,
+  p {
+    color: $white;
+  }
+
+  a {
+    text-decoration: underline;
+  }
+}
+
+#duck {
+  margin-top: 10em;
+  margin-bottom: 1em;
+  width: 80px;
+  max-height: fit-content;
+  display: flex;
   justify-content: center;
-  border-top: $line-around solid $black;
+  cursor: $pointer;
+  transition: all 0.25s;
+}
 
-  #copyright {
-    font-size: 1.7rem;
-    text-align: start;
-    line-height: 1.1;
-    font-weight: 500;
-    font-size: 2.1rem;
-    font-weight: 600;
-    color: $white;
-    text-shadow: 4px 4px $black;
-    margin: 2rem;
-    transition: content 2s;
-    width: 19ch;
-    text-align: center;
-  }
+#duck:hover {
+  transform: rotateZ(15deg);
+}
 
-  #disclaimer,
-  #desktop-prompt {
-    color: $white;
-    max-width: 44ch;
-    text-align: center;
-    margin-top: 2em;
+#duck:hover #duck-path {
+  fill: #ffc900;
+}
 
-    a {
-      color: $white;
-      text-decoration: underline;
-    }
+#copyright {
+  font-size: 2.2rem;
+  font-weight: 500;
+  color: $white;
+  text-shadow: 4px 4px $black;
+  transition: content 2s;
+  width: 19ch;
+  text-align: center;
+}
 
-    a:hover {
-      font-style: italic;
-    }
-  }
+#disclaimer,
+#accessible,
+#desktop-prompt {
+  color: $white;
+  max-width: 38ch;
+  text-align: center;
+  font-size: 1em;
+}
 
-  #duck {
-    margin-top: 3em;
-    margin-bottom: 1em;
-    color: $white;
-    width: 50px;
-    display: flex;
-    justify-content: center;
-    cursor: url('../assets/cursors/windows95-pointer.png'), auto;
-    transition: all 0.25s;
-  }
+#accessible {
+  margin-top: 25px;
+}
 
-  #duck:hover {
-    transform: rotateZ(15deg);
-  }
+#bottom-links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  position: absolute;
+  bottom: 20px;
+}
+
+.bottom-link {
+  margin: 0 8px;
+  font-size: 0.8em;
 }
 
 /********** LOADING **********/
@@ -1167,7 +1215,7 @@ footer {
   text-align: center;
   height: 90vh;
   background-color: $white;
-  cursor: url('../assets/cursors/windows95-hourglass.png'), auto;
+  cursor: $wait;
 
   div {
     height: 100%;
@@ -1182,14 +1230,14 @@ footer {
 
     div {
       font-size: 20vw;
-      font-weight: 600;
-      animation: flash 0.5s infinite;
+      font-weight: 400;
+      animation: $flash;
       color: $white;
       background-image: $stripes;
       background-size: $stripes-size;
       -webkit-background-clip: text;
       background-clip: text;
-      -webkit-text-fill-color: transparent;
+      -webkit-text-fill-color: $transparent;
       animation: barberpole 3s linear infinite;
     }
   }
@@ -1212,14 +1260,13 @@ footer {
   bottom: 1.5vh;
   z-index: 99;
   font-weight: 600;
-  cursor: url('../assets/cursors/windows95-pointer.png'), auto;
+  cursor: $pointer;
   border-radius: 50%;
   font-size: 2vw;
   text-align: center;
   background: $black;
   color: $white;
   transition: all 1s;
-  border: 4px solid transparent;
   background-clip: padding-box;
 }
 
@@ -1252,7 +1299,7 @@ body::-webkit-scrollbar {
 
 body::-webkit-scrollbar-thumb {
   background-color: $black;
-  outline: 1px solid $black;
+  outline: $border;
 }
 
 /********** TICKER **********/
@@ -1260,24 +1307,24 @@ $duration: 500s;
 
 @-webkit-keyframes ticker {
   0% {
-    -webkit-transform: translate3d(0, 0, 0); // Start from the top left corner
+    -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
     visibility: visible;
   }
   100% {
-    -webkit-transform: translate3d(-100%, 0, 0); // Move to the left by 100%
+    -webkit-transform: translate3d(-100%, 0, 0);
     transform: translate3d(-100%, 0, 0);
   }
 }
 
 @keyframes ticker {
   0% {
-    -webkit-transform: translate3d(0, 0, 0); // Start from the top left corner
+    -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
     visibility: visible;
   }
   100% {
-    -webkit-transform: translate3d(-100%, 0, 0); // Move to the left by 100%
+    -webkit-transform: translate3d(-100%, 0, 0);
     transform: translate3d(-100%, 0, 0);
   }
 }
@@ -1287,22 +1334,23 @@ $duration: 500s;
   height: 11px;
   width: 11px;
   display: inline-block;
-  background-color: $transparent;
+  // background-color: $transparent;
   position: relative;
   margin-right: 15px;
 }
 
 .ticker-wrap {
-  position: fixed;
+  // position: fixed;
   top: 0;
-  left: 0; // Ensure the ticker starts from the left
+  left: 0;
   z-index: 3;
   width: 100%;
   overflow: hidden;
   height: 1.5rem;
-  padding-left: 0; // Remove padding so it starts immediately
+  padding-left: 0;
   box-sizing: content-box;
-  mix-blend-mode: difference;
+  // mix-blend-mode: difference;
+  border-bottom: $border;
 
   .ticker:hover {
     -webkit-animation-play-state: paused;
@@ -1327,12 +1375,12 @@ $duration: 500s;
     animation-name: ticker;
     -webkit-animation-duration: $duration;
     animation-duration: $duration;
-    color: $black;
-    background-color: $white;
-    paint-order: stroke fill;
-    -webkit-text-stroke: 1.8px $black;
+    color: $white;
+    background-color: $black;
+    font-weight: 400;
     font-size: 0.875rem;
     letter-spacing: 1.5px;
+    // border-bottom: $border;
 
     &-item {
       display: inline-block;
@@ -1343,10 +1391,10 @@ $duration: 500s;
 /********** MEDIA QUERRIES **********/
 @media only screen and (max-width: 820px) {
   #smiley,
-  #chinese,
+  #japanese,
   #welcome,
   #smiley,
-  #flowers,
+  #art,
   #rays {
     display: none;
   }
@@ -1413,7 +1461,7 @@ $duration: 500s;
     position: static;
     top: 65px;
     height: 95vh;
-    border-bottom: $line solid $black;
+    border-bottom: $border;
     background-size: 100%;
 
     p {
@@ -1485,12 +1533,11 @@ $duration: 500s;
     display: flex;
     flex-direction: column;
     background: none;
+    // max-width: 90vw;
   }
 
   .project-card {
     padding: 20px;
-    border-left: 0;
-    border-right: 0;
   }
 
   .project-title {
@@ -1509,19 +1556,18 @@ $duration: 500s;
   .project-image {
     height: 11rem;
     box-shadow: none;
-    border: $line solid $black;
+    border: $border;
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
   }
 
   .project-image:hover {
     transform: none;
-    box-shadow: none;
   }
 
   #more {
     font-size: 1em;
-    border-bottom: $line solid $black;
+    border-bottom: $border;
   }
 
   /********** MOBILE: Contact **********/
@@ -1580,7 +1626,7 @@ $duration: 500s;
       font-size: 1.1em;
       width: 25ch;
       box-shadow: none;
-      border: $line solid $black;
+      border: $border;
     }
 
     p:hover {
@@ -1595,7 +1641,7 @@ $duration: 500s;
     display: none;
   }
 
-  .award-x {
+  .award-certificate {
     display: none;
   }
 

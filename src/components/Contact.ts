@@ -14,6 +14,8 @@
  *  https://www.gnu.org/licenses/agpl-3.0.html
  */
 
+import { textsContact } from '../data/texts.js';
+
 export default function contact() {
   const contact = document.getElementById('contact');
   if (!contact) return;
@@ -27,10 +29,22 @@ export default function contact() {
     .join('');
   contact.appendChild(contactTitle);
 
+  // Project Request paragraph
+  const projectRequestParagraph = document.createElement('p');
+  projectRequestParagraph.innerHTML = `${textsContact[0]}`;
+  contact.appendChild(projectRequestParagraph);
+
+  // Project Request button
+  const projectRequest = document.createElement('p');
+  projectRequest.id = 'project-request-contact';
+  projectRequest.classList.add('project-request');
+  projectRequest.innerHTML = `<a href="https://forms.gle/Vg7kH5PRosqU3HYx6" target="_blank">Submit Project Request</a>`;
+  contact.appendChild(projectRequest);
+
   // Email
   const email = document.createElement('p');
   email.id = 'email';
-  email.innerHTML = `For inquiries, please drop me a line at:<br>michael.kolesidis@gmail.com`;
+  email.innerHTML = `${textsContact[1]}`;
   contact.appendChild(email);
 
   // Socials
@@ -38,15 +52,15 @@ export default function contact() {
   socials.id = 'socials';
 
   const socialLinks = [
-    { name: 'LINKEDIN', url: 'https://www.linkedin.com/in/michaelkolesidis/' },
-    { name: 'MASTODON', url: 'https://mastodon.social/@michaelkolesidis' },
+    { name: 'linkedin', url: 'https://www.linkedin.com/in/michaelkolesidis/' },
+    { name: 'mastodon', url: 'https://mastodon.social/@michaelkolesidis' },
     {
-      name: 'BLUESKY',
+      name: 'bluesky',
       url: 'https://bsky.app/profile/michaelkolesidis.bsky.social',
     },
-    { name: 'INSTAGRAM', url: 'https://www.instagram.com/michaelkolesidis' },
-    { name: 'GITHUB', url: 'https://github.com/michaelkolesidis' },
-    { name: 'X/TWITTER', url: 'https://twitter.com/michael_kol_' },
+    { name: 'instagram', url: 'https://www.instagram.com/michaelkolesidis' },
+    { name: 'github', url: 'https://github.com/michaelkolesidis' },
+    { name: 'twitter', url: 'https://twitter.com/michael_kol_' },
   ];
 
   socialLinks.forEach(({ name, url }) => {
@@ -54,7 +68,7 @@ export default function contact() {
     link.classList.add('social');
     link.href = url;
     link.target = '_blank';
-    link.innerHTML = `<span>${name} </span> `;
+    link.innerHTML = `<img src="../../assets/icons/${name}.svg" class="social-icon-large" alt="${name} logo">`;
     socials.appendChild(link);
   });
 

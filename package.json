@@ -39,14 +39,12 @@
     "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
-  "devDependencies": {
-    "@types/howler": "^2.2.12",
-    "sass": "^1.85.0",
-    "typescript": "^5.7.3",
-    "vite": "^6.1.1"
-  },
   "dependencies": {
-    "dom-window-manager": "^1.0.3",
-    "howler": "^2.2.4"
+    "dom-window-manager": "^1.0.3"
+  },
+  "devDependencies": {
+    "sass": "^1.86.3",
+    "typescript": "^5.8.3",
+    "vite": "^6.2.5"
   }
 }

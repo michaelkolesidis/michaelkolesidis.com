@@ -42,6 +42,14 @@ export default function projects() {
   const upTo = 8;
   populateProjects(0, upTo, projectsContainer);
 
+  // Info Box
+  const more = document.createElement('p');
+  more.id = 'more';
+  more.style.display = 'none';
+  more.innerHTML =
+    'The list gets updated regularly with new projects. Check back again soon!';
+  projects.appendChild(more);
+
   // Show More Button
   const showMore = document.createElement('p');
   showMore.id = 'show-more';
@@ -49,14 +57,10 @@ export default function projects() {
   projects.appendChild(showMore);
 
   showMore.addEventListener('click', () => {
-    showMore.style.display = 'none';
+    // showMore.style.display = 'none';
     populateProjects(upTo, projectList.length, projectsContainer);
+    more.style.display = 'block';
+    more.style.display = 'block';
+    showMore.style.display = 'none';
   });
-
-  // Info Box
-  const more = document.createElement('p');
-  more.id = 'more';
-  more.innerHTML =
-    'The list gets updated regularly with new projects. Check back again soon!';
-  projects.appendChild(more);
 }

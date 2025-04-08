@@ -16,7 +16,7 @@
 
 import { generateNewColor } from '../utils/functions.js';
 import { colors } from '../data/colors.js';
-import { sentencesAbout as sentences } from '../data/sentences.js';
+import { textsAbout as texts } from '../data/texts.js';
 
 export default function about() {
   const about = document.getElementById('about');
@@ -33,14 +33,14 @@ export default function about() {
   let leftMargin = 0;
   let colorIndex = 0;
 
-  sentences.forEach((sentenceText, i) => {
+  texts.forEach((sentenceText, i) => {
     const sentence = document.createElement('p');
     sentence.classList.add('sentence');
     sentence.innerHTML = sentenceText;
     about.appendChild(sentence);
 
     // Random angle for rotation
-    const angle = (Math.random() * 6 - 3).toFixed(2);
+    const angle = parseFloat((Math.random() * 10 - 5).toFixed(2));
     const color = colors[colorIndex % colors.length]!.rgb;
     sentence.style.backgroundColor = `rgb(${color})`;
 

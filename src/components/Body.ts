@@ -26,11 +26,11 @@ export default function body() {
         </div>
         <div id="intro"></div>
         <div id="main-content">
-          <section id="projects"></section>
-          <section id="contact"></section>
-          <section id="about"></section>
-          <section id="awards"></section>
-          <section id="this-website"></section>
+          <section id="projects" class="section"></section>
+          <section id="contact" class="section"></section>
+          <section id="about" class="section"></section>
+          <section id="awards" class="section"></section>
+          <section id="this-website" class="section"></section>
         </div>
     </main>
     <footer id="footer"></footer>

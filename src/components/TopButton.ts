@@ -39,8 +39,8 @@ export default function topButton() {
       window.innerHeight + window.scrollY >=
       document.body.offsetHeight - nearBottomThreshold;
     topButton.style.border = nearBottom
-      ? '4px solid white'
-      : '4px solid transparent';
+      ? '2px solid white'
+      : '2px solid transparent';
   };
 
   window.addEventListener('scroll', handleScroll);
