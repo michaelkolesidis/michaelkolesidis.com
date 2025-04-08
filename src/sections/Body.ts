@@ -20,7 +20,7 @@ export default function body() {
     <div class="ticker-wrap"><div class="ticker"></div></div>
     <header id="header"></header>
     <main id="main">
-        <div id="sketch-placeholder"></div>
+        <div id="duck-placeholder"></div>
         <div id="p5_loading" class="loadingclass">
           <div><div>LOADING</div></div>
         </div>

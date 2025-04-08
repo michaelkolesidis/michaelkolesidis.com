@@ -693,13 +693,13 @@ export default function header() {
   });
 
   // Canvas
-  const sketchPlaceholder = document.getElementById('sketch-placeholder');
+  const duckPlaceholder = document.getElementById('duck-placeholder');
 
-  if (sketchPlaceholder) {
-    sketchPlaceholder.style.height = `${window.innerHeight - 140}px`;
+  if (duckPlaceholder) {
+    duckPlaceholder.style.height = `${window.innerHeight - 140}px`;
 
     window.addEventListener('resize', () => {
-      sketchPlaceholder.style.height = `${window.innerHeight - 140}px`;
+      duckPlaceholder.style.height = `${window.innerHeight - 140}px`;
       sunscreen.style.top = `${window.innerHeight + 50}px`;
       sticker.style.top = `${window.innerHeight + 50}px`;
 
@@ -709,13 +709,13 @@ export default function header() {
       }
     });
 
-    sketchPlaceholder.style.background = `rgb(${
-      generateNewColor(colors, sketchPlaceholder, 'background').rgb
+    duckPlaceholder.style.background = `rgb(${
+      generateNewColor(colors, duckPlaceholder, 'background').rgb
     })`;
 
-    sketchPlaceholder.addEventListener('click', () => {
-      sketchPlaceholder.style.background = `rgb(${
-        generateNewColor(colors, sketchPlaceholder, 'background').rgb
+    duckPlaceholder.addEventListener('click', () => {
+      duckPlaceholder.style.background = `rgb(${
+        generateNewColor(colors, duckPlaceholder, 'background').rgb
       })`;
     });
   }
@@ -739,8 +739,8 @@ export default function header() {
       sunscreen.classList.remove('shake');
     }, 500);
 
-    if (sketchPlaceholder) {
-      sketchPlaceholder.style.background = "url('../../assets/water.png')";
+    if (duckPlaceholder) {
+      duckPlaceholder.style.background = "url('../../assets/water.png')";
     }
   });
 

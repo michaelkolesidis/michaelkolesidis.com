@@ -1,6 +1,6 @@
 document.body.innerHTML = /* html */ `
 <header>
-<a href="https://michaelkolesidis.com">Michael Kolesidis</a>
+<a href="/">Michael Kolesidis</a>
 </header>
 
 <main>

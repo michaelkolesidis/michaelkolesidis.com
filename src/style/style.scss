@@ -679,7 +679,7 @@ canvas {
   border-bottom: $border;
 }
 
-#sketch-placeholder {
+#duck-placeholder {
   transition: background-color 0.25s ease;
 }
 
@@ -1208,7 +1208,8 @@ footer {
 
 /********** LOADING **********/
 #p5_loading {
-  display: flex;
+  // display: flex;
+  display: none;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -1502,7 +1503,7 @@ $duration: 500s;
     display: none;
   }
 
-  #sketch-placeholder {
+  #duck-placeholder {
     display: none;
   }
 
@@ -1688,7 +1689,7 @@ $duration: 500s;
 
 /********** MEDIA QUERRIES: Grid **********/
 @media only screen and (min-width: 700px) and (max-width: 820px) {
-  #sketch-placeholder {
+  #duck-placeholder {
     display: none;
   }
 

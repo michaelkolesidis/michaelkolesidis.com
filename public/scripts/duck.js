@@ -79,5 +79,5 @@ if (window.innerWidth > 700) {
     };
   };
 
-  const duckSketch = new p5(duck, 'sketch-placeholder');
+  const duckSketch = new p5(duck, 'duck-placeholder');
 }
