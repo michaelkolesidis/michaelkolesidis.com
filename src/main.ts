@@ -15,17 +15,17 @@
  */
 
 import './style/style.scss';
-import body from './sections/Body.js';
-import ticker from './sections/Ticker.js';
-import header from './sections/Header.js';
-import intro from './sections/Intro.js';
-import projects from './sections/Projects.js';
-import contact from './sections/Contact.js';
-import about from './sections/About.js';
-import awards from './sections/Awards.js';
-import thisWebsite from './sections/ThisWebsite.js';
-import footer from './sections/Footer.js';
-import topButton from './sections/TopButton.js';
+import body from './sections/body/Body.js';
+import ticker from './components/ticker/Ticker.js';
+import header from './sections/header/Header.js';
+import intro from './sections/intro/Intro.js';
+import projects from './sections/projects/Projects.js';
+import contact from './sections/contact/Contact.js';
+import about from './sections/about/About.js';
+import awards from './sections/awards/Awards.js';
+import thisWebsite from './sections/this-website/ThisWebsite.js';
+import footer from './sections/footer/Footer.js';
+import topButton from './components/buttons/TopButton.js';
 import { getScrollDistanceCss } from './utils/functions.js';
 import { disableRightClick } from './utils/functions.js';
 import { animateTitle } from './utils/functions.js';

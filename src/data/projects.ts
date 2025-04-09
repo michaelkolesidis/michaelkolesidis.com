@@ -28,6 +28,20 @@ export interface Project {
 
 export const projectList: Project[] = [
   {
+    name: 'OKTO.DIRECT',
+    image: '../../images/okto-direct.png',
+    technologies:
+      'React, Redux, MUI, Styled Components, WebSocket, Spring Boot',
+    summary:
+      'Member of the core team that conceptualized, designed, and developed OKTO.DIRECT, the first and only retail payments gateway that unlocks with one integration multiple digital payment methods for users to deposit and withdraw in real-time.',
+    description: '',
+    repository: '',
+    deployment: 'https://www.oktopayments.com/okto-direct/',
+    video: '',
+    visible: true,
+  },
+
+  {
     name: 'JSS-01',
     image: '../../images/jss-01.png?v=2',
     technologies: 'Tone.js, WEBMIDI.js, TypeScript, JavaScript, Sass',
@@ -56,19 +70,7 @@ export const projectList: Project[] = [
     visible: true,
   },
 
-  {
-    name: 'OKTO.DIRECT',
-    image: '../../images/okto-direct.png',
-    technologies:
-      'React, Redux, MUI, Styled Components, WebSocket, Spring Boot',
-    summary:
-      'Member of the core team that conceptualized, designed, and developed OKTO.DIRECT, the first and only retail payments gateway that unlocks with one integration multiple digital payment methods for users to deposit and withdraw in real-time.',
-    description: '',
-    repository: '',
-    deployment: 'https://www.oktopayments.com/okto-direct/',
-    video: '',
-    visible: true,
-  },
+
 
   {
     name: 'Fintech World',
@@ -241,7 +243,7 @@ export const projectList: Project[] = [
     repository: 'https://github.com/michaelkolesidis/sticky-notes',
     deployment: 'https://sticky-notes-ts.vercel.app/',
     video: '',
-    visible: true,
+    visible: false,
   },
 
   {
@@ -254,7 +256,7 @@ export const projectList: Project[] = [
     repository: 'https://github.com/michaelkolesidis/tenzi',
     deployment: 'https://tenzi-react.netlify.app/',
     video: '',
-    visible: true,
+    visible: false,
   },
 
   {
@@ -266,7 +268,7 @@ export const projectList: Project[] = [
     repository: 'https://github.com/michaelkolesidis/camelnotes',
     deployment: 'https://github.com/michaelkolesidis/camelnotes',
     video: '',
-    visible: true,
+    visible: false,
   },
 
   {

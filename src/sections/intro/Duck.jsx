@@ -18,30 +18,27 @@ import { useRef, forwardRef } from 'react';
 import { useFrame } from '@react-three/fiber';
 import { useGLTF, Outlines } from '@react-three/drei';
 
-// Helper function for linear interpolation (lerp)
 const lerp = (start, end, alpha) => start + (end - start) * alpha;
 
 export const Duck = forwardRef(({ mouseX, mouseY, ...props }, ref) => {
   const { nodes, materials } = useGLTF('/assets/3d-models/duck.glb');
   const duck = useRef();
 
-  const initialRotation = [Math.PI / 6, -Math.PI / 6, 0]; // Your initial defined rotation
+  // Initial defined rotation
+  const initialRotation = [0.01, Math.PI / 128, 0];
+  const rotationSpeed = 0.05;
+  const maxRotation = Math.PI / 16; // Single variable for max rotation
 
-  // Smooth rotation using lerp
   useFrame(() => {
     if (duck.current) {
-      const rotationSpeed = 0.05; // Lower this value to make the rotation smoother
-      const maxRotation = Math.PI / 16; // Reduce the maximum rotation for more subtle effects
+      // Normalize mouse coordinates to the range of -1 to 1
+      const normalizedMouseX = (mouseX / window.innerWidth) * 2 - 1;
+      const normalizedMouseY = (mouseY / window.innerHeight) * 2 - 1;
 
-      // Map mouseX (horizontal) to a rotation value for the Y-axis (opposite direction)
-      const targetRotationY =
-        (mouseX / window.innerWidth) * maxRotation * 2 - maxRotation; // Reduced factor for subtler movement
+      // Calculate target rotations based on normalized mouse coordinates
+      const targetRotationY = normalizedMouseX * maxRotation * 2; // Increased influence
+      const targetRotationX = normalizedMouseY * maxRotation;
 
-      // Map mouseY (vertical) to a rotation value for the X-axis (opposite direction)
-      const targetRotationX =
-        (mouseY / window.innerHeight) * maxRotation * 0.25 - maxRotation; // Reduced factor for subtler movement
-
-      // Lerp between the current rotation and the target rotation, adding to the initial rotation
       duck.current.rotation.y = lerp(
         duck.current.rotation.y,
         initialRotation[1] - targetRotationY,
@@ -57,7 +54,12 @@ export const Duck = forwardRef(({ mouseX, mouseY, ...props }, ref) => {
 
   return (
     <group {...props} ref={duck} dispose={null}>
-      <mesh ref={ref} name="duck" geometry={nodes.Node1.geometry}>
+      <mesh
+        ref={ref}
+        name="duck"
+        geometry={nodes.Node1.geometry}
+        rotation={initialRotation}
+      >
         <meshStandardMaterial
           map={materials.Duck.map}
           color={0xffffff}

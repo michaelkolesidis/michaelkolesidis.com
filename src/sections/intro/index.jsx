@@ -14,32 +14,14 @@
  *  https://www.gnu.org/licenses/agpl-3.0.html
  */
 
-// import './style.css';
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App.jsx';
-import { Canvas } from '@react-three/fiber';
-
-document.addEventListener('contextmenu', (event) => event.preventDefault());
 
 const root = ReactDOM.createRoot(document.querySelector('#duck-placeholder'));
 
-/**
- * Camera
- */
-let cameraY = window.innerWidth < 600 ? 8 : 5;
-
 root.render(
   <React.StrictMode>
-    <Canvas
-      camera={{
-        // fov: 45,
-        near: 0.1,
-        far: 50,
-        position: [0, 0, cameraY],
-      }}
-    >
-      <App />
-    </Canvas>
+    <App />
   </React.StrictMode>
 );

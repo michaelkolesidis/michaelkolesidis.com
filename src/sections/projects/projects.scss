@@ -1,0 +1,155 @@
+@import '../../style/style.scss';
+@import '../../style/variables.scss';
+@import '../../style/animations.scss';
+
+#projects-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: $white;
+  background-position: bottom right;
+  padding: 20px 20px;
+  gap: 20px;
+
+  a {
+    @extend p;
+  }
+}
+
+.project-card {
+  padding: 1.5rem 2.5rem;
+  display: block;
+  animation: fadeInFromNone 0.5s ease-out;
+  background-color: $white;
+  color: $black;
+  border: $border;
+  transition: background-color 0.25s ease, box-shadow 0.4s ease-in-out;
+}
+
+.project-image-container,
+.project-image {
+  position: relative;
+  z-index: 3;
+}
+
+.project-image-container {
+  margin-bottom: -1em;
+  border: $border;
+  max-width: fit-content;
+  height: 19.15rem;
+  transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
+  cursor: $pointer;
+}
+
+.project-card:hover:not(:has(.project-image-container:hover)) {
+  box-shadow: $shadow;
+}
+
+.project-image-container:hover {
+  box-shadow: $shadow;
+}
+
+.project-card:has(.project-image-container:hover) {
+  box-shadow: none;
+}
+
+.project-image {
+  height: 19rem;
+  transition: opacity 0.9s ease-in-out;
+}
+
+.project-title {
+  font-size: 2em;
+  font-weight: 700;
+  white-space: nowrap;
+  text-align: left;
+  letter-spacing: 0.1em;
+  color: $black;
+  text-shadow: 2px 2px $white, 3px 3px $black;
+}
+
+.project-title:hover {
+  animation: $flash;
+  animation-timing-function: steps(4, jump-both);
+}
+
+.project-summary,
+.technologies {
+  pointer-events: none;
+}
+
+.project-summary {
+  padding: 1em 1em 1em 0;
+  font-weight: 500;
+  text-align: justify;
+}
+
+.separator {
+  font-weight: 500;
+  font-size: 0.9rem;
+  opacity: 0;
+}
+
+.technologies {
+  margin: 0.2rem 0 1.5rem 0;
+  font-size: 0.75rem;
+  background-color: $black;
+  color: $white;
+  max-width: fit-content;
+  padding: 0.5em 0.8em;
+  opacity: 0;
+}
+
+.repo-link {
+  font-weight: 500;
+  font-size: 1.4rem;
+  opacity: 0;
+}
+
+.project-card:hover .separator,
+.project-card:hover .technologies,
+.project-card:hover .repo-link {
+  opacity: 1;
+}
+
+.repo-link::after {
+  color: $transparent;
+  display: none;
+}
+
+.repo-link:hover::after {
+  color: $transparent;
+  content: '.......';
+  background-image: url('../assets/duck.svg');
+  background-size: 50px 25px;
+  background-repeat: no-repeat;
+  display: inherit;
+}
+
+#show-more {
+  padding: 20px;
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: 400;
+  white-space: nowrap;
+  letter-spacing: 0.05em;
+  color: $black;
+  border: $border;
+  width: 60%;
+  transition: box-shadow 0.4s ease-in-out;
+  cursor: $pointer;
+}
+
+#show-more:hover {
+  box-shadow: $shadow;
+}
+
+#more {
+  padding: 20px;
+  text-align: center;
+  border-top: $border;
+  border-bottom: $border;
+  font-size: 1.5em;
+  font-weight: 400;
+  white-space: nowrap;
+  width: 100%;
+}

@@ -1,0 +1,252 @@
+@import '../../style/style.scss';
+@import '../../style/variables.scss';
+@import '../../style/animations.scss';
+
+#intro {
+  position: absolute;
+  top: 68vh;
+  display: flex;
+  justify-content: space-between;
+  min-width: 98vw;
+  pointer-events: none;
+
+  p {
+    margin: 1rem;
+    max-width: 16ch;
+    min-width: 12ch;
+    margin-right: 2rem;
+    font-size: clamp(0.8rem, 2.5vh, 2rem);
+    text-align: start;
+    line-height: 1.1;
+    font-weight: 400;
+    letter-spacing: 0.025em;
+    color: $black;
+    max-height: fit-content;
+    padding: 10px;
+  }
+
+  #right {
+    max-width: 31ch;
+    min-width: 16ch;
+    column-count: 2;
+  }
+}
+
+#handwriting {
+  position: relative;
+  top: -38.1vh;
+  right: clamp(-100em, max(-42vh, -41vw), 12em);
+
+  p {
+    font-family: 'Caveat', sans-serif;
+    font-size: clamp(1em, 3.5vh, 2em);
+    text-align: center;
+    white-space: nowrap;
+    line-height: 1em;
+    pointer-events: auto;
+    cursor: $help;
+    transform: rotate(20deg);
+    text-shadow: none;
+    font-weight: 400;
+    -webkit-text-stroke: 0;
+    color: $black;
+    background: $transparent;
+    border: none;
+    box-shadow: none;
+    opacity: 1;
+    transition: opacity 1s ease;
+  }
+}
+
+.window {
+  pointer-events: none;
+  position: absolute;
+  opacity: 0;
+  color: $black;
+  border: $border;
+  border-top: 35px solid $black;
+  background-color: $white;
+  padding: 1em;
+  cursor: $grab;
+  box-shadow: $shadow;
+  transition: opacity 0.35s;
+
+  button {
+    position: absolute;
+    top: -35px;
+    right: -2px;
+    padding-top: -0.3rem;
+    border: 0;
+    background-color: $transparent;
+    color: $white;
+    cursor: $pointer;
+    height: 34px;
+    width: 37px;
+    font-size: 1.4rem;
+    line-height: 34px;
+    text-align: center;
+    transition: transform 0.15s linear;
+    cursor: $pointer;
+  }
+
+  button:hover {
+    font-weight: 600;
+    transform: scale(1.1);
+  }
+
+  .window-title {
+    position: absolute;
+    color: $white;
+    top: -27px;
+    left: 9px;
+    pointer-events: none;
+  }
+}
+
+.list-window {
+  padding-right: 8px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 1em;
+  transition: background-color 0.25s ease;
+
+  .app-button {
+    font-size: 1.1em;
+  }
+
+  .left {
+    text-align: right;
+  }
+
+  div,
+  a {
+    transition: transform 0.15s linear;
+  }
+
+  div:hover,
+  a:hover {
+    cursor: $pointer;
+    animation: $flash;
+    animation-timing-function: steps(4, jump-both);
+  }
+}
+
+#apps-window {
+  right: 250px;
+  top: 160px;
+  width: 10em;
+  height: 120px;
+}
+
+#links-window {
+  right: 250px;
+  top: 310px;
+  width: 13em;
+  padding-right: 40px;
+  padding-left: 2.5em;
+  height: 150px;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 1em;
+  align-items: center;
+}
+
+.social-icon {
+  width: 30px;
+}
+
+#tv-window {
+  left: 520px;
+  top: 540px;
+  width: 480px;
+  height: 350px;
+  padding: 0;
+}
+
+#duck-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.duck-img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  pointer-events: none;
+}
+
+#noise {
+  width: 100%;
+  height: 100%;
+  border-bottom: none;
+}
+
+#radio-window {
+  right: 490px;
+  top: 380px;
+  width: 110px;
+  height: 130px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#play-button {
+  cursor: $pointer;
+  width: 30px;
+}
+
+#duck-window {
+  width: 20em;
+  height: 150px;
+  right: 15em;
+  top: 70px;
+  font-weight: 400;
+}
+
+#scroll-prompt {
+  position: absolute;
+  bottom: 0;
+  white-space: nowrap;
+  font-weight: 500;
+  background-color: $white;
+  box-shadow: $shadow;
+  color: $black;
+  border: $border;
+  padding: 0.1em 0.5em;
+  font-size: 2em;
+  z-index: 998;
+}
+
+#duck-placeholder {
+  transition: background-color 0.25s ease;
+  border-bottom: $border;
+}
+
+#loading {
+  position: absolute;
+  top: 140px;
+  margin: auto;
+  width: 100vw;
+}
+
+#sunscreen {
+  position: absolute;
+  transform: rotate(-90deg);
+  width: 100px;
+  right: 100px;
+  cursor: $pointer;
+}
+
+.shake {
+  animation: shake 0.5s ease-in-out;
+}

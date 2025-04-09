@@ -1,0 +1,373 @@
+@import './style.scss';
+
+/********** Media Querries **********/
+@media only screen and (max-width: 820px) {
+  #smiley,
+  #japanese,
+  #welcome,
+  #smiley,
+  #art,
+  #rays {
+    display: none;
+  }
+}
+
+/********** Mobile **********/
+@media only screen and (max-width: 700px) {
+  html,
+  body {
+    border: 0;
+    overflow-x: hidden;
+  }
+
+  /********** Mobile: Ticker **********/
+  .ticker-wrap {
+    display: none;
+  }
+
+  /********** Mobile: Header **********/
+  #top-gap {
+    height: 65px;
+  }
+
+  #new {
+    img {
+      position: absolute;
+      top: -70px;
+      left: -5px;
+      width: 100px;
+    }
+  }
+
+  #box {
+    position: absolute;
+    top: 80px;
+    right: 30px;
+    width: 120px;
+    height: 120px;
+    padding: 10px;
+    font-size: 0.8em;
+    width: 150px;
+
+    button {
+      display: none;
+    }
+  }
+
+  #name {
+    font-size: 9vw;
+    position: absolute;
+    top: 10px;
+
+    span {
+      font-size: 9vw;
+    }
+  }
+
+  /********** Mobile: Intro **********/
+  #intro {
+    background-color: #f7d106;
+    background-image: url('../assets/duck.gif');
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: static;
+    top: 65px;
+    height: 95vh;
+    border-bottom: $border;
+    background-size: 100%;
+
+    p {
+      text-shadow: none;
+      color: $black;
+    }
+
+    #left {
+      display: none;
+    }
+
+    #right {
+      display: block;
+      font-size: 1em;
+      column-count: 1;
+      position: absolute;
+      bottom: 10px;
+    }
+  }
+
+  #handwriting {
+    display: none;
+  }
+
+  #welcome {
+    display: none;
+  }
+
+  #scroll-prompt {
+    display: none;
+  }
+
+  canvas {
+    display: none;
+  }
+
+  #sunscreen {
+    display: none;
+  }
+
+  #duck-placeholder {
+    display: none;
+  }
+
+  #loading {
+    display: none;
+  }
+
+  #new {
+    left: 20px;
+    img {
+      animation: none;
+    }
+  }
+
+  /********** Mobile: Sections **********/
+  .wavy {
+    font-size: 9vw;
+    margin-top: 0;
+    padding: 0;
+  }
+
+  section {
+    margin: 2rem 0.1rem 0 0.1rem;
+  }
+
+  /********** Mobile: Projects **********/
+  #projects-container {
+    display: flex;
+    flex-direction: column;
+    background: none;
+    // max-width: 90vw;
+  }
+
+  .project-card {
+    padding: 20px;
+  }
+
+  .project-title {
+    max-width: 15ch;
+    text-shadow: none;
+    white-space: unset;
+    letter-spacing: 0.05em;
+    font-size: 1.4em;
+  }
+
+  .project-title:hover {
+    letter-spacing: 0.05em;
+    text-shadow: none;
+  }
+
+  .project-image {
+    height: 11rem;
+    box-shadow: none;
+    border: $border;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+  }
+
+  .project-image:hover {
+    transform: none;
+  }
+
+  #more {
+    font-size: 1em;
+    border-bottom: $border;
+  }
+
+  /********** Mobile: Contact **********/
+  #contact {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: left;
+
+    p {
+      font-size: 1rem;
+      margin: 0;
+      margin-left: 5vw;
+    }
+
+    a {
+      margin: 0rem;
+      margin-left: 5vw;
+      font-size: 1.5em;
+    }
+  }
+
+  #socials {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    margin-bottom: -30px;
+  }
+
+  .social::after {
+    color: $black;
+    content: '';
+  }
+
+  .social:hover::after {
+    color: $black;
+    background-image: none;
+    content: '';
+  }
+
+  /********** Mobile: About **********/
+  #about {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0;
+    padding: 0;
+    margin-left: 5vw;
+
+    .wavy {
+      margin-left: 5vw;
+    }
+
+    p {
+      margin-bottom: 3rem;
+      padding: 30px;
+      font-size: 1.1em;
+      width: 25ch;
+      box-shadow: none;
+      border: $border;
+    }
+
+    p:hover {
+      transform: none;
+      box-shadow: none;
+    }
+  }
+
+  /********** Mobile: Award **********/
+  #awards {
+    margin-left: 1em;
+    display: none;
+  }
+
+  .award-certificate {
+    display: none;
+  }
+
+  .award-title {
+    font-size: 1.4em;
+    width: 10ch;
+  }
+
+  .award-awarder {
+    font-size: 1.2em;
+  }
+
+  #this-website {
+    display: none;
+    margin: 0.1em;
+    text-align: left;
+    @extend #about;
+
+    a {
+      font-size: 1em;
+    }
+  }
+
+  /********** Mobile: Footer **********/
+  footer {
+    width: 100%;
+    height: 70vh;
+    padding: 0 1em;
+
+    p {
+      max-width: 80vw;
+    }
+  }
+
+  /********** Mobile: Top Button **********/
+  #top-button {
+    display: none;
+  }
+
+  #top-button:hover {
+    transform: none;
+  }
+}
+
+/********** Media Querries: Grid **********/
+@media only screen and (min-width: 700px) and (max-width: 820px) {
+  #duck-placeholder {
+    display: none;
+  }
+
+  #loading {
+    display: none;
+  }
+
+  canvas {
+    display: none;
+  }
+
+  #sound {
+    display: none;
+  }
+
+  #handwriting {
+    display: none;
+  }
+
+  #top-gap {
+    height: 100px;
+  }
+
+  #name {
+    font-size: 9vw;
+    position: absolute;
+    top: 10px;
+
+    span {
+      font-size: 9vw;
+    }
+  }
+
+  #right {
+    column-count: 1;
+  }
+
+  #projects-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  #projects-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  #socials {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  #projects-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media only screen and (min-width: 2200px) {
+  #projects-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  #awards-container {
+    flex-direction: row;
+  }
+}

@@ -15,8 +15,9 @@
  */
 
 import { useState, useRef, useEffect } from 'react';
-import { OrbitControls, Float, Outlines } from '@react-three/drei';
+import { Float } from '@react-three/drei';
 import { Duck } from './Duck';
+import { Canvas } from '@react-three/fiber';
 
 export default function App() {
   const duck = useRef();
@@ -59,21 +60,30 @@ export default function App() {
     if (hovered) {
       document.body.style.cursor = 'pointer';
     } else {
-      document.body.style.cursor = 'default';
+      document.body.style.cursor = 'inherit';
     }
   }, [hovered]);
 
+  // Camera
+  let cameraZ = window.innerWidth < 600 ? 8 : 5;
+
   return (
-    <>
-      {/* <OrbitControls /> */}
-      <ambientLight intensity={3} />
-      <pointLight intensity={2} position={[0, 0, 4]} />
+    <Canvas
+      camera={{
+        // fov: 45,
+        near: 0.1,
+        far: 50,
+        position: [0, 2.5, 5],
+      }}
+    >
+      <ambientLight intensity={3.2} />
+      <pointLight intensity={5} position={[0, , 5]} />
 
       <Duck
         ref={duck}
-        position={[0, -1.1, 0]}
-        rotation={[Math.PI / 6, -Math.PI / 6, 0]}
-        scale={[3.5, 3.5, 3.5]}
+        position={[0, -1.45, 1]}
+        // rotation={[Math.PI / 7 - 0.3, -Math.PI / 5 - 0.3, 0]}
+        scale={[4, 4, 4]}
         onClick={handleClick}
         onPointerOver={handleHover}
         onPointerOut={handleUnhover}
@@ -82,6 +92,6 @@ export default function App() {
       />
 
       <Float rotationIntensity={1} floatIntensity={0.25} />
-    </>
+    </Canvas>
   );
 }

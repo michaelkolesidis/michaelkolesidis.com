@@ -1,0 +1,80 @@
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes barberpole {
+  0% {
+    background-position: -50% -50%;
+  }
+  100% {
+    background-position: 50% 50%;
+  }
+}
+
+@keyframes flash {
+  0% {
+    display: block;
+    opacity: 1;
+  }
+
+  5% {
+    display: none;
+    opacity: 0;
+  }
+
+  50% {
+    display: block;
+    opacity: 0.5;
+  }
+
+  100% {
+    display: block;
+    opacity: 1;
+  }
+}
+
+@keyframes levitate {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes shake {
+  0% {
+    transform: rotate(-90deg) translateX(0);
+  }
+  25% {
+    transform: rotate(-90deg) translateX(-10px);
+  }
+  50% {
+    transform: rotate(-90deg) translateX(10px);
+  }
+  75% {
+    transform: rotate(-90deg) translateX(-10px);
+  }
+  100% {
+    transform: rotate(-90deg) translateX(0);
+  }
+}
+
+@keyframes wavy {
+  0%,
+  40%,
+  100% {
+    transform: translateY(0);
+  }
+  20% {
+    transform: translateY(-20px);
+  }
+}

@@ -1,0 +1,315 @@
+@import '../../style/style.scss';
+@import '../../style/animations.scss';
+@import '../../style/variables.scss';
+
+#header {
+  background-color: $white;
+}
+
+#name {
+  position: fixed;
+  top: 28px;
+  left: 18px;
+  z-index: 4;
+  color: $black;
+  white-space: nowrap;
+  font-size: $title-size;
+  transition: font-size 0.3s ease, top 0.3s ease, left 0.3s ease;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+#falling-letter {
+  color: $black;
+  font-size: $title-size;
+  cursor: $pointer;
+}
+
+#name.scrolled {
+  font-size: 25px;
+  top: 10px;
+  left: 12px;
+  mix-blend-mode: difference;
+  color: $white;
+}
+
+#falling-letter {
+  display: inline-block;
+  transform-origin: center;
+}
+
+#falling-letter.clicked {
+  animation: breakAndFall 2s ease-in forwards;
+}
+
+@keyframes breakAndFall {
+  0% {
+    transform: translateY(0) translateX(0) rotate(0deg);
+  }
+  10% {
+    transform: translateY(0) translateX(-1px) rotate(10deg);
+  }
+  20% {
+    transform: translateY(0) translateX(1px) rotate(-10deg);
+  }
+  30% {
+    transform: translateY(0) translateX(-1px) rotate(5deg);
+  }
+  100% {
+    transform: translateY(100vh) translateX(0) rotate(360deg);
+  }
+}
+
+#top-gap {
+  height: 115px;
+  border-bottom: $border;
+}
+
+/********** Elements **********/
+#box {
+  position: absolute;
+  top: 160px;
+  right: 20px;
+  width: 200px;
+  height: 200px;
+  padding: 15px;
+  overflow: hidden;
+  cursor: $grab;
+  box-shadow: $shadow;
+  border: $border;
+
+  button {
+    position: absolute;
+    top: 18px;
+    right: 18px;
+    padding-top: -0.3rem;
+    border: 0;
+    background-color: $black;
+    color: $white;
+    height: 34px;
+    width: 37px;
+    font-size: 1.4rem;
+    line-height: 34px;
+    text-align: center;
+    transition: transform 0.15s linear;
+    z-index: 2;
+    cursor: $pointer;
+  }
+
+  button:hover {
+    font-weight: 600;
+    transform: scale(1.1);
+  }
+}
+
+#box::before {
+  content: '';
+  position: absolute;
+  width: 150%;
+  height: 150%;
+  background: repeating-linear-gradient(
+    $white 0%,
+    $white 7.5px,
+    $black 7.5px,
+    $black 15px,
+    $white 15px,
+    $white 22.5px,
+    $black 22.5px,
+    $black 30px
+  );
+  transform: translateX(-20%) translateY(-20%) rotate(-45deg);
+  animation: animate 20s linear infinite;
+}
+
+#box .content {
+  position: relative;
+  background-color: $black;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 10px;
+  text-align: center;
+  z-index: 2;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#box .content p {
+  color: $white;
+}
+
+@keyframes animate {
+  from {
+    background-position: 0;
+  }
+
+  to {
+    background-position: 0 450px;
+  }
+}
+
+#new,
+#welcome,
+#japanese,
+#rays,
+#art,
+.project-request {
+  position: absolute;
+  cursor: $grab;
+}
+
+#new {
+  left: 30px;
+  transform: rotateZ(-10deg);
+  padding: 0;
+  border-radius: 100px;
+
+  img {
+    border-radius: 100px;
+    margin-bottom: -0.5em;
+    animation: rotate 1s linear infinite;
+    animation-play-state: paused;
+    animation-delay: calc(var(--scroll) * -1s);
+    width: 190px;
+  }
+}
+
+#welcome {
+  top: 210px;
+  left: 25px;
+  max-width: fit-content;
+  animation: levitate 3s ease-in-out infinite;
+
+  img {
+    width: 210px;
+  }
+}
+
+#rays {
+  top: 165px;
+  left: 50px;
+  border-radius: 200px;
+  width: 150px;
+  max-height: 150px;
+  background-color: $white;
+  animation: rotate 180s infinite;
+
+  img {
+    border-radius: 200px;
+    width: 150px;
+  }
+}
+
+#japanese {
+  right: 20px;
+  top: 385px;
+  font-weight: 600;
+  text-shadow: 0.5px 0.5px 0 $black;
+  font-size: 2.3em;
+  color: $black;
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  background-color: $white;
+  padding: 0.25em 0.05em 0.25em 0em;
+  border: $border;
+  text-align: center;
+  box-shadow: $shadow;
+  white-space: nowrap;
+  max-width: fit-content;
+}
+
+.project-request {
+  color: $black;
+  background-color: $white;
+  box-shadow: $shadow;
+  border: $border;
+  padding: 0.5em 0.75em;
+  text-align: center;
+  font-size: 1.1em;
+  right: 160px;
+  top: 58px;
+  white-space: nowrap;
+  max-height: fit-content;
+  cursor: $grab;
+  max-width: fit-content;
+  min-width: fit-content;
+  animation: appear 1s forwards;
+  animation-delay: 2s;
+  opacity: 0;
+
+  a {
+    margin: 2.5px 5px;
+    max-width: fit-content;
+    max-height: fit-content;
+    display: inline-block;
+    cursor: $pointer;
+  }
+
+  a:hover {
+    animation: $flash;
+    animation-timing-function: steps(4, jump-both);
+  }
+}
+
+#art {
+  left: 30px;
+  top: 339px;
+
+  img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 200px;
+    height: 200px;
+    border: $border;
+    box-shadow: $shadow;
+  }
+}
+
+@keyframes rotate {
+  to {
+    transform: rotate(3580deg);
+  }
+}
+
+#smiley {
+  position: absolute;
+  top: 35px;
+  right: 110px;
+  z-index: 4;
+  animation: moveSmiley 3s ease-in-out forwards,
+    levitate 2s ease-in-out infinite;
+
+  img {
+    position: absolute;
+    width: 85px;
+    cursor: $pointer;
+    transition: transform 0.25s ease-in-out;
+  }
+}
+
+@keyframes moveSmiley {
+  0% {
+    top: -150px;
+  }
+  100% {
+    top: 35px;
+  }
+}
+
+#smiley.move-left img {
+  animation: moveAndRotate 2s ease-in-out;
+}
+
+@keyframes moveAndRotate {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  50% {
+    transform: translate(-600px, 0) rotate(720deg);
+  }
+  100% {
+    transform: translate(0, 0) rotate(1440deg);
+  }
+}
