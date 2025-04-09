@@ -23,6 +23,7 @@
     color: $black;
     max-height: fit-content;
     padding: 10px;
+    pointer-events: none;
   }
 
   #right {
@@ -230,6 +231,7 @@
 #duck-placeholder {
   transition: background-color 0.25s ease;
   border-bottom: $border;
+  z-index: 9999;
 }
 
 #loading {
