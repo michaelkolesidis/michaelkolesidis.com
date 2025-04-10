@@ -577,14 +577,10 @@ export default function header() {
 
       playButton.addEventListener('click', () => {
         if (audioPlayer.paused) {
-          // playButton.innerHTML = `⏸`;
-          playButton.src = '../../assets/buttons/pause.svg';
-
+          playButton.src = '../../assets/buttons/pause.svg'; // ⏸
           audioPlayer.play();
         } else {
-          // playButton.innerHTML = `⏵`;
-          playButton.src = '../../assets/buttons/play.svg';
-
+          playButton.src = '../../assets/buttons/play.svg'; // ⏵
           audioPlayer.pause();
         }
       });
@@ -757,6 +753,12 @@ export default function header() {
   if (duckPlaceholder) {
     duckPlaceholder.style.height = `${window.innerHeight - 140}px`;
 
+    let duckClicked = false;
+
+    window.addEventListener('duckClicked', () => {
+      duckClicked = true;
+    });
+
     window.addEventListener('resize', () => {
       duckPlaceholder.style.height = `${window.innerHeight - 140}px`;
       sunscreen.style.top = `${window.innerHeight + 50}px`;
@@ -773,6 +775,11 @@ export default function header() {
     })`;
 
     duckPlaceholder.addEventListener('click', () => {
+      if (duckClicked) {
+        duckClicked = false;
+        return; // Skip this click because it came from the duck
+      }
+
       duckPlaceholder.style.background = `rgb(${
         generateNewColor(colors, duckPlaceholder, 'background').rgb
       })`;

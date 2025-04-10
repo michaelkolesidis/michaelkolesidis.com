@@ -46,9 +46,9 @@ export function startGame() {
   const renderGrid = () => {
     boardElement.style.gridTemplateColumns = `repeat(${GRID_SIZE.width}, 1fr)`;
     boardElement.innerHTML = grid
-      .flatMap((row, y) =>
+      .flatMap((row) =>
         row.map(
-          (color: any, x: any) =>
+          (color: any) =>
             `<div class="cell" style="background-color:${color}"></div>`
         )
       )

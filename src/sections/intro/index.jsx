@@ -16,12 +16,12 @@
 
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import App from './App.jsx';
+import Scene from './Scene.jsx';
 
 const root = ReactDOM.createRoot(document.querySelector('#duck-placeholder'));
 
 root.render(
   <React.StrictMode>
-    <App />
+    <Scene />
   </React.StrictMode>
 );

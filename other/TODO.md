@@ -1,25 +1,11 @@
 # To-Do
 
-- Design cursors
-- Duck three.js outline effect
-- Add projects
-
-## Done
-
-- Top button
-- Change contact texts with icons, also in the links window
-- Contact from + add in window and in section and in top
-- Warning FREE SOFTWARE COLORS
-- TV? DUCKS?
-- Find new gifs art, ducks etc.
-- Radio buttons
-- Thnk about Attention and red color
-- Think about repo link
-
-## Will Not Do
-
-- Add objects
-- Download the font for more widths
+- Projects grid for large screens
+- Check alternative internet radios
+- Website text
+- Readme
+- Design additional cursors
+- Deploy
 
 ## To-Do after React
 

@@ -261,7 +261,9 @@ a {
 
   svg {
     margin: 50px 0 25px 0;
-    width: 325px;
+    width: 375px;
+    border: $border;
+    padding: 20px 25px;
   }
 
   .highlight {
