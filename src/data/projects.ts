@@ -83,30 +83,6 @@ export const projectList: Project[] = [
   },
 
   {
-    name: 'Timberland 3D',
-    image: '../../images/timberland-3d-customizer.png',
-    technologies: 'Three.js, React, TypeScript, React Three Fiber, Zustand',
-    summary: 'Customize and preview Timberland boots in 3D',
-    description: '',
-    repository: 'https://github.com/michaelkolesidis/timberland-3d-customizer',
-    deployment: 'https://timberland-3d-customizer.vercel.app/',
-    video: '',
-    visible: true,
-  },
-
-  {
-    name: 'Scratch Bonanza',
-    image: '../../images/scratch-bonanza.gif',
-    technologies: 'React, TypeScript, Zustand',
-    summary: 'An online scratchcard game. Do you feel lucky?',
-    description: '',
-    repository: 'https://github.com/michaelkolesidis/scratch-bonanza',
-    deployment: 'https://scratch-bonanza.vercel.app/',
-    video: '',
-    visible: true,
-  },
-
-  {
     name: 'Emoji Minesweeper',
     image: '../../images/emoji-minesweeper.png?v=3',
     technologies: 'p5.js, JavaScript, CSS',
@@ -128,6 +104,30 @@ export const projectList: Project[] = [
     description: '',
     repository: 'https://github.com/michaelkolesidis/cherry-charm',
     deployment: 'https://cherry-charm.vercel.app/',
+    video: '',
+    visible: true,
+  },
+
+  {
+    name: 'Scratch Bonanza',
+    image: '../../images/scratch-bonanza.gif',
+    technologies: 'React, TypeScript, Zustand',
+    summary: 'An online scratchcard game. Do you feel lucky?',
+    description: '',
+    repository: 'https://github.com/michaelkolesidis/scratch-bonanza',
+    deployment: 'https://scratch-bonanza.vercel.app/',
+    video: '',
+    visible: true,
+  },
+
+  {
+    name: 'Timberland 3D',
+    image: '../../images/timberland-3d-customizer.png',
+    technologies: 'Three.js, React, TypeScript, React Three Fiber, Zustand',
+    summary: 'Customize and preview Timberland boots in 3D',
+    description: '',
+    repository: 'https://github.com/michaelkolesidis/timberland-3d-customizer',
+    deployment: 'https://timberland-3d-customizer.vercel.app/',
     video: '',
     visible: true,
   },
@@ -158,6 +158,18 @@ export const projectList: Project[] = [
   },
 
   {
+    name: 'Cube Rabbit',
+    image: '../../images/cube-rabbit.png',
+    technologies: 'Three.js, React, TypeScript, React Three Fiber, Zustand',
+    summary: 'The story of a cube-shaped rabbit.',
+    description: '',
+    repository: 'https://github.com/michaelkolesidis/cuberabbit',
+    deployment: 'https://cuberabbit.com/',
+    video: '',
+    visible: true,
+  },
+
+  {
     name: 'synthétique',
     image: '../../images/synthetique.png',
     technologies: 'Three.js, JavaScript, CSS',
@@ -177,18 +189,6 @@ export const projectList: Project[] = [
     description: '',
     repository: 'https://github.com/michaelkolesidis/rock-paper-scissors-3d',
     deployment: 'https://rock-paper-scissors-3d.vercel.app/',
-    video: '',
-    visible: true,
-  },
-
-  {
-    name: 'Cube Rabbit',
-    image: '../../images/cube-rabbit.png',
-    technologies: 'Three.js, React, TypeScript, React Three Fiber, Zustand',
-    summary: 'The story of a cube-shaped rabbit.',
-    description: '',
-    repository: 'https://github.com/michaelkolesidis/cuberabbit',
-    deployment: 'https://cuberabbit.com/',
     video: '',
     visible: true,
   },

@@ -8,6 +8,7 @@ const __dirname = dirname(__filename);
 
 export default defineConfig({
   build: {
+    sourcemap: true,
     rollupOptions: {
       input: {
         main: resolve(__dirname, 'index.html'),

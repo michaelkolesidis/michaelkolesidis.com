@@ -59,116 +59,23 @@
   }
 }
 
-.window {
-  pointer-events: none;
-  position: absolute;
-  opacity: 0;
-  color: $black;
-  border: $border;
-  border-top: 35px solid $black;
-  background-color: $white;
-  padding: 1em;
-  cursor: $grab;
-  box-shadow: $shadow;
-  transition: opacity 0.35s;
 
-  button {
-    position: absolute;
-    top: -35px;
-    right: -2px;
-    padding-top: -0.3rem;
-    border: 0;
-    background-color: $transparent;
-    color: $white;
-    cursor: $pointer;
-    height: 34px;
-    width: 37px;
-    font-size: 1.4rem;
-    line-height: 34px;
-    text-align: center;
-    transition: transform 0.15s linear;
-    cursor: $pointer;
-  }
-
-  button:hover {
-    font-weight: 600;
-    transform: scale(1.1);
-  }
-
-  .window-title {
-    position: absolute;
-    color: $white;
-    top: -27px;
-    left: 9px;
-    pointer-events: none;
-  }
-}
-
-.list-window {
-  padding-right: 8px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  column-gap: 1em;
-  transition: background-color 0.25s ease;
-
-  .app-button {
-    font-size: 1.1em;
-  }
-
-  .left {
-    text-align: right;
-  }
-
-  div,
-  a {
-    transition: transform 0.15s linear;
-  }
-
-  div:hover,
-  a:hover {
-    cursor: $pointer;
-    animation: $flash;
-    animation-timing-function: steps(4, jump-both);
-  }
-}
-
-#apps-window {
-  right: 250px;
-  top: 160px;
-  width: 10em;
-  height: 120px;
-}
-
-#links-window {
-  right: 250px;
-  top: 310px;
-  width: 13em;
-  padding-right: 40px;
-  padding-left: 2.5em;
-  height: 150px;
-  grid-template-columns: 1fr 1fr 1fr;
-  column-gap: 1em;
-  align-items: center;
-}
-
-.social-icon {
-  width: 30px;
-}
 
 #tv-window {
   left: 520px;
   top: 540px;
   width: 480px;
-  height: 350px;
+  height: 360px;
   padding: 0;
+  padding-top: 20px;
 }
 
 #duck-overlay {
   position: absolute;
-  top: 0;
+  top: 35px;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 90.3%;
   display: flex;
   align-items: center;
   justify-content: center;

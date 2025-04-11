@@ -1153,10 +1153,10 @@ doctrine@^2.1.0:
   dependencies:
     esutils "^2.0.2"
 
-dom-window-manager@^1.0.3:
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/dom-window-manager/-/dom-window-manager-1.0.3.tgz#d0b46c89fbe1ce0570fb2467629b386e8c14c79e"
-  integrity sha512-g+ExX6ZFL4QA0xhTUlV8NzkHcj0H/yEwoLCUxIb4aFoyO3eKIq6yxMS5c+qpwHh+Q/MK8Kzh3KJdpTTlBOnLjQ==
+dom-window-manager@^1.1.1:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/dom-window-manager/-/dom-window-manager-1.1.1.tgz#386ffdc63be73f4b5f344a2f02be2553d9370f76"
+  integrity sha512-oz60r6yB+FZR/e8m3+CQOd1jz1BhQFBrVRz6fP5jCKhWuxe9qr63vmE/EOa7Ks9wiCdGEon4OyG1VCxhu15W9A==
 
 draco3d@^1.4.1:
   version "1.5.7"

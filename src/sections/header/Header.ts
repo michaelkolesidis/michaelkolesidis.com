@@ -105,7 +105,7 @@ export default function header() {
 
   header.appendChild(appsWindow);
 
-  dragElement(appsWindow);
+  dragElement(appsWindow, appsWindowTitle);
   appsWindow.addEventListener('mousedown', () => {
     appsWindow.style.zIndex = windowManager.moveOnTop();
   });
@@ -259,7 +259,7 @@ export default function header() {
 
   header.appendChild(pixelWindow);
 
-  dragElement(pixelWindow);
+  dragElement(pixelWindow, pixelWindowTitle);
   pixelWindow.addEventListener('mousedown', () => {
     pixelWindow.style.zIndex = windowManager.moveOnTop();
   });
@@ -333,7 +333,7 @@ export default function header() {
 
   header.appendChild(linksWindow);
 
-  dragElement(linksWindow);
+  dragElement(linksWindow, linksWindowTitle);
   linksWindow.addEventListener('mousedown', () => {
     linksWindow.style.zIndex = windowManager.moveOnTop();
   });
@@ -361,7 +361,6 @@ export default function header() {
   const tvWindowTitle = document.createElement('div');
   tvWindowTitle.classList.add('window-title');
   tvWindowTitle.innerHTML = `Duck TV`;
-  tvWindow.appendChild(tvWindowTitle);
 
   // Canvas for noise
   const canvas = document.createElement('canvas');
@@ -524,11 +523,13 @@ export default function header() {
       tvWindowAppended = false;
     }, 500);
   });
+  tvWindow.appendChild(tvWindowTitle);
   tvWindow.appendChild(closeButtonTvWindow);
 
   // Add to DOM
+
   header.appendChild(tvWindow);
-  dragElement(tvWindow);
+  dragElement(tvWindow, tvWindowTitle);
   tvWindow.addEventListener('mousedown', () => {
     tvWindow.style.zIndex = windowManager.moveOnTop();
   });
@@ -602,7 +603,7 @@ export default function header() {
   });
   radioWindow.appendChild(closeButtonRadioWindow);
   header.appendChild(radioWindow);
-  dragElement(radioWindow);
+  dragElement(radioWindow, radioWindowTitle);
   radioWindow.addEventListener('mousedown', () => {
     radioWindow.style.zIndex = windowManager.moveOnTop();
   });
@@ -788,6 +789,7 @@ export default function header() {
   const sunscreen = document.createElement('img');
   sunscreen.setAttribute('src', 'assets/sunscreen.png');
   sunscreen.setAttribute('id', 'sunscreen');
+  sunscreen.setAttribute('alt', 'A bottle of Hawaiian Tropic sunscreen');
   sunscreen.style.top = `${window.innerHeight + 50}px`;
 
   dragElement(sunscreen);
