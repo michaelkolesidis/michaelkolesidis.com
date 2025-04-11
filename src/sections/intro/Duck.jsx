@@ -18,15 +18,17 @@ import { useRef, forwardRef, useEffect, useMemo, useState } from 'react';
 import { useFrame } from '@react-three/fiber';
 import { useGLTF, Outlines } from '@react-three/drei';
 import * as THREE from 'three';
+import variables from '../../style/variables.module.scss';
 
 export const Duck = forwardRef(({ onToggleLight, ...props }, ref) => {
   const { nodes, materials } = useGLTF('/assets/3d-models/duck.glb');
   const duck = useRef();
   const [useToon, setUseToon] = useState(false);
   const [hovered, setHovered] = useState(false);
+  const { cursor, pointer } = variables;
 
   useEffect(() => {
-    document.body.style.cursor = hovered ? 'pointer' : 'default';
+    document.body.style.cursor = hovered ? pointer : cursor;
   }, [hovered]);
 
   // Smooth camera-follow rotation

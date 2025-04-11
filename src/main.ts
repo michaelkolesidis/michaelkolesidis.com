@@ -47,3 +47,8 @@ topButton();
 disableRightClick(); // Disable right click
 getScrollDistanceCss(); // Get scroll distance as a CSS variable
 animateTitle(); // Animate page title
+
+// Debugging
+// window.addEventListener('resize', () => {
+//   console.log(window.innerWidth);
+// });

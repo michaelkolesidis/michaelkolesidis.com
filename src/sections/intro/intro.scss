@@ -1,5 +1,5 @@
 @import '../../style/style.scss';
-@import '../../style/variables.scss';
+@import '../../style/variables.module.scss';
 @import '../../style/animations.scss';
 
 #intro {
@@ -45,7 +45,7 @@
     white-space: nowrap;
     line-height: 1em;
     pointer-events: auto;
-    cursor: $help;
+    cursor: $pointer;
     transform: rotate(20deg);
     text-shadow: none;
     font-weight: 400;

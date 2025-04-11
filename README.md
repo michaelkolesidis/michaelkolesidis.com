@@ -1,42 +1,42 @@
 <div align="center">
   <img src="./public/assets/attention-free-software-with-text.png">
-  <img src="./screenshots/desktop_1c.png" width="700px">
+  <img src="./screenshots/screenshot-main.png" width="700px">
   <h4>My award-winning playground / portfolio website</h4>
   <a href='https://ko-fi.com/michaelkolesidis' target='_blank'><img src='https://cdn.ko-fi.com/cdn/kofi2.png' style='border:0px;height:45px;' alt='Buy Me a Coffee at ko-fi.com' /></a>
 </div>
 
-## Technologies Used
+## 🛠️ Technologies Used
 
 <a href="https://www.typescriptlang.org/"><img src="https://github.com/michaelkolesidis/tech-icons/blob/main/icons/typescript/typescript-original.svg" height="50px" /></a>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<a href="https://p5js.org/"><img src="https://github.com/michaelkolesidis/tech-icons/blob/main/icons/threejs/threejs.svg" height="50px"/></a>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<a href="https://en.wikipedia.org/wiki/JavaScript"><img src="https://github.com/michaelkolesidis/tech-icons/blob/main/icons/javascript/javascript-original.svg" height="50px" /></a>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <a href="https://sass-lang.com/"><img src="https://github.com/michaelkolesidis/tech-icons/blob/main/icons/sass/sass-original.svg" height="50px" /></a>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <a href="https://vitejs.dev/"><img src="https://vitejs.dev/logo.svg" height="50px" /></a>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
-## Concept
+The website was designed handcrafted from scratch using TypeScript and Sass, with no libraries, frameworks, or templates.
 
-This is my portfolio website / playground.
+### Other Technologies
 
-It is yet another love letter to the Internet of the old, the era of naïve (web) art, the era of the romantic amateur, the era of GeoCities. When did the web become so serious? I first discovered the magical world of the world wide web in the 90's and I hope I have captured a glimpse of that time. My design is also influenced by print publication layouts and the bold, graphic style of 90s MTV.
+I used a [WebGL](https://www.khronos.org/webgl/) shader to make TV signal noise effect, and for the 3D rubber duck I used [three.js](https://threejs.org/), a library and API to use 3D computer graphics in the browser using WebGL. I used it through [React Three Fiber](https://r3f.docs.pmnd.rs/getting-started/introduction), a React renderer for three.js.
 
-I call this style **frivobrutalism**, a fusion of playful, whimsical design with the raw, unapologetic aesthetic of brutalism.
+## 💡 Concept
 
-Visitors can move things around and customize the colors of all colorful elements: clicking on an element generates a new color, from the predefined color palette. The rubber duck responds to mouse movement.
+When did the web become so serious?  
 
-Most of the elements are part of microinteractions and hovering over them or interacting with them in other ways triggers some animation (and in one case it also triggers sound).
+My website is a love letter to the early Internet, a tribute to the era of naïve web art, romantic digital amateurs, and the beautiful chaos of GeoCities. I first discovered the magical world of the World Wide Web in the ’90s, and this project is my attempt to bottle some of that pixelated magic. Its visual language borrows from street art, print-era layout experimentation, and the punchy, graphic attitude of ’90s MTV.
 
-The website is responsive for desktop and mobile.
+I call the resulting aesthetic frivobrutalism: a joyful clash of whimsy and rawness, where playful visuals meet the structural honesty of brutalist design.
+
+Visitors can interact freely, and nearly every element on the site feels intentional and alive (I hope 😛). Some elements are draggable, stacking dynamically when clicked. Colorful elements respond to interaction. Clicking them cycles through a curated palette, adding a touch of spontaneity. The rubber duck follows the mouse and switches to a cel-shaded, outlined style when clicked.
+
+These aren’t just gimmicks. They’re carefully crafted microinteractions, where each hover, click, or drag triggers animations, sounds, or changes in state. The site becomes a playground, blurring the line between interface and artwork, inviting users to play, explore, and get lost. Just like we used to on the old web.
 
 ### Minimal Version
 
-Since the website is quite colorful and full of animations, it might be difficult for people with disabilities to navigate through it. That's why I decided to create a minimal version as well, to assist people with color blindness and/or other disabilities with their experience. The minimal version can be accessed from the website's footer, which points to [https://michaelkolesidis.com/minimal/](https://michaelkolesidis.com/minimal/).
+Due to the website’s colorful design and animations, it may be challenging for users with disabilities to navigate. To improve accessibility, I’ve also created a minimal version, available via the footer link, which points to [https://michaelkolesidis.com/minimal/](https://michaelkolesidis.com/minimal/).
 
-## Awards
+## 🏆 Awards
 
 ### ★ DESIGN AWARD
 
@@ -64,19 +64,11 @@ Awarded by Best CSS, a web platform that discovers, recognizes and promotes the 
 
 ## Dependencies
 
-This project uses the following npm packages:
+In addition to the tools and technologies mentioned above, this project integrates a custom npm module I created, which handles window layering (bringing windows to the front on click) and drag-and-drop functionality for window movement.
 
-- [Vite](https://www.npmjs.com/package/vite)
-- [TypeScript](https://www.npmjs.com/package/typescript)
-- [Sass](https://www.npmjs.com/package/sass)
-- [Howler.js](https://www.npmjs.com/package/howler)
 - [DOM Window Manager](https://www.npmjs.com/package/dom-window-manager) (created by me)
 
-The following library is imported via CDN:
-
-- [p5.js](https://cdnjs.com/libraries/p5.js)
-
-## Software used
+## 💻 Software used
 
 ### Development
 
@@ -102,7 +94,7 @@ The following library is imported via CDN:
 - Microsoft Edge
 - Safari
 
-## Design
+## 🎨 Design
 
 ### Color Palette
 
@@ -118,84 +110,21 @@ The following library is imported via CDN:
 | #ffffff | 255, 255, 255 |
 | #0a0a0a |  10, 10, 10   |
 
-## Videos
+## 📸 Screenshots
 
-**Note:** The following screenshots are outdated and reflect older versions of the website:
+<img src="./screenshots/duck-cel-shading-outline.png" width="300px">
 
-- [Desktop](https://www.youtube.com/watch?v=wfPkxVaBJ-o)
+The duck with cel shading and an outline.
 
-- [Mobile](https://www.youtube.com/watch?v=dSMdDVQPQdw)
-
-## Screenshots
-
-### Desktop
-
-**Note:** The following screenshots are outdated and reflect older versions of the website:
-
-<img src="./screenshots/desktop_9b.png" width="800px">
-
-<img src="./screenshots/desktop_10b.png" width="800px">
-
-<img src="./screenshots/desktop_11b.png" width="800px">
-
-<img src="./screenshots/desktop_2b.png" width="800px">
-
-<img src="./screenshots/desktop_3b.png" width="800px">
-
-<img src="./screenshots/desktop_4.png" width="800px">
-
-<img src="./screenshots/desktop_5.png" width="800px">
-
-<img src="./screenshots/desktop_6.png" width="800px">
-
-<img src="./screenshots/desktop_7.png" width="800px">
-
-<img src="./screenshots/desktop_8.png" width="800px">
-
-<img src="./screenshots/desktop_12.png" width="800px">
-
-<img src="./screenshots/desktop_13.png" width="800px">
-
-<img src="./screenshots/desktop_14.png" width="800px">
-
-<img src="./screenshots/desktop_15.png" width="800px">
-
-<img src="./screenshots/desktop_16.png" width="800px">
-
-### Mobile
-
-<img src="./screenshots/mobile_1.png" width="400px">
-
-<img src="./screenshots/mobile_2.png" width="400px">
-
-<img src="./screenshots/mobile_3.png" width="400px">
-
-<img src="./screenshots/mobile_4.png" width="400px">
-
-<img src="./screenshots/mobile_5.png" width="400px">
-
-<img src="./screenshots/mobile_6.png" width="400px">
-
-### Minimal Version
-
-<img src="./screenshots/minimal.png" width="800px">
-
-For the minimal version of my website I tried to replicate the styling of my printed CV.
-
-### Full Page
-
-**Note:** Note: The following screenshots are outdated and reflect older versions of the website:
-
-- [Desktop](./screenshots/desktop_fullpage.png)
-- [Mobile](./screenshots/mobile_fullpage.png)
-
-## Acknowledgements
+## 🙏 Acknowledgements
 
 A huge thanks to everyone who supported me, from friends and colleagues to anonymous internet users, providing valuable feedback throughout the development process.
 
-## Contact
+## 📜 Contact
 
-If you use my code in your projects, I’d love to hear about it! Feel free to email me — I'm always excited (and curious) to see how it's being used!
+Feel free to contact me for business inquiries, feedback, bugs, comments etc.
+
+If you use my code or my graphics in your projects, I’d love to hear about it! Feel free to email me — I'm always excited (and curious) to see how it's being used! Remember to use my code according to the terms of the respective license!
 
 ## 💖 Support the Project
 
@@ -205,7 +134,11 @@ Thank you for your interest in my project! If you'd like to go further and suppo
 
 ## License
 
-<a href="https://www.gnu.org/licenses/agpl-3.0.html"><img src="https://upload.wikimedia.org/wikipedia/commons/0/06/AGPLv3_Logo.svg" height="80px" /></a>
+<a href="https://www.gnu.org/licenses/agpl-3.0.html"><img src="./public/assets/icons/agplv3.svg" height="80px" /></a>
 
 Copyright (c) Michael Kolesidis  
-Licensed under the [GNU Affero General Public License v3.0](https://www.gnu.org/licenses/agpl-3.0.html).
+The code is licensed under the [GNU Affero General Public License v3.0](https://www.gnu.org/licenses/agpl-3.0.html).  
+
+<a href="https://creativecommons.org/licenses/by-sa/4.0/"><img src="./public/assets/icons/creative-commons.svg" height="80px" /></a>
+
+The graphics, the images, and the cursors, are licensed under the Creative [Commons Attribution-ShareAlike 4.0 International](https://creativecommons.org/licenses/by-sa/4.0/).

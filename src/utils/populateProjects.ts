@@ -59,15 +59,7 @@ export const populateProjects = (
     image.setAttribute('src', project.image);
     image.setAttribute('alt', project.name);
     image.classList.add('project-image');
-
-    if (window.innerWidth > 700) {
-      const imageContainer = document.createElement('div');
-      imageContainer.classList.add('project-image-container');
-      imageContainer.appendChild(image);
-      proj.appendChild(imageContainer);
-    } else {
-      proj.appendChild(image);
-    }
+    proj.appendChild(image);
 
     image.addEventListener('click', () => {
       open(`${project.deployment}`);
@@ -78,7 +70,7 @@ export const populateProjects = (
     title.classList.add('project-title');
     title.href = `${project.deployment}`;
     title.target = '_blank';
-    title.innerHTML = `<br>${project.name.toLocaleUpperCase()}`;
+    title.innerHTML = `${project.name.toLocaleUpperCase()}`;
     proj.appendChild(title);
 
     // Summary

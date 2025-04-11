@@ -40,11 +40,15 @@ $bold: 500;
 $heavy: 600;
 
 /* cursors */
-$cursor: url('../../public/assets/cursors/cursor.png'), auto;
-$pointer: pointer;
-$grab: grab;
-$help: help;
-$wait: wait;
+$cursor: url('../../public/assets/cursors/cursor.png') 0 0, auto;
+$pointer: url('../../public/assets/cursors/pointer.png') 0 0, auto;
+$grab: url('../../public/assets/cursors/grab.png') 22 32, auto;
+
+:export {
+  cursor: $cursor;
+  pointer: $pointer;
+  grab: $grab;
+}
 
 /* borders */
 $border: $line solid $black;

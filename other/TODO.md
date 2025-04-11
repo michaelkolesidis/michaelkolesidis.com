@@ -1,11 +1,13 @@
 # To-Do
 
-- Projects grid for large screens
-- Check alternative internet radios
-- Website text
-- Readme
-- Design additional cursors
+- Do clouds
+- Screenshots
+- Responsive for mobile (duck scale and elements)
 - Deploy
+
+## To-Do later (maybe)
+
+- Check alternative internet radios
 
 ## To-Do after React
 

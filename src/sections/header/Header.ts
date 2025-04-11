@@ -397,10 +397,8 @@ export default function header() {
   // Cycle logic
   let currentIndex = 0;
   function showNextDuck() {
-    console.log('SHOW NEXT DUCK');
     duckElements.forEach((img) => (img.style.opacity = '0'));
 
-    // Wait 2s for tv before showing image
     setTimeout(() => {
       const currentImg = duckElements[currentIndex];
       if (!currentImg) return;
@@ -412,7 +410,7 @@ export default function header() {
         currentIndex = (currentIndex + 1) % duckImages.length;
         showNextDuck();
       }, duration);
-    }, 1500);
+    }, 1500); // delay before showing the next image
   }
 
   // WebGL Tv Shader

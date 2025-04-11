@@ -70,8 +70,6 @@ export const projectList: Project[] = [
     visible: true,
   },
 
-
-
   {
     name: 'Fintech World',
     image: '../../images/fintech_world.png',

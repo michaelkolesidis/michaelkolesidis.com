@@ -1,0 +1,26 @@
+<svg width="88.975" height="138.86" version="1.1" viewBox="0 0 23.541 36.74" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <clipPath id="clipPath47">
+      <path transform="translate(-674.07 -339.84)" d="m0 500h750v-500h-750z"/>
+    </clipPath>
+    <clipPath id="clipPath49">
+      <path transform="translate(-639.41 -315.88)" d="m0 500h750v-500h-750z"/>
+    </clipPath>
+    <clipPath id="clipPath51">
+      <path transform="translate(-677.12 -348.69)" d="m0 500h750v-500h-750z"/>
+    </clipPath>
+    <clipPath id="clipPath53">
+      <path transform="translate(-663.06 -359.3)" d="m0 500h750v-500h-750z"/>
+    </clipPath>
+    <clipPath id="clipPath55">
+      <path transform="translate(-626.72 -355.95)" d="m0 500h750v-500h-750z"/>
+    </clipPath>
+  </defs>
+  <g transform="translate(-133.35 -49.742)">
+    <path transform="matrix(.35278 0 0 -.35278 155.36 72.347)" d="m0 0s3.407-17.691-12.097-22.862c0 0 9.681-9.489-4.753-14.504-14.433-5.015-32.669 1.955-36.205 9.625s4.901 8.353 4.901 8.353c-12.252 6.458-22.671 31.67 0.807 35.492 2.433 5.057-2.016 33.48 3.016 41.909 3.73 6.248 14.794 8.951 17.908-5.335 1.536-7.045 0.064-21.587-1.389-27.442 0 0 13.332 9.017 17.214-6.957 0 0 4.431 3.474 10.266-0.073 3.556-2.162 5.951-6.167 0.332-18.206" clip-path="url(#clipPath47)" style="fill:#fff;stroke-miterlimit:10;stroke-width:2;stroke:#0a0a0a"/>
+    <path transform="matrix(.35278 0 0 -.35278 143.13 80.8)" d="m0 0s12.093-3.236 22.562 1.098" clip-path="url(#clipPath49)" style="fill:none;stroke-linecap:round;stroke-miterlimit:10;stroke-width:2;stroke:#0a0a0a"/>
+    <path transform="matrix(.35278 0 0 -.35278 156.43 69.226)" d="m0 0c-3.202-14.121-11.414-26.268-20.907-20.409-10.983 6.779 4.143 20.844 4.143 20.844" clip-path="url(#clipPath51)" style="fill:#fff;stroke-linecap:round;stroke-miterlimit:10;stroke-width:2;stroke:#0a0a0a"/>
+    <path transform="matrix(.35278 0 0 -.35278 151.48 65.484)" d="m0 0c2.908-11.707-5.735-24.806-18.287-21.797-12.552 3.01 1.983 21.713 1.983 21.713" clip-path="url(#clipPath53)" style="fill:#fff;stroke-linecap:round;stroke-miterlimit:10;stroke-width:2;stroke:#0a0a0a"/>
+    <path transform="matrix(.35278 0 0 -.35278 138.65 66.666)" d="m0 0c14.424 1.319 24.197-10.975 22.68-19.029-1.517-8.053-11.125-10.716-22.99 4.823" clip-path="url(#clipPath55)" style="fill:#fff;stroke-linecap:round;stroke-miterlimit:10;stroke-width:2;stroke:#0a0a0a"/>
+  </g>
+</svg>

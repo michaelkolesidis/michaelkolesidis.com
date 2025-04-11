@@ -24,8 +24,9 @@
   src: url('../fonts/Caveat.woff2') format('woff2');
 }
 
-@import './variables.scss';
+@import './variables.module.scss';
 @import './animations.scss';
+@import './responsive.scss';
 
 /********** General **********/
 * {
@@ -241,7 +242,6 @@ a {
 /********** This Website **********/
 #this-website {
   @extend #about;
-
   border: none;
 
   p {
@@ -260,10 +260,8 @@ a {
   }
 
   svg {
-    margin: 50px 0 25px 0;
-    width: 375px;
-    border: $border;
-    padding: 20px 25px;
+    margin-top: 50px;
+    width: 600px;
   }
 
   .highlight {
@@ -280,7 +278,6 @@ a {
   text-align: center;
   height: 90vh;
   background-color: $white;
-  cursor: $wait;
 
   div {
     height: 100%;
