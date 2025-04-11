@@ -377,7 +377,8 @@
     font-size: 1.1em;
   }
 
-  .app-button:hover {
+  .app-button:hover,
+  .social-icon:hover {
     cursor: $pointer;
     animation: $flash;
     animation-timing-function: steps(4, jump-both);
@@ -409,4 +410,7 @@
 
 .social-icon {
   width: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

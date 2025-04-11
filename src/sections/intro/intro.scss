@@ -59,8 +59,6 @@
   }
 }
 
-
-
 #tv-window {
   left: 520px;
   top: 540px;
@@ -119,6 +117,10 @@
   right: 15em;
   top: 70px;
   font-weight: 400;
+
+  .window-title {
+    left: 0;
+  }
 }
 
 #scroll-prompt {
