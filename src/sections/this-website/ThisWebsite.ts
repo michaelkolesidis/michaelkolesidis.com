@@ -16,9 +16,6 @@
 
 import './thisWebsite.scss';
 import { textsThisWebsite as texts } from '../../data/texts.js';
-import { WindowManager, dragElement } from 'dom-window-manager';
-
-let windowManager = new WindowManager(3);
 
 export default function thisWebsite() {
   const website = document.getElementById('this-website');
@@ -37,33 +34,4 @@ export default function thisWebsite() {
     sentence.innerHTML = text;
     website.appendChild(sentence);
   });
-
-  // // Right hand
-  // const rightHand = document.createElement('div');
-  // rightHand.setAttribute('id', 'right-hand');
-  // rightHand.innerHTML = `<img alt="Right hand" src="../../assets/hand-right.svg" />`;
-  // website.appendChild(rightHand);
-
-  // dragElement(rightHand);
-  // rightHand.style.zIndex = windowManager.base;
-
-  // rightHand.addEventListener('mousedown', () => {
-  //   rightHand.style.zIndex = windowManager.moveOnTop();
-  // });
-
-  // let currentIndex = 0;
-
-  // const cycleAttentionFillColors = () => {
-  //   const elements = document.querySelectorAll<HTMLElement>('.attention-fill');
-
-  //   setInterval(() => {
-  //     const color = colors[currentIndex];
-  //     elements.forEach((el) => {
-  //       el.style.fill = color!.hex;
-  //     });
-  //     currentIndex = (currentIndex + 1) % colors.length;
-  //   }, 1000);
-  // };
-
-  // cycleAttentionFillColors();
 }
