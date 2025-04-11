@@ -1,6 +1,6 @@
 <div align="center">
   <img src="./public/assets/attention-free-software-with-text.png">
-  <img src="./screenshots/main-windows.png" width="800px">
+  <img src="./screenshots/main-windows-rearranged.png" width="800px">
   <h4>My award-winning playground / portfolio website</h4>
   <a href='https://ko-fi.com/michaelkolesidis' target='_blank'><img src='https://cdn.ko-fi.com/cdn/kofi2.png' style='border:0px;height:45px;' alt='Buy Me a Coffee at ko-fi.com' /></a>
 </div>
@@ -112,18 +112,18 @@ In addition to the tools and technologies mentioned above, this project integrat
 
 ## 📸 Screenshots
 
-[Screenshot](./screenshots/main-windows.png)  
-[Screenshot](./screenshots/main.png)  
-[Screenshot](./screenshots/projects.png)  
-[Screenshot](./screenshots/awards.png)  
-[Screenshot](./screenshots/about.png)  
-[Screenshot](./screenshots/duck-cel-shading-outline.png)  
+![Screenshot](./screenshots/main-windows-rearranged.png)  
+![Screenshot](./screenshots/main.png)  
+![Screenshot](./screenshots/projects.png)  
+![Screenshot](./screenshots/awards.png)  
+![Screenshot](./screenshots/about.png)  
+![Screenshot](./screenshots/duck-cel-shading-outline.png)
 
 ### Cursors
 
-[Cursor](./public/assets/cursors/cursor.png)  
-[Cursor](./public/assets/cursors/pointer.png)
-[Cursor](./public/assets/cursors/grab.png)  
+![Cursor](./public/assets/cursors/cursor.png)  
+![Cursor](./public/assets/cursors/pointer.png)  
+![Cursor](./public/assets/cursors/grab.png)  
 
 The duck with cel shading and an outline.
 
