@@ -65,13 +65,13 @@ export default function footer() {
   // Disclaimer
   const disclaimer = document.createElement('div');
   disclaimer.id = 'disclaimer';
-  disclaimer.innerHTML = `<p>Licensed under the <a href="https://www.gnu.org/licenses/agpl-3.0.html" target="_blank" >AGPL-3.0-or-later</a></p>`;
+  disclaimer.innerHTML = `<p>Licensed under the <a href="https://www.gnu.org/licenses/agpl-3.0.html" target="_blank" >AGPL-3.0-or-later</a></p><br><br><p>Designed and developed from the scratch, with no libraries, frameworks, or templates.</p>`;
   footer.appendChild(disclaimer);
 
   // Accessible
   const accessible = document.createElement('div');
   accessible.id = 'accessible';
-  accessible.innerHTML = `<p>For an accessible, color-blind-friendly version of this website, click here, <a href="/minimal" target="_blank">click here</a>.</p>`;
+  accessible.innerHTML = `<p>For a color-blind-friendly version, <a href="/minimal" target="_blank">click here</a>.</p>`;
   footer.appendChild(accessible);
 
   // Bottom links

@@ -2,7 +2,7 @@
 @import '../../style/variables.module.scss';
 
 footer {
-  height: 35em;
+  height: 37em;
   background-color: $black;
   display: flex;
   flex-direction: column;
@@ -73,4 +73,5 @@ footer {
 .bottom-link {
   margin: 0 8px;
   font-size: 0.8em;
+  cursor: pointer;
 }
