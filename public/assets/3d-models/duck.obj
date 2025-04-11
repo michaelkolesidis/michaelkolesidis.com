@@ -1,6 +1,6 @@
 # Blender v2.79 (sub 4) OBJ File: ''
 # www.blender.org
-mtllib untitled.mtl
+mtllib duck.mtl
 o Duck
 v 0.137978 0.450119 -0.123218
 v 0.135005 0.447155 -0.149874

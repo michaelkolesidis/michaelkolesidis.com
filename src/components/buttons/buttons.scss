@@ -1,0 +1,40 @@
+@import '../../style/style.scss';
+@import '../../style/variables.module.scss';
+
+#top-button,
+#sound-button {
+  opacity: 0;
+  position: fixed;
+  bottom: 1.5vh;
+  z-index: 99;
+  font-weight: 600;
+  cursor: $pointer;
+  border-radius: 50%;
+  font-size: 2vw;
+  text-align: center;
+  background: $black;
+  color: $white;
+  transition: all 1s;
+  background-clip: padding-box;
+}
+
+#top-button {
+  height: 6.5vw;
+  width: 6.5vw;
+  line-height: 6.5vw;
+  right: 1vw;
+  pointer-events: none;
+}
+
+#top-button:hover {
+  transform: rotate(360deg);
+}
+
+#sound-button {
+  background: $white;
+  left: 1vw;
+  padding: 0.25em;
+  width: 5.5vw;
+  height: 5.5vw;
+  transition: all 1s;
+}

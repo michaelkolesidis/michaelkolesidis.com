@@ -1,3 +1,5 @@
+Color Palette
+
 #ff90e8
 #ffc900
 #ff7051
@@ -5,3 +7,5 @@
 #90a8ed 
 #ffffff
 #0a0a0a
+
+by Michael Kolesidis

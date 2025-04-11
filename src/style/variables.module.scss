@@ -1,0 +1,67 @@
+/* colors */
+$white: #fff;
+$black: #0a0a0a;
+$transparent: rgba(0, 0, 0, 0);
+
+/* stripes */
+$stripes: linear-gradient(
+  45deg,
+  #ff90e8 10%,
+  #ffc900 10%,
+  #ffc900 20%,
+  #ff7051 20%,
+  #ff7051 30%,
+  #3ecfc1 30%,
+  #3ecfc1 40%,
+  #90a8ed 40%,
+  #90a8ed 50%,
+  #ff90e8 50%,
+  #ff90e8 60%,
+  #ffc900 60%,
+  #ffc900 70%,
+  #ff7051 70%,
+  #ff7051 80%,
+  #3ecfc1 80%,
+  #3ecfc1 90%,
+  #90a8ed 90%,
+  #90a8ed 100%
+);
+
+/* sizes */
+$stripes-size: 141.42px 141.42px;
+$title-size: 90px;
+
+/* lines */
+$line: 1px;
+
+/* weights */
+$thin: 400;
+$bold: 500;
+$heavy: 600;
+
+/* cursors */
+$cursor: url('../../assets/cursors/cursor.png') 0 0, auto;
+$pointer: url('../../assets/cursors/pointer.png') 0 0, auto;
+$grab: url('../../assets/cursors/grab.png') 22 32, auto;
+
+:export {
+  cursor: $cursor;
+  pointer: $pointer;
+  grab: $grab;
+}
+
+/* borders */
+$border: $line solid $black;
+
+/* animations */
+$flash: flash 0.5s infinite;
+
+/* shadows */
+$shadow: 6px 6px black;
+$stroke-shadow: 1.5px 1.5px 0px $black, -1.5px 1.5px 0px $black,
+  1.5px -1.5px 0px $black, -1.5px -1.5px 0px $black, 1.5px 0px 0px $black,
+  -1.5px 0px 0px $black, 0px 1.5px 0px $black, 0px -1.5px 0px $black,
+  1px 1.5px 0px $black, -1px 1.5px 0px $black, 1px -1.5px 0px $black,
+  -1px -1.5px 0px $black, 1.5px 1px 0px $black, -1.5px 1px 0px $black,
+  1.5px -1px 0px $black, -1.5px -1px 0px $black, 1px 1px 0px $black,
+  -1px 1px 0px $black, 1px -1px 0px $black, -1px -1px 0px $black;

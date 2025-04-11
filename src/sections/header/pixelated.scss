@@ -1,0 +1,80 @@
+@import '../../style/variables.module.scss';
+
+#pixel-window {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 350px;
+  height: 590px;
+  padding: 36px 15px 5px 15px;
+  top: 160px;
+  left: 270px;
+}
+
+#top-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 10px 0;
+}
+
+#button-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#help-button,
+#new-button {
+  text-align: center;
+  padding: 5px 0;
+  font-size: 1em;
+  cursor: $pointer;
+  border: $border;
+  width: 80px;
+  height: 32px;
+}
+
+#help-button {
+  margin-right: 7.5px;
+  width: 35px;
+}
+
+#board {
+  display: grid;
+  width: 100%;
+  max-width: 100vw;
+  aspect-ratio: 12 / 16;
+  border: $border;
+}
+
+.cell {
+  width: 100%;
+  height: 100%;
+}
+
+#controls {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  width: 100%;
+  gap: 10px;
+  padding-top: 10px;
+}
+
+.color-button {
+  width: 100%;
+  height: 50px;
+  border: $border;
+  cursor: $pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+.visible {
+  display: flex;
+}

@@ -1,0 +1,137 @@
+@import '../../style/style.scss';
+@import '../../style/variables.module.scss';
+@import '../../style/animations.scss';
+
+#projects-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: $white;
+  background-position: bottom right;
+  padding: 20px 20px;
+  gap: 20px;
+
+  a {
+    @extend p;
+  }
+}
+
+.project-card {
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  animation: fadeInFromNone 0.5s ease-out;
+  background-color: $white;
+  color: $black;
+  border: $border;
+  transition: background-color 0.25s ease, box-shadow 0.4s ease-in-out;
+}
+
+.project-card:hover:not(:has(.project-image:hover)) {
+  box-shadow: $shadow;
+}
+
+.project-image {
+  height: 20rem;
+  border: $border;
+  transition: box-shadow 0.4s ease-in-out;
+  cursor: $pointer;
+  margin-bottom: 20px;
+  max-width: fit-content;
+}
+
+.project-image:hover {
+  box-shadow: $shadow;
+}
+
+.project-card:has(.project-image:hover) {
+  box-shadow: none;
+}
+
+.project-title {
+  font-size: 2em;
+  font-weight: 700;
+  white-space: nowrap;
+  display: inline-block;
+  text-align: left;
+  letter-spacing: 0.1em;
+  color: $black;
+  text-shadow: 2px 2px $white, 3px 3px $black;
+  height: 50px;
+  max-width: fit-content;
+}
+
+.project-title:hover,
+.repo-link:hover {
+  animation: $flash;
+  animation-timing-function: steps(4, jump-both);
+}
+
+.project-summary,
+.technologies,
+.separator {
+  pointer-events: none;
+  max-width: fit-content;
+}
+
+.project-summary {
+  padding: 1em 1em 1em 0;
+  font-weight: 500;
+  text-align: justify;
+}
+
+.separator {
+  font-weight: 500;
+  font-size: 0.9rem;
+  opacity: 0;
+}
+
+.technologies {
+  margin: 0.2rem 0 1.5rem 0;
+  font-size: 0.75rem;
+  background-color: $black;
+  color: $white;
+  padding: 0.5em 0.8em;
+  opacity: 0;
+}
+
+.repo-link {
+  font-weight: 500;
+  font-size: 1.4rem;
+  opacity: 0;
+  max-width: fit-content;
+}
+
+.project-card:hover .separator,
+.project-card:hover .technologies,
+.project-card:hover .repo-link {
+  opacity: 1;
+}
+
+#show-more {
+  padding: 20px;
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: 400;
+  white-space: nowrap;
+  letter-spacing: 0.05em;
+  color: $black;
+  border: $border;
+  width: 60%;
+  transition: box-shadow 0.4s ease-in-out;
+  cursor: $pointer;
+}
+
+#show-more:hover {
+  box-shadow: $shadow;
+}
+
+#more {
+  padding: 20px;
+  text-align: center;
+  border-top: $border;
+  border-bottom: $border;
+  font-size: 1.5em;
+  font-weight: 400;
+  white-space: nowrap;
+  width: 100%;
+}

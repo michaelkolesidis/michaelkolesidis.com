@@ -15,21 +15,20 @@
  */
 
 import './style/style.scss';
-import body from './components/Body.js';
-import ticker from './components/Ticker.js';
-import header from './components/Header.js';
-import intro from './components/Intro.js';
-import projects from './components/Projects.js';
-import contact from './components/Contact.js';
-import about from './components/About.js';
-import awards from './components/Awards.js';
-import thisWebsite from './components/ThisWebsite.js';
-import footer from './components/Footer.js';
-import topButton from './components/TopButton.js';
+import body from './sections/body/Body.js';
+import ticker from './components/ticker/Ticker.js';
+import header from './sections/header/Header.js';
+import intro from './sections/intro/Intro.js';
+import projects from './sections/projects/Projects.js';
+import contact from './sections/contact/Contact.js';
+import about from './sections/about/About.js';
+import awards from './sections/awards/Awards.js';
+import thisWebsite from './sections/this-website/ThisWebsite.js';
+import footer from './sections/footer/Footer.js';
+import topButton from './components/buttons/TopButton.js';
 import { getScrollDistanceCss } from './utils/functions.js';
 import { disableRightClick } from './utils/functions.js';
 import { animateTitle } from './utils/functions.js';
-// import soundButton from './components/SoundButton.js';
 
 // Components
 body();
@@ -43,9 +42,13 @@ awards();
 thisWebsite();
 footer();
 topButton();
-// soundButton();
 
 // Global Functions
 disableRightClick(); // Disable right click
 getScrollDistanceCss(); // Get scroll distance as a CSS variable
 animateTitle(); // Animate page title
+
+// Debugging
+// window.addEventListener('resize', () => {
+//   console.log(window.innerWidth);
+// });

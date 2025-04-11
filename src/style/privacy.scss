@@ -1,0 +1,71 @@
+@font-face {
+  font-family: 'Karlsbader Grotesk';
+  font-display: block;
+  block-timeout: 0.3;
+  swap-timeout: 0.1;
+  src: url('../fonts/KarlsbaderGrotesk-400.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Karlsbader Grotesk';
+  font-display: block;
+  block-timeout: 0.3;
+  swap-timeout: 0.1;
+  src: url('../fonts/KarlsbaderGrotesk-500.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+}
+
+* {
+  font-family: 'Karlsbader Grotesk', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #0a0a0a;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 10px;
+}
+
+header a {
+  font-weight: 600;
+  position: fixed;
+  font-size: 25px;
+  top: 10px;
+  left: 12px;
+  text-decoration: none;
+}
+
+main {
+  margin: 100px 0;
+}
+
+h2 {
+  max-width: 45ch;
+}
+
+h3,
+p,
+ol,
+li {
+  max-width: 70ch;
+  text-align: justify;
+}
+
+h1,
+h2,
+h3 {
+  margin: 10px 0;
+}
+
+p,
+li,
+ol {
+  margin: 15px 0;
+}

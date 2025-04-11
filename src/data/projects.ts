@@ -28,6 +28,20 @@ export interface Project {
 
 export const projectList: Project[] = [
   {
+    name: 'OKTO.DIRECT',
+    image: '../../images/okto-direct.png',
+    technologies:
+      'React, Redux, MUI, Styled Components, WebSocket, Spring Boot',
+    summary:
+      'Member of the core team that conceptualized, designed, and developed OKTO.DIRECT, the first and only retail payments gateway that unlocks with one integration multiple digital payment methods for users to deposit and withdraw in real-time.',
+    description: '',
+    repository: '',
+    deployment: 'https://www.oktopayments.com/okto-direct/',
+    video: '',
+    visible: true,
+  },
+
+  {
     name: 'JSS-01',
     image: '../../images/jss-01.png?v=2',
     technologies: 'Tone.js, WEBMIDI.js, TypeScript, JavaScript, Sass',
@@ -57,20 +71,6 @@ export const projectList: Project[] = [
   },
 
   {
-    name: 'OKTO.DIRECT',
-    image: '../../images/okto-direct.png',
-    technologies:
-      'React, Redux, MUI, Styled Components, WebSocket, Spring Boot',
-    summary:
-      'Member of the core team that conceptualized, designed, and developed OKTO.DIRECT, the first and only retail payments gateway that unlocks with one integration multiple digital payment methods for users to deposit and withdraw in real-time.',
-    description: '',
-    repository: '',
-    deployment: 'https://www.oktopayments.com/okto-direct/',
-    video: '',
-    visible: true,
-  },
-
-  {
     name: 'Fintech World',
     image: '../../images/fintech_world.png',
     technologies: 'Three.js, React, React Three Fiber, Zustand',
@@ -78,30 +78,6 @@ export const projectList: Project[] = [
     description: '',
     repository: 'https://github.com/michaelkolesidis/fintech-world',
     deployment: 'https://fintech-world.vercel.app/',
-    video: '',
-    visible: true,
-  },
-
-  {
-    name: 'Timberland 3D',
-    image: '../../images/timberland-3d-customizer.png',
-    technologies: 'Three.js, React, TypeScript, React Three Fiber, Zustand',
-    summary: 'Customize and preview Timberland boots in 3D',
-    description: '',
-    repository: 'https://github.com/michaelkolesidis/timberland-3d-customizer',
-    deployment: 'https://timberland-3d-customizer.vercel.app/',
-    video: '',
-    visible: true,
-  },
-
-  {
-    name: 'Scratch Bonanza',
-    image: '../../images/scratch-bonanza.gif',
-    technologies: 'React, TypeScript, Zustand',
-    summary: 'An online scratchcard game. Do you feel lucky?',
-    description: '',
-    repository: 'https://github.com/michaelkolesidis/scratch-bonanza',
-    deployment: 'https://scratch-bonanza.vercel.app/',
     video: '',
     visible: true,
   },
@@ -133,6 +109,30 @@ export const projectList: Project[] = [
   },
 
   {
+    name: 'Scratch Bonanza',
+    image: '../../images/scratch-bonanza.gif',
+    technologies: 'React, TypeScript, Zustand',
+    summary: 'An online scratchcard game. Do you feel lucky?',
+    description: '',
+    repository: 'https://github.com/michaelkolesidis/scratch-bonanza',
+    deployment: 'https://scratch-bonanza.vercel.app/',
+    video: '',
+    visible: true,
+  },
+
+  {
+    name: 'Timberland 3D',
+    image: '../../images/timberland-3d-customizer.png',
+    technologies: 'Three.js, React, TypeScript, React Three Fiber, Zustand',
+    summary: 'Customize and preview Timberland boots in 3D',
+    description: '',
+    repository: 'https://github.com/michaelkolesidis/timberland-3d-customizer',
+    deployment: 'https://timberland-3d-customizer.vercel.app/',
+    video: '',
+    visible: true,
+  },
+
+  {
     name: 'Beachy Beachy Ball',
     image: '../../images/beachy-beachy-ball.png',
     technologies: 'Three.js, React, React Three Fiber, Rapier, Zustand',
@@ -158,6 +158,18 @@ export const projectList: Project[] = [
   },
 
   {
+    name: 'Cube Rabbit',
+    image: '../../images/cube-rabbit.png',
+    technologies: 'Three.js, React, TypeScript, React Three Fiber, Zustand',
+    summary: 'The story of a cube-shaped rabbit.',
+    description: '',
+    repository: 'https://github.com/michaelkolesidis/cuberabbit',
+    deployment: 'https://cuberabbit.com/',
+    video: '',
+    visible: true,
+  },
+
+  {
     name: 'synthétique',
     image: '../../images/synthetique.png',
     technologies: 'Three.js, JavaScript, CSS',
@@ -177,18 +189,6 @@ export const projectList: Project[] = [
     description: '',
     repository: 'https://github.com/michaelkolesidis/rock-paper-scissors-3d',
     deployment: 'https://rock-paper-scissors-3d.vercel.app/',
-    video: '',
-    visible: true,
-  },
-
-  {
-    name: 'Cube Rabbit',
-    image: '../../images/cube-rabbit.png',
-    technologies: 'Three.js, React, TypeScript, React Three Fiber, Zustand',
-    summary: 'The story of a cube-shaped rabbit.',
-    description: '',
-    repository: 'https://github.com/michaelkolesidis/cuberabbit',
-    deployment: 'https://cuberabbit.com/',
     video: '',
     visible: true,
   },
@@ -241,7 +241,7 @@ export const projectList: Project[] = [
     repository: 'https://github.com/michaelkolesidis/sticky-notes',
     deployment: 'https://sticky-notes-ts.vercel.app/',
     video: '',
-    visible: true,
+    visible: false,
   },
 
   {
@@ -254,7 +254,7 @@ export const projectList: Project[] = [
     repository: 'https://github.com/michaelkolesidis/tenzi',
     deployment: 'https://tenzi-react.netlify.app/',
     video: '',
-    visible: true,
+    visible: false,
   },
 
   {
@@ -266,7 +266,7 @@ export const projectList: Project[] = [
     repository: 'https://github.com/michaelkolesidis/camelnotes',
     deployment: 'https://github.com/michaelkolesidis/camelnotes',
     video: '',
-    visible: true,
+    visible: false,
   },
 
   {

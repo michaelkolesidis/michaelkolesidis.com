@@ -1,0 +1,77 @@
+@import '../../style/style.scss';
+@import '../../style/variables.module.scss';
+
+footer {
+  height: 37em;
+  background-color: $black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+
+  a,
+  p {
+    color: $white;
+  }
+
+  a {
+    text-decoration: underline;
+  }
+}
+
+#duck {
+  margin-top: 10em;
+  margin-bottom: 1em;
+  width: 80px;
+  max-height: fit-content;
+  display: flex;
+  justify-content: center;
+  cursor: $pointer;
+  transition: all 0.25s;
+}
+
+#duck:hover {
+  transform: rotateZ(15deg);
+}
+
+#duck:hover #duck-path {
+  fill: #ffc900;
+}
+
+#copyright {
+  font-size: 2.2rem;
+  font-weight: 500;
+  color: $white;
+  text-shadow: 4px 4px $black;
+  transition: content 2s;
+  width: 19ch;
+  text-align: center;
+}
+
+#disclaimer,
+#accessible,
+#desktop-prompt {
+  color: $white;
+  max-width: 38ch;
+  text-align: center;
+  font-size: 1em;
+}
+
+#accessible {
+  margin-top: 25px;
+}
+
+#bottom-links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  position: absolute;
+  bottom: 20px;
+}
+
+.bottom-link {
+  margin: 0 8px;
+  font-size: 0.8em;
+  cursor: pointer;
+}
