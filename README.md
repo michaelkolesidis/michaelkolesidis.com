@@ -117,15 +117,14 @@ In addition to the tools and technologies mentioned above, this project integrat
 ![Screenshot](./screenshots/projects.png)  
 ![Screenshot](./screenshots/awards.png)  
 ![Screenshot](./screenshots/about.png)  
-![Screenshot](./screenshots/duck-cel-shading-outline.png)
+![Screenshot](./screenshots/duck-cel-shading-outline.png)  
+The duck with cel shading and an outline.
 
 ### Cursors
 
 ![Cursor](./public/assets/cursors/cursor.png)  
 ![Cursor](./public/assets/cursors/pointer.png)  
 ![Cursor](./public/assets/cursors/grab.png)  
-
-The duck with cel shading and an outline.
 
 ## 🙏 Acknowledgements
 
@@ -153,3 +152,4 @@ The code is licensed under the [GNU Affero General Public License v3.0](https://
 <a href="https://creativecommons.org/licenses/by-sa/4.0/"><img src="./public/assets/icons/creative-commons.svg" height="80px" /></a>
 
 The graphics, the images, and the cursors, are licensed under the Creative [Commons Attribution-ShareAlike 4.0 International](https://creativecommons.org/licenses/by-sa/4.0/).
+g
