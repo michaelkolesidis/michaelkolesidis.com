@@ -1,9 +1,6 @@
 # To-Do
 
-- Do clouds
-- Screenshots
 - Responsive for mobile (duck scale and elements)
-- Deploy
 
 ## To-Do later (maybe)
 
