@@ -1,6 +1,6 @@
 # To-Do
 
-- Responsive for mobile (duck scale and elements)
+- Responsive for mobile
 
 ## To-Do later (maybe)
 

@@ -14,7 +14,7 @@
  *  https://www.gnu.org/licenses/agpl-3.0.html
  */
 
-import { useState, useRef } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import { Canvas } from '@react-three/fiber';
 import { Float } from '@react-three/drei';
 import { Duck } from './Duck';
@@ -27,7 +27,23 @@ export default function Scene() {
     setAmbientOn((prev) => !prev);
   };
 
-  const duckScale = 5.5;
+  function useDuckScale() {
+    const [scale, setScale] = useState(getScale());
+
+    function getScale() {
+      return window.innerWidth > 1001 ? 5.5 : 4.5;
+    }
+
+    useEffect(() => {
+      const handleResize = () => setScale(getScale());
+      window.addEventListener('resize', handleResize);
+      return () => window.removeEventListener('resize', handleResize);
+    }, []);
+
+    return scale;
+  }
+
+  const duckScale = useDuckScale();
 
   return (
     <Canvas

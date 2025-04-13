@@ -20,13 +20,16 @@ export default function ticker() {
   const ticker = document.getElementsByClassName('ticker')?.[0];
   if (!ticker) return;
 
-  const messages = [
-    'WELCOME TO MY PLAYGROUND',
-    'FEEL FREE TO PLAY WITH MY RUBBER DUCK',
-    'CLICK ON ANYTHING COLORFUL FOR A NEW COLOR',
-    'TRY MOVING THINGS AROUND',
-    'SMILEY IS YOUR FRIEND',
-  ];
+  const messages =
+    window.innerWidth > 1000
+      ? [
+          'WELCOME TO MY PLAYGROUND',
+          'FEEL FREE TO PLAY WITH MY RUBBER DUCK',
+          'CLICK ON ANYTHING COLORFUL FOR A NEW COLOR',
+          'TRY MOVING THINGS AROUND',
+          'SMILEY IS YOUR FRIEND',
+        ]
+      : ['VISIT THE DESKTOP VERSION FOR THE FULL EXPERIENCE', '•'];
 
   // Create elements
   const messageElements = messages.map((text) => {
