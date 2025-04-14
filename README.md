@@ -14,11 +14,11 @@
 <a href="https://vitejs.dev/"><img src="https://vitejs.dev/logo.svg" height="50px" /></a>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
-The website was designed handcrafted from scratch using TypeScript and Sass, with no libraries, frameworks, or templates.
+The website was handcrafted from scratch using TypeScript and Sass, with no libraries, frameworks, or templates.
 
 ### Other Technologies
 
-I used a [WebGL](https://www.khronos.org/webgl/) shader to make TV signal noise effect, and for the 3D rubber duck I used [three.js](https://threejs.org/), a library and API to use 3D computer graphics in the browser using WebGL. I used it through [React Three Fiber](https://r3f.docs.pmnd.rs/getting-started/introduction), a React renderer for three.js.
+I used a [WebGL](https://www.khronos.org/webgl/) shader to make a TV signal noise effect, and for the 3D rubber duck I used [three.js](https://threejs.org/), a library and API to use 3D computer graphics in the browser using WebGL. I used it via [React Three Fiber](https://r3f.docs.pmnd.rs/getting-started/introduction), a React renderer for three.js.
 
 ## 💡 Concept
 
@@ -28,9 +28,9 @@ My website is a love letter to the early Internet, a tribute to the era of naïv
 
 I call the resulting aesthetic frivobrutalism: a joyful clash of whimsy and rawness, where playful visuals meet the structural honesty of brutalist design.
 
-Visitors can interact freely, and nearly every element on the site feels intentional and alive (I hope 😛). Some elements are draggable, stacking dynamically when clicked. Colorful elements respond to interaction. Clicking them cycles through a curated palette, adding a touch of spontaneity. The rubber duck follows the mouse and switches to a cel-shaded, outlined style when clicked.
+Visitors can interact freely, and nearly every element on the site feels intentional and alive (I hope 😛). Some elements are draggable and dynamically stack when clicked, and colorful elements respond to interaction. Clicking them cycles through a curated palette, adding a touch of spontaneity. The rubber duck follows the mouse and switches to a cel-shaded, outlined style when clicked.
 
-These aren’t just gimmicks. They’re carefully crafted microinteractions, where each hover, click, or drag triggers animations, sounds, or changes in state. The site becomes a playground, blurring the line between interface and artwork, inviting users to play, explore, and get lost. Just like we used to on the old web.
+These aren’t just gimmicks. They’re carefully crafted microinteractions, where each hover, click, or drag triggers an animation, sound, or state change. The site becomes a playground, blurring the line between interface and artwork, inviting users to play, explore, and get lost. Just like we used to on the old web.
 
 ### Minimal Version
 
@@ -130,11 +130,11 @@ The duck with cel shading and an outline.
 
 A huge thanks to everyone who supported me, from friends and colleagues to anonymous internet users, providing valuable feedback throughout the development process.
 
-## 📜 Contact
+## ✉️ Contact
 
-Feel free to contact me for business inquiries, feedback, bugs, comments etc.
+Feel free to contact me for business inquiries, feedback, bug reports, or general comments.
 
-If you use my code or my graphics in your projects, I’d love to hear about it! Feel free to email me — I'm always excited (and curious) to see how it's being used! Remember to use my code according to the terms of the respective license!
+If you use my code or my graphics in your projects, I’d love to hear about it! Feel free to email me — I'm always excited (and curious) to see how it's being used! Remember to use my code in accordance with the terms of the respective license!
 
 ## 💖 Support the Project
 
@@ -142,7 +142,7 @@ Thank you for your interest in my project! If you'd like to go further and suppo
 
 <a href='https://ko-fi.com/michaelkolesidis' target='_blank'><img src='https://cdn.ko-fi.com/cdn/kofi2.png' style='border:0px;height:45px;' alt='Buy Me a Coffee at ko-fi.com' /></a>
 
-## License
+## 📜 License
 
 <a href="https://www.gnu.org/licenses/agpl-3.0.html"><img src="./public/assets/icons/agplv3.svg" height="80px" /></a>
 
@@ -151,4 +151,6 @@ The code is licensed under the [GNU Affero General Public License v3.0](https://
 
 <a href="https://creativecommons.org/licenses/by-sa/4.0/"><img src="./public/assets/icons/creative-commons.svg" height="80px" /></a>
 
-The graphics, the images, and the cursors, are licensed under the Creative [Commons Attribution-ShareAlike 4.0 International](https://creativecommons.org/licenses/by-sa/4.0/).
+The graphics, the images, and the cursors, are licensed under the [Creative Commons Attribution-ShareAlike 4.0 International](https://creativecommons.org/licenses/by-sa/4.0/).
+
+🏴‍☠️🏳️‍⚧️🏳️‍🌈✊🏿🏴

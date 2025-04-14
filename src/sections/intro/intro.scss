@@ -111,6 +111,10 @@
   width: 30px;
 }
 
+#play-button:hover {
+  animation: $flash;
+}
+
 #duck-window {
   width: 20em;
   height: 150px;

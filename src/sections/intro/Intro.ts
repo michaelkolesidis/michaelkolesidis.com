@@ -78,7 +78,7 @@ export default function intro() {
   });
   duckDebuggingWindow.appendChild(closeButton);
 
-  dragElement(duckDebuggingWindow);
+  dragElement(duckDebuggingWindow, duckDebuggingWindowTitle);
   duckDebuggingWindow.style.zIndex = windowManager.base;
   duckDebuggingWindow.addEventListener('mousedown', () => {
     duckDebuggingWindow.style.zIndex = windowManager.moveOnTop();
