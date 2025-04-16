@@ -256,7 +256,7 @@ document.body.innerHTML = /* html */ `
   privacy of your information.
 </p>
 <p>
-  Filippos Fragkogiannis is not responsible for the content or privacy and
+  Michael Kolesidis is not responsible for the content or privacy and
   security practices and policies of any third parties, including other
   websites, services or applications that may be linked to or from the
   website.
