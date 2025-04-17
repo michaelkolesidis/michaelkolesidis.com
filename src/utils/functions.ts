@@ -70,3 +70,10 @@ export const animateTitle = (): void => {
 
   document.addEventListener('DOMContentLoaded', updateTitle);
 };
+
+export const fancyConsoleLog = (): void => {
+  console.log(
+    `%c👋 Dev by Michael Kolesidis https://michaelkolesidis.com`,
+    'color:#fff;font-size:16px; padding:0.45rem 0.75rem; margin: 0.3rem auto 1.3rem auto; font-family: Metropolis, Helvetica, sans-serif; border: 2px solid #0dd8d8; border-radius: 4px;font-weight: 100;background-size: cover;background-repeat: no-repeat;border: double 4px transparent;background-image: linear-gradient(#000, #122), radial-gradient(circle at top left, #ff90e8, #ffc900);background-origin: border-box;background-clip: padding-box, border-box;'
+  );
+};

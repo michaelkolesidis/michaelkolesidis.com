@@ -43,7 +43,6 @@
   "dependencies": {
     "@react-three/drei": "^10.0.6",
     "@react-three/fiber": "^9.1.2",
-    "@react-three/postprocessing": "^3.0.4",
     "dom-window-manager": "^1.1.1",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
@@ -52,6 +51,7 @@
   "devDependencies": {
     "@types/react": "^19.1.0",
     "@types/react-dom": "^19.1.1",
+    "@types/three": "^0.175.0",
     "@vitejs/plugin-react": "^4.3.4",
     "eslint": "^9.24.0",
     "eslint-plugin-react": "^7.37.5",

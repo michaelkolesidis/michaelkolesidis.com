@@ -26,9 +26,12 @@ import awards from './sections/awards/Awards.js';
 import thisWebsite from './sections/this-website/ThisWebsite.js';
 import footer from './sections/footer/Footer.js';
 import topButton from './components/buttons/TopButton.js';
-import { getScrollDistanceCss } from './utils/functions.js';
-import { disableRightClick } from './utils/functions.js';
-import { animateTitle } from './utils/functions.js';
+import {
+  getScrollDistanceCss,
+  disableRightClick,
+  animateTitle,
+  fancyConsoleLog,
+} from './utils/functions.js';
 
 // Components
 body();
@@ -47,6 +50,7 @@ topButton();
 disableRightClick(); // Disable right click
 getScrollDistanceCss(); // Get scroll distance as a CSS variable
 animateTitle(); // Animate page title
+fancyConsoleLog(); // Fancy console log
 
 // Debugging
 // window.addEventListener('resize', () => {
