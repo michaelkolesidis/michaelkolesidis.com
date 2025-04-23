@@ -14,11 +14,12 @@
  *  https://www.gnu.org/licenses/agpl-3.0.html
  */
 
-// Generates a new color from a predefined array of colors
+// Generates a new color from a predefined array of colors, with optional exclusions
 export const generateNewColor = (
   colors: any,
   element: any,
-  property: string
+  property: string,
+  excludeColors: string[] = []
 ) => {
   const oldColor = element.style[property];
 
@@ -30,7 +31,7 @@ export const generateNewColor = (
     num = Math.floor(Math.random() * colors.length);
     newColor = `rgb(${colors[num].rgb})`;
 
-    if (oldColor !== newColor) {
+    if (newColor !== oldColor && !excludeColors.includes(newColor)) {
       isColorNew = true;
     }
   }
