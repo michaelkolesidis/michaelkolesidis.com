@@ -68,6 +68,11 @@
   padding-top: 20px;
 }
 
+#tv-window canvas {
+  width: 478px !important;
+  height: 338px !important;
+}
+
 #duck-overlay {
   position: absolute;
   top: 35px;
