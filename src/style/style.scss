@@ -164,6 +164,16 @@ a {
     box-shadow: $shadow;
     z-index: 99;
   }
+
+  svg {
+    animation: swing 0.5s ease-in-out infinite;
+  }
+
+  @keyframes swing {
+    0%   { transform: rotate(-5deg); }
+    50%  { transform: rotate(5deg); }
+    100% { transform: rotate(-5deg); }
+  }
 }
 
 /********** Awards **********/

@@ -151,6 +151,6 @@ The code is licensed under the [GNU Affero General Public License v3.0](https://
 
 <a href="https://creativecommons.org/licenses/by-sa/4.0/"><img src="./public/assets/icons/creative-commons.svg" height="80px" /></a>
 
-The graphics, the images, and the cursors, are licensed under the [Creative Commons Attribution-ShareAlike 4.0 International](https://creativecommons.org/licenses/by-sa/4.0/).
+The graphics, images, and cursors, are licensed under the [Creative Commons Attribution-ShareAlike 4.0 International](https://creativecommons.org/licenses/by-sa/4.0/), except for the "K" logo.
 
-🏴‍☠️🏳️‍⚧️🏳️‍🌈✊🏿🏴
+🏳️‍⚧️✊🏿🏳️‍🌈

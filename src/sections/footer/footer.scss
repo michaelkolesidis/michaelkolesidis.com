@@ -19,23 +19,20 @@ footer {
   }
 }
 
-#duck {
-  margin-top: 10em;
-  margin-bottom: 1em;
-  width: 80px;
+#logo {
+  margin-top: 6em;
+  margin-bottom: 3em;
+  width: 120px;
   max-height: fit-content;
   display: flex;
   justify-content: center;
   cursor: $pointer;
   transition: all 0.25s;
+  border-radius: 10px;
 }
 
-#duck:hover {
+#logo:hover {
   transform: rotateZ(15deg);
-}
-
-#duck:hover #duck-path {
-  fill: #ffc900;
 }
 
 #copyright {
