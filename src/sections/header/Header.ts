@@ -388,6 +388,7 @@ export default function header() {
   const duckElements = duckImages.map(({ src }) => {
     const img = document.createElement('img');
     img.src = src;
+    img.alt = 'An animated gif of a duck';
     img.classList.add('duck-img');
     overlay.appendChild(img);
     return img;

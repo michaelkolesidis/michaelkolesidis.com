@@ -46,7 +46,7 @@ export default function awards() {
     // Certificate
     const awardCertificate = document.createElement('div');
     awardCertificate.classList.add('award-certificate');
-    awardCertificate.innerHTML = `<img alt="award" src="../../assets/award.svg" />`;
+    awardCertificate.innerHTML = `<img alt="award" src="../../assets/award.svg" alt="An award ribbon" />`;
 
     award.appendChild(awardCertificate);
 
