@@ -43,7 +43,7 @@ export default function ticker() {
   messageElements.forEach((msg) => ticker.appendChild(msg));
 
   // Append additional copies
-  for (let i = 0; i < 25; i++) {
+  for (let i = 0; i < 50; i++) {
     messageElements.forEach((msg) => ticker.appendChild(msg.cloneNode(true)));
   }
 }

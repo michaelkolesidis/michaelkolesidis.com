@@ -21,6 +21,5 @@
     "allowImportingTsExtensions": true,
     "verbatimModuleSyntax": true,
     "incremental": true
-  },
-  "include": ["src", "public/scripts/duck.js"]
+  }
 }

@@ -406,6 +406,7 @@
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 1em;
   align-items: center;
+  transition: opacity 1s ease;
 }
 
 .social-icon {

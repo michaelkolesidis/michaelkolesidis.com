@@ -9,5 +9,3 @@
 | #90a8ed | 144, 168, 237 |
 | #ffffff | 255, 255, 255 |
 | #0a0a0a |  10, 10, 10   |  
-
-by Michael Kolesidis
