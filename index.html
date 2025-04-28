@@ -1,13 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" prefix="og: https://ogp.me/ns#">
   <head>
     <meta charset="UTF-8" />
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-85FBXC6MLF"
-    ></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-85FBXC6MLF" ></script>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-NPLSZVZ');</script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag() {
@@ -33,41 +34,17 @@
     </script>
     <meta name="author" content="Michael Kolesidis" />
     <meta name="description" content="My portfolio website / playground" />
-    <meta
-      name="keywords"
-      content="full-stack, full-stack web engineer, web developer, web designer, art director, art direction, font-end, frontend, back-end, backend, web development, javascript, three.js, react, michael kolesidis, personal web page, 3d, rubber duck"
-    />
-    <meta prefix="og: http://ogp.me/ns#" property="og:type" content="website" />
-    <meta
-      prefix="og: http://ogp.me/ns#"
-      property="og:title"
-      content="Michael Kolesidis"
-    />
-    <meta
-      prefix="og: http://ogp.me/ns#"
-      property="og:description"
-      content=">Michael Kolesidis | Developer | Designer | Art Director"
-    />
-    <meta
-      prefix="og: http://ogp.me/ns#"
-      property="og:image"
-      content="./screenshots/main-windows-rearranged.png"
-    />
-    <meta
-      name="image"
-      property="og:image"
-      content="./screenshots/main-windows-rearranged.png"
-    />
-    <meta
-      prefix="og: http://ogp.me/ns#"
-      property="og:url"
-      content="https://michaelkolesidis.com"
-    />
+    <meta name="keywords" content="full-stack, full-stack web engineer, web developer, web designer, art director, art direction, font-end, frontend, back-end, backend, web development, javascript, three.js, react, michael kolesidis, personal web page, 3d, rubber duck" />
+    <meta property="og:title" content="Michael Kolesidis" />
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content="Michael Kolesidis - Developer, Designer, Art Director" />
+    <meta property="og:image" content="./screenshots/main-windows-rearranged.png" />
+    <meta property="og:url" content="https://michaelkolesidis.com" />
     <title>Michael Kolesidis</title>
     <link rel="icon" type="image/x-icon" href="./assets/icons/favicon.ico" />
   </head>
   <body>
-    <img src="./screenshots/main-windows-rearranged.png" alt="Screenshot" style="display: none;">
+    <img src="./screenshots/main-windows-rearranged.png" alt="Screenshot" style="display: none" />
     <script type="module" src="/src/main.ts"></script>
     <script type="module" src="./src/sections/intro/index.jsx"></script>
   </body>
