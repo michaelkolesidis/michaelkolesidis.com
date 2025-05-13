@@ -1,12 +1,12 @@
-# To-Do
+# 🚧 To-Do
 
-- Responsive for mobile
+- Make the site fully responsive for mobile devices
 
-## To-Do later (maybe)
+## 💡 Under Consideration
 
-- Check alternative internet radios
+- Explore alternative internet radio options
 
-## To-Do after React
+## 🚫 Won’t Do
 
-- One Page Love award to open in a window
-- Make all components absolute-relative and place then in the correct section
+- Open the One Page Love award in a separate window
+- Refactor components: use absolute/relative positioning and place them in their appropriate sections

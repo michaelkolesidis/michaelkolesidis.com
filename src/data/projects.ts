@@ -83,6 +83,19 @@ export const projectList: Project[] = [
   },
 
   {
+    name: 'ZigZag',
+    image: '../../images/zigzag.png',
+    technologies: 'Three.js, React, React Three Fiber, Zustand',
+    summary:
+      'A 3D ZigZag game built with React Three Fiber. Stay on the wall and zigzag as far as you can! Just tap the screen to change the ball’s direction. One wrong move and you’re off the edge! How far can you make it?',
+    description: '',
+    repository: 'https://github.com/michaelkolesidis/zigzag',
+    deployment: 'https://playzigzag.vercel.app/',
+    video: '',
+    visible: true,
+  },
+
+  {
     name: 'Emoji Minesweeper',
     image: '../../images/emoji-minesweeper.png?v=3',
     technologies: 'p5.js, JavaScript, CSS',
@@ -133,6 +146,18 @@ export const projectList: Project[] = [
   },
 
   {
+    name: 'Cube Rabbit',
+    image: '../../images/cube-rabbit.png',
+    technologies: 'Three.js, React, TypeScript, React Three Fiber, Zustand',
+    summary: 'The story of a cube-shaped rabbit.',
+    description: '',
+    repository: 'https://github.com/michaelkolesidis/cuberabbit',
+    deployment: 'https://cuberabbit.com/',
+    video: '',
+    visible: true,
+  },
+
+  {
     name: 'Beachy Beachy Ball',
     image: '../../images/beachy-beachy-ball.png',
     technologies: 'Three.js, React, React Three Fiber, Rapier, Zustand',
@@ -153,18 +178,6 @@ export const projectList: Project[] = [
     description: '',
     repository: 'https://github.com/michaelkolesidis/chompy-o-croc',
     deployment: 'https://chompy-o-croc.vercel.app/',
-    video: '',
-    visible: true,
-  },
-
-  {
-    name: 'Cube Rabbit',
-    image: '../../images/cube-rabbit.png',
-    technologies: 'Three.js, React, TypeScript, React Three Fiber, Zustand',
-    summary: 'The story of a cube-shaped rabbit.',
-    description: '',
-    repository: 'https://github.com/michaelkolesidis/cuberabbit',
-    deployment: 'https://cuberabbit.com/',
     video: '',
     visible: true,
   },
@@ -228,7 +241,7 @@ export const projectList: Project[] = [
       'https://github.com/michaelkolesidis/collection-of-div-surrogates',
     deployment: 'https://collection-of-div-surrogates.vercel.app/',
     video: '',
-    visible: true,
+    visible: false,
   },
 
   {
