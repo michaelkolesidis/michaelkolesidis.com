@@ -90,7 +90,7 @@ export const projectList: Project[] = [
       'A 3D ZigZag game built with React Three Fiber. Stay on the wall and zigzag as far as you can! Just tap the screen to change the ball’s direction. One wrong move and you’re off the edge! How far can you make it?',
     description: '',
     repository: 'https://github.com/michaelkolesidis/zigzag',
-    deployment: 'https://playzigzag.vercel.app/',
+    deployment: 'https://zigzag.michaelkolesidis.com/',
     video: '',
     visible: true,
   },
