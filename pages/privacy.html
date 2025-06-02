@@ -1,16 +1,44 @@
-<!doctype html>
-<html lang=en>
-<head>
-<meta charset=UTF-8>
-<meta http-equiv=X-UA-Compatible content="IE=edge">
-<meta name=viewport content="width=device-width,initial-scale=1">
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-85FBXC6MLF"></script>
-<script>function gtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],gtag("js",new Date),gtag("config","G-85FBXC6MLF")</script>
-<script>!function(t,h,e,j,s,n){t.hj=t.hj||function(){(t.hj.q=t.hj.q||[]).push(arguments)},t._hjSettings={hjid:3401371,hjsv:6},s=h.getElementsByTagName("head")[0],(n=h.createElement("script")).async=1,n.src="https://static.hotjar.com/c/hotjar-"+t._hjSettings.hjid+".js?sv="+t._hjSettings.hjsv,s.appendChild(n)}(window,document)</script>
-<link rel=icon type=image/x-icon href=../assets/icons/favicon.ico>
-<title>Michael Kolesidis - Privacy Policy</title>
-<link rel=stylesheet href=../src/style/privacy.scss>
-<script src=../src/pages/privacy.ts type=module></script>
-</head>
-<body></body>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <script type="module">
+      const GA_TRACKING_ID = import.meta.env.VITE_GA_TRACKING_ID;
+
+      if (GA_TRACKING_ID) {
+        // Load gtag.js
+        const gtagScript = document.createElement('script');
+        gtagScript.setAttribute('async', '');
+        gtagScript.src = `https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`;
+        document.head.appendChild(gtagScript);
+
+        // Load GTM (if you still want it, optional)
+        const gtmScript = document.createElement('script');
+        gtmScript.innerHTML = `
+      (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-NPLSZVZ');
+    `;
+        document.head.appendChild(gtmScript);
+
+        // Setup dataLayer and gtag config
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+          dataLayer.push(arguments);
+        }
+        window.gtag = gtag;
+        gtag('js', new Date());
+        gtag('config', GA_TRACKING_ID);
+      }
+    </script>
+    <link rel="icon" type="image/x-icon" href="../assets/icons/favicon.ico" />
+    <title>Michael Kolesidis - Privacy Policy</title>
+    <link rel="stylesheet" href="../src/style/privacy.scss" />
+    <script src="../src/pages/privacy.ts" type="module"></script>
+  </head>
+  <body></body>
 </html>

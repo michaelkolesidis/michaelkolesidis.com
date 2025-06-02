@@ -68,6 +68,18 @@ In addition to the tools and technologies mentioned above, this project integrat
 
 - [DOM Window Manager](https://www.npmjs.com/package/dom-window-manager) (created by me)
 
+## 📈 Analytics Notice
+
+⚠️ This project now uses Google Analytics via the `VITE_GA_TRACKING_ID` environment variable.
+
+If you fork or deploy this project, **please set your own ID** in a `.env` file or your deployment platform (e.g., Vercel).  
+If you don’t, **analytics will be disabled**.
+
+**Important:**  
+Before this change, the project had my own Google Analytics and Tag Manager tags hardcoded.  
+If you forked it before this change and haven’t removed those lines from the `head` of the `index.html` file, **you are still sending me your site’s traffic data**.  
+👉 Please **remove or replace** them immediately to protect your and your users’ privacy. 👈
+
 ## 💻 Software used
 
 ### Development

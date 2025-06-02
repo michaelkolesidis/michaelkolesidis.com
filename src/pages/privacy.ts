@@ -306,49 +306,6 @@ document.body.innerHTML = /* html */ `
   or to other web analytics services we may use as detailed in.
 </p>
 
-<h3>Hotjar</h3>
-<p>
-  We use Hotjar on our website. Hotjar is a web analytics service provided
-  by Hotjar Ltd, based in Malta. This tool helps us better understand the
-  needs and behavior of our users by analyzing how they interact with
-  different pages and content. It allows us to improve the overall
-  experience by collecting information such as how much time users spend
-  on pages, which links they click, and how they navigate through the
-  site.
-</p>
-
-<p>
-  Hotjar uses cookies and other technologies to collect data on the
-  behavior of our users and their devices, including a device’s IP address
-  (captured and stored only in anonymized form), screen size, device type
-  (unique device identifiers), browser information, geographic location
-  (country only), and preferred language used to display our website.
-</p>
-
-<p>
-  This information is stored in a pseudonymized user profile and is never
-  used to identify individual users. Hotjar does not track your browsing
-  habits across other websites.
-</p>
-
-<p>
-  The data collected through Hotjar helps us to continuously improve our
-  website’s design and usability based on real feedback. The legal basis
-  for using Hotjar is our legitimate interest in improving our website, in
-  accordance with Art. 6 Para. 1 lit. f) GDPR.
-</p>
-
-<p>
-  You can opt out of Hotjar’s tracking at any time by visiting
-  <a
-    href="https://www.hotjar.com/legal/compliance/opt-out/"
-    target="_blank"
-    rel="noopener noreferrer"
-    >https://www.hotjar.com/legal/compliance/opt-out/</a
-  >
-  and following the instructions provided.
-</p>
-
 <h3>Email Contact</h3>
 <p>
   If you contact us via email, the data you provide will be used for the
