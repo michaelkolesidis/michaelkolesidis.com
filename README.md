@@ -62,7 +62,7 @@ _March 2023_
 
 Awarded by Best CSS, a web platform that discovers, recognizes and promotes the talent and effort of web designers, developers and agencies who create unique digital experiences that are useful, innovative, intuitive and beautiful.
 
-## Dependencies
+## 📦 Dependencies
 
 In addition to the tools and technologies mentioned above, this project integrates a custom npm module I created, which handles window layering (bringing windows to the front on click) and drag-and-drop functionality for window movement.
 
