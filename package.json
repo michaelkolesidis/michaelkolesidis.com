@@ -46,14 +46,14 @@
     "dom-window-manager": "^1.1.1",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
-    "three": "0.175.0"
+    "three": "^0.177.0"
   },
   "devDependencies": {
-    "@types/node": "^22.15.29",
+    "@types/node": "^22.15.30",
     "@types/react": "^19.1.6",
-    "@types/react-dom": "^19.1.5",
-    "@types/three": "^0.175.0",
-    "@vitejs/plugin-react": "^4.5.0",
+    "@types/react-dom": "^19.1.6",
+    "@types/three": "^0.177.0",
+    "@vitejs/plugin-react": "^4.5.1",
     "eslint": "^9.28.0",
     "eslint-plugin-react": "^7.37.5",
     "eslint-plugin-react-hooks": "^5.2.0",

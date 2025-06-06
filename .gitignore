@@ -23,6 +23,7 @@ tsconfig.tsbuildinfo
 *.njsproj
 *.sln
 *.sw?
+Desktop.ini
 
 # Misc
 .env.local
@@ -33,5 +34,3 @@ tsconfig.tsbuildinfo
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-
-Desktop.ini

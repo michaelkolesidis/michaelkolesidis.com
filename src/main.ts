@@ -29,7 +29,7 @@ import topButton from './components/buttons/TopButton.js';
 import {
   getScrollDistanceCss,
   disableRightClick,
-  animateTitle,
+  // animateTitle,
   fancyConsoleLog,
 } from './utils/functions.js';
 
@@ -49,7 +49,7 @@ topButton();
 // Global Functions
 disableRightClick(); // Disable right click
 getScrollDistanceCss(); // Get scroll distance as a CSS variable
-animateTitle(); // Animate page title
+// animateTitle(); // Animate page title, disabled for better analytics
 fancyConsoleLog(); // Fancy console log
 
 // Debugging
