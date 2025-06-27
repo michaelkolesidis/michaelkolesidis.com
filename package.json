@@ -39,6 +39,9 @@
     "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
+  "engines": {
+    "node": ">=20.19.0"
+  },
   "dependencies": {
     "@react-three/drei": "^10.3.0",
     "@react-three/fiber": "^9.1.2",
