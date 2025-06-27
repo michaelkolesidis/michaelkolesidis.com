@@ -34,7 +34,7 @@ These aren’t just gimmicks. They’re carefully crafted microinteractions, whe
 
 ### Minimal Version
 
-Due to the website’s colorful design and animations, it may be challenging for users with disabilities to navigate. To improve accessibility, I’ve also created a minimal version, available via the footer link, which points to [https://michaelkolesidis.com/minimal/](https://michaelkolesidis.com/minimal/).
+Due to the website’s colorful design and animations, it may be challenging for users with disabilities to navigate. To improve accessibility, I’ve also created a minimal version, available via the footer link, which points to [michaelkolesidis.com/minimal](https://michaelkolesidis.com/minimal).
 
 ## 🏆 Awards
 

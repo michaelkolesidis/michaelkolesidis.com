@@ -35,15 +35,14 @@ $white: #ffffff;
 body {
   display: flex;
   flex-direction: column;
-  margin: 1vh 13vw 0.5em 13vw;
-  font-size: 18px;
-  justify-content: center;
+  margin: 1em 2em;
+  font-size: 16px;
   align-items: center;
 }
 
 #header {
-  font-size: clamp(40px, 8vw, 150px);
-  font-weight: 500;
+  font-size: clamp(50px, 7vw, 100px);
+  font-weight: 700;
   line-height: 0.8em;
   text-align: center;
   white-space: nowrap;
@@ -51,8 +50,7 @@ body {
 
 #subheader {
   text-align: center;
-  font-size: 1.85em;
-  font-size: clamp(10px, 2.1vw, 42.5px);
+  font-size: clamp(20px, 2vw, 40px);
   white-space: nowrap;
   margin-bottom: 0.5em;
 }
@@ -61,7 +59,7 @@ body {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 10px;
-  max-width: 1450px;
+  max-width: 1400px;
 }
 
 .section {
@@ -143,8 +141,13 @@ body {
   padding: 1.25em;
 }
 
+svg {
+  height: auto;
+  margin-top: 4em;
+}
+
 #duck {
-  width: 6em;
+  width: 4em;
 }
 
 @media (max-width: 775px) {

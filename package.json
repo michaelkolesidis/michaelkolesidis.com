@@ -40,7 +40,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@react-three/drei": "^10.1.2",
+    "@react-three/drei": "^10.3.0",
     "@react-three/fiber": "^9.1.2",
     "dom-window-manager": "^1.1.1",
     "react": "^19.1.0",
@@ -48,17 +48,17 @@
     "three": "^0.177.0"
   },
   "devDependencies": {
-    "@types/node": "^22.15.30",
-    "@types/react": "^19.1.6",
+    "@types/node": "^24.0.4",
+    "@types/react": "^19.1.8",
     "@types/react-dom": "^19.1.6",
     "@types/three": "^0.177.0",
-    "@vitejs/plugin-react": "^4.5.1",
-    "eslint": "^9.28.0",
+    "@vitejs/plugin-react": "^4.6.0",
+    "eslint": "^9.29.0",
     "eslint-plugin-react": "^7.37.5",
     "eslint-plugin-react-hooks": "^5.2.0",
     "eslint-plugin-react-refresh": "^0.4.20",
-    "sass": "^1.89.1",
+    "sass": "^1.89.2",
     "typescript": "^5.8.3",
-    "vite": "^6.3.5"
+    "vite": "^7.0.0"
   }
 }
