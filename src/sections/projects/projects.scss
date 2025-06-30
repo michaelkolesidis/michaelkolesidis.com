@@ -23,7 +23,8 @@
   background-color: $white;
   color: $black;
   border: $border;
-  transition: background-color 0.25s ease, box-shadow 0.4s ease-in-out;
+  transition: background-color 0.25s ease, box-shadow 0.4s ease-in-out,
+    opacity 0.4s none;
 }
 
 .project-card:hover:not(:has(.project-image:hover)) {
@@ -60,7 +61,7 @@
   max-width: fit-content;
 }
 
-.project-title:hover,
+// .project-title:hover,
 .repo-link:hover {
   animation: $flash;
   animation-timing-function: steps(4, jump-both);

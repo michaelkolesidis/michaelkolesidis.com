@@ -66,10 +66,8 @@ export const populateProjects = (
     });
 
     // Title
-    const title = document.createElement('a');
+    const title = document.createElement('div');
     title.classList.add('project-title');
-    title.href = `${project.deployment}`;
-    title.target = '_blank';
     title.innerHTML = `${project.name.toLocaleUpperCase()}`;
     proj.appendChild(title);
 

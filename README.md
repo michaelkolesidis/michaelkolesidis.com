@@ -11,10 +11,12 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <a href="https://sass-lang.com/"><img src="https://github.com/michaelkolesidis/tech-icons/blob/main/icons/sass/sass-original.svg" height="50px" /></a>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="https://gsap.com/"><img src="./public/assets/icons/gsap.svg" height="50px" /></a>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <a href="https://vitejs.dev/"><img src="https://vitejs.dev/logo.svg" height="50px" /></a>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
-The website was handcrafted from scratch using TypeScript and Sass, with no libraries, frameworks, or templates.
+The website was handcrafted from scratch using TypeScript, GSAP, and Sass, with no other libraries, frameworks, or templates.
 
 ### Other Technologies
 
