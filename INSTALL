@@ -1,1 +1,1 @@
-yarn add @react-three/drei @react-three/fiber dom-window-manager react react-dom three && yarn add -D @types/node @types/react @types/react-dom @types/three @vitejs/plugin-react eslint eslint-plugin-react eslint-plugin-react-hooks eslint-plugin-react-refresh sass typescript vite
+yarn add @react-three/drei @react-three/fiber dom-window-manager react react-dom three gsap && yarn add -D @types/node @types/react @types/react-dom @types/three @vitejs/plugin-react eslint eslint-plugin-react eslint-plugin-react-hooks eslint-plugin-react-refresh sass typescript vite
