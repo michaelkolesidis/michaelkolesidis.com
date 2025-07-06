@@ -71,7 +71,7 @@ export default function header() {
   // Smiley
   const smiley = document.createElement('div');
   smiley.setAttribute('id', 'smiley');
-  smiley.innerHTML = `<img alt=Smiley" src="../../assets/smiley-melting.svg" />`;
+  smiley.innerHTML = `<img alt="Smiley" src="../../assets/smiley-melting.svg" />`;
   header.appendChild(smiley);
 
   smiley.addEventListener('click', () => {

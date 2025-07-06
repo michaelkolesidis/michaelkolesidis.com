@@ -52,15 +52,15 @@ export default function contact() {
   socials.id = 'socials';
 
   const socialLinks = [
-    { name: 'linkedin', url: 'https://www.linkedin.com/in/michaelkolesidis/' },
-    { name: 'mastodon', url: 'https://mastodon.social/@michaelkolesidis' },
+    { name: 'LinkedIn', url: 'https://www.linkedin.com/in/michaelkolesidis/' },
+    { name: 'Mastodon', url: 'https://mastodon.social/@michaelkolesidis' },
     {
-      name: 'bluesky',
+      name: 'Bluesky',
       url: 'https://bsky.app/profile/michaelkolesidis.bsky.social',
     },
-    { name: 'instagram', url: 'https://www.instagram.com/michaelkolesidis' },
-    { name: 'github', url: 'https://github.com/michaelkolesidis' },
-    { name: 'twitter', url: 'https://twitter.com/michael_kol_' },
+    { name: 'Instagram', url: 'https://www.instagram.com/michaelkolesidis' },
+    { name: 'GitHub', url: 'https://github.com/michaelkolesidis' },
+    { name: 'Twitter', url: 'https://x.com/michael_kol_' },
   ];
 
   socialLinks.forEach(({ name, url }) => {

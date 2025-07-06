@@ -21,9 +21,6 @@ export default function body() {
     <header id="header"></header>
     <main id="main">
         <div id="duck-placeholder"></div>
-        <div id="loading">
-          <div><div>LOADING</div></div>
-        </div>
         <div id="intro"></div>
         <div id="main-content">
           <section id="projects" class="section"></section>
