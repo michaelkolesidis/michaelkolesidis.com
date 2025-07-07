@@ -15,6 +15,7 @@
  */
 
 import { textsContact } from '../../data/texts.js';
+import { socialList } from '../../data/social.js';
 
 export default function contact() {
   const contact = document.getElementById('contact');
@@ -51,24 +52,12 @@ export default function contact() {
   const socials = document.createElement('div');
   socials.id = 'socials';
 
-  const socialLinks = [
-    { name: 'LinkedIn', url: 'https://www.linkedin.com/in/michaelkolesidis/' },
-    { name: 'Mastodon', url: 'https://mastodon.social/@michaelkolesidis' },
-    {
-      name: 'Bluesky',
-      url: 'https://bsky.app/profile/michaelkolesidis.bsky.social',
-    },
-    { name: 'Instagram', url: 'https://www.instagram.com/michaelkolesidis' },
-    { name: 'GitHub', url: 'https://github.com/michaelkolesidis' },
-    { name: 'Twitter', url: 'https://x.com/michael_kol_' },
-  ];
-
-  socialLinks.forEach(({ name, url }) => {
+  socialList.forEach(({ name, filename, url }) => {
     const link = document.createElement('a');
     link.classList.add('social');
     link.href = url;
     link.target = '_blank';
-    link.innerHTML = `<img src="../../assets/icons/${name}.svg" class="social-icon-large" alt="${name} logo">`;
+    link.innerHTML = `<img src="../../assets/icons/${filename}.svg" class="social-icon-large" alt="${name} logo">`;
     socials.appendChild(link);
   });
 

@@ -19,7 +19,10 @@ import './pixelated.scss';
 import { WindowManager, dragElement } from 'dom-window-manager';
 import { generateNewColor } from '../../utils/functions';
 import { colors } from '../../data/colors';
+import { socialList } from '../../data/social.js';
 import { startGame } from './pixelated.js';
+import fragment from '../../shaders/fragment.glsl?raw';
+import vertex from '../../shaders/vertex.glsl?raw';
 
 let windowManager = new WindowManager(3);
 
@@ -284,47 +287,15 @@ export default function header() {
   const linksWindow = document.createElement('div');
   linksWindow.setAttribute('id', 'links-window');
   linksWindow.classList.add('window', 'list-window');
-  linksWindow.innerHTML = /* html */ `
-    <a 
-      target="_blank" 
-      href="https://www.linkedin.com/in/michaelkolesidis"
 
-    >
-    <img src="../../assets/icons/linkedin.svg" class="social-icon" alt="LinkedIn logo">
-    </a>
-        <a 
-      target="_blank" 
-      href="https://mastodon.social/@michaelkolesidis"
-    >
-    <img src="../../assets/icons/mastodon.svg" class="social-icon" alt="Mastodon logo">
-    </a>
-    <a 
-      target="_blank" 
-      href="https://bsky.app/profile/michaelkolesidis.bsky.social"
-      
-    >
-    <img src="../../assets/icons/bluesky.svg" class="social-icon" alt="Bluesky logo">
-    </a>
-    <a 
-      target="_blank" 
-      href="https://www.instagram.com/michaelkolesidis"
-    >
-    <img src="../../assets/icons/instagram.svg" class="social-icon" alt="Instagram logo">
-    </a>
-    <a 
-      target="_blank" 
-      href="https://github.com/michaelkolesidis"
-
-    >
-    <img src="../../assets/icons/github.svg" class="social-icon" alt="GitHub logo">
-    </a>
-    <a
-      target="_blank" 
-      href="https://x.com/michael_kol_"
-    >
-    <img src="../../assets/icons/twitter.svg" class="social-icon" alt="Twitter logo">
-    </a>
-    `;
+  socialList.forEach(({ name, filename, url }) => {
+    const link = document.createElement('a');
+    link.href = url;
+    link.rel = 'noopener noreferrer';
+    link.target = '_blank';
+    link.innerHTML = `<img src="../../assets/icons/${filename}.svg" class="social-icon" alt="${name} logo">`;
+    linksWindow.appendChild(link);
+  });
 
   const linksWindowTitle = document.createElement('div');
   linksWindowTitle.classList.add('window-title');
@@ -413,50 +384,18 @@ export default function header() {
     }, 1500); // delay before showing the next image
   }
 
-  // WebGL Tv Shader
+  // WebGL TV Shader
   const gl = canvas.getContext('webgl');
   if (!gl) return;
 
-  // Vertex shader
-  const vertexShaderSource = `
- attribute vec4 a_position;
- void main() {
-     gl_Position = a_position;
- }
-`;
-
-  // Fragment shader
-  const fragmentShaderSource = `
- precision highp float;
- uniform float u_time;
- uniform vec2 u_resolution;
-
- float tv(vec2 pos, float evolve) {
-     float e = fract((evolve*0.01));
-     float cx = pos.x*e;
-     float cy = pos.y*e;
-     return fract(23.0*fract(2.0/fract(fract(cx*2.4/cy*23.0+pow(abs(cy/22.4),3.3))*fract(cx*evolve/pow(abs(cy),0.050)))));
- }
-
- void main() {
-     vec2 fragCoord = gl_FragCoord.xy;
-     float tv_val = tv(fragCoord, u_time);
-     gl_FragColor = vec4(vec3(tv_val), 1.0);
- }
-`;
-
   // Create shader program
-  function createShaderProgram(
-    gl: any,
-    vertexShaderSource: any,
-    fragmentShaderSource: any
-  ) {
+  function createShaderProgram(gl: any, vertex: any, fragment: any) {
     const vertexShader = gl.createShader(gl.VERTEX_SHADER);
-    gl.shaderSource(vertexShader, vertexShaderSource);
+    gl.shaderSource(vertexShader, vertex);
     gl.compileShader(vertexShader);
 
     const fragmentShader = gl.createShader(gl.FRAGMENT_SHADER);
-    gl.shaderSource(fragmentShader, fragmentShaderSource);
+    gl.shaderSource(fragmentShader, fragment);
     gl.compileShader(fragmentShader);
 
     const program = gl.createProgram();
@@ -467,11 +406,7 @@ export default function header() {
     return program;
   }
 
-  const program = createShaderProgram(
-    gl,
-    vertexShaderSource,
-    fragmentShaderSource
-  );
+  const program = createShaderProgram(gl, vertex, fragment);
   if (!gl) return;
   gl.useProgram(program);
 

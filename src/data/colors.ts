@@ -14,10 +14,12 @@
  *  https://www.gnu.org/licenses/agpl-3.0.html
  */
 
+type HexColor = `#${string}`; // Not strict, but conveys intent
+type RGBColor = `${number}, ${number}, ${number}`; // Not strict, but conveys intent
 export interface Color {
   name: string;
-  hex: string;
-  rgb: string;
+  hex: HexColor;
+  rgb: RGBColor;
 }
 
 // The color palette used throughout the website
@@ -47,4 +49,4 @@ export const colors: Color[] = [
     hex: `#90a8ed`,
     rgb: `144, 168, 237`,
   },
-];
+] as const satisfies Color[];
