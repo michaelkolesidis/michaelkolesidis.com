@@ -23,11 +23,8 @@ export default function body() {
         <div id="duck-placeholder"></div>
         <div id="intro"></div>
         <div id="main-content">
+        <section id="contact" class="section"></section>
           <section id="projects" class="section"></section>
-          <section id="contact" class="section"></section>
-          <section id="about" class="section"></section>
-          <section id="awards" class="section"></section>
-          <section id="this-website" class="section"></section>
         </div>
     </main>
     <footer id="footer"></footer>
@@ -35,3 +32,8 @@ export default function body() {
     <div id="sound-button"></div>
 `;
 }
+
+
+// <section id="about" class="section"></section>
+// <section id="awards" class="section"></section>
+// <section id="this-website" class="section"></section>

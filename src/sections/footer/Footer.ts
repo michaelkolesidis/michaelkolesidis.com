@@ -76,7 +76,7 @@ export default function footer() {
   const accessible = document.createElement('div');
   accessible.id = 'accessible';
   accessible.innerHTML = `<p>There is an <a href="/minimal" target="_blank">accessible version</a> available.</p>`;
-  footer.appendChild(accessible);
+  // footer.appendChild(accessible);
 
   // Bottom links
   const bottomLinks = document.createElement('div');

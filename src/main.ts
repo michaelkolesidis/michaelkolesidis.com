@@ -40,9 +40,9 @@ header();
 intro();
 projects();
 contact();
-about();
-awards();
-thisWebsite();
+// about();
+// awards();
+// thisWebsite();
 footer();
 topButton();
 

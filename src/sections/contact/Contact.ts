@@ -33,14 +33,14 @@ export default function contact() {
   // Project Request paragraph
   const projectRequestParagraph = document.createElement('p');
   projectRequestParagraph.innerHTML = `${textsContact[0]}`;
-  contact.appendChild(projectRequestParagraph);
+  // contact.appendChild(projectRequestParagraph);
 
   // Project Request button
   const projectRequest = document.createElement('p');
   projectRequest.id = 'project-request-contact';
   projectRequest.classList.add('project-request');
   projectRequest.innerHTML = `<a href="https://forms.gle/Vg7kH5PRosqU3HYx6" target="_blank">Submit Project Request</a>`;
-  contact.appendChild(projectRequest);
+  // contact.appendChild(projectRequest);
 
   // Email
   const email = document.createElement('p');

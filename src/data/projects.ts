@@ -54,7 +54,7 @@ export const projectList: Project[] = [
       'https://github.com/michaelkolesidis/javascript-software-synthesizer',
     deployment: 'https://jss.michaelkolesidis.com/',
     video: '',
-    visible: true,
+    visible: false,
   },
 
   {
@@ -67,7 +67,7 @@ export const projectList: Project[] = [
     repository: 'https://github.com/michaelkolesidis/uncanny-canyon',
     deployment: 'https://online.adaf.gr/video/uncanny-canyon/',
     video: '',
-    visible: true,
+    visible: false,
   },
 
   {
@@ -83,28 +83,13 @@ export const projectList: Project[] = [
   },
 
   {
-    name: 'ZigZag',
-    image: '../../images/zigzag.png',
-    technologies: 'Three.js, React, React Three Fiber, Zustand',
-    summary:
-      'A 3D ZigZag game built with React Three Fiber. Stay on the wall and zigzag as far as you can! Just tap the screen to change the ball’s direction. One wrong move and you’re off the edge! How far can you make it?',
+    name: 'Timberland 3D',
+    image: '../../images/timberland-3d-customizer.png',
+    technologies: 'Three.js, React, TypeScript, React Three Fiber, Zustand',
+    summary: 'Customize and preview Timberland boots in 3D',
     description: '',
-    repository: 'https://github.com/michaelkolesidis/zigzag',
-    deployment: 'https://zigzag.michaelkolesidis.com/',
-    video: '',
-    visible: true,
-  },
-
-  {
-    name: 'Emoji Minesweeper',
-    image: '../../images/emoji-minesweeper.png?v=3',
-    technologies: 'p5.js, JavaScript, CSS',
-    summary:
-      'Minesweeper made with emojis. The most fun way to play minesweeper!',
-    description:
-      'The game logic and anything that happens inside the board\n is written in p5.js. The board is drawn inside a canvas element,\n with the help of the p5.js library. The rest of the UI\n is written in vanilla JavaScript.',
-    repository: 'https://github.com/michaelkolesidis/emoji-minesweeper',
-    deployment: 'https://emojiminesweeper.com/',
+    repository: 'https://github.com/michaelkolesidis/timberland-3d-customizer',
+    deployment: 'https://timberland.michaelkolesidis.com/',
     video: '',
     visible: true,
   },
@@ -113,7 +98,7 @@ export const projectList: Project[] = [
     name: 'Cherry Charm',
     image: '../../images/cherry-charm.png',
     technologies: 'Three.js, React, TypeScript, React Three Fiber, Zustand',
-    summary: 'An online 3D slot machine game.',
+    summary: 'An online 3D slot machine.',
     description: '',
     repository: 'https://github.com/michaelkolesidis/cherry-charm',
     deployment: 'https://cherrycharm.michaelkolesidis.com/',
@@ -134,13 +119,28 @@ export const projectList: Project[] = [
   },
 
   {
-    name: 'Timberland 3D',
-    image: '../../images/timberland-3d-customizer.png',
-    technologies: 'Three.js, React, TypeScript, React Three Fiber, Zustand',
-    summary: 'Customize and preview Timberland boots in 3D',
+    name: 'ZigZag',
+    image: '../../images/zigzag.png',
+    technologies: 'Three.js, React, React Three Fiber, Zustand',
+    summary:
+      'A 3D ZigZag game built with React Three Fiber. Stay on the wall and zigzag as far as you can! Just tap the screen to change the ball’s direction. One wrong move and you’re off the edge! How far can you make it?',
     description: '',
-    repository: 'https://github.com/michaelkolesidis/timberland-3d-customizer',
-    deployment: 'https://timberland.michaelkolesidis.com/',
+    repository: 'https://github.com/michaelkolesidis/zigzag',
+    deployment: 'https://zigzag.michaelkolesidis.com/',
+    video: '',
+    visible: false,
+  },
+
+  {
+    name: 'Emoji Minesweeper',
+    image: '../../images/emoji-minesweeper.png?v=3',
+    technologies: 'p5.js, JavaScript, CSS',
+    summary:
+      'Minesweeper made with emojis. The most fun way to play minesweeper!',
+    description:
+      'The game logic and anything that happens inside the board\n is written in p5.js. The board is drawn inside a canvas element,\n with the help of the p5.js library. The rest of the UI\n is written in vanilla JavaScript.',
+    repository: 'https://github.com/michaelkolesidis/emoji-minesweeper',
+    deployment: 'https://emojiminesweeper.com/',
     video: '',
     visible: true,
   },
@@ -154,7 +154,7 @@ export const projectList: Project[] = [
     repository: 'https://github.com/michaelkolesidis/cuberabbit',
     deployment: 'https://cuberabbit.michaelkolesidis.com/',
     video: '',
-    visible: true,
+    visible: false,
   },
 
   {
@@ -166,7 +166,7 @@ export const projectList: Project[] = [
     repository: 'https://github.com/michaelkolesidis/beachy-beachy-ball',
     deployment: 'https://beachybeachyball.michaelkolesidis.com/',
     video: '',
-    visible: true,
+    visible: false,
   },
 
   {
@@ -179,7 +179,7 @@ export const projectList: Project[] = [
     repository: 'https://github.com/michaelkolesidis/chompy-o-croc',
     deployment: 'https://chompyocroc.michaelkolesidis.com/',
     video: '',
-    visible: true,
+    visible: false,
   },
 
   {
@@ -191,7 +191,7 @@ export const projectList: Project[] = [
     repository: 'https://github.com/michaelkolesidis/synthetique',
     deployment: 'https://synthetique.michaelkolesidis.com/',
     video: '',
-    visible: true,
+    visible: false,
   },
 
   {
@@ -203,7 +203,7 @@ export const projectList: Project[] = [
     repository: 'https://github.com/michaelkolesidis/rock-paper-scissors-3d',
     deployment: 'https://rockpaperscissors3d.michaelkolesidis.com/',
     video: '',
-    visible: true,
+    visible: false,
   },
 
   {
@@ -215,7 +215,7 @@ export const projectList: Project[] = [
     repository: 'https://github.com/michaelkolesidis/bird-generator',
     deployment: 'https://birdgenerator.michaelkolesidis.com/',
     video: '',
-    visible: true,
+    visible: false,
   },
 
   {
@@ -227,7 +227,7 @@ export const projectList: Project[] = [
     repository: 'https://github.com/michaelkolesidis/p5js-experiments',
     deployment: 'https://p5js.michaelkolesidis.com/',
     video: '',
-    visible: true,
+    visible: false,
   },
 
   {

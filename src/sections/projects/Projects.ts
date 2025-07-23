@@ -34,7 +34,7 @@ export default function projects() {
       )
       .join('')}
   `;
-  projects.appendChild(projectsTitle);
+  // projects.appendChild(projectsTitle);
 
   // Container and Projects Population
   const projectsContainer = document.createElement('div');
@@ -49,7 +49,7 @@ export default function projects() {
   more.id = 'more';
   more.innerHTML =
     'The list gets updated regularly with new projects. Check back again soon!';
-  projects.appendChild(more);
+  // projects.appendChild(more);
 
   // Card Animation
   const cards = document.querySelectorAll('.project-card');

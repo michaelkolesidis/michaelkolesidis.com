@@ -599,7 +599,7 @@ export default function header() {
   const projectRequest = document.createElement('p');
   projectRequest.classList.add('project-request');
   projectRequest.innerHTML = `<a href="https://forms.gle/Vg7kH5PRosqU3HYx6" target="_blank">Submit Project Request</a>`;
-  header.appendChild(projectRequest);
+  // header.appendChild(projectRequest);
 
   dragElement(projectRequest);
   projectRequest.style.zIndex = windowManager.base;
