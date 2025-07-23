@@ -69,14 +69,14 @@ export default function footer() {
   // Disclaimer
   const disclaimer = document.createElement('div');
   disclaimer.id = 'disclaimer';
-  disclaimer.innerHTML = `<p>Licensed under the <a href="https://www.gnu.org/licenses/agpl-3.0.html" target="_blank" >AGPL-3.0-or-later</a></p><br><br><p>Designed and developed from the scratch, with no libraries, frameworks, or templates.</p>`;
+  disclaimer.innerHTML = `<p>Licensed under the <a href="https://www.gnu.org/licenses/agpl-3.0.html" target="_blank" >AGPL-3.0-or-later</a></p>`;
   footer.appendChild(disclaimer);
 
   // Accessible
   const accessible = document.createElement('div');
   accessible.id = 'accessible';
-  accessible.innerHTML = `<p>There is an <a href="/minimal" target="_blank">accessible version</a> available.</p>`;
-  // footer.appendChild(accessible);
+  accessible.innerHTML = `<p>All content and materials on this website remain property of Michael Kolesidis and are protected by copyright law. Unauthorized use or reproduction is strictly prohibited.</p>`;
+  footer.appendChild(accessible);
 
   // Bottom links
   const bottomLinks = document.createElement('div');
