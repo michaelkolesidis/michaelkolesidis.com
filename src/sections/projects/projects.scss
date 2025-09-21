@@ -24,7 +24,7 @@
   color: $black;
   border: $border;
   transition: background-color 0.25s ease, box-shadow 0.4s ease-in-out,
-    opacity 0.4s none;
+    opacity 0.4s ease;
 }
 
 .project-card:hover:not(:has(.project-image:hover)) {
