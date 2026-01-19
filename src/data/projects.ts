@@ -104,7 +104,7 @@ export const projectList: Project[] = [
     description:
       'The game logic and anything that happens inside the board\n is written in p5.js. The board is drawn inside a canvas element,\n with the help of the p5.js library. The rest of the UI\n is written in vanilla JavaScript.',
     repository: 'https://github.com/michaelkolesidis/emoji-minesweeper',
-    deployment: 'https://emojiminesweeper.com/',
+    deployment: 'https://emojiminesweeper.michaelkolesidis.com/',
     video: '',
     visible: true,
   },
