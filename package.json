@@ -40,7 +40,7 @@
     "preview": "vite preview"
   },
   "engines": {
-    "node": ">=20.19.0"
+    "node": "22.x"
   },
   "dependencies": {
     "@react-three/drei": "^10.7.6",
