@@ -5,6 +5,10 @@
   <a href='https://ko-fi.com/michaelkolesidis' target='_blank'><img src='https://cdn.ko-fi.com/cdn/kofi2.png' style='border:0px;height:45px;' alt='Buy Me a Coffee at ko-fi.com' /></a>
 </div>
 
+Welcome to my interactive portfolio website: a playful, modern homage to the early web. Discover projects, animations, and microinteractions, all crafted from scratch.
+
+> 💡 Want to fork this and make it your own? Check the **[Customization Guide](./CUSTOMIZATION_GUIDE.md)**.
+
 ## 🛠️ Technologies Used
 
 <a href="https://www.typescriptlang.org/"><img src="https://github.com/michaelkolesidis/tech-icons/blob/main/icons/typescript/typescript-original.svg" height="50px" /></a>
@@ -37,6 +41,21 @@ These aren’t just gimmicks. They’re carefully crafted microinteractions, whe
 ### Minimal Version
 
 Due to the website’s colorful design and animations, it may be challenging for users with disabilities to navigate. To improve accessibility, I’ve also created a minimal version, available via the footer link, which points to [michaelkolesidis.com/minimal](https://michaelkolesidis.com/minimal).
+
+## 🎨 Customization & Forking
+
+Want to use this project as a base for your own portfolio?
+
+A detailed step-by-step guide is available here:  
+👉 **[Portfolio Customization Guide](./CUSTOMIZATION_GUIDE.md)**
+
+It covers:
+- Personalizing content and metadata  
+- Adding your own projects and assets  
+- Styling and color customization  
+- Analytics, deployment, and license notes  
+
+Please make sure to read the license section and keep all AGPL-3.0 obligations in mind when forking or deploying.
 
 ## 🏆 Awards
 
@@ -138,6 +157,8 @@ The duck with cel shading and an outline.
 ## 🙏 Acknowledgements
 
 A huge thanks to everyone who supported me, from friends and colleagues to anonymous internet users, providing valuable feedback throughout the development process.
+
+Special thanks to [Alexis Fiolleau (Potowai)](https://github.com/Potowai) for creating the [Portfolio Customization Guide](./CUSTOMIZATION_GUIDE.md).
 
 ## ✉️ Contact
 
