@@ -16,8 +16,8 @@
 
 // Intro Section
 export const textsInto: string[] = [
-  `I'm Michael Kolesidis.<br>(as you might have already guessed from the huge heading)`,
-  `I'm a designer, developer, and art director creating handcrafted, meaningful experiences across digital, print, branding, and product. Always open to exciting projects — let's discuss yours!`,
+  `Web artisan specializing in handcrafted digital experiences.`,
+  `I handle development, design, and art direction, working with select clients worldwide and taking on a limited number of projects. Let’s discuss yours.`,
   `When programmers try to find bugs, it helps to explain their code line-by-line to an inanimate object. This is known as rubber duck debugging.`,
 ];
 

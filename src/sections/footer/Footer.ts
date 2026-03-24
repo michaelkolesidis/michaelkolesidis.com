@@ -69,7 +69,7 @@ export default function footer() {
   // Disclaimer
   const disclaimer = document.createElement('div');
   disclaimer.id = 'disclaimer';
-  disclaimer.innerHTML = `<p>Licensed under the <a href="https://www.gnu.org/licenses/agpl-3.0.html" target="_blank" >AGPL-3.0-or-later</a></p><br><br><p>Designed and developed from the scratch, with no libraries, frameworks, or templates.</p>`;
+  disclaimer.innerHTML = `<p>Licensed under the <a href="https://www.gnu.org/licenses/agpl-3.0.html" target="_blank" >AGPL-3.0-or-later</a></p><br><br><p>Designed and developed from scratch, with no libraries, frameworks, or templates.</p>`;
   footer.appendChild(disclaimer);
 
   // Accessible
