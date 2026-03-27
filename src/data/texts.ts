@@ -16,8 +16,8 @@
 
 // Intro Section
 export const textsInto: string[] = [
-  `Web Artisan. Abolishing the static web through fluid motion and interactive storytelling.`,
-  `Bridging the gap between art direction and technical execution, I craft bespoke digital experiences for a global clientele. By operating on a limited-commission basis, I ensure every project receives uncompromising focus.`,
+  `Abolishing the static web through fluid motion and interactive storytelling.`,
+  `Bridging the gap between art direction and technical execution, I craft bespoke digital experiences for a global clientele. By operating on a limited commission basis, I ensure every project receives uncompromising focus.`,
   `When programmers try to find bugs, it helps to explain their code line-by-line to an inanimate object. This is known as rubber duck debugging.`,
 ];
 
