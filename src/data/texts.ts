@@ -16,8 +16,8 @@
 
 // Intro Section
 export const textsInto: string[] = [
-  `Web artisan specializing in handcrafted digital experiences.`,
-  `I handle development, design, and art direction, working with select clients worldwide and taking on a limited number of projects. Let’s discuss yours.`,
+  `Web Artisan. Abolishing the static web through fluid motion and interactive storytelling.`,
+  `Bridging the gap between art direction and technical execution, I craft bespoke digital experiences for a global clientele. By operating on a limited-commission basis, I ensure every project receives uncompromising focus.`,
   `When programmers try to find bugs, it helps to explain their code line-by-line to an inanimate object. This is known as rubber duck debugging.`,
 ];
 
@@ -29,31 +29,29 @@ export const textsContact: string[] = [
 
 // About section
 export const textsAbout: string[] = [
-  `I'm passionate about design and development, specializing in web design, web development, graphic design, print design, product design, branding, game development, motion graphics, and more.`,
+  `A multidisciplinary polymath, I operate at the intersection of visual identity, digital architecture, and motion. From high-fidelity branding to experimental game mechanics, my work dissolves the boundaries between graphic design and technical execution.`,
 
-  ` I love creating immersive web experiences that stand out, leave a lasting impression, and push the boundaries of what's possible, helping shape the future of the web.`,
+  `I am dedicated to crafting digital permanence. By engineering immersive environments that transcend the static screen, I aim to redefine the standards of interactivity and help shape the next era of the web.`,
 
-  `As a web developer, I primarily work with React, Next.js, TypeScript, GSAP, Three.js, React Three Fiber, Zustand, Tailwind, Sass, Pixi.js, p5.js, alongside various other frameworks and libraries.`,
+  `My technical arsenal is built for performance and fluidity. I leverage React, Next.js, and TypeScript as a foundation, utilizing GSAP, Three.js (R3F), and Pixi.js to breathe life into the browser.`,
 
-  `I am proficient in a wide range of tools, including Figma, Adobe Photoshop, Illustrator, Animate, After Effects, Premiere, Lightroom, DaVinci Resolve, Final Cut Pro, and Ableton Live.`,
+  `My creative process is holistic, spanning the entire Adobe Creative Suite, DaVinci Resolve, and Ableton Live. Whether I am sculpting a layout in Figma or scoring a soundscape, I ensure every sensory detail is intentional.`,
 
-  ` I also work with free software alternatives like Inkscape, Krita, GIMP, and Blender. I'm passionate about free software. I enjoy using it and fully support its development and growth.`,
+  `I am a staunch advocate for the Open-Source Ethos. Beyond the industry-standard suites, I integrate Blender, Inkscape, and Krita into my workflow—supporting the growth of a transparent, accessible creative future.`,
 
-  `My mantra is: always choose the right tool for the job and avoid over-engineering.`,
+  `Precision over vanity. My philosophy is simple: select the optimal tool for the objective and eliminate complexity where it doesn't serve the user.`,
 
-  `I have lived, studied, and worked in Greece, Spain (Barcelona), and the UK (Brighton). I am fluent in Greek, English, and Spanish.`,
+  `My workspace is overseen by a dual-guard: a classic Rubber Duck for logic-clearing and a Maneki-neko for fortune. They serve as a constant reminder that the best work is born from a balance of rigor and play.`,
 
-  `I used to have a rubber duck on my desk, but now it shares space with a Maneki-neko, the iconic Japanese lucky cat figurine. Together, they bring a mix of fun and good fortune to my workspace!`,
-
-  `I don't drink coffee or tea. Well, maybe a cup of tea a few times a year, but that's about it.`,
+  `My code is fueled by pure focus, not caffeine. I operate without the crutch of coffee, save for the occasional, strictly ceremonial, cup of tea.`,
 ];
 
 // This Website section
 export const textsThisWebsite: string[] = [
-  `When did the web become so serious? This website is a love letter to the early Internet, a tribute to the era of naïve web art, romantic digital amateurs, and the beautiful chaos of GeoCities.`,
+  `A reclamation of digital play. Somewhere along the way, the web became too serious. This space is a tribute to the era of naïve web art, a love letter to the romantic amateurs and the beautiful, unpolished chaos of the GeoCities era.`,
   `I first discovered the magical world of the World Wide Web in the ’90s, and this project is my attempt to bottle some of that pixelated magic. Its visual language borrows from street art, print-era layout experimentation, and the punchy, graphic attitude of ’90s MTV.`,
 
-  `I call the resulting aesthetic <i>frivobrutalism</i>, a joyful clash of whimsy and rawness, where playful visuals meet the structural honesty of brutalist design.`,
+  `I define the resulting aesthetic as <i>Frivobrutalism</i>: a defiant clash of whimsy and rawness. It is a space where playful, kinetic visuals meet the structural honesty and unapologetic geometry of brutalist design.`,
 
   `This website is free software (free as in freedom). The source code is released under the GNU Affero General Public License v3.0, and you can only use it in accordance with the license's terms and conditions.`,
 
