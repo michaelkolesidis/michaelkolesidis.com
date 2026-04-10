@@ -65,7 +65,7 @@ export const projectList: Project[] = [
       'An interactive 3D web experience, featured in Athens Digital Arts Festival 2023 in the Web Art category.',
     description: ``,
     repository: 'https://github.com/michaelkolesidis/uncanny-canyon',
-    deployment: 'https://online.adaf.gr/video/uncanny-canyon/',
+    deployment: 'https://uncannycanyon.michaelkolesidis.com/',
     video: '',
     visible: true,
   },
