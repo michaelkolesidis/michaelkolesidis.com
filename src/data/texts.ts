@@ -24,7 +24,7 @@ export const textsInto: string[] = [
 // Contact section
 export const textsContact: string[] = [
   `Like what you see? I'm always open to take on new and exciting projects — let's discuss yours!`,
-  `If you have any questions, drop me a line at:<br>michael.kolesidis@gmail.com`,
+  `If you have any questions, drop me a line at:<br>${(t=>t.replace(/[A-Za-z]/g,c=>String.fromCharCode((c<'a'?65:97)+(c.charCodeAt(0)-(c<'a'?65:97)+13)%26)))("zvpunry.xbyrfqvf@tznvy.pbz")}`,
 ];
 
 // About section

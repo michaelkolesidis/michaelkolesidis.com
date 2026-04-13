@@ -43,7 +43,7 @@ document.body.innerHTML += /*html*/ `
         >
         <br />
         <a href="mailto:michael.kolesidis@gmail.com"
-          >michael.kolesidis@gmail.com</a
+        >${(t=>t.replace(/[A-Za-z]/g,c=>String.fromCharCode((c<'a'?65:97)+(c.charCodeAt(0)-(c<'a'?65:97)+13)%26)))("zvpunry.xbyrfqvf@tznvy.pbz")}</a
         >
       </div>
     </div>
