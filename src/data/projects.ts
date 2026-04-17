@@ -100,11 +100,11 @@ export const projectList: Project[] = [
     image: '../../images/emoji-minesweeper.png?v=3',
     technologies: 'p5.js, JavaScript, CSS',
     summary:
-      'Minesweeper made with emojis. The most fun way to play minesweeper!',
+      'Minesweeper made with emoji. The most fun way to play minesweeper!',
     description:
       'The game logic and anything that happens inside the board\n is written in p5.js. The board is drawn inside a canvas element,\n with the help of the p5.js library. The rest of the UI\n is written in vanilla JavaScript.',
     repository: 'https://github.com/michaelkolesidis/emoji-minesweeper',
-    deployment: 'https://emojiminesweeper.michaelkolesidis.com/',
+    deployment: 'https://thumbfeed.com/emoji-minesweeper/',
     video: '',
     visible: true,
   },
