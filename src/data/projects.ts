@@ -116,7 +116,7 @@ export const projectList: Project[] = [
     summary: 'An online 3D slot machine game.',
     description: '',
     repository: 'https://github.com/michaelkolesidis/cherry-charm',
-    deployment: 'https://cherrycharm.michaelkolesidis.com/',
+    deployment: 'https://thumbfeed.com/cherry-charm/',
     video: '',
     visible: true,
   },
